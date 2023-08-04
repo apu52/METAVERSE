@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Apu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/37865124d2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist Aspirant</p>
+                <h1>Hi, I'm <span>Arpan</span><br>Chowdhury </h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>Hello,I'm Arpan Chowdhury, Aspiring Data Scientist<br>I'm currently pursuing  B.Tech in Information Technology from Netaji Subhash Engineering College.(2nd year)Exploring the vast world of tech field.Highly interested in full-stack web development.......</p>
+                  <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>front-end Development & back-end Developement</li>
+                            <li><span>DSA in C</span><br>Data Structure & algorithm In C</li>
+                            <li><span>Web Design</span><br>Web design Intern</li>
+                            <li><span>Leadership Skills</span><br>Ability to lead a tem in projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Dev Intern</span><br>Web dev Intern under Code Clause</li>
+                            <li><span>Web Dev Intern</span><br>Web dev Intern under Oasis Infobyte</li>
+                            <li><span>Open Source Contributor</span><br>Contributor at GSSoC '23</li>
+                            <li><span>Open Source Contributor</span><br>Contributor at  SSoC '23</li>
+                            <li><span>Web Design Intern</span><br>WebIntern under Wadhwani</li>
+                            <li><span>Campus Ambassador</span><br>Working as a campus ambassador of Internshala </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>Persuing B.Tech(IT) from Netaji Subhash Engineering College</li>
+                            <li><span>2014-2022</span><br>Completed 10th & 12th from Belgharia High School </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------services-------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experiences</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Front-end Web Development</h2>
+                    <p>Currently learning HTML,CSS & JS.Hopefully like to start API & React.js. 
+                    </p>
+                    <a href="https://github.com/apu52?tab=repositories" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>DSA IN C programming</h2>
+                    <p>I am currently learing Data structure & Algorithm in C .The Link of my programming codes is given below!
+                    </p>
+                    <a href="https://github.com/apu52/DSA-C-Assignment" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Currently learning codes in Python.The Link of my programming Codes is given below!  
+                    </p>
+                    <a href="https://github.com/apu52/Python-Codes" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Best Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Hotstar Clone.png">
+                <div class="layer">
+                    <h3>Hotstar Clone</h3>
+                    <p>Here is the frontend page of Famous streaming platform HOTSTAR.<br>I have made it using HTML,CSS & JS.<br></p>
+                    <a href="https://apu52.github.io/HotstarClone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Stopwatch.png">
+                <div class="layer">
+                    <h3>Stopwatch</h3>
+                    <p>Here is the application of our most used app Stopwatch.<br>I have made it using HTML,CSS & JS.<br></p>
+                    <a href="https://apu52.github.io/Stopwatch-maker/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Travel Website.png">
+                <div class="layer">
+                    <h3>Travel Website</h3>
+                    <p>Here is the landing Page of my Travel Website page<br>I have made it using HTML & CSS.<br></p>
+                    <a href="https://64b13e4df4a6c611742591dc--jovial-creponne-00efd5.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Temperture Converter.png">
+                <div class="layer">
+                    <h3>Temperature Converter</h3>
+                    <p>Here is the application of our most used app Temperature Converter.<br>I have made it using HTML,CSS & JS.<br></p>
+                    <a href="https://apu52.github.io/Temperature_Converter/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/apu52?tab=repositories" target="_blank", class="btn">See More</a>
+    </div>
+</div>
+<!-- -------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>arpanchowdhury003@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>+918017391022</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/apu52" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://youtube.com/@arpanchowdhury53" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/ArpanCh40193288" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://discord.com/channels/1104671376176054314/1104671376905871421" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="Images/Resume.jpg" download class="btn btn2" >Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Arpan Chowdhury,Front-end projects 2023</p>
+    </div>
+</div>
+<a href="#" onclick="topFunction()" id="myBtn" class="myBtn hidden">&#x1F815;</a>
+
+    <script src="main.js"></script>
+    <!-- -------contact form begin---------- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqdeA5FnOIsFt0_4VwztZCjmk0rG0L6GrU1_USaqjyicD0dFCBjj_L_uF9c5ugHWhq/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },4000) //4000 is miliseconds
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <!-- -------------contact form end-------------- -->
+  </body>
+</html>
