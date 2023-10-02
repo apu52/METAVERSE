@@ -3,34 +3,29 @@
 # <p align = "center"> METAVERSE </p>
 <img align ="center" > ![image](https://github.com/apu52/oibsip_taskno/assets/114172928/6d429421-b973-4179-823a-b49eedaf942c) </img>
 
-
-
-
-
-
-  <div align="center">
+<div align="center">
  <p>
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=Vikash-8090-Yadav%2FWeb3.0-World%20&countColor=%23263759&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/Vikash-8090-Yadav/Future.WebNet)
-![GitHub Repo stars](https://img.shields.io/github/stars/Vikash-8090-Yadav/Future.WebNet)
-![GitHub contributors](https://img.shields.io/github/contributors/Vikash-8090-Yadav/Future.WebNet)
-![GitHub last commit](https://img.shields.io/github/last-commit/Vikash-8090-Yadav/Future.WebNet)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=apu52%2FMETAVERSE%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/apu52/METAVERSE)
+![GitHub Repo stars](https://img.shields.io/github/stars/apu52/METAVERSE)
+![GitHub contributors](https://img.shields.io/github/contributors/apu52/METAVERSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/apu52/METAVERSE)
   
-![GitHub repo size](https://img.shields.io/github/repo-size/Vikash-8090-Yadav/Future.WebNet)
+![GitHub repo size](https://img.shields.io/github/repo-size/apu52/METAVERSE)
 
-![Github](https://img.shields.io/github/license/Vikash-8090-Yadav/Future.WebNet)
-![GitHub issues](https://img.shields.io/github/issues/Vikash-8090-Yadav/Future.WebNet)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Vikash-8090-Yadav/Future.WebNet)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Vikash-8090-Yadav/Future.WebNet)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Vikash-8090-Yadav/Future.WebNet)
+![Github](https://img.shields.io/github/license/apu52/METAVERSE)
+![GitHub issues](https://img.shields.io/github/issues/apu52/METAVERSE)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/apu52/METAVERSE)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/apu52/METAVERSE)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/apu52/METAVERSE)
  </p>
  </div>
  <br>
  <p align="center">
-   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-World-of-Web3"/>
+   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE"/>
 </p>
  
  
@@ -40,56 +35,64 @@
 
 <div align="center">
 <div>
-  <img src="./images/hacktoberfest.png" width="100%">
+  <img src="https://github.com/apu52/METAVERSE/assets/114172928/bd29d2ea-f851-4172-8306-4ca214f0312a" width="60%">
 </div>
-<div>
-  <img src="./images/swoc.png" width="27%"> &nbsp; &nbsp;
-  <img src="./images/SSOC.jpg" width="22%"> &nbsp; 
-  <img src="./images/kwoc.jpg" width="20%"> &nbsp; &nbsp;
-  <img src="./images/logo.png" width="22%"> 
-</div>
-
-<img src="./images/iwoc.png" width="100%">
-</div>
-
-
-
-##  About Web3.O.World
-The single destination where Web3 developers can present their ideas and code. In this context, web3 essentially refers to Web2 incorporating the blockchain concept, i.e., (Web2 + Smart Contract) equals Web3. This repository will contain web3 projects comprising the (backend)smart contracts and the frontend section. When it comes to the backend, smart contracts are utilized, while we have the freedom to utilize any tech stack for the blockchain frontend.
+  
+##  About METAVERSE
+Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
+Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!
 
 
 ##  Blog 
-<a href="https://codeshivam28.hashnode.dev/a-complete-blog-on-web30-world">Tap this link to access the Blog 🔗</a>
+<h2>What You'll Discover Here:</h2>
 
+- <h3>Diverse Metaverse Projects:</h3> Our repository features a wide spectrum of metaverse-related front-end projects. From HTML, CSS, and JavaScript to immersive React experiences, you'll find projects that push the boundaries of the metaverse.
 
-  
+- <h3>🤝 Collaboration:</h3> Metaverse Front-End Playground thrives on collaboration. You can enhance existing metaverse projects, contribute new features, or even conjure up entirely new metaverse experiences. Your creative contributions are highly valued!
+
+- <h3> 🎉 Hacktoberfest Affiliation:</h3> We're thrilled to be part of Hacktoberfest, the global celebration of open source. By contributing to Metaverse Front-End Playground, you can earn Hacktoberfest rewards and swag while shaping the future of the metaverse.
+
+- <h3>🚀Learning Opportunity:</h3> If you're new to metaverse development, this repository is an excellent launchpad. Collaborate with experienced metaverse developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.
+
+## What you can  Contribute?
+
+- 🎨 Showcase Your Creativity: Have a fantastic front-end project you're proud of? Share it with the community! Add your HTML, CSS, JavaScript, or React project to our repository and let others explore, learn, and be inspired by your work.
+
+- 🛠️ Enhance Existing Projects: If you'd like to dive into existing projects, you're welcome to contribute by adding new features, improving user interfaces, optimizing code, or fixing bugs. Your expertise can make a big difference in making these projects even better.
+
+- 🧐 Discover and Collaborate: Explore the diverse range of projects in our repository. Find one that aligns with your interests and expertise, and collaborate with the project maintainers and other contributors. Together, we can create exceptional web experiences.
+
+- 🚀 Hacktoberfest Incentives: By participating in Metaverse Front-End Playground, you not only advance your skills and gain exposure but also have the opportunity to earn Hacktoberfest rewards and recognition. It's a win-win for all!
+
+- 💡 Innovate and Experiment: The metaverse is an evolving landscape with endless possibilities. Feel free to experiment, push boundaries, and pioneer new ideas. Your innovative contributions can shape the future of the metaverse.
+
 ## How to Contribute?
 
-- Take a look at the existing [Issues](https://github.com/Vikash-8090-Yadav/Future.WebNet/issues). 
+- Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues). 
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
-- Create a [**Pull Request**](https://github.com/Vikash-8090-Yadav/Future.WebNet/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
+- Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
 ## How to make a Pull Request?
 
-**1.** Start by forking the [**Future.WebNet**](https://github.com/Vikash-8090-Yadav/Future.WebNet) repository. Click on the <a href="https://github.com/Vikash-8090-Yadav/Future.WebNet/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
+**1.** Start by forking the [**METAVERSE**](https://github.com/apu52/METAVERSE) repository. Click on the <a href="https://github.com/apu52/METAVERSE/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
 **2.** Clone your forked repository:
 
 ```bash
-git clone https://github.com/<your-github-username>/Future.WebNet
+git clone https://github.com/<your-github-username>/METAVERSE
 ```
 
 **3.** Navigate to the new project directory:
 
 ```bash
-cd Future.WebNet
+cd METAVERSE
 ```
 
 **4.** Set upstream command:
 
 ```bash
-git remote add upstream https://github.com/Vikash-8090-Yadav/Future.WebNet
+git remote add upstream https://github.com/apu52/METAVERSE
 ```
 
 **5.** Create a new branch:
@@ -144,32 +147,9 @@ git push origin YourBranchName
 
 **10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**11.** **Congratulations!** You've made your first contribution! 🙌🏼
+ <h2>Congratulations! You've made your first contribution! 🙌🏼</h2>
 
-# How to Setup Locally 
-
-## **1.** Follow the [PR STEPS](https://github.com/Vikash-8090-Yadav/Future.WebNet/edit/main/README.md#how-to-make-a-pull-request) , after   cloning repo in your local system 
-
-
-## **2.**  Install Dependencies !!
-
-```
-npm install node 
-```
-
-
- &nbsp; (i) If that project using Web3 , Truffle then follow this steps , -> Refer [Truffle , Web3 , Ganache ](https://web3js.readthedocs.io/en/v1.2.11/getting-started.html)
  
- &nbsp; (ii) If using Hardhat , Ether -> Refer [Hardhat , Ether](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
- 
-
-
-## **3.** Hardhat Tutorial -> https://www.youtube.com/watch?v=FIiekfY6q7Y&t=1085s
-
-## **4.** Web3 Tutorial -> https://www.youtube.com/watch?v=pZjQxs1piEk&list=PLgPmWS2dQHW9F8fRXzrFBtcrwE-uS8Qa5
-
-
-## **5.** Congratulations 🙌🏼 , You have successfully setup the Blockchain project in your System, It's time to check the code and Raise a PR 
 
 </br>
 <p align = "center">
@@ -179,16 +159,28 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 ## Project Contributors
 
-<a href="https://github.com/Vikash-8090-Yadav/Future.WebNet/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Vikash-8090-Yadav/Future.WebNet" />
+<a href="https://github.com/apu52/METAVERSE/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=apu52/METAVERSE" />
 </a>
 
 ## Project Admin
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/Vikash-8090-Yadav"><img src="https://avatars.githubusercontent.com/u/85225156?s=400&u=3363e9db42792ae40a18b3119c745930bb85cf47&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Vikash Kumar Yadav</h4>
-<a href="https://www.linkedin.com/in/vikash-kumar-yadav-8090/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+<td align="center"><a href="https://github.com/apu52"><img src="![IMG-20221126-WA0049](https://github.com/apu52/METAVERSE/assets/114172928/13a749d4-4465-42a2-9cd7-bba87f85ff32)
+" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
+<a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+   </td>
+
+</tr>
+</table>
+
+## Project Admin
+
+<table>
+<tr>
+<td align="center"><a href=""><img src="" width=150px height=150px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
+<a href=""><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
 </tr>
