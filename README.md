@@ -66,6 +66,12 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 
 - 💡 Innovate and Experiment: The metaverse is an evolving landscape with endless possibilities. Feel free to experiment, push boundaries, and pioneer new ideas. Your innovative contributions can shape the future of the metaverse.
 
+## Existing Projects
+- [**Food Website**](https://65072ad6fbb37b52ebcf0b6c--radiant-macaron-33a884.netlify.app/#)
+- [**Travel Website**](https://64b13e4df4a6c611742591dc--jovial-creponne-00efd5.netlify.app/)
+- [**Temperature Converter**](https://apu52.github.io/Temperature_Converter/)
+- [**Scientific Calculator**](https://64fb629c05e2893c33d49429--thunderous-moxie-6ff646.netlify.app/)
+
 ## How to Contribute?
 
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues). 
