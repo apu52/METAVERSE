@@ -33,7 +33,6 @@
 
  ### This project is a part of following Open Source Programs
 
-<div align="center">
 <div>
   <img src="https://github.com/apu52/METAVERSE/assets/114172928/bd29d2ea-f851-4172-8306-4ca214f0312a" width="60%">
 </div>
@@ -156,7 +155,8 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 <a href="https://github.com/apu52/METAVERSE/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=apu52/METAVERSE" />
 </a>
-
+<div align="center">
+ 
 ## Project Admin
 
 <table>
@@ -179,7 +179,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 </tr>
 </table>
-
+</div>
 
 
 
