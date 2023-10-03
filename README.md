@@ -73,9 +73,11 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 - [**Scientific Calculator**](https://64fb629c05e2893c33d49429--thunderous-moxie-6ff646.netlify.app/)
 
 ## How to Contribute?
-
+- Drop a Star in this repo
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues). 
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
+- At first raise an issue in which you want to work
+- Then after assigning only then work on that issue & make a PR 
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
