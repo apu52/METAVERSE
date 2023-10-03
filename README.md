@@ -161,8 +161,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/apu52"><img src="![IMG-20221126-WA0049](https://github.com/apu52/METAVERSE/assets/114172928/13a749d4-4465-42a2-9cd7-bba87f85ff32)
-" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
+<td align="center"><a href="https://github.com/apu52"><img src="https://github.com/apu52/METAVERSE/assets/114172928/13a749d4-4465-42a2-9cd7-bba87f85ff32" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
 <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
@@ -173,7 +172,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <table>
 <tr>
-<td align="center"><a href=""><img src="" width=150px height=150px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
+<td align="center"><a href=""><img src="https://github.com/apu52/METAVERSE/assets/83227649/d84ce130-e2e5-4272-847a-78c0b5d7d057" width=150px height=150px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
 <a href=""><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
