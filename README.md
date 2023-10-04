@@ -34,7 +34,7 @@
  ### This project is a part of following Open Source Programs
 
 <div>
-  <img src="https://github.com/apu52/METAVERSE/assets/114172928/bd29d2ea-f851-4172-8306-4ca214f0312a" width="60%">
+  <img src="images/hack.jpeg" width="60%">
 </div>
   
 ##  About METAVERSE
@@ -163,7 +163,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/apu52"><img src="https://github.com/apu52/METAVERSE/assets/114172928/13a749d4-4465-42a2-9cd7-bba87f85ff32" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
+<td align="center"><a href="https://github.com/apu52"><img src="images/apu.jpeg" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
 <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
@@ -174,7 +174,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/5h0ov"><img src="https://github.com/apu52/METAVERSE/assets/83227649/d84ce130-e2e5-4272-847a-78c0b5d7d057" width=150px height=150px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
+<td align="center"><a href="https://github.com/5h0ov"><img src="images/shuv.jpg" width=150px height=150px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
 <a href=""><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
