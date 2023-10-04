@@ -17,6 +17,7 @@
 - At first raise an issue in which you want to work
 - Then after assigning only then work on that issue & make a PR 
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
+- REMINDER: Commit inside the Projects Folder
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
   ## Existing Projects
