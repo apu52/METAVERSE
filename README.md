@@ -70,7 +70,7 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 - **Make sure to add a proper README.md with tour PR that describes your project**
 - **Make sure to Update index.html.md file after submitting PR**
--
+
 
 ## How to make a Pull Request?
 
