@@ -54,8 +54,8 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 - <h3>🚀Learning Opportunity:</h3> If you're new to metaverse development, this repository is an excellent launchpad. Collaborate with experienced metaverse developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.
 
 ## What you can  Contribute?
-Find All the details in [**CONTRIBUTING.md**](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md)
-
+Find All the details in [**CONTRIBUTING.md**](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md) before contributing
+Please follow guidelines in [**Code_of_Conduct.md**](https://github.com/apu52/METAVERSE/blob/main/Code_of_conduct.md)
 
 ## How to Contribute?
 - Drop a Star in this repo
