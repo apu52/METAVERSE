@@ -62,12 +62,15 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues). 
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
 - At first raise an issue in which you want to work
-- Then after assigning only then work on that issue & make a PR 
+- **Please do not make more than 2 issues at a time , Once your PR have been merged only then go for the next issue**
+- **Then when you are get assigned  only then work on that issue & make a PR**
+- Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
-- REMINDER: Commit inside **the Projects** Folder
+- **REMINDER: Commit inside **the Projects** Folder**
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
-- Make sure to add a proper README.md with tour PR that describes your project
-- make sure to Update index.html.md file after submitting PR
+- **Make sure to add a proper README.md with tour PR that describes your project**
+- **Make sure to Update index.html.md file after submitting PR**
+-
 
 ## How to make a Pull Request?
 
