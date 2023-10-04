@@ -2,7 +2,7 @@
 name: Feature request
 about: Add features to Existing Projects
 title: Feature_Request
-labels: enhancement, feature request, help wanted
+labels: enhancement, feature request, hacktoberfest-accepted, help wanted
 assignees: ''
 
 ---
