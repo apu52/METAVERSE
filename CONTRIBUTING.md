@@ -21,6 +21,7 @@
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
   ## Existing Projects
+- [**Brick_Breaker_Game**](https://github.com/apu52/METAVERSE/tree/main/Projects/Brick_Breaker_Game)
 - [**Food Website**](https://65072ad6fbb37b52ebcf0b6c--radiant-macaron-33a884.netlify.app/#)
 - [**Travel Website**](https://64b13e4df4a6c611742591dc--jovial-creponne-00efd5.netlify.app/)
 - [**Temperature Converter**](https://apu52.github.io/Temperature_Converter/)
