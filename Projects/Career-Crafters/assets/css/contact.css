@@ -23,6 +23,7 @@ body{
 }
 /* BACK BUTTON */
 button{
+    margin:10px 0 0 10px;
     font-size: 15px;
     color: white;
     border-radius: 6px;
