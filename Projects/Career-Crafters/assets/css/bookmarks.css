@@ -11,10 +11,15 @@
     --softyellow: #fff5cc;
     --softRed: #ffcbc8;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
 /* BACK BUTTON */
 button{
-    margin-left: 10px;
+    margin:10px 0 0 10px;
     font-size: 15px;
     color: white;
     border-radius: 6px;

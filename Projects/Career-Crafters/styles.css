@@ -76,6 +76,7 @@ body {
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
+    width: 12em;
 }
 
 .profile:hover{
@@ -87,7 +88,13 @@ body {
     height: 30px;
     border-radius: 50%;
 }
-
+.profile-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
 .profile-name p{
     font-size: 12px;
 }
@@ -173,6 +180,7 @@ body {
     padding: 0.5rem;
     border-radius: 20px;
     border: none;
+    margin-bottom: 5px; 
     background-color: var(--whiteColor);
     cursor: pointer;
 }
@@ -360,7 +368,7 @@ body {
 .btn-apply{
     background-color: var(--primaryColor);
     color: var(--whiteColor);
-    border: none;
+    border:1px solid var(--primaryColor);
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -368,20 +376,20 @@ body {
 
 .btn-save{
     background-color: var(--secondaryColor);
-    border: none;
+    border:1px solid var(--secondaryColor);
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .btn-apply:hover{
-    border: 1px solid var(--primaryColor);
+    border:1px solid var(--primaryColor);
     background-color: transparent;
     color: var(--primaryColor);
 }
 
 .btn-save:hover{
-    border: 1px solid var(--secondaryColor);
+    border:1px solid var(--secondaryColor);
     background-color: transparent;
 }
 
@@ -448,6 +456,7 @@ body {
 
 /* SCROLLBAR */
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: rgba(85, 84, 84, 0.364);
