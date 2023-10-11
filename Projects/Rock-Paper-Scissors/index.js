@@ -20,44 +20,49 @@ function convertToWord(letter){
     return "Scissors";
 }
 
+//here we are making a function where the user wins
 function win(userChoice, compChoice){
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
     result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)}. You WIN! :)`;
-    document.getElementById(userChoice).classList.add('green_glow');
-    setTimeout(function(){ document.getElementById(userChoice).classList.remove('green_glow')},200)
+
 }
 
-
+//here we are making a fuction where the user loses
 function lose(userChoice,compChoice){
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
     result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(compChoice)}. You LOST! :(`;
-    document.getElementById(userChoice).classList.add('red_glow');
-    setTimeout(function(){ document.getElementById(userChoice).classList.remove('red_glow')},200)
+    
 }
+
+//here we are making a function where the user and the computer ties
 function tie(userChoice,compChoice){
     result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(compChoice)}. It's a DRAW!`;
-    document.getElementById(userChoice).classList.add('grey_glow');
-    setTimeout(function(){ document.getElementById(userChoice).classList.remove('grey_glow')},200)
+    
 }
 
 function game(userChoice){
     const compChoice= getComputerChoice();
 
+    //here we are putting the winning conditions
     switch(userChoice + compChoice){
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
             win(userChoice, compChoice);
             break;
+            
+    //here we are putting the losing conditions
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
             lose(userChoice, compChoice);
             break;
+
+    //here we are putting the conditions for a draw
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
