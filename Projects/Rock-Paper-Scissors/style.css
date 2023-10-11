@@ -1,0 +1,97 @@
+body{    
+    background-color:rgb(117, 117, 198);    
+    font-family:"Arial",sans-serif;    
+    margin:0;    
+    padding:0;
+}
+
+#game_name{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#direction{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.choices{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+#rock{
+    background-color:hsl(194, 86%, 67%);
+    font-size: 4rem;
+    margin: 0px 10px;
+    border-radius: 55%;
+    margin: 0px 10px;
+    
+
+}
+#paper{
+    background-color:hsl(114, 68%, 51%);
+    font-size: 4rem;
+    margin: 0px 10px;
+    border-radius: 55%;
+    
+    
+
+}
+#scissors{
+    background-color:hsl(0, 98%, 59%);
+    font-size: 4rem;
+    margin: 0px 10px;
+    border-radius: 55%;
+    margin: 0px 10px;
+    
+}
+
+.score_board{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(22, 21, 21);
+    margin-bottom: 50px;
+    
+}
+
+.result{
+    color: rgb(14, 14, 14);
+    font-weight: bold;
+    font-size: 1.9em;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+#user_score{
+    color:rgb(8, 247, 44);
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 25px;
+}
+#comp_score{
+    color: rgb(165, 29, 29);
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
