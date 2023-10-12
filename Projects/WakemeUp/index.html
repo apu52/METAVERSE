@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WakeMEup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid text-center bg-info">
+        <a class="navbar-brand fs-1" href="index.html" style="font-family: cursive;">WakeMEup</a>
+        <p><i>Always stay on time</i></p><br>
+    </div>
+    <br>
+    <div class="container">
+        
+        <div id="time" class="text-center "></div>
+        <form>
+            <div class="mb-3">
+              <label class="form-label">Hours</label>
+              <input type="number" class="form-control" id="hr">
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Minutes</label>
+              <input type="number" class="form-control" id="mr" required>
+            </div>
+            </form>
+            <i id="set" type="submit" class="fa-regular fa-plus fa-2xl" style="color: #ae00f3;"></i>
+        <div class="select">Select your tune
+            <button id="stop" class="btn btn-danger"><i class="fa-solid fa-pause"></i></button>
+        <button id="play" class="btn btn-info fl"><i class="fa-solid fa-play"></i></button><br><br>
+            <div id="s1" class="select sT">Tune 1</div>
+            <div id="s2" class="select sT">Tune 2</div>
+            <div id="s3" class="select sT">Tune 3</div>
+            <div id="s4" class="select sT">Tune 4</div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id="alarm_list">
+            <!-- Something -->
+        </div>
+        <br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <br>
+    <footer id="foot">Made with ❤ by <a href="https://mapur2.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Rupam</a></footer>
+    <br>
+</body>
+
+</html>
