@@ -17,3 +17,11 @@ Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Her
 
 
 ![hotstar](https://github.com/apu52/HotstarClone/assets/114172928/172d232d-a052-446d-bb7c-15396e918fa3)
+
+
+<h3>Instagram Clone  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous social media platform INSTAGRAM. I used HTML, CSS and Javascript .
+</p>
+
+![image](https://github.com/apu52/METAVERSE/assets/114172928/b2922d6c-4828-4583-8c57-748e93260f6f)
