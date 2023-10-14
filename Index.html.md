@@ -9,3 +9,11 @@ I used HTML, CSS and Javascript .
 <!-- if possible please attach the image of yor project -->
 
 
+
+<h3>Hotstar Clone  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform HOTSTAR. So, here is the frontend clone of the landing page👆🏻 .I used HTML, CSS and Javascript .
+</p>
+
+
+![hotstar](https://github.com/apu52/HotstarClone/assets/114172928/172d232d-a052-446d-bb7c-15396e918fa3)
