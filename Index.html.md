@@ -26,8 +26,18 @@ Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Her
 
 ![image](https://github.com/apu52/METAVERSE/assets/114172928/b2922d6c-4828-4583-8c57-748e93260f6f)
 
+
 <h3>Weather Application  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project--> 
 Hello everyone, in this project i have used HTML CSS JS(rapid api) to build a weather application.
 ![image](https://github.com/Ananta2545/METAVERSE/assets/116677159/0eb21a1d-bba0-4bd8-ad01-b1db19812839)
+
+
+
+<h3>Stopwatch <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous Application in our phone named STOPWATCH.I used HTML, CSS and Javascript .
+</p>
+
+https://github.com/apu52/Stopwatch-maker/assets/114172928/2cc065fe-f0bd-4759-9fa9-71d50844f31c
 
