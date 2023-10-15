@@ -30,6 +30,7 @@ Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Her
 <h3>Weather Application  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project--> 
 Hello everyone, in this project i have used HTML CSS JS(rapid api) to build a weather application.
+  
 ![image](https://github.com/Ananta2545/METAVERSE/assets/116677159/0eb21a1d-bba0-4bd8-ad01-b1db19812839)
 
 
