@@ -49,3 +49,8 @@ Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Her
 
 https://github.com/apu52/Stopwatch-maker/assets/114172928/2cc065fe-f0bd-4759-9fa9-71d50844f31c
 
+<h3>Book Review Website  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+I used HTML, CSS and will be adding Javascript .
+</p>
+<img src="./Projects/Book_review_website/Screenshot 2023-10-15 111845.png" alt="Description of the image">
