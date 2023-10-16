@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE ID CARDS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            width:100%;
+            background-color: #ccc;
+        }
+
+        #idCard {
+          background-color: white;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #qrCode {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .title {
+            display: flex;
+            height: 30vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card_container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+        .formContainer {
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #updateForm {
+          margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Qr Id Cards</h1>
+    </div>
+    <div class="card_container">
+        <div id="idCard">
+            <h1>ID Card</h1>
+            <p>Name: <span id="name">DEMO</span></p>
+            <p>Employee ID: <span id="employeeId">DEMO 123</span></p>
+            <div id="qrCode"></div>
+        </div>
+    </div>
+    <div class="formContainer">
+    <form id="updateForm">
+        <label for="newName">Name:</label>
+        <input type="text" id="newName" name="newName" required>
+
+        <label for="newEmployeeId">ID:</label>
+        <input type="text" id="newEmployeeId" name="newEmployeeId" required>
+
+        <button type="button" onclick="updateIDCard()">Update ID Card</button>
+    </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script>
+        // Function to generate QR code
+        function generateQRCode(text) {
+            // Clear existing content
+            $("#qrCode").empty();
+            
+            var qrcode = new QRCode(document.getElementById("qrCode"), {
+                text: text,
+                width: 128,
+                height: 128
+            });
+        }
+
+        // Initial Demo data
+        var userData = {
+            name: "DEMO",
+            employeeId: "DEMO123"
+        };
+
+        // Display user data
+        $("#name").text(userData.name);
+        $("#employeeId").text(userData.employeeId);
+
+        // Generate QR code with user data
+        var qrText = "Name: " + userData.name + "\nEmployee ID: " + userData.employeeId;
+        generateQRCode(qrText);
+
+        // Function to update ID card
+        function updateIDCard() {
+            var newName = $("#newName").val();
+            var newEmployeeId = $("#newEmployeeId").val();
+
+            // Update user data
+            $("#name").text(newName);
+            $("#employeeId").text(newEmployeeId);
+
+            // Generate QR code with updated user data
+            var updatedQrText = "Name: " + newName + "\nEmployee ID: " + newEmployeeId;
+            generateQRCode(updatedQrText);
+        }
+    </script>
+</body>
+
+</html>
