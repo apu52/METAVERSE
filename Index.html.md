@@ -64,3 +64,9 @@ I used HTML, CSS and will be adding Javascript .
 I used HTML, CSS and Bootstrap
 </p>
 <img src="./Projects/Tindog_website/Screenshot 2023-10-16 143401-1.png" alt="Description of the image">
+
+<h3>Calendar App</h3>
+<p>Tech stack used : HTML, CSS, Javascript<p>
+<p>Description : General purpose calendar with dark & light mode + some animation</p>
+<img src="./Projects/Calendar/screenshots/mobile-light.png">
+<img src="./Projects/Calendar/screenshots/mobile-night.png">
