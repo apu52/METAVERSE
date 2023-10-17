@@ -54,3 +54,13 @@ https://github.com/apu52/Stopwatch-maker/assets/114172928/2cc065fe-f0bd-4759-9fa
 I used HTML, CSS and will be adding Javascript .
 </p>
 <img src="./Projects/Book_review_website/Screenshot 2023-10-15 111845.png" alt="Description of the image">
+
+<h3>QR ID Card Generator</h3>
+<p> I used HTML, CSS and Javascript for the project. I used Javascript to generate and update QR code according to the information. Now I have also added some styling to the project.</p>
+
+
+<h3>Tindog:Startup website  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+I used HTML, CSS and Bootstrap
+</p>
+<img src="./Projects/Tindog_website/Screenshot 2023-10-16 143401-1.png" alt="Description of the image">
