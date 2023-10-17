@@ -1,9 +1,10 @@
 :root{
-    --greyColor: #aeaeae;
-    --textColor: white;
-    --mainColor: #ff8800;
-    --bodyColor: #5a6b8f;
-    --headerColor: #ff8800;
+    --textColor: black;
+    --whiteColor: white;
+    --blackColor: black;
+    --mainColor: #ffd000;
+    --orangeColor: #ff7300;
+    --bodyColor: #8897b9;
 }
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -29,6 +30,17 @@ body{
 ::-webkit-scrollbar{
     display: none;
 }
+/* blocking display of checkbox */
+input[type="checkbox"]{
+    display: none;
+}
+i{
+    font-size: 50px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .calendars{
     display: flex;
@@ -43,13 +55,13 @@ body{
     font-size: 3rem;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-    color: var(--headerColor);
+    color: var(--orangeColor);
 }
 
 /* calendar */
 .wrapper{
     width: 500px;
-    background: var(--textColor);
+    background: var(--whiteColor);
     border-radius: 1.5rem;
     box-shadow: 0 15px 40px rgba(0,0,0,0.3);
     justify-content: center;
@@ -59,14 +71,15 @@ body{
 
 .wrapper header{
     display: flex;
-    padding: 0.5rem 0rem;
-    color: black;
+    padding: 1rem 0.5rem;
+    color: var(--blackColor);
+    margin-bottom: 0.5rem;
 }
 
 header .current-date{
     flex: 5;
-    font-size: 1.9rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     display: flex;
     justify-content: center;
 }
@@ -78,10 +91,10 @@ header .icons span{
     height: 38px;
     width: 38px;
     cursor: pointer;
-    color: var(--greyColor);
+    color: var(--bodyColor);
     text-align: center;
     line-height: 38px;
-    font-size: 1.9rem;
+    font-size: 2rem;
     user-select: none;
     border-radius: 50%;
 }
@@ -102,9 +115,10 @@ header .icons span{
 }
 
 .calendar li{
-    color: black;
+    color: var(--blackColor);
     width: calc(100% / 7);
     font-size: 1.4rem;
+    
 }
 .calendar .weeks li{
     font-weight: 600;
@@ -130,7 +144,7 @@ header .icons span{
 }
 
 .days li.inactive{
-    color: var(--greyColor);
+    color: var(--bodyColor);
 }
 .days li.active{
     color: var(--textColor);
@@ -140,17 +154,17 @@ header .icons span{
     transition: all 0.4s;
 }
 .days li.today{
-    color: var(--textColor);
+    color: var(--whiteColor);
 }
 .days li.today::before{
-    background: var(--mainColor);  
+    background: var(--orangeColor);  
 }
 .days li:hover{
     transform: scale(1.1);
 }
 
 .blur{
-    background: rgba(253,120,43,0.69);
+    background: var(--mainColor);
     position: absolute;
     border-radius: 90%;
     filter: blur(150px);
@@ -158,14 +172,98 @@ header .icons span{
 }
 
 .first{
-    width: 18rem;
+    width: 12rem;
     height: 20rem;
     left: 10rem;
     top: 0;
+    transition: all 1s ease-in-out;
 }
 .second{
     width: 14rem;
-    height: 30rem;
+    height: 24rem;
     right: 0;
     top: 20rem;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark{
+    --textColor: white;
+    --mainColor: #3fffef;
+    --bodyColor: #37486d;
+}
+body.dark .wrapper{
+    background: var(--blackColor);
+}
+body.dark .wrapper header{
+    color: var(--whiteColor);
+}
+body.dark .wrapper header .current-date{
+    color: var(--whiteColor);
+}
+body.dark .calendars header {
+    color: var(--mainColor);
+}
+body.dark .wrapper header .icons span{
+    color: var(--mainColor);
+}
+body.dark .calendar li{
+    color: var(--whiteColor);
+}
+body.dark .calendar .days li{
+    color: var(--whiteColor);
+}
+body.dark .calendar .days li.today::before{
+    background: var(--mainColor);
+}
+body.dark .calendar .days li.active{
+    color: var(--textColor);
+}
+body.dark .calendar .days li.inactive{
+    color: var(--bodyColor);
+}
+body.dark .calendar .days li.today{
+    color: var(--blackColor);
+}
+body.dark .blur{
+    background: var(--mainColor);
+}
+
+body.dark .first{
+    top: 20rem;
+    transition: all 0.5s ease-in-out;
+}
+body.dark .second{
+    top: 0;
+    transition: all 1s ease-in-out;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    body{
+        height: 100vh;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    .calendar li{
+        color: black;
+        width: calc(100% / 7);
+        font-size: 1.1rem;
+    }
+    .calendar .days li{
+        z-index: 1;
+        cursor: pointer;
+        position: relative;
+        margin-top: 30px;
+    }
+    .first{
+        width: 50%;
+        height: 30rem;
+        left: 0;
+        top: 0;
+    }
+    .second{
+        display: none;
+    }
 }
