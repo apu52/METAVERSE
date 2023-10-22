@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.navbar ul li{
+    padding: 23px;
+    height: 25px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.navbar ul li input{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.search{
+    width: 30vw;
+}
+#nav-btn{
+    width: 80px;
+    font-size: 17px;
+    cursor: pointer;
+    background: linear-gradient(#0b0826, #bb00ff);
+    color: white;
+    font-family: 'Archivo Narrow';
+    border-color: whitesmoke;
+}
+#nav-btn:hover{
+    background: linear-gradient(rgb(240, 233, 233), rgb(51, 51, 241));
+}
+.container{
+    background-color: black;
+}
+.content{
+    margin: 100px 300px;
+}
+.content h1{
+    color: white;
+    font-size: 90px;
+    font-family: 'Work Sans', sans-serif;
+}
+.content p{
+    color: whitesmoke;
+    padding: 20px 0;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+.content p:hover{
+    text-decoration: underline;
+}
+h1:hover{
+    text-decoration: underline;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgb(36, 236, 220);
+    width: 22%;
+    border-radius: 5px;
+    background-color: rgb(252, 250, 250);
+}
+.card:hover{
+    box-shadow: 0 10px 20px 0 rgba(255, 0, 0, 0.945);
+}
+img{
+    width: 297px;
+    border-radius: 4px;
+}
+.card-body{
+    margin: 15px;
+    padding: 10px;
+}
+.card-text{
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 10px 0;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-body a{
+    font-size: 29px;
+    padding: 0 54px;
+}
+.btn{
+    background-color: rgb(90, 129, 238);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: linear-gradient(rgb(52, 233, 240),rgb(248, 76, 76));
+}
+footer{
+    text-align: center;
+}
+footer p{
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
