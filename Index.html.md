@@ -70,3 +70,8 @@ I used HTML, CSS and Bootstrap
 <p>Description : General purpose calendar with dark & light mode + some animation</p>
 <img src="./Projects/Calendar/screenshots/mobile-light.png">
 <img src="./Projects/Calendar/screenshots/mobile-night.png">
+
+<h3>Hackathon Finder</h3>
+<p>Tech stack used : HTML, CSS, Javascript<p>
+<p>Description : This website helps you to find hackathons all over the world</p>
+<img src="./Projects/Hackathon-Finder/img/Hackathon Finder.png">
