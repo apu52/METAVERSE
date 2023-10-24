@@ -75,3 +75,9 @@ I used HTML, CSS and Bootstrap
 <p>Tech stack used : HTML, CSS, Javascript<p>
 <p>Description : This website can help you finding hackathons all over the world</p>
 <img src="./Projects/Hackathons/img/Hackathon_Finder.png">
+
+<h3>A To-Do List Project  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+I used HTML, CSS(Bootstrap) and Javascript
+</p>
+<img src="./Projects/To-Do List Project/Screenshot 2023-10-24 121418.png" alt="Description of the image">
