@@ -34,6 +34,7 @@
  ### This project is a part of following Open Source Programs
 
 <div>
+  <img src="images/Code collab carnival.png" width="60%">
   <img src="images/hack.jpeg" width="60%">
 </div>
   
@@ -48,6 +49,8 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 - <h3>Diverse Metaverse Projects:</h3> Our repository features a wide spectrum of metaverse-related front-end projects. From HTML, CSS, and JavaScript to immersive React experiences, you'll find projects that push the boundaries of the metaverse.
 
 - <h3>🤝 Collaboration:</h3> Metaverse Front-End Playground thrives on collaboration. You can enhance existing metaverse projects, contribute new features, or even conjure up entirely new metaverse experiences. Your creative contributions are highly valued!
+
+- <h3>Join the CodeCollab Carnival at "Metaverse Repo"! 🎪</h3> We're excited to announce that "Metaverse Repo" is open to PR submissions for the CodeCollab Carnival, organized by OSEN, from October 23, 2023, to November 20, 2023. Join us for this exciting collaboration! 🌐🎉
 
 - <h3> 🎉 Hacktoberfest Affiliation:</h3> We're thrilled to be part of Hacktoberfest, the global celebration of open source. By contributing to Metaverse Front-End Playground, you can earn Hacktoberfest rewards and swag while shaping the future of the metaverse.
 
