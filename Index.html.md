@@ -64,3 +64,10 @@ I used HTML, CSS and will be adding Javascript .
 I used HTML, CSS and Bootstrap
 </p>
 <img src="./Projects/Tindog_website/Screenshot 2023-10-16 143401-1.png" alt="Description of the image">
+
+
+<h3>To-Do List Project  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+I used HTML, CSS(Bootstrap) and Javascript
+</p>
+<img src="./Projects/ToDo_List_Project/Screenshot 2023-10-24 121418.png" alt="Description of the image">
