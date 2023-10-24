@@ -12,10 +12,10 @@ Close #<issue_no>
 
 # Checklist:
 
-- [] I have mentioned the issue number in my Pull Request.
-- [] I have commented my code, particularly in hard-to-understand areas
-- [] I have created a helpful and easy to understand `README.md`
-- [] I have updated the Index.html file for my contribution
+- [ ] I have mentioned the issue number in my Pull Request.
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have created a helpful and easy to understand `README.md`
+- [ ] I have updated the Index.html file for my contribution
 <!-- [X] - put a cross/X inside [] to check the box -->
 **Additional context (Mandatory )**
 <!--Are you attending OSEN Code Collab Carnival 2023?  --> 
