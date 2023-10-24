@@ -17,3 +17,11 @@ Close #<issue_no>
 - [] I have created a helpful and easy to understand `README.md`
 - [] I have updated the Index.html file for my contribution
 <!-- [X] - put a cross/X inside [] to check the box -->
+**Additional context (Mandatory )**
+<!--Are you attending OSEN Code Collab Carnival 2023?  --> 
+- [ ] I am a contributor in OSEN open source programme
+
+<!--Are you attending HACTOBERFEST 2023?  --> 
+- [ ] I am a contributor in HACTOBERFEST 2023
+
+<!-- [X] - put a cross/X inside [] to check the  appropriate box -->
