@@ -76,7 +76,7 @@ I used HTML, CSS and Bootstrap
 <p>Description : This website can help you finding hackathons all over the world</p>
 <img src="./Projects/Hackathons/img/Hackathon_Finder.png">
 
-<h3>A Unit Converter <! --Name of your new Project --> </h3>
+<h3>A-Unit-Converter<! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 I used HTML, CSS(Bootstrap) and Javascripts
 </p>
