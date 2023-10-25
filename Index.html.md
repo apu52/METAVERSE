@@ -85,4 +85,4 @@ I used HTML, CSS(Bootstrap) and Javascript
 <h3>Finance Tracker</h3>
 <p>Tech stack used : react,crypto-js,firebase,mantine<p>
 <p>Description : A react app which is used to track all tranctions, you can over look at the expences and even the savings</p>
-<img src="./Projects/Finance Tracker/img4.png">
+<img src="./Projects/Finance_Tracker/img4.png">
