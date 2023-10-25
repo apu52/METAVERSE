@@ -1,0 +1,66 @@
+{
+  "name": "spd1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@mantine/carousel": "^6.0.7",
+    "@mantine/core": "^6.0.7",
+    "@mantine/dates": "^6.0.7",
+    "@mantine/dropzone": "^6.0.7",
+    "@mantine/form": "^6.0.7",
+    "@mantine/hooks": "^6.0.7",
+    "@mantine/modals": "^6.0.7",
+    "@mantine/notifications": "^6.0.7",
+    "@mantine/nprogress": "^6.0.7",
+    "@mantine/prism": "^6.0.7",
+    "@mantine/spotlight": "^6.0.7",
+    "@mantine/tiptap": "^6.0.7",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@tabler/icons-react": "^2.16.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tiptap/extension-link": "^2.0.3",
+    "@tiptap/react": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.7",
+    "embla-carousel-react": "^7.1.0",
+    "firebase": "^9.19.1",
+    "install": "^0.13.0",
+    "moment": "^2.29.4",
+    "npm": "^9.6.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

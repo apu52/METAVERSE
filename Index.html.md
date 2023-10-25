@@ -81,3 +81,8 @@ I used HTML, CSS and Bootstrap
 I used HTML, CSS(Bootstrap) and Javascript
 </p>
 <img src="./Projects/To-Do List Project/Screenshot 2023-10-24 121418.png" alt="Description of the image">
+
+<h3>Finance Tracker</h3>
+<p>Tech stack used : react,crypto-js,firebase,mantine<p>
+<p>Description : A react app which is used to track all tranctions, you can over look at the expences and even the savings</p>
+<img src="./Projects/Finance_Tracker/img4.png">

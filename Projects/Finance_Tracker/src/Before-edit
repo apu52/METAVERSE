@@ -1,0 +1,113 @@
+import { Box, Card, Container, Button,Modal} from "@mantine/core";
+import { useEffect, useState } from "react";
+import TransactionForm from "../components/TransactionForm";
+import { collection, getDoc, getDocs, query } from 'firebase/firestore';
+import { fireDb } from '../FirebaseConfig';
+import { useDispatch } from 'react-redux';
+import { ShowLoading, HideLoading} from '../redux/alertsSlice';
+import { showNotification } from "@mantine/notifications";
+import TransactionTable from "../components/TransactionTable";
+const Home = () => {
+
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  // 1st state
+  const [showForm, setShowForm] = useState(false);
+  const [formMode, setFormMode] = useState("add");
+
+  // 2nd AFTER FORM SUBMIT GET DATA
+  const [transactions, setTransactions] = useState([]);
+
+  // 3rd for selected transaction
+
+  const [selectedTransaction, setSelectedTransaction] = useState({});
+
+  const dispatch = useDispatch();
+
+  const getData = async () => {
+
+    try{
+      dispatch(ShowLoading());
+
+      const qry = query(collection(fireDb, `users/${user.id}/transactions`));
+      const response = await getDocs(qry)
+      
+      const data = response.docs.map((doc) => ({
+        id:doc.id,
+        ...doc.data(),
+      }))
+
+      setTransactions(data);
+
+      // Hideform
+      setShowForm(false);
+
+      dispatch(HideLoading());
+      
+    }catch(error){
+        dispatch(HideLoading());
+    }
+  }
+
+
+  useEffect(() => {
+    getData();
+  },[])
+    
+  return (
+    <Container size={"lg"}>
+      <Box>
+        <Card 
+        sx={{
+          height:"80vh"
+        }}
+        shadow={"md"}
+        withBorder
+        mt={50}>
+
+          <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+               <div>
+                   Filter
+               </div>
+               <div>
+                   <Button color="indigo" 
+                   onClick={() => {
+                    setShowForm(true);
+                    setFormMode("add");
+                   }}>
+                       <i className="ri-add-line" style={{fontSize:"18px", marginRight:"10px"}}></i>
+                       Add Transction
+                   </Button>
+               </div>
+          </div>
+          <TransactionTable 
+          transactions={transactions} 
+          setSelectedTransaction={setSelectedTransaction}
+          setFormMode={setFormMode}
+          setShowForm={setShowForm}/>
+        </Card>
+
+        {/* last Show Data after get */}
+      
+        
+      </Box>
+    
+
+      <Modal
+        size={"md"}
+        centered
+        opened={showForm} 
+        onClose={() => setShowForm(false)} title={
+        formMode === "add" ? "Add Transaction" : "Edit Transaction"
+      }>
+        <TransactionForm
+        formMode={formMode}
+        setFormMode={setFormMode}
+        setShowForm={setShowForm}
+        showForm={showForm}/>
+      </Modal>
+    </Container>
+  )
+}
+
+export default Home
