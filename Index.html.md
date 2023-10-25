@@ -81,10 +81,3 @@ I used HTML, CSS and Bootstrap
 I used HTML, CSS(Bootstrap) and Javascript
 </p>
 <img src="./Projects/To-Do List Project/Screenshot 2023-10-24 121418.png" alt="Description of the image">
-
-<h3>A Unit Converter  <! --Name of your new Project --> </h3>
-<p> <! --Describe the Tech Stack of your Project-->
-I used HTML, CSS(Bootstrap) and Javascript
-</p>
-<img src="![image](https://github.com/apu52/METAVERSE/assets/114533828/fd84cf44-dedc-43b6-8bde-3d4b60e51f21)
-" alt="Description of the image">
