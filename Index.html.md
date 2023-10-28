@@ -1,6 +1,10 @@
 <h1>Front-end Projects</h1>
 <h2>Update this list after Adding New Projects</h2>
 
+<h3>Survey Form  <! --Name of your new Project --> </h3>
+<p> Basically this is a survey forms' frontend part using HTML & CSS ..
+Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all fill the survey form for various purpose and this is the frontend part of it.I used HTML and CSS .
+
 <h3>GOOGLE_DRIVE_CLONE Clone  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform Google Drive. So, here is the frontend clone of the landing page👆🏻 .I used HTML and CSS .
@@ -12,8 +16,9 @@ Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here
 <p> <! --Describe the Tech Stack of your Project-->
 I used HTML, CSS and Javascript .
 </p>
-<img src="./Projects/WakemeUp/SS.png" alt="Description of the image">
-<!-- if possible please attach the image of yor project -->
+
+
+![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
 
 
 
