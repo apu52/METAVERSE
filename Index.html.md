@@ -7,14 +7,7 @@ Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here
 </p>
 
 
-![hotstar](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
-
-<h3>WakeMeUp  <! --Name of your new Project --> </h3>
-<p> <! --Describe the Tech Stack of your Project-->
-I used HTML, CSS and Javascript .
-</p>
-<img src="./Projects/WakemeUp/SS.png" alt="Description of the image">
-<!-- if possible please attach the image of yor project -->
+![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
 
 
 
