@@ -3,8 +3,11 @@
 
 
 <h3>LogIn Page  <! --Name of your new Project --> </h3>
-<p> This is a frontend of a Log In page using HTML & CSS
-Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the log in page before using any app or web. I used HTML and CSS .
+<p> Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. This is a frontend part of a login page. I used HTML and CSS .
+  
+![LogIn Page](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
+
+
 <h3>Survey Form  <! --Name of your new Project --> </h3>
 <p> Basically this is a survey forms' frontend part using HTML & CSS ..
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all fill the survey form for various purpose and this is the frontend part of it.I used HTML and CSS .
