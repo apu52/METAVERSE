@@ -6,15 +6,7 @@
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the log in page before using any app or web. I used HTML and CSS .
 </p>
 
-![image](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
-
-<h3>WakeMeUp  <! --Name of your new Project --> </h3>
-<p> <! --Describe the Tech Stack of your Project-->
-I used HTML, CSS and Javascript .
-</p>
-<img src="./Projects/WakemeUp/SS.png" alt="Description of the image">
-<!-- if possible please attach the image of yor project -->
-
+![LogInPage](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
 
 
 <h3>Hotstar Clone  <! --Name of your new Project --> </h3>
