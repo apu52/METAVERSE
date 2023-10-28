@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE ID CARDS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="title">
+        <div class="heading">
+            <h1>Qr ID Cards</h1>
+        </div>
+    </div>
+    <div class="card_container">
+        <div id="idCard">
+            <div class="profile-container">
+                <img src="./demo.png" alt="Profile" id="profileImg">
+            </div>
+            <h1>ID Card</h1>
+            <div class="details">
+                <div class="nonQR">
+                    <p><b>Name: </b><span id="name">DEMO</span></p>
+                    <p><b>ID: </b><span id="employeeId">DEMO 123</span></p>
+                </div>
+                <div id="qrCode"></div>
+            </div>
+        </div>
+    </div>
+    <div class="formContainer">
+        <form id="updateForm">
+            <div class="inputdiv">
+                <label for="newName">Name:</label>
+                <input type="text" id="newName" name="newName" placeholder="Name" required>
+            </div>
+            <div class="inputdiv">
+                <label for="newEmployeeId">ID:</label>
+                <input type="text" id="newEmployeeId" name="newEmployeeId" placeholder="ID" required>
+            </div>
+            <div class="inputdiv">
+                <label for="profileImage">Profile Photo URL:</label>
+                <input type="text" id="profileImage" name="profileImage" placeholder="Enter image URL">
+            </div>
+            <button type="button" onclick="updateIDCard()">Update ID Card</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
