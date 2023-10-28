@@ -1,9 +1,6 @@
 <h1>Front-end Projects</h1>
 <h2>Update this list after Adding New Projects</h2>
 
-<h3>Survey Form  <! --Name of your new Project --> </h3>
-<p> Basically this is a survey forms' frontend part using HTML & CSS ..
-Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all fill the survey form for various purpose and this is the frontend part of it.I used HTML and CSS .
 
 ![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
 
@@ -13,6 +10,15 @@ Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here
 </p>
 
 ![Google_Drive_Clone](https://github.com/paulsuryanshu/Google_Drive_Clone/blob/main/Screenshot%20(298).png)
+
+<h3>WakeMeUp  <! --Name of your new Project --> </h3>
+<p> <! --Describe the Tech Stack of your Project-->
+I used HTML, CSS and Javascript .
+
+</p>
+
+![image](https://github.com/apu52/METAVERSE/assets/114172928/80034620-a6ab-42f5-9edc-52a9639279ab)
+
 
 
 <h3>Hotstar Clone  <! --Name of your new Project --> </h3>
@@ -77,8 +83,8 @@ I used HTML, CSS and Bootstrap
 <h3>A-Unit-Converter<! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 I have used HTML, CSS(Bootstrap) and Javascripts</p>
-<img src="![image](https://github.com/apu52/METAVERSE/assets/114533828/d4cf045a-cbb5-4a15-8e84-74cf302b4f9a)
-" alt="Description of the image">
+
+
 
 <h3>A To-Do List Project  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
@@ -91,3 +97,7 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Description : A react app which is used to track all tranctions, you can over look at the expences and even the savings</p>
 <img src="./Projects/Finance_Tracker/img4.png">
 
+<h3>Url Shortener</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description : An URL shortener is a website that reduces the length of your URL (Uniform Resource Locator). The idea is to minimize the web page address into something that’s easier to remember and track. </p>
+<img src = "https://github.com/Geeks-Arpan/URL_SHORTENER/blob/5d89ab3b1c723e8b62a1d57f04825ace6ea389d9/Front%20Page.png">
