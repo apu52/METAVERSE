@@ -26,14 +26,6 @@ I used HTML, CSS and Javascript .
 
 </p>
 
-
-
-![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
-
-
-![LogInPage](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
-
-
 <h3>Hotstar Clone  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform HOTSTAR. So, here is the frontend clone of the landing page👆🏻 .I used HTML, CSS and Javascript .
