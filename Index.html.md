@@ -5,21 +5,14 @@
 <p> Basically this is a survey forms' frontend part using HTML & CSS ..
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all fill the survey form for various purpose and this is the frontend part of it.I used HTML and CSS .
 
+![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
+
 <h3>GOOGLE_DRIVE_CLONE Clone  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform Google Drive. So, here is the frontend clone of the landing page👆🏻 .I used HTML and CSS .
 </p>
 
 ![Google_Drive_Clone](https://github.com/paulsuryanshu/Google_Drive_Clone/blob/main/Screenshot%20(298).png)
-
-<h3>WakeMeUp  <! --Name of your new Project --> </h3>
-<p> <! --Describe the Tech Stack of your Project-->
-I used HTML, CSS and Javascript .
-</p>
-
-
-![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
-
 
 
 <h3>Hotstar Clone  <! --Name of your new Project --> </h3>
