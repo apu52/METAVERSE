@@ -9,11 +9,6 @@
 ![LogIn Page](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
 
 
-<h3>Survey Form  <! --Name of your new Project --> </h3>
-<p> Basically this is a survey forms' frontend part using HTML & CSS ..
-Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all fill the survey form for various purpose and this is the frontend part of it.I used HTML and CSS .
-
-
 
 
 <h3>GOOGLE_DRIVE_CLONE Clone  <! --Name of your new Project --> </h3>
