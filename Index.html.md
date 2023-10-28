@@ -94,8 +94,8 @@ I used HTML, CSS and Bootstrap
 <h3>A-Unit-Converter<! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 I have used HTML, CSS(Bootstrap) and Javascripts</p>
-<img src="![image](https://github.com/apu52/METAVERSE/assets/114533828/d4cf045a-cbb5-4a15-8e84-74cf302b4f9a)
-" alt="Description of the image">
+
+
 
 <h3>A To-Do List Project  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
