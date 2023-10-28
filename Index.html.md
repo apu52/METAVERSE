@@ -93,3 +93,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Description : A react app which is used to track all tranctions, you can over look at the expences and even the savings</p>
 <img src="./Projects/Finance_Tracker/img4.png">
 
+<h3>URL Shortener</h3>
+<p>Tech stack used : Html, Css and Javascript<p>
+<p>Description : An URL shortener is a website that reduces the length of your URL (Uniform Resource Locator). The idea is to minimize the web page address into something that’s easier to remember and track. </p>
+<img src="https://github.com/Geeks-Arpan/URL_SHORTENER/blob/5d89ab3b1c723e8b62a1d57f04825ace6ea389d9/Front%20Page.png">
+
