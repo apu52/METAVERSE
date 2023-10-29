@@ -1,7 +1,7 @@
 
 
 # <p align = "center"> METAVERSE </p>
-<img align ="center" > ![image](https://github.com/apu52/oibsip_taskno/assets/114172928/6d429421-b973-4179-823a-b49eedaf942c) </img>
+<img align ="center" > ![image]() </img>
 
 <div align="center">
  <p>
