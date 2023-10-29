@@ -125,3 +125,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: An ecommerce website is a website that allows you to buy and sell products or services online. Ecommerce websites can be designed to sell: Physical products, Digital products, Services.</p>
 <img src = "https://github.com/Geeks-Arpan/E-Commerce_Website/assets/99377659/a38170d7-467b-4964-aee4-7a2929ca2436">
+
+<h3>Score Keeper</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: The easy-to-use score keeper for all your games or other activities. • Keep track of scores for any game or activity. • Customizable design to fit your needs. • Add and keep scores with a simple tap. • Choose the amount by which scores are increased or decreased. </p>
+<img src = "https://github.com/Geeks-Arpan/Score-Keeper/assets/99377659/92e4b6ba-30a6-435d-8d8f-ab49e50f546f">
