@@ -1,7 +1,6 @@
-
-
 # <p align = "center"> METAVERSE </p>
-<img align ="center" > ![image](https://github.com/apu52/oibsip_taskno/assets/114172928/6d429421-b973-4179-823a-b49eedaf942c) </img>
+
+<img align ="center" > ![image](./images/Metaverse%20poster.gif) </img>
 
 <div align="center">
  <p>
@@ -13,7 +12,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/apu52/METAVERSE)
 ![GitHub contributors](https://img.shields.io/github/contributors/apu52/METAVERSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/apu52/METAVERSE)
-  
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/apu52/METAVERSE)
 
 ![Github](https://img.shields.io/github/license/apu52/METAVERSE)
@@ -21,6 +20,7 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/apu52/METAVERSE)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/apu52/METAVERSE)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/apu52/METAVERSE)
+
  </p>
  </div>
  <br>
@@ -31,7 +31,7 @@
  
  ## 📌 Open Source Program
 
- ### This project is a part of following Open Source Programs
+### This project is a part of following Open Source Programs
 
 <div>
   <img src="images/Code collab carnival.png" width="60%">
@@ -42,8 +42,8 @@
 Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!
 
+## Blog
 
-##  Blog 
 <h2>What You'll Discover Here:</h2>
 
 - <h3>Diverse Metaverse Projects:</h3> Our repository features a wide spectrum of metaverse-related front-end projects. From HTML, CSS, and JavaScript to immersive React experiences, you'll find projects that push the boundaries of the metaverse.
@@ -56,24 +56,25 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 
 - <h3>🚀Learning Opportunity:</h3> If you're new to metaverse development, this repository is an excellent launchpad. Collaborate with experienced metaverse developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.
 
-## What you can  Contribute?
+## What you can Contribute?
+
 - Find All the details in [**CONTRIBUTING.md**](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md) before contributing
 - Please follow guidelines in [**Code_of_Conduct.md**](https://github.com/apu52/METAVERSE/blob/main/Code_of_conduct.md)
 
 ## How to Contribute?
+
 - Drop a Star in this repo
-- Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues). 
+- Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues).
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
 - At first raise an issue in which you want to work
 - **Please do not make more than 2 issues at a time , Once your PR have been merged only then go for the next issue**
-- **Then when you are get assigned  only then work on that issue & make a PR**
+- **Then when you are get assigned only then work on that issue & make a PR**
 - Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
 - **REMINDER: Commit inside **the Projects** Folder**
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 - **Make sure to add a proper README.md with tour PR that describes your project**
 - **Make sure to Update index.html.md file after submitting PR**
-
 
 ## How to make a Pull Request?
 
@@ -102,11 +103,13 @@ git remote add upstream https://github.com/apu52/METAVERSE
 ```bash
 git checkout -b YourBranchName
 ```
+
 <i>or</i>
+
 ```bash
 git branch YourBranchName
 git switch YourBranchName
-``` 
+```
 
 **6.** Sync your fork or local repository with the origin repository:
 
@@ -131,7 +134,7 @@ git merge upstream/main
 
 ⚠️ **Make sure** not to commit `package.json` or `package-lock.json` file
 
-⚠️ **Make sure** not to run the commands ```git add .``` or ```git add *```. Instead, stage your changes for each file/folder
+⚠️ **Make sure** not to run the commands `git add .` or `git add *`. Instead, stage your changes for each file/folder
 
 ```bash
 git add file/folder
@@ -151,13 +154,10 @@ git push origin YourBranchName
 
  <h2>Congratulations! You've made your first contribution! 🙌🏼</h2>
 
- 
-
 </br>
 <p align = "center">
 Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo
 </p>
-
 
 ## Project Contributors
 
@@ -188,7 +188,3 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 </tr>
 </table>
 </div>
-
-
-
-
