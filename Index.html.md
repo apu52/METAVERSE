@@ -138,3 +138,9 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: The easy-to-use score keeper for all your games or other activities. • Keep track of scores for any game or activity. • Customizable design to fit your needs. • Add and keep scores with a simple tap. • Choose the amount by which scores are increased or decreased. </p>
 <img src = "https://github.com/Geeks-Arpan/Score-Keeper/assets/99377659/92e4b6ba-30a6-435d-8d8f-ab49e50f546f">
+
+<h3>Quiz App</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: Quiz apps are games that allow players to answer questions on a certain topic. Quiz apps can be used to create, take, and share quizzes. </p>
+<img src = "https://github.com/Geeks-Arpan/Quiz-App/assets/99377659/d7b780ab-a695-45a3-acbd-69e1a606f8d9">
+
