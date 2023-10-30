@@ -125,3 +125,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: An ecommerce website is a website that allows you to buy and sell products or services online. Ecommerce websites can be designed to sell: Physical products, Digital products, Services.</p>
 <img src = "https://github.com/Geeks-Arpan/E-Commerce_Website/assets/99377659/a38170d7-467b-4964-aee4-7a2929ca2436">
+
+<h3>Quiz App</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: Quiz apps are games that allow players to answer questions on a certain topic. Quiz apps can be used to create, take, and share quizzes.</p>
+<img src = "https://github.com/Geeks-Arpan/Quiz-App/assets/99377659/d7b780ab-a695-45a3-acbd-69e1a606f8d9">
