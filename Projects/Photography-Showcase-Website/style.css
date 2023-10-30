@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0
+  }
+  .parent:first-of-type {
+    background: #ffffff url("http://s8.favim.com/orig/140403/art-flower-flowers-grunge-Favim.com-1605689.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .parent:nth-of-type(2) {
+    background: #ffffff url("http://s9.favim.com/orig/130908/beauty-flower-flowers-photo-Favim.com-906054.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .parent:nth-of-type(3) {
+    background: #ffffff url("http://s12.favim.com/orig/160220/flowers-grunge-hipster-photography-Favim.com-4023702.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .parent:nth-of-type(4) {
+    background: #ffffff url("http://data.whicdn.com/images/59213807/original.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .parent:last-of-type {
+    background: #ffffff url("http://s3.favim.com/orig/47/beautiful-cute-flowers-rain-red-Favim.com-436699.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .parent {
+    width: 100%;
+    height: 150vh;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-family: tahoma;
+    text-align: center;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden
+  }
+  .parent p {
+    padding: 25px
+  }
+  
