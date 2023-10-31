@@ -125,3 +125,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: An ecommerce website is a website that allows you to buy and sell products or services online. Ecommerce websites can be designed to sell: Physical products, Digital products, Services.</p>
 <img src = "https://github.com/Geeks-Arpan/E-Commerce_Website/assets/99377659/a38170d7-467b-4964-aee4-7a2929ca2436">
+
+<h3>Age Calculator</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: The Age Calculator can determine the age or interval between two dates. The calculated age will be displayed in years, months, Date of Birth.</p>
+<img src = "https://github.com/Geeks-Arpan/Age-Calculator/assets/99377659/6cb869ad-86c3-4565-b07b-cf1038d97cbd">
