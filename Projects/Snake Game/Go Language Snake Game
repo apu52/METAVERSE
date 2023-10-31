@@ -1,0 +1,193 @@
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"os"
+	"os/exec"
+	"time"
+)
+
+const (
+	width  = 20
+	height = 10
+)
+
+var (
+	headX, headY   int
+	foodX, foodY   int
+	snakeX, snakeY []int
+	score          int
+	gameOver       bool
+	direction      string
+)
+
+func clearScreen() {
+	cmd := exec.Command("clear")
+	cmd.Stdout = os.Stdout
+	cmd.Run()
+}
+
+func setup() {
+	rand.Seed(time.Now().UnixNano())
+	headX = width / 2
+	headY = height / 2
+	snakeX = []int{headX}
+	snakeY = []int{headY}
+	foodX = rand.Intn(width)
+	foodY = rand.Intn(height)
+	score = 0
+	gameOver = false
+	direction = "STOP"
+}
+
+func draw() {
+	clearScreen()
+
+	for i := 0; i < width+2; i++ {
+		fmt.Print("#")
+	}
+	fmt.Println()
+
+	for i := 0; i < height; i++ {
+		for j := 0; j < width; j++ {
+			if j == 0 {
+				fmt.Print("#")
+			}
+			if i == headY && j == headX {
+				fmt.Print("O")
+			} else if i == foodY && j == foodX {
+				fmt.Print("F")
+			} else {
+				food := false
+				for k := 0; k < len(snakeX); k++ {
+					if snakeX[k] == j && snakeY[k] == i {
+						fmt.Print("o")
+						food = true
+					}
+				}
+				if !food {
+					fmt.Print(" ")
+				}
+			}
+			if j == width-1 {
+				fmt.Print("#")
+			}
+		}
+		fmt.Println()
+	}
+
+	for i := 0; i < width+2; i++ {
+		fmt.Print("#")
+	}
+	fmt.Println()
+	fmt.Println("Score:", score)
+}
+
+func input() {
+	if kbhit() {
+		key := getKey()
+		switch key {
+		case "w":
+			direction = "UP"
+		case "s":
+			direction = "DOWN"
+		case "a":
+			direction = "LEFT"
+		case "d":
+			direction = "RIGHT"
+		case "x":
+			gameOver = true
+		}
+	}
+}
+
+func logic() {
+	prevX := snakeX[0]
+	prevY := snakeY[0]
+	prev2X, prev2Y := 0, 0
+
+	switch direction {
+	case "UP":
+		snakeY[0]--
+	case "DOWN":
+		snakeY[0]++
+	case "LEFT":
+		snakeX[0]--
+	case "RIGHT":
+		snakeX[0]++
+	}
+
+	for i := 1; i < len(snakeX); i++ {
+		prev2X = snakeX[i]
+		prev2Y = snakeY[i]
+		snakeX[i] = prevX
+		snakeY[i] = prevY
+		prevX = prev2X
+		prevY = prev2Y
+	}
+
+	if headX == foodX && headY == foodY {
+		score++
+		foodX = rand.Intn(width)
+		foodY = rand.Intn(height)
+		snakeX = append(snakeX, prevX)
+		snakeY = append(snakeY, prevY)
+	}
+
+	if headX < 0 || headX >= width || headY < 0 || headY >= height {
+		gameOver = true
+	}
+
+	for i := 1; i < len(snakeX); i++ {
+		if headX == snakeX[i] && headY == snakeY[i] {
+			gameOver = true
+		}
+	}
+}
+
+func main() {
+	setup()
+
+	for !gameOver {
+		draw()
+		input()
+		logic()
+		time.Sleep(100 * time.Millisecond)
+	}
+	fmt.Println("Game Over. Your Score:", score)
+}
+
+func kbhit() bool {
+	fd := os.Stdin.Fd()
+	term := termios{}
+	tcgetattr(fd, &term)
+	term.c_lflag &^= ICANON | ECHO
+	tcsetattr(fd, TCSANOW, &term)
+
+	defer tcsetattr(fd, TCSANOW, &oldterm)
+	set := make([]byte, 1)
+	_, err := os.Stdin.Read(set)
+	if err != nil {
+		return false
+	}
+
+	return true
+}
+
+func getKey() string {
+	fd := os.Stdin.Fd()
+	term := termios{}
+	tcgetattr(fd, &term)
+	term.c_lflag &^= ICANON | ECHO
+	tcsetattr(fd, TCSANOW, &term)
+
+	defer tcsetattr(fd, TCSANOW, &oldterm)
+	set := make([]byte, 1)
+	_, err := os.Stdin.Read(set)
+	if err != nil {
+		return ""
+	}
+
+	return string(set)
+}
