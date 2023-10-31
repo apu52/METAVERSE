@@ -144,3 +144,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Description: Quiz apps are games that allow players to answer questions on a certain topic. Quiz apps can be used to create, take, and share quizzes. </p>
 <img src = "https://github.com/Geeks-Arpan/Quiz-App/assets/99377659/d7b780ab-a695-45a3-acbd-69e1a606f8d9">
 
+Age-Calculator
+<h3>Age Calculator</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: The Age Calculator can determine the age or interval between two dates. The calculated age will be displayed in years, months, Date of Birth.</p>
+<img src = "https://github.com/Geeks-Arpan/Age-Calculator/assets/99377659/6cb869ad-86c3-4565-b07b-cf1038d97cbd">
