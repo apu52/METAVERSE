@@ -149,3 +149,9 @@ Age-Calculator
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: The Age Calculator can determine the age or interval between two dates. The calculated age will be displayed in years, months, Date of Birth.</p>
 <img src = "https://github.com/Geeks-Arpan/Age-Calculator/assets/99377659/6cb869ad-86c3-4565-b07b-cf1038d97cbd">
+
+Text-to-Voice-Converter
+<h3>Text to Voice Converter</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: Text-to-speech (TTS) is a type of assistive technology that reads digital text aloud.</p>
+<img src = "https://github.com/Geeks-Arpan/Text-to-Voice-Converter/assets/99377659/451b1477-5d72-4e90-aa22-06bceb8cd0d7">
