@@ -1,32 +1,24 @@
 <h1>Front-end Projects</h1>
 <h2>Update this list after Adding New Projects</h2>
 
-
-
-
 <h3>LogIn Page  <! --Name of your new Project --> </h3>
 <p> Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. This is a frontend part of a login page. I used HTML and CSS .
   
 ![LogIn Page](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
-
-
-
-
 
 <h3>Survey From  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. So, here is the frontend of a survey form .I used HTML and CSS .
 </p>
 
-![SurveyForm](https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png)
-
+![SurveyForm](<https://github.com/paulsuryanshu/Survey-Form/blob/main/Survey%20Form/Screenshot%20(301).png>)
 
 <h3>GOOGLE_DRIVE_CLONE Clone  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform Google Drive. So, here is the frontend clone of the landing page👆🏻 .I used HTML and CSS .
 </p>
 
-![Google_Drive_Clone](https://github.com/paulsuryanshu/Google_Drive_Clone/blob/main/Screenshot%20(298).png)
+![Google_Drive_Clone](<https://github.com/paulsuryanshu/Google_Drive_Clone/blob/main/Screenshot%20(298).png>)
 
 <h3>WakeMeUp  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
@@ -34,20 +26,14 @@ I used HTML, CSS and Javascript .
 
 </p>
 
-
 ![image](https://github.com/apu52/METAVERSE/assets/114172928/80034620-a6ab-42f5-9edc-52a9639279ab)
-
-
-
 
 <h3>Hotstar Clone  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform HOTSTAR. So, here is the frontend clone of the landing page👆🏻 .I used HTML, CSS and Javascript .
 </p>
 
-
 ![hotstar](https://github.com/apu52/HotstarClone/assets/114172928/172d232d-a052-446d-bb7c-15396e918fa3)
-
 
 <h3>Instagram Clone  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
@@ -56,14 +42,11 @@ Hello Coders👨‍💻 ,I am Arpan Chowdhury, a aspiring Web developer.🤖 Her
 
 ![image](https://github.com/apu52/METAVERSE/assets/114172928/b2922d6c-4828-4583-8c57-748e93260f6f)
 
-
 <h3>Weather Application  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project--> 
 Hello everyone, in this project i have used HTML CSS JS(rapid api) to build a weather application.
   
 ![image](https://github.com/Ananta2545/METAVERSE/assets/116677159/0eb21a1d-bba0-4bd8-ad01-b1db19812839)
-
-
 
 <h3>Stopwatch <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
@@ -80,7 +63,6 @@ I used HTML, CSS and will be adding Javascript .
 
 <h3>QR ID Card Generator</h3>
 <p> I used HTML, CSS and Javascript for the project. I used Javascript to generate and update QR code according to the information. Now I have also added some styling to the project.</p>
-
 
 <h3>Tindog:Startup website  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
@@ -103,8 +85,6 @@ I used HTML, CSS and Bootstrap
 <p> <! --Describe the Tech Stack of your Project-->
 I have used HTML, CSS(Bootstrap) and Javascripts</p>
 
-
-
 <h3>A To-Do List Project  <! --Name of your new Project --> </h3>
 <p> <! --Describe the Tech Stack of your Project-->
 I used HTML, CSS(Bootstrap) and Javascript
@@ -125,3 +105,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: An ecommerce website is a website that allows you to buy and sell products or services online. Ecommerce websites can be designed to sell: Physical products, Digital products, Services.</p>
 <img src = "https://github.com/Geeks-Arpan/E-Commerce_Website/assets/99377659/a38170d7-467b-4964-aee4-7a2929ca2436">
+
+<h1>Restaurant Website(Frontend project)</h1>
+<h2>This is a simple Frontend based projects names Restaurant Website.</h2>
+
+![Restaurant Website](https://github.com/Suraj-kumar00/Restaurant_Website/assets/123288511/6cef1491-93eb-4503-a3f1-405622b6a2e6)
