@@ -20,7 +20,5 @@ assignees: ''
 <!--Are you attending OSEN Code Collab Carnival 2023?  --> 
 - [ ] I am a contributor in OSEN open source programme
 
-<!--Are you attending HACTOBERFEST 2023?  --> 
-- [ ] I am a contributor in HACTOBERFEST 2023
 
 <!-- [X] - put a cross/X inside [] to check the  appropriate box -->
