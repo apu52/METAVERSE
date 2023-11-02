@@ -10,6 +10,11 @@ Close #<issue_no>
 <!-- Example Close #244  -->
 <!-- Replace `issue_no` with the issue number which is fixed in this PR -->
 
+
+# Video (mandatory)
+<!--Please try to attach the working video of your new deployed project here -->
+<!-- It is not applicable for the templates of adding feature or fixing bugs -->
+
 # Checklist:
 
 - [ ] I have mentioned the issue number in my Pull Request.
@@ -21,7 +26,6 @@ Close #<issue_no>
 <!--Are you attending OSEN Code Collab Carnival 2023?  --> 
 - [ ] I am a contributor in OSEN open source programme
 
-<!--Are you attending HACTOBERFEST 2023?  --> 
-- [ ] I am a contributor in HACTOBERFEST 2023
+
 
 <!-- [X] - put a cross/X inside [] to check the  appropriate box -->

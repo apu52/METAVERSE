@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	background-color: rgb(231, 231, 231);
+}
+header {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+.heading {
+	color: rgb(0, 19, 128);
+}
+
+.container {
+	height: 620px;
+	width: 1000px;
+	background-color: white;
+	box-shadow: 8px 8px 20px rgb(128, 128, 128);
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.container-header {
+	height: 90px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.container-header input {
+	height: 50px;
+	width: 400px;
+	font-size: 25px;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 5px;
+}
+
+.push,
+.pop,
+.reset,
+.box {
+	height: 50px;
+	width: 140px;
+	font-size: 25px;
+	background-color: rgb(119, 128, 0);
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.2s;
+	border: none;
+}
+.disable-button {
+	background-color: rgb(0, 59, 0);
+}
+
+.container-header button:active {
+	transform: scale(0.95);
+}
+.container-body {
+	width: 1000px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.stack {
+	width: 500px;
+	height: 470px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-width: 0 3px 0 0;
+	border-color: black;
+	border-style: solid;
+}
+
+.main-stack-bucket {
+	height: 450px;
+	width: 200px;
+	border-width: 0 4px 4px 4px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	flex-direction: column-reverse;
+	gap: 5px;
+	padding-bottom: 5px;
+}
+
+.ele {
+	height: 80px;
+	width: 170px;
+	background-color: rgb(9, 184, 175);
+	color: white;
+	border: 4px black solid;
+	border-radius: 10px;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ele-add {
+	animation: pushAnimation 0.3s infinite linear;
+}
+.ele-remove {
+	animation: popAnimation 0.3s infinite linear;
+}
+@keyframes pushAnimation {
+	0% {
+		background-color: rgb(92, 0, 128);
+	}
+	100% {
+		background-color: rgb(17, 255, 136);
+	}
+}
+@keyframes popAnimation {
+	0% {
+		background-color: rgb(0, 109, 128);
+	}
+	100% {
+		background-color: rgb(255, 15, 59);
+	}
+}
+
+.info {
+	height: 470px;
+	width: 500px;
+	padding-left: 20px;
+}
+
+[class^="sec"] {
+	display: flex;
+	width: 350px;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+
+.massage-box {
+	height: 180px;
+	width: 400px;
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(255, 196, 252);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.massage-box h2 {
+	text-align: center;
+	font-weight: 600;
+}
+
+.massage {
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+.error-massage {
+	animation: errorMassage 0.4s infinite linear;
+}
+@keyframes errorMassage {
+	0% {
+		background-color: bisque;
+	}
+	100% {
+		background-color: rgb(255, 15, 59);
+	}
+}
