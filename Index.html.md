@@ -125,3 +125,8 @@ I used HTML, CSS(Bootstrap) and Javascript
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: An ecommerce website is a website that allows you to buy and sell products or services online. Ecommerce websites can be designed to sell: Physical products, Digital products, Services.</p>
 <img src = "https://github.com/Geeks-Arpan/E-Commerce_Website/assets/99377659/a38170d7-467b-4964-aee4-7a2929ca2436">
+
+<h3>Quote Generator</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description: A quote generator is a tool that can create quotes on a variety of topics. Some quote generators can also personalize quotes with fonts, colors, and text styles.</p>
+<img src = "https://github.com/Geeks-Arpan/Quote-Generator/assets/99377659/e791b5b6-0a64-4ea4-94c3-db5dca9f4280">
