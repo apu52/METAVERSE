@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Meme Generator</title>
+    <style>
+      @import url('<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">');
+      body {
+        background: linear-gradient(135deg,#4203a9,#90bafc);
+      }
+
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      #meme {
+        height: 500px;
+      }
+      button {
+        font-size: 30px;
+        font-weight: 600;
+        padding: 10px 8px;
+        margin-top: 20px;
+        color: black;
+        cursor: pointer;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #2e3192, #1bffff);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <img id="meme" />
+      <button onclick="fetchAPI()">Load New</button>
+    </div>
+  </body>
+  <script>
+    function fetchAPI() {
+      fetch("https://meme-api.com/gimme")
+        .then((data) => {
+          if (!data.ok) throw new Error("Not Coming Error");
+
+          return data.json();
+        })
+        .then((data) => {
+          const imageElement = document.getElementById("meme");
+          imageElement.setAttribute("src", data.url);
+        })
+        .catch((error) => {
+          fetchAPI();
+        });
+    }
+
+    fetchAPI();
+  </script>
+</html>
