@@ -163,3 +163,10 @@ Meme-Generator
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : Meme Generator allows users to create and share image macros (featuring a picture, or artwork, superimposed with text) in the style of popular internet memes.</p>
 <img src = "https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/e226072d-651c-4696-ad5c-07711f900a0f">
+
+Music Player Clone
+<h3>Music Player</h3>
+<p>Tech stack used : Html,Css<p>
+<p>Description : A music player is a device or application that plays digital audio files. Music players can be hardware or software.</p>
+<img src = "https://github.com/Geeks-Arpan/Music-Player/assets/99377659/e9f51eb2-0754-4428-9467-728a7ca22ade">
+<img src = "https://github.com/Geeks-Arpan/Music-Player/assets/99377659/b0e78c5d-7735-43a2-aac5-68a03d204471">
