@@ -159,13 +159,11 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 ## Project Contributors
 
-<p>
-  <img src="https://api.vaunt.dev/v1/github/entities/apu52/repositories/METAVERSE/contributors?format=svg&limit=54" width="600" height"250" />
+<p align ="center">
+  <img src="https://api.vaunt.dev/v1/github/entities/apu52/repositories/METAVERSE/contributors?format=svg&limit=54" width="700" height= "250" />
 </p>
-
-
 <a href="https://github.com/apu52/METAVERSE/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=apu52/METAVERSE" />
+<p align = "center" ><img src="https://contrib.rocks/image?repo=apu52/METAVERSE" /></p>
 </a>
 <div align="center">
  
