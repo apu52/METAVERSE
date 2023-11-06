@@ -177,3 +177,10 @@ Launching Page
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : Creating a beautiful Launching page with the help using Html ,Css and Js.</p>
 <img src = "https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/4550e4aa-d54d-4a12-8221-94ebe967d0b8">
+
+Digital-Clock
+Digtial Clock
+<h3>Digital Clock</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description : A digital clock is a clock that displays the time in a digital format, such as on a watch, phone, or an alarm clock. It shows the time in numerals or other symbols, such as 12 and 24-hour formats.</p>
+<img src = "https://github.com/Geeks-Arpan/Digital-Clock/assets/99377659/a993484b-85dc-430c-85a4-40d07853a048">
