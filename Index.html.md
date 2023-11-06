@@ -163,3 +163,9 @@ Meme-Generator
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : Meme Generator allows users to create and share image macros (featuring a picture, or artwork, superimposed with text) in the style of popular internet memes.</p>
 <img src = "https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/e226072d-651c-4696-ad5c-07711f900a0f">
+
+Digtial Clock
+<h3>Digital Clock</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description : A digital clock is a clock that displays the time in a digital format, such as on a watch, phone, or an alarm clock. It shows the time in numerals or other symbols, such as 12 and 24-hour formats.</p>
+<img src = "https://github.com/Geeks-Arpan/Digital-Clock/assets/99377659/a993484b-85dc-430c-85a4-40d07853a048">
