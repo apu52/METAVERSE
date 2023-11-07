@@ -163,3 +163,9 @@ Meme-Generator
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : Meme Generator allows users to create and share image macros (featuring a picture, or artwork, superimposed with text) in the style of popular internet memes.</p>
 <img src = "https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/e226072d-651c-4696-ad5c-07711f900a0f">
+
+Pop Up Modal Box
+<h3>Pop Up Modal Box</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description :  modal popup box is a dialog box that appears on top of a web page and prevents interaction with the page.</p>
+<img src = "https://github.com/Geeks-Arpan/POP_UP/assets/99377659/9386df4a-22b6-46a8-8389-630777de0d94">
