@@ -51,6 +51,23 @@
     color: #333;
     cursor: pointer;
 }
+.input-box select {
+    margin:20px;
+    flex: 1;
+    margin-right: 10px;
+    padding: 15px 30px;
+    width: 100%; 
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffff76; 
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+}
+
 .input-box input::-webkit-calender-picker-indicator{
     top: 0;
     left: 0;
