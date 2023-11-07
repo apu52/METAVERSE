@@ -166,9 +166,8 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 <p align = "center" ><img src="https://contrib.rocks/image?repo=apu52/METAVERSE" /></p>
 </a>
 <div align="center">
- 
-## Project Admin
 
+ # Project Admin
 <table>
 <tr>
 <td align="center"><a href="https://github.com/apu52"><img src="images/apu.jpeg" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
@@ -178,12 +177,30 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 </tr>
 </table>
 
-## Project Admin
+## Project Admin/Moderators
 
 <table>
 <tr>
 <td align="center"><a href="https://github.com/5h0ov"><img src="images/shuv.jpg" width=150px height=150px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
-<a href=""><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+<a href="https://www.linkedin.com/in/shuvadipta-das-915b28216/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+   </td>
+
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/shruti-sen2004"><img src="images/Shruti.jpg" width=150px height=150px /></a></br> <h4 style="color:red;">Shruti Sen</h4>
+<a href="https://www.linkedin.com/in/shruti-sen-6b6924253/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+   </td>
+
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><a href=" https://github.com/AnkitaSikdar005"><img src="images/Ankita.jpg" width=150px height=150px /></a></br> <h4 style="color:red;">Ankita Sikdar</h4>
+<a href="https://www.linkedin.com/in/ankita-sikdar-70210a253"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
 </tr>
