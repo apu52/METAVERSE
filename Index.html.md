@@ -184,3 +184,10 @@ Digtial Clock
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : A digital clock is a clock that displays the time in a digital format, such as on a watch, phone, or an alarm clock. It shows the time in numerals or other symbols, such as 12 and 24-hour formats.</p>
 <img src = "https://github.com/Geeks-Arpan/Digital-Clock/assets/99377659/a993484b-85dc-430c-85a4-40d07853a048">
+
+Pop-Up-Modal-Box
+Pop Up Modal Box
+<h3>Pop Up Modal Box</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description :  modal popup box is a dialog box that appears on top of a web page and prevents interaction with the page.</p>
+<img src = "https://github.com/Geeks-Arpan/POP_UP/assets/99377659/9386df4a-22b6-46a8-8389-630777de0d94">
