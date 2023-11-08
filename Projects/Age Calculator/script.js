@@ -65,3 +65,10 @@ function calculateAge() {
 
     document.getElementById("result").innerHTML = `Your age is approximately ${ageInUnits.toFixed(2)} ${unit}.`;
 }
+function resetFields() {
+   
+    document.getElementById("date").value = "";
+
+    
+    document.getElementById("result").innerHTML = "";
+}
