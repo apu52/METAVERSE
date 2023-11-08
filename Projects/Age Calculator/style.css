@@ -51,6 +51,7 @@
     color: #333;
     cursor: pointer;
 }
+.input-box input,
 .input-box button,
 .input-box select {
     margin:10px;
