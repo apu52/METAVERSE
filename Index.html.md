@@ -176,7 +176,7 @@ Launching Page
 <h3>Launching Page</h3>
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : Creating a beautiful Launching page with the help using Html ,Css and Js.</p>
-<img src = "https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/4550e4aa-d54d-4a12-8221-94ebe967d0b8">
+<img src = "https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/d5b0067c-0fb6-472c-9ecf-a3b592c1d31f">
 
 Digital-Clock
 Digtial Clock
