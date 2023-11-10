@@ -7,7 +7,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/v2-rocket-minimalist-desktop-wallpaper-hd.webp);
     background-position: center;
     background-size: cover;
     padding: 0 8%;
@@ -22,6 +22,10 @@
     position: absolute;
     transform: translateY(-50%);
     color: #fff;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 500;
 }
 .content h2{
     font-size: 64px;
@@ -40,6 +44,10 @@
     align-items: center;
     margin-top: 30px;
     cursor: pointer;
+}
+.content button:hover{
+    background: #ff3253;
+    transition: all .3s ease-in-out;
 }
 .content button img{
     width: 15px;
