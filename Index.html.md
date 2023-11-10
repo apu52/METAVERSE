@@ -168,8 +168,8 @@ Music Player Clone
 <h3>Music Player</h3>
 <p>Tech stack used : Html,Css<p>
 <p>Description : A music player is a device or application that plays digital audio files. Music players can be hardware or software.</p>
-<img src = "https://github.com/Geeks-Arpan/Music-Player/assets/99377659/e9f51eb2-0754-4428-9467-728a7ca22ade">
-<img src = "https://github.com/Geeks-Arpan/Music-Player/assets/99377659/b0e78c5d-7735-43a2-aac5-68a03d204471">
+<img src = "https://github.com/Geeks-Arpan/Music-Player/assets/99377659/158b4059-d106-4c45-b378-f01811006cd1">
+<img src = "https://github.com/Geeks-Arpan/Music-Player/assets/99377659/2dbcc38e-335b-48cd-b858-3d7b49c6110d">
 
 CountDown-Homepage
 Launching Page

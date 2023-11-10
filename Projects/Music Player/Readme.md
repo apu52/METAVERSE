@@ -9,7 +9,7 @@
 👆🏻 .</p>
 
 # Screenshots
-![Music-1](https://github.com/Geeks-Arpan/Music-Player/assets/99377659/e9f51eb2-0754-4428-9467-728a7ca22ade)
-![Music-2](https://github.com/Geeks-Arpan/Music-Player/assets/99377659/b0e78c5d-7735-43a2-aac5-68a03d204471)
+![Music 4](https://github.com/Geeks-Arpan/Music-Player/assets/99377659/158b4059-d106-4c45-b378-f01811006cd1)
+![Screenshot 2023-11-10 062428](https://github.com/Geeks-Arpan/Music-Player/assets/99377659/2dbcc38e-335b-48cd-b858-3d7b49c6110d)
 # Video
-https://github.com/Geeks-Arpan/Music-Player/assets/99377659/b8eaab01-6101-4b70-8142-06b01a8555ed
+https://github.com/Geeks-Arpan/Music-Player/assets/99377659/90ebe2d0-c0b7-41c1-af18-4948a5062f62
