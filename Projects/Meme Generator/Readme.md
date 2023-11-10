@@ -9,7 +9,7 @@
 
 
 # Screenshots
-![Screenshot 2023-11-03 084015](https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/e226072d-651c-4696-ad5c-07711f900a0f)
+![Meme Generator Project](https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/42eb59f0-011d-4308-a720-4c4d33c78ac1)
 
 # Video
 https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/b9ab3e55-720d-4f73-b484-75889d6d3336
