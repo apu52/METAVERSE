@@ -38,37 +38,11 @@ function calculateAge(){
         y3--;
     }
     result.innerHTML = `You are ${y3} years, ${m3} months and ${d3} days old`;
+    result.style.color = '#fff';
+    result.style.fontWeight = 600;
+    result.style.lineHeight = '30px';
 }
 
 function getDayInMonth(year,month){
     return (new Date(year, month, 0)).getDate();
-}
-function calculateAge() {
-    const birthdate = new Date(document.getElementById("date").value);
-    const unit = document.getElementById("unitSelector").value;
-    const today = new Date();
-
-    const ageInMilliseconds = today - birthdate;
-    let ageInUnits;
-
-    switch (unit) {
-        case "years":
-            ageInUnits = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
-            break;
-        case "months":
-            ageInUnits = ageInMilliseconds / (1000 * 60 * 60 * 24 * 30.44);
-            break;
-        case "days":
-            ageInUnits = ageInMilliseconds / (1000 * 60 * 60 * 24);
-            break;
-    }
-
-    document.getElementById("result").innerHTML = `Your age is approximately ${ageInUnits.toFixed(2)} ${unit}.`;
-}
-function resetFields() {
-   
-    document.getElementById("date").value = "";
-
-    
-    document.getElementById("result").innerHTML = "";
 }
