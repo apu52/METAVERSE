@@ -9,6 +9,6 @@
 
 
 # Screenshots
-![Screenshot 2023-11-04 222720](https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/4550e4aa-d54d-4a12-8221-94ebe967d0b8)
+![Coming Soon](https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/d5b0067c-0fb6-472c-9ecf-a3b592c1d31f)
 
-https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/679ea938-6fc5-47cc-a989-c2be74fd3709
+https://github.com/Geeks-Arpan/Launching-Page/assets/99377659/938defc0-21ab-4649-b7b5-2e42ae35f5eb
