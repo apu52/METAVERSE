@@ -162,7 +162,7 @@ Meme-Generator
 <h3>Meme Generator</h3>
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description : Meme Generator allows users to create and share image macros (featuring a picture, or artwork, superimposed with text) in the style of popular internet memes.</p>
-<img src = "https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/e226072d-651c-4696-ad5c-07711f900a0f">
+<img src = "https://github.com/Geeks-Arpan/Meme-Generator/assets/99377659/42eb59f0-011d-4308-a720-4c4d33c78ac1">
 
 Music Player Clone
 <h3>Music Player</h3>
