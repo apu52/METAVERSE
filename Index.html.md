@@ -1,7 +1,7 @@
 <h1>Front-end Projects</h1>
 <h2>Update this list after Adding New Projects</h2>
 
-<h3>LogIn Page  <! --Name of your new Project --> </h3>
+<h3>Login Page  <! --Name of your new Project --> </h3>
 <p> Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. This is a frontend part of a login page. I used HTML and CSS .
   
 ![LogIn Page](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
@@ -156,7 +156,7 @@ Quote-Generator
 <h3>Quote Generator</h3>
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description: A quote generator is a tool that can create quotes on a variety of topics. Some quote generators can also personalize quotes with fonts, colors, and text styles.</p>
-<img src = "https://github.com/Geeks-Arpan/Quote-Generator/assets/99377659/e791b5b6-0a64-4ea4-94c3-db5dca9f4280">
+<img src = "https://github.com/Geeks-Arpan/Quote-Generator/assets/99377659/46673771-4d07-444d-bc0b-7a78635221e6">
 
 Meme-Generator
 <h3>Meme Generator</h3>
