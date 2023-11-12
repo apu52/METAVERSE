@@ -7,6 +7,8 @@ async function getquote(url){
 
     quote.innerHTML = data.content;
     author.innerHTML= data.author;
+    author.style.fontSize = '18px'
+    author.style.fontWeight = '500';
 }
 getquote (apiUrl);
 
