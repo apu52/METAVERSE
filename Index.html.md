@@ -1,7 +1,7 @@
 <h1>Front-end Projects</h1>
 <h2>Update this list after Adding New Projects</h2>
 
-<h3>LogIn Page  <! --Name of your new Project --> </h3>
+<h3>Login Page  <! --Name of your new Project --> </h3>
 <p> Hello Coders👨‍💻 ,I am Suryanshu Paul, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. This is a frontend part of a login page. I used HTML and CSS .
   
 ![LogIn Page](https://github.com/paulsuryanshu/LogIn-Page/blob/main/LogIn%20Page/Screenshot%20(299).png)
