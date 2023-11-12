@@ -16,6 +16,33 @@ const questions = [
             {text: "Mark Zuckerberg", correct: false},
             {text: "Tim Cook", correct: false}
         ]
+    },
+    {
+        question: "What is the capital of New Zealand?",
+        answers:[
+            {text: "Wellington", correct:true},
+            {text: "Auckland", correct: false},
+            {text: "Fiji", correct: false},
+            {text: "Tokelau", correct: false}
+        ]
+    },
+    {
+        question: "What is the largest territory in the world?",
+        answers:[
+            {text: "India", correct:false},
+            {text: "Russia", correct: true},
+            {text: "USA", correct: false},
+            {text: "Canada", correct: false}
+        ]
+    },
+    {
+        question: "What is the most poplate density country in the world?",
+        answers:[
+            {text: "Singapur", correct:false},
+            {text: "Monaco", correct: true},
+            {text: "Baharin", correct: false},
+            {text: "Zibratal", correct: false}
+        ]
     }
 ];
 
