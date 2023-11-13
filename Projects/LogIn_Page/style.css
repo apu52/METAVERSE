@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d58f;
+}
+
+.container {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.container form input {
+    font-weight: lighter;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container form .username {
+    margin-bottom: .7rem;
+}
+
+.container form i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.container form input {
+    font-size: 1rem;
+}
+
+.userArea {
+    margin-bottom: .7rem;
+}
+
+.container form .forgotPassword {
+    position: absolute;
+    right: 0rem;
+    cursor: pointer;
+    bottom: 17rem;
+    color: rgb(113, 119, 124);
+    font-size: .8rem;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .8rem;
+}
+
+.formBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formBottom ul {
+    margin-bottom: 3rem;
+}
+
+.formBottom p {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.flexUl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexUl a {
+    text-decoration: none;
+}
+
+.flexUl li {
+    list-style: none;
+}
+
+.flexUl li i {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-google {
+    background-color: orangered;
+}
+
+.fa-twitter {
+    background-color: rgb(43, 71, 228);
+}
+
+.fa-facebook-f {
+    background-color: darkblue;
+}
+
+
+/* Utility Classes */
+.t-center {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    padding: 0.7rem 0.8rem;
+    background: linear-gradient(to right, #8d68c5, #e34494);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#signUp {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#signUp:hover {
+    color: #8d68c5;
+}

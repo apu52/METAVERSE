@@ -1,0 +1,107 @@
+{
+  "1": {
+    "projectTitle": "Career Crafters",
+    "folderName": "Career-Crafters",
+    "thumbnailName": "Career-Crafters.png"
+  },
+  "2": {
+    "projectTitle": "Age Calculator",
+    "folderName": "Age_Calculator",
+    "thumbnailName": ""
+  },
+  "3": {
+    "projectTitle": "Book Review Website",
+    "folderName": "Book_review_website",
+    "thumbnailName": ""
+  },
+  "4": {
+    "projectTitle": "Brick Breaker Game",
+    "folderName": "Brick_Breaker_Game",
+    "thumbnailName": ""
+  },
+  "5": {
+    "projectTitle": "Calendar",
+    "folderName": "Calendar",
+    "thumbnailName": ""
+  }, 
+  "6": {
+    "projectTitle": "Code Editor",
+    "folderName": "Code_Editor",
+    "thumbnailName": ""
+  },
+  "7": {
+    "projectTitle": "Digital Clock",
+    "folderName": "Digital_Clock",
+    "thumbnailName": ""
+  },
+  "8": {
+    "projectTitle": "Finance Tracker",
+    "folderName": "Finance_Tracker",
+    "thumbnailName": ""
+  },
+  "9": {
+    "projectTitle": "Food Ordering Website",
+    "folderName": "Food_Ordering_Website",
+    "thumbnailName": ""
+  },
+  "10": {
+    "projectTitle": "Food Website",
+    "folderName": "Food_Website",
+    "thumbnailName": ""
+  },
+  "11": {
+    "projectTitle": "Google Drive Clone",
+    "folderName": "Google_Drive_clone",
+    "thumbnailName": ""
+  },
+  "12": {
+    "projectTitle": "Hackathons",
+    "folderName": "Hackathons",
+    "thumbnailName": ""
+  },
+  "13": {
+    "projectTitle": "Hotsar Clone",
+    "folderName": "Hotsar_Clone",
+    "thumbnailName": ""
+  },
+  "14": {
+    "projectTitle": "Insta Clone",
+    "folderName": "Insta_Clone",
+    "thumbnailName": ""
+  },
+  "15": {
+    "projectTitle": "LogIn Page",
+    "folderName": "LogIn_Page",
+    "thumbnailName": ""
+  },
+  "16": {
+    "projectTitle": "Stopwatch",
+    "folderName": "Stopwatch",
+    "thumbnailName": ""
+  },
+  "17": {
+    "projectTitle": "Netflix Clone Project",
+    "folderName": "Netflix_clone_Project",
+    "thumbnailName": ""
+  },
+  "18": {
+    "projectTitle": "Myntra_Clone_Website",
+    "folderName": "Myntra_Clone_Website",
+    "thumbnailName": ""
+  },
+  "19": {
+    "projectTitle": "QR ID Card Generator",
+    "folderName": "QR_ID_Card_Generator",
+    "thumbnailName": ""
+  },
+  "20": {
+    "projectTitle": "Restaurant Website",
+    "folderName": "Restaurant_Website",
+    "thumbnailName": ""
+  },
+  "21": {
+    "projectTitle": "To-Do List Project",
+    "folderName": "To-Do_List_Project",
+    "thumbnailName": ""
+  }
+}
