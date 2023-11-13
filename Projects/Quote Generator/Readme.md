@@ -9,6 +9,6 @@
 
 
 # Screenshots
-![Screenshot 2023-11-02 213347](https://github.com/Geeks-Arpan/Quote-Generator/assets/99377659/e791b5b6-0a64-4ea4-94c3-db5dca9f4280)
+![Screenshot 2023-11-12 185124](https://github.com/Geeks-Arpan/Quote-Generator/assets/99377659/46673771-4d07-444d-bc0b-7a78635221e6)
 # Video
 https://github.com/Geeks-Arpan/Quote-Generator/assets/99377659/76257887-ec32-402c-8bc2-64b4b876b5f6
