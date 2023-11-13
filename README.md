@@ -1,5 +1,5 @@
 # <p align = "center"> METAVERSE </p>
-<img align ="center" > ![image](./images/Metaverse%20poster.gif) </img>
+<img align ="center" > ![image](./images/Metaverse_poster.gif) </img>
 <div align="center">
  <p>
 
