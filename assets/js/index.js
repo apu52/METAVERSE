@@ -1,5 +1,5 @@
 // Fetch the project data from the JSON file
-fetch('./assets/js/projectData.json')
+fetch('./projectData.json')
   .then(response => response.json())
   .then(projectsData => {
     const projectListContainer = document.querySelector('.project-list');
@@ -13,7 +13,7 @@ fetch('./assets/js/projectData.json')
 const generateLiTags = projectsData => {
   const liTags = [];
 
-  for (let tagNumber = 1; tagNumber <= 100; tagNumber++) {
+  for (let tagNumber = 1; tagNumber <= 666; tagNumber++) {
     const projectData = projectsData[tagNumber.toString()];
 
     if (projectData) {
