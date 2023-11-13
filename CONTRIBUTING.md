@@ -18,8 +18,8 @@
 - Then after assigning only then work on that issue & make a PR 
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
 - REMINDER: Commit inside the Projects Folder
-- Add a screenshot of your project in assets/img folder with the appropriate name.
-- Edit the js/projectsData.json in the assets folder accordingly with your project info.
+- IMPORTANT: Add a screenshot of your project in assets/img folder with the appropriate name.
+- IMPORTANT: Edit the js/projectsData.json in the assets folder accordingly with your project info & the name you used for the image in img folder.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
   ## Existing Projects
