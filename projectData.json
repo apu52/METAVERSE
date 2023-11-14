@@ -75,13 +75,13 @@
     "thumbnailName": ""
   },
   "16": {
-    "projectTitle": "Stopwatch",
-    "folderName": "Stopwatch",
-    "thumbnailName": "Stopwatch.png"
+    "projectTitle": "Meme Generator",         
+    "folderName": "Meme_Generator",
+    "thumbnailName": ""
   },
   "17": {
-    "projectTitle": "Netflix Clone Project",
-    "folderName": "Netflix_clone_Project",
+    "projectTitle": "Music Player",         
+    "folderName": "Music Player",
     "thumbnailName": ""
   },
   "18": {
@@ -90,23 +90,113 @@
     "thumbnailName": "E-commerce_website.png"
   },
   "19": {
+    "projectTitle": "Netflix Clone Project",
+    "folderName": "Netflix_clone_Project",
+    "thumbnailName": ""
+  },
+  "20": {
+    "projectTitle": "Pop Up Window",
+    "folderName": "Pop-Up_Window",
+    "thumbnailName": ""
+  },
+  "21": {
     "projectTitle": "QR ID Card Generator",
     "folderName": "QR_ID_Card_Generator",
     "thumbnailName": ""
   },
-  "20": {
+  "22": {
+    "projectTitle": "Quiz App",
+    "folderName": "Quiz_App",
+    "thumbnailName": ""
+  },
+  "23": {
+    "projectTitle": "Quote Generator",
+    "folderName": "Quote_Generator",
+    "thumbnailName": ""
+  },
+  "24": {
     "projectTitle": "Restaurant Website",
     "folderName": "Restaurant_Website",
     "thumbnailName": "Restraunt_web.png"
   },
-  "21": {
+  "25": {
+    "projectTitle": "Rock-Paper-Scissors",
+    "folderName": "Rock-Paper-Scissors",
+    "thumbnailName": ""
+  },
+  "26": {
+    "projectTitle": "Scientific Calculator",
+    "folderName": "Scientific_Calculator",
+    "thumbnailName": ""
+  },
+  "27": {
+    "projectTitle": "Score Keeper",
+    "folderName": "Score_Keeper",
+    "thumbnailName": ""
+  },
+  "28": {
+    "projectTitle": "Stopwatch",
+    "folderName": "Stopwatch",
+    "thumbnailName": "Stopwatch.png"
+  },
+  "29": {
+    "projectTitle": "Survey Form",
+    "folderName": "Survey_Form",
+    "thumbnailName": ""
+  },
+  "30": {
+    "projectTitle": "Temperature Converter",
+    "folderName": "Tempearature_Converter",
+    "thumbnailName": ""
+  },
+  "31": {
+    "projectTitle": "Text to Voice Converter",
+    "folderName": "Text_to_Voice_Converter_Project",
+    "thumbnailName": ""
+  },
+  "32": {
+    "projectTitle": "Tindog Website",
+    "folderName": "Tindog_website",
+    "thumbnailName": ""
+  },
+  "33": {
     "projectTitle": "To-Do List Project",
     "folderName": "To-Do_List_Project",
     "thumbnailName": ""
   },
- "22": {
+  "34": {
+    "projectTitle": "Travel Website",
+    "folderName": "Travel_Website",
+    "thumbnailName": ""
+  },
+  "35": {
+    "projectTitle": "URL Shortener",
+    "folderName": "URL_SHORTENER",
+    "thumbnailName": ""
+  },
+  "36": {
+    "projectTitle": "Unit Converter",
+    "folderName": "Unit_Converter",
+    "thumbnailName": ""
+  },
+ "37": {
     "projectTitle": "Wake me Up",
     "folderName": "WakemeUp",
     "thumbnailName": "Wake_me_up.png"
-  } 
+  },
+  "38": {
+    "projectTitle": "Weather Application",
+    "folderName": "Weather_application",
+    "thumbnailName": ""
+  },
+  "39": {
+    "projectTitle": "Website Count Down Page",
+    "folderName": "Website_Count_Down_Page",
+    "thumbnailName": ""
+  },
+  "40": {
+    "projectTitle": "Stack",
+    "folderName": "stack",
+    "thumbnailName": ""
+  },
 }
