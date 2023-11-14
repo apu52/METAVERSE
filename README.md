@@ -76,7 +76,7 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 - **Then when you are get assigned only then work on that issue & make a PR**
 - Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
-- **REMINDER: Commit inside **the Projects** Folder**
+- **REMINDER: Commit inside **the `Projects`** Folder**
 - Add screenshots or video prototypes to your Pull Request to help us understand the effects of the changes that are included in your commits.
 - **Make sure to add a proper README.md with tour PR that describes your project**
 - **Make sure to add the img of your new project in the `assets/img` folder**
