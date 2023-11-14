@@ -8,19 +8,19 @@ assignees: ''
 ---
 
 ### Project title
-(Write project title over here)
+<!--Write project title over here-->
 
 ### Project Description
-(Describe the project over here)
+<!--Describe the project over here-->
 
 ### Web stack
-( Mention the web stacks you have used in your project)
+<!--Mention the web stacks you have used in your project-->
 
 
 ### Screenshot(mandatory)
-(Please add your project screenshots here)
+<!--Please add your project screenshots here-->
 
 #### Are you contributing under any open-source program ?
-( Mention it here )
+<!-- Mention it here-->
 
 <hr/>
