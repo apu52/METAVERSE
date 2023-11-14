@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Playlist</title>
+    <!-- it is connected to two stylesheets -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Single_Playlist_Screen_Styles.css"
+    />
+    <!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Secondary page responsive.css"
+    />
+    <!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- body -->
+
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navigation-bar">
+      <!-- this div contains the logo and title os the page -->
+      <div class="title-combo">
+        <div class="website-logo">
+          <img
+            src="https://marketplace.canva.com/EAE25MFy9wQ/1/0/1600w/canva-music-logo-design-S0x32skUQb4.jpg"
+          />
+        </div>
+        <div class="website-name">
+          <h2>
+            <a href="index.html">
+              Arpan
+            </a>
+          </h2>
+          <h6 style="color: magenta;">
+            <a href="index.html">Music Player</a>
+          </h6>
+        </div>
+      </div>
+      <!-- this is the animated favourites text -->
+      <div class="favs">
+        <h4>
+          Favourites
+        </h4>
+      </div>
+      <div class="search-bar">
+        <div>
+          <!-- magnifying glass- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <input type="text" name="search" placeholder="Search" />
+        <div>
+          <!-- mic icon -->
+          <i class="fas fa-microphone mic-ico"></i>
+        </div>
+      </div>
+      <!-- this is for notification bell -->
+      <div class="notification-bell">
+        <img
+          src="Images/Screenshot 2023-11-10 055228.png"
+        />
+        Notifications
+      </div>
+      <!-- this is for profile picture -->
+      <div class="profile-picture">
+        <img
+          src="Images/IMG-ARPAN.jpg"
+        />
+      </div>
+    </nav>
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    <!-- I have separated these sections using the aside tag for each section -->
+    <main>
+      <!-- aside section 1 -->
+      <aside class="aside section-1">
+        <!-- this is for the jumbotron -->
+        <div class="jumbotron">
+          <div class="jumbotron-image">
+            <!-- there is nothing in this div because all the images and all are added by css -->
+          </div>
+          <!-- jumbotron details -->
+          <div class="jumbotron-detail">
+            <!-- descriptive part of the jumbotron this will contain name , number of followers and all -->
+            <div class="descriptive-part">
+              <div class="song-name-main">
+                <h1>Imagine Dragons</h1>
+              </div>
+              <div class="followers">
+                30m Followers
+              </div>
+              <p class="author">American pop rock Band</p>
+              <!-- short description of the current author -->
+              <p class="desc">
+                Imagine Dragons are an American pop rock band based in Las
+                Vegas, Nevada, consisting of lead singer Dan Reynolds, guitarist
+                Wayne Sermon, bassist Ben McKee and drummer Daniel Platzman.[1]
+                The band first gained exposure with the release of their single
+                "It's Time", followed by their award-winning debut studio album
+                Night Visions (2012), which resulted in the chart-topping
+                singles "Radioactive" and "Demons".
+              </p>
+            </div>
+            <!-- action part -->
+            <div class="action-part">
+              <!-- action buttons -->
+              <div class="btns">
+                <button>Play All</button>
+                <button>Follow</button>
+              </div>
+              <p>
+                247 Tracks | 128 Albums
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- now the playlist part begins -->
+        <div class="playlist-items">
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                01
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ufAQF8XvmrqXvjZD8_So913mn1vIyLcK-SNQgdv8CGanEByknr_B8w&s"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Alone
+                </h5>
+                <p>
+                  AlanWalker
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:14
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                02
+              </div>
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjM4MDAwMjEzMl5BMl5BanBnXkFtZTgwNjYzMzcxNjM@._V1_.jpg"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  White Iverson
+                </h5>
+                <p>
+                  PostMalone
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:44
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                03
+              </div>
+              <div>
+                <img
+                  src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcToaBPlwQfy7GtB5HYF_Eqk7D6D7k0sEdKIb7NeFc9zSmmBdBwEE421foUWKm_qMJjyAFd76IfKZeYj0gQ"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Go Flex
+                </h5>
+                <p>
+                  PostMalone
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              2:55
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                04
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShg1jO3pSbjUlCDbLDbOm5YDW5w90Tp6uGFg&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Better Now
+                </h5>
+                <p>
+                  PostMalone
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:37
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                05
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScIC2CSWg9Ulx9do-z5DkihCQbvu2aasJglQ&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Big lie
+                </h5>
+                <p>
+                  PostMalone
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:27
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                06
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAoEeSCD8krsA_uMhqPZcUy4sve9lKXDJmqw&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Deja Vu
+                </h5>
+                <p>
+                  PostMalone & JustinBeiber
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              4:31
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                07
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScIC2CSWg9Ulx9do-z5DkihCQbvu2aasJglQ&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Pysco
+                </h5>
+                <p>
+                  PostMalone
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:28
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                08
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTt2i47lEuBbuOQsYQVEGvYRNbPWDhd_9UuA&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Rockstar
+                </h5>
+                <p>
+                  PostMalone & 21Savage
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:48
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                09
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkQCTxu-locTCxYEl7JBWDEBNsp5s5ndCBZw&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Blinding
+                </h5>
+                <p>
+                  Weeknd
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:20
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                10
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5HVvMm9yJfb5sjRP3Sz-tN2dTkz0DTnV0g&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Alone
+                </h5>
+                <p>
+                  Weeknd
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              4:10
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                11
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGBGco9FNalBysTBbfOSn5y8WsSL9dNrplEg&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Too Late
+                </h5>
+                <p>
+                  Weeknd
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              4:00
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                12
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetVuKos6Tj2AUk1H5CDxQEKvmaxYY4W6fMg&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  To Love
+                </h5>
+                <p>
+                  Weeknd
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:31
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- one aside section is complete -->
+      <!-- now the second aside section will start from here -->
+      <!-- the page is responsive. please try reducing the width of the page -->
+      <!-- the aside section will collapse and a "more button will be shown to you." -->
+      <!-- clicking on this more button, you will be shown the aside section 2  -->
+      <!-- its position will be absolute at lower resolutions -->
+      <!-- this is the label for that more button -->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!-- this is that more button -->
+      <!-- and this is the check box. this will always be hidden -->
+      <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+      <!-- which will invoke the aside section 2 on lower resolutions -->
+      <input type="checkbox" id="more" />
+      <!-- </div> -->
+      <aside class="aside section-2">
+        <!-- similar class will be applicable to both similar artists and recently played -->
+        <div class="similar">
+          <!-- section heading, which also contains the view all button -->
+          <div class="section-heading">
+            <h1>Similar Artists</h1>
+            <div class="view-all-button">
+              View All
+            </div>
+          </div>
+          <!-- list is the container for the contents of similar artists -->
+          <div class="list">
+            <!-- item -->
+            <div class="list-item">
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8A2vIt82H0b2W3n74_ZMsPqoEE-KQ18oTjQ&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px;">
+                <h5>
+                  Love me
+                </h5>
+                <p class="author-name">
+                  Justin
+                </p>
+              </div>
+              <div class="extra">
+                <div>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <p class="author-name">
+                  2:14
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="list-item">
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkFACZX1ydMzLGWXk-1A-6Q9-G5JPiedudA&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px;">
+                <h5>
+                  Copiness
+                </h5>
+                <p class="author-name">
+                  Nakamura
+                </p>
+              </div>
+              <div class="extra">
+                <div>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <p class="author-name">
+                  4:00
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="list-item">
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYK4j5-ZdLMCDakOJ1C_5tvlEoNbNjsHEviCZaeO1yDnfVzIiuCStRWpf_SBC2FVOF5Y&usqp=CAU"
+                />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px;">
+                <h5>
+                  Memories
+                </h5>
+                <p class="author-name">
+                  Maroon 5
+                </p>
+              </div>
+              <div class="extra">
+                <div>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <p class="author-name">
+                  4:44
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- recently played section -->
+          <div class="similar">
+            <!-- section headings, which also contains the view all button -->
+            <div class="section-heading">
+              <h1>Recently Played</h1>
+              <div class="view-all-button">
+                View All
+              </div>
+            </div>
+            <!-- again list is a container for all the contents of recently played section -->
+            <div class="list">
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    01
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1eji5I5WQkQDOyUjR0ZDC9dOJ5U5JIYNkTw&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Despacito
+                    </h5>
+                    <p>
+                      Luis
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    02
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNeOQtmWjoP9zJ31ICvaXpplEtzwL3qP6Cg&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      LilNasX
+                    </h5>
+                    <p>
+                      Billy
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    03
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gGGoOIkvAwFqKDxZeKEqqWzCqjFyE41BBg&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Love
+                    </h5>
+                    <p>
+                      Ellie
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    04
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMTyEEIH8ziZPbrxZ_X6-9_jUsELb2sSHpRy0jQO4zsCKGC9apDHwyPi67F6zXDsnKMf0&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Babby
+                    </h5>
+                    <p>
+                      Justin
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    05
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_r4aSoyjJV3Ot1O7T2ULxYqSS_prFG7FADA&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      See Again
+                    </h5>
+                    <p>
+                      Wiz
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    06
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6Kpg7bQLajAOqkq2z_janRoyhOq7Cc1Ksw&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Sia
+                    </h5>
+                    <p>
+                      Cheap Thrills
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    07
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCFngbx7tAnlow42MH_tQLtUCH2QWYoVLgKUK15h5c67swIOObueqeDuIj3KbyIUvB2bs&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Pheli Dafa
+                    </h5>
+                    <p>
+                      Album
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    08
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_TyMut2cCJiq7nt245GWRra3nyQrus4FjA&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Alvida
+                    </h5>
+                    <p>
+                      Metro
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    09
+                  </div>
+                  <div>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWf85AWrVwrVa3O7WDg5jPm5jNCuT6WWV_zw&usqp=CAU"
+                    />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Gerua
+                    </h5>
+                    <p>
+                      Dilwale
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- main part of the page is over. -->
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+    <footer>
+      <div class="active-song-description">
+        <!-- song image -->
+        <div id="song-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXaEePfk3VuxcPUfWVyP6ctonpN9kha9xUqA&usqp=CAU"
+          />
+        </div>
+        <!-- song name and author -->
+        <div class="song-desc">
+          <div>
+            Calm Down
+          </div>
+          <div>
+            Selena Marie
+          </div>
+        </div>
+        <!-- heart icon and ban icon -->
+        <div class="heart-and-ban-icon">
+          <span>
+            <i class="far fa-heart"></i>
+          </span>
+          <span>
+            <i class="fas fa-ban"></i>
+          </span>
+        </div>
+      </div>
+      <!-- these are the main player controls -->
+      <div class="player">
+        <div class="controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+        </div>
+        <!-- this is the slider -->
+        <div id="slider">
+          <!-- current time -->
+          <div class="time">
+            1:39
+          </div>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <!-- total time -->
+          <div class="time">
+            4:44
+          </div>
+        </div>
+      </div>
+      <!-- other icons including the volume slider and all -->
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%;">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="slider"
+            id="myRange"
+            style="margin-top: 0px;"
+          />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
