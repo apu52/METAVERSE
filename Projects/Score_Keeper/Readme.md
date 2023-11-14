@@ -9,6 +9,6 @@
 
 
 # Screenshots
-![Score Keeper](https://github.com/Geeks-Arpan/Score-Keeper/assets/99377659/92e4b6ba-30a6-435d-8d8f-ab49e50f546f)
+![Screenshot 2023-11-14 082502](https://github.com/Geeks-Arpan/Score-Keeper/assets/99377659/4066df61-fd79-42d8-a933-0f3ac669598c)
 # Video
-https://github.com/Geeks-Arpan/Score-Keeper/assets/99377659/1ffeddde-2db6-48d6-9a5d-57129de1841d
+https://github.com/Geeks-Arpan/Score-Keeper/assets/99377659/0aa55d46-1261-49fb-92b7-ad2f7c677a36
