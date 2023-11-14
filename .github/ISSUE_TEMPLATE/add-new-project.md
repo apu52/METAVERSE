@@ -1,9 +1,9 @@
 ---
-name: Add new Project
-about: Add your New Front-end projects in this template
-title: ''
-labels: good first issue, New project
-assignees: ''
+Name: Add new Project
+About: Add your New Front-end projects in this template
+Title: ''
+Labels: good first issue, New project
+Assignees: ''
 
 ---
 
