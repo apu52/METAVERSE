@@ -40,6 +40,9 @@
 Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!
 
+## Announcement 📢
+All of the projects of this repo can be seen in the deployment link in the **about** section
+
 ## Achievement 🏆
 
 **METAVERSE** repo has secured a position in *top 50 maintainer repositories* in **QUINE HACTOBERFEST** challenge 🏅
@@ -73,10 +76,11 @@ Metaverse Front-End Playground is an open-source repository created to empower d
 - **Then when you are get assigned only then work on that issue & make a PR**
 - Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
-- **REMINDER: Commit inside **the Projects** Folder**
-- Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
+- **REMINDER: Commit inside **the `Projects`** Folder**
+- Add screenshots or video prototypes to your Pull Request to help us understand the effects of the changes that are included in your commits.
 - **Make sure to add a proper README.md with tour PR that describes your project**
-- **Make sure to Update index.html.md file after submitting PR**
+- **Make sure to add the img of your new project in the `assets/img` folder**
+- **Make sure to Update `projectData.json` file after submitting PR**
 
 ## How to make a Pull Request?
 

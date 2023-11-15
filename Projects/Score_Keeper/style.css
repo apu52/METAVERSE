@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
 
 html,
@@ -13,8 +14,8 @@ body{
     background: rgb(255,132,100);
     background: linear-gradient(
         90deg,
-        rgba(255,132,100,1) 0%,
-        rgba(253,105,165,1) 100%
+        rgb(255, 100, 183) 0%,
+        rgb(172, 105, 253) 100%
     );
 }
 
@@ -24,10 +25,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card-body{
@@ -44,7 +41,6 @@ span{
 }
 
 .btn{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: none;
     outline: none;
     border: 1px solid black;
