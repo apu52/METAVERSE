@@ -68,3 +68,66 @@ toggle.addEventListener('click', function(){
         toggle.style.color = "white";
     }
 });
+// Update your existing JavaScript code
+
+// ... (your existing code)
+
+// Function to get weather data from the OpenWeatherMap API
+async function getWeatherData(date) {
+    const apiKey = 'b919eeb30fda3163d1cc0826d5032f07';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=city_name&appid=${apiKey}`;
+  
+    try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching weather data:', error);
+      throw error;
+    }
+  }
+  
+  // Function to update the UI with weather information
+  function updateWeatherUI(weatherData) {
+    const weatherInfoElement = document.querySelector('.weather-info');
+    const temperatureElement = weatherInfoElement.querySelector('.temperature');
+    const descriptionElement = weatherInfoElement.querySelector('.description');
+    const iconElement = weatherInfoElement.querySelector('.weather-icon');
+  
+    // Use the appropriate properties from the API response
+    const temperature = weatherData.list[0].main.temp;
+    const description = weatherData.list[0].weather[0].description;
+    const icon = weatherData.list[0].weather[0].icon;
+  
+    temperatureElement.textContent = `${temperature}°C`;
+    descriptionElement.textContent = description;
+    iconElement.src = `http://openweathermap.org/img/w/${icon}.png`;
+  }
+  
+  // Function to handle errors during weather data retrieval
+  function handleWeatherError(error) {
+    console.error('Error fetching weather data:', error);
+    // Display an error message to the user or use a default weather icon
+  }
+  
+  // ... (your existing code)
+  
+  // Inside the click event listener for prev and next icons
+  icon.addEventListener("click", async () => {
+    // ... (your existing code)
+  
+    try {
+      // Fetch weather data for the current date
+      const weatherData = await getWeatherData(date);
+      // Update the UI with weather information
+      updateWeatherUI(weatherData);
+    } catch (error) {
+      // Handle errors during weather data retrieval
+      handleWeatherError(error);
+    }
+  
+    // ... (your existing code)
+  });
+  
+  // ... (your existing code)
+  

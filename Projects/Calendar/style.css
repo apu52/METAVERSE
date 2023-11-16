@@ -24,7 +24,7 @@ body{
     align-items: center;
     overflow-x: hidden;
     transition: all 0.5s ease-out;
-    height: 90vh;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar{
@@ -185,6 +185,16 @@ header .icons span{
     top: 20rem;
     transition: all 0.5s ease-in-out;
 }
+.weather-info {
+    position: absolute;
+    top: 0; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the weather info is above the calendar */
+    /* Additional styles as needed */
+    width:300px;
+}
+
 
 /* Dark Mode */
 body.dark{
