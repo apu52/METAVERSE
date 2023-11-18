@@ -198,5 +198,10 @@
     "projectTitle": "Stack",
     "folderName": "stack",
     "thumbnailName": "Stack.png"
+  },
+  "41": {
+    "projectTitle": "Spotify Clone",
+    "folderName": "Spotify-Clone",
+    "thumbnailName": "Spotify-Clone.png"
   }
 }
