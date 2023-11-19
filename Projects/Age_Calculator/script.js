@@ -46,3 +46,39 @@ function calculateAge(){
 function getDayInMonth(year,month){
     return (new Date(year, month, 0)).getDate();
 }
+function calculateAge() {
+    var inputDate = document.getElementById('date').value;
+    var unit = document.getElementById('unitSelector').value;
+
+    var birthDate = new Date(inputDate);
+    var currentDate = new Date();
+
+    var timeDiff = currentDate - birthDate;
+
+    switch (unit) {
+        case 'years':
+            var age = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 365.25));
+            displayResult(age);
+            break;
+        case 'months':
+            var ageInMonths = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 30.44));
+            displayResult(ageInMonths);
+            break;
+        case 'days':
+            var ageInDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            displayResult(ageInDays);
+            break;
+        case 'dogYears':
+            var ageInDogYears = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 365.25) * 7); // Assuming 1 human year = 7 dog years
+            displayResult(ageInDogYears);
+            break;
+        default:
+            alert('Invalid unit selected');
+    }
+}
+
+function displayResult(age) {
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = 'Your age is: ' + age;
+}
+
