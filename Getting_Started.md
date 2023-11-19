@@ -191,3 +191,10 @@ Pop Up Modal Box
 <p>Tech stack used : Html,Css and Js<p>
 <p>Description :  modal popup box is a dialog box that appears on top of a web page and prevents interaction with the page.</p>
 <img src = "https://github.com/Geeks-Arpan/POP_UP/assets/99377659/9386df4a-22b6-46a8-8389-630777de0d94">
+
+Random Password Generator
+Random Password Generator
+<h3>Random Password Generator</h3>
+<p>Tech stack used : Html,Css and Js<p>
+<p>Description : A random password generator is a software program or hardware device that automatically generates a password.</p>
+<img src = "https://github.com/Geeks-Arpan/Random-Password-Generator/assets/99377659/de697c1e-0ce3-465c-9ecb-33fa1124cb35">
