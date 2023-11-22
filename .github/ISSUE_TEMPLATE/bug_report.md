@@ -15,7 +15,7 @@ assignees: ''
 **Expected behavior**
 <!-- A clear and concise description of what you expected to happen. -->
 
-**Screenshots**
+**Screenshots (Mandatory)**
 <!-- If applicable, add screenshots to help explain your problem. -->
 
 
