@@ -24,9 +24,10 @@ Close #<issue_no>
 - [ ] I have added the img of my project in the `assets/img` section
 <!-- [X] - put a cross/X inside [] to check the box -->
 **Additional context (Mandatory )**
-<!--Are you attending OSEN Code Collab Carnival 2023?  --> 
-- [ ] I am a contributor in OSEN open source programme
+
+***Are you contributing under any Open-source programme?***
+<!--Mention it here-->
 
 
 
-<!-- [X] - put a cross/X inside [] to check the  appropriate box -->
+
