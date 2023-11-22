@@ -20,9 +20,5 @@ assignees: ''
 
 
 **Additional context (Mandatory )**
-<!--Are you attending OSEN Code Collab Carnival 2023?  --> 
-- [ ] I am a contributor in OSEN open source programme
-
-
-
-<!-- [X] - put a cross/X inside [] to check the  appropriate box -->
+Are you contributing under any open-source program ?
+<!-- Mention it here-->
