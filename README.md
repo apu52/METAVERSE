@@ -32,15 +32,15 @@
 ### This project is a part of following Open Source Programs
 
 <div>
-  <img src="images/Codepeak Pic.png" width="50%">
-  <img src="images/KWOC pic.png" width="60%">
+  <img src="images/Codepeak Pic.png" width="60%">
+  <img src="images/KWOC pic.png" width="70%">
 </div>
 
 ### This project was previously part of following Open Source Programs
 
 <div>
-  <img src="images/Code collab carnival.png" width="47%">
-  <img src="images/hack.jpeg" width="40%">
+  <img src="images/Code collab carnival.png" width="57%">
+  <img src="images/hack.jpeg" width="50%">
 </div>
   
 ##  About METAVERSE
