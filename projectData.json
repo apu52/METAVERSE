@@ -23,7 +23,7 @@
     "projectTitle": "Calendar",
     "folderName": "Calendar",
     "thumbnailName": "Calendar.png"
-  }, 
+  },
   "6": {
     "projectTitle": "Code Editor",
     "folderName": "Code_Editor",
@@ -65,7 +65,7 @@
     "thumbnailName": "Hotstar_clone.png"
   },
   "14": {
-    "projectTitle": "Insta Clone",         
+    "projectTitle": "Insta Clone",
     "folderName": "Insta_Clone",
     "thumbnailName": "Insta_clone.png"
   },
@@ -75,12 +75,12 @@
     "thumbnailName": "Login_Page.png"
   },
   "16": {
-    "projectTitle": "Meme Generator",         
+    "projectTitle": "Meme Generator",
     "folderName": "Meme_Generator",
     "thumbnailName": "Meme_generator.png"
   },
   "17": {
-    "projectTitle": "Music Player",         
+    "projectTitle": "Music Player",
     "folderName": "Music_Player",
     "thumbnailName": "Music_player.png"
   },
@@ -203,5 +203,10 @@
     "projectTitle": "Spotify Clone",
     "folderName": "Spotify_Clone",
     "thumbnailName": "Spotify_Clone.png"
+  },
+  "42": {
+    "projectTitle": "Analog Clock",
+    "folderName": "Analog_Clock",
+    "thumbnailName": "Analog_Clock.png"
   }
 }
