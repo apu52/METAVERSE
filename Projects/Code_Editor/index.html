@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="left">
+        <div class="leftL">
             <label><i class="fa-brands fa-html5"></i>HTML</label>
-            <textarea id="html-code" onkeyup="run()"></textarea>
+            <div style="width: 50rem; height: 11.5rem; border: 1px solid grey" id="html-code" onkeyup="run()"></div>
 
             <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
-            <textarea id="css-code" onkeyup="run()"></textarea>
+            <div style="width: 50rem; height: 11.5rem; border: 1px solid grey" id="css-code" onkeyup="run()"></div>
 
             <label><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
-            <textarea id="js-code" onkeyup="run()"></textarea>
+            <div style="width: 50rem; height: 11.5rem; border: 1px solid grey" id="js-code" onkeyup="run()"></div>
         </div>
-        <div class="right">
+        <div class="rightR">
             <label><i class="fa-solid fa-play"></i>Output</label>
             <iframe id="output"></iframe>
         </div>
     </div>
-
+    <script src="./node_modules/monaco-editor/min/vs/loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
