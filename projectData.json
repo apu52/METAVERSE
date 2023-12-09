@@ -205,13 +205,8 @@
     "thumbnailName": "Spotify_Clone.png"
   },
   "42": {
-    "projectTitle": "Analog Clock",
-    "folderName": "Analog_Clock",
-    "thumbnailName": "Analog_Clock.png"
-  },
-  "43": {
-    "projectTitle": "Cassette Player",
-    "folderName": "Casette_Animation",
-    "thumbnailName": "Cassette_Player.png"
+    "projectTitle": "Random Password Generator",
+    "folderName": "Random_Password_Generator",
+    "thumbnailName": "random_password_generator.png"
   }
 }
