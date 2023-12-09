@@ -35,6 +35,19 @@ body {
   width: 0;
   height: 0;
 }
+/* METAVERSE heading **/
+.heading {
+  margin-top: -2%;
+  font: 5.5rem Permanent Marker;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  color: white;  
+  padding-bottom: 6%;
+  padding-top: 3%;
+}
 
 .slider {
   cursor: pointer;
@@ -233,6 +246,7 @@ footer {
 .footer-menu ul li a:hover {
   color: #27bcda;
 }
+
 
 @media (max-width: 500px) {
   .footer-bottom p {
@@ -598,115 +612,7 @@ main {
 }
 
 
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
 
-/* responsive larger than 450px screen */
-
-@media (min-width: 450px) {
-  .project-img {
-    height: auto;
-  }
-}
-
-/* responsive larger than 580px screen */
-
-@media (min-width: 580px) {
-  :root {
-    --fs-1: 32px;
-    --fs-2: 24px;
-    --fs-3: 26px;
-    --fs-4: 18px;
-    --fs-6: 15px;
-    --fs-7: 15px;
-    --fs-8: 12px;
-  }
-
-  
-  .icon-box {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    font-size: 18px;
-  }
-
-  main {
-    margin-top: 60px;
-    margin-bottom: 0px;
-  }
-
-  
-
-  
-
-  .project-img{
-    border-radius: 16px;
-  }
-}
-
-/* responsive larger than 768px screenv */
-
-@media (min-width: 768px) {
-
-  .has-scrollbar::-webkit-scrollbar-button {
-    width: 100px;
-  }
-
-  .project-list{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-  
-
-
-@media (min-width: 1024px) {
-  :root {
-
-    /**
-    * shadow
-    */
-
-    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
-    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
-    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-
-  }
-
-  main {
-    margin-bottom: 0px;
-  }
-
-  .main-content {
-    position: relative;
-    width: fit-content;
-    margin: auto;
-  }
-
-  .project-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
- /* responsive larger than 1250px screen */
-@media (min-width: 1250px) {
-  /* MAIN */
-
-  main {
-    max-width: 2000px;
-    margin-inline: auto;
-    display: flex;
-
-    justify-content: center;
-    align-items: stretch;
-    gap: 25px;
-  }
-  .main-content {
-    min-width: 75%;
-    width: 75%;
-    margin: 0;
-  }
-}
 
 
 .search-container {
@@ -846,19 +752,7 @@ main {
 }
 
 
-/* METAVERSE heading **/
-.heading {
-  margin-top: -2%;
-  font: 5.5rem Permanent Marker;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  text-align: center;
-  color: white;  
-  padding-bottom: 6%;
-  padding-top: 3%;
-}
+
 
 span {
   animation: glow 2s ease-in-out infinite;
@@ -1010,4 +904,129 @@ box-shadow: 0px 0px 21px 0px rgba(204,153,255,1);
 
 .social-text{
   font-size: 2rem;
+}
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/* responsive larger than 450px screen */
+
+@media (min-width: 450px) {
+  .project-img {
+    height: auto;
+  }
+}
+
+/* responsive larger than 580px screen */
+
+@media (min-width: 580px) {
+  :root {
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
+  }
+
+  
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+
+  
+
+  
+
+  .project-img{
+    border-radius: 16px;
+  }
+}
+
+/* responsive larger than 768px screenv */
+
+@media (min-width: 768px) {
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 100px;
+  }
+
+  .project-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+  
+
+
+@media (min-width: 1024px) {
+  :root {
+
+    /**
+    * shadow
+    */
+
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+
+  }
+
+  main {
+    margin-bottom: 0px;
+  }
+
+  .main-content {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+ /* responsive larger than 1250px screen */
+@media (min-width: 1250px) {
+  /* MAIN */
+
+  main {
+    max-width: 2000px;
+    margin-inline: auto;
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+  }
+  .main-content {
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+  }
+}
+/* Responsive CSS for the heading*/
+@media (max-width: 760px) {
+  .heading {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 510px) {
+  .heading {
+    font-size: 1.9rem;
+  }
 }
