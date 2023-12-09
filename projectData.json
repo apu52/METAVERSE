@@ -203,5 +203,10 @@
     "projectTitle": "Spotify Clone",
     "folderName": "Spotify_Clone",
     "thumbnailName": "Spotify_Clone.png"
+  },
+  "42": {
+    "projectTitle": "Random Password Generator",
+    "folderName": "Random_Password_Generator",
+    "thumbnailName": "random_password_generator.png"
   }
 }
