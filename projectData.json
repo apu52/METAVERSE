@@ -218,5 +218,10 @@
     "projectTitle": "Cassette Player",
     "folderName": "Casette_Animation",
     "thumbnailName": "Cassette_Player.png"
+  },
+  "44": {
+    "projectTitle": "Simon Game",
+    "folderName": "Simon_Game",
+    "thumbnailName": "Simon_Game.png"
   }
 }
