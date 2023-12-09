@@ -9,15 +9,20 @@ var highestScore = 0;
 
 $(document).ready(function () {
   // Show popup when the page loads
-  $("#popup").removeClass("hidden");
+  $("#popup, #overlay").removeClass("hidden");
 
   // Start game when the "Start" button is clicked
   $("#start-game").click(function () {
-    $("#popup").addClass("hidden");
+    $("#popup, #overlay").addClass("hidden");
     nextSequence();
     started = true;
   });
 
+  $("#restart-game").click(function () {
+    nextSequence();
+    started = true;
+    $("#restart-game").addClass("hidden");
+  });
   // Start game when a key is pressed
   $(document).keypress(function () {
     if (!started) {
@@ -55,8 +60,11 @@ function checkAnswer(currentLevel) {
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text(
+      "Game Over, Press Any Key or Restart Button to Restart"
+    );
 
+    $("#restart-game").removeClass("hidden");
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
