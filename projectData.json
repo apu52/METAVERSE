@@ -208,5 +208,11 @@
     "projectTitle": "Cassette Player",
     "folderName": "Casette_Animation",
     "thumbnailName": "Cassette_Player.png"
+  },
+  "43": {
+    "projectTitle": "Drum Kit",
+    "folderName": "Drum_Kit",
+    "thumbnailName": "Drum_Kit.png"
   }
+
 }
