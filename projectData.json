@@ -204,9 +204,18 @@
     "folderName": "Spotify_Clone",
     "thumbnailName": "Spotify_Clone.png"
   },
+  "42": {
+    "projectTitle": "Analog Clock",
+    "folderName": "Analog_Clock",
+    "thumbnailName": "Analog_Clock.png"
+  },
+  "43": {
+    "projectTitle": "Cassette Player",
+    "folderName": "Casette_Animation",
+    "thumbnailName": "Cassette_Player.png"
+  },
   "44": {
     "projectTitle": "Simon Game",
     "folderName": "Simon_Game",
     "thumbnailName": "Simon_Game.png"
   }
-}
