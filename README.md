@@ -47,6 +47,8 @@
 Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!
 
+We also have a Discord server to discuss doubts and suggestions! Make sure to join it here: https://discord.gg/dvHgzTMsap
+
 ## Announcement 📢
 All of the projects of this repo can be seen in the deployment link in the **about** section
 
