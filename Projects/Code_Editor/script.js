@@ -1,3 +1,5 @@
+
+
 let jsCode = '';
 let htmlCode = '';
 let cssCode = '';
@@ -44,4 +46,21 @@ function run() {
 
     outputCode.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>";
     outputCode.contentWindow.eval(jsCode);
+}
+function hideMe() {
+    const outputWin = document.getElementById("output-window");
+    const code = document.getElementById("code");
+    const icon = document.getElementById("icon");
+
+    if (outputWin.classList.contains("hidden")) {
+        outputWin.classList.remove("hidden");
+        code.classList.add("hidden");
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-code");
+    } else {
+        outputWin.classList.add("hidden");
+        code.classList.remove("hidden");
+        icon.classList.remove("fa-code");
+        icon.classList.add("fa-play");
+    }
 }
