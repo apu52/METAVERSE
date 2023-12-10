@@ -235,7 +235,12 @@
     "thumbnailName": "Drum_Kit.png"
   },
   "48": {
-    "projectTitle": "Productive Webapp",
+    "projectTitle": "Dice Game",
+    "folderName": "Dice_Game",
+    "thumbnailName": "Dice_Game.png"
+  },
+  "49":{
+     "projectTitle": "Productive Webapp",
     "folderName": "Productive_Webapp",
     "thumbnailName": "Productive_Webapp.jpg"
   }
