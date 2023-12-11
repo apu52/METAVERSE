@@ -576,7 +576,7 @@ nav a:hover {
 .main3 .banner2 {
 
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
@@ -762,7 +762,7 @@ nav a:hover {
 .main3 .banner3 {
 
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
@@ -980,7 +980,7 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 1100px) and (min-width: 200px) {
+@media screen and (max-width: 1100px) and (min-width: 700px) {
     .main3 .banner1 {
 
         width: 100%;
@@ -1013,20 +1013,59 @@ nav a:hover {
 
 
 
+
+
+
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 300px) {
+    .main3 .banner1 {
+
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 100px;
+    }
+
+    .main3 .banner2 {
+
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 100px;
+    }
+
+    .main3 .banner3 {
+
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 100px;
+    }
+
+
+
 }
 
 .main4 .banner4 {
     width: 100%;
-    height: 450px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    /* height: 450px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
     padding: 20px;
 }
 
 .main4 .banner4 .rev1 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -1046,7 +1085,7 @@ nav a:hover {
 
 .main4 .banner4 .rev2 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -1065,7 +1104,7 @@ nav a:hover {
 
 .main4 .banner4 .rev3 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -1084,7 +1123,7 @@ nav a:hover {
 
 .main4 .banner4 .rev4 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -1107,6 +1146,32 @@ nav a:hover {
     align-items: center;
     padding: 0px 50px 0px 50px;
     text-align: center;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 700px) {
+    .main4 .banner4 {
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 300px) {
+    .main4 .banner4 {
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 100px;
+    }
+
+
 }
 
 footer {
