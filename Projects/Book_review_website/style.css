@@ -499,6 +499,7 @@ header {
         padding: 18px 40px;
     }
 
+    
     section {
         padding: 50px 40px;
 
@@ -569,12 +570,15 @@ header {
         border-left: 2px solid var(--main-color);
         margin: 1rem;
         display: block;
-
+        color: #474fa0;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
     }
 
     .navbar a:hover {
-        color: #fff;
-        background: var(--main-color);
+        color: white;
+        /* background: var(--main-color); */
+        box-shadow: inset 740px 0 0 0 var(--main-color);
         border: none;
     }
 
@@ -608,7 +612,7 @@ header {
 
 }
 
-@media (max-width:568px) {
+@media (max-width:540px) {
     .copyright {
         flex-direction: column;
     }
@@ -619,6 +623,42 @@ header {
 
     .form-container {
         padding-top: 2rem;
+    }
+
+    .navbar a {
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+        color: #474fa0;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+    }
+
+    .navbar a:hover {
+        color: white;
+        /* background: var(--main-color); */
+        box-shadow: inset 530px 0 0 0 var(--main-color);
+        border: none;
+    }
+}
+
+@media (max-width: 430px){
+    .navbar a {
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+        color: #474fa0;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+    }
+
+    .navbar a:hover {
+        color: white;
+        /* background: var(--main-color); */
+        box-shadow: inset 400px 0 0 0 var(--main-color);
+        border: none;
     }
 }
 
@@ -648,8 +688,43 @@ header {
     .services-container {
         grid-template-columns: repeat(auto-fit, minmax(254px, auto));
     }
+    .navbar a {
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+        color: #474fa0;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+    }
+
+    .navbar a:hover {
+        color: white;
+        /* background: var(--main-color); */
+        box-shadow: inset 280px 0 0 0 var(--main-color);
+        border: none;
+    }
 
     /*see why the subscribe button of newsletter is not proper*/
+}
+
+@media (max-width:280px) {
+    .navbar a {
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+        color: #474fa0;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+    }
+
+    .navbar a:hover {
+        color: white;
+        /* background: var(--main-color); */
+        box-shadow: inset 250px 0 0 0 var(--main-color);
+        border: none;
+    }
 }
 
 
