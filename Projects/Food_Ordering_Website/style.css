@@ -118,7 +118,7 @@ nav a:hover {
 
 .box1 {
     width: 50%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,16 +232,16 @@ nav a:hover {
     }
 
     .box2 img {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         mix-blend-mode: darken;
         align-items: center;
         justify-content: center;
-        scale: 0.8;
+        /* scale: 0.8; */
     }
 
     .box2 {
-        width: 500px;
+        width: 300px;
         height: 350px;
     }
 
@@ -351,9 +351,14 @@ nav a:hover {
     }
 
     .main2 .box3 img {
-        width: 500px;
-        border-radius: 2px;
+        width: 300px;
+        /* border-radius: 2px; */
         /* scale: 0.7; */
+    }
+
+    .main2 .box3 {
+
+        width: 300px;
     }
 
 
@@ -1027,7 +1032,7 @@ nav a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        padding: 100px;
+        padding: 60px;
     }
 
     .main3 .banner2 {
@@ -1037,7 +1042,7 @@ nav a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        padding: 100px;
+        padding: 60px;
     }
 
     .main3 .banner3 {
@@ -1047,7 +1052,7 @@ nav a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        padding: 100px;
+        padding: 60px;
     }
 
 
@@ -1168,7 +1173,7 @@ nav a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        padding: 100px;
+        padding: 60px;
     }
 
 
@@ -1186,7 +1191,7 @@ footer {
     gap: 20px;
 }
 
-@media screen and (max-width: 700px) and (min-width: 300px) {
+@media screen and (max-width: 700px) and (min-width: 500px) {
     footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1194,6 +1199,19 @@ footer {
         width: 100%;
         margin-top: 90px;
         justify-content: space-around;
+        padding: 20px 10px 0px 10px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgba(198, 196, 196, 0.82);
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
         padding: 20px 10px 0px 10px;
         gap: 20px;
     }
