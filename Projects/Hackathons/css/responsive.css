@@ -8,27 +8,12 @@
         width: 297px;
     }
 }
-@media screen and (max-width: 876px) {
-    #nav-btn{
-        width: 250px;
-    }
-}
-@media screen and (max-width: 791px) {
-    #nav-btn{
-       width: 261px;
-       margin: 16px 0;
-    }
-}
+
 @media screen and (max-width: 768px) {
-    .container{
+    .container1{
         overflow: hidden;
     }
     .content{
         margin: 98px 196px;
-    }
-}
-@media screen and (max-width: 738px) {
-    #nav-btn{
-        width: 243px;
     }
 }
