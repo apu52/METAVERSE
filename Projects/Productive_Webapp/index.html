@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div>
+                <h1>MY DAY</h1>
+                <h2 class="date"></h2>
+                <h2 class="time" style="line-height: 0px;"></h2>
+            </div>
+            <div style="margin-right: 20px;">
+                <label for="search"><button class="get">Get</button> </label>
+                <input type="text" id="search">
+                <br><br>
+                <div class="weather">
+                    <h3 style="line-height: 0px;">Jalpaiguri</h3>
+                    <div class="weather-temp">
+                        <h1 class="temp" style="line-height: 0px;">26</h1>
+                        <img src="https://cdn.weatherapi.com/weather/64x64/night/308.png" alt="">
+                    </div>
+                    <h2 style="line-height: 0px;">Heavy rain</h2>
+                    <p style="margin: 0px;">
+                        pressure: 1007 millibars
+                        <br>
+                        Humidity: 97 %
+                        <br>
+                        Wind: SE , 11.2 kph
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="task1">
+                    <div>
+                        <button class="notify"><span class="material-symbols-outlined"
+                                style="font-size: 20px;font-weight: 700; margin: 0px; padding: 0px;">
+                                notifications_active
+                            </span></button>
+                        <h2>Wake Up</h2>
+                    </div>
+                    <button>Done</button>
+
+                </div>
+            </li>
+        </ul>
+        <br><br><br>
+
+        <div class="task">
+            <input type="text" id="do" placeholder="Add Your Task">
+            <label for="do"><button>Add Task</button></label>
+            <br>
+            <div class="count">
+                <h4>TOTAL TASK : 1</h4>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <Script src="app.js"></Script>
+
+</body>
+
+</html>
