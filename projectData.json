@@ -23,7 +23,7 @@
     "projectTitle": "Calendar",
     "folderName": "Calendar",
     "thumbnailName": "Calendar.png"
-  }, 
+  },
   "6": {
     "projectTitle": "Code Editor",
     "folderName": "Code_Editor",
@@ -65,7 +65,7 @@
     "thumbnailName": "Hotstar_clone.png"
   },
   "14": {
-    "projectTitle": "Insta Clone",         
+    "projectTitle": "Insta Clone",
     "folderName": "Insta_Clone",
     "thumbnailName": "Insta_clone.png"
   },
@@ -75,12 +75,12 @@
     "thumbnailName": "Login_Page.png"
   },
   "16": {
-    "projectTitle": "Meme Generator",         
+    "projectTitle": "Meme Generator",
     "folderName": "Meme_Generator",
     "thumbnailName": "Meme_generator.png"
   },
   "17": {
-    "projectTitle": "Music Player",         
+    "projectTitle": "Music Player",
     "folderName": "Music_Player",
     "thumbnailName": "Music_player.png"
   },
@@ -205,8 +205,48 @@
     "thumbnailName": "Spotify_Clone.png"
   },
   "42": {
+    "projectTitle": "Random Password Generator",
+    "folderName": "Random_Password_Generator",
+    "thumbnailName": "random_password_generator.png"
+  },
+  "43": {
+    "projectTitle": "Analog Clock",
+    "folderName": "Analog_Clock",
+    "thumbnailName": "Analog_Clock.png"
+  },
+  "44": {
     "projectTitle": "Cassette Player",
     "folderName": "Casette_Animation",
     "thumbnailName": "Cassette_Player.png"
+  },
+  "45": {
+    "projectTitle": "Simon Game",
+    "folderName": "Simon_Game",
+    "thumbnailName": "Simon_Game.png"
+  },
+  "46": {
+    "projectTitle": "Recipe App",
+    "folderName": "Recipe-App",
+    "thumbnailName": "recipe_app.jpeg"
+  },
+  "47": {
+    "projectTitle": "Drum Kit",
+    "folderName": "Drum_Kit",
+    "thumbnailName": "Drum_Kit.png"
+  },
+  "48": {
+    "projectTitle": "Dice Game",
+    "folderName": "Dice_Game",
+    "thumbnailName": "Dice_Game.png"
+  },
+  "49": {
+     "projectTitle": "Productive Webapp",
+    "folderName": "Productive_Webapp",
+    "thumbnailName": "Productive_Webapp.jpg"
+  },
+  "50": {
+     "projectTitle": "E_Commerce",
+    "folderName": "E_Commerce",
+    "thumbnailName": "E_Commerce.jpg"
   }
 }
