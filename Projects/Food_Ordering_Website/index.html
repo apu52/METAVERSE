@@ -1,212 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--Navigation Section-->
-    <header>
-      <div class="container1">
-        <img src="detailed-chef-logo-template_23-2148986823.avif" alt="" />
-      </div>
-      <div class="container2">
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#review">Review</a></li>
-          </ul>
-        </div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- For hamburger menu -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+    integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--Navigation Section-->
+  <header>
+    <div class="header-container">
+      <span><img class="logo" src="detailed-chef-logo-template_23-2148986823.avif" alt="" /></span>
+      <nav id="nav">
+        <ul id="nav-ul">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Review</a></li>
+        </ul>
+      </nav>
       <div class="container3">
         <span><ion-icon name="search"></ion-icon></span>
         <span><ion-icon name="heart"></ion-icon></span>
         <span><ion-icon name="cart"></ion-icon></span>
       </div>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
-    </header>
-    <!--Main Section Begins-->
-    <main class="main1" id="home">
-      <div class="box1">
-        <div class="item1"><h1>Get Fresh <span class="content">Food</span> Delivered</h1> <h2>at your doorstep</h2></div>
-        <div class="item2"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore alias accusamus repellat molestiae in. Possimus minus animi qui iusto, hic corrupti laudantium harum ipsum odit delectus rerum. Ipsa quas dolore, sed nostrum accusantium velit doloremque voluptate nisi tempore fugit rem deserunt fugiat, minus esse quia cumque expedita cupiditate officia. Eum alias itaque odit eveniet accusantium exercitationem.</p></div>
-        <div class="item3"><button>Order Now ></button></div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+  <!--Main Section Begins-->
+  <main class="main1" id="home">
+    <div class="box1">
+      <div class="item1">
+        <h1>Get Fresh <span class="content">Food</span> Delivered</h1>
+        <h2>at your doorstep</h2>
       </div>
-      <div class="box2"> <img src="burger.png" alt="food-image"></div>
-    </main>
-    <main class="main2" id="about">
-      <div class="box3"> <img src="img000.png" alt="food-image"></div>
-      <div class="box4">
-        <div class="item4"><h1>About <span class="us">Us</span></h1> <br><br><h2>Why choose us?</h2></div>
-        <div class="item5"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore alias accusamus repellat molestiae in. Possimus minus animi qui iusto, hic corrupti laudantium harum ipsum odit delectus rerum. Ipsa quas dolore, sed nostrum accusantium velit doloremque voluptate nisi tempore fugit rem deserunt fugiat, minus esse quia cumque expedita cupiditate officia. Eum alias itaque odit eveniet accusantium exercitationem.</p></div>
+      <div class="item2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore alias accusamus repellat molestiae in.
+          Possimus minus animi qui iusto, hic corrupti laudantium harum ipsum odit delectus rerum. Ipsa quas dolore, sed
+          nostrum accusantium velit doloremque voluptate nisi tempore fugit rem deserunt fugiat, minus esse quia cumque
+          expedita cupiditate officia. Eum alias itaque odit eveniet accusantium exercitationem.</p>
       </div>
-    </main>
-    <main class="main3" id="menu">
-      <div class="menu"><h1 class="ourmenu">Our Menu</h1></div>
-      <div class="banner1">
-        <div class="food1">
-          <img src="buger.jpg" alt="">
-          <h2>Burger</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.79 <button> Order </button></p>
-        </div>
-        <div class="food2">
-          <img src="cake.jpg" alt="">
-          <h2>Pineapple Cake</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.149 <button> Order </button></p>
-        </div>
-        <div class="food3">
-          <img src="pasta.jpg" alt="">
-          <h2>Red Sauce Pasta</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.89 <button> Order </button></p>
-        </div>
-        <div class="food4">
-          <img src="pizza.jpg" alt="">
-          <h2>Mushroom Pizza</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.199 <button> Order </button></p>
+      <div class="item3"><button>Order Now ></button></div>
+    </div>
+    <div class="box2"> <img src="burger.png" alt="food-image"></div>
+  </main>
+  <main class="main2" id="about">
+    <div class="box3"> <img src="img000.png" alt="food-image"></div>
+    <div class="box4">
+      <div class="item4">
+        <h1>About <span class="us">Us</span></h1> <br><br>
+        <h2>Why choose us?</h2>
+      </div>
+      <div class="item5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore alias accusamus repellat molestiae in.
+          Possimus minus animi qui iusto, hic corrupti laudantium harum ipsum odit delectus rerum. Ipsa quas dolore, sed
+          nostrum accusantium velit doloremque voluptate nisi tempore fugit rem deserunt fugiat, minus esse quia cumque
+          expedita cupiditate officia. Eum alias itaque odit eveniet accusantium exercitationem.</p>
+      </div>
+    </div>
+  </main>
+  <main class="main3" id="menu">
+    <div class="menu">
+      <h1 class="ourmenu">Our Menu</h1>
+    </div>
+    <div class="banner1">
+      <div class="food1">
+        <img src="buger.jpg" alt="">
+        <h2>Burger</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.79 <button> Order </button></p>
+      </div>
+      <div class="food2">
+        <img src="cake.jpg" alt="">
+        <h2>Pineapple Cake</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.149 <button> Order </button></p>
+      </div>
+      <div class="food3">
+        <img src="pasta.jpg" alt="">
+        <h2>Red Sauce Pasta</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.89 <button> Order </button></p>
+      </div>
+      <div class="food4">
+        <img src="pizza.jpg" alt="">
+        <h2>Mushroom Pizza</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.199 <button> Order </button></p>
+      </div>
+    </div>
+    <div class="banner2">
+      <div class="food1">
+        <img src="lasagna.webp" alt="">
+        <h2>Lasagna</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.299 <button> Order </button></p>
+      </div>
+      <div class="food2">
+        <img src="juse.jpg" alt="">
+        <h2>Mix Fruit Juice</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.59 <button> Order </button></p>
+      </div>
+      <div class="food3">
+        <img src="Spanchi.jpg" alt="">
+        <h2>Muffin</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.99 <button> Order </button></p>
+      </div>
+      <div class="food4">
+        <img src="sandwich.jpg" alt="">
+        <h2>Sandwich</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.179 <button> Order </button></p>
+      </div>
+    </div>
+    <div class="banner3">
+      <div class="food1">
+        <img src="ice_cream.jpg" alt="">
+        <h2>Strawberry Ice Cream</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.49/scoop <button> Order </button></p>
+      </div>
+      <div class="food2">
+        <img src="chocolate.jpg" alt="">
+        <h2>Vanilla Filled Chocolates</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.89 <button> Order </button></p>
+      </div>
+      <div class="food3">
+        <img src="chocolate_Drink.jpg" alt="">
+        <h2>Chocolate Shake</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.89 <button> Order </button></p>
+      </div>
+      <div class="food4">
+        <img src="gallary_4.jpg" alt="">
+        <h2>Dry-fruit Cake</h2>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
+          velit iure?</p>
+        <p class="money">Rs.129 <button> Order </button></p>
+      </div>
+    </div>
+    <!-- </main>
+  <main class="main4" id="review">
+    <div class="rev">
+      <h1>Customer <span id="cust">Review</span></h1>
+    </div>
+    <div class="banner4">
+      <div class="rev1">
+        <img src="review_1.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cupiditate, ex, adipisci libero recusandae
+          accusantium explicabo consectetur maiores, facilis aperiam assumenda quo sunt.</p>
+        <div class="stars">
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+            name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
         </div>
       </div>
-      <div class="banner2">
-        <div class="food1">
-          <img src="lasagna.webp" alt="">
-          <h2>Lasagna</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.299 <button> Order </button></p>
-        </div>
-        <div class="food2">
-          <img src="juse.jpg" alt="">
-          <h2>Mix Fruit Juice</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.59 <button> Order </button></p>
-        </div>
-        <div class="food3">
-          <img src="Spanchi.jpg" alt="">
-          <h2>Muffin</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.99 <button> Order </button></p>
-        </div>
-        <div class="food4">
-          <img src="sandwich.jpg" alt="">
-          <h2>Sandwich</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.179 <button> Order </button></p>
+      <div class="rev2">
+        <img src="review_2.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nostrum, similique dolores officiis,
+          earum delectus hic nulla adipisci laborum alias cumque recusandae. Voluptate.</p>
+        <div class="stars">
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+            name="star-half"></ion-icon>
         </div>
       </div>
-      <div class="banner3">
-        <div class="food1">
-          <img src="ice_cream.jpg" alt="">
-          <h2>Strawberry Ice Cream</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.49/scoop <button> Order </button></p>
-        </div>
-        <div class="food2">
-          <img src="chocolate.jpg" alt="">
-          <h2>Vanilla Filled Chocolates</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.89 <button> Order </button></p>
-        </div>
-        <div class="food3">
-          <img src="chocolate_Drink.jpg" alt="">
-          <h2>Chocolate Shake</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.89 <button> Order </button></p>
-        </div>
-        <div class="food4">
-          <img src="gallary_4.jpg" alt="">
-          <h2>Dry-fruit Cake</h2>
-          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
-          <p class="money">Rs.129 <button> Order </button></p>
+      <div class="rev3">
+        <img src="review_3.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque reiciendis dolores provident, ipsum odio
+          voluptates consectetur aut beatae numquam ipsam placeat blanditiis libero?</p>
+        <div class="stars">
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+            name="star-half"></ion-icon>
         </div>
       </div>
-    </main>
-    <main class="main4" id="review">
-      <div class="rev"> <h1>Customer <span id="cust">Review</span></h1></div>
-      <div class="banner4">
-        <div class="rev1">
-          <img src="review_1.png" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cupiditate, ex, adipisci libero recusandae accusantium explicabo consectetur maiores, facilis aperiam assumenda quo sunt.</p>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
-          </div>
-        </div>
-        <div class="rev2">
-          <img src="review_2.png" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nostrum, similique dolores officiis, earum delectus hic nulla adipisci laborum alias cumque recusandae. Voluptate.</p>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
-          </div>
-        </div>
-        <div class="rev3">
-          <img src="review_3.png" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque reiciendis dolores provident, ipsum odio voluptates consectetur aut beatae numquam ipsam placeat blanditiis libero?</p>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
-          </div>
-        </div>
-        <div class="rev4">
-          <img src="review_4.png" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quae delectus similique magni nam fugiat libero molestiae animi aliquid voluptates, earum eum vel accusantium.</p>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
-          </div>
+      <div class="rev4">
+        <img src="review_4.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quae delectus similique magni nam fugiat
+          libero molestiae animi aliquid voluptates, earum eum vel accusantium.</p>
+        <div class="stars">
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+            name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
         </div>
       </div>
-    </main>
+    </div>
+  </main> -->
     <!--End(footer) Section Begins-->
-    <footer>
-      <div class="location">
-        <h1>Our Locations</h1>
-        <p>Sri Lanka</p>
-        <p>USA</p>
-        <p>India</p>
-        <p>Australia</p>
-        <p>Canada</p>
-        <p>United Kingdom</p>
-      </div>
-      <div class="quick">
-        <h1>Quick Links</h1>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a><a href="#menu">Our Menu</a><a href="#review">Reviews</a>
-      </div>
-      <div class="contact">
-        <h1>Contact Us</h1>
-        <p>+91-XXXXXXX432</p>
-        <p>+91-XXXXXXX439</p>
-        <p>foodshop@gmail.com</p>
-      </div>
-      <div class="ourservice">
-        <h1>Our Services</h1>
-        <p>Fast Delivey</p>
-        <p>Easy Payments</p>
-        <p>24x7 Service</p>
-      </div>
-      <div class="follows"> 
-        <h1>Follows</h1>
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </div>
-    </footer>
-  </body>
+    <!-- <footer>
+    <div class="location">
+      <h1>Our Locations</h1>
+      <p>Sri Lanka</p>
+      <p>USA</p>
+      <p>India</p>
+      <p>Australia</p>
+      <p>Canada</p>
+      <p>United Kingdom</p>
+    </div>
+    <div class="quick">
+      <h1>Quick Links</h1>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a><a href="#menu">Our Menu</a><a href="#review">Reviews</a>
+    </div>
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <p>+91-XXXXXXX432</p>
+      <p>+91-XXXXXXX439</p>
+      <p>foodshop@gmail.com</p>
+    </div>
+    <div class="ourservice">
+      <h1>Our Services</h1>
+      <p>Fast Delivey</p>
+      <p>Easy Payments</p>
+      <p>24x7 Service</p>
+    </div>
+    <div class="follows">
+      <h1>Follows</h1>
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </div>
+  </footer> -->
+
+    <!-- For Javascript code -->
+    <script src="index.js"></script>
+</body>
+
 </html>

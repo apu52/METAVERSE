@@ -1,176 +1,379 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-html {
-  scroll-behavior: smooth;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(231 231 231 / 82%);
-  height: 4.5rem;
-  justify-content: space-between;
-  box-shadow: 0px 0.1rem 0.9rem black;
-  position: sticky;
-  top: 0;
-}
-.container1 img {
-  height: 150%;
-  width: 100%;
-  margin-left: 25px;
-  border-radius: 20px 20px 20px 20px;
-  position: relative;
-  top: 20px;
-}
-.container2 {
-  margin-top: 20px;
-}
-.container2 ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  gap: 5rem;
-}
-.container2 a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: bold;
-}
-.container2 a:hover {
-  color: gold;
-}
-.container2 ul li a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: gold;
-  display: block;
-  transition: 0.2s linear;
-}
-.container2 ul li a:hover::after {
-  width: 100%;
-}
-.container3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-.container3 span {
-  font-size: 30px;
-  padding-right: 50px;
-}
-.container3 span:hover {
-  color: gold;
-  cursor: pointer;
-}
-.main1 {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-}
-.box1 {
-  width: 60%;
-  height: 39.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  gap: 4rem;
+html {
+    scroll-behavior: smooth;
 }
+
+
+
+header {
+    position: relative;
+    background: hsla(0, 0%, 0%, .6);
+    padding: 0.2rem 0;
+    z-index: 999;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline: auto;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #4FC3F7;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.container3 span {
+    font-size: 30px;
+    padding-right: 50px;
+}
+
+.container3 span:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+
+@media (max-width: 600px) {
+
+    .toggle {
+        transition: ease-in-out 550ms;
+        transform: translate(0px);
+        opacity: 1;
+        display: block;
+    }
+
+    .header-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: hsla(0, 0%, 0%, .5);
+        backdrop-filter: blur(10px);
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    nav li {
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    nav li:hover {
+        background: hsla(0, 0%, 0%, .7);
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.main1 {
+    display: flex;
+    /* flex-direction: row; */
+    /* padding: 10px; */
+}
+
+.box1 {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .box1 .item1 {
-  padding: 0px 100px 0px 100px;
+    padding: 0px 100px 0px 100px;
 }
+
 .box1 .item2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 100px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
 }
+
 .box1 .item3 {
-  padding: 0px 100px 0px 100px;
+    padding: 0px 100px 0px 100px;
 }
+
 .box1 .item3 button {
-  height: 3rem;
-  width: 10rem;
-  border: none;
-  background-color: rgba(255, 217, 0, 0.763);
-  font-size: 1.2rem;
-  cursor: pointer;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: rgba(255, 217, 0, 0.763);
+    font-size: 1.2rem;
+    cursor: pointer;
 }
+
 .box1 .item3 button:hover {
-  background-color: gold;
-  border: 1px solid black;
-  border-radius: 5px;
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 5px;
 }
+
 .box2 {
-  width: 40%;
-  height: 39.5rem;
+    width: 500px;
+    height: 500px;
 }
+
 .box2 img {
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: darken;
+    width: 500px;
+    height: 500px;
+    mix-blend-mode: darken;
 }
+
 .content {
-  font-style: italic;
-  font-size: 2.5rem;
-  color: yellow;
-  text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.632);
+    font-style: italic;
+    font-size: 2.5rem;
+    color: yellow;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.632);
 }
+
+/* media queries for responsiveness in main1 */
+
+@media screen and (max-width: 1000px) and (min-width: 564px) {
+
+
+    .box1 {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main1 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .box1 {
+        width: 90%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 2rem; */
+    }
+
+    .box1 .item1 {
+        padding: 0px 3px 0px 3px;
+    }
+
+    .box1 .item2 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding: 0px 3px 0px 3px;
+    }
+
+}
+
+@media screen and (max-width: 564px) and (min-width: 200px) {
+
+
+    .box1 {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 13px;
+    }
+
+    .box2 img {
+        width: 500px;
+        height: 500px;
+        mix-blend-mode: darken;
+        align-items: center;
+        justify-content: center;
+        scale: 0.8;
+    }
+
+    .box2 {
+        width: 500px;
+        height: 350px;
+    }
+
+    .item1 {
+        font-size: 9px;
+    }
+
+    .content {
+        font-size: 25px;
+    }
+
+
+    .main1 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .box1 .item1 {
+        padding: 0px 3px 0px 3px;
+    }
+
+    .box1 .item2 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding: 0px 3px 0px 3px;
+    }
+
+    .box1 {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+
 .main2 {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
 }
+
 .main2 .box3 {
-  
-  width: 45%;
+
+    width: 500px;
 }
+
 .main2 .box3 img {
-  width: 100%;
-  border-radius: 2px;
+    width: 500px;
+    border-radius: 2px;
 }
+
 .main2 .box4 {
-  
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
+
 .main2 .box4 .item4 h1 {
-  text-align: center;
-  font-family: cursive;
-  padding: 0px 480px 0px 0px;
+    text-align: center;
+    font-family: cursive;
+    padding: 0px 480px 0px 0px;
 }
+
 .us {
-  color: gold;
-  font-family: cursive;
+    color: gold;
+    font-family: cursive;
 }
-.main2 .box4 .item5{
+
+.main2 .box4 .item5 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 100px 0px 100px;
 }
-.main3{
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+
+    .main2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        align-items: center;
+    }
+
+    .main2 .box4 .item4 h1 {
+        text-align: center;
+        font-family: cursive;
+        padding: 0px 80px 0px 0px;
+    }
+
+    .main2 .box4 .item5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .main2 .box3 img {
+        width: 500px;
+        border-radius: 2px;
+        /* scale: 0.7; */
+    }
+
+
+}
+
+
+
+/* .main3 {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 0px 100px 0px 100px;
-}
-.menu{
+} */
+
+.menu {
     text-align: center;
     font-weight: bolder;
 }
-.menu h1::after{
+
+.menu h1::after {
     content: '';
     width: 0;
     height: 2px;
@@ -178,39 +381,234 @@ header {
     background-color: gold;
     transition: 0.2s linear;
 }
-.menu h1:hover::after{
+
+.menu h1:hover::after {
     width: 100%;
 }
-.main3 .banner1{
-    
+
+.main3 .banner1 {
+
+    /* width: 100%; */
+    /* height: 450px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    /* gap: 20px; */
+    padding: 10px;
+}
+
+.main3 .banner1 .food1 {
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 25%; */
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
+}
+
+.main3 .banner1 .food1 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.main3 .banner1 .food1 h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main3 .banner1 .food1 .des {
+    padding: 0px 20px 0px 20px;
+}
+
+.main3 .banner1 .food1 .money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.main3 .banner1 .food1 .money button {
+    width: 5rem;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+
+.main3 .banner1 .food2 {
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 25%; */
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
+}
+
+.main3 .banner1 .food2 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.main3 .banner1 .food2 h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main3 .banner1 .food2 .des {
+    padding: 0px 20px 0px 20px;
+}
+
+.main3 .banner1 .food2 .money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.main3 .banner1 .food2 .money button {
+    width: 5rem;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+
+.main3 .banner1 .food3 {
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 25%; */
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
+}
+
+.main3 .banner1 .food3 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.main3 .banner1 .food3 h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main3 .banner1 .food3 .des {
+    padding: 0px 20px 0px 20px;
+}
+
+.main3 .banner1 .food3 .money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.main3 .banner1 .food3 .money button {
+    width: 5rem;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+
+.main3 .banner1 .food4 {
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 25%; */
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
+}
+
+.main3 .banner1 .food4 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.main3 .banner1 .food4 h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main3 .banner1 .food4 .des {
+    padding: 0px 20px 0px 20px;
+}
+
+.main3 .banner1 .food4 .money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.main3 .banner1 .food4 .money button {
+    width: 5rem;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+
+.main3 .banner2 {
+
     width: 100%;
     height: 450px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
 }
-.main3 .banner1 .food1{
+
+.main3 .banner2 .food1 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner1 .food1 img{
+
+.main3 .banner2 .food1 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner1 .food1 h2{
+
+.main3 .banner2 .food1 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner1 .food1 .des{
+
+.main3 .banner2 .food1 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner1 .food1 .money{
+
+.main3 .banner2 .food1 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -219,7 +617,8 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner1 .food1 .money button{
+
+.main3 .banner2 .food1 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
@@ -227,27 +626,33 @@ header {
     background-color: gold;
     cursor: pointer;
 }
-.main3 .banner1 .food2{
+
+.main3 .banner2 .food2 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner1 .food2 img{
+
+.main3 .banner2 .food2 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner1 .food2 h2{
+
+.main3 .banner2 .food2 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner1 .food2 .des{
+
+.main3 .banner2 .food2 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner1 .food2 .money{
+
+.main3 .banner2 .food2 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -256,35 +661,42 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner1 .food2 .money button{
+
+.main3 .banner2 .food2 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
     background-color: gold;
     cursor: pointer;
-}   
-.main3 .banner1 .food3{
+}
+
+.main3 .banner2 .food3 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner1 .food3 img{
+
+.main3 .banner2 .food3 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner1 .food3 h2{
+
+.main3 .banner2 .food3 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner1 .food3 .des{
+
+.main3 .banner2 .food3 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner1 .food3 .money{
+
+.main3 .banner2 .food3 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -293,35 +705,42 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner1 .food3 .money button{
+
+.main3 .banner2 .food3 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
     background-color: gold;
     cursor: pointer;
-}   
-.main3 .banner1 .food4{
+}
+
+.main3 .banner2 .food4 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner1 .food4 img{
+
+.main3 .banner2 .food4 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner1 .food4 h2{
+
+.main3 .banner2 .food4 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner1 .food4 .des{
+
+.main3 .banner2 .food4 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner1 .food4 .money{
+
+.main3 .banner2 .food4 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -330,7 +749,8 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner1 .food4 .money button{
+
+.main3 .banner2 .food4 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
@@ -338,36 +758,43 @@ header {
     background-color: gold;
     cursor: pointer;
 }
-.main3 .banner2{
-    
+
+.main3 .banner3 {
+
     width: 100%;
     height: 450px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
 }
-.main3 .banner2 .food1{
+
+.main3 .banner3 .food1 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner2 .food1 img{
+
+.main3 .banner3 .food1 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner2 .food1 h2{
+
+.main3 .banner3 .food1 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner2 .food1 .des{
+
+.main3 .banner3 .food1 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner2 .food1 .money{
+
+.main3 .banner3 .food1 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -376,7 +803,8 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner2 .food1 .money button{
+
+.main3 .banner3 .food1 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
@@ -384,27 +812,33 @@ header {
     background-color: gold;
     cursor: pointer;
 }
-.main3 .banner2 .food2{
+
+.main3 .banner3 .food2 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner2 .food2 img{
+
+.main3 .banner3 .food2 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner2 .food2 h2{
+
+.main3 .banner3 .food2 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner2 .food2 .des{
+
+.main3 .banner3 .food2 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner2 .food2 .money{
+
+.main3 .banner3 .food2 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -413,7 +847,8 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner2 .food2 .money button{
+
+.main3 .banner3 .food2 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
@@ -421,27 +856,33 @@ header {
     background-color: gold;
     cursor: pointer;
 }
-.main3 .banner2 .food3{
+
+.main3 .banner3 .food3 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner2 .food3 img{
+
+.main3 .banner3 .food3 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner2 .food3 h2{
+
+.main3 .banner3 .food3 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner2 .food3 .des{
+
+.main3 .banner3 .food3 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner2 .food3 .money{
+
+.main3 .banner3 .food3 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -450,35 +891,42 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner2 .food3 .money button{
+
+.main3 .banner3 .food3 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
     background-color: gold;
     cursor: pointer;
-} 
-.main3 .banner2 .food4{
+}
+
+.main3 .banner3 .food4 {
     border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    overflow-y: scroll;
 }
-.main3 .banner2 .food4 img{
+
+.main3 .banner3 .food4 img {
     width: 100%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
 }
-.main3 .banner2 .food4 h2{
+
+.main3 .banner3 .food4 h2 {
     text-align: center;
     padding-top: 10px;
 }
-.main3 .banner2 .food4 .des{
+
+.main3 .banner3 .food4 .des {
     padding: 0px 20px 0px 20px;
 }
-.main3 .banner2 .food4 .money{
+
+.main3 .banner3 .food4 .money {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -487,7 +935,8 @@ header {
     padding-right: 30px;
     font-weight: bold;
 }
-.main3 .banner2 .food4 .money button{
+
+.main3 .banner3 .food4 .money button {
     width: 5rem;
     height: 100%;
     border: 1px solid black;
@@ -495,181 +944,28 @@ header {
     background-color: gold;
     cursor: pointer;
 }
-.main3 .banner3{
-    
-    width: 100%;
-    height: 450px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
-}
-.main3 .banner3 .food1{
-    border: 1px solid rgb(0, 0, 0);
-    width: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-}
-.main3 .banner3 .food1 img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-.main3 .banner3 .food1 h2{
-    text-align: center;
-    padding-top: 10px;
-}
-.main3 .banner3 .food1 .des{
-    padding: 0px 20px 0px 20px;
-}
-.main3 .banner3 .food1 .money{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-.main3 .banner3 .food1 .money button{
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: gold;
-    cursor: pointer;
-}
-.main3 .banner3 .food2{
-    border: 1px solid rgb(0, 0, 0);
-    width: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-}
-.main3 .banner3 .food2 img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-.main3 .banner3 .food2 h2{
-    text-align: center;
-    padding-top: 10px;
-}
-.main3 .banner3 .food2 .des{
-    padding: 0px 20px 0px 20px;
-}
-.main3 .banner3 .food2 .money{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-.main3 .banner3 .food2 .money button{
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: gold;
-    cursor: pointer;
-}
-.main3 .banner3 .food3{
-    border: 1px solid rgb(0, 0, 0);
-    width: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-}
-.main3 .banner3 .food3 img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-.main3 .banner3 .food3 h2{
-    text-align: center;
-    padding-top: 10px;
-}
-.main3 .banner3 .food3 .des{
-    padding: 0px 20px 0px 20px;
-}
-.main3 .banner3 .food3 .money{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-.main3 .banner3 .food3 .money button{
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: gold;
-    cursor: pointer;
-}
-.main3 .banner3 .food4{
-    border: 1px solid rgb(0, 0, 0);
-    width: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-}
-.main3 .banner3 .food4 img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-.main3 .banner3 .food4 h2{
-    text-align: center;
-    padding-top: 10px;
-}
-.main3 .banner3 .food4 .des{
-    padding: 0px 20px 0px 20px;
-}
-.main3 .banner3 .food4 .money{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-.main3 .banner3 .food4 .money button{
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: gold;
-    cursor: pointer;
-}
-.main4{
+
+.main4 {
     display: flex;
     flex-direction: column;
-    
+
 }
-.main4 .rev{
+
+.main4 .rev {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
 }
-.main4 #cust{
+
+.main4 #cust {
     font-family: cursive;
     font-size: 2.5rem;
     color: gold;
     text-shadow: 2px 0px 0px black;
     cursor: pointer;
 }
-#cust::after{
+
+#cust::after {
     content: '';
     width: 0;
     height: 2px;
@@ -678,11 +974,48 @@ header {
     transition: 0.2s linear;
 
 }
-#cust:hover::after{
+
+#cust:hover::after {
     width: 100%;
-    
+
 }
-.main4 .banner4{
+
+@media screen and (max-width: 1100px) and (min-width: 200px) {
+    .main3 .banner1 {
+
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .main3 .banner2 {
+
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .main3 .banner3 {
+
+        width: 100%;
+        /* height: 450px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 50px;
+    }
+
+
+
+}
+
+.main4 .banner4 {
     width: 100%;
     height: 450px;
     display: flex;
@@ -690,7 +1023,8 @@ header {
     gap: 20px;
     padding: 20px;
 }
-.main4 .banner4 .rev1{
+
+.main4 .banner4 .rev1 {
     border: 1px solid rgb(0, 0, 0);
     width: 25%;
     height: 100%;
@@ -699,33 +1033,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.main4 .banner4 .rev1 img{
+
+.main4 .banner4 .rev1 img {
     width: 60%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
     border-radius: 100%;
 }
-.main4 .banner4 .rev2{
-    border: 1px solid rgb(0, 0, 0);
-    width: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main4 .banner4 .rev2 img{
-    width: 60%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-    border-radius: 100%;
-}
-.main4 .banner4 .rev3{
+
+.main4 .banner4 .rev2 {
     border: 1px solid rgb(0, 0, 0);
     width: 25%;
     height: 100%;
@@ -735,14 +1054,16 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.main4 .banner4 .rev3 img{
+
+.main4 .banner4 .rev2 img {
     width: 60%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
     border-radius: 100%;
 }
-.main4 .banner4 .rev4{
+
+.main4 .banner4 .rev3 {
     border: 1px solid rgb(0, 0, 0);
     width: 25%;
     height: 100%;
@@ -752,21 +1073,43 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.main4 .banner4 .rev4 img{
+
+.main4 .banner4 .rev3 img {
     width: 60%;
     height: 50%;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid black;
     border-radius: 100%;
 }
-.main4 .banner4 p{
+
+.main4 .banner4 .rev4 {
+    border: 1px solid rgb(0, 0, 0);
+    width: 25%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px rgb(6, 6, 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main4 .banner4 .rev4 img {
+    width: 60%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid black;
+    border-radius: 100%;
+}
+
+.main4 .banner4 p {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 50px 0px 50px;
     text-align: center;
 }
-footer{
+
+footer {
     display: flex;
     flex-direction: row;
     background-color: rgba(198, 196, 196, 0.82);
@@ -776,30 +1119,36 @@ footer{
     justify-content: space-between;
     padding: 20px 100px 0px 100px;
 }
-footer .location{
+
+footer .location {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer .quick{
+
+footer .quick {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer .quick a{
+
+footer .quick a {
     text-decoration: none;
 }
-footer .contact{
+
+footer .contact {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer .ourservice{
+
+footer .ourservice {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer ion-icon{
+
+footer ion-icon {
     margin-top: 19px;
     padding: 5px;
 }
