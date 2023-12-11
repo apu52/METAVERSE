@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRacer</title> 
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="carGame">
+        <div class="score"></div>
+        <div class="startScreen">
+            <p>Press here to start <br>
+               Use Arrow keys to move <br>
+               If you hit another car you will lose.  
+            </p>
+            <div>Select Level
+                <span class="level">
+                    <button id="easy">Easy</button>
+                    <button id="moderate">Moderate</button>
+                    <button id="difficult">Difficult</button>
+                </span>
+            </div>
+        </div>
+        <div class="gameArea"></div>
+    </div>
+    <script src="gameHandler.js"></script>
+</body>
+</html>
