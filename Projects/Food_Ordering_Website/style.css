@@ -1175,15 +1175,31 @@ nav a:hover {
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(198, 196, 196, 0.82);
     width: 100%;
     margin-top: 90px;
-    height: 350px;
+    /* height: 350px; */
     justify-content: space-between;
-    padding: 20px 100px 0px 100px;
+    padding: 20px 10px 0px 10px;
+    gap: 20px;
 }
+
+@media screen and (max-width: 700px) and (min-width: 300px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgba(198, 196, 196, 0.82);
+        width: 100%;
+        margin-top: 90px;
+        justify-content: space-around;
+        padding: 20px 10px 0px 10px;
+        gap: 20px;
+    }
+}
+
+
 
 footer .location {
     display: flex;
