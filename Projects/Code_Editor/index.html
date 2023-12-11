@@ -9,22 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <div class="left">
+        <button onclick="hideMe()"><i class="fa-solid fa-play" id="icon"></i></button>
+        <div class="leftL " id="code">
             <label><i class="fa-brands fa-html5"></i>HTML</label>
-            <textarea id="html-code" onkeyup="run()"></textarea>
+            <div id="html-code" onkeyup="run()"></div>
 
             <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
-            <textarea id="css-code" onkeyup="run()"></textarea>
+            <div id="css-code" onkeyup="run()"></div>
 
             <label><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
-            <textarea id="js-code" onkeyup="run()"></textarea>
+            <div id="js-code" onkeyup="run()"></div>
         </div>
-        <div class="right">
+        <div class="rightR hidden" id = "output-window">
             <label><i class="fa-solid fa-play"></i>Output</label>
             <iframe id="output"></iframe>
         </div>
+        
     </div>
-
+    <script src="./node_modules/monaco-editor/min/vs/loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -14,19 +14,9 @@ body{
     padding: 20px;
     display: flex;
 }
-.left, .right{
+.leftL, .rightR{
     flex-basis: 50%;
     padding: 10px;
-}
-textarea{
-    width: 100%;
-    height: 28%;
-    background-color: #1f1f1f;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: 0;
-    padding: 0;
-    font-size: 18px;
 }
 iframe{
     width: 100%;
@@ -44,4 +34,55 @@ label{
     align-items: center;
     background-color: #000;
     height: 30px;
+    flex-basis: 50%;
+}
+
+#html-code{
+    flex-basis: 50%; 
+    height: 11.5rem; 
+    border: 1px solid grey;
+}
+
+#css-code{
+    flex-basis: 50%; 
+    height: 11.5rem; 
+    border: 1px solid grey;
+}
+
+#js-code{
+    flex-basis: 50%;
+    height: 11.5rem; 
+    border: 1px solid grey;
+}
+
+.hidden{
+    color:white;   
+}
+
+.container button{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .leftL, .rightR{
+        flex-basis: 100%;
+        padding: 0;
+    } 
+    .hidden{
+        display: none;
+    }
+    .container button{
+        position: fixed;
+        display: inline;
+        z-index: 111;
+        width: 2rem;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        top: 93%;
+        left: 88%;
+    }
 }

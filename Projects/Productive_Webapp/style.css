@@ -1,0 +1,102 @@
+.container{
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(216, 237, 255);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.513);
+    overflow: scroll;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li .task1{
+    height: 50px;
+    width: 500px;
+    border: 2px solid black;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.task1 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.notify{
+    margin-left: 20px;
+    margin-left: 10px;
+    height: 25px;
+    width: 35px;
+}
+
+li div button{
+    position: relative;
+    right: 20px;
+}
+.task1{
+    background-color:yellow;
+}
+.count{
+    margin: auto;
+}
+h1{
+    font-weight: 900;
+}
+.head h2{
+    font-weight: 500;
+}
+.head{
+    width: 579px;
+    height: 250px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+   background-image: url(Asset/nuture.jpg);
+   background-size: cover;
+   display: flex;
+   justify-content: space-between;
+}
+.task{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    bottom: 0px;
+    z-index: 10;
+}
+.task input{
+    width: 200px;
+    height: 30px;
+}
+.task button{
+    height: 30px;
+    margin-left: 10px;
+}
+.weather{
+    background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+}
+.weather-temp{
+    display: flex;
+    justify-content: space-around;
+}
+.weather img{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
