@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.5s ease;
+  }
+  
+  .light {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .dark {
+    background-color: #333;
+    color: #f8f8f8;
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    /* border: 2px solid #333;
+    border-radius: 5px; */
+    margin-bottom: 20px;
+  }
+  
+  .fox-container {
+    position: relative;
+  }
+  
+  .fox {
+    width: 150px;
+    height: 150px;
+    background: url('fox.jpg') no-repeat center center;
+    background-size: cover;
+    transition: transform 0.5s ease;
+  }
+  .togglee {
+    position : relative ;
+    display : inline-block;
+    width : 100px;
+    height : 52px;
+    background-color: rgb(0, 195, 255);
+    border-radius: 30px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+       
+/* After slide changes */
+.togglee:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 55%;
+    background-color: gray;
+    top: 1px; 
+    left: 1px;
+    transition:  all 0.5s;
+}
+       
+/* Toggle text */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+       
+/* Checkbox checked effect */
+.checkbox:checked + .togglee::after {
+    left : 49px; 
+}
+       
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .togglee {
+    background-color: rgb(9, 9, 201);
+}
+       
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+    cursor:pointer;
+}
