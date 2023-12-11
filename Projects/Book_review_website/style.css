@@ -575,6 +575,7 @@ header {
         transition: ease-out 0.3s;
     }
 
+    /* transition effect on hover */
     .navbar a:hover {
         color: white;
         /* background: var(--main-color); */
