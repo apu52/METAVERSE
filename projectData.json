@@ -254,9 +254,14 @@
     "folderName": "moto_racer",
     "thumbnailName": "moto_racer.png"
   },
-    "52": {
-     "projectTitle": "Speakify- A Translator app",
+  "52": {
+    "projectTitle": "Speakify- A Translator app",
     "folderName": "Speakify",
     "thumbnailName": "Speakify.png"
-  }
+  },
+  "53": {
+   "projectTitle": "TIC_TAC_TOE",
+   "folderName": "TIC_TAC_TOE",
+   "thumbnailName": "TIC_TAC_TOE.png"
+ }
 }
