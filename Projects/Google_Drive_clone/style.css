@@ -165,3 +165,16 @@ body {
     color: rgba(0, 0, 0, 0.54);
     margin-top: -3px;
   }
+  /*Responsive CSS*/
+  @media screen and (max-width: 540px){
+    .search-wrapper{
+      display: none;
+      
+    }
+    .side-nav.floating{
+      display: none;
+    }
+    .main{
+      margin-left: 1cqmin;
+    }
+  }

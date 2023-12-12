@@ -243,5 +243,20 @@
      "projectTitle": "Productive Webapp",
     "folderName": "Productive_Webapp",
     "thumbnailName": "Productive_Webapp.jpg"
-  }
+  },
+  "50": {
+     "projectTitle": "E_Commerce",
+    "folderName": "E_Commerce",
+    "thumbnailName": "E_Commerce.png"
+  },
+  "51": {
+     "projectTitle": "Moto_Racer",
+    "folderName": "moto_racer",
+    "thumbnailName": "moto_racer.png"
+  },
+  "52": {
+    "projectTitle": "TIC_TAC_TOE",
+   "folderName": "TIC_TAC_TOE",
+   "thumbnailName": "TIC_TAC_TOE.png"
+ }
 }
