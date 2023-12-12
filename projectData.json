@@ -258,5 +258,10 @@
     "projectTitle": "TIC_TAC_TOE",
    "folderName": "TIC_TAC_TOE",
    "thumbnailName": "TIC_TAC_TOE.png"
+ },
+  "53": {
+    "projectTitle": "Text Encryptor",
+   "folderName": "Text_Encryptor",
+   "thumbnailName": "Text_Encryptor.png"
  }
 }
