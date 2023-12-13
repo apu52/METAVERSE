@@ -1,0 +1,18 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #71c5cf;
+}
+
+#board {
+    background-image: url("./flappybirdbg.png");
+}
+#titleImage {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto; 
+    z-index: 9999; /* Set a high z-index to ensure it's on top */
+}

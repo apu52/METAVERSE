@@ -285,4 +285,10 @@
     "folderName": "PARALLAX_WEBSITE",
     "thumbnailName": "PARALLAX_WEBSITE.png"
   }
+  ,
+  "57": {
+    "projectTitle": "Flappy Bird",
+    "folderName": "Flappybird_game",
+    "thumbnailName": "Flappybird_game.png"
+  }
 }
