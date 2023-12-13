@@ -264,9 +264,14 @@
    "folderName": "TIC_TAC_TOE",
    "thumbnailName": "TIC_TAC_TOE.png"
  },
- "54": {
-  "projectTitle": "NFT_Website_Clone",
-  "folderName": "NFT_Website_Clone",
-  "thumbnailName": "NFT_Website_Clone.jpg"
+  "54": {
+   "projectTitle": "Text Encryptor",
+   "folderName": "Text_Encryptor",
+   "thumbnailName": "Text_Encryptor.png"
+ },
+  "55": {
+    "projectTitle": "NFT_Website_Clone",
+    "folderName": "NFT_Website_Clone",
+    "thumbnailName": "NFT_Website_Clone.jpg"
   }
 }
