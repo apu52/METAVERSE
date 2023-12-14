@@ -253,5 +253,10 @@
      "projectTitle": "Moto_Racer",
     "folderName": "moto_racer",
     "thumbnailName": "moto_racer.png"
+  },
+  "52": {
+     "projectTitle": "Packman Game",
+    "folderName": "packman",
+    "thumbnailName": "PacmanImage.png"
   }
 }
