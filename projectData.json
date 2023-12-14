@@ -294,5 +294,10 @@
     "projectTitle": "AI Image Generator",
     "folderName": "AI_Image _Generator",
     "thumbnailName": "AI_Image _Generator.png"
+  },
+  "60": {
+    "projectTitle": "Snake Game",
+    "folderName": "Snake_Game",
+    "thumbnailName": "Snake_Game.jpg"
   }
 }
