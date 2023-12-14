@@ -39,6 +39,10 @@ h1:hover{
     width: 22%;
     border-radius: 5px;
     background-color: rgb(252, 250, 250);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .card:hover{
     box-shadow: 0 10px 20px 0 rgba(255, 0, 0, 0.945);
@@ -54,6 +58,9 @@ img{
 .card-text{
     font-family: 'Archivo Narrow', sans-serif;
     margin: 10px 0;
+}
+.ihtml{
+ text-align: center;
 }
 .wrap{
     display: flex;

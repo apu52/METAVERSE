@@ -1,0 +1,66 @@
+body {
+    background: rgb(255 119 119);
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .scores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .total-score {
+    margin-right: 20px;
+    margin: 20px;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    color: #000;
+    border-radius: 20px;
+  }
+  
+  .time {
+    margin-right: 20px;
+    margin: 20px;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    color: #000;
+    border-radius: 20px;
+  }
+  
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+    margin-top: 2rem;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  
+  .square {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background:#b55e5e;
+    border-radius: 20px;
+  }
+  
+  /* JavaScript */
+  .emoji {
+    background-image: url("bunny.jpeg");
+    background-position: center;
+    background-size: cover;
+  }

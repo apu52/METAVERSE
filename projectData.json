@@ -255,6 +255,47 @@
     "thumbnailName": "moto_racer.png"
   },
   "52": {
+    "projectTitle": "Speakify- A Translator app",
+    "folderName": "Speakify",
+    "thumbnailName": "Speakify.png"
+  },
+  "53": {
+   "projectTitle": "TIC_TAC_TOE",
+   "folderName": "TIC_TAC_TOE",
+   "thumbnailName": "TIC_TAC_TOE.png"
+ },
+  "54": {
+   "projectTitle": "Text Encryptor",
+   "folderName": "Text_Encryptor",
+   "thumbnailName": "Text_Encryptor.png"
+ },
+  "55": {
+    "projectTitle": "NFT_Website_Clone",
+    "folderName": "NFT_Website_Clone",
+    "thumbnailName": "NFT_Website_Clone.jpg"
+  },
+  "56": {
+    "projectTitle": "Bunny Catcher",
+    "folderName": "Bunny_Catcher",
+    "thumbnailName": "Bunny_Catcher.png"
+  }
+  ,
+  "57": {
+    "projectTitle": "PARALLAX_WEBSITE",
+    "folderName": "PARALLAX_WEBSITE",
+    "thumbnailName": "PARALLAX_WEBSITE.png"
+  },
+  "58": {
+    "projectTitle": "Flappy Bird",
+    "folderName": "Flappybird_game",
+    "thumbnailName": "Flappybird_game.png"
+  },
+  "59": {
+    "projectTitle": "AI Image Generator",
+    "folderName": "AI_Image _Generator",
+    "thumbnailName": "AI_Image _Generator.png"
+ },
+  "60": {
      "projectTitle": "Packman Game",
     "folderName": "packman",
     "thumbnailName": "PacmanImage.png"
