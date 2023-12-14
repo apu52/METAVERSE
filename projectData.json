@@ -280,15 +280,21 @@
     "thumbnailName": "Bunny_Catcher.png"
   }
   ,
-  "56": {
+  "57": {
     "projectTitle": "PARALLAX_WEBSITE",
     "folderName": "PARALLAX_WEBSITE",
     "thumbnailName": "PARALLAX_WEBSITE.png"
   }
   ,
-  "57": {
+  "58": {
     "projectTitle": "Flappy Bird",
     "folderName": "Flappybird_game",
     "thumbnailName": "Flappybird_game.png"
+  }
+  ,
+  "59": {
+    "projectTitle": "AI Image Generator",
+    "folderName": "AI_Image _Generator",
+    "thumbnailName": "AI_Image _Generator.png"
   }
 }
