@@ -294,5 +294,10 @@
     "projectTitle": "AI Image Generator",
     "folderName": "AI_Image _Generator",
     "thumbnailName": "AI_Image _Generator.png"
+ },
+  "60": {
+     "projectTitle": "Packman Game",
+    "folderName": "packman",
+    "thumbnailName": "PacmanImage.png"
   }
 }
