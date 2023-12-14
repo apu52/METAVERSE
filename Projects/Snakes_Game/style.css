@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.playground{
+    height:600px;
+    width: 900px;
+    background-image: url(Assets/grass.jpg);
+    background-size: cover;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.food{
+    height: 50px;
+    width:70px;
+    background-image: url(Assets/food.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.snake{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background-image: url(Assets/snake.png);
+    background-size: cover;
+    position: absolute;
+}
+.score{
+
+    height: 300px;
+    width: 300px;
+    position: absolute; 
+    margin-left: 903px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
