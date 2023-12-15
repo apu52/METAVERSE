@@ -49,6 +49,7 @@ i{
     align-items: center;
     width: 100%;
     gap: 2rem;
+    margin-top: 150px;
 }
 
 .calendars header{
