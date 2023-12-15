@@ -1,0 +1,122 @@
+
+.body {
+	background-color: #072839;
+  }
+.edit{
+    background-color: #24c0f4;
+}
+.remove{
+    background-color: #d246c2;
+}
+.bitn {
+    width: 80px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    margin-left: 40px;
+    margin-left: 30px;
+    transition:all 0.3s ease 0s;
+}
+.edit:hover,
+.edit.active:hover{
+    color: #ffffff;
+    background-color: darkslateblue;
+	padding:5px;
+}
+.remove:hover,
+.remove.active:hover{
+    color: #ffffff;
+    background-color:purple;
+	padding:5px;
+}
+.bitn:before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color:#2E0014;
+    width: 30%;
+    height: 4px;
+    transition:all 0.3s ease 0s;
+}
+.bitn:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    background-color:#2E0014;
+    width: 30%;
+    height: 4px;
+    transition:all 0.3s ease 0s;
+}
+.bitn:hover:before,
+.bitn:hover:after,
+.bitn.active:before,
+.bitn.active:after{
+    width: 100%;
+}
+
+@media screen and (max-width: 575px){
+    .bitn{
+        margin-bottom: 50px !important;
+    }
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  padding: 0 10px;
+}
+.menu__container {
+
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  transform-origin: center center 0px;
+  transition: all 0.5s ease-out;
+}
+.menu__container:hover {
+  transform: perspective(1000px) rotateX(355deg) rotateY(0deg) rotateZ(0deg);
+  box-shadow: 0 10px 40px rgba(0,0,0,0);
+}
+.menu__container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+}
+.menu__container .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.1s linear;
+}
+.menu__container .menu a:hover {
+  transform: scale(1.1, 1.1);
+}
+.menu__container--2 {
+  background-image: linear-gradient(120deg, #f494ed 0%, #56a1eb 100%);
+  transform: perspective(1000px) rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+}
+.menu__container--2:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+

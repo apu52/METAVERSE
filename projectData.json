@@ -304,9 +304,18 @@
     "projectTitle": "Snake Game",
     "folderName": "Snakes_Game",
     "thumbnailName": "Snake_Game.jpg"
- }
- ,
+ },
   "62": {
+    "projectTitle": "Sentence Sweetener AI",
+    "folderName": "Sentence_Sweetener_AI",
+    "thumbnailName": "Sentence_Sweetener_AI.png"
+ }, 
+ "63": {
+  "projectTitle": "Black Jack",
+  "folderName": "Black_Jack",
+  "thumbnailName": "Black_Jack.png"
+},
+    "64": {
     "projectTitle": "HOSTEL_MANAGEMENT",
     "folderName": "HOSTEL_MANAGEMENT",
     "thumbnailName": "HOSTEL_MANAGEMENT.png"
