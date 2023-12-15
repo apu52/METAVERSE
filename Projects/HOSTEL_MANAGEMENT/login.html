@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  
+
+  <div class="wrapper">
+    <div class="formbox">
+      <h2>LOGIN</h2>
+      <form action="#" onsubmit="sendEmail(); reset(); return false;">
+        <div class="inputbox">
+          <span class="icon">
+
+          </span>
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+
+        <div class="inputbox">
+          <span class="icon">
+
+          </span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+
+        <div class="remember">
+          <label>
+            <input type="checkbox">
+            Remember me
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <div class="buttum">
+          <button type="submit" class="btn">LOGIN</button>
+
+        </div>
+        <div class="register">
+
+          <p>Don't have a account ?
+            <a href="#" class="register1">REGISTER</a></p>
+         
+        </div>
+
+      </form>
+    </div>
+  </div> 
+  
+  <script src="http://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+
+    function sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "gaganraghav143@gmail.com",
+        Password : "gagAN@143",
+        To : 'gagan.innerve@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+    }
+
+  </script>
+</body>
+</html>
