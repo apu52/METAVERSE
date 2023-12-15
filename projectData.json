@@ -291,4 +291,10 @@
     "folderName": "Flappybird_game",
     "thumbnailName": "Flappybird_game.png"
   }
+  ,
+  "58": {
+    "projectTitle": "Detect Device Battery",
+    "folderName": "Detect Device Battery",
+    "thumbnailName": "detectdevicebattery.png"
+  }
 }

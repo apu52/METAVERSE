@@ -115,6 +115,10 @@ cd Detectbattery
 > - [ ] `ℹ️  Task 2: Implement Y`
 > - [ ] `ℹ️ ...`
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 [**Return**](#Top)
 
 ---
