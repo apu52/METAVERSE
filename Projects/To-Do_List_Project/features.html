@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>To-Do List App Features</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- GSAP -->
+  <script src="https://unpkg.com/gsap@3.9.2"></script>
+  <style>
+    body {
+      background-color: #072839;
+    }
+    .card {
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card .card-inner .card-body {
+      backface-visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="menu__container menu__container--2">
+        <div class="menu"><a href="./index.html">Home</a><a href="./features.html">Features</a><a href="./pricing.html">Pricing</a></div>
+    </div>
+</header>
+
+
+<!-- Features Section -->
+<section class="container mt-5">
+  <h2 class="mb-4 text-white-50">Features</h2>
+  <div class="row">
+    <div class="col-lg-4 mb-4">
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-body bg-primary text-white">
+            <h5 class="card-title">Task Management</h5>
+            <p class="card-text">Organize your tasks with ease. Add, edit, and delete tasks as needed.</p>
+          </div>
+          <div class="card-body bg-info text-white back-content">
+            <p class="card-text">Effortlessly manage your tasks and boost productivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-body bg-primary text-white">
+            <h5 class="card-title">Priority Levels</h5>
+            <p class="card-text">Set priority levels for your tasks to stay focused on what matters most.</p>
+          </div>
+          <div class="card-body bg-info text-white back-content">
+            <p class="card-text">Prioritize your tasks efficiently and achieve your goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-body bg-primary text-white">
+            <h5 class="card-title">Deadline Reminders</h5>
+            <p class="card-text">Receive timely reminders for approaching task deadlines.</p>
+          </div>
+          <div class="card-body bg-info text-white back-content">
+            <p class="card-text">Never miss a deadline with our helpful reminders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+  function flipCard(card) {
+    const flipTL = gsap.timeline();
+    const isFlipped = card.classList.toggle('flipped');
+
+    if (isFlipped) {
+      flipTL.to(card.querySelector('.card-inner'), { rotateY: 180 });
+    } else {
+      flipTL.to(card.querySelector('.card-inner'), { rotateY: 0 });
+    }
+  }
+</script>
+
+</body>
+</html>

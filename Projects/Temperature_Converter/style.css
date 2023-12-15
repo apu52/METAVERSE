@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Amita&family=Ubuntu&family=Poppins&family=Kalnia&family=Kalam&family=Rubik+Bubbles&family=Comfortaa&family=Montserrat&display=swap');
+
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    font-family: 'Comfortaa', sans-serif; 
 }
 
 body {
     height: 100vh;
-    background-color: rgb(174, 174, 174);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,24 +16,38 @@ body {
 }
 
 .container {
-    background-color: white;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
     width: 510px;
     /* height: 373px; */
-    padding: 5px 25px;
-    border-radius: 5px;
+    padding: 25px 25px;
+    border-radius: 15px; 
+    border: 1px solid rgba(255,255,255,0.18);
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    box-shadow: 20px 20px 20px grey;
+    gap: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
 .container h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 33px;
-    font-weight: 700;
+    font-family: 'Montserrat', cursive;
+    font-size: 2.6rem; 
+    font-weight: 600; 
+    color: black;
     text-align: center;
     user-select: none;
     letter-spacing: 1px;
+} 
+
+.container h2 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;  
+    color: black;
+    font-weight: 700;
+    font-size: 1.4rem;
+    user-select: none;
+    letter-spacing: 0.5px;
 }
 
 .task-bar {
@@ -44,17 +59,54 @@ body {
 }
 
 #p1 {
-    font-family: system-ui;
+    /* font-family: system-ui; */ 
+    color: black;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
+} 
+
+.icons{
+    color: black; 
+}
+
+
+.input-vals {
+    display: flex; 
+    justify-content: space-between; 
+
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; 
+}
+
+.user-input {
+    width: 49%;
+}
+
+.user-input input {
+    background: none; 
+}
+
+
+.inputs label {
+    font-family: 'Comfortaa', sans-serif; 
+    color: black; 
+    font-weight: 600; 
+} 
+
+input::placeholder {
+    font-size: 1rem; 
+    transform: translateY(-5px); 
+    color: rgba(0,0,0, 0.795);
+} 
+
+input::content {
+    padding-bottom: 20px;
 }
 
 .inputs:first-child {
@@ -64,15 +116,23 @@ body {
 }
 
 .inptsss {
-    display: flex;
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
     gap: 10px;
 }
 
 .inptsss div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; 
     width: 100%;
+    gap: 10px;
+}
+
+.inptsss #type1, #type2 {
+    border: none; 
+    color: black;
+    background-color: transparent;
 }
 
 #small {
@@ -83,13 +143,13 @@ body {
 #inputValue {
     height: 40px;
     font-size: 25px;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-left: none;
     border-right: none;
     border-top: none;
     outline: none;
-    padding: 0 10px;
-    font-weight: 600;
+    padding: 0 10px; 
+    font-weight: 600; 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -105,23 +165,36 @@ body {
     padding: 0 10px;
 }
 
+.button {
+    display: flex; 
+    justify-content: center; 
+}
+
 #btn {
-    height: 45px;
-    font-size: 20px;
+    height: 45px; 
+    width: 50%;
+    font-size: 1.4rem; 
+    font-family: 'Comfortaa', cursive; 
+    letter-spacing: 1px;
     font-weight: 600;
-    background-color: blue;
-    color: white;
-    border: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+    color: black;
+    border-bottom: solid black 1px;
+    border-top: none;
+    border-left: none;
+    border-right: solid black 1px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 #btn:active {
     height: 45px;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
-    background-color: rgb(108, 108, 255);
-    color: white;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
+    color: black;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -130,26 +203,26 @@ body {
 .resultss {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 49%;
 }
 
-#type1,
-#type2 {
-    height: 41px;
+#type1, #type2 {
+    height: 40px;
     font-size: 25px;
-    border: 1px solid gray;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+    border: 1px solid black !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
     outline: none;
-    padding: 0 10px;
+    padding: 0 10px; 
+
 }
 
 #type1:focus,
 #type2:focus {
     height: 41px;
     font-size: 25px;
-    border: 1px solid rgb(130, 130, 255);
+    border: 1px solid black;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -160,17 +233,22 @@ body {
 label {
     font-size: 17px;
     font-family: -webkit-pictograph;
-    color: gray;
+    color: black;
 }
 
 .footer {
     height: 5vh;
-    width: 100vw;
+    width: 25vw;
     position: absolute;
-    bottom: 0px;
+    bottom: 0px; 
+    margin-bottom: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3),rgba(255,255,255,0)); 
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .footer p {
@@ -178,14 +256,17 @@ label {
     font-family: Arial, Helvetica, sans-serif
 }
 
+
 .footer p a {
     text-decoration: none;
-    color: rgb(0, 0, 148);
+    color: white; 
 }
 
 .footer p a:hover {
+    font-size: 1.1rem; 
     color: blue;
 }
+
 
 
 @media only screen and (max-width: 575px) {
@@ -209,7 +290,7 @@ label {
 .background-image {
     margin: 0;
     padding: 0;
-    background-image: url('./celsius-convert.jpg');
+    background: url(https://source.unsplash.com/E8Ufcyxz514)  center / cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
