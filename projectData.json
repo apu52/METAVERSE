@@ -296,8 +296,13 @@
     "thumbnailName": "AI_Image _Generator.png"
   },
   "60": {
+     "projectTitle": "Packman Game",
+    "folderName": "packman",
+    "thumbnailName": "PacmanImage.png"
+  },
+  "61": {
     "projectTitle": "Snake Game",
     "folderName": "Snakes_Game",
     "thumbnailName": "Snake_Game.jpg"
-  }
+ }
 }
