@@ -1,0 +1,20 @@
+abbr {
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+.btn-get-started{
+    border: 1px solid #ffb114;
+    color: #ffb114;
+    padding: .8rem;
+    text-decoration: none !important;
+    border-radius: 4rem;
+}
+.btn-get-started:hover{
+    background-color: #ffb114;
+    color: white;
+}
+
+.brand-name{
+    color: #ffb114;
+}
