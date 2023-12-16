@@ -305,29 +305,34 @@
     "folderName": "Snakes_Game",
     "thumbnailName": "Snake_Game.jpg"
  },
-  "62": {
+ "62": {
     "projectTitle": "Sentence Sweetener AI",
     "folderName": "Sentence_Sweetener_AI",
     "thumbnailName": "Sentence_Sweetener_AI.png"
  }, 
  "63": {
-  "projectTitle": "Black Jack",
-  "folderName": "Black_Jack",
-  "thumbnailName": "Black_Jack.png"
-},
-    "64": {
-    "projectTitle": "HOSTEL_MANAGEMENT",
-    "folderName": "HOSTEL_MANAGEMENT",
-    "thumbnailName": "HOSTEL_MANAGEMENT.png"
- },
-    "65": {
-    "projectTitle": "Business Service Web-app ",
-    "folderName": "Business_Service_Webapp",
-    "thumbnailName": "Business_Webapp.png"
- },
+    "projectTitle": "Black Jack",
+    "folderName": "Black_Jack",
+    "thumbnailName": "Black_Jack.png"
+  },
+  "64": {
+      "projectTitle": "HOSTEL_MANAGEMENT",
+      "folderName": "HOSTEL_MANAGEMENT",
+      "thumbnailName": "HOSTEL_MANAGEMENT.png"
+   },
+   "65": {
+      "projectTitle": "Business Service Web-app ",
+      "folderName": "Business_Service_Webapp",
+      "thumbnailName": "Business_Webapp.png"
+   },
    "66": {
-    "projectTitle": "Zoom Website Clone ",
-    "folderName": "Zoom_Clone",
-    "thumbnailName": "Zoom Clone.png"
- }
+      "projectTitle": "Detect Device Battery",
+      "folderName": "Detect Device Battery",
+      "thumbnailName": "detectdevicebattery.png"
+    },
+    "67": {
+      "projectTitle": "Zoom Website Clone ",
+      "folderName": "Zoom_Clone",
+      "thumbnailName": "Zoom Clone.png"
+   }
 }
