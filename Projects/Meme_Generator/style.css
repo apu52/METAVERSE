@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 body {
         background: linear-gradient(135deg,#a90377,#90bafc);
+        font-family: 'Work Sans', sans-serif;
 }
 
 #root {
@@ -14,19 +19,23 @@ body {
 #root h2{
         font-size: 20px;
         font-weight: 600;
+        color: #ffffff;
 }
 
 #meme {
-        height: 500px;
+        height: 470px;
+        width: 500px;
 }
       
 button {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 600;
         padding: 10px 8px;
-        margin-top: 20px;
-        color: black;
+        margin-top: 15px;
+        color: #fffbfb;
         cursor: pointer;
-        border-radius: 5px;
-        background: linear-gradient(45deg, #2e3192, #1bffff);
-}
+        border-radius: 20px;
+        background: linear-gradient(45deg, #06060f, #349b9b);
+        border: none;
+        box-shadow: 10px 10px 5px rgb(55, 57, 58);
+      }
