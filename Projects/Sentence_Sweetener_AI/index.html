@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Sweetener AI</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+
+    <header>
+        <h1>Sentence Sweetener AI</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <label for="userInput">Enter a sentence:</label>
+            <input type="text" id="userInput" placeholder="e.g., Can you please let us know more details about your project?">
+            <button onclick="generateFunnyLine()">Submit</button>
+        </div>
+
+        <div id="result">
+            <!-- The AI-generated sentence will appear here -->
+        </div>
+
+        <div class="instructions">
+            <h2>How to Use:</h2>
+            <p>1. Enter a sentence in the input field.</p>
+            <p>2. Click the "Submit" button.</p>
+            <p>3. The AI will sweeten your sentence with a touch of humor!</p>
+            <p>4. Give some time for the API to initialize (if the first try fails).</p>
+            <p>Note: Some responses may not make sense as the AI is still in the learning phase.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

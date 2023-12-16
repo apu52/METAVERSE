@@ -280,19 +280,52 @@
     "thumbnailName": "Bunny_Catcher.png"
   }
   ,
-  "56": {
+  "57": {
     "projectTitle": "PARALLAX_WEBSITE",
     "folderName": "PARALLAX_WEBSITE",
     "thumbnailName": "PARALLAX_WEBSITE.png"
-  }
-  ,
-  "57": {
+  },
+  "58": {
     "projectTitle": "Flappy Bird",
     "folderName": "Flappybird_game",
     "thumbnailName": "Flappybird_game.png"
-  }
-  ,
-  "58": {
+  },
+  "59": {
+    "projectTitle": "AI Image Generator",
+    "folderName": "AI_Image _Generator",
+    "thumbnailName": "AI_Image _Generator.png"
+  },
+  "60": {
+     "projectTitle": "Packman Game",
+    "folderName": "packman",
+    "thumbnailName": "PacmanImage.png"
+  },
+  "61": {
+    "projectTitle": "Snake Game",
+    "folderName": "Snakes_Game",
+    "thumbnailName": "Snake_Game.jpg"
+ },
+  "62": {
+    "projectTitle": "Sentence Sweetener AI",
+    "folderName": "Sentence_Sweetener_AI",
+    "thumbnailName": "Sentence_Sweetener_AI.png"
+ }, 
+ "63": {
+  "projectTitle": "Black Jack",
+  "folderName": "Black_Jack",
+  "thumbnailName": "Black_Jack.png"
+},
+    "64": {
+    "projectTitle": "HOSTEL_MANAGEMENT",
+    "folderName": "HOSTEL_MANAGEMENT",
+    "thumbnailName": "HOSTEL_MANAGEMENT.png"
+ },
+    "65": {
+    "projectTitle": "Business Service Web-app ",
+    "folderName": "Business_Service_Webapp",
+    "thumbnailName": "Business_Webapp.png"
+ },
+  "66": {
     "projectTitle": "Detect Device Battery",
     "folderName": "Detect Device Battery",
     "thumbnailName": "detectdevicebattery.png"
