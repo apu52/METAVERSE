@@ -1,0 +1,169 @@
+
+body, html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   font-size: 15px;
+}
+.bord{
+ border: 0px red solid;
+}
+
+
+.sidebar{
+   
+   position: fixed;
+   background-color: var(--sidebar-color);
+   overflow-x: hidden;
+   overflow-y: hidden;
+   transition: ease-in-out 0.4s;
+   padding-top: 1px;
+   height: 100vh;
+   width: 0px;
+   background-color: #ffffff; 
+  
+}
+.companytitle{
+ margin-top: 10px;
+ padding: 0px 30px;
+
+}
+.companytitle h4{
+font-family: Arial, Helvetica, sans-serif;
+ padding: 0px 30px;
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bolder;
+ display: flex;
+ align-items: center;
+ color: rgb(255, 198, 118);
+ letter-spacing: 3px; 
+ line-height: 20px;
+}
+.navi{
+
+ margin-top:40px;
+
+}
+
+.userinfo{
+ padding: 10px 0px 0px 50px;
+ margin: 0px 0px 30px 0px;
+}
+
+.logout{
+ position: absolute;
+ bottom: 30px;
+ margin-bottom: 0px;
+ width: 100%;
+}
+.sidenavi a {
+   padding: 10px 20px 10px 20px;
+   text-decoration: none;
+   font-size: 15px;
+   color: rgb(66, 66, 66);
+   display: flex;
+   align-items: center;
+   margin: 10px 20px;
+   font-family: 'Poppins', sans-serif;
+   letter-spacing: 3px; 
+ /* margin-left: 10px;
+   margin-right: 10px;*/
+   transition: 0.2s;
+
+
+ }
+.sidenavi i {
+   margin-right: 10px; /* Adjust the margin as needed */
+}
+
+
+ .profilepic{
+   width: 100px; /* Set the width of the container */
+   height: 100px; /* Set the height of the container */
+   border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+   overflow: hidden; /* Hide any content outside the circle */
+   position: relative;
+   left: 20px;
+   /* Position property for absolute positioning of the image */
+}
+.profilepic img {
+ width: 100%; /* Make the image fill the container */
+ height: auto; /* Maintain the aspect ratio of the image */
+ border-radius: 0%; /* Ensure the image itself is also a circle */
+ position: absolute;
+ /* Position the image absolutely within the container */
+}
+.userinfo h4{
+ margin-top: 10px;
+/* margin-left: -10px;*/
+}
+.userinfo p{
+ margin-left: -20px;
+ margin-top: -10px;
+ color: #8e8e8e;
+}
+
+#ham{
+ width: 30px;
+ height: auto;
+
+}
+
+.mainbody{
+ transition: ease-in-out 0.4s;
+
+ background-color: #E9F1F7 ;
+ height: 100vh;
+ width: auto;
+ padding: 20px;
+}
+
+.sidenavi a.active{
+ color: white ;
+ text-decoration: none;
+ background-color: #6837F4;
+ border-radius: 8px;
+ font-size: 18px;
+ 
+}
+
+
+.sidenavi a:not(.active):hover {
+ color: #ffffff;
+ text-decoration: none;
+ border-radius: 8px;
+ background-color: #6937f471;
+ font-size: 18px;
+}
+
+.tab{
+ margin: 30px;
+}
+
+.rovhov tr td{
+ background-color: transparent;
+}
+
+.rovhov tr {
+ transition: ease-in-out 0.3s;
+}
+
+.rovhov tr:hover {
+ background-color: rgba(142, 142, 142, 0.173);
+}
+
+  
+.ham{
+   font-size:30px;
+   /*margin: 10px 15px;*/ 
+   color: black;
+    cursor:pointers;
+    transition: all 0.2s ease;
+
+ }
+ .ham:hover{
+   font-size: 35px;
+   color:rgb(255, 105, 105);
+ }
+
