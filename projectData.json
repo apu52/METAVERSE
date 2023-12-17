@@ -339,5 +339,10 @@
       "projectTitle": "Transactions Management Web-app ",
       "folderName": "transaction-management",
       "thumbnailName": "transaction_management-home.png"
-   }
+   },
+   "69": {
+     "projectTitle": "Minesweeper ",
+     "folderName": "Minesweeper",
+     "thumbnailName": "Minesweeper.png"
+  }
 }
