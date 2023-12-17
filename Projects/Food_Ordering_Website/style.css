@@ -9,13 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 header {
     position: relative;
-    background: hsla(0, 0%, 0%, .6);
+    background: hsla(0, 16%, 87%, 0.6);
+    
     padding: 0.2rem 0;
     z-index: 999;
+    box-shadow: 10px 10px 5px rgb(102, 99, 99);
 }
 
 .header-container {
@@ -23,7 +23,7 @@ header {
     align-items: center;
     justify-content: space-around;
     margin-inline: auto;
-    color: #fff;
+    color:black;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color:black;
 }
 
 nav a:hover {
@@ -65,9 +65,11 @@ nav a:hover {
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
+    margin-top: 5px;
 }
+
 
 
 @media (max-width: 600px) {
