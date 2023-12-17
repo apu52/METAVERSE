@@ -345,4 +345,10 @@
      "folderName": "Minesweeper",
      "thumbnailName": "Minesweeper.png"
   }
+  ,
+   "70": {
+     "projectTitle": "API_IMAGES",
+     "folderName": "API_IMAGES",
+     "thumbnailName": "API_IMAGES.png"
+  }
 }
