@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #76c8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#panel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#ptop{
+    display: flex;
+    color: white;
+    padding: 0 30%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #0a8ba2;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.elem h3{
+    font-weight: 500;
+}
+
+.box{
+    color: #064c7a;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#pbtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: #c5e3ff;
+    padding: 20px;
+}
+
+#pbtm button{
+    display: block;
+    padding: 10px;
+    background-color:#0a8ba2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#pbtm button:hover{
+    background-color:#08798d;
+}
+
+.bubble{
+    width: 60px;
+    height: 60px;
+    background-color: #0b6d7a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.bubble:hover{
+    background-color: #064952;
+}
+
+
+/* responsive */
+
+@media screen and (width < 480px) {
+    #ptop{
+        padding: 0 3%;
+    }
+    #ptop h2{
+        font-size: 18px;
+    }
+    .box{
+        padding: 10px;   
+    }
+
+    #pbtm{
+        padding: 10px;
+    }
+}
+
+@media screen and (width < 912px){
+    #ptop{
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
