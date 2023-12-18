@@ -363,7 +363,7 @@
     "73": {
       "projectTitle": "Bubble Game",
       "folderName": "Bubble_Game",
-      "thumbnailName": "Bubble_Game.png
+      "thumbnailName": "Bubble_Game.png"
     },
     "74": {
       "projectTitle": "Tiktok Clone",
@@ -374,5 +374,5 @@
       "projectTitle": "API_IMAGES",
       "folderName": "API_IMAGES",
       "thumbnailName": "API_IMAGES.png"
-  }
+    }
 }
