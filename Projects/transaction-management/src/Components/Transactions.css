@@ -1,0 +1,45 @@
+#cstmoption{
+   visibility: hidden;
+}
+#supoption{
+   visibility: hidden;
+}
+
+.Transactions{
+   background-color: cadetblue;
+}
+.TransactionsTable{
+   overflow-x: auto;
+   height: 100vh;
+}
+
+table{
+   width: 100%;
+   box-shadow: 0 0 10px rgba(0,0,0,0.204);
+   border-radius: 10px;
+   border-collapse: collapse;
+   margin: auto;
+}
+th{
+   padding: 1rem;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+th:first-of-type{
+   border-top-left-radius: 10px;
+}
+th:last-of-type{
+   border-top-right-radius: 10px;
+}
+tr:hover{
+   background-color: rgb(232, 231, 231);
+}
+td{
+   padding: 1rem;
+}
+
+.SettingsContainer{
+   overflow-x: auto;
+   height: 100vh;
+}

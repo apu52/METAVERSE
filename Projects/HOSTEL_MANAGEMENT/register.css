@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body,html{
+    
+    
+    min-height: 100vh;
+    background: url(4949813.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+
+.container{
+
+/* display: flex; */
+/* flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+max-width: 900px;
+margin: 50px auto;
+
+
+
+}
+
+.applybox{
+
+    max-width: 600px;
+    padding: 20px;
+    margin: 0px auto;
+    
+    box-shadow: 4px 3px 5px black;
+    border-radius: 10px;
+}
+
+.formcntr{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+gap: 10px;
+}
+
+
+.formctrl{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin:10px;
+}
+a ,button{
+    cursor: pointer;
+}
+
+label{
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+input, select, textarea{
+    padding: 6px 10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+input, select, textarea:focus{
+    outline-color: rgb(64, 134, 203);
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btncntr{
+   /* max-width: 100%; */
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+
+}
+
+button{
+   padding : 5px 35px;
+   border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+   font-size: 15px;
+   font-weight: 600;
+    background-color: rgb(61, 149, 221);
+    color: white;
+}
+
+
+
+

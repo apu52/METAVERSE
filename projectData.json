@@ -305,14 +305,64 @@
     "folderName": "Snakes_Game",
     "thumbnailName": "Snake_Game.jpg"
  },
-  "62": {
+ "62": {
     "projectTitle": "Sentence Sweetener AI",
     "folderName": "Sentence_Sweetener_AI",
     "thumbnailName": "Sentence_Sweetener_AI.png"
+
+ }, 
+ "63": {
+    "projectTitle": "Black Jack",
+    "folderName": "Black_Jack",
+    "thumbnailName": "Black_Jack.png"
+  },
+  "64": {
+      "projectTitle": "HOSTEL_MANAGEMENT",
+      "folderName": "HOSTEL_MANAGEMENT",
+      "thumbnailName": "HOSTEL_MANAGEMENT.png"
+   },
+   "65": {
+      "projectTitle": "Business Service Web-app ",
+      "folderName": "Business_Service_Webapp",
+      "thumbnailName": "Business_Webapp.png"
+   },
+   "66": {
+      "projectTitle": "Detect Device Battery",
+      "folderName": "Detect Device Battery",
+      "thumbnailName": "Detect_device_battery.png"
+    },
+    "67": {
+      "projectTitle": "Zoom Website Clone ",
+      "folderName": "Zoom_Clone",
+      "thumbnailName": "Zoom Clone.png"
+   },
+    "68": {
+      "projectTitle": "Transactions Management Web-app ",
+      "folderName": "transaction-management",
+      "thumbnailName": "transaction_management-home.png"
+   },
+   "69": {
+
+    "projectTitle": "Chess Game 2023 ",
+    "folderName": "Chess_Game",
+    "thumbnailName": "chess_2023.png"
  },
-  "63": {
+"70":   {
+     "projectTitle": "Minesweeper ",
+     "folderName": "Minesweeper",
+     "thumbnailName": "Minesweeper.png"
+  },
+   "71": {
+     "projectTitle": "Band_Name_Generator",
+     "folderName": "Band_Name_Generator",
+     "thumbnailName": "Band_Name_Generator.png"
+  }
+
+ },
+  "72": {
     "projectTitle": "Apple Website Clone",
     "folderName": "apple_clone",
     "thumbnailName": "apple_clone.png"
  }
+
 }

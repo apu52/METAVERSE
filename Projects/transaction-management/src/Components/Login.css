@@ -1,0 +1,7 @@
+.loginForm{
+   width: 70%;
+   margin: 30px auto;
+}
+.loginForm :nth-child(3){
+   width: 50%;
+}
