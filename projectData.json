@@ -350,5 +350,10 @@
      "projectTitle": "Minesweeper ",
      "folderName": "Minesweeper",
      "thumbnailName": "Minesweeper.png"
+  },
+   "70": {
+     "projectTitle": "Band_Name_Generator",
+     "folderName": "Band_Name_Generator",
+     "thumbnailName": "Band_Name_Generator.png"
   }
 }
