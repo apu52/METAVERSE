@@ -98,7 +98,50 @@ else if(option_from === "milimeter" && option_to==="Foot"){
 	   
 	   result.value = input.value
    }
-	
+	// Weight Conversions
+    if (option_from === "kg" && option_to === "gram") {
+        result.value = Number(input.value) * 1000;
+    } else if (option_from === "kg" && option_to === "mg") {
+        result.value = Number(input.value) * 1e+6;
+    } else if (option_from === "kg" && option_to === "tonne") {
+        result.value = Number(input.value) * 0.001;
+    } else if (option_from === "kg" && option_to === "pounds") {
+        result.value = Number(input.value) * 2.20462;
+    } else if (option_from === "kg" && option_to === "kg") {
+        result.value = input.value;
+    }
+
+    if (option_from === "gram" && option_to === "kg") {
+        result.value = Number(input.value) * 0.001;
+    } else if (option_from === "gram" && option_to === "mg") {
+        result.value = Number(input.value) * 1000;
+    } else if (option_from === "gram" && option_to === "tonne") {
+        result.value = Number(input.value) * 1e-6;
+    } else if (option_from === "gram" && option_to === "pounds") {
+        result.value = Number(input.value) * 0.00220462;
+    } else if (option_from === "gram" && option_to === "gram") {
+        result.value = input.value;
+    }
+
+    if (option_from === "mg" && option_to === "kg") {
+        result.value = Number(input.value) * 1e-6;
+    } else if (option_from === "mg" && option_to === "gram") {
+        result.value = Number(input.value) * 0.001;
+    } else if (option_from === "mg" && option_to === "tonne") {
+        result.value = Number(input.value) * 1e-9;
+    } else if (option_from === "mg" && option_to === "pounds") {
+        result.value = Number(input.value) * 2.20462e-6;
+    } else if (option_from === "mg" && option_to === "mg") {
+        result.value = input.value;
+    }
+
+    if (option_from === "tonne" && option_to === "kg") {
+        result.value = Number(input.value) * 1000;
+    } else if (option_from === "tonne" && option_to === "gram") {
+        result.value = Number(input.value) * 1e+6;
+    } else if (option_from === "tonne" && option_to === "mg") {
+        result.value
+	}
 
 
 
