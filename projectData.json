@@ -360,6 +360,11 @@
     "projectTitle": "Tetris Game 2023",
     "folderName": "Tetris_Game",
     "thumbnailName": "tetris_Game_pic.png"
- }
+ },
+ "72": {
+  "projectTitle": "Ping Pong Game",
+  "folderName": "Ping_Pong_Game",
+  "thumbnailName": "ping_pong.png"
+}
 
 }
