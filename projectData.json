@@ -351,15 +351,20 @@
      "folderName": "Minesweeper",
      "thumbnailName": "Minesweeper.png"
   },
-   "70": {
+   "71": {
      "projectTitle": "Band_Name_Generator",
      "folderName": "Band_Name_Generator",
      "thumbnailName": "Band_Name_Generator.png"
   },
-  "71": {
+  "72": {
     "projectTitle": "Tetris Game 2023",
     "folderName": "Tetris_Game",
     "thumbnailName": "tetris_Game_pic.png"
+ },
+  "73": {
+    "projectTitle": "Bubble Game",
+    "folderName": "Bubble_Game",
+    "thumbnailName": "Bubble_Game.png"
  }
 
 }
