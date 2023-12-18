@@ -342,29 +342,29 @@
    },
    "69": {
 
-    "projectTitle": "Chess Game 2023 ",
-    "folderName": "Chess_Game",
-    "thumbnailName": "chess_2023.png"
- },
-"70":   {
-     "projectTitle": "Minesweeper ",
-     "folderName": "Minesweeper",
-     "thumbnailName": "Minesweeper.png"
-  },
-   "70": {
-     "projectTitle": "Band_Name_Generator",
-     "folderName": "Band_Name_Generator",
-     "thumbnailName": "Band_Name_Generator.png"
-  },
-  "71": {
-    "projectTitle": "Tetris Game 2023",
-    "folderName": "Tetris_Game",
-    "thumbnailName": "tetris_Game_pic.png"
- },
- "72": {
-  "projectTitle": "Ping Pong Game",
-  "folderName": "Ping_Pong_Game",
-  "thumbnailName": "ping_pong.png"
-}
+      "projectTitle": "Chess Game 2023 ",
+      "folderName": "Chess_Game",
+      "thumbnailName": "chess_2023.png"
+   },
+    "70": {
+       "projectTitle": "Minesweeper ",
+       "folderName": "Minesweeper",
+       "thumbnailName": "Minesweeper.png"
+    },
+   "71": {
+       "projectTitle": "Band_Name_Generator",
+       "folderName": "Band_Name_Generator",
+       "thumbnailName": "Band_Name_Generator.png"
+    },
+    "72": {
+      "projectTitle": "Tetris Game 2023",
+      "folderName": "Tetris_Game",
+      "thumbnailName": "tetris_Game_pic.png"
+    },
+    "73": {
+      "projectTitle": "Bubble Game",
+      "folderName": "Bubble_Game",
+      "thumbnailName": "Bubble_Game.png"
+    }
 
 }
