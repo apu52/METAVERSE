@@ -379,5 +379,10 @@
         "projectTitle": "Ping Pong Game",
         "folderName": "Ping_Pong_Game",
         "thumbnailName": "ping_pong.png"
+    },
+    "77": {
+        "projectTitle": "Country_Guide",
+        "folderName": "Country_Guide",
+        "thumbnailName": "Country_Guide.png"
     }
 }
