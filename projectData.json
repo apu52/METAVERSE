@@ -309,6 +309,7 @@
     "projectTitle": "Sentence Sweetener AI",
     "folderName": "Sentence_Sweetener_AI",
     "thumbnailName": "Sentence_Sweetener_AI.png"
+
  }, 
  "63": {
     "projectTitle": "Black Jack",
@@ -396,30 +397,28 @@
         "thumbnailName": "Country_Guide.png"
     },
     "80": {
-
       "projectTitle": "Typing Master",
       "folderName": "typing_speed",
       "thumbnailName": "typingmaster.png"
-  }
-  ,
-
-  "81": {
-
+  },
+ "81": {
         "projectTitle": "Farmers-Service-WebApp",
         "folderName": "Farmers-WebApp",
         "thumbnailName": "farmers.png"
     },
     "82": {
-
       "projectTitle": "MATH_SPRINT_APP",
       "folderName": "MATH_SPRINT_APP",
       "thumbnailName": "MATH_SPRINT_APP.png"
-  },
+    },
   "83": {
-
+       "projectTitle": "Apple Website Clone",
+        "folderName": "apple_clone",
+        "thumbnailName": "apple_clone.png"
+   },
+  "84": {
     "projectTitle": "Universal Currency Converter",
     "folderName": "CurrencyConverter",
     "thumbnailName": "currency.png"
-}
-
+  }
 }
