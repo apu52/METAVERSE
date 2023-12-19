@@ -384,7 +384,7 @@
         "projectTitle": "Budgety_app",
         "folderName": "Budgety_app",
         "thumbnailName": "Budgety_app.png"
-    },
+    }, 
     "78": {
         "projectTitle": "Dictionary",
         "folderName": "Dictionary",
@@ -394,5 +394,11 @@
         "projectTitle": "Country_Guide",
         "folderName": "Country_Guide",
         "thumbnailName": "Country_Guide.png"
-    }
+
+    },
+    "79": {
+        "projectTitle": "Kisan-Chan-Services",
+        "folderName": "Farmers-Service-WebApp",
+        "thumbnailName": "farmers.png"
+    },
 }
