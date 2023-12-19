@@ -341,6 +341,7 @@
       "thumbnailName": "transaction_management-home.png"
    },
    "69": {
+
       "projectTitle": "Chess Game 2023 ",
       "folderName": "Chess_Game",
       "thumbnailName": "chess_2023.png"
@@ -374,5 +375,11 @@
         "projectTitle": "API_IMAGES",
         "folderName": "API_IMAGES",
         "thumbnailName": "API_IMAGES.png"
-      }
+      },
+     "76": {
+  "projectTitle": "Ping Pong Game",
+  "folderName": "Ping_Pong_Game",
+  "thumbnailName": "ping_pong.png"
+}
+
 }
