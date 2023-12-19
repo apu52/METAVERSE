@@ -342,27 +342,63 @@
       "thumbnailName": "transaction_management-home.png"
    },
    "69": {
-
-    "projectTitle": "Chess Game 2023 ",
-    "folderName": "Chess_Game",
-    "thumbnailName": "chess_2023.png"
- },
-"70":   {
-     "projectTitle": "Minesweeper ",
-     "folderName": "Minesweeper",
-     "thumbnailName": "Minesweeper.png"
-  },
+      "projectTitle": "Chess Game 2023 ",
+      "folderName": "Chess_Game",
+      "thumbnailName": "chess_2023.png"
+   },
+    "70": {
+       "projectTitle": "Minesweeper ",
+       "folderName": "Minesweeper",
+       "thumbnailName": "Minesweeper.png"
+    },
    "71": {
-     "projectTitle": "Band_Name_Generator",
-     "folderName": "Band_Name_Generator",
-     "thumbnailName": "Band_Name_Generator.png"
-  }
-
- },
-  "72": {
-    "projectTitle": "Apple Website Clone",
-    "folderName": "apple_clone",
-    "thumbnailName": "apple_clone.png"
- }
-
+       "projectTitle": "Band_Name_Generator",
+       "folderName": "Band_Name_Generator",
+       "thumbnailName": "Band_Name_Generator.png"
+    },
+    "72": {
+      "projectTitle": "Tetris Game 2023",
+      "folderName": "Tetris_Game",
+      "thumbnailName": "tetris_Game_pic.png"
+    },
+    "73": {
+      "projectTitle": "Bubble Game",
+      "folderName": "Bubble_Game",
+      "thumbnailName": "Bubble_Game.png"
+    },
+    "74": {
+      "projectTitle": "Youtube UI Clone",
+      "folderName": "Youtube_Interface",
+      "thumbnailName": "Youtube_Clone.png"
+    },
+    "75": {
+        "projectTitle": "API_IMAGES",
+        "folderName": "API_IMAGES",
+        "thumbnailName": "API_IMAGES.png"
+    },
+    "76": {
+        "projectTitle": "Ping Pong Game",
+        "folderName": "Ping_Pong_Game",
+        "thumbnailName": "ping_pong.png"
+    }, 
+    "77": {
+        "projectTitle": "Budgety_app",
+        "folderName": "Budgety_app",
+        "thumbnailName": "Budgety_app.png"
+    },
+    "78": {
+        "projectTitle": "Dictionary",
+        "folderName": "Dictionary",
+        "thumbnailName": "Dictionary.png"
+    },
+    "79": {
+        "projectTitle": "Country_Guide",
+        "folderName": "Country_Guide",
+        "thumbnailName": "Country_Guide.png"
+    },
+    "80": {
+        "projectTitle": "Apple Website Clone",
+        "folderName": "apple_clone",
+        "thumbnailName": "apple_clone.png"
+    }
 }
