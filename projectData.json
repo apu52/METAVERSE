@@ -365,9 +365,14 @@
       "folderName": "Bubble_Game",
       "thumbnailName": "Bubble_Game.png"
     },
-  "74": {
-      "projectTitle": "API_IMAGES",
-      "folderName": "API_IMAGES",
-      "thumbnailName": "API_IMAGES.png"
-    }
+    "74": {
+      "projectTitle": "Youtube UI Clone",
+      "folderName": "Youtube_Interface",
+      "thumbnailName": "Youtube_Clone.png"
+    },
+    "75": {
+        "projectTitle": "API_IMAGES",
+        "folderName": "API_IMAGES",
+        "thumbnailName": "API_IMAGES.png"
+      }
 }
