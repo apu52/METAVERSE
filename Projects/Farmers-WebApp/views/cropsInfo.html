@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"> 
+	<title>Kolhapur District Crops</title>
+	<link rel="stylesheet" type="text/css" href="info2.css">
+</head>
+<body>
+	<nav>
+		<div class="logo" >
+			Kisan<span>S</span>uvidha
+		</div>
+		<div class="menu">
+			<a href="home.html" target="_blank"><li class="fa fa-home"></li> Home </a>
+			<a href="#" target="_blank" ><li class="fa fa-calculator"></li> Fertilizer Calci</a>
+			<a href="info.html" target="_blank"> <li class="fa fa-info"></li> Information</a>
+			<a href="G:/Trending News/index.html" target="_blank"><li class="fa fa-search"></li> Trending</a>
+		</div>
+		<div class="icon">
+			<i class="fa fa-phone" onclick="run()"></i>
+			<a href="#" onclick="run1()">email</a>
+		 </div>
+	</nav>
+	<div class="container">
+		<h1 style="text-shadow: 2px 2px 0px black;">Kolhapur District Crops</h1>
+		<label for="taluka-select">Select a Taluka:</label>
+		<select id="taluka-select">
+			<option value="">-- Select Taluka --</option>
+			<option value="ajra">Ajra</option>
+			<option value="gadhinglaj">Gadhinglaj</option>
+			<option value="hatkanangle">Hatkanangle</option>
+			<option value="karvir">Karveer</option>
+			<option value="panhala">Panhala</option>
+			<option value="radhanagari">Radhanagari</option>
+			<option value="shahuwadi">Shahuwadi</option>
+			<option value="shiroli">Shiroli</option>
+			<option value="gaganbavda">Gaganbavda</option>
+			<option value="chandgad">Chandgad</option>
+			<option value="kagal">Kagal</option>
+			<option value="bhudargad">Bhudargad</option>
+		</select>
+		<h2>Major field crops cultivated</h2>
+		<div class="crop-info">
+			<img id="crop-image" src="" alt="Crop Image">
+			<div id="crop-details">
+				<h2 id="crop-name"></h2>
+				<p id="crop-description"></p>
+				<p id="crop-scheme"></p>
+				<p id="crop-price"></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="crops-Info.js"></script>
+</body>
+</html>
+
+
+link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  -->
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap")
+title Kolhapur District Crops
+link(rel="stylesheet", type="text/css", href="info2.css")
+nav
+  .logo
+    | Kisan
+    span Suvidha
+
+  .menu
+    a(href="home.html", target="_blank")
+      li.fa.fa-home
+      | Home 
+    a(href="#", target="_blank")
+      li.fa.fa-calculator
+      | Fertilizer Calci
+    a(href="info.html", target="_blank")
+      li.fa.fa-info
+      | Information
+    a(href="G:/Trending News/index.html", target="_blank")
+      li.fa.fa-search
+      | Trending
+  .icon
+    i.fa.fa-phone(onclick="run()")
+    a(href="#", onclick="run1()") email
+.container
+  h1(style="text-shadow: 2px 2px 0px black;") Kolhapur District Crops
+  label(for="taluka-select") Select a Taluka:
+  select#taluka-select
+    option(value) -- Select Taluka --
+    option(value="ajra") Ajra
+    option(value="gadhinglaj") Gadhinglaj
+    option(value="hatkanangle") Hatkanangle
+    option(value="karvir") Karveer
+    option(value="panhala") Panhala
+    option(value="radhanagari") Radhanagari
+    option(value="shahuwadi") Shahuwadi
+    option(value="shiroli") Shiroli
+    option(value="gaganbavda") Gaganbavda
+    option(value="chandgad") Chandgad
+    option(value="kagal") Kagal
+    option(value="bhudargad") Bhudargad
+  h2 Major field crops cultivated
+  .crop-info
+    img#crop-image(src, alt="Crop Image")
+    #crop-details
+      h2#crop-name
+      p#crop-description
+      p#crop-scheme
+      p#crop-price
+script(type="text/javascript", src="crops-Info.js")
+header{
+	width: 100%;
+	height: 90vh;
+  }
+  .menu{
+	margin: auto;
+  }
+  nav{
+	width: 100%;
+	height: 80px;
+	background: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 80px;
+	position: fixed;
+	top: 0px;
+	 background:  rgb(93, 242, 135);
+  }
+  .logo{
+	font-family: sans-serif;
+	font-size: 2.3em;
+  }
+  .logo span{
+	color:rgb(248, 59, 59);
+  }
+  .menu a{
+	text-decoration: none;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: black;
+  }
+  /* .menu a:first-child{
+	color: #e74c3c;
+  } */
+  .menu a:hover{
+	 color:#e74c3c;
+  }
+  .menu a span{
+	font-size: 30px;
+	color: black;
+  }
+  .icon i{
+	font-size: 20px;
+  }
+  .icon i:hover{
+   color: #e74c3c;
+  }
+  .icon{
+	display: none;
+  }
+  .icon a{
+	display: none;
+   text-decoration: none;
+   background: #e74c3c;
+   color: white;
+   padding: 10px 20px;
+   margin-left: 30px;
+   border-radius: 5px;
+  }
+  .icon a:hover{
+  background-color: aqua;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 5px 5px aqua;
+  color: rgb(233, 50, 50);
+  }
