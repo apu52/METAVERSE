@@ -394,5 +394,10 @@
         "projectTitle": "Country_Guide",
         "folderName": "Country_Guide",
         "thumbnailName": "Country_Guide.png"
+    },
+    "80": {
+        "projectTitle": "OmniFoods",
+        "folderName": "omnifood",
+        "thumbnailName": "omnifood.png"
     }
 }
