@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 10px solid #e9f2ff;
+    border-radius: 20px;
+}
+
+.panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 30px;
+    border: 10px solid #e9f2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Berkshire Swash',
+    cursive;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    z-index: -1000;
+    transition: .5s ease-in-out;
+}
+
+.panel.reveal {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 1000;
+}
+
+.panel .stat {
+    color: #33485a;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.panel h1 {
+    color: #142431;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.panel span {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+}
+
+.panel span .tooltip {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 300px;
+    background: #142431;
+    color: #f2f4ff;
+    border-radius: 10px;
+    text-transform: capitalize;
+    z-index: 2;
+    transition: .3s;
+}
+
+.panel span:hover .tooltip {
+    opacity: .6;
+    visibility: visible;
+}
+
+.panel .gameMode {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+
+.panel .gameMode .mode {
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: .25s ease-in-out;
+}
+
+.panel .gameMode .mode:hover {
+    transform: scale(1.2);
+}
+
+.panel .gameMode .mode.selected {
+    border: 5px solid #fa7075;
+}
+
+.panel .gameMode .mode:nth-child(1) {
+    background: linear-gradient(#96ff55, #609b1f);
+}
+
+.panel .gameMode .mode:nth-child(2) {
+    background: linear-gradient(#49f514, #07aa08);
+}
+
+.panel .gameMode .mode:nth-child(3) {
+    background: linear-gradient(#fa7a70, #be3b44);
+}
+
+.panel .gameMode .mode:nth-child(4) {
+    background: linear-gradient(#f8884b, #f96618);
+}
+
+.panel .gameMode .mode:nth-child(5) {
+    background: linear-gradient(rgb(255, 119, 69), red);
+}
+
+.play {
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    background: linear-gradient(#5403bf, #c93f9c);
+    transition: .25s ease-in-out;
+}
+
+.play:hover {
+    transform: scale(1.2);
+}

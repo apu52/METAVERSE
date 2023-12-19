@@ -1,0 +1,50 @@
+body {
+  background-color: #302e2b;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.squareRow {
+  display: flex;
+}
+
+.square {
+  width: 75px;
+  height: 75px;
+}
+
+.white {
+  background-color: #eeeed2;
+}
+
+.black {
+  background-color: #769656;
+}
+
+.highlightYellow {
+  background: #f7f769;
+}
+
+.piece {
+  width: 100%;
+  cursor: pointer;
+}
+
+.captureColor {
+  background-color: #ee4b2b;
+}
+
+.highlight {
+  width: 32px;
+  display: block;
+  height: 32px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.17);
+}

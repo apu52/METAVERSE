@@ -294,15 +294,95 @@
     "projectTitle": "AI Image Generator",
     "folderName": "AI_Image _Generator",
     "thumbnailName": "AI_Image _Generator.png"
- },
+  },
   "60": {
      "projectTitle": "Packman Game",
     "folderName": "packman",
     "thumbnailName": "PacmanImage.png"
   },
   "61": {
-     "projectTitle": "Kisan-Chan-Services",
-    "folderName": "Farmers-Service-WebApp",
-    "thumbnailName": "kisan.png"
-  }
+    "projectTitle": "Snake Game",
+    "folderName": "Snakes_Game",
+    "thumbnailName": "Snake_Game.jpg"
+ },
+ "62": {
+    "projectTitle": "Sentence Sweetener AI",
+    "folderName": "Sentence_Sweetener_AI",
+    "thumbnailName": "Sentence_Sweetener_AI.png"
+ }, 
+ "63": {
+    "projectTitle": "Black Jack",
+    "folderName": "Black_Jack",
+    "thumbnailName": "Black_Jack.png"
+  },
+  "64": {
+      "projectTitle": "HOSTEL_MANAGEMENT",
+      "folderName": "HOSTEL_MANAGEMENT",
+      "thumbnailName": "HOSTEL_MANAGEMENT.png"
+   },
+   "65": {
+      "projectTitle": "Business Service Web-app ",
+      "folderName": "Business_Service_Webapp",
+      "thumbnailName": "Business_Webapp.png"
+   },
+   "66": {
+      "projectTitle": "Detect Device Battery",
+      "folderName": "Detect Device Battery",
+      "thumbnailName": "Detect_device_battery.png"
+    },
+    "67": {
+      "projectTitle": "Zoom Website Clone ",
+      "folderName": "Zoom_Clone",
+      "thumbnailName": "Zoom Clone.png"
+   },
+    "68": {
+      "projectTitle": "Transactions Management Web-app ",
+      "folderName": "transaction-management",
+      "thumbnailName": "transaction_management-home.png"
+   },
+   "69": {
+      "projectTitle": "Chess Game 2023 ",
+      "folderName": "Chess_Game",
+      "thumbnailName": "chess_2023.png"
+   },
+    "70": {
+       "projectTitle": "Minesweeper ",
+       "folderName": "Minesweeper",
+       "thumbnailName": "Minesweeper.png"
+    },
+   "71": {
+       "projectTitle": "Band_Name_Generator",
+       "folderName": "Band_Name_Generator",
+       "thumbnailName": "Band_Name_Generator.png"
+    },
+    "72": {
+      "projectTitle": "Tetris Game 2023",
+      "folderName": "Tetris_Game",
+      "thumbnailName": "tetris_Game_pic.png"
+    },
+    "73": {
+      "projectTitle": "Bubble Game",
+      "folderName": "Bubble_Game",
+      "thumbnailName": "Bubble_Game.png"
+    },
+    "74": {
+      "projectTitle": "Youtube UI Clone",
+      "folderName": "Youtube_Interface",
+      "thumbnailName": "Youtube_Clone.png"
+    },
+    "75": {
+        "projectTitle": "API_IMAGES",
+        "folderName": "API_IMAGES",
+        "thumbnailName": "API_IMAGES.png"
+    },
+    "76": {
+        "projectTitle": "Ping Pong Game",
+        "folderName": "Ping_Pong_Game",
+        "thumbnailName": "ping_pong.png"
+    }, 
+    "77": {
+        "projectTitle": "Budgety_app",
+        "folderName": "Budgety_app",
+        "thumbnailName": "Budgety_app.png"
+    }
 }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom-like Landing Page</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #4464da;
+      color: white;
+      padding: 5px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #040e3c;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    #home {
+      animation: fadeIn 2s ease-in-out;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    #home img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #home div {
+      width: 60%;
+     margin-left: 40px; /* Adjust as needed */
+    }
+
+    .side i {
+      font-size: 3em;
+    }
+
+    #pricing {
+      background-color: #f8f9fa;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .pricing-card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+    }
+
+  </style>
+   
+</head>
+<body>
+
+  <header>
+    
+    <p style="font-size: 50px;"><b>Zoom                    </b><i class="fas fa-video video-icon"></i> </p>
+  </header>
+
+  <nav>
+    <a href="#" id="home"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-cogs"></i> Features</a>
+    <a href="#"><i class="fas fa-dollar-sign"></i> Pricing</a>
+    <a href="#"><i class="fas fa-user-plus"></i> Sign Up  </a>
+    <a href="#"><i class="fas fa-sign-in-alt"></i> Join    </a>
+
+  </nav>
+
+  <div class="container">
+    <section id="home">
+        <div >
+          <img src="home.png" alt="Zoom Image">
+        </div>
+        <div>
+          <p style="font-size: 70px; color:#4464da">PRODUCTIVITY</p>
+          <p>Join our meetings and experience the power of virtual collaboration.</p>
+          <p>Stay Productive! On top of the work</p>
+        </div>
+      </section>
+  </div>
+  <div class="container">
+    <section id ="home" style="background-color:#8a95c4;">
+        <div>
+            <i class="fas fa-video fa-2x"></i>
+            <h2 style="color:whitesmoke">Start a Meeting</h2>
+            <p>Connect with people all around the world. Host video meetings effortlessly.</p>
+
+        </div>
+      
+    
+        <div class="side" >
+        <i class="fas fa-users fa-2x"></i>
+        <h2 style="color:whitesmoke">Join a Meeting</h2>
+        <p>Join meetings with a single click. Experience seamless video collaboration.</p>
+        </div>''
+</section>
+  </div>
+  <div id="pricing" id="home">
+    <h2>Pricing Plans</h2>
+    <div class="container">
+      <div class="pricing-card">
+        <i class="fas fa-user-friends"></i>
+        <h3>Free Plan</h3>
+        <p>For individuals or small teams</p>
+        <p>Basic features</p>
+        <p>Up to 10 participants</p>
+      </div>
+      <div class="pricing-card">
+        <i class="fas fa-trophy"></i>
+        <h3>Premium Plan</h3>
+        <p>For businesses and larger teams</p>
+        <p>Advanced features</p>
+        <p>Up to 50 participants</p>
+      </div>
+    </div>
+
+  <script>
+    // JavaScript for additional functionality goes here
+  </script>
+
+</body>
+</html>
