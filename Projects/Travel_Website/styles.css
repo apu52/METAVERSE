@@ -259,6 +259,17 @@ header {
 .destination__card img {
   border-radius: 1rem;
 }
+.destination__card1 {
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  cursor: pointer;
+}
+
+.destination__card1 img {
+  border-radius: 1rem;
+  height: 403px;
+}
 
 .destination__details {
   position: absolute;
@@ -279,6 +290,10 @@ header {
 .destination__card:hover .destination__details {
   bottom: 1rem;
 }
+.destination__card1:hover .destination__details {
+  bottom: 1rem;
+}
+
 
 .destination__title {
   font-size: 0.9rem;
