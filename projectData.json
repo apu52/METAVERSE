@@ -396,8 +396,23 @@
         "thumbnailName": "Country_Guide.png"
     },
     "80": {
+
+      "projectTitle": "Typing Master",
+      "folderName": "typing_speed",
+      "thumbnailName": "typingmaster.png"
+  }
+  ,
+
+  "81": {
+
         "projectTitle": "Farmers-Service-WebApp",
         "folderName": "Farmers-WebApp",
         "thumbnailName": "farmers.png"
-    }
+    },
+    "82": {
+
+      "projectTitle": "MATH_SPRINT_APP",
+      "folderName": "MATH_SPRINT_APP",
+      "thumbnailName": "MATH_SPRINT_APP.png"
+  }
 }
