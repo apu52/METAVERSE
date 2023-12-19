@@ -394,5 +394,11 @@
         "projectTitle": "Country_Guide",
         "folderName": "Country_Guide",
         "thumbnailName": "Country_Guide.png"
-    }
+    },
+    "80": {
+      "projectTitle": "Typing Master",
+      "folderName": "typing_speed",
+      "thumbnailName": "typingmaster.png"
+  }
+
 }
