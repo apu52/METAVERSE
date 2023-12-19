@@ -1,0 +1,255 @@
+title Fertilizer Calculator 
+script(src="https://cdn.jsdelivr.net/npm/chart.js")
+link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+link(rel="stylesheet", href="../static/style1.css")
+script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js", integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49", crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js", integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy", crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js", integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF", crossorigin="anonymous")//- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+link(rel="stylesheet", href="https://fonts.google.com/specimen/Roboto?query=robot")
+
+script(src="../static/translate.js")
+.marquee-container
+  marquee(behavior="scroll", direction="left")
+    span Here is a calculator made for calculatoins of fertilizers which may helpful for farmers. Calculations are done through specific logics but still might me inaccurate, farmers should note that. 
+#line
+header.d-flex.align-items-center#header
+  .d-flex.align-items-center
+    h1.logo-me-auto 
+      a(href="")|Fertilizer-module
+    nav.navbar
+      ul
+        li
+          a(href="/home")
+            span 🏘
+            |  Home
+        li
+          a.active(href="/calculator")
+            span 🖩
+            |  Fertilizer Calci
+        li
+          a(href="/information")
+            span ℹ️ 
+            | Information
+        li
+          a(href="/news")
+            span 🔍
+            |  Trending
+        li
+          a(href="/map")
+            span 🗺
+            |  Maps
+#line
+#carouselExampleControls.carousel.slide(data-ride="carousel")
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src="../images/banner1.jpg", alt="...")
+      .carousel-caption.d-none.d-md-block 
+        h1 A Fertilizer calculator,
+        h3 Calculator which can calculate the amount of fertilizer needed!! Providing more accuracy in farming and increasing the productivity of crops...
+    .carousel-item
+      img.d-block.w-100(src="../images/banner2.jpg", alt="...")
+      .carousel-caption.d-none.d-md-block 
+        h1 Utilizes NPK values
+        h3 The nitrogen, phosphorus, potassium (NPK) of fertilizer and soil are used for calculations which provides much accuracy in generated data... 
+    .carousel-item
+      img.d-block.w-100(src="../images/banner3.jpg", alt="...")
+      .carousel-caption.d-none.d-md-block 
+        h1 Tech for farmers 
+        h3 This calculator may help farmers a lot for their developement and proide as much help as possible through our website and technology.
+  a.carousel-control-prev(href="#carouselExampleControls", role="button", data-slide="prev")
+    span.carousel-control-prev-icon(aria-hidden="true")
+    span.sr-only Previous
+  a.carousel-control-next(href="#carouselExampleControls", role="button", data-slide="next")
+    span.carousel-control-next-icon(aria-hidden="true")
+    span.sr-only Next   
+hr.new1    
+script(src="../static/calciValidate.js").
+  
+center
+  .wrap 
+    button.button(type="button", data-toggle="modal", data-target="#exampleModalCenter") Start calculator
+
+table.content-table#mytable
+  thead
+    tr
+      td No.
+      td Attribute
+      td Value recomended
+  tbody
+    tr
+      td 1.
+      td Total fertilizer required
+      td value kg/acre
+    tr
+      td 2.
+      td Amount of Nitrogen(N) required
+      td value kg/acre
+    tr
+      td 3.
+      td Amount of Phosphorus(P) required
+      td value kg/acre
+    tr
+      td 4
+      td Amount of Potassium(K) required
+      td value kg/acre
+    tr
+      td 5
+      td Amount of fertilizer per acre
+      td value kg/acre
+<!-- Button trigger modal -->
+.pie-container
+  h2 Pie Chart <p> NPK percentage</p>
+  
+  canvas#myPieChart
+  .chart-info
+    h3#h3 No information available
+.formInformation 
+  h1 Form Data 
+  #line1 
+  .subData#subData
+    h2 Soil Type : Not selected
+    h2 Crop Type : Not selected
+    h2 Land size : Not selected
+    h2 Nitrogen level : Not selected
+    h2 Phosphrous level : Not selected
+    h2 Potassium level : Not selected
+    h2 Nitrogen Content : Not selected
+    h2 Phosphrous Content : Not selected
+    h2 Potassium Content : Not selected
+<!-- Modal -->
+.modal.fade#exampleModalCenter(tabindex="-1", role="dialog", aria-labelledby="exampleModalCenterTitle", aria-hidden="true")
+  .modal-dialog.modal-dialog-centered(role="document")
+    .modal-content
+      .modal-header
+        h5.modal-title#exampleModalCenterTitle Fill below info.
+        button.close(type="button", data-dismiss="modal", aria-label="Close")
+          span(aria-hidden="true") ×
+      //- .modal-body.
+      .container
+        form
+          .title Fertilizer Calci
+          label.label(for="soiltype") Soil type (sandy/clay):
+          select#soiltype(name="soiltype" )
+            option(value="default") Select soil type
+            option(value="black") Black soil
+            option(value="red") Red soil
+            option(value="laterite") Laterite soil
+            option(value="coastal") Coastal soil
+            option(value="alluvial") Alluvial soil
+          label.label(for="croptype").
+            Crop type:
+            
+          select#croptype(name="croptype")
+            option(value="default") Select any type
+            option(value="Rice") Rice
+            option(value="Jawar") Jawar
+            option(value="Bajara") Bajara
+            option(value="Mung") Mung
+            option(value="Gram") Gram
+            option(value="Urad") Urad
+            option(value="Tur") Tur
+            option(value="Corn") Corn
+            option(value="Sugarcane") Sugarcane
+            option(value="Cotton") Cotton
+          br
+          label.label(for="landsize") Enter land size (in acres):
+          input#landsize(type="number", name="landsize", placeholder="land size in acres", required )
+          
+          label.label(for="nitrogenLevel") Current nitrogen level (kg/ac):
+          input#nitrogenLevel(type="number", name="nitrogenLevel", placeholder="nitrogen level (kg/ac)", required )
+          
+          label.label(for="phosphorusLevel") Current phosphorus level (kg/ac):
+          input#phosphorusLevel(type="number", name="phosphorusLevel", placeholder="phosphorus level (kg/ac)", required )
+          
+          label.label(for="potassiumLevel") Current potassium level (kg/ac):
+          input#potassiumLevel(type="number", name="potassiumLevel", placeholder="potassium level (kg/ac)", required )
+          br
+          #customFertilizerInputs
+            label.label(for="nitrogenContent") Nitrogen content (ratio):
+            input#nitrogenContent(type="number", name="nitrogenContent" placeholder="N from N:P:K")
+            
+            label.label(for="phosphorusContent") Phosphorus content (ratio):
+            input#phosphorusContent(type="number", name="phosphorusContent" placeholder="P from N:P:K")
+            
+            label.label(for="potassiumContent") Potassium content (ratio):
+            input#potassiumContent(type="number", name="potassiumContent" placeholder="K from N:P:K")
+            br
+        
+      .modal-footer
+        input.btn1(type="button", value="Calculate ", onclick="calculate()")
+
+
+.modal.fade#inputModal(tabindex="-1", role="dialog", aria-labelledby="exampleModalLabel", aria-hidden="true" data-backdrop="true" data-keyboard="false")
+  .modal-dialog(role="document" style="width: fit-content;position:absilute;left: 58%;top: 5%;")
+    .modal-content
+      button.close(type="button", data-dismiss="modal", aria-label="Close")
+        span(aria-hidden="true") ×  
+      .overlay#messagebox
+        .msg
+          #tip Tip
+          hr
+          #tip-info Tip-Info        
+
+
+link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet")
+section.section.services-section#services
+  .container
+    .row
+      .col-lg-6
+        .section-title
+          h2 Things you should know...
+          p Following is some short information which would help you in understanding this calculator module more easily.
+    .row
+      //  feaure box 
+      .col-sm-6.col-lg-4
+        .feature-box-1
+          //- .icon
+          img(src="../images/topic1.png", alt="topics")
+          .feature-content
+            h5 Soil NPK
+            p The soil NPK is the amount of NPK(Nitrogen,Phosphorus,Potassium) in your land. It can be measured in kg/acre. You can get this information from soil testers. This information is important to generate our results. Even if you don't know your soilNPK then you can get this info via our web.  
+      //  / 
+      //  feaure box 
+      .col-sm-6.col-lg-4
+        .feature-box-1
+          img(src="../images/topic2.png", alt="topics")
+          .feature-content
+            h5 Fertilizer NPK
+            p The NPK values which are printed on any fertilizer packet you buy, is what we mean fertilizer NPK. It is the ratio of NPK(Nitrogen,Phosphorus,Potassium) present in fertilizer. You can get this from the lable of fertilizer you'll buy. It is important to know for our calculator to generate results.
+      //  / 
+      //  feaure box 
+      .col-sm-6.col-lg-4
+        .feature-box-1
+          img(src="../images/topic3.png", alt="topics")
+          .feature-content
+            h5 More accuracy, more better results
+            p This calculator is able to give you the information about the fertilizer amount, NPK kg per acre amd much more, this information can save your time and provide much accurate results which may help you to grow your crops with more efficiency.
+      //  feaure box 
+      .col-sm-6.col-lg-4
+        .feature-box-1
+          img(src="../images/topic4.png", alt="topics")
+          .feature-content
+            h5 So what is NPK actually?
+            p Well NPK means Nitrogen, Phosphorus and Potassium, these are nutrients. These are some most important ingredients in most of fertilizers. These nutrients are required by plants and crops to grow. In ever fertilizer their is different ratio of NPK.
+      //  / 
+      //  feaure box 
+      .col-sm-6.col-lg-4
+        .feature-box-1
+          img(src="../images/topic5.png", alt="topics")
+          .feature-content
+            h5 Where to know NPK levels?
+            p You can get the current level of NPK value in your farm with the help of our website. Our website can also provide you the contacts, addresses, mobile number and locations of well know soil tester from where you can get this info.
+      //  / 
+      //  feaure box 
+      .col-sm-6.col-lg-4
+        .feature-box-1
+          img(src="../images/topic6.png", alt="topics")
+          .feature-content
+            h5 Errors and accuracy
+            p This fertilizer-calculator is able to give almost accurate results, but at very end it's still made by humans. Sometimes it may generate inaccurate or incorrect results. The amount of fertilizer changes on may factors which cannot be measured on wensite only so this can cause inaccuracy in results.
+      //  / 
+#info
+  h3 Also read this...
+  p Above data is generated by some numeric mathematical calculations. This data may change with respect to other many factors like climate change, change in temperature, your soil nutritions level and much more than mentioned above, so their might be some possibility of generating incorrect calculations. If such thing happens or is identified, we are sorry for it. But still we do our best to provide accurate information through our web.       

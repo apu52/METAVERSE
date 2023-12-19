@@ -1,0 +1,340 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*navbar css*/
+a {
+  text-decoration: none;
+  color: #5cb874;
+}
+.logo{
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+} 
+a:hover {
+  color: #80c792;
+  text-decoration: none;
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  width: fit-content;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #5cb874;
+}
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+  /* margin-top: 2em; */
+}
+#header h1{
+  margin-right: 3em;
+}
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #5cb874;
+}
+.navbar{
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li{
+  width: fit-content;
+  list-style: none;
+  position: relative;
+}
+.navbar a,
+.navbar a:focus {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 0 10px 30px;
+font-size: 15px;
+color: #222222;
+transition: 0.3s;
+}
+.navbar a i,
+.navbar a:focus i {
+font-size: 12px;
+line-height: 0;
+margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+color: #5cb874;
+}
+/* line below navbar  */
+#line{
+  height: 3px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(175, 222, 199);
+}
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 80px;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.soil-testing h1 {
+    /* display: block; */
+    /* position: fixed; */
+
+  font-size: 48px;
+  font-weight: 50px;
+  margin-left: -180px;
+  margin-right: -174px;
+  padding: 10px 25px;
+  text-align: center;
+  /* margin: -1; */
+  color: rgb(236, 223, 223) ;
+  background-color:#009688;
+}
+#another{
+    /* display: block; */
+    /* position: fixed; */
+
+  font-size: 48px;
+  font-weight: 50px;
+  margin-top: 40px ;
+  margin-left: -180px;
+  margin-right: -174px;
+  padding: 10px 25px;
+  text-align: center;
+  /* margin: -1; */
+  color: rgb(236, 223, 223) ;
+  background-color:#009688;
+}
+
+label {
+  font-weight: bold;
+}
+.soil-testing {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.soil-testing h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.soil-testing .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.soil-testing .col {
+   flex: 1;
+margin: 10px;
+border-radius: 5px;
+background-color: #fff;
+box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+overflow: hidden;
+}
+.soil-testing .col h3{
+  font-size: 24px;
+font-weight: bold;
+text-align: center;
+margin: 20px 0 10px 0;
+}
+.soil-testing h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.soil-testing .col p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0 20px 20px 20px;
+}
+
+.soil-testing img {
+  width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+select {
+  display: block;
+  margin: 10px 0 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.crop-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+/* Style each crop */
+.crop {
+  display: flex;
+  width: 100%;
+  max-width: 980px;
+  margin: 20px;
+  background-color: #fff;
+  /* background-color: #16bbaa; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Style the crop image */
+.crop img {
+  width: 300px;
+  height: 260px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Style the crop details */
+.crop-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Style the crop name */
+.crop-details h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Style the crop description */
+.crop-details p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: black;
+}
+
+/* Style the crop scheme */
+.crop-details .crop-scheme {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+}
+
+/* Style the crop price */
+.crop-details .crop-price {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+/* Soil testing information */
+
+ /* Section styling */
+section#soil-testing {
+background-color: #f5f5f5;
+padding: 50px;
+text-align: center;
+}
+
+/* Heading styling */
+section#soil-testing h2 {
+font-size: 36px;
+color: #333;
+margin-bottom: 30px;
+}
+
+/* Paragraph styling */
+section#soil-testing p {
+font-size: 18px;
+color: #666;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+/* List styling */
+section#soil-testing ol, section#soil-testing ul {
+font-size: 18px;
+color: #666;
+line-height: 1.5;
+margin-bottom: 20px;
+text-align: left;
+}
+
+section#soil-testing li {
+margin-bottom: 10px;
+}
+
+/* Subheading styling */
+section#soil-testing h3 {
+font-size: 24px;
+color: #333;
+margin-top: 40px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+/* Conclusion styling */
+section#soil-testing h3:last-of-type {
+margin-bottom: 0;
+}
+
+section#soil-testing p:last-of-type {
+margin-bottom: 0;
+}
