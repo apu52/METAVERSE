@@ -1,0 +1,62 @@
+link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+link(rel="stylesheet", href="../static/map1.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap")
+script(src="../static/mapLogic.js") 
+.marquee-container
+  marquee(behavior="scroll", direction="left")
+    span This is a map-module, with the help of this module you can search the shopes nerby you, you may have easy access to the shop's location near to you.
+
+#line
+header.d-flex.align-items-center#header
+  .d-flex.align-items-center
+    h1.logo-me-auto 
+      a(href="")|Maps-module
+    nav.navbar
+      ul
+        li
+          a(href="/home")
+            span 🏘
+            |  Home
+        li
+          a(href="/calculator")
+            span 🖩
+            |  Fertilizer Calci
+        li
+          a(href="/information")
+            span ℹ️ 
+            | Information
+        li
+          a(href="/news")
+            span 🔍
+            |  Trending
+        li
+          a.active(href="/map")
+            span 🗺
+            |  Maps
+#line
+.header 
+  .dropD 
+    select(name="storeType" onChange="showMap(this)")
+      option(value="default") Select catagory
+      option(value="fertilizerS") Fertilizer shops
+      option(value="equipmentS") Farming equipments shops
+      option(value="seedS") Seeds shops
+      option(value="testC") Testing centers
+  .logo 
+    span
+      img(src="../images/download.png", alt="logos" id="img1")
+
+  .searchB
+    input(type="text" placeholder="Search shops...🔍")
+h1 Kolhapur Map
+.mapouter#mapouter
+  .gmap_canvas
+    iframe#gmap_canvas(width="1005", height="1213", src="https://maps.google.com/maps?q=kolhapur district&t=&z=10&ie=UTF8&iwloc=&output=embed", frameborder="0", scrolling="no", marginheight="0", marginwidth="0").
+    a(href="https://2yu.co") 2yu
+    br
+    style .mapouter{position:relative;text-align:right;height:1213px;width:1005px;}
+    a(href="https://embedgooglemap.2yu.co") html embed google map
+    style.
+      .gmap_canvas {overflow:hidden;background:none!important;height:1213px;width:1005px;}
+      
+

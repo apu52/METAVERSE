@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: black;
+    }
+    .card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(39, 39, 39);
+      width: 300px;
+      height: 400px;
+    }
+    .card span:nth-child(1){
+
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right,transparent,#17f3fd);
+    }
+    .top,
+.bottom {
+  width: 100%;
+  text-align: center;
+}
+
+.left,
+.right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="top"></span>
+    <span class="left"></span>
+    <span class="right"></span>
+    <span class="bottom"></span>
+  </div>
+</body>
+</html>
