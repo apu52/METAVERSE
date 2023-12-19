@@ -414,6 +414,12 @@
       "projectTitle": "MATH_SPRINT_APP",
       "folderName": "MATH_SPRINT_APP",
       "thumbnailName": "MATH_SPRINT_APP.png"
-  }
+  },
+  "83": {
+
+    "projectTitle": "Universal Currency Converter",
+    "folderName": "CurrencyConverter",
+    "thumbnailName": "currency.png"
+}
 
 }
