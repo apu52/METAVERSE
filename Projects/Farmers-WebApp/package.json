@@ -1,0 +1,17 @@
+{
+  "name": "megaproject1.0",
+  "version": "1.0.0",
+  "description": "its a final year project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mapmyindia-sdk-nodejs": "^1.1.0",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2"
+  }
+}

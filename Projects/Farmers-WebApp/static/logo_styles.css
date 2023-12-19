@@ -1,0 +1,31 @@
+/* Basic styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  
+  .logo {
+    font-size: 48px;
+    font-weight: 50px;
+    padding: 10px;
+    margin: -1;
+    color: whitesmoke ;
+    background-image:linear-gradient(43deg, rgba(90,201,11,1) 10%, rgba(197, 231, 26, 0.658) 63%, rgba(0, 213, 255, 0.822) 100%);
+    
+  }
+  /* Main content styling */
+  
+  .featured h2 {
+    color: #f44336;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  #homenav,#blognav,#fullwidthnav,#govscheme{
+    /* text-shadow: 0 0 10px black; */
+  }
+  
+  

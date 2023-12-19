@@ -1,0 +1,202 @@
+meta(charset="utf-8")
+link(rel="stylesheet", href="../static/style2.css")
+link(rel="stylesheet", href="../static/nivo-slider.css", type="text/css", media="screen")
+link(rel="stylesheet", href="../static/default/default.css", type="text/css", media="screen")
+script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", type="text/javascript")
+
+script(src="../static/jquery.nivo.slider.pack.js")
+link(rel="stylesheet", href="../static/logo_styles.css")
+title Kolhapur Trending News
+#wrapper
+  // Logo and Nav bar 
+  header
+    .container
+      .row
+        .col-sm-12
+          hr(style="border: 3px solid black;")
+          h1.logo.text-center(style="text-shadow: 1px 1px 0px black;") Kolhapur Trending News
+          hr(style="border: 3px solid black;")
+          nav.navbar
+            hr(style="border: 1px solid black;")
+            ul
+              li
+                a#homenav(href="/home") Home
+              li
+                a#blognav(href="#Local-news") Local News
+              li
+                a#fullwidthnav(href="#Related-videos") Related Videos
+              li
+                a#govscheme(href="#Gov-scheme") Goverment Scheme
+              li
+                a(href="#") About
+            hr(style="border: 1px solid #73d01d;")
+  br
+  br
+  br
+  // Slider
+  .slider-wrapper.theme-default
+    #slider.nivoSlider
+      a(href="https://vakilsearch.com/blog/nanaji-deshmukh-krishi-sanjeevani-yojana-2023-registration/" target="_blank")
+        img(src="../images/ban2.jpg", alt, title="Nanaji Deshmukh Krishi Sanjeevani Yojana 2023 Registration: Online Application Form")
+      a(href="https://www.esakal.com/maharashtra/communist-party-farmers-long-march-mumbai-onion-rate-demands-of-farmers-drl98" target="_blank")
+        img(src="../images/famer_long.jpg", alt, title="Farmers Long March : शेतकऱ्यांचं लाल वादळ मुंबईत धडकणार! नेमक्या काय आहेत मागण्या?")
+      a(href="https://hellomaharashtra.in/shinde-fadnavis-goverment-will-give-6-thousand-rs-to-farmers-every-year/" target="_blank")
+        img(src="../images/ban5.jpg", alt, title="Maharashtra Budget 2023 : शेतकऱ्यांसाठी सरकारची मोठी घोषणा; दरवर्षी 6 हजार रुपये देणार")
+      a(href="https://timesofindia.indiatimes.com/city/pune/natural-farming-model-should-be-adopted-on-a-large-scale-by-farmers-maharashtra-cm-eknath-shinde/articleshow/98025940.cms" target="_blank")
+        img(src="../images/ban3.webp", alt, title="Natural Farming model should be adopted on large scale by farmers: Maharashtra CM Eknath Shinde")
+  script(type="text/javascript").
+    $(window).load(function () {
+    				$('#slider').nivoSlider({ pauseTime: 5000, });
+    			});
+   
+  br
+  br
+  // Main Conternt
+  section#Local-news
+    #line
+      .dline
+      h1 Local News
+      .dline
+    #ourserv
+      article
+        h1 KOLHAPUR AGRICULTURE NEWS
+        br
+        a(href="https://timesofindia.indiatimes.com/city/kolhapur/in-kolhapur-rates-of-fresh-farm-produce-remain-stables/articleshow/98592911.cms?from=mdr" target="_blank")
+          img(src="../images/news6.jpg", alt)
+          h2 In Kolhapur, rates of fresh farm produce remain stable
+          br
+        p(style="margin-top: 0px;") Mar 13, 2023, 07:16
+        p Amol Chougule, a 30-year-old farmer from Male village in Panhala tehsil of Kolhapur, waited almost four hours, just to sell two crates of freshly-picked organically grown tomatoes he priced at Rs 25 per kg...
+        br
+        a.rm(href="https://timesofindia.indiatimes.com/city/kolhapur/in-kolhapur-rates-of-fresh-farm-produce-remain-stables/articleshow/98592911.cms?from=mdr", style="margin-top: 0px;" target="_blank") Read More
+      article
+        h1
+        br
+        a(href="https://timesofindia.indiatimes.com/city/kolhapur/red-chilli-prices-soar-by-over-25-due-to-severe-supply-shortage-in-kolhapur/articleshow/98678912.cms" target="_blank")
+          br
+          br
+          img(src="../images/news5.jpg", alt)
+          h2 Red chilli prices soar by over 25% due to severe supply shortage in Kolhapur
+          br
+        p  Mar 16, 2023, 08:34
+        p The prices of red chillies have soared by over 25% due to a shortage in supply. Kolhapur is famous for the production of red chilli powder, Kolhapuri spices, onion-garlic masala, etc...
+        br
+        a.rm(href="https://timesofindia.indiatimes.com/city/kolhapur/red-chilli-prices-soar-by-over-25-due-to-severe-supply-shortage-in-kolhapur/articleshow/98678912.cms", style="margin-top: 0px;" target="_blank") Read More
+      article.lastarticle
+        h1
+        br
+        br
+        br
+        a(href="https://marathi.abplive.com/news/kolhapur/kolhapur-gadhinglaj-jaysingpur-agricultural-market-committee-election-from-27th-march-kolhapur-news-1163099" target="_blank")
+          img(src="../images/news7.jpg", alt)
+          h2 Gadhinglaj, Jaisingpur Market Committee Elections Randhumali from today
+          br
+        p(style="margin-top: 0px;") Feb 27, 2023, 07:16
+        p Kolhapur along with Kolhapur (Kolhapur Agricultural Produce Market Committee), Gadhinglaj, Jaisingpur market committee elections are starting from today. Voting will be held on April 28...
+        br
+        a.rm(href="https://marathi.abplive.com/news/kolhapur/kolhapur-gadhinglaj-jaysingpur-agricultural-market-committee-election-from-27th-march-kolhapur-news-1163099", style="margin-top: 0px;" target="_blank") Read More
+  section#Related-videos
+    br
+    br
+    br
+    //  Videos Preview 
+    #line
+      .dline
+      h1 Related Videos
+      .dline
+    br
+    br
+    .video-player
+      iframe#youtube(width="560", height="315", src="https://www.youtube.com/embed/euyDS5qqOxg", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+      .video-list
+        h2 Videos
+        ul
+          li
+            a(href="https://www.youtube.com/embed/T0V_3BUmSkw", target="_blank")
+              img(src="https://img.youtube.com/vi/T0V_3BUmSkw/hqdefault.jpg", alt="Video Preview")
+              span 10 crore farm in two acres; A successful experiment of unique agriculture in Kolhapur district
+          li
+            a(href="https://www.youtube.com/watch?v=B8m35i1Ajg4", target="_blank")
+              img(src="https://img.youtube.com/vi/B8m35i1Ajg4/hqdefault.jpg", alt="Video Preview")
+              span Acrophonic Hydrophonic Farming: Maharashtra च्या Kolhapur मध्ये पाण्यावर तरंगणारी शेती आहे कशी?
+          li
+            a(href="https://www.youtube.com/watch?v=1KzyTmINriQ", target="_blank")
+              img(src="https://img.youtube.com/vi/1KzyTmINriQ/hqdefault.jpg", alt="Video Preview")
+              span Kolhapur, Maharashtra: 17 Year's Journey of Zero Budget Natural Sugarcane Farming
+          li
+            a(href="https://www.youtube.com/watch?v=VjuUO25VLLE", target="_blank")
+              img(src="https://img.youtube.com/vi/VjuUO25VLLE/hqdefault.jpg", alt="Video Preview")
+              span Best Agriculture Business Ideas for 2022 | Most Profitable Agriculture Business in India
+          li
+            a(href="https://www.youtube.com/watch?v=2t5Am0xLTOo", target="_blank")
+              img(src="https://img.youtube.com/vi/2t5Am0xLTOo/hqdefault.jpg", alt="Video Preview")
+              span Sugarcane Farming tips: ऊस लागवड पद्धतीमध्ये बदल करून एकरी 100 टन उत्पन्न शक्य आहे का?| BBC Marathi
+  br
+  br
+  br
+  br
+  section#Gov-scheme
+    #line
+      .dline
+      h1 Goverment Schemes
+      .dline
+    article
+      .card
+        .card-image
+          img(src="../images/gov-S1.jpg", alt="Card image")
+        .card-content
+          h2 Pradhan Mantri Fasal Bima Yojana (PMFBY)
+          br
+          p Pradhan Mantri Fasal Bima Yojana has been started by the central government. The benefit of this scheme will be given to the farmers. Pradhan Mantri Fasal Bima Yojana 2023 has been launched only for the farmers. The main objective of this scheme is that when the crops of the farmers get damaged, then in this situation they will be given compensation and also the farmers who used to commit suicide due to crop failure, now the farmers will not commit suicide if the government gives them financial facilities.Pradhan You can apply online for Mantri Fasal Bima Yojana 2023.
+          p Pradhan Mantri Fasal Bima Yojana is run by the Indian Agricultural Insurance Company LIC for the farmers of the country. Due to natural calamities like floods, storms, fire in crops, drought, hailstorm, crops get destroyed due to which money will be transferred by the government to the farmers' accounts. 8800 crore has been planned by the central government under PM Fasal Yojana.
+          a.card-button(href="https://www.pmfby.gov.in/farmerRegistrationForm", style="margin-top: 50px; position:sticky;" target="_blank") Apply Now
+    br
+    article
+      .card
+        .card-image
+          img(src="../images/gov-S2.jpg", alt="Card image", style="margin: top 20px;")
+        .card-content
+          h2 Tractor Anudan Yojana Maharashtra 2023
+          br
+          p Tractor Anudan Yojana Maharashtra 2023 Government of India launches various schemes for the welfare and development of farmers in the country. As farmers are the backbone of Indian agriculture sector, it is the need of the hour to take care and support them, so that they can contribute more to the growth of the economy.
+          p Tractor Anudan Yojana Maharashtra 2023 Government of India launches various schemes for the welfare and development of farmers in the country. As farmers are the backbone of Indian agriculture sector, it is the need of the hour to take care and support them, so that they can contribute more to the growth of the economy. This is why the government is launching beneficial schemes for farmers from time to time. PM Kisan Tractor Scheme 2023 PM Kisan Tractor Scheme is one such scheme which helps the farmers of the country. When we talk about agriculture, many factors are important.
+          a.card-button(href="https://pmmodijiyojana.in/tractor-anudan-yojana-maharashtra-2021-22/", style="margin-top: 70px;" target="_blank") Apply Now
+    br
+    article
+      .card
+        .card-image
+          img(src="../images/gov-S3.jpg", alt="Card image", style="margin: top 20px;")
+        .card-content
+          h2 Farm Machinery Bank Yojana 2023
+          br
+          p Farm Machinery Bank Yojana Government’s new scheme for farmers of the country, will get 80% subsidy: For this, the Central Government has released the Government Portal Direct Benefit Transfer in Agriculture Mechanization Department of Agriculture, Corporation and Farmers Welfare, Ministry of Agriculture and Farmers Welfare Government of India. under the Farm Machinery Bank Yojana in Rajasthan, farmers of every category will be given this benefit. However, Scheduled Castes, Tribes, Women, BPL card holders and small farmers are preferred. Under this scheme, according to Pahale Aao Pahale Pao, farmers will be given grant money
+          p Under the scheme, one tractor (5 lakhs), one rotavator (1.20 lakhs), two seed drills (60 thousand), one power tiller (70 thousand), one power spare (25 thousand), one drum seeder (8 thousand), one Includes multi thresher (50 thousand), irrigation pipe 100 meters (90 thousand), two pump sets (70 thousand) and 20 nep sec spare (20 thousand)
+          a.card-button(href="https://agrimachinery.nic.in/Farmer/Management/Index", style="margin-top: 50px;" target="_blank") Apply Now
+  script.
+    
+    const videoLinks = document.querySelectorAll(".video-list li a");
+    		const videoPlayer = document.querySelector(".video-player iframe");
+    
+    		videoLinks.forEach(link => {
+    			link.addEventListener("click", function (e) {
+    				e.preventDefault();
+    				const videoUrl = this.href.replace("watch?v=", "embed/");
+    				videoPlayer.setAttribute("src", videoUrl);
+    			});
+    		});
+    
+    		$(document).ready(function () {
+    			$('a[href^="#"]').on('click', function (e) {
+    				e.preventDefault();
+    
+    				var target = this.hash,
+    					$target = $(target);
+    
+    				$('html, body').stop().animate({
+    					'scrollTop': $target.offset().top
+    				}, 900, 'swing', function () {
+    					window.location.hash = target;
+    				});
+    			});
+    		});
+    
