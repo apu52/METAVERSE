@@ -299,5 +299,10 @@
      "projectTitle": "Packman Game",
     "folderName": "packman",
     "thumbnailName": "PacmanImage.png"
+  },
+  "61": {
+     "projectTitle": "Kisan-Chan-Services",
+    "folderName": "Farmers-Service-WebApp",
+    "thumbnailName": "kisan.png"
   }
 }
