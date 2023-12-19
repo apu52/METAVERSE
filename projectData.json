@@ -386,8 +386,14 @@
         "thumbnailName": "Budgety_app.png"
     }, 
     "78": {
+        "projectTitle": "Country_Guide",
+        "folderName": "Country_Guide",
+        "thumbnailName": "Country_Guide.png"
+
+    },
+    "79": {
         "projectTitle": "Kisan-Chan-Services",
         "folderName": "Farmers-Service-WebApp",
         "thumbnailName": "farmers.png"
-    }
+    },
 }
