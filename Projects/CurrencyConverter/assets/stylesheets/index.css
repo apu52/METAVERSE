@@ -1,0 +1,200 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif !important;
+}
+
+#currency-bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2374ab;
+}
+
+#currency-h1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#currency-h1 h1 {
+  color: whitesmoke;
+  font-weight: 500;
+  margin: 0px;
+  position: absolute;
+  top: -125px;
+}
+
+#currency-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #121416;
+}
+#currency-container p {
+  font-weight: 400;
+}
+#currency-container .form-control {
+  background-color: #e9ecef;
+  border: 1px solid #A5ABB6;
+  color: black;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+#currency-container .form-control:focus {
+  border: 2px solid #d17b0f;
+  box-shadow: none;
+}
+#currency-container .btn-primary {
+  background-color: #d17b0f;
+  border: 2px solid #d17b0f;
+  color: #121416;
+  font-weight: 500;
+  padding: 10px 50px;
+}
+#currency-container .btn-primary:hover {
+  background-color: #e98911;
+  border: 2px solid #e98911;
+}
+
+#currency-converter {
+  padding: 30px;
+  border-radius: 7px;
+  background-color: whitesmoke;
+}
+
+#currency-headers {
+  display: flex;
+}
+
+#currencies {
+  display: flex;
+  gap: 20px;
+}
+
+#from-currency, #to-currency {
+  display: flex;
+  gap: 10px;
+}
+
+#from-amount, #to-amount {
+  display: flex;
+  flex-direction: column;
+}
+
+#from-ticker, #to-ticker {
+  display: flex;
+  align-items: flex-end;
+}
+
+#currency-divider {
+  display: flex;
+  align-items: center;
+}
+#currency-divider i {
+  font-size: 20px;
+}
+
+#result {
+  margin: 40px 0px;
+}
+
+#result-main {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 0px 0px 0px;
+}
+
+#result-top, #result-bottom {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+#currency-submit {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#currency-headers-mobile {
+  display: none;
+}
+
+.slideDown {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  65% {
+    transform: translateY(-4%);
+  }
+  80% {
+    transform: translateY(4%);
+  }
+  95% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  65% {
+    -webkit-transform: translateY(-4%);
+  }
+  80% {
+    -webkit-transform: translateY(4%);
+  }
+  95% {
+    -webkit-transform: translateY(-2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #currencies {
+    width: 300px;
+    gap: 10px;
+  }
+  #currencies select {
+    width: 65px;
+  }
+  #currencies form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #currency-h1 h1 {
+    top: -80px;
+  }
+  #currency-converter {
+    padding: 25px;
+  }
+  #currency-headers {
+    display: none;
+  }
+  #currency-headers-mobile {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

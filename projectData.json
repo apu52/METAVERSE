@@ -415,5 +415,10 @@
        "projectTitle": "Apple Website Clone",
         "folderName": "apple_clone",
         "thumbnailName": "apple_clone.png"
-   }
+   },
+  "84": {
+    "projectTitle": "Universal Currency Converter",
+    "folderName": "CurrencyConverter",
+    "thumbnailName": "currency.png"
+  }
 }
