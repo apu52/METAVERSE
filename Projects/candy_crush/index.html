@@ -1,0 +1,90 @@
+<!--
+CandyCrush
+Your Name: Edward Hughes
+Collaborators: nobody
+-->
+<!DOCTYPE html>
+<html>
+<!--
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Candy Crush</title>
+		
+		<!-- Load style sheets -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+		
+		<link rel="stylesheet" href="mainLayout.css">
+		
+		<!-- Use mobile-aware viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Load any supplemental Javascript libraries here -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
+		<script src="candy.js"></script>
+		<script src="board.js"></script>
+		<script src="rules.js"></script>
+		<script src="handler.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" id="firstColumn">
+					<h1 id="gameTitle">Candy Crush</h1>
+					<label id="scoreLabel">0 points</label><br/>
+					<input class="btn btn-default" type="button" id="newGame" value="New Game"><br/>
+					<input class="btn btn-default" type="button" id="showMove" value="Show Move">
+				</div>
+				
+				<div class="col-md-6" id="mainColumn">
+					<div id="cover"></div>
+					<div id="gameBoard"></div>
+					<canvas id="canvas" width="320" height="320">
+						<p>Canvas not supported on your browser.</p>
+					</canvas>
+				</div>
+				<div class="col-md-3" id="lastColumn"></div>
+				<!--
+				<div class="col-md-3" id="lastColumn">
+					<div class="col-md-12">
+						<form action="">
+							Move: <input type="text" id="moveInput" maxlength="3" value="" oninput="CheckInput()">
+						</form>
+					</div>
+					<div class="col-md-12">
+						<table id="arrowContainer">
+							<tr>
+								<td></td>
+								<td><input class="btn btn-default arrow" type="button" id="up" value="&uarr;"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input class="btn btn-default arrow" type="button" id="left" value="&larr;"></td>
+								<td></td>
+								<td><input class="btn btn-default arrow" type="button" id="right" value="&rarr;"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input class="btn btn-default arrow" type="button" id="down" value="&darr;"></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-12">
+						<input class="btn btn-default" type="button" id="crushOnce" value="Crush Once (spacebar)">
+					</div>
+				</div>
+				-->
+				
+			</div> <!-- class="row" -->
+		</div> <!-- class="container" -->
+	
+	</body>
+
+</html>

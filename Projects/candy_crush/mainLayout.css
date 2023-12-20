@@ -1,0 +1,98 @@
+body {
+	background-image: url('candy-crush-background-2.png');
+	background-size: cover; /* This ensures the image covers the entire background */
+	background-position: center; /* This centers the image horizontally and vertically */
+	background-attachment: fixed; /* This keeps the background image fixed while the content scrolls */
+  }
+
+img {
+	position: absolute;
+}
+
+.btn {
+	margin: 5px;
+	border: 1px solid #666666;
+	box-shadow: 1px 1px 5px gray;
+}
+
+.btn:hover {
+	background-color: #8c8c8c;
+}
+
+.arrow {
+	margin: 0;
+	color: white;
+}
+
+.arrow:disabled {
+	background-color: grey;
+}
+
+.arrow:enabled {
+	background-color: #4889f0;
+}
+
+#firstColumn, #mainColumn, #lastColumn {
+	margin: auto;
+	padding: 10px;
+}
+
+#firstColumn {
+	z-index: 3;
+}
+
+#gameTitle {
+	font-weight: bold;
+	color: red;
+}
+
+#gameBoard {
+	z-index: 1;
+	margin: auto;
+	width: 320px;
+	height: 320px;
+	table-layout: fixed;
+	position: relative;
+}
+
+#moveInput {
+	width: 50px;
+}
+
+#moveInput:hover, #moveInput:focus {
+	box-shadow: 0 0 5px blue;
+}
+
+#arrowContainer {
+	margin: 20px auto;
+}
+
+#canvas {
+	z-index: 10;
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 160px);
+	opacity: 0.7;
+}
+
+#scoreLabel {
+	background-color: lightgrey;
+	
+		text-align: center;
+		width: 100%; /* Ensure the label takes the full width of the container */
+	  }
+	  
+
+#cover {
+	z-index: 2;
+	position: absolute;
+	top: -500px;
+	left: calc(50% - 160px);
+	background-color: white;
+	width: 320px;
+	height: 500px;
+}
+
+#newGame, #showMove {
+	width: 10em;
+}

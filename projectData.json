@@ -440,7 +440,12 @@
         "projectTitle": "Sudoku Solver",
         "folderName": "Sudoku",
         "thumbnailName": "solver.png"
-    }
+    },
+    "89": {
+      "projectTitle": "Candy Crush",
+      "folderName": "candy_crush",
+      "thumbnailName": "CandyCrush2.png"
+  }
 }
 
 
