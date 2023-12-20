@@ -309,6 +309,7 @@
     "projectTitle": "Sentence Sweetener AI",
     "folderName": "Sentence_Sweetener_AI",
     "thumbnailName": "Sentence_Sweetener_AI.png"
+
  }, 
  "63": {
     "projectTitle": "Black Jack",
@@ -394,33 +395,55 @@
         "projectTitle": "Country_Guide",
         "folderName": "Country_Guide",
         "thumbnailName": "Country_Guide.png"
-
     },
     "80": {
-
       "projectTitle": "Typing Master",
       "folderName": "typing_speed",
       "thumbnailName": "typingmaster.png"
-  },
 
-  "81": {
-
+    },
+    "81": {
         "projectTitle": "Farmers-Service-WebApp",
         "folderName": "Farmers-WebApp",
         "thumbnailName": "farmers.png"
-
     },
     "82": {
-
       "projectTitle": "Gym Website",
       "folderName": "Gym_Website",
       "thumbnailName": "gym_website.png"
     },
+
     "84": {
 
       "projectTitle": "Sudoku Solver",
       "folderName": "Sudoku",
       "thumbnailName": "solver.png"
+    },
+  
+    "85": {
+      "projectTitle": "MATH_SPRINT_APP",
+      "folderName": "MATH_SPRINT_APP",
+      "thumbnailName": "MATH_SPRINT_APP.png"
+    },
+    "86": {
+       "projectTitle": "Apple Website Clone",
+        "folderName": "apple_clone",
+        "thumbnailName": "apple_clone.png"
+     },
+    "87": {
+        "projectTitle": "Universal Currency Converter",
+        "folderName": "CurrencyConverter",
+        "thumbnailName": "currency.png"
+    },
+    "88": {
+        "projectTitle": "Blog Website",
+        "folderName": "Blog_Website",
+        "thumbnailName": "Blog_Website.png"
+    },
+    "89": {
+    "projectTitle": "Whack a mole",
+    "folderName": "Whack-a-mole",
+    "thumbnailName": "Whack-a-mole.png"
     }
-
 }
+
