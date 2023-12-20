@@ -441,6 +441,12 @@
         "folderName": "Sudoku",
         "thumbnailName": "solver.png"
     }
+    ,
+    "89": {
+        "projectTitle": "Hangman_game",
+        "folderName": "Hangman_game",
+        "thumbnailName": "Hangman_game.png"
+    }
 }
 
 
