@@ -441,11 +441,19 @@
         "folderName": "Sudoku",
         "thumbnailName": "solver.png"
     },
+
     "89": {
       "projectTitle": "Candy Crush",
       "folderName": "candy_crush",
       "thumbnailName": "CandyCrush2.png"
-  }
+  },
+
+    "90":{
+      "projectTitle":"Tiktok Clone",
+      "folderName":"Tiktok_Clone",
+      "thumbnailName":"tiktok.png"
+    }
+
 }
 
 
