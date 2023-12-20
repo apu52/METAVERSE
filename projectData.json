@@ -400,7 +400,6 @@
       "projectTitle": "Typing Master",
       "folderName": "typing_speed",
       "thumbnailName": "typingmaster.png"
-
     },
     "81": {
         "projectTitle": "Farmers-Service-WebApp",
@@ -433,9 +432,9 @@
         "thumbnailName": "Blog_Website.png"
     },
     "87": {
-    "projectTitle": "Whack a mole",
-    "folderName": "Whack-a-mole",
-    "thumbnailName": "Whack-a-mole.png"
+        "projectTitle": "Whack a mole",
+        "folderName": "Whack-a-mole",
+        "thumbnailName": "Whack-a-mole.png"
     }
 }
     
