@@ -415,6 +415,12 @@
       "projectTitle": "Gym Website",
       "folderName": "Gym_Website",
       "thumbnailName": "gym_website.png"
-  }
+    },
+    "83": {
+
+      "projectTitle": "Sudoku Solver",
+      "folderName": "sudoku_solver",
+      "thumbnailName": "SUDOKU.png"
+    }
 
 }
