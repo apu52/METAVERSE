@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Lora', serif;
   }
   body {
-    background-color: #3d64e6;
+    background-image:url('./country.jpg' );
   }
   .container {
     background-color: #ffffff;
@@ -19,10 +19,20 @@
     border-radius: 0.62em;
     box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
   }
+  #header{
+    font-weight: 600;
+    text-decoration: underline;
+    border-bottom: 3px solid #ff465a;
+    margin-right: 150px;
+    text-align: center;
+    font-size:26px
+
+  }
   .search-wrapper {
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1.25em;
+    
   }
   .search-wrapper button {
     font-size: 1em;
@@ -33,11 +43,20 @@
     border-radius: 1.5em;
     cursor:pointer;
   }
+  .search-wrapper button:hover {
+    font-size: 1em;
+    background-color:#ff465a;
+    color: #ffffff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+    cursor:pointer;
+  }
   .search-wrapper input {
     font-size: 1em;
     padding: 0 0.62em;
     border: none;
-    border-bottom: 2px solid #3d64e6;
+    border-bottom: 2px solid #ff465a;
     outline: none;
     color: #222a43;
   }
@@ -49,12 +68,13 @@
     width: 45%;
     min-width: 7.5em;
     margin: 1.8em auto 1.2em auto;
+    border-radius: 4px;
+    border:2px solid black
   }
   .container h2 {
     font-weight: 600;
     color: #222a43;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.8em;
   }
@@ -64,15 +84,22 @@
   }
   .container h4 {
     display: inline;
-    font-weight: 500;
-    color: #222a43;
+    font-weight: 700;
+    color: #aa8231;
   }
   .container span {
-    color: #5d6274;
+    color: #030a24;
   }
   .container h3 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 400;
     color: #ff465a;
+  }
+  hr{
+    margin-top: 14px;
+    background-color:#aa8231;
+    border-color:#aa8231;
+    border-weight:4px;
+
   }
