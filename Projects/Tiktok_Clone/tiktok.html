@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *,
+        *:before,
+        *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        }
+        *::-webkit-scrollbar {
+        display: none;
+        height: 0;
+        width: 0;
+        }
+        body {
+        background-color: #333;
+        font-family: Sans-Serif;
+        }
+
+        a {
+        text-decoration: none;
+        color: #333;
+        cursor: pointer;
+        }
+
+        /* main styling */
+        .container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+        }
+
+        .video-container {
+        position: relative;
+        border-radius: 10px;
+        height: 659px;
+        width: 330px;
+        box-shadow: 0 0 50px #000;
+        margin: auto;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-snap-align: center;
+        }
+        /* video container header */
+        .video-container-header {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        z-index: 3;
+        }
+        .video-container-header div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 15px;
+        color: #ccc;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        }
+        .video-container-header div.active {
+        font-size: 20px;
+        color: #fff;
+        }
+        .post {
+        position: relative;
+        height: 659px;
+        width: 330px;
+        overflow: hidden;
+        scroll-snap-align: center;
+        }
+        .video-player {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        }
+        .video-player::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0 0 120px #000;
+        }
+        .side-bar {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: 2;
+        transform: translate(0, -50%);
+        }
+        .post-footer {
+        position: absolute;
+        width: 80%;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        color: #fff;
+        z-index: 2;
+        }
+        .post-footer a {
+        color: #fff;
+        }
+        .post-footer .username {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        }
+        .post-footer .username .username-link::before {
+        content: "@ ";
+        color: #fff;
+        }
+        .verfied .verfied-icon,
+        .post-comment-user-verified {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+        font-size: 9px;
+        border-radius: 50%;
+        background-color: #bc208b;
+        display: grid;
+        place-items: center;
+        }
+        .post-description {
+        padding-left: 10px;
+        font-size: 10px;
+        }
+        .disc-logo {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 2;
+        animation: disc-anime infinite linear 2s;
+        }
+        .disc-logo-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1.4);
+        }
+        .side-bar .profile-follow {
+        position: relative;
+        }
+        .side-bar .profile-follow .fa-plus {
+        font-size: 10px;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #ff2828;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .side-bar .profile-logo-img {
+        overflow: hidden;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        }
+        .side-bar .side-icon {
+        cursor: pointer;
+        padding: 20px;
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        }
+        .side-icon p {
+        font-size: 10px;
+        padding-top: 5px;
+        }
+        /* post comments */
+        .post-comments {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        padding: 10px;
+        background-color: #fff;
+        z-index: 5;
+        transition: all 0.5s ease;
+        }
+        .post-comments::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        width: 50%;
+        padding: 1px;
+        background-color: #333;
+        border-radius: 50px;
+        transform: translate(-50%);
+        }
+        .post-comments.open {
+        bottom: 0;
+        }
+        .close-comment {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 300px;
+        }
+        .post-comments-area {
+        height: 250px;
+        overflow: scroll;
+        margin-top: 20px;
+        }
+        .post-comment {
+        margin: 10px auto;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        }
+        .post-comment-user-name {
+        display: flex;
+        }
+        .post-comment-user-img {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        }
+        .post-comment-user-verified {
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        }
+        .post-comment-user-msg {
+        font-size: 14px;
+        }
+        .post-comment-like-btn {
+        text-align: center;
+        cursor: pointer;
+        }
+        .post-comment-like-btn p {
+        font-size: 10px;
+        }
+        .post-comment-like-btn .post-comment-like-icon.liked {
+        color: #ff2828;
+        }
+        .post-comment-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        justify-content: center;
+        width: 100%;
+        }
+        .post-comment-input {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        }
+        .post-comment-text {
+        height: 40px;
+        width: 100%;
+        border: 0;
+        padding: 10px 20px;
+        }
+        .post-comment-send {
+        height: 40px;
+        width: 40px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        }
+        .music-name {
+        display: flex;
+        font-size: 10px;
+        padding: 5px;
+        }
+        .song-name {
+        margin-left: 10px;
+        }
+        video.post-video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        }
+
+        /* follow me */
+
+        body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #d81a47, #c33694);
+        background-size: 400% 400%;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        color: #000;
+        cursor: pointer;
+        animation: gradient 15s ease infinite;
+        }
+        .follow-me {
+        position: relative;
+        background: #fff;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50%;
+        right: 30px;
+        transform: translate(-50%);
+        text-align: center;
+        z-index: 3;
+        }
+
+        .follow-me::before {
+        content: "Contact me";
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        width: 150px;
+        text-align: center;
+        transform: translate(-50%);
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 5px;
+        }
+        .follow-me::after {
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: 50%;
+        height: 0;
+        width: 0;
+        text-align: center;
+        transform: translate(-50%);
+        border-top: 10px #fff solid;
+        border-right: 10px transparent solid;
+        border-left: 10px transparent solid;
+        }
+
+        @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+        }
+
+        @keyframes disc-anime {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+    </style>
+</head>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container">
+  <!-- follow me -->
+  <div class="div follow-me">
+    <a href="." class="follow-me-link"><i class="fa fa-instagram"></i></a>
+  </div>
+  <div class="video-container">
+    <div class="post">
+      <div class="video-player">
+        <video poster="https://wallpapercave.com/wp/wp10387759.jpg" src="https://wallpapercave.com/wp/wp10387759.jpg" autoplay="" loop="" class="post-video"></video>
+      </div>
+      <div class="side-bar">
+        <div class="side-icon profile-follow">
+          <div class="profile-logo">
+            <img src="https://assets.codepen.io/2483051/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1636466200&width=80" class="profile-logo-img" alt="">
+          </div>
+          <i class="fa fa-plus"></i>
+        </div>
+        <div class="side-icon like-btn">
+          <i class="fa fa-heart-o like-icon"></i>
+          <p class="like-number">1.2K</p>
+        </div>
+
+        <div class="side-icon comment-btn">
+          <i class="fa fa-comment comment-icon"></i>
+          <p class="comment-number">500</p>
+        </div>
+
+        <div class="side-icon share-btn">
+          <i class="fa fa-share share-icon"></i>
+          <p class="share-number">1.9K</p>
+        </div>
+
+      </div>
+      <div class="post-comments ">
+        <span class="close-comment">&times;</span>
+        <div class="post-comments-area">
+          <div class="post-comment">
+            <div class="post-comment-user">
+              <img src="https://assets.codepen.io/2483051/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1636466200&width=80" class="post-comment-user-img">
+            </div>
+            <div class="post-comment-content">
+              <div class="post-comment-user-name verfied">
+                <a href=" ">John Doe</a>
+                <i class="fa fa-check post-comment-user-verified"></i>
+              </div>
+              <div class="post-comment-user-msg">
+                Follow me on instagram
+              </div>
+            </div>
+            <div class="post-comment-like-btn">
+              <i class="fa fa-heart-o post-comment-like-icon"></i>
+              <p class="post-comment-like-number">9</p>
+            </div>
+          </div>
+        </div>
+        <div class="post-comment-input">
+          <input type="text" name="" class="post-comment-text" placeholder="Enter somethings good...." />
+          <button class="post-comment-send"><i class="fa fa-send send-btn"></i></button>
+        </div>
+      </div>
+      <div class="post-footer">
+        <div class="username verfied">
+          <a href=" " class="username-link">JohnDoe</a>
+          <i class="fa fa-check verfied-icon"></i>
+        </div>
+        <p class="post-description">
+          Emo poster
+        </p>
+
+        <div class="music-name">
+          <i class="fa fa-music"></i>
+          <marquee behavior="" direction="" class="song-name">Ocean Avenue - Yellow Card </marquee>
+        </div>
+
+      </div>
+      <div class="disc-logo">
+        <img src="https://www.nicepng.com/png/detail/329-3297274_compact-disc-cd-comments-disc-icon-png.png" alt="" class="disc-logo-img">
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="script.js"></script>
+</html>
