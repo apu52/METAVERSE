@@ -420,5 +420,10 @@
         "projectTitle": "Blog Website",
         "folderName": "Blog_Website",
         "thumbnailName": "Blog_Website.png"
+    },
+    "85": {
+    "projectTitle": "Whack a mole",
+    "folderName": "Whack-a-mole",
+    "thumbnailName": "Whack-a-mole.png"
     }
 }
