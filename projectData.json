@@ -437,10 +437,22 @@
         "folderName": "Blog_Website",
         "thumbnailName": "Blog_Website.png"
     },
+
     "87": {
     "projectTitle": "Whack a mole",
     "folderName": "Whack-a-mole",
     "thumbnailName": "Whack-a-mole.png"
+    },
+    "88": {
+      "projectTitle": "Whack a mole",
+      "folderName": "Whack-a-mole",
+      "thumbnailName": "Whack-a-mole.png"
+    },
+    "89": {
+        "projectTitle": "Farmers-Service-WebApp",
+        "folderName": "Farmers-WebApp",
+        "thumbnailName": "farmers.png"
+
     }
 }
 
