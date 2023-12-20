@@ -400,35 +400,42 @@
       "projectTitle": "Typing Master",
       "folderName": "typing_speed",
       "thumbnailName": "typingmaster.png"
+
     },
     "81": {
+        "projectTitle": "Farmers-Service-WebApp",
+        "folderName": "Farmers-WebApp",
+        "thumbnailName": "farmers.png"
+    },
+    "82": {
+      "projectTitle": "Gym Website",
+      "folderName": "Gym_Website",
+      "thumbnailName": "gym_website.png"
+    },
+    "83": {
       "projectTitle": "MATH_SPRINT_APP",
       "folderName": "MATH_SPRINT_APP",
       "thumbnailName": "MATH_SPRINT_APP.png"
     },
-    "82": {
+    "84": {
        "projectTitle": "Apple Website Clone",
         "folderName": "apple_clone",
         "thumbnailName": "apple_clone.png"
      },
-    "83": {
+    "85": {
         "projectTitle": "Universal Currency Converter",
         "folderName": "CurrencyConverter",
         "thumbnailName": "currency.png"
     },
-    "84": {
+    "86": {
         "projectTitle": "Blog Website",
         "folderName": "Blog_Website",
         "thumbnailName": "Blog_Website.png"
     },
-    "85": {
-      "projectTitle": "Whack a mole",
-      "folderName": "Whack-a-mole",
-      "thumbnailName": "Whack-a-mole.png"
-    },
-    "86": {
-        "projectTitle": "Farmers-Service-WebApp",
-        "folderName": "Farmers-WebApp",
-        "thumbnailName": "farmers.png"
+    "87": {
+    "projectTitle": "Whack a mole",
+    "folderName": "Whack-a-mole",
+    "thumbnailName": "Whack-a-mole.png"
     }
 }
+
