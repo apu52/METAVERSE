@@ -400,9 +400,7 @@
       "projectTitle": "Typing Master",
       "folderName": "typing_speed",
       "thumbnailName": "typingmaster.png"
-
-  },
-  
+    },
     "81": {
         "projectTitle": "Farmers-Service-WebApp",
         "folderName": "Farmers-WebApp",
@@ -417,12 +415,14 @@
 
     "83": {
 
+
       "projectTitle": "Sudoku Solver",
       "folderName": "Sudoku",
       "thumbnailName": "solver.png"
     },
 
     "84": {
+
       "projectTitle": "MATH_SPRINT_APP",
       "folderName": "MATH_SPRINT_APP",
       "thumbnailName": "MATH_SPRINT_APP.png"
@@ -430,28 +430,27 @@
 
     "85": {
 
-
        "projectTitle": "Apple Website Clone",
         "folderName": "apple_clone",
         "thumbnailName": "apple_clone.png"
      },
 
+
     "86": {
-
-
         "projectTitle": "Universal Currency Converter",
         "folderName": "CurrencyConverter",
         "thumbnailName": "currency.png"
     },
 
 
-    "87": {
 
+    "87": {
 
         "projectTitle": "Blog Website",
         "folderName": "Blog_Website",
         "thumbnailName": "Blog_Website.png"
     },
+
 
     "88": {
 
@@ -473,7 +472,8 @@
     "projectTitle": "Whack a mole",
     "folderName": "Whack-a-mole",
     "thumbnailName": "Whack-a-mole.png"
-
-    }
 }
+  
+}
+
 
