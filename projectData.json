@@ -402,22 +402,17 @@
       "thumbnailName": "typingmaster.png"
 
     },
-
-  "81": {
-
+    "81": {
         "projectTitle": "Farmers-Service-WebApp",
         "folderName": "Farmers-WebApp",
         "thumbnailName": "farmers.png"
     },
     "82": {
-
       "projectTitle": "Gym Website",
       "folderName": "Gym_Website",
       "thumbnailName": "gym_website.png"
-  },
-  
+    },
     "83": {
-
       "projectTitle": "MATH_SPRINT_APP",
       "folderName": "MATH_SPRINT_APP",
       "thumbnailName": "MATH_SPRINT_APP.png"
@@ -437,22 +432,10 @@
         "folderName": "Blog_Website",
         "thumbnailName": "Blog_Website.png"
     },
-
     "87": {
     "projectTitle": "Whack a mole",
     "folderName": "Whack-a-mole",
     "thumbnailName": "Whack-a-mole.png"
-    },
-    "88": {
-      "projectTitle": "Whack a mole",
-      "folderName": "Whack-a-mole",
-      "thumbnailName": "Whack-a-mole.png"
-    },
-    "89": {
-        "projectTitle": "Farmers-Service-WebApp",
-        "folderName": "Farmers-WebApp",
-        "thumbnailName": "farmers.png"
-
     }
 }
 
