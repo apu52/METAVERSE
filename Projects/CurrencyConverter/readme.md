@@ -1,0 +1,1 @@
+a simple currency calculator that can convert currency of almost every country to country 
