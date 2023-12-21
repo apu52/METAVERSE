@@ -482,13 +482,15 @@
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
     },
-
-
     "97":{
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
       "thumbnailName":"bmi.jpeg"
-
+    },
+    "98":{
+      "projectTitle":"Trading Widget",
+      "folderName":"Trading_Widget",
+      "thumbnailName":"Trading_Widget.png"
     }
 }
 
