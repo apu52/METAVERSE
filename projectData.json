@@ -462,9 +462,19 @@
       "thumbnailName":"tiktok.png"
     },
     "93":{
-        "projectTitle": "BMI_Calculator",
-        "folderName": "BMI_Calculator",
-        "thumbnailName": "bmi.jpg"
+      "projectTitle":"Menja",
+      "folderName":"Menja",
+      "thumbnailName":"menja.png"
+    },
+    "94": {
+      "projectTitle":"Movie Ticket Booking App",
+      "folderName":"Movie-seat",
+      "thumbnailName":"Movie-seat.jpeg"
+    },
+    "95":{
+      "projectTitle":"BMI Calculator",
+      "folderName":"BMI_Calculator",
+      "thumbnailName":"bmi.jpeg"
     }
 }
 

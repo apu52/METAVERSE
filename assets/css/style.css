@@ -23,7 +23,7 @@ body {
   position: relative;
   width: 40px;
   height: 20px;
-  margin-left: 15%;
+  margin-left: 0 5px;
 }
 
 .invert-color {
@@ -40,8 +40,8 @@ body {
 .heading {
   margin-top: -2%;
   font: 4.5rem Permanent Marker;
-  height: 15%;
-  width: 100vw;
+  height: auto;
+  justify-content: center;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1028,6 +1028,7 @@ ul.socials {
   .heading {
     font-size: 4.5rem;
   }
+  
 }
 @media (max-width: 640px) {
   .heading {
@@ -1038,6 +1039,7 @@ ul.socials {
   .heading {
     font-size: 1.9rem;
   }
+  
 }
 
 .owner-info-container {
