@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codeforces to Codechef rating converter</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <style>
+    body {
+      background-color: #2b22c8;
+      font-family: 'Courier New', Courier, monospace;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container2 {
+      max-width: 500px;
+      margin: 5px auto;
+      padding: 5px;
+      background-color: #333333;
+      border-radius: 5px;
+      border: 3px inset #2b22c8;
+    }
+
+    h1 {
+      margin-top: 70px;
+    }
+
+    h2 {
+      color: #b6e6e4;
+      margin-top: 20px;
+    }
+
+    input {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    #userDetails {
+      color: #b7b5e6;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      // Function to fetch and display Codeforces contest information
+      function fetchCodeforcesContests() {
+        // Make an API request to Codeforces
+        $.ajax({
+          url: 'https://codeforces.com/api/contest.list',
+          method: 'GET',
+          dataType: 'json',
+          success: function(response) {
+            // Extract the details of the most recent 4 contests
+            var contests = response.result.slice(0, 4);
+
+            // Update the content of the container
+            var container = $('.container2.codeforces-contest');
+            container.html('<p style="font-size:20px; color: powderblue;"><b>Upcoming Codeforces Contests:</b></p>');
+
+            contests.forEach(function(contest) {
+              var startTime = new Date(contest.startTimeSeconds * 1000);
+              var formattedTime = startTime.toLocaleString();
+              container.append('<p>' + contest.name + ' - ' + formattedTime + '</p>');
+            });
+          },
+          error: function(error) {
+            console.log('Error fetching Codeforces contests:', error);
+          }
+        });
+      }
+
+      // Function to fetch and display details of past contests attended by the user
+      function fetchUserContests(userId) {
+        // Make an API request to get user's contest history
+        $.ajax({
+          url: 'https://codeforces.com/api/user.rating?handle=' + userId,
+          method: 'GET',
+          dataType: 'json',
+          success: function(response) {
+            var userContainer = $('#userDetails');
+            userContainer.html('<p style="font-size:20px; color:#2b22c8;"><b>User Details for ' + userId + ':</b></p>');
+            
+            var userContests = response.result.slice(0, 3);
+            userContests.forEach(function(contest) {
+              userContainer.append('<p>' + contest.contestName + ' - Rating: ' + contest.newRating + '</p>');
+            });
+          },
+          error: function(error) {
+            console.log('Error fetching user contests:', error);
+          }
+        });
+      }
+
+      // Call the function to fetch and display Codeforces contest information
+      fetchCodeforcesContests();
+
+      // Event listener for user input
+      $('#userIdInput').on('change', function() {
+        var userId = $(this).val();
+        fetchUserContests(userId);
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+  <h1>Upcoming contests</h1>
+
+  <div class="container">
+    <h2>Codeforces</h2>
+    <div class="container2 codeforces-contest"></div>
+  </div>
+
+  <div class="container">
+    <h2>User Contest History</h2>
+    <div class="container2">
+      <label for="userIdInput">Enter Codeforces User ID:</label>
+      <input type="text" id="userIdInput" placeholder="e.g., tourist">
+      <div id="userDetails"></div>
+    </div>
+  </div>
+
+</body>
+</html>
