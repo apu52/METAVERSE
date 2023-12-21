@@ -1,0 +1,209 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: 	#282828;
+    color: white;
+  }
+  
+  .container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 3rem;
+    max-width: 610px;
+  }
+  
+  .container video {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .container .controlCont {
+    position: absolute;
+    bottom: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    opacity: 0;
+    -webkit-transition: 0.3s ease opacity;
+    transition: 0.3s ease opacity;
+  }
+  
+  .container .controlCont .sliderCont {
+    width: 100%;
+  }
+  
+  .container .controlCont .sliderCont input {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .container .controlCont .sliderCont input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 4px;
+    outline: none;
+    background: -webkit-gradient(linear, left top, right top, from(#f00), color-stop(0%, #f00), color-stop(0%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
+    background: linear-gradient(to right, #f00 0%, #f00 0%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  }
+  
+  .container .controlCont .sliderCont input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    height: 4px;
+    width: 4px;
+    background-color: #f00;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    -webkit-transition-property: height, width;
+    transition-property: height, width;
+  }
+  
+  .container .controlCont .sliderCont input::-moz-range-thumb {
+    -moz-appearance: none;
+         appearance: none;
+    height: 4px;
+    width: 4px;
+    background-color: #f00;
+    background-color: #f00;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    -webkit-transition-property: height, width;
+    transition-property: height, width;
+  }
+  
+  .container .controlCont .sliderCont input::-moz-range-progress {
+    -moz-appearance: none;
+         appearance: none;
+    background-color: #f00;
+    height: 100%;
+  }
+  
+  .container .controlCont .sliderCont input:hover::-webkit-slider-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
+  
+  .container .controlCont .sliderCont input:hover::-moz-range-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
+  
+  .container .controlCont .control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+  
+  .container .controlCont .control .controlLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .container .controlCont .control .controlLeft .time {
+    margin-left: 0.5rem;
+  }
+  
+  .container .controlCont .control .controlLeft .time p {
+    color: #f4f4f4;
+  }
+  
+  .container .controlCont .control .controlRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .container .controlCont .control button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: #f4f4f4;
+    cursor: pointer;
+    margin: 0 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.4rem;
+    border-radius: 50%;
+  }
+  
+  .container .controlCont .control button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .container .controlCont:hover {
+    opacity: 1;
+  }
+  /*# sourceMappingURL=style.css.map */

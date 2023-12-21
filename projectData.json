@@ -486,10 +486,15 @@
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
     },
-    "98":{
+    "98": {
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
-      "thumbnailName":"bmi.jpg"
+      "thumbnailName":"bmi.jpeg"
+    },
+    "99": {
+      "projectTitle":"Video Player",
+      "folderName":"Video-player",
+      "thumbnailName":"Video-player.jpeg
     }
 }
 
