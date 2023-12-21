@@ -441,20 +441,16 @@
         "folderName": "Sudoku",
         "thumbnailName": "solver.png"
     },
-
     "89": {
-
       "projectTitle": "Car Race",
       "folderName": "Racecar_Game",
       "thumbnailName": "CARGAMEE.png"
-  },
-
+    },
     "90":{
-
       "projectTitle": "Candy Crush",
       "folderName": "candy_crush",
       "thumbnailName": "CandyCrush2.png"
-  },
+    },
     "91": {
         "projectTitle": "Hangman_game",
         "folderName": "Hangman_game",
@@ -464,7 +460,6 @@
       "projectTitle":"Tiktok Clone",
       "folderName":"Tiktok_Clone",
       "thumbnailName":"tiktok.png"
-
     },
     "93":{
       "projectTitle":"Menja",
