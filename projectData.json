@@ -472,20 +472,19 @@
       "thumbnailName":"Movie-seat.jpeg"
     },
     "95": {
+      "projectTitle":"Stackr",
+      "folderName":"Stack_Block",
+      "thumbnailName":"towerblock.jpeg"
+    },
+    "96": {
       "projectTitle":"pokedex",
       "folderName":"pokedex",
       "thumbnailName":"pokedex.png"
     },
-
-    "96": {
+    "97": {
       "projectTitle":"mealfinder",
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
-    },
-    "97":{
-      "projectTitle":"BMI Calculator",
-      "folderName":"BMI_Calculator",
-      "thumbnailName":"bmi.jpeg"
     },
     "98":{
       "projectTitle":"Trading Widget",
