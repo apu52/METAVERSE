@@ -474,7 +474,7 @@
     "95": {
       "projectTitle":"Stackr",
       "folderName":"Stack_Block",
-      "thumbnailName":"towerblock.jpeg"
+      "thumbnailName":"towerblock.png"
     },
     "96": {
       "projectTitle":"pokedex",
@@ -487,6 +487,11 @@
       "thumbnailName":"mealfinder.png"
     },
     "98":{
+      "projectTitle":"BMI Calculator",
+      "folderName":"BMI_Calculator",
+      "thumbnailName":"bmi.jpg"
+    },
+    "99":{
       "projectTitle":"Trading Widget",
       "folderName":"Trading_Widget",
       "thumbnailName":"Trading_Widget.png"
