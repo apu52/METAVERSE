@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+  </head>
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <h1>Video Player</h1>
+      <video id="video" src="./asset/pexels.mp4"></video>
+      <div class="controlCont">
+        <!-- Slider -->
+        <div class="sliderCont">
+          <input type="range" value="0" min="0" max="100" id="progress" />
+        </div>
+        <!-- Controls -->
+        <div class="control">
+          <div class="controlLeft">
+            <button id="play">
+              <ion-icon name="play"></ion-icon>
+            </button>
+            <button id="stop">
+              <ion-icon name="stop"></ion-icon>
+            </button>
+            <div class="time">
+              <p id="time">0:00 / 0:32</p>
+            </div>
+          </div>
+          <div class="controlRight">
+            <button>
+              <ion-icon name="settings"></ion-icon>
+            </button>
+            <button id="fullScreen">
+              <ion-icon name="expand"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
