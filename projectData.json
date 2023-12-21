@@ -476,10 +476,19 @@
       "folderName":"pokedex",
       "thumbnailName":"pokedex.png"
     },
+
     "96": {
       "projectTitle":"mealfinder",
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
+    },
+
+
+    "97":{
+      "projectTitle":"BMI Calculator",
+      "folderName":"BMI_Calculator",
+      "thumbnailName":"bmi.jpeg"
+
     }
 }
 
