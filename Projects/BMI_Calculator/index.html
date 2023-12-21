@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h1 class="text-center">BMI Calculator</h1>
+    		
+    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+    			
+    			<form>
+    				<div id="weightInput">
+    					<p>Weight in kg</p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p>Height in cm</p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>
+    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+				 <div id="results" class="text-center" style="color:#fff"> </div>
+    		</form>
+    	</div>
+    </div>
+	<div id="table">
+		<table>
+			<caption style="color:whitesmoke;text-decoration: underline;margin-bottom:4px">BMI INDEX:</caption>
+			<tr>
+				<th>Underweight</th>
+				<th>Healthy</th>
+				<th>Overweight</th>
+				<th>Obese</th>
+			</tr>
+			<tr>
+				<td>Below 18.5</td>
+				<td>18.5 - 24.9</td>
+				<td>25.0 - 29.9 </td>
+				<td>30.0 and above</td>
+
+			</tr>
+		</table>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -475,6 +475,16 @@
       "projectTitle":"Color Blast",
       "folderName":"Color_Blast",
       "thumbnailName":"COLORBLAST.png"
+    },
+  "96":{
+      "projectTitle":"pokedex",
+      "folderName":"pokedex",
+      "thumbnailName":"pokedex.png"
+    },
+    "97":{
+      "projectTitle":"BMI Calculator",
+      "folderName":"BMI_Calculator",
+      "thumbnailName":"bmi.jpeg"
     }
 }
 
