@@ -490,6 +490,11 @@
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
       "thumbnailName":"bmi.jpg"
+    },
+    "99":{
+      "projectTitle":"Capcha Generator",
+      "folderName":"Capcha_Gen",
+      "thumbnailName":"capchagen.png"
     }
 }
 
