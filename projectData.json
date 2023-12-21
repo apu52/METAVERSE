@@ -471,7 +471,12 @@
       "folderName":"Movie-seat",
       "thumbnailName":"Movie-seat.jpeg"
     },
-    "95":{
+    "95": {
+      "projectTitle":"pokedex",
+      "folderName":"pokedex",
+      "thumbnailName":"pokedex.png"
+    },
+    "96":{
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
       "thumbnailName":"bmi.jpeg"
