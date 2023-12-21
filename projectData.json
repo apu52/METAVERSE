@@ -472,25 +472,31 @@
       "thumbnailName":"Movie-seat.jpeg"
     },
     "95": {
+
       "projectTitle":"Color Blast",
       "folderName":"Color_Blast",
       "thumbnailName":"COLORBLAST.png"
     },
   "96":{
+
+      "projectTitle":"Stackr",
+      "folderName":"Stack_Block",
+      "thumbnailName":"towerblock.png"
+    },
+    "97": {
       "projectTitle":"pokedex",
       "folderName":"pokedex",
       "thumbnailName":"pokedex.png"
     },
-    "97": {
+    "98": {
       "projectTitle":"mealfinder",
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
     },
-    "98":{
+    "99":{
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
-      "thumbnailName":"bmi.jpeg"
-
+      "thumbnailName":"bmi.jpg"
     }
 }
 
