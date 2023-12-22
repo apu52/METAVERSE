@@ -471,7 +471,7 @@
       "folderName":"Movie-seat",
       "thumbnailName":"Movie-seat.jpeg"
     },
-    "95": {
+  "95": {
       "projectTitle":"Stackr",
       "folderName":"Stack_Block",
       "thumbnailName":"towerblock.png"
@@ -491,7 +491,7 @@
       "folderName":"BMI_Calculator",
       "thumbnailName":"bmi.jpg"
     },
-    "99":{
+    "99": {
       "projectTitle":"Capcha Generator",
       "folderName":"Capcha_Gen",
       "thumbnailName":"capchagen.png"
@@ -500,6 +500,11 @@
       "projectTitle":"Video Player",
       "folderName":"Video-player",
       "thumbnailName":"Video-player.jpeg
+    }
+  "101": {
+      "projectTitle":"Color Blast",
+      "folderName":"Color_Blast",
+      "thumbnailName":"COLORBLAST.png"
     }
 }
 
