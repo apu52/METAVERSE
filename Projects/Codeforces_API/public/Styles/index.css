@@ -1,0 +1,118 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(orange 60%, yellow);
+    border-bottom: 2px red solid;
+}
+.con_lis{
+    margin:10px;
+    font-size:50px;
+    font-weight: 600;
+    font-family: cursive;
+    color:white;
+}
+.upcoming{
+    padding:20px;
+    border:5px solid greenyellow;
+    margin:10px;
+    border-radius: 20px;
+    background-color: rgb(217, 246, 0);
+}
+.finished{
+    padding:20px;
+    border:5px solid greenyellow;
+    margin:10px;
+    border-radius: 20px;
+    background-color: rgb(217, 246, 0);
+}
+.upcoming:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.finished:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contest_data{
+    padding:10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin:10px;
+}
+.contest_name{
+    font-size: 25px;
+}
+.contest_col{
+    padding:20px;
+    background-color: rgb(253, 165, 0);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.contest_col_data{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+}
+.contest_col_data .col_data_head{
+    width:30%;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(240, 13, 240);
+}
+.contest_col_data .col_data_detail{
+    width:70%;
+    font-weight: 600;
+}
+@media (max-width:560px){
+    .contest_name{
+        font-size: 25px;
+        margin-bottom: 2px;
+    }
+    .contest_col{
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding:20px;
+        background-color: rgb(253, 165, 0);
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    .contest_col_data{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: center;
+    }
+    .contest_col_data .col_data_head{
+        width:100%;
+        font-size: 20px;
+        font-weight: 700;
+        color:rgb(240, 13, 240);
+        margin-bottom: 5px;
+    }
+    .contest_col_data .col_data_detail{
+        width:100%;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}
+.shoW{
+    max-height: 9999px;
+    overflow: auto;
+    height: fit-content;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.hidE{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+@media screen and (min-width:992px){
+    .contest_data{
+        margin: 20px 150px;
+    }
+}
