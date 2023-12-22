@@ -471,37 +471,40 @@
       "folderName":"Movie-seat",
       "thumbnailName":"Movie-seat.jpeg"
     },
-    "95": {
-
-      "projectTitle":"Color Blast",
-      "folderName":"Color_Blast",
-      "thumbnailName":"COLORBLAST.png"
-    },
-  "96":{
-
+  "95": {
       "projectTitle":"Stackr",
       "folderName":"Stack_Block",
       "thumbnailName":"towerblock.png"
     },
-    "97": {
+    "96": {
       "projectTitle":"pokedex",
       "folderName":"pokedex",
       "thumbnailName":"pokedex.png"
     },
-    "98": {
+    "97": {
       "projectTitle":"mealfinder",
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
     },
-    "99":{
+    "98": {
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
-      "thumbnailName":"bmi.jpeg"
+      "thumbnailName":"bmi.jpg"
+    },
+    "99": {
+      "projectTitle":"Capcha Generator",
+      "folderName":"Capcha_Gen",
+      "thumbnailName":"capchagen.png"
     },
     "100": {
       "projectTitle":"Video Player",
       "folderName":"Video-player",
       "thumbnailName":"Video-player.jpeg
+    }
+  "101": {
+      "projectTitle":"Color Blast",
+      "folderName":"Color_Blast",
+      "thumbnailName":"COLORBLAST.png"
     }
 }
 
