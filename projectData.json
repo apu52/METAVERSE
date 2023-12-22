@@ -495,6 +495,11 @@
       "projectTitle":"Codeforces API App",
       "folderName":"Codeforces",
       "thumbnailName":"codeforces.png"
+    },
+    "100"{
+      "projectTitle":"Lyric Finder",
+      "folderName":"Lyric Finder",
+      "thumbnailName":"lyricfinder.png"
     }
 }
 
