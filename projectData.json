@@ -499,7 +499,7 @@
     "100": {
       "projectTitle":"Video Player",
       "folderName":"Video-player",
-      "thumbnailName":"Video-player.jpeg
+      "thumbnailName":"Video-player.jpeg"
     }
   "101": {
       "projectTitle":"Color Blast",
@@ -510,6 +510,11 @@
       "projectTitle":"Trading Widget",
       "folderName":"Trading_Widget",
       "thumbnailName":"Trading_Widget.png"
+   }
+   "103":{
+      "projectTitle":"Creative_agency",
+      "folderName":"Creative_agency",
+      "thumbnailName":"Creative_agency.png"
    }
 }
 
