@@ -489,9 +489,14 @@
     "98": {
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
-      "thumbnailName":"bmi.jpeg"
+      "thumbnailName":"bmi.jpg"
     },
-    "99": {
+    "99":{
+      "projectTitle":"Capcha Generator",
+      "folderName":"Capcha_Gen",
+      "thumbnailName":"capchagen.png"
+    },
+    "100": {
       "projectTitle":"Video Player",
       "folderName":"Video-player",
       "thumbnailName":"Video-player.jpeg
