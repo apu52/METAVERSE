@@ -1,0 +1,1 @@
+Simple website using codeforces api that fetches information on next 4 contests on codeforces and fetches detail on past contests that a user participated in, together with user rating
