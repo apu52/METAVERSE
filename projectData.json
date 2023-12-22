@@ -471,7 +471,7 @@
       "folderName":"Movie-seat",
       "thumbnailName":"Movie-seat.jpeg"
     },
-    "95": {
+  "95": {
       "projectTitle":"Stackr",
       "folderName":"Stack_Block",
       "thumbnailName":"towerblock.png"
@@ -486,12 +486,37 @@
       "folderName":"mealfinder",
       "thumbnailName":"mealfinder.png"
     },
-    "98":{
+    "98": {
       "projectTitle":"BMI Calculator",
       "folderName":"BMI_Calculator",
       "thumbnailName":"bmi.jpg"
     },
-    "99"{
+    "99": {
+      "projectTitle":"Capcha Generator",
+      "folderName":"Capcha_Gen",
+      "thumbnailName":"capchagen.png"
+    },
+    "100": {
+      "projectTitle":"Video Player",
+      "folderName":"Video-player",
+      "thumbnailName":"Video-player.jpeg"
+    },
+    "101": {
+      "projectTitle":"Color Blast",
+      "folderName":"Color_Blast",
+      "thumbnailName":"COLORBLAST.png"
+    },
+    "102":{
+      "projectTitle":"Trading Widget",
+      "folderName":"Trading_Widget",
+      "thumbnailName":"Trading_Widget.png"
+   },
+   "103":{
+      "projectTitle":"Creative_agency",
+      "folderName":"Creative_agency",
+      "thumbnailName":"Creative_agency.png"
+    },
+    "104"{
       "projectTitle":"Codeforces API App",
       "folderName":"Codeforces",
       "thumbnailName":"codeforces.png"
