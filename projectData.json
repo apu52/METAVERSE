@@ -522,10 +522,15 @@
       "thumbnailName":"codeforces.png"
     },
     "105":{
+      "projectTitle":"Email Subscription",
+      "folderName":"Email_Subscription",
+      "thumbnailName":"Email_Subscription.png"
+   },
+    "106":{
       "projectTitle":"GitHub_API",
       "folderName":"GitHub_API",
       "thumbnailName":"GitHub_API.png"
-   }
+    }
 }
 
 
