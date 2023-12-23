@@ -515,13 +515,38 @@
       "projectTitle":"Creative_agency",
       "folderName":"Creative_agency",
       "thumbnailName":"Creative_agency.png"
+   },
+   "104":{
+    "projectTitle":"Mind Scramble",
+    "folderName":"Mind_Game",
+    "thumbnailName":"mindgame.png"
     },
-    "104": {
+    "105": {
       "projectTitle":"Codeforces API App",
       "folderName":"Codeforces",
       "thumbnailName":"codeforces.png"
     },
-    "105": {
+    "106":{
+      "projectTitle":"Email Subscription",
+      "folderName":"Email_Subscription",
+      "thumbnailName":"Email_Subscription.png"
+   },
+    "107": {
+      "projectTitle":"GitHub_API",
+      "folderName":"GitHub_API",
+      "thumbnailName":"GitHub_API.png"
+    },
+    "108": {
+     "projectTitle":"Event Organizer",
+     "folderName":"Event_Organizer",
+     "thumbnailName":"Event_organizer.png"
+    },
+     "109": {
+      "projectTitle":"Notes App",
+      "folderName":"Notes_App",
+      "thumbnailName":"Notes_App.png"
+   },
+    "110": {
       "projectTitle":"Codeforces_API",
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
