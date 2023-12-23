@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfy House / Shopping Cart</title>
+
+    <!-- style / css -->
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/png"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start of navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+
+        <!-- app logo -->
+        <img src="./assets/img/logo.svg" alt="store logo" />
+
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- start of hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">furniture collection</h1>
+        <button class="banner-btn">shop now</button>
+      </div>
+    </header>
+    <!-- end of hero -->
+
+    <!-- start of products -->
+    <section class="products">
+      <div class="section-title">
+        <h2>our products</h2>
+      </div>
+
+      <div class="products-center">
+        <!-- single product start -->
+        <!-- <article class="product">
+          <div class="img-container">
+            <img
+              src="./assets/img/product-1.jpeg"
+              alt="product"
+              class="product-img"
+            />
+
+            <button class="bag-btn" data-id="1">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bag</h3>
+          <h4>Price: $16</h4>
+        </article> -->
+        <!-- single product end -->
+      </div>
+    </section>
+    <!-- end of products -->
+
+    <!-- start of cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+        </span>
+        <h2>your cart</h2>
+
+        <div class="cart-content">
+          <!-- cart item start -->
+          <!-- <div class="cart-item">
+            <img src="./assets/img/product-1.jpeg" alt="product" />
+
+            <div>
+              <h4>queen bed</h4>
+              <h5>$9.00</h5>
+              <span class="remove-item">remove</span>
+            </div>
+
+            <div>
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              <p class="item-amount">1</p>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div> -->
+          <!-- cart item end -->
+        </div>
+        <!-- cart footer -->
+        <div class="cart-footer">
+          <h3>your total : $ <span class="cart-total">0</span></h3>
+
+          <!-- clear all cart item button -->
+          <button class="clear-cart banner-btn">clear cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of cart -->
+
+    <!-- javascript -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
