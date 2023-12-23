@@ -556,10 +556,15 @@
       "folderName":"Furniture-website",
       "thumbnailName":"Furniture-website.png"
      },
-    "112"{
+    "112":{
       "projectTitle":"Lyric Finder",
       "folderName":"Lyric Finder",
       "thumbnailName":"lyricfinder.png"
+    },
+    "113": {
+      "projectTitle":"Hulu_clone",
+      "folderName":"Hulu_clone",
+      "thumbnailName":"Hulu_clone.png"
     }
 }
 
