@@ -1,0 +1,35 @@
+
+<% if (locals.contest_id){%>
+    <%-include("partials/navbar.ejs")%>
+    <% for (let i=(click*20);i<(Math.min(20*(click+1), locals.contest_id.length));i++){%>
+        <div class="contest_data">
+            <p class="contest_name"><%=(i+1)%>.&#41;</p>
+            <div class="contest_col">
+                <div class="contest_col_data">
+                    <p class="col_data_head">Problem Name</p>
+                    <p class="col_data_detail"><%=locals.ques_name[i]%></p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Rating</p>
+                    <p class="col_data_detail"><%=locals.ques_rating[i]%></p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Tags</p>
+                    <p class="col_data_detail"><%=locals.ques_tags[i]%></p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Question Link</p>
+                    <a href="https://codeforces.com/contest/<%=locals.contest_id[0]%>/problem/<%=locals.que_index[0]%>" target="_blank" class="col_data_detail"><p>https://codeforces.com/contest/<%=locals.contest_id[0]%>/problem/<%=locals.que_index[0]%></p></a>
+                </div>
+            </div>
+        </div>
+    <%}%>
+    <%if (contest_id.length!=1){%>
+        <form method="post" action="/problems" class="problem_result_button">
+            <button name="prev" value="prev" type="submit" class="prev"><strong style="font-size: 1.5rem;">&#8592;</strong></button>
+            <button  value="next" type="submit" name="next" class="next"><strong style="font-size: 1.5rem;">&#8594;</strong></button>
+        </form>
+    <%}%>
+<%}%>
+
+<%-include("partials/footer.ejs")%>
