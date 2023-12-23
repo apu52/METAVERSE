@@ -541,12 +541,27 @@
      "folderName":"Event_Organizer",
      "thumbnailName":"Event_organizer.png"
     },
-     "109": {
+    "109": {
       "projectTitle":"Notes App",
       "folderName":"Notes_App",
       "thumbnailName":"Notes_App.png"
-   },
-    "110": {
+     },
+     "110": {
+      "projectTitle":"catch_insect",
+      "folderName":"catch_insect",
+      "thumbnailName":"catch_insect.png"
+     },
+    "111": {
+       "projectTitle":"Furniture Website",
+      "folderName":"Furniture-website",
+      "thumbnailName":"Furniture-website.png"
+     },
+    "112": {
+      "projectTitle":"Lyric Finder",
+      "folderName":"Lyric Finder",
+      "thumbnailName":"lyricfinder.png"
+    },
+    "113": {
       "projectTitle":"Codeforces_API",
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
