@@ -1,0 +1,50 @@
+<%-include("partials/navbar.ejs")%>
+<form method="post" action="/userInfo" class="input_user">
+    <input name="username" placeholder="User Name">
+    <button type="submit" class="search_user" onclick="func()">Search</button>
+</form>
+<%if (locals.data){%>
+    <div class="user_card_outer">
+        <div class="user_card">
+            <div class="user_photo">
+                <div class="image">
+                    <img src="<%=data.titlePhoto%>" alt="User Photo">
+                </div>
+                <div class="user_name">
+                    <p><%=data.handle%></p>
+                </div>
+            </div>
+            <div class="user_detail">
+                <div class="user_detail_row1">
+                    <p>Registration Date:</p>
+                    <p>Organization:</p>
+                    <p>Current Rating:</p>
+                    <p>Rank:</p>
+                    <p>Max Rating:</p>
+                    <p>Max Rank:</p>
+                    <p>Friend Count:</p>
+                </div>
+                <div class="user_detail_row2">
+                    <p><%=data.registrationTimeSeconds%></p>
+                    <p><%=data.organization%></p>
+                    <p id="rating"><%=data.rating%></p>
+                    <p id="rank"><%=data.rank%></p>
+                    <p id="maxRating"><%=data.maxRating%></p>
+                    <p id="maxRank"><%=data.maxRank%></p>
+                    <p><%=data.friendOfCount%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<%}%>
+<script>
+    var rating=document.getElementById("rating");
+    function func(){
+        console.log("lasdkfjl");
+    }
+    if (rating.innerHTML=="1197"){
+        console.log("lsadkjf")
+        rating.style.color = "red";
+    }
+</script>
+<%-include("partials/footer.ejs")%>
