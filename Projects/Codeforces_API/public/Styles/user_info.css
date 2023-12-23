@@ -1,0 +1,88 @@
+.input_user{
+    margin:20px auto 15px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.input_user input{
+    width: 50%;
+    border:none;
+    border-bottom: 1px solid black;
+    margin:auto 10px;
+    outline:none;
+} 
+input:focus{
+    border-bottom: 1px solid rgb(0, 225, 255);
+}
+.search_user{
+    background-image: linear-gradient(45deg, orange, yellow);
+    border:1px solid black;
+    border-radius: 10px;
+    z-index: 20;
+    box-shadow: 2px 2px 2px rgb(99, 95, 95);
+    font-size: 1.5rem;
+    transform: scale(1);
+    transition:all .3s ease;
+    margin:auto 10px;
+}  
+
+.search_user:hover{
+    transform: scale(1.02);
+    z-index: 50;
+}    
+.user_card_outer{
+    margin:auto;
+    width:60%;
+    max-width: 500px;
+    height:fit-content;
+    padding:10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background-image: linear-gradient(45deg,yellow,red);
+}
+.user_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: linear-gradient(225deg,grey,white);
+}
+.user_photo .image img{
+    margin-top: 5px;
+    height:150px;
+    width: 150px;
+    clip-path: circle(75px);
+}
+.user_photo .user_name p{
+    font-size:1.5rem;
+    margin:2px;
+}
+.user_detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: end start;
+    margin-top:10px;
+}
+.user_detail_row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin:5px;
+    color:black;
+    font-weight: 500;
+}
+.user_detail_row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:5px;
+    font-weight: 400;
+}
