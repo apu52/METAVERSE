@@ -551,11 +551,23 @@
       "folderName":"catch_insect",
       "thumbnailName":"catch_insect.png"
      },
+
      "111": {
       "projectTitle":"Bootstrap Clone",
       "folderName":"Bootstrap_clone",
       "thumbnailName":"BOOTSTRAP.png"
-     }
+     },
+
+    "112": {
+       "projectTitle":"Furniture Website",
+      "folderName":"Furniture-website",
+      "thumbnailName":"Furniture-website.png"
+     },
+    "113"{
+      "projectTitle":"Lyric Finder",
+      "folderName":"Lyric Finder",
+      "thumbnailName":"lyricfinder.png"
+    }
 }
 
 
