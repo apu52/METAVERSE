@@ -1,0 +1,98 @@
+<%-include ("partials/navbar.ejs")%>
+    <div class="heading">
+        <p class="con_lis">Contests List</p>
+    </div>
+    <div class="upcoming" onclick="toggle()">
+        <h1>Upcoming Contests:</h1>
+    </div>
+    <% for (let i=(locals.u_cont).length-1;i>=0;i--){%>
+        <div class="hidE" id="useit<%=i%>">
+            <div class="contest_data">
+                <p class="contest_name"><%=((locals.u_cont).length-i)%>.&#41;</p>
+                <div class="contest_col">
+                    <div class="contest_col_data">
+                        <p class="col_data_head">Contest Name</p>
+                        <p class="col_data_detail"><%=u_cont[i].name%></p>
+                    </div>
+                    <div class="contest_col_data">
+                        <p class="col_data_head">Date</p>
+                        <p class="col_data_detail"><%=((new Date(u_cont[i].startTimeSeconds * 1000)))%></p>
+                    </div>
+                    <div class="contest_col_data">
+                        <p class="col_data_head">Before Start</p>
+                        <p class="col_data_detail"><%=(Math.floor((-1)*(u_cont[i].relativeTimeSeconds)/86400)) + " Days " + ((Math.round(((u_cont[i].relativeTimeSeconds))%86400)/3600,2)) + " Hours"%></p>
+                    </div>
+                    <div class="contest_col_data">
+                        <p class="col_data_head">Duration</p>
+                        <p class="col_data_detail"><%=u_cont[i].durationSeconds/3600%> Hours</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <%}%>
+    <div class="finished" onclick="toggle2()">
+        <h1>Finished Contests:</h1>
+    </div>
+    <% for (let i=0;i<(locals.f_cont).length;i++){%>
+        <div class="hidE" id="useit<%=i + u_cont.length%>">
+        <div class="contest_data">
+            <p class="contest_name"><%=(i+1)%>.&#41;</p>
+            <div class="contest_col">
+                <div class="contest_col_data">
+                    <p class="col_data_head">Contest Name</p>
+                    <p class="col_data_detail"><%=f_cont[i].name%></p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Date</p>
+                    <p class="col_data_detail"><%=((new Date(f_cont[i].startTimeSeconds * 1000)))%></p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Ended Before</p>
+                    <p class="col_data_detail"><%=(Math.floor((f_cont[i].relativeTimeSeconds)/86400)) + " Days " + ((Math.round(((f_cont[i].relativeTimeSeconds))%86400)/3600,2)) + " Hours"%></p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Duration</p>
+                    <p class="col_data_detail"><%=f_cont[i].durationSeconds/3600%> Hours</p>
+                </div>
+                <div class="contest_col_data">
+                    <p class="col_data_head">Contest Link</p>
+                    <a class="col_data_detail" href="https://codeforces.com/contest/<%=f_cont[i].id%>" target="_blank"><p>https://codeforces.com/contest/<%=f_cont[i].id%></p></a>
+                </div>
+            </div>
+        </div>
+    <%}%>
+    <script>
+        
+        function toggle(){
+            var len='<%= u_cont.length%>'
+            for (let i=0;i<len;i++){
+                var t="useit" + i.toString();
+                var x=document.getElementById(t);
+                if (x.classList.contains("shoW")){
+                    x.classList.remove('shoW');
+                    x.classList.add('hidE');
+                }
+                else{
+                    x.classList.remove('hidE');
+                    x.classList.add('shoW');
+                }
+            }
+            
+        }
+        function toggle2(){
+            var len='<%= f_cont.length%>'
+            for (let i=0;i<len;i++){
+                var t="useit" + (i + parseInt('<%= u_cont.length%>')).toString();
+                var x=document.getElementById(t);
+                if (x.classList.contains("shoW")){
+                    x.classList.remove('shoW');
+                    x.classList.add('hidE');
+                }
+                else{
+                    x.classList.remove('hidE');
+                    x.classList.add('shoW');
+                }
+            }
+        }
+    </script>
+<%-include ("partials/footer.ejs")%>

@@ -1,0 +1,114 @@
+.problem_tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(orange,yellow);
+    height: fit-content;
+}
+.problem_tab p{
+    font-size: 50px;
+    font-family: cursive;
+    color:white;
+}
+.problem_selection{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+.prob_options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+    height:fit-content;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:70px auto 0px auto;
+    padding:30px 0px;
+    background-image: linear-gradient(45deg,orange,yellow);
+}
+@media (min-width:800px){
+    .prob_options{
+        width:40%;
+        height:fit-content;
+    }
+}
+@media (max-width:630px){
+    .prob_options{
+        margin-top: 30px;
+        width:80%;
+    }
+}
+.options_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.options_box label{
+    margin:auto 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.options_box select{
+    margin:2px 2px 0px 2px;
+    font-weight: 500;
+    outline:none;
+}
+.options_box select:hover{
+    transform: scale(1.1);
+}
+.prob_options input{
+    outline:none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin:20px;
+}
+.prob_options button{
+    padding: 5px 5px;
+    margin:20px;
+    border:none;
+    cursor: pointer;
+    background-color: rgb(137, 134, 134);
+    color:white;
+    font-size: 1.5rem;
+    transform: scale(1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .3s ease-in-out;
+}
+.prob_options button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform:scale(1.1)
+}
+.problem_result_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:20px;
+}
+.problem_result_button .next{
+    width:50px;
+    height:50px;
+    margin:5px;
+    border:none;
+    background-color: orange;
+    transform: scale(1);
+    border-radius: 0px 5px 5px 0px;
+}
+.problem_result_button .prev{
+    width:50px;
+    height:50px;
+    margin:5px;
+    border:none;
+    background-color: orange;
+    transform: scale(1);
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.problem_result_button button:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}

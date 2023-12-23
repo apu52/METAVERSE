@@ -547,26 +547,34 @@
       "thumbnailName":"Notes_App.png"
      },
      "110": {
+      "projectTitle":"Bakery",
+      "folderName":"Bake_website",
+      "thumbnailName":"bakeit.png"
+      },
+     "111": {
       "projectTitle":"catch_insect",
       "folderName":"catch_insect",
       "thumbnailName":"catch_insect.png"
      },
-
-     "111": {
+     "112": {
       "projectTitle":"Bootstrap Clone",
       "folderName":"Bootstrap_clone",
       "thumbnailName":"BOOTSTRAP.png"
      },
-
-    "112": {
+    "113": {
        "projectTitle":"Furniture Website",
       "folderName":"Furniture-website",
       "thumbnailName":"Furniture-website.png"
      },
-    "113"{
+    "114": {
       "projectTitle":"Lyric Finder",
-      "folderName":"Lyric Finder",
+      "folderName":"Lyric_Finder",
       "thumbnailName":"lyricfinder.png"
+    },
+    "115": {
+      "projectTitle":"Codeforces_API",
+      "folderName":"Codeforces_API",
+      "thumbnailName":"Codeforce_API.png"
     }
 }
 
