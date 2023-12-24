@@ -630,6 +630,17 @@
       "projectTitle":"Github Profile Viewer",
       "folderName":"Github_Profile_Viewer",
       "thumbnailName":"GithubProfile.png"
-     }
+     },
+     "127": {
+       "projectTitle":"",
+       "folderName":"Github_Profile_Viewer",
+       "thumbnailName":"GithubProfile.png"
+      }
+      ,
+     "128": {
+       "projectTitle":"Bubble_Burst_Game",
+       "folderName":"Bubble_Burst_Game",
+       "thumbnailName":"Bubble_Burst_Game.png"
+      }
 }
 
