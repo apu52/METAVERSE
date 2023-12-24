@@ -542,45 +542,75 @@
        "thumbnailName":"Event_organizer.png"
     },
     "109": {
+      "projectTitle":"Notes App",
+      "folderName":"Notes_App",
+      "thumbnailName":"Notes_App.png"
+   },
+   "110": {
+      "projectTitle":"Bakery",
+      "folderName":"Bake_website",
+      "thumbnailName":"bakeit.png"
+      },
+     "111": {
+      "projectTitle":"catch_insect",
+      "folderName":"catch_insect",
+      "thumbnailName":"catch_insect.png"
+     },
+     "112": {
+      "projectTitle":"Bootstrap Clone",
+      "folderName":"Bootstrap_clone",
+      "thumbnailName":"BOOTSTRAP.png"
+     },
+    "113": {
+       "projectTitle":"Furniture Website",
+      "folderName":"Furniture-website",
+      "thumbnailName":"Furniture-website.png"
+    },
+     "114": {
         "projectTitle":"Notes App",
         "folderName":"Notes_App",
         "thumbnailName":"Notes_App.png"
      },
-     "110": {
+     "115r": {
         "projectTitle":"Bakery",
         "folderName":"Bake_website",
         "thumbnailName":"bakeit.png"
       },
-     "111": {
+     "116": {
         "projectTitle":"catch_insect",
         "folderName":"catch_insect",
         "thumbnailName":"catch_insect.png"
      },
-     "112": {
+     "117": {
         "projectTitle":"Bootstrap Clone",
         "folderName":"Bootstrap_clone",
         "thumbnailName":"BOOTSTRAP.png"
      },
-    "113": {
+    "118": {
         "projectTitle":"Furniture Website",
         "folderName":"Furniture-website",
         "thumbnailName":"Furniture-website.png"
      },
-    "114": {
+    "119": {
       "projectTitle":"Lyric Finder",
       "folderName":"Lyric_Finder",
       "thumbnailName":"lyricfinder.png"
     },
-    "115": {
+    "120": {
       "projectTitle":"Codeforces_API",
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
     },
-    "116": {
+    "121": {
      "projectTitle":"Hulu_clone",
       "folderName":"Hulu_clone",
       "thumbnailName":"Hulu_clone.png"
-    }
+    },
+  "122": {
+    "projectTitle":"Kitter",
+    "folderName":"Pet_Website",
+    "thumbnailName":"kitter.png"
+     }
 }
 
 
