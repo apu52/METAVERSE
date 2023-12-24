@@ -590,7 +590,12 @@
       "projectTitle":"Kitter",
       "folderName":"Pet_Website",
       "thumbnailName":"kitter.png"
-     }
+     },
+     "119": {
+       "projectTitle":"othello_game",
+       "folderName":"othello_game",
+       "thumbnailName":"othello_game.png"
+      }
 }
 
 
