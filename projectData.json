@@ -471,7 +471,7 @@
       "folderName":"Movie-seat",
       "thumbnailName":"Movie-seat.jpeg"
     },
-  "95": {
+    "95": {
       "projectTitle":"Stackr",
       "folderName":"Stack_Block",
       "thumbnailName":"towerblock.png"
@@ -517,9 +517,9 @@
       "thumbnailName":"Creative_agency.png"
    },
    "104":{
-    "projectTitle":"Mind Scramble",
-    "folderName":"Mind_Game",
-    "thumbnailName":"mindgame.png"
+      "projectTitle":"Mind Scramble",
+      "folderName":"Mind_Game",
+      "thumbnailName":"mindgame.png"
     },
     "105": {
       "projectTitle":"Codeforces API App",
@@ -537,9 +537,9 @@
       "thumbnailName":"GitHub_API.png"
     },
     "108": {
-     "projectTitle":"Event Organizer",
-     "folderName":"Event_Organizer",
-     "thumbnailName":"Event_organizer.png"
+       "projectTitle":"Event Organizer",
+       "folderName":"Event_Organizer",
+       "thumbnailName":"Event_organizer.png"
     },
     "109": {
       "projectTitle":"Notes App",
@@ -547,45 +547,70 @@
       "thumbnailName":"Notes_App.png"
    },
    "110": {
-    "projectTitle":"Kitter",
-    "folderName":"Pet_Website",
-    "thumbnailName":"kitter.png"
-     },
-     "111": {
       "projectTitle":"Bakery",
       "folderName":"Bake_website",
       "thumbnailName":"bakeit.png"
       },
-     "112": {
+     "111": {
       "projectTitle":"catch_insect",
       "folderName":"catch_insect",
       "thumbnailName":"catch_insect.png"
      },
-     "113": {
+     "112": {
       "projectTitle":"Bootstrap Clone",
       "folderName":"Bootstrap_clone",
       "thumbnailName":"BOOTSTRAP.png"
      },
-    "114": {
+    "113": {
        "projectTitle":"Furniture Website",
       "folderName":"Furniture-website",
       "thumbnailName":"Furniture-website.png"
+    },
+     "114": {
+        "projectTitle":"Notes App",
+        "folderName":"Notes_App",
+        "thumbnailName":"Notes_App.png"
      },
-    "115": {
+     "115r": {
+        "projectTitle":"Bakery",
+        "folderName":"Bake_website",
+        "thumbnailName":"bakeit.png"
+      },
+     "116": {
+        "projectTitle":"catch_insect",
+        "folderName":"catch_insect",
+        "thumbnailName":"catch_insect.png"
+     },
+     "117": {
+        "projectTitle":"Bootstrap Clone",
+        "folderName":"Bootstrap_clone",
+        "thumbnailName":"BOOTSTRAP.png"
+     },
+    "118": {
+        "projectTitle":"Furniture Website",
+        "folderName":"Furniture-website",
+        "thumbnailName":"Furniture-website.png"
+     },
+    "119": {
       "projectTitle":"Lyric Finder",
       "folderName":"Lyric_Finder",
       "thumbnailName":"lyricfinder.png"
     },
-    "116": {
+    "120": {
       "projectTitle":"Codeforces_API",
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
     },
-    "117": {
+    "121": {
      "projectTitle":"Hulu_clone",
       "folderName":"Hulu_clone",
       "thumbnailName":"Hulu_clone.png"
-    }
+    },
+  "122": {
+    "projectTitle":"Kitter",
+    "folderName":"Pet_Website",
+    "thumbnailName":"kitter.png"
+     }
 }
 
 
