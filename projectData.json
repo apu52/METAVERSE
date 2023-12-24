@@ -625,5 +625,11 @@
        "projectTitle": "Daily Diary Entry Website",
        "folderName": "Daily_Diary_Entry_Website",
        "thumbnailName": "Daily_Diary_Entry_Website.png"
-    }
+    },
+    "126": {
+      "projectTitle":"Github Profile Viewer",
+      "folderName":"Github_Profile_Viewer",
+      "thumbnailName":"GithubProfile.png"
+     }
 }
+

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "METAVERSE",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5503
+	}
+}
