@@ -620,7 +620,10 @@
         "projectTitle":"Dentelo",
         "folderName":"Dentelo",
         "thumbnailName":"DENTISTWEB.png"
-       }
+     },
+     "125": {
+       "projectTitle": "Daily Diary Entry Website",
+       "folderName": "Daily_Diary_Entry_Website",
+       "thumbnailName": "Daily_Diary_Entry_Website.png"
+    }
 }
-
-
