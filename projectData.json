@@ -630,6 +630,11 @@
       "projectTitle":"Github Profile Viewer",
       "folderName":"Github_Profile_Viewer",
       "thumbnailName":"GithubProfile.png"
-     }
+     },
+     "127": {
+       "projectTitle":"Space Invaders",
+       "folderName":"Space-invaders",
+       "thumbnailName":"Space-invaders.jpeg"
+      }
 }
 
