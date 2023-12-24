@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Logging Your Progress</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Log Your Day</h1>
+
+    <div class="container">
+      <div class="previousLogs">
+        <h2>Previous Entries</h2>
+        <table>
+          <tbody id="logTableBody">
+            <!-- Previous logs will be inserted here dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <form action="/" method="POST">
+        <label for="logMessage"> New Log:</label>
+        <textarea
+          id="logMessage"
+          name="logMessage"
+          spellcheck="false"
+        ></textarea>
+        <button type="submit">Log</button>
+      </form>
+    </div>
+    <script>
+      // Fetch the previous logs and insert them into the table
+      fetch("/logs")
+        .then((response) => response.json())
+        .then((logs) => {
+          const logTableBody = document.getElementById("logTableBody");
+          logs["logs"].forEach((log) => {
+            const row = document.createElement("tr");
+            const timestampCell = document.createElement("td");
+            timestampCell.textContent = log.timestamp;
+            const messageCell = document.createElement("td");
+            //replacing \n and \r with <br>
+            log.text = log.text.replace(/(?:\r\n|\r|\n)/g, "<br>");
+            messageCell.innerHTML = log.text;
+            row.appendChild(timestampCell);
+            row.appendChild(messageCell);
+            logTableBody.appendChild(row);
+            window.scrollTo(0, document.body.scrollHeight);
+          });
+        });
+    </script>
+  </body>
+</html>
