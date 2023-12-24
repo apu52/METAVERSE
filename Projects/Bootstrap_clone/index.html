@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap - Developed with &hearts; by SK</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+    "
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="icon" href="assets/">
+    <meta name="theme-color" content="#712cf9">
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="Bootstrap">
+<meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+<meta name="twitter:image" content="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png">
+
+<meta property="og:url" content="https://getbootstrap.com/">
+<meta property="og:title" content="Bootstrap">
+<meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="1000">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="32"
+            class="d-block my-1"
+            viewBox="0 0 118 94"
+            role="img"
+          >
+            <title>Bootstrap</title>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+              fill="white"
+            ></path>
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <span class="mainBtn">
+        <button type="button" class="btn">New in v5.3</button>
+      </span>
+      <span>Color mode support, expanded color palette, and more!</span>
+      <br />
+      <!-- -------------------------------------------------------- -->
+
+      <img src="assets/asset 0.png" alt="" height="165" />
+      <h1 class="mb-3 fw-semibold lh-1">
+        Build fast, responsive sites <br />
+        with Bootstrap
+      </h1>
+      <p class="lead mb-4">
+        Powerful, extensible, and feature-packed frontend toolkit. Build and
+        <br />
+        customize with Sass, utilize prebuilt grid system and components, and
+        <br />
+        bring projects to life with powerful JavaScript plugins.
+      </p>
+    </div>
+    <div class="buttn">
+      <button type="button" class="btn btn-outline-secondary">
+        npm i bootstrap@5.3.0
+        <span class="material-symbols-outlined copy_btn"> content_paste </span>
+      </button>
+      <span class="buttn2">
+        <button type="button" class="btn">
+          <span class="material-symbols-outlined"> auto_stories </span>Read the
+          Docs
+        </button>
+      </span>
+    </div>
+
+    <div class="textInLine">
+      <p class="text-body-secondary mb-0 paraText">
+        <span>Currently <strong>v5.3.0</strong></span>
+        <span class="px-1">·</span>
+        <a href="#" class="link-secondary">Download</a>
+        <span class="px-1">·</span>
+        <a
+          href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+          class="link-secondary text-nowrap"
+          >v4.6.x docs</a
+        >
+        <span class="px-1">·</span>
+        <a href="#" class="link-secondary text-nowrap">All releases</a>
+      </p>
+    </div>
+
+    <div class="Adobe-Teams">
+      <a href=""><img src="assets/AdobeTeams.jpg" alt="" /></a>
+      <p>
+        Adobe Creative Cloud for Teams. Put creativity to work. <br />
+        ads via Carbon
+      </p>
+    </div>
+
+    <div class="coding">
+      <span class="material-symbols-outlined"> code </span>
+    </div>
+    <div class="anotherSection">
+      <h2>Get started any way you want</h2>
+      <p>
+        Jump right into building with Bootstrap—use the CDN, install it via
+        package <br />
+        manager, or download the source code.
+      </p>
+      <a href="#">Read installation Docs</a>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="box-1">
+            <span class="material-symbols-outlined lang_paste">
+              deployed_code
+            </span>
+            <br />
+            <h3>Install via package manager</h3>
+            <p>
+              Install Bootstrap&apos;s source Sass and JavaScript files via npm,
+              RubyGems, Composer, or Meteor. Package managed installs don&apos;t
+              include documentation or our full build scripts. You can also
+              <a href="#">use any demo from our Examples repo</a> to quickly
+              jumpstart Bootstrap projects.
+            </p>
+            <div class="buttn3">
+              <button type="button" class="btn btn-outline-secondary">
+                npm i bootstrap@5.3.0
+                <span class="material-symbols-outlined copy_btn">
+                  content_paste
+                </span>
+              </button>
+              <br />
+              <button type="button" class="btn btn-outline-secondary">
+                npm i bootstrap@5.3.0
+                <span class="material-symbols-outlined copy_btn">
+                  content_paste
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-2">
+              <span class="material-symbols-outlined lang_paste">
+                language
+              </span>
+              <br />
+              <h3>Include via CDN</h3>
+              <p>
+                When you only need to include Bootstrap&apos;s compiled CSS or
+                JS, you can use <a href="#">jsDelivr</a>. See it in action with
+                our simple <a href="#">quick start</a>, or
+                <a href="#">browse the examples</a> to jumpstart your next
+                project. You can also choose to include Popper and our JS
+                <a href="#">separately</a>.
+              </p>
+              <div class="buttn3">
+                <button type="button" class="btn btn-outline-secondary">
+                  npm i bootstrap@5.3.0
+                  <span class="material-symbols-outlined copy_btn">
+                    content_paste
+                  </span>
+                </button>
+                <br />
+                <button type="button" class="btn btn-outline-secondary">
+                  npm i bootstrap@5.3.0
+                  <span class="material-symbols-outlined copy_btn">
+                    content_paste
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3">
+      <h3>Read our getting started guides</h3>
+      <p>
+        Get a jump on including Bootstrap's source files in a new project with
+        our official guides.
+      </p>
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4 section3-div"
+      >
+        <a
+          class="d-flex flex-column align-items-center text-decoration-none animate-img annchr"
+          href="#"
+        >
+          <img
+            class="d-block mb-2"
+            src="assets/webpack.svg"
+            alt=""
+            width="72"
+            height="72"
+            loading="lazy"
+          />
+          <span class="text-body-secondary">Webpack</span>
+        </a>
+        <a
+          class="d-flex flex-column align-items-center text-decoration-none animate-img annchr"
+          href="#"
+        >
+          <img
+            class="d-block mb-2"
+            src="assets/parcel.png"
+            alt=""
+            width="72"
+            height="72"
+            loading="lazy"
+          />
+          <span class="text-body-secondary">Parcel</span>
+        </a>
+        <a
+          class="d-flex flex-column align-items-center text-decoration-none animate-img annchr"
+          href="#"
+        >
+          <img
+            class="d-block mb-2"
+            src="assets/vite.svg"
+            alt=""
+            width="72"
+            height="72"
+            loading="lazy"
+          />
+          <span class="text-body-secondary">Vite</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <div>
+        <span class="material-symbols-outlined"> precision_manufacturing </span>
+        <h2>
+          Personalize it with <br />
+          Bootstrap Icons
+        </h2>
+        <p>
+          <a href="#">Bootstrap Icons</a> is an open source SVG icon library
+          featuring over 1,800 glyphs, with more added every release. They're
+          designed to work in any project, whether you use Bootstrap itself or
+          not. Use them as SVGs or icon fonts—both options give you vector
+          scaling and easy customization via CSS. <br />
+          <br />
+          <a href="#">Learn more about customizing &rArr;</a>
+        </p>
+      </div>
+      <div><img src="assets/asset 5.png" alt="" /></div>
+    </div>
+    <div class="section-5">
+      <div>
+        <span class="material-symbols-outlined"> water_drop </span>
+        <h2>
+          Make it yours with official <br />
+          Bootstrap Themes
+        </h2>
+        <p>
+          Take Bootstrap to the next level with premium themes from the
+          <a href="#">official Bootstrap Themes marketplace.</a> Themes are
+          built on Bootstrap as their own extended frameworks, rich with new
+          components and plugins, documentation, and powerful build tools.
+          <br />
+          <br />
+          <a href="#">Learn more about customizing &rArr; </a>
+        </p>
+      </div>
+      <div><img src="assets/asset 6.png" alt="" /></div>
+    </div>
+
+    <!-- ------------------Footer--------------------- -->
+
+
+    <footer class="text-center bg_Color">
+
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+
+          <div class="row mt-3">
+   
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+     
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i><svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-inline me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="white"></path></svg>Bootstrap
+              </h6>
+              <p>
+                Designed and built with all the love in the world by the Bootstrap team with the help of our <a href="#">contributors.</a>
+                <br>Code licensed MIT, docs CC BY 3.0. <br>
+                Currently v5.3.0.
+
+              </p>
+            </div>
+ 
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+              <h6 class="text-uppercase fw-bold mb-4">Links</h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Docs</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Examples</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Icons</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Themes</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Blog</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Swag Store</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         
+              <h6 class="text-uppercase fw-bold mb-4">Guides</h6>
+              <p>
+                <a href="#!" class="text-reset">Getting Started</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Starter Template</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">WebPack</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Parcel</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vite</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         
+                <h6 class="text-uppercase fw-bold mb-4">Projects</h6>
+                <p>
+                  <a href="#!" class="text-reset">Bootstrap 5</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Bootstrap 5</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Icons</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">RFS</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Examples repo</a>
+                </p>
+              </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+                <h6 class="text-uppercase fw-bold mb-4">Community</h6>
+                <p>
+                  <a href="#!" class="text-reset">Issues</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Discussions</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Corporate Sponsors</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Open Collective</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Stack Overflow</a>
+                </p>
+              </div>
+  
+          </div>
+ 
+        </div>
+      </section>
+
+
+ 
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        &copy; 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >sachin.1107sk@gmail.com</a
+        >
+      </div>
+  
+    </footer>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>
