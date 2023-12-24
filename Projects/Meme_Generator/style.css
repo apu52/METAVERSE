@@ -39,3 +39,13 @@ button {
         border: none;
         box-shadow: 10px 10px 5px rgb(55, 57, 58);
       }
+@media(width<500px){
+        #meme{
+                width:340px;
+                height: 340px;
+        }
+        #root{
+                justify-content: flex-start;
+                margin-top: 40px;
+        }
+}
