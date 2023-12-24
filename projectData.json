@@ -595,7 +595,12 @@
        "projectTitle":"othello_game",
        "folderName":"othello_game",
        "thumbnailName":"othello_game.png"
-      }
+      },
+      "120": {
+        "projectTitle":"Gamics",
+        "folderName":"Gamics",
+        "thumbnailName":"GAMING.png"
+       }
 }
 
 
