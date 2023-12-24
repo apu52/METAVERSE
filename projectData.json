@@ -591,7 +591,12 @@
       "folderName":"Pet_Website",
       "thumbnailName":"kitter.png"
      },
-   "119": {
+     "119": {
+       "projectTitle":"othello_game",
+       "folderName":"othello_game",
+       "thumbnailName":"othello_game.png"
+      }
+     "120": {
       "projectTitle":"Transit-Masters",
       "folderName":"Transit-Masters_Logistic",
       "thumbnailName":"Transit-Masters_Logistics.png"
