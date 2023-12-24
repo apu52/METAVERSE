@@ -471,7 +471,7 @@
       "folderName":"Movie-seat",
       "thumbnailName":"Movie-seat.jpeg"
     },
-  "95": {
+    "95": {
       "projectTitle":"Stackr",
       "folderName":"Stack_Block",
       "thumbnailName":"towerblock.png"
@@ -517,9 +517,9 @@
       "thumbnailName":"Creative_agency.png"
    },
    "104":{
-    "projectTitle":"Mind Scramble",
-    "folderName":"Mind_Game",
-    "thumbnailName":"mindgame.png"
+      "projectTitle":"Mind Scramble",
+      "folderName":"Mind_Game",
+      "thumbnailName":"mindgame.png"
     },
     "105": {
       "projectTitle":"Codeforces API App",
@@ -537,9 +537,9 @@
       "thumbnailName":"GitHub_API.png"
     },
     "108": {
-     "projectTitle":"Event Organizer",
-     "folderName":"Event_Organizer",
-     "thumbnailName":"Event_organizer.png"
+       "projectTitle":"Event Organizer",
+       "folderName":"Event_Organizer",
+       "thumbnailName":"Event_organizer.png"
     },
     "109": {
       "projectTitle":"Notes App",
@@ -565,7 +565,7 @@
        "projectTitle":"Furniture Website",
       "folderName":"Furniture-website",
       "thumbnailName":"Furniture-website.png"
-     },
+    },
     "114": {
       "projectTitle":"Lyric Finder",
       "folderName":"Lyric_Finder",
@@ -585,7 +585,12 @@
      "projectTitle":"Hulu_clone",
       "folderName":"Hulu_clone",
       "thumbnailName":"Hulu_clone.png"
-    }
+    },
+    "118": {
+      "projectTitle":"Kitter",
+      "folderName":"Pet_Website",
+      "thumbnailName":"kitter.png"
+     }
 }
 
 
