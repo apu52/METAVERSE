@@ -595,22 +595,27 @@
         "projectTitle":"An Chat App",
         "folderName":"Chat_App",
         "thumbnailName":"Chat_App.png"
-    },
-     "120": {
+      },
+    "120": {
        "projectTitle":"othello_game",
        "folderName":"othello_game",
        "thumbnailName":"othello_game.png"
       },
-      "121": {
+    "121": {
+      "projectTitle":"Drawing Pad",
+      "folderName":"Drawing-pad",
+      "thumbnailName":"Drawing-pad.jpeg"
+     },
+    "122": {
+        "projectTitle":"Gamics",
+        "folderName":"Gamics",
+        "thumbnailName":"GAMING.png"
+    },
+     "122": {
         "projectTitle":"Javascript_roulette",
         "folderName":"Javascript_roulette",
         "thumbnailName":"Javascript_roulette.png"
      },
-     "122": {
-      "projectTitle":"Drawing Pad",
-      "folderName":"Drawing-pad",
-      "thumbnailName":"Drawing-pad.jpeg"
-     }
 }
 
 
