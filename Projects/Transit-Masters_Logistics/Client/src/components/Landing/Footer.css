@@ -1,0 +1,237 @@
+
+.footer-profile-img{
+    width: 50px;
+    margin: 6%;
+    background-color: black;
+}
+.footer-profile-name{
+padding:0;
+font-size: 20px;
+font-family: "Montserrat";
+background-color: black;
+color:yellow;
+}
+.footerflexbox{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color: black;
+   
+}
+.footerleft{
+width: 33%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color: black;
+}
+.footermid{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+ margin-top: 3%; 
+ background-color: black;
+}
+.footerright{
+    width:33%;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 5%;
+background-color: black;
+}
+.footer-profile{
+    display: flex;
+    align-items: center;
+    width:20vw ;
+    background-color: black;
+    margin-bottom: 2%;
+
+    
+}
+.footermid-heading
+{
+   margin: 7%;
+   margin-top: 0;;
+   font-size: 30px;
+   font-family: "Montserrat";
+   background-color: black;
+   color: white;
+}
+.footersubheading{
+    font-size: 30px;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-top:3%;
+    background-color: black;
+    color: white;
+
+    
+}
+.footerheading{
+    margin: 0% 0 0% 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat";
+    background-color: black;
+    font-weight: 600;
+    color:#1AACAC;
+}
+.footermid-list>li{
+    list-style: none;
+    /* margin: 10%; */
+    padding: 10%;
+    font-size: 20px;
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+
+
+    
+}
+.Link-list{
+    background-color: black;
+}
+.footermid-list>li:hover{
+    color: yellow;
+}
+.footericons{
+    display: flex;
+    background-color: black;
+}
+.footer-icons{
+    margin: 4% 6%;
+    background-color: black;
+    color: white;
+}
+.footer-icons:hover{
+   
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+.footericons>a{
+    background-color: black;
+    padding: 5%;
+}
+.footerright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 35%;
+
+}
+.footer-contact{
+    display: flex;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+   width: 20vw;
+    align-items: center;
+
+}
+.footer-contact-icons{
+    background-color: black;
+    margin:5%;
+}
+.footer-contact>p{
+    background-color: black;
+}
+footer{
+    background-color: black;
+    padding: 4%;
+    padding-top: 8%;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerflexbox {
+      flex-direction: column;
+      align-items: center;
+      
+}
+    
+    
+    .footerleft,
+    .footermid{
+      width: 100%;
+      margin-top: 5%;
+    }
+    
+    .footer-profile {
+      width: 100%;
+      margin-bottom: 0.625rem;
+      display: block;
+    text-align: center;
+    }
+    
+    .footer-profile-img {
+      width: 3.125rem;
+      margin: 0;
+    }
+    
+    .footer-profile-name {
+      padding: 0;
+      width: 100%;
+      display: block;
+      font-size: 1rem;
+    }
+    
+    .footermid-heading {
+      margin: 0.625rem;
+      font-size: 1.25rem;
+    }
+    
+    .footersubheading {
+      font-size: 1.25rem;
+      margin-top: 0.625rem;
+    }
+    
+    .footerheading {
+      margin: 0;
+      font-size: 2rem;
+    }
+    
+    .footermid-list > li {
+      margin: 0.625rem;
+      padding: 0.625rem;
+      font-size: 1.25rem;
+    }
+    
+    .footericons {
+      flex-wrap: wrap;
+      font-size: 1.25rem;
+      justify-content: center;
+    }
+    
+    .footer-icons {
+      margin: 0.625rem 1.25rem;
+      margin: 0 auto;
+    }
+    
+    .footer-contact {
+      width: 80%;
+      margin-bottom: 0.625rem;
+    }
+    
+    .footer-contact-icons {
+      margin: 0.625rem;
+    }
+    .footerright{
+      width: 70%;
+      margin-top: 5%;
+      margin: 0 auto;
+    }
+    
+    footer {
+      padding-top: 1.25rem;
+      padding-bottom: 1.5rem;
+    }
+  
+}
