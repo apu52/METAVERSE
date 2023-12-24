@@ -565,53 +565,43 @@
     "thumbnailName": "Furniture-website.png"
   },
   "114": {
-    "projectTitle": "Notes App",
-    "folderName": "Notes_App",
-    "thumbnailName": "Notes_App.png"
-  },
-  "115r": {
-    "projectTitle": "Bakery",
-    "folderName": "Bake_website",
-    "thumbnailName": "bakeit.png"
-  },
-  "116": {
-    "projectTitle": "catch_insect",
-    "folderName": "catch_insect",
-    "thumbnailName": "catch_insect.png"
-  },
-  "117": {
-    "projectTitle": "Bootstrap Clone",
-    "folderName": "Bootstrap_clone",
-    "thumbnailName": "BOOTSTRAP.png"
-  },
-  "118": {
-    "projectTitle": "Furniture Website",
-    "folderName": "Furniture-website",
-    "thumbnailName": "Furniture-website.png"
-  },
-  "119": {
     "projectTitle": "Lyric Finder",
     "folderName": "Lyric_Finder",
     "thumbnailName": "lyricfinder.png"
   },
-  "120": {
+  "115": {
     "projectTitle": "Codeforces_API",
     "folderName": "Codeforces_API",
     "thumbnailName": "Codeforce_API.png"
   },
-  "121": {
+  "116": {
+    "projectTitle": "barber Website",
+    "folderName": "barber",
+    "thumbnailName": "BARBER.png"
+  },
+  "117": {
     "projectTitle": "Hulu_clone",
     "folderName": "Hulu_clone",
     "thumbnailName": "Hulu_clone.png"
   },
-  "122": {
+  "118": {
     "projectTitle": "Kitter",
     "folderName": "Pet_Website",
     "thumbnailName": "kitter.png"
   },
-  "123": {
+  "119": {
+    "projectTitle": "An Chat App",
+    "folderName": "Chat_App",
+    "thumbnailName": "Chat_App.png"
+  },
+  "120": {
+    "projectTitle": "othello_game",
+    "folderName": "othello_game",
+    "thumbnailName": "othello_game.png"
+  },
+  "121": {
     "projectTitle": "Daily Diary Entry Website",
-    "folderName": "Daily Diary Entry Website",
-    "thumbnailName": "Daily Diary Entry Website.png"
+    "folderName": "Daily_Diary_Entry_Website",
+    "thumbnailName": "Daily_Diary_Entry_Website.png"
   }
 }
