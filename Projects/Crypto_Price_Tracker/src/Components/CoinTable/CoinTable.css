@@ -1,0 +1,87 @@
+.coinTable {
+    width: 90vw;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+table {
+    border: 2px solid #dbe4e7;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    color: #fff;
+  }
+  
+  table tr {
+    border: 2px solid #c6e1ed;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .75em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  th {
+      font-size: 1.6rem;
+  }
+  tr {
+      font-size: 1.2rem;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    table {
+      border: 0;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 2px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .coinTable {
+      width: 70vw;
+    }
+  }

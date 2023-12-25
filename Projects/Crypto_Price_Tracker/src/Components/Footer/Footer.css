@@ -1,0 +1,17 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-bottom: 32px;
+    font-size: 1.4rem;
+ }
+
+ .link {
+     color: #3EDBF0;
+ }
+
+ .fa-github {
+     margin-top: 24px;
+ }
