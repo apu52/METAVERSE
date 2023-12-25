@@ -1,0 +1,149 @@
+.orderplaced-header{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Montserrat";
+    color: rgb(5, 148, 5);
+    padding: 3%;
+    font-weight: 600;
+    background-color: #f6f5f9;
+}
+.orderplaced-subheader-div{
+    text-align: center;
+}
+.orderplaced-subheader-1{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    font-weight: 600;
+}
+.orderplaced-subheader-2{
+    font-size: 25px;
+    text-align: center;
+    font-family: "Montserrat";
+    color: blueviolet;
+    font-weight: 600;
+    margin: 2%;
+}
+.orderplaced-subheader-2>b{
+    color: #6C63FF;
+}
+.orderplaced-subheader-3{
+    font-size: 25px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin: 2%;
+    
+}
+.orderplaced-flexbox{
+    display:flex;
+    justify-content: center;
+}
+.orderplaced-order-content,.orderplaced-address-header,.orderplaced-address-content{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat";
+    margin: 15px;
+    font-weight: 600;
+}
+.orderplaced-address-box{
+    border-left:2px solid rgb(255, 255, 255);
+    width: 45%;
+}
+.orderplaced-order-box,.orderplaced-address-box{
+    width: 45%;
+}
+.orderplaced-box-1{
+    background-color: #7ce37dc8;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+.orderplaced-box-2{
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 4%;
+    width: 80%;
+    background-color: #232323;
+    color: white;
+}
+.orderplaced-footer-content{
+ 
+    font-size: 25px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 600;
+    padding: 4% 2%;
+}
+.orderplaced-btn{
+    display: block;
+    margin: 0 auto;
+    padding:2% 2%;
+    
+    border-radius: 100%;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+.orderplaced-btn:active{
+    box-shadow: none;
+}
+.orderplaced-box-1-parent{
+    background-color: #f6f5f9;
+}
+
+@media (max-width: 768px) {
+    .orderplaced-header {
+      font-size: 1.75rem;
+      padding: 5% 0;
+    }
+  
+    .orderplaced-subheader-1 {
+      font-size: 1.5rem;
+    }
+  
+    .orderplaced-subheader-2 {
+      font-size: 1.2rem;
+      padding: 5% 0;
+    }
+  
+    .orderplaced-subheader-3 {
+      font-size: 1.2rem;
+      padding: 5% 0;
+    }
+  
+    .orderplaced-order-content,
+    .orderplaced-address-header,
+    .orderplaced-address-content {
+      font-size: 1rem;
+      padding: 1% 0;
+    }
+    .orderplaced-box-1{
+        padding: 5% 0;
+    }
+  
+    .orderplaced-address-box,
+    .orderplaced-order-box {
+      width: 90%;
+      border: none;
+      padding: 5% 0;
+    }
+  
+    .orderplaced-btn {
+      font-size: 20px;
+      padding: 5% 8%;
+    }
+    .orderplaced-flexbox{
+        flex-direction: column;
+        padding: 5% 0 0 0;
+    }
+  }
+  
