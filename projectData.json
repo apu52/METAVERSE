@@ -706,6 +706,11 @@
       "projectTitle":"Crypto_Tracker",
       "folderName":"Crypto Price Tracker",
       "thumbnailName":"Crypto.png"
+    },
+    "142":{
+      "projectTitle":"Password Strength Checker",
+      "folderName":"Password-Strength",
+      "thumbnailName":"password.png"
     }
 }
 
