@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#466977" />
+    <title>VitalEase</title>
+
+    <link rel="stylesheet" href="mainStyle.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+    <header>
+      <a href="#">
+        <h1>VitalEase</h1>
+      </a>
+    </header>
+    <div class="hero flexbox">
+      <div class="main-content">
+        <h1 style="margin-bottom: 50px">
+          Experience Your Health <span class="highlight">Better</span> Than Ever
+        </h1>
+
+        <div class="flexbox buttons-container">
+          <a href="./pages/schedule/schedule.html"
+            ><button>Get Started</button></a
+          >
+          <a href="./pages/schedule/schedule.html">
+            <button class="secondary">Login</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="background">
+        <div class="circle" style="height: 80vw"></div>
+        <div class="circle" style="height: 70vw"></div>
+        <div class="circle" style="height: 60vw"></div>
+
+        <img
+          src="media/heroImage.png"
+          alt="Doctor Image signifying We are here to support you."
+        />
+      </div>
+    </div>
+
+    <script>
+      window.onload = () => {
+        document.querySelector(".loader").style.display = "none";
+        startAnimation();
+      };
+    </script>
+
+    <!-- library to break full line into separate words -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- animation library -->
+    <script src="script.js"></script>
+  </body>
+</html>

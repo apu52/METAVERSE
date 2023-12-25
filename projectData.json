@@ -656,7 +656,11 @@
        "projectTitle":"Bubble_Burst_Game",
        "folderName":"Bubble_Burst_Game",
        "thumbnailName":"Bubble_Burst_Game.png"
-     }
-
+    },
+    "132": {
+    "projectTitle": "Medication Schedule Website",
+    "folderName": "medicationSchedule",
+    "thumbnailName": "medicationSchedule.png"
+    }
 }
 
