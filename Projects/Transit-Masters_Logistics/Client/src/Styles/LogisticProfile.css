@@ -1,0 +1,41 @@
+.logisticProfile-img{
+    height: 35vh;
+    margin-right:3%;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px black;
+    background-color: white;
+}
+.logisticProfile-box{
+    display: flex;
+    padding: 3%;
+    /* background-color: rgb(177, 231, 214);
+    height:fit-content; */
+    
+}
+.logisticProfile-right{
+    padding: 1% 1%;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 10px;
+    background-color: white;
+    height: max-content;
+}
+.logisticProfile-header{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom:2%;
+}
+.logisticProfile-location{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom:2%;
+    font-style: oblique;
+}
+.logisticProfile-content{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom:2%;
+}
