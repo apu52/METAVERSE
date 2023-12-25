@@ -1,0 +1,58 @@
+.logistic-box{
+    display: flex;
+    padding: 3%;
+    margin: 5%;
+    background-color: white;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 10px;
+}
+.logistic-img{
+    height: 35vh;
+    margin-right:3%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.logistic-rightsection{
+   padding: 0 1%;       
+}
+.logistic-header{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom:2%;
+
+
+}
+.logistic-location{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom:2%;
+    font-style: oblique;
+}
+.logistic-content{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom:2%;
+}
+.logistic-button{
+    padding: 1% 4%;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #1AACAC;
+    border: none;
+    color: white;
+
+}
+.logistic-button:active{
+    box-shadow: none;
+    
+}
+.logistic-button:hover{
+    background-color: #139191;
+   
+}

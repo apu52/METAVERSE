@@ -1,0 +1,63 @@
+.contacts {
+  position: relative;
+  justify-content: flex-start;
+  padding-block: 3rem;
+  padding-left: 0;
+}
+.contact {
+  position: relative;
+  box-sizing: content-box;
+  padding: 3rem;
+  width: 250px;
+  background-color: #6bffc7;
+  border-radius: 20px;
+}
+
+.contact .name {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.contact .position {
+  color: #647fb2;
+}
+.contact .phone {
+  color: #64a089;
+  font-size: 0.8em;
+  margin-top: 2rem;
+}
+.contact .call {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  padding: 1em;
+  background: #c9fbe8;
+  color: var(--accent-clr);
+  border-radius: 50%;
+}
+.call:hover {
+  background-color: #070b43b2;
+  color: #00ffa6;
+}
+.back {
+  position: fixed;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.8;
+}
+.header,
+.main {
+  position: relative;
+  z-index: 10;
+}
+.bottomNav {
+  z-index: 50;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* .body1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+ 
+} */
+.body1{
+    display: block;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 400px;
+  width: 100%;
+}
+.container .steps {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+ .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ height: 15vh;
+ padding: 5vh;
+  color: #999;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5%;
+  margin-right: 20px;
+  background: #fff;
+  border: 4px solid #e0e0e0;
+  transition: all 200ms ease;
+  transition-delay: 0s;
+}
+.steps .circle.active {
+  transition-delay: 100ms;
+  border-color: #4070f4;
+  color: #4070f4;
+}
+.steps .progress-bar {
+  position: absolute;
+  height: 4px;
+  width: 45vw;
+  background: #dcdada;
+  z-index: -1;
+}
+.progress-bar .indicator {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: #4070f4;
+  transition: all 300ms ease;
+}
+.container .buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons button {
+  padding: 8px 25px;
+  background: #4070f4;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: all 200ms linear;
+}
+.buttons button:active {
+  transform: scale(0.97);
+}
+.buttons button:disabled {
+  background: #87a5f8;
+  cursor: not-allowed;
+}
