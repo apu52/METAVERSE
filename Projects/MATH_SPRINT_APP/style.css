@@ -14,7 +14,6 @@
 body {
   margin: 0;
   font-family: PT Mono, sans-serif;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -265,6 +264,12 @@ button:active {
   .selected-item {
     top: 380px;
   }
+}
+@media screen and (max-width: 1100px){
+  body{
+    overflow: hidden;
+  }
+
 }
 
 /* Media Query: Large Smartphone (Vertical) */
