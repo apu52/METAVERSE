@@ -1,0 +1,19 @@
+.Ordersummary-row{  display: flex;
+    align-items: center;
+    padding: 1%;
+    /* justify-content: center; */
+    width: 95%;
+    background-color: rgb(218, 214, 224);
+    /* border-radius: 10px; */
+    margin:0 auto;
+    
+}
+.Ordersummary-row-content{
+    width: 10%;
+    font-size: 25px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: black;
+    border-right: 2px solid black;
+   padding: 20px 0;
+}

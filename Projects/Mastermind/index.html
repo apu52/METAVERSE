@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alvaro Montoro (alvaromontoro@gmail.com)" />
+    <meta name="license" content="https://www.gnu.org/licenses/gpl-3.0.txt" />
+    <meta name="monetization" content="$ilp.uphold.com/2f28xFUMdj9Z" />
+    <meta name="description" content="Mastermind game developed using HTML and CSS (no JS)." />
+
+    <title>CSS Mastermind</title>
+    
+    <link rel="stylesheet" href="./mastermind.css" />
+  </head>
+
+  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&amp;display=swap" rel="stylesheet" />
+    <!-- secret codes-->
+    <form>
+      <label id="info" for="hideInit">i</label>
+      <input id="color-blind" type="checkbox" />
+      <label id="color-blind-label" for="color-blind">Add letters</label>
+      <!-- rounds-->
+      <div id="board">
+        <h1 id="mastermind">MASTERMIND</h1>
+        <input type="radio" tabindex="-1" value="6543" name="code" id="code-6543" checked="checked" />
+        <input type="radio" tabindex="-1" value="1324" name="code" id="code-1324" />
+        <input type="radio" tabindex="-1" value="4135" name="code" id="code-4135" />
+        <input type="radio" tabindex="-1" value="5514" name="code" id="code-5514" />
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-1" />
+        <input type="radio" tabindex="-1" id="round-1" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-1" id="slot-1-round-1-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-1" id="slot-1-round-1-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-1" id="slot-1-round-1-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-1" id="slot-1-round-1-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-1" id="slot-1-round-1-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-1" id="slot-1-round-1-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-1" id="slot-2-round-1-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-1" id="slot-2-round-1-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-1" id="slot-2-round-1-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-1" id="slot-2-round-1-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-1" id="slot-2-round-1-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-1" id="slot-2-round-1-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-1" id="slot-3-round-1-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-1" id="slot-3-round-1-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-1" id="slot-3-round-1-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-1" id="slot-3-round-1-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-1" id="slot-3-round-1-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-1" id="slot-3-round-1-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-1" id="slot-4-round-1-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-1" id="slot-4-round-1-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-1" id="slot-4-round-1-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-1" id="slot-4-round-1-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-1" id="slot-4-round-1-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-1" id="slot-4-round-1-color-6" />
+        <div class="round-container round-1">
+          <label for="completed-1"> <span>NEXT</span></label><a class="slot-circle slot-1-round-1-trigger"
+            href="#round-1-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-1-trigger" href="#round-1-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-1-trigger" href="#round-1-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-1-trigger" href="#round-1-slot-4" tabindex="0"></a>
+          <div class="valid valid-1">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-2" />
+        <input type="radio" tabindex="-1" id="round-2" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-2" id="slot-1-round-2-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-2" id="slot-1-round-2-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-2" id="slot-1-round-2-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-2" id="slot-1-round-2-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-2" id="slot-1-round-2-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-2" id="slot-1-round-2-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-2" id="slot-2-round-2-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-2" id="slot-2-round-2-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-2" id="slot-2-round-2-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-2" id="slot-2-round-2-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-2" id="slot-2-round-2-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-2" id="slot-2-round-2-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-2" id="slot-3-round-2-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-2" id="slot-3-round-2-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-2" id="slot-3-round-2-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-2" id="slot-3-round-2-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-2" id="slot-3-round-2-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-2" id="slot-3-round-2-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-2" id="slot-4-round-2-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-2" id="slot-4-round-2-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-2" id="slot-4-round-2-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-2" id="slot-4-round-2-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-2" id="slot-4-round-2-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-2" id="slot-4-round-2-color-6" />
+        <div class="round-container round-2">
+          <label for="completed-2"> <span>NEXT</span></label><a class="slot-circle slot-1-round-2-trigger"
+            href="#round-2-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-2-trigger" href="#round-2-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-2-trigger" href="#round-2-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-2-trigger" href="#round-2-slot-4" tabindex="0"></a>
+          <div class="valid valid-2">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-3" />
+        <input type="radio" tabindex="-1" id="round-3" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-3" id="slot-1-round-3-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-3" id="slot-1-round-3-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-3" id="slot-1-round-3-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-3" id="slot-1-round-3-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-3" id="slot-1-round-3-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-3" id="slot-1-round-3-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-3" id="slot-2-round-3-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-3" id="slot-2-round-3-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-3" id="slot-2-round-3-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-3" id="slot-2-round-3-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-3" id="slot-2-round-3-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-3" id="slot-2-round-3-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-3" id="slot-3-round-3-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-3" id="slot-3-round-3-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-3" id="slot-3-round-3-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-3" id="slot-3-round-3-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-3" id="slot-3-round-3-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-3" id="slot-3-round-3-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-3" id="slot-4-round-3-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-3" id="slot-4-round-3-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-3" id="slot-4-round-3-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-3" id="slot-4-round-3-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-3" id="slot-4-round-3-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-3" id="slot-4-round-3-color-6" />
+        <div class="round-container round-3">
+          <label for="completed-3"> <span>NEXT</span></label><a class="slot-circle slot-1-round-3-trigger"
+            href="#round-3-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-3-trigger" href="#round-3-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-3-trigger" href="#round-3-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-3-trigger" href="#round-3-slot-4" tabindex="0"></a>
+          <div class="valid valid-3">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-4" />
+        <input type="radio" tabindex="-1" id="round-4" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-4" id="slot-1-round-4-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-4" id="slot-1-round-4-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-4" id="slot-1-round-4-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-4" id="slot-1-round-4-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-4" id="slot-1-round-4-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-4" id="slot-1-round-4-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-4" id="slot-2-round-4-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-4" id="slot-2-round-4-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-4" id="slot-2-round-4-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-4" id="slot-2-round-4-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-4" id="slot-2-round-4-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-4" id="slot-2-round-4-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-4" id="slot-3-round-4-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-4" id="slot-3-round-4-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-4" id="slot-3-round-4-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-4" id="slot-3-round-4-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-4" id="slot-3-round-4-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-4" id="slot-3-round-4-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-4" id="slot-4-round-4-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-4" id="slot-4-round-4-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-4" id="slot-4-round-4-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-4" id="slot-4-round-4-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-4" id="slot-4-round-4-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-4" id="slot-4-round-4-color-6" />
+        <div class="round-container round-4">
+          <label for="completed-4"> <span>NEXT</span></label><a class="slot-circle slot-1-round-4-trigger"
+            href="#round-4-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-4-trigger" href="#round-4-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-4-trigger" href="#round-4-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-4-trigger" href="#round-4-slot-4" tabindex="0"></a>
+          <div class="valid valid-4">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-5" />
+        <input type="radio" tabindex="-1" id="round-5" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-5" id="slot-1-round-5-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-5" id="slot-1-round-5-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-5" id="slot-1-round-5-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-5" id="slot-1-round-5-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-5" id="slot-1-round-5-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-5" id="slot-1-round-5-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-5" id="slot-2-round-5-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-5" id="slot-2-round-5-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-5" id="slot-2-round-5-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-5" id="slot-2-round-5-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-5" id="slot-2-round-5-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-5" id="slot-2-round-5-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-5" id="slot-3-round-5-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-5" id="slot-3-round-5-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-5" id="slot-3-round-5-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-5" id="slot-3-round-5-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-5" id="slot-3-round-5-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-5" id="slot-3-round-5-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-5" id="slot-4-round-5-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-5" id="slot-4-round-5-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-5" id="slot-4-round-5-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-5" id="slot-4-round-5-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-5" id="slot-4-round-5-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-5" id="slot-4-round-5-color-6" />
+        <div class="round-container round-5">
+          <label for="completed-5"> <span>NEXT</span></label><a class="slot-circle slot-1-round-5-trigger"
+            href="#round-5-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-5-trigger" href="#round-5-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-5-trigger" href="#round-5-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-5-trigger" href="#round-5-slot-4" tabindex="0"></a>
+          <div class="valid valid-5">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-6" />
+        <input type="radio" tabindex="-1" id="round-6" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-6" id="slot-1-round-6-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-6" id="slot-1-round-6-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-6" id="slot-1-round-6-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-6" id="slot-1-round-6-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-6" id="slot-1-round-6-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-6" id="slot-1-round-6-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-6" id="slot-2-round-6-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-6" id="slot-2-round-6-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-6" id="slot-2-round-6-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-6" id="slot-2-round-6-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-6" id="slot-2-round-6-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-6" id="slot-2-round-6-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-6" id="slot-3-round-6-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-6" id="slot-3-round-6-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-6" id="slot-3-round-6-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-6" id="slot-3-round-6-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-6" id="slot-3-round-6-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-6" id="slot-3-round-6-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-6" id="slot-4-round-6-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-6" id="slot-4-round-6-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-6" id="slot-4-round-6-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-6" id="slot-4-round-6-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-6" id="slot-4-round-6-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-6" id="slot-4-round-6-color-6" />
+        <div class="round-container round-6">
+          <label for="completed-6"> <span>NEXT</span></label><a class="slot-circle slot-1-round-6-trigger"
+            href="#round-6-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-6-trigger" href="#round-6-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-6-trigger" href="#round-6-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-6-trigger" href="#round-6-slot-4" tabindex="0"></a>
+          <div class="valid valid-6">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-7" />
+        <input type="radio" tabindex="-1" id="round-7" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-7" id="slot-1-round-7-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-7" id="slot-1-round-7-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-7" id="slot-1-round-7-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-7" id="slot-1-round-7-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-7" id="slot-1-round-7-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-7" id="slot-1-round-7-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-7" id="slot-2-round-7-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-7" id="slot-2-round-7-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-7" id="slot-2-round-7-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-7" id="slot-2-round-7-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-7" id="slot-2-round-7-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-7" id="slot-2-round-7-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-7" id="slot-3-round-7-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-7" id="slot-3-round-7-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-7" id="slot-3-round-7-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-7" id="slot-3-round-7-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-7" id="slot-3-round-7-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-7" id="slot-3-round-7-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-7" id="slot-4-round-7-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-7" id="slot-4-round-7-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-7" id="slot-4-round-7-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-7" id="slot-4-round-7-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-7" id="slot-4-round-7-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-7" id="slot-4-round-7-color-6" />
+        <div class="round-container round-7">
+          <label for="completed-7"> <span>NEXT</span></label><a class="slot-circle slot-1-round-7-trigger"
+            href="#round-7-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-7-trigger" href="#round-7-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-7-trigger" href="#round-7-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-7-trigger" href="#round-7-slot-4" tabindex="0"></a>
+          <div class="valid valid-7">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-8" />
+        <input type="radio" tabindex="-1" id="round-8" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-8" id="slot-1-round-8-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-8" id="slot-1-round-8-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-8" id="slot-1-round-8-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-8" id="slot-1-round-8-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-8" id="slot-1-round-8-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-8" id="slot-1-round-8-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-8" id="slot-2-round-8-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-8" id="slot-2-round-8-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-8" id="slot-2-round-8-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-8" id="slot-2-round-8-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-8" id="slot-2-round-8-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-8" id="slot-2-round-8-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-8" id="slot-3-round-8-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-8" id="slot-3-round-8-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-8" id="slot-3-round-8-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-8" id="slot-3-round-8-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-8" id="slot-3-round-8-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-8" id="slot-3-round-8-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-8" id="slot-4-round-8-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-8" id="slot-4-round-8-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-8" id="slot-4-round-8-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-8" id="slot-4-round-8-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-8" id="slot-4-round-8-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-8" id="slot-4-round-8-color-6" />
+        <div class="round-container round-8">
+          <label for="completed-8"> <span>NEXT</span></label><a class="slot-circle slot-1-round-8-trigger"
+            href="#round-8-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-8-trigger" href="#round-8-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-8-trigger" href="#round-8-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-8-trigger" href="#round-8-slot-4" tabindex="0"></a>
+          <div class="valid valid-8">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-9" />
+        <input type="radio" tabindex="-1" id="round-9" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-9" id="slot-1-round-9-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-9" id="slot-1-round-9-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-9" id="slot-1-round-9-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-9" id="slot-1-round-9-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-9" id="slot-1-round-9-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-9" id="slot-1-round-9-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-9" id="slot-2-round-9-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-9" id="slot-2-round-9-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-9" id="slot-2-round-9-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-9" id="slot-2-round-9-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-9" id="slot-2-round-9-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-9" id="slot-2-round-9-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-9" id="slot-3-round-9-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-9" id="slot-3-round-9-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-9" id="slot-3-round-9-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-9" id="slot-3-round-9-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-9" id="slot-3-round-9-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-9" id="slot-3-round-9-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-9" id="slot-4-round-9-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-9" id="slot-4-round-9-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-9" id="slot-4-round-9-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-9" id="slot-4-round-9-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-9" id="slot-4-round-9-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-9" id="slot-4-round-9-color-6" />
+        <div class="round-container round-9">
+          <label for="completed-9"> <span>NEXT</span></label><a class="slot-circle slot-1-round-9-trigger"
+            href="#round-9-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-9-trigger" href="#round-9-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-9-trigger" href="#round-9-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-9-trigger" href="#round-9-slot-4" tabindex="0"></a>
+          <div class="valid valid-9">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input class="completed" type="checkbox" tabindex="-1" id="completed-10" />
+        <input type="radio" tabindex="-1" id="round-10" name="round" />
+        <input type="radio" tabindex="-1" value="1" name="slot-1-round-10" id="slot-1-round-10-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-1-round-10" id="slot-1-round-10-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-1-round-10" id="slot-1-round-10-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-1-round-10" id="slot-1-round-10-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-1-round-10" id="slot-1-round-10-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-1-round-10" id="slot-1-round-10-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-2-round-10" id="slot-2-round-10-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-2-round-10" id="slot-2-round-10-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-2-round-10" id="slot-2-round-10-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-2-round-10" id="slot-2-round-10-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-2-round-10" id="slot-2-round-10-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-2-round-10" id="slot-2-round-10-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-3-round-10" id="slot-3-round-10-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-3-round-10" id="slot-3-round-10-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-3-round-10" id="slot-3-round-10-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-3-round-10" id="slot-3-round-10-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-3-round-10" id="slot-3-round-10-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-3-round-10" id="slot-3-round-10-color-6" />
+        <input type="radio" tabindex="-1" value="1" name="slot-4-round-10" id="slot-4-round-10-color-1" />
+        <input type="radio" tabindex="-1" value="2" name="slot-4-round-10" id="slot-4-round-10-color-2" />
+        <input type="radio" tabindex="-1" value="3" name="slot-4-round-10" id="slot-4-round-10-color-3" />
+        <input type="radio" tabindex="-1" value="4" name="slot-4-round-10" id="slot-4-round-10-color-4" />
+        <input type="radio" tabindex="-1" value="5" name="slot-4-round-10" id="slot-4-round-10-color-5" />
+        <input type="radio" tabindex="-1" value="6" name="slot-4-round-10" id="slot-4-round-10-color-6" />
+        <div class="round-container round-10">
+          <label for="completed-10"> <span>NEXT</span></label><a class="slot-circle slot-1-round-10-trigger"
+            href="#round-10-slot-1" tabindex="0"></a><a class="slot-circle slot-2-round-10-trigger" href="#round-10-slot-2"
+            tabindex="0"></a><a class="slot-circle slot-3-round-10-trigger" href="#round-10-slot-3" tabindex="0"></a><a
+            class="slot-circle slot-4-round-10-trigger" href="#round-10-slot-4" tabindex="0"></a>
+          <div class="valid valid-10">
+            <div class="correct-1"></div>
+            <div class="correct-2"></div>
+            <div class="correct-3"></div>
+            <div class="correct-4"></div>
+            <div class="partial-1"></div>
+            <div class="partial-2"></div>
+            <div class="partial-3"></div>
+            <div class="partial-4"></div>
+            <div class="empty-1"></div>
+            <div class="empty-2"></div>
+            <div class="empty-3"></div>
+            <div class="empty-4"></div>
+          </div>
+        </div>
+        <input type="radio" name="round" id="round-11" />
+        <input type="checkbox" id="hideInit" />
+        <div class="popup" id="init">
+          <div>
+            <h1>Let's play CSS Mastermind!</h1>
+            <p>
+              <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)" target="_blank">Mastermind </a>is a
+              challenging code-breaking game. There are 6 colors and a 4-length code to decipher. Can you break the code?
+            </p>
+            <p>Select the colors for each code peg by clicking in an active slot. When you are ready, click on the "Next"
+              button on the left side of the active round.</p>
+            <p>The results will be displayed using key pegs on the right. A black key peg indicates that a color is in the
+              right place, while a white key peg indicates that a color is present but not in the right place.</p>
+            <p class="games">Pick a game to play:</p>
+            <p class="games">
+              <label class="close game-selector" for="code-6543">Game</label>
+              <label class="close game-selector" for="code-1324">Game</label>
+              <label class="close game-selector" for="code-4135">Game</label>
+              <label class="close game-selector" for="code-5514">Game</label>
+            </p>
+            <div id="start-button">
+              <label class="green-button" for="round-1">START GAME</label>
+            </div>
+            <label class="close" for="hideInit">Close</label>
+          </div>
+        </div>
+        <div class="lost popup">
+          <div>
+            <h2>Game Over!</h2>
+            <p>Oh, no! You reach the end of the game before cracking the code... Click on the button to try again!</p>
+            <div>
+              <input class="green-button" type="reset" value="Play again" />
+            </div>
+          </div>
+        </div>
+        <div class="won popup">
+          <div>
+            <h2>Congratulations! You won!</h2>
+            <p>Yay! You are amazing and cracked the code successfully! Click on the button below to restart the game.</p>
+            <div>
+              <input class="green-button" type="reset" value="Play again" />
+            </div>
+          </div>
+        </div>
+        <div id="confetti">
+          <div class="confetti confetti-1"></div>
+          <div class="confetti confetti-2"></div>
+          <div class="confetti confetti-3"></div>
+          <div class="confetti confetti-4"></div>
+          <div class="confetti confetti-5"></div>
+          <div class="confetti confetti-6"></div>
+          <div class="confetti confetti-7"></div>
+          <div class="confetti confetti-8"></div>
+          <div class="confetti confetti-9"></div>
+          <div class="confetti confetti-10"></div>
+          <div class="confetti confetti-11"></div>
+          <div class="confetti confetti-12"></div>
+          <div class="confetti confetti-13"></div>
+          <div class="confetti confetti-14"></div>
+          <div class="confetti confetti-15"></div>
+          <div class="confetti confetti-16"></div>
+          <div class="confetti confetti-17"></div>
+          <div class="confetti confetti-18"></div>
+          <div class="confetti confetti-19"></div>
+          <div class="confetti confetti-20"></div>
+          <div class="confetti confetti-21"></div>
+          <div class="confetti confetti-22"></div>
+          <div class="confetti confetti-23"></div>
+          <div class="confetti confetti-24"></div>
+          <div class="confetti confetti-25"></div>
+          <div class="confetti confetti-26"></div>
+          <div class="confetti confetti-27"></div>
+          <div class="confetti confetti-28"></div>
+          <div class="confetti confetti-29"></div>
+          <div class="confetti confetti-30"></div>
+          <div class="confetti confetti-31"></div>
+          <div class="confetti confetti-32"></div>
+          <div class="confetti confetti-33"></div>
+          <div class="confetti confetti-34"></div>
+          <div class="confetti confetti-35"></div>
+          <div class="confetti confetti-36"></div>
+          <div class="confetti confetti-37"></div>
+          <div class="confetti confetti-38"></div>
+          <div class="confetti confetti-39"></div>
+          <div class="confetti confetti-40"></div>
+          <div class="confetti confetti-41"></div>
+          <div class="confetti confetti-42"></div>
+          <div class="confetti confetti-43"></div>
+          <div class="confetti confetti-44"></div>
+          <div class="confetti confetti-45"></div>
+          <div class="confetti confetti-46"></div>
+          <div class="confetti confetti-47"></div>
+          <div class="confetti confetti-48"></div>
+          <div class="confetti confetti-49"></div>
+          <div class="confetti confetti-50"></div>
+          <div class="confetti confetti-51"></div>
+          <div class="confetti confetti-52"></div>
+          <div class="confetti confetti-53"></div>
+          <div class="confetti confetti-54"></div>
+          <div class="confetti confetti-55"></div>
+          <div class="confetti confetti-56"></div>
+          <div class="confetti confetti-57"></div>
+          <div class="confetti confetti-58"></div>
+          <div class="confetti confetti-59"></div>
+          <div class="confetti confetti-60"></div>
+          <div class="confetti confetti-61"></div>
+          <div class="confetti confetti-62"></div>
+          <div class="confetti confetti-63"></div>
+          <div class="confetti confetti-64"></div>
+          <div class="confetti confetti-65"></div>
+          <div class="confetti confetti-66"></div>
+          <div class="confetti confetti-67"></div>
+          <div class="confetti confetti-68"></div>
+          <div class="confetti confetti-69"></div>
+          <div class="confetti confetti-70"></div>
+          <div class="confetti confetti-71"></div>
+          <div class="confetti confetti-72"></div>
+          <div class="confetti confetti-73"></div>
+          <div class="confetti confetti-74"></div>
+          <div class="confetti confetti-75"></div>
+          <div class="confetti confetti-76"></div>
+          <div class="confetti confetti-77"></div>
+          <div class="confetti confetti-78"></div>
+          <div class="confetti confetti-79"></div>
+          <div class="confetti confetti-80"></div>
+          <div class="confetti confetti-81"></div>
+          <div class="confetti confetti-82"></div>
+          <div class="confetti confetti-83"></div>
+          <div class="confetti confetti-84"></div>
+          <div class="confetti confetti-85"></div>
+          <div class="confetti confetti-86"></div>
+          <div class="confetti confetti-87"></div>
+          <div class="confetti confetti-88"></div>
+          <div class="confetti confetti-89"></div>
+          <div class="confetti confetti-90"></div>
+          <div class="confetti confetti-91"></div>
+          <div class="confetti confetti-92"></div>
+          <div class="confetti confetti-93"></div>
+          <div class="confetti confetti-94"></div>
+          <div class="confetti confetti-95"></div>
+          <div class="confetti confetti-96"></div>
+          <div class="confetti confetti-97"></div>
+          <div class="confetti confetti-98"></div>
+          <div class="confetti confetti-99"></div>
+        </div>
+        <div class="popup transition" id="transition-1">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-2">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-1-slot-1">
+          <div>
+            <h2>Round 1 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-1-color-1" tabindex="1"></label>
+              <label for="slot-1-round-1-color-2" tabindex="1"></label>
+              <label for="slot-1-round-1-color-3" tabindex="1"></label>
+              <label for="slot-1-round-1-color-4" tabindex="1"></label>
+              <label for="slot-1-round-1-color-5" tabindex="1"></label>
+              <label for="slot-1-round-1-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-1-slot-2">
+          <div>
+            <h2>Round 1 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-1-color-1" tabindex="1"></label>
+              <label for="slot-2-round-1-color-2" tabindex="1"></label>
+              <label for="slot-2-round-1-color-3" tabindex="1"></label>
+              <label for="slot-2-round-1-color-4" tabindex="1"></label>
+              <label for="slot-2-round-1-color-5" tabindex="1"></label>
+              <label for="slot-2-round-1-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-1-slot-3">
+          <div>
+            <h2>Round 1 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-1-color-1" tabindex="1"></label>
+              <label for="slot-3-round-1-color-2" tabindex="1"></label>
+              <label for="slot-3-round-1-color-3" tabindex="1"></label>
+              <label for="slot-3-round-1-color-4" tabindex="1"></label>
+              <label for="slot-3-round-1-color-5" tabindex="1"></label>
+              <label for="slot-3-round-1-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-1-slot-4">
+          <div>
+            <h2>Round 1 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-1-color-1" tabindex="1"></label>
+              <label for="slot-4-round-1-color-2" tabindex="1"></label>
+              <label for="slot-4-round-1-color-3" tabindex="1"></label>
+              <label for="slot-4-round-1-color-4" tabindex="1"></label>
+              <label for="slot-4-round-1-color-5" tabindex="1"></label>
+              <label for="slot-4-round-1-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-2">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-3">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-2-slot-1">
+          <div>
+            <h2>Round 2 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-2-color-1" tabindex="1"></label>
+              <label for="slot-1-round-2-color-2" tabindex="1"></label>
+              <label for="slot-1-round-2-color-3" tabindex="1"></label>
+              <label for="slot-1-round-2-color-4" tabindex="1"></label>
+              <label for="slot-1-round-2-color-5" tabindex="1"></label>
+              <label for="slot-1-round-2-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-2-slot-2">
+          <div>
+            <h2>Round 2 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-2-color-1" tabindex="1"></label>
+              <label for="slot-2-round-2-color-2" tabindex="1"></label>
+              <label for="slot-2-round-2-color-3" tabindex="1"></label>
+              <label for="slot-2-round-2-color-4" tabindex="1"></label>
+              <label for="slot-2-round-2-color-5" tabindex="1"></label>
+              <label for="slot-2-round-2-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-2-slot-3">
+          <div>
+            <h2>Round 2 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-2-color-1" tabindex="1"></label>
+              <label for="slot-3-round-2-color-2" tabindex="1"></label>
+              <label for="slot-3-round-2-color-3" tabindex="1"></label>
+              <label for="slot-3-round-2-color-4" tabindex="1"></label>
+              <label for="slot-3-round-2-color-5" tabindex="1"></label>
+              <label for="slot-3-round-2-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-2-slot-4">
+          <div>
+            <h2>Round 2 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-2-color-1" tabindex="1"></label>
+              <label for="slot-4-round-2-color-2" tabindex="1"></label>
+              <label for="slot-4-round-2-color-3" tabindex="1"></label>
+              <label for="slot-4-round-2-color-4" tabindex="1"></label>
+              <label for="slot-4-round-2-color-5" tabindex="1"></label>
+              <label for="slot-4-round-2-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-3">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-4">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-3-slot-1">
+          <div>
+            <h2>Round 3 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-3-color-1" tabindex="1"></label>
+              <label for="slot-1-round-3-color-2" tabindex="1"></label>
+              <label for="slot-1-round-3-color-3" tabindex="1"></label>
+              <label for="slot-1-round-3-color-4" tabindex="1"></label>
+              <label for="slot-1-round-3-color-5" tabindex="1"></label>
+              <label for="slot-1-round-3-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-3-slot-2">
+          <div>
+            <h2>Round 3 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-3-color-1" tabindex="1"></label>
+              <label for="slot-2-round-3-color-2" tabindex="1"></label>
+              <label for="slot-2-round-3-color-3" tabindex="1"></label>
+              <label for="slot-2-round-3-color-4" tabindex="1"></label>
+              <label for="slot-2-round-3-color-5" tabindex="1"></label>
+              <label for="slot-2-round-3-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-3-slot-3">
+          <div>
+            <h2>Round 3 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-3-color-1" tabindex="1"></label>
+              <label for="slot-3-round-3-color-2" tabindex="1"></label>
+              <label for="slot-3-round-3-color-3" tabindex="1"></label>
+              <label for="slot-3-round-3-color-4" tabindex="1"></label>
+              <label for="slot-3-round-3-color-5" tabindex="1"></label>
+              <label for="slot-3-round-3-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-3-slot-4">
+          <div>
+            <h2>Round 3 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-3-color-1" tabindex="1"></label>
+              <label for="slot-4-round-3-color-2" tabindex="1"></label>
+              <label for="slot-4-round-3-color-3" tabindex="1"></label>
+              <label for="slot-4-round-3-color-4" tabindex="1"></label>
+              <label for="slot-4-round-3-color-5" tabindex="1"></label>
+              <label for="slot-4-round-3-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-4">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-5">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-4-slot-1">
+          <div>
+            <h2>Round 4 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-4-color-1" tabindex="1"></label>
+              <label for="slot-1-round-4-color-2" tabindex="1"></label>
+              <label for="slot-1-round-4-color-3" tabindex="1"></label>
+              <label for="slot-1-round-4-color-4" tabindex="1"></label>
+              <label for="slot-1-round-4-color-5" tabindex="1"></label>
+              <label for="slot-1-round-4-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-4-slot-2">
+          <div>
+            <h2>Round 4 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-4-color-1" tabindex="1"></label>
+              <label for="slot-2-round-4-color-2" tabindex="1"></label>
+              <label for="slot-2-round-4-color-3" tabindex="1"></label>
+              <label for="slot-2-round-4-color-4" tabindex="1"></label>
+              <label for="slot-2-round-4-color-5" tabindex="1"></label>
+              <label for="slot-2-round-4-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-4-slot-3">
+          <div>
+            <h2>Round 4 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-4-color-1" tabindex="1"></label>
+              <label for="slot-3-round-4-color-2" tabindex="1"></label>
+              <label for="slot-3-round-4-color-3" tabindex="1"></label>
+              <label for="slot-3-round-4-color-4" tabindex="1"></label>
+              <label for="slot-3-round-4-color-5" tabindex="1"></label>
+              <label for="slot-3-round-4-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-4-slot-4">
+          <div>
+            <h2>Round 4 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-4-color-1" tabindex="1"></label>
+              <label for="slot-4-round-4-color-2" tabindex="1"></label>
+              <label for="slot-4-round-4-color-3" tabindex="1"></label>
+              <label for="slot-4-round-4-color-4" tabindex="1"></label>
+              <label for="slot-4-round-4-color-5" tabindex="1"></label>
+              <label for="slot-4-round-4-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-5">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-6">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-5-slot-1">
+          <div>
+            <h2>Round 5 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-5-color-1" tabindex="1"></label>
+              <label for="slot-1-round-5-color-2" tabindex="1"></label>
+              <label for="slot-1-round-5-color-3" tabindex="1"></label>
+              <label for="slot-1-round-5-color-4" tabindex="1"></label>
+              <label for="slot-1-round-5-color-5" tabindex="1"></label>
+              <label for="slot-1-round-5-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-5-slot-2">
+          <div>
+            <h2>Round 5 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-5-color-1" tabindex="1"></label>
+              <label for="slot-2-round-5-color-2" tabindex="1"></label>
+              <label for="slot-2-round-5-color-3" tabindex="1"></label>
+              <label for="slot-2-round-5-color-4" tabindex="1"></label>
+              <label for="slot-2-round-5-color-5" tabindex="1"></label>
+              <label for="slot-2-round-5-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-5-slot-3">
+          <div>
+            <h2>Round 5 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-5-color-1" tabindex="1"></label>
+              <label for="slot-3-round-5-color-2" tabindex="1"></label>
+              <label for="slot-3-round-5-color-3" tabindex="1"></label>
+              <label for="slot-3-round-5-color-4" tabindex="1"></label>
+              <label for="slot-3-round-5-color-5" tabindex="1"></label>
+              <label for="slot-3-round-5-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-5-slot-4">
+          <div>
+            <h2>Round 5 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-5-color-1" tabindex="1"></label>
+              <label for="slot-4-round-5-color-2" tabindex="1"></label>
+              <label for="slot-4-round-5-color-3" tabindex="1"></label>
+              <label for="slot-4-round-5-color-4" tabindex="1"></label>
+              <label for="slot-4-round-5-color-5" tabindex="1"></label>
+              <label for="slot-4-round-5-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-6">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-7">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-6-slot-1">
+          <div>
+            <h2>Round 6 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-6-color-1" tabindex="1"></label>
+              <label for="slot-1-round-6-color-2" tabindex="1"></label>
+              <label for="slot-1-round-6-color-3" tabindex="1"></label>
+              <label for="slot-1-round-6-color-4" tabindex="1"></label>
+              <label for="slot-1-round-6-color-5" tabindex="1"></label>
+              <label for="slot-1-round-6-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-6-slot-2">
+          <div>
+            <h2>Round 6 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-6-color-1" tabindex="1"></label>
+              <label for="slot-2-round-6-color-2" tabindex="1"></label>
+              <label for="slot-2-round-6-color-3" tabindex="1"></label>
+              <label for="slot-2-round-6-color-4" tabindex="1"></label>
+              <label for="slot-2-round-6-color-5" tabindex="1"></label>
+              <label for="slot-2-round-6-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-6-slot-3">
+          <div>
+            <h2>Round 6 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-6-color-1" tabindex="1"></label>
+              <label for="slot-3-round-6-color-2" tabindex="1"></label>
+              <label for="slot-3-round-6-color-3" tabindex="1"></label>
+              <label for="slot-3-round-6-color-4" tabindex="1"></label>
+              <label for="slot-3-round-6-color-5" tabindex="1"></label>
+              <label for="slot-3-round-6-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-6-slot-4">
+          <div>
+            <h2>Round 6 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-6-color-1" tabindex="1"></label>
+              <label for="slot-4-round-6-color-2" tabindex="1"></label>
+              <label for="slot-4-round-6-color-3" tabindex="1"></label>
+              <label for="slot-4-round-6-color-4" tabindex="1"></label>
+              <label for="slot-4-round-6-color-5" tabindex="1"></label>
+              <label for="slot-4-round-6-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-7">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-8">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-7-slot-1">
+          <div>
+            <h2>Round 7 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-7-color-1" tabindex="1"></label>
+              <label for="slot-1-round-7-color-2" tabindex="1"></label>
+              <label for="slot-1-round-7-color-3" tabindex="1"></label>
+              <label for="slot-1-round-7-color-4" tabindex="1"></label>
+              <label for="slot-1-round-7-color-5" tabindex="1"></label>
+              <label for="slot-1-round-7-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-7-slot-2">
+          <div>
+            <h2>Round 7 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-7-color-1" tabindex="1"></label>
+              <label for="slot-2-round-7-color-2" tabindex="1"></label>
+              <label for="slot-2-round-7-color-3" tabindex="1"></label>
+              <label for="slot-2-round-7-color-4" tabindex="1"></label>
+              <label for="slot-2-round-7-color-5" tabindex="1"></label>
+              <label for="slot-2-round-7-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-7-slot-3">
+          <div>
+            <h2>Round 7 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-7-color-1" tabindex="1"></label>
+              <label for="slot-3-round-7-color-2" tabindex="1"></label>
+              <label for="slot-3-round-7-color-3" tabindex="1"></label>
+              <label for="slot-3-round-7-color-4" tabindex="1"></label>
+              <label for="slot-3-round-7-color-5" tabindex="1"></label>
+              <label for="slot-3-round-7-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-7-slot-4">
+          <div>
+            <h2>Round 7 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-7-color-1" tabindex="1"></label>
+              <label for="slot-4-round-7-color-2" tabindex="1"></label>
+              <label for="slot-4-round-7-color-3" tabindex="1"></label>
+              <label for="slot-4-round-7-color-4" tabindex="1"></label>
+              <label for="slot-4-round-7-color-5" tabindex="1"></label>
+              <label for="slot-4-round-7-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-8">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-9">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-8-slot-1">
+          <div>
+            <h2>Round 8 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-8-color-1" tabindex="1"></label>
+              <label for="slot-1-round-8-color-2" tabindex="1"></label>
+              <label for="slot-1-round-8-color-3" tabindex="1"></label>
+              <label for="slot-1-round-8-color-4" tabindex="1"></label>
+              <label for="slot-1-round-8-color-5" tabindex="1"></label>
+              <label for="slot-1-round-8-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-8-slot-2">
+          <div>
+            <h2>Round 8 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-8-color-1" tabindex="1"></label>
+              <label for="slot-2-round-8-color-2" tabindex="1"></label>
+              <label for="slot-2-round-8-color-3" tabindex="1"></label>
+              <label for="slot-2-round-8-color-4" tabindex="1"></label>
+              <label for="slot-2-round-8-color-5" tabindex="1"></label>
+              <label for="slot-2-round-8-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-8-slot-3">
+          <div>
+            <h2>Round 8 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-8-color-1" tabindex="1"></label>
+              <label for="slot-3-round-8-color-2" tabindex="1"></label>
+              <label for="slot-3-round-8-color-3" tabindex="1"></label>
+              <label for="slot-3-round-8-color-4" tabindex="1"></label>
+              <label for="slot-3-round-8-color-5" tabindex="1"></label>
+              <label for="slot-3-round-8-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-8-slot-4">
+          <div>
+            <h2>Round 8 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-8-color-1" tabindex="1"></label>
+              <label for="slot-4-round-8-color-2" tabindex="1"></label>
+              <label for="slot-4-round-8-color-3" tabindex="1"></label>
+              <label for="slot-4-round-8-color-4" tabindex="1"></label>
+              <label for="slot-4-round-8-color-5" tabindex="1"></label>
+              <label for="slot-4-round-8-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-9">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-10">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-9-slot-1">
+          <div>
+            <h2>Round 9 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-9-color-1" tabindex="1"></label>
+              <label for="slot-1-round-9-color-2" tabindex="1"></label>
+              <label for="slot-1-round-9-color-3" tabindex="1"></label>
+              <label for="slot-1-round-9-color-4" tabindex="1"></label>
+              <label for="slot-1-round-9-color-5" tabindex="1"></label>
+              <label for="slot-1-round-9-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-9-slot-2">
+          <div>
+            <h2>Round 9 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-9-color-1" tabindex="1"></label>
+              <label for="slot-2-round-9-color-2" tabindex="1"></label>
+              <label for="slot-2-round-9-color-3" tabindex="1"></label>
+              <label for="slot-2-round-9-color-4" tabindex="1"></label>
+              <label for="slot-2-round-9-color-5" tabindex="1"></label>
+              <label for="slot-2-round-9-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-9-slot-3">
+          <div>
+            <h2>Round 9 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-9-color-1" tabindex="1"></label>
+              <label for="slot-3-round-9-color-2" tabindex="1"></label>
+              <label for="slot-3-round-9-color-3" tabindex="1"></label>
+              <label for="slot-3-round-9-color-4" tabindex="1"></label>
+              <label for="slot-3-round-9-color-5" tabindex="1"></label>
+              <label for="slot-3-round-9-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-9-slot-4">
+          <div>
+            <h2>Round 9 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-9-color-1" tabindex="1"></label>
+              <label for="slot-4-round-9-color-2" tabindex="1"></label>
+              <label for="slot-4-round-9-color-3" tabindex="1"></label>
+              <label for="slot-4-round-9-color-4" tabindex="1"></label>
+              <label for="slot-4-round-9-color-5" tabindex="1"></label>
+              <label for="slot-4-round-9-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup transition" id="transition-10">
+          <div>
+            <h2>Not there yet!</h2>
+            <p>Review the hints on the right side and make some changes in the next round.</p>
+            <div>
+              <label class="close" for="round-11">Next round!</label>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="round-10-slot-1">
+          <div>
+            <h2>Round 10 Slot 1</h2>
+            <div class="color-labels">
+              <label for="slot-1-round-10-color-1" tabindex="1"></label>
+              <label for="slot-1-round-10-color-2" tabindex="1"></label>
+              <label for="slot-1-round-10-color-3" tabindex="1"></label>
+              <label for="slot-1-round-10-color-4" tabindex="1"></label>
+              <label for="slot-1-round-10-color-5" tabindex="1"></label>
+              <label for="slot-1-round-10-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-10-slot-2">
+          <div>
+            <h2>Round 10 Slot 2</h2>
+            <div class="color-labels">
+              <label for="slot-2-round-10-color-1" tabindex="1"></label>
+              <label for="slot-2-round-10-color-2" tabindex="1"></label>
+              <label for="slot-2-round-10-color-3" tabindex="1"></label>
+              <label for="slot-2-round-10-color-4" tabindex="1"></label>
+              <label for="slot-2-round-10-color-5" tabindex="1"></label>
+              <label for="slot-2-round-10-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-10-slot-3">
+          <div>
+            <h2>Round 10 Slot 3</h2>
+            <div class="color-labels">
+              <label for="slot-3-round-10-color-1" tabindex="1"></label>
+              <label for="slot-3-round-10-color-2" tabindex="1"></label>
+              <label for="slot-3-round-10-color-3" tabindex="1"></label>
+              <label for="slot-3-round-10-color-4" tabindex="1"></label>
+              <label for="slot-3-round-10-color-5" tabindex="1"></label>
+              <label for="slot-3-round-10-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+        <div class="popup" id="round-10-slot-4">
+          <div>
+            <h2>Round 10 Slot 4</h2>
+            <div class="color-labels">
+              <label for="slot-4-round-10-color-1" tabindex="1"></label>
+              <label for="slot-4-round-10-color-2" tabindex="1"></label>
+              <label for="slot-4-round-10-color-3" tabindex="1"></label>
+              <label for="slot-4-round-10-color-4" tabindex="1"></label>
+              <label for="slot-4-round-10-color-5" tabindex="1"></label>
+              <label for="slot-4-round-10-color-6" tabindex="1"></label>
+            </div><a class="close" href="#">Close</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
