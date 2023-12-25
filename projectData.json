@@ -591,11 +591,50 @@
       "folderName":"Pet_Website",
       "thumbnailName":"kitter.png"
      },
-     "119": {
+    "119":{
+        "projectTitle":"An Chat App",
+        "folderName":"Chat_App",
+        "thumbnailName":"Chat_App.png"
+      },
+    "120": {
+       "projectTitle":"othello_game",
+       "folderName":"othello_game",
+       "thumbnailName":"othello_game.png"
+      },
+    "121": {
+      "projectTitle":"Drawing Pad",
+      "folderName":"Drawing-pad",
+      "thumbnailName":"Drawing-pad.jpeg"
+     },
+    "122": {
+        "projectTitle":"Gamics",
+        "folderName":"Gamics",
+        "thumbnailName":"GAMING.png"
+    },
+     "123": {
+        "projectTitle":"Javascript_roulette",
+        "folderName":"Javascript_roulette",
+        "thumbnailName":"Javascript_roulette.png"
+     },
+     "124": {
+        "projectTitle":"Dentelo",
+        "folderName":"Dentelo",
+        "thumbnailName":"DENTISTWEB.png"
+     },
+     "125": {
+       "projectTitle": "Daily Diary Entry Website",
+       "folderName": "Daily_Diary_Entry_Website",
+       "thumbnailName": "Daily_Diary_Entry_Website.png"
+    },
+    "126": {
+      "projectTitle":"Github Profile Viewer",
+      "folderName":"Github_Profile_Viewer",
+      "thumbnailName":"GithubProfile.png"
+     },
+    "127": {
       "projectTitle":"HealthDashboard",
       "folderName":"Health Dashboard",
       "thumbnailName":"HealthDashboard.png"
-     }
+    }
 }
-
 
