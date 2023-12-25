@@ -1,0 +1,84 @@
+.Admin-header{
+    font-size:2rem;
+    margin: 2% 0 1% 0;
+    font-weight: 600;
+    color: blueviolet;
+}
+.admin-card{
+    font-size: 1.5rem;
+    background-color: beige;
+    margin: 2% auto;
+    width: 70%;
+    border-radius: 10px;
+    height: max-content;
+    padding: 1%;
+    
+}
+.admin-card1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin-left-sec{
+  width: 50%;
+  text-align: center;
+  font-size: 1.75rem;
+  color: #1ACCAC;
+}
+.admin-right-sec{
+    width: 60%;
+   
+}
+.admin-content{
+padding-bottom: 1.5% ;
+
+}
+.admin-btn{
+    padding: 1% 4%;
+    font-family: "Montserrat";
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #1AACAC;
+    border: none;
+    color: white;
+    margin-top: 5% ;
+}
+.admin-btn:active{
+box-shadow: none;
+}
+.admin-vert-line{
+    height: 30vh;
+    border-left: 2px solid black;
+    width: 2vw;
+    margin-right: 10%;
+}
+.admin-modal{
+    background-color: whitesmoke;
+  width: 40vw;
+    display: block;
+    margin: auto;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #1a1b1b;
+}
+.admin-modal-content{
+    padding: 2% 0;
+    font-size: 1.5rem;
+    width: 10vw;
+}
+.admin-modal-select{
+    display: flex;
+    padding: 1%;
+}
+.admin-modal-selecttag{
+    width: 60%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
