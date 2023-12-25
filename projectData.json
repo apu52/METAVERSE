@@ -661,10 +661,17 @@
     "folderName":"Transit-Masters_Logistic",
     "thumbnailName":"Transit-Masters_Logistics.png"
      },
+
      "133": {
      "projectTitle":"EAT_FOOD_GAME",
      "folderName":"EAT_FOOD_GAME",
      "thumbnailName":"EAT_FOOD_GAME.png"
-      }
+      },
+  
+    "134": {
+      "projectTitle":"Excercise_Guide",
+      "folderName":"Excercise_Guide",
+      "thumbnailName":"Excercise_Guide.png"
+    }
 }
 
