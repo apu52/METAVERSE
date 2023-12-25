@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9fafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top:100px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .user-form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #86a6da;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0f3065;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #0f3065;
+    font-size: 18px;
+  }
+  
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #176e78;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(91, 158, 192, 0.595);
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+    border:3px solid dodgerblue;
+  }
+  
+  .profile h2 {
+    color: #4fccfd;
+    margin-bottom: 10px;
+  }
+  
+  .repo {
+    border: 5px outset #e47676;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .repo h3 {
+    color: #fafbfd;
+  }
+  
+  .repo p {
+    color: #8eeb8e;
+  }
+  
+  .repo a {
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .repo a:hover {
+    text-decoration: underline;
+  }
+  #lol{color:#d6f5f8 ;
+    margin-bottom: 12px;
+
+  }

@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,600;1,900&display=swap");
+:root {
+  --accent-clr: #555993;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  color: var(--accent-clr);
+  background-color: #00ffd9;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  font-family: Poppins, sans-serif;
+  background-color: #c9fbe8;
+}
+html {
+  overflow-x: hidden;
+}
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #c9fbe8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--accent-clr);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: spin 1.25s linear infinite;
+}
+button {
+  cursor: pointer;
+
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  background: var(--accent-clr);
+  color: #c9fbe8;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+
+  -webkit-tap-highlight-color: transparent;
+}
+button.secondary {
+  background-color: transparent;
+  color: var(--accent-clr);
+  outline: 2px solid var(--accent-clr);
+}
+button:hover {
+  background-color: #070b43b2;
+  color: #00ffa6;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem;
+  z-index: 10;
+}
+header {
+  position: relative;
+
+  z-index: 30;
+
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 3rem;
+}
+header a {
+  text-decoration: none;
+  max-width: 300px;
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3d4372;
+  width: max-content;
+}
+
+.hero .main-content {
+  position: relative;
+  z-index: 10;
+  width: 60vw;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+.hero .main-content h1 {
+  font-size: clamp(2rem, 7vw, 4rem);
+  color: #096167;
+}
+.hero .main-content .highlight {
+  color: var(--accent-clr);
+}
+.hero .main-content .char {
+  height: 1.3em;
+  overflow: hidden;
+  padding-top: 1em;
+
+  animation: wipe-in 1s ease-in-out forwards;
+}
+.hero .main-content .word {
+  white-space: nowrap;
+}
+.hero .buttons-container {
+  position: relative;
+  z-index: 10;
+  margin-top: 20px;
+  justify-content: flex-start;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 1.25s ease-in-out;
+}
+.background {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+.background img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40vw;
+  z-index: 2;
+}
+.background .circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, 30%);
+  z-index: 1;
+
+  background-color: transparent;
+  border: 1px solid #588071;
+  border-radius: 50%;
+
+  aspect-ratio: 1 / 1;
+
+  transform-origin: 100% 100%;
+  scale: 0.001;
+  transition: 1.25s;
+}
+.background .circle:nth-child(3) {
+  background-color: #dedede;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    margin-left: unset !important;
+    margin-top: unset !important;
+  }
+  .main-content h1 {
+    text-align: center;
+  }
+  .buttons-container {
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+  }
+  .background img {
+    display: none;
+  }
+  .background .circle {
+    right: unset;
+    bottom: unset;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    transform-origin: 0 0;
+
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .background .circle:nth-child(1) {
+    width: 190vw;
+  }
+  .background .circle:nth-child(2) {
+    width: 170vw;
+  }
+  .background .circle:nth-child(3) {
+    width: 150vw;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wipe-in {
+  0% {
+    padding-top: 1.3em;
+  }
+  100% {
+    padding-top: 0;
+  }
+}
