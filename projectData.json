@@ -647,19 +647,61 @@
         "thumbnailName":"HealthDashboard.png"
     },
     "130": {
+
+      "projectTitle":"GameX",
+      "folderName":"Gamex",
+      "thumbnailName":"esportpi2.jpg"
+  },
+  "131": {
        "projectTitle":"Bubble_Burst_Game",
        "folderName":"Bubble_Burst_Game",
        "thumbnailName":"Bubble_Burst_Game.png"
     },
-    "131": {
+    "132": {
     "projectTitle": "Medication Schedule Website",
     "folderName": "medicationSchedule",
     "thumbnailName": "medicationSchedule.png"
     },
-    "132": {
-      "projectTitle": "Crypto Price Tracker",
-      "folderName": "Crypto_Price_Tracker",
-      "thumbnailName": "Crypto.png"
-      }
+    "133": {
+      "projectTitle":"Transit-Masters",
+      "folderName":"Transit-Masters_Logistic",
+      "thumbnailName":"Transit-Masters_Logistics.png"
+     },
+    "134": {
+      "projectTitle":"Excercise_Guide",
+      "folderName":"Excercise_Guide",
+      "thumbnailName":"Excercise_Guide.PNG"
+    },
+    "135": {
+      "projectTitle":"Micro",
+      "folderName":"micro_podcast",
+      "thumbnailName":"podcastpic.png"
+    },
+    "136": {
+      "projectTitle":"NewsApp",
+      "folderName":"NewsApp",
+      "thumbnailName":"newsApp.png"
+    },
+    "137": {
+         "projectTitle": "Sports_Shoes_Website",
+         "folderName": "Sports_Shoes_Website",
+         "thumbnailName": "Sports_Shoes_Website.png"
+    },
+    "138": {
+          "projectTitle":"Mastermind",
+          "folderName":"Mastermind",
+          "thumbnailName":"Mastermind.jpeg"
+    },
+    "139": {
+      "projectTitle":"TasteHeaven",
+      "folderName":"TasteHeaven_Restaurant",
+      "thumbnailName":"TasteHeaven_Restaurant.png"
+    },
+    "140": {
+      "projectTitle":"EAT_FOOD_GAME",
+      "folderName":"EAT_FOOD_GAME",
+      "thumbnailName":"EAT_FOOD_GAME.png"
+    }
+>>>>>>> 0e4b3cd11cb3f8e95c2a0103092772f802ba0cb9
 }
 

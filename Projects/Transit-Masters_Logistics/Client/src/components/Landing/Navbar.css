@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #f6f5f9;  */
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&family=Montserrat&family=Poppins:wght@300;400;500;600;700;800&family=Sacramento&display=swap');
+
+.navbar{
+     background-color: rgb(254, 250, 250); 
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+}
+.logo{
+    margin:10px 10px 10px 5px;
+    padding: 10px;
+    font-family: "Montserrat";
+     font-size: 20px;
+     color:#1AACAC; 
+     font-weight: 600;
+     cursor: pointer;
+
+}
+.logo:hover{
+    color: blue;
+   
+
+}
+.left{
+    display: flex;
+}
+/* #11009E */
+.right>li{
+     margin:10px 10px 10px 15px;
+     
+     padding: 10px;
+     padding-top: 10px;
+     list-style: none;
+     font-family: "Montserrat";
+     font-size: 20px;
+     color:#1AACAC ;
+     font-weight: 600;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+
+}
+.right>li:hover{
+    color: #085959;
+    cursor: pointer;
+     
+}
+.material-symbols-rounded{
+    /* margin:10px 10px 10px 15px;
+    padding: 10px; */
+    font-size: 35px;
+    margin:5px 0px 10px 15px;
+    padding: 10px 0px 10px 10px;
+    color: #1AACAC;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.material-symbols-rounded:hover{
+    color: blue;
+}
+.right>a{
+    text-decoration: none;
+}
+.right>a:visited{
+    color: #1AACAC;
+}
+.nav-track-btn{
+    margin: auto 30%;
+    padding: 10% 45%;
+    /* height:5vh; */
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px gray;
+    cursor: pointer;
+
+}
+.nav-track-btn:active{
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .right {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  
+    .right > li {
+      margin: 10px 0;
+    }
+    .left{
+        margin: 0 auto;
+    }
+  
+    .logo,
+    .material-symbols-rounded {
+      margin: 10px 0;
+    }
+    .material-symbols-rounded {
+        display: none;
+    }
+    .Menu-Logout-button{
+        width: 100%;
+    }
+  }
