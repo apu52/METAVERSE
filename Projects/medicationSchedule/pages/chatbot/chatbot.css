@@ -1,0 +1,41 @@
+.title {
+  margin-bottom: 0;
+}
+.subtitle {
+  margin-bottom: 2em;
+}
+.chat-container {
+  position: relative;
+  padding-left: 50px;
+  width: min(70vw, 500px);
+}
+.chat {
+  border-radius: 10px;
+  padding: 2em;
+  background-color: white;
+}
+.chat-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.input-container {
+  position: fixed;
+  width: 80vw;
+  bottom: 100px;
+}
+input {
+  width: 100%;
+  padding: 2em;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3em;
+}
+.input-container .fa {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 2em;
+}
