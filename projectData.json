@@ -647,29 +647,40 @@
         "thumbnailName":"HealthDashboard.png"
     },
     "130": {
+
+      "projectTitle":"GameX",
+      "folderName":"Gamex",
+      "thumbnailName":"esportpi2.jpg"
+  },
+  "131": {
        "projectTitle":"Bubble_Burst_Game",
        "folderName":"Bubble_Burst_Game",
        "thumbnailName":"Bubble_Burst_Game.png"
     },
-    "131": {
+    "132": {
     "projectTitle": "Medication Schedule Website",
     "folderName": "medicationSchedule",
     "thumbnailName": "medicationSchedule.png"
     },
     "132": {
-    "projectTitle":"Transit-Masters",
-    "folderName":"Transit-Masters_Logistic",
-    "thumbnailName":"Transit-Masters_Logistics.png"
+      "projectTitle":"Transit-Masters",
+      "folderName":"Transit-Masters_Logistic",
+      "thumbnailName":"Transit-Masters_Logistics.png"
      },
     "133": {
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
-      "thumbnailName":"Excercise_Guide.png"
+      "thumbnailName":"Excercise_Guide.PNG"
     },
     "134": {
       "projectTitle":"NewsApp",
       "folderName":"NewsApp",
       "thumbnailName":"newsApp.png"
+    },
+    "135": {
+         "projectTitle": "Sports_Shoes_Website",
+         "folderName": "Sports_Shoes_Website",
+         "thumbnailName": "Sports_Shoes_Website.png"
     }
 }
 
