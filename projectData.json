@@ -712,7 +712,42 @@
       "folderName":"EAT_FOOD_GAME",
       "thumbnailName":"EAT_FOOD_GAME.png"
     },
-     "141": {
+    "141": {
+      "projectTitle":"Solutry",
+      "folderName":"IT_Solution",
+      "thumbnailName":"itsoln.png"
+    },
+    "142": {
+      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
+      "folderName": "GamifiedDashboard",
+      "thumbnailName": "GamifiedDashboard.png"
+    },
+    "143": {
+      "projectTitle":"Password Strength Checker",
+      "folderName":"Password-Strength",
+      "thumbnailName":"password.png"
+    },
+    "144": {
+      "projectTitle": "DOCLABS",
+      "folderName": "Doclab",
+      "thumbnailName": "DOCLAB.png"
+    },
+    "145":{
+      "projectTitle":"An Space Exploration",
+      "folderName":"Space_Exploration",
+      "thumbnailName":"Space_Exploration.png"
+    },
+    "146": {
+      "projectTitle":"Marketing_agency",
+      "folderName":"Marketing_agency",
+      "thumbnailName":"Marketing_agency.png"
+    },
+    "147": {
+      "projectTitle": "Matrix Calculator",
+      "folderName": "Matrix App",
+      "thumbnailName": "matrix.png"
+    },
+    "148": {
       "projectTitle":"Family_Travel_Tracker",
       "folderName":"Family_Travel_Tracker",
       "thumbnailName":"Family_Travel_Tracker.png"
