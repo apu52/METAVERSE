@@ -670,24 +670,29 @@
     "134": {
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
-      "thumbnailName":"Excercise_Guide.PNG"
+      "thumbnailName":"Excercise_Guide.png"
     },
     "135": {
+      "projectTitle":"WildVine",
+      "folderName":"Wildvine",
+      "thumbnailName":"charity.png"
+    },
+    "136": {
       "projectTitle":"Micro",
       "folderName":"micro_podcast",
       "thumbnailName":"podcastpic.png"
     },
-    "136": {
+    "137": {
       "projectTitle":"NewsApp",
       "folderName":"NewsApp",
       "thumbnailName":"newsApp.png"
     },
-    "137": {
+    "138": {
          "projectTitle": "Sports_Shoes_Website",
          "folderName": "Sports_Shoes_Website",
          "thumbnailName": "Sports_Shoes_Website.png"
     },
-    "138": {
+    "139": {
           "projectTitle":"Mastermind",
           "folderName":"Mastermind",
           "thumbnailName":"Mastermind.jpeg"
@@ -713,10 +718,22 @@
       "folderName":"IT_Solution",
       "thumbnailName":"itsoln.png"
     },
+
     "143": {
       "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
       "folderName": "GamifiedDashboard",
       "thumbnailName": "GamifiedDashboard.png"
+},
+
+    "144": {
+      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
+      "folderName": "GamifiedDashboard",
+      "thumbnailName": "GamifiedDashboard.png"
+    },
+    "145": {
+      "projectTitle":"Password Strength Checker",
+      "folderName":"Password-Strength",
+      "thumbnailName":"password.png"
 
     }
 }
