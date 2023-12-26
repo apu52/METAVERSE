@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=IBM+Plex+Sans&display=swap');
+
+body,
+html,
+#root {
+  height: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  padding: .77rem 0;
+  background-color: #010c3f;
+  text-align: center;
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.88rem;
+  color: #fff;
+}
+
+h1 .highlight {
+  color: #eca7dd;
+}
+
+h2 {
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.55rem;
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  background-color:rgb(196, 77, 180);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Belleza', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}

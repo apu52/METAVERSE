@@ -1,1 +1,0 @@
-Simple Rating Window App with html, css, javascript

@@ -716,6 +716,11 @@
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
+    },
+    "144":{
+      "projectTitle":"Spotify Playlist Generator",
+      "folderName":"Spotify Playlist Generator",
+      "thumbnailName":"spotify-playlist.png"
     }
 }
 
