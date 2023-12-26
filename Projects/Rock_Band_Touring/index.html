@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Mechanical Tragedy Tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/animate.min.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Emilys Candy', cursive;
+      color: red;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .tour-dates table {
+        width:50%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-left: 375px;
+    }
+
+    .tour-dates th,
+    .tour-dates td {
+      border: 1px solid white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .footer {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .footer img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+
+    .setlist {
+      margin-top: 20px;
+    }
+
+    .ticket-booking {
+      margin-top: 20px;
+    }
+
+    .viewer-counter {
+      margin-top: 20px;
+
+
+    
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin-top: 20px;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left: 500px;
+    }
+
+    form label,
+    form input {
+      margin-bottom: 10px;
+    }
+
+    label {
+      color: white;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background-color: #444;
+      color: white;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d60000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div>
+     <div style="background-color: white; border: 4px solid red; padding:2px 2px 4px 4px; width: 600px; align-items: center;"><h1 style="text-align: center;">Your Mechanical Tragedy</h1></div> 
+      <h2>Covers Tour</h2>
+    </div>
+    <div>
+      <img src="logo 2.pnggit" alt="Your Mechanical Tragedy Logo" style="width: 100px;">
+    </div>
+  </header>
+
+  <section class="tour-dates">
+    <h2>Tour Dates</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bangalore</td>
+          <td>Date 1</td>
+        </tr>
+        <tr>
+          <td>Ahmedabad</td>
+          <td>Date 2</td>
+        </tr>
+        <tr>
+          <td>Kolkata</td>
+          <td>Date 3</td>
+        </tr>
+        <tr>
+          <td>Delhi</td>
+          <td>Date 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="tour-dates">
+    <h2>Set List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Song 2</th>
+          <th>Blur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>What Do You Mean</td>
+          <td>Justin Bieber</td>
+        </tr>
+        <tr>
+          <td>Choo Lo</td>
+          <td>Local Train</td>
+        </tr>
+        <tr>
+          <td>Aro Ekbar</td>
+          <td>Fossils</td>
+        </tr>
+        <tr>
+          <td>Shake It</td>
+          <td>Metro Station</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="ticket-booking">
+    <!-- Include your ticket booking form or button here -->
+    <section class="ticket-booking">
+        <h2>Book Your Tickets</h2>
+        <form id="bookingForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="tickets">Number of Tickets:</label>
+          <input type="number" id="tickets" name="tickets" min="1" required>
+    
+          <button type="button" onclick="submitForm()">Book Now</button>
+        </form>
+    </section>
+    
+  </section>
+
+
+  <div class="footer">
+    <a href="https://www.instagram.com/" target="_blank"><img src="instagram-favicon.png" alt="Instagram"></a>
+    <a href="https://www.twitter.com/" target="_blank"><img src="twitter-favicon.png" alt="YouTube"></a>
+    <a href="https://www.google.com/" target="_blank"><img src="youtube.ico" alt="Google"></a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  
+</body>
+
+</html>
