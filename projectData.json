@@ -670,7 +670,7 @@
     "134": {
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
-      "thumbnailName":"Excercise_Guide.png"
+      "thumbnailName":"Excercise_Guide.PNG"
     },
     "135": {
       "projectTitle":"WildVine",
@@ -705,7 +705,7 @@
     "140": {
       "projectTitle":"EAT_FOOD_GAME",
       "folderName":"EAT_FOOD_GAME",
-      "thumbnailName":"EAT_FOOD_GAME.png"
+      "thumbnailName":"EAT_THE_FOOD.png"
     },
     "141": {
       "projectTitle":"Marketing_agency",
@@ -722,30 +722,55 @@
       "folderName": "GamifiedDashboard",
       "thumbnailName": "GamifiedDashboard.png"
     },
-
     "144": {
       "projectTitle": "Rental_ride",
       "folderName": "Rental_ride",
       "thumbnailName": "Rental_ride.png"
     },
     "145": {
+      "projectTitle": "Glowing",
+      "folderName": "glowing",
+      "thumbnailName": "beautypic.png"
+    },
+    "146": {
       "projectTitle":"Password Strength Checker",
       "folderName":"Password-Strength",
       "thumbnailName":"password.png"
     },
-    "146":{
+    "147":{
       "projectTitle": "DOCLABS",
       "folderName": "Doclab",
       "thumbnailName": "DOCLAB.png"
     },
-    "147":{
+    "148":{
       "projectTitle":"An Space Exploration",
       "folderName":"Space_Exploration",
       "thumbnailName":"Space_Exploration.png"
     },
-    "148": {
+    "149": {
       "projectTitle":"Marketing_agency",
       "folderName":"Marketing_agency",
       "thumbnailName":"Marketing_agency.png"
-    }
+    },
+    "150": {
+      "projectTitle": "Matrix Calculator",
+      "folderName": "Matrix App",
+      "thumbnailName": "matrix.png"
+    },
+    "151": {
+      "projectTitle":"Crypto_Tracker",
+      "folderName":"Crypto Price Tracker",
+      "thumbnailName":"Crypto.png"
+    },
+  "152": {
+      "projectTitle":"Wikipedia Clone",
+      "folderName":"Wikipedia-clone",
+      "thumbnailName":"Wikipedia-clone.png"
+    },
+  "153": {
+      "projectTitle":"Feedback Rating Window",
+      "folderName":"Feedback Rating",
+      "thumbnailName":"Feedback.png"
+  }
 }
+
