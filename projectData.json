@@ -722,15 +722,30 @@
       "folderName":"Password-Strength",
       "thumbnailName":"password.png"
     },
-    "144":{
+    "144": {
+      "projectTitle": "DOCLABS",
+      "folderName": "Doclab",
+      "thumbnailName": "DOCLAB.png"
+    },
+    "145":{
       "projectTitle":"An Space Exploration",
       "folderName":"Space_Exploration",
       "thumbnailName":"Space_Exploration.png"
     },
-    "145": {
+    "146": {
       "projectTitle":"Marketing_agency",
       "folderName":"Marketing_agency",
       "thumbnailName":"Marketing_agency.png"
+    },
+    "147": {
+      "projectTitle": "Matrix Calculator",
+      "folderName": "Matrix App",
+      "thumbnailName": "matrix.png"
+    },
+    "148": {
+      "projectTitle":"Crypto_Tracker",
+      "folderName":"Crypto Price Tracker",
+      "thumbnailName":"Crypto.png"
     }
     ,
     "147": {
@@ -739,3 +754,4 @@
       "thumbnailName":"SEO_WEBSITE.png"
     }
 }
+
