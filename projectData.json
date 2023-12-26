@@ -763,14 +763,29 @@
       "thumbnailName":"Crypto.png"
     },
   "152": {
+      "projectTitle":"SEO_WEBSITE",
+      "folderName":"SEO_WEBSITE",
+      "thumbnailName":"SEO_WEBSITE.png"
+    },
+    "153": {
       "projectTitle":"Wikipedia Clone",
       "folderName":"Wikipedia-clone",
       "thumbnailName":"Wikipedia-clone.png"
     },
-  "153": {
+  "154": {
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
-  }
+    },
+    "155": {
+      "projectTitle":"Tinder Clone",
+      "folderName":"tinder-clone",
+      "thumbnailName":"Tinder.png"
+    },
+    "156": {
+      "projectTitle":"Jokes App",
+      "folderName":"JokesApp",
+      "thumbnailName":"Jokes.png"
+    }
 }
 
