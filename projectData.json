@@ -706,6 +706,16 @@
       "projectTitle":"Marketing_agency",
       "folderName":"Marketing_agency",
       "thumbnailName":"Marketing_agency.png"
+    },
+  "142":{
+      "projectTitle":"Solutry",
+      "folderName":"IT_Solution",
+      "thumbnailName":"itsoln.png"
+    },
+    "143": {
+      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
+      "folderName": "GamifiedDashboard",
+      "thumbnailName": "GamifiedDashboard.png"
     }
 }
 
