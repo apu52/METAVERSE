@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>GitHub Profile Viewer</title>
+</head>
+<body>
+  <div class="container">
+    <form class="user-form" id="form">
+      <input type="text" placeholder="Enter GitHub username" id="username" />
+      <select id="sort">
+        <option value="created">Created</option>
+        <option value="updated">Updated</option>
+        <option value="pushed">Pushed</option>
+        <option value="full_name">Full Name</option>
+      </select>
+      <select id="type">
+        <option value="all">All</option>
+        <option value="owner">Owner</option>
+        <option value="member">Member</option>
+      </select>
+      <select id="per_page">
+        <option value="10">10 per page</option>
+        <option value="20">20 per page</option>
+        <option value="30">30 per page</option>
+      </select>
+      <button type="submit">View Profile</button>
+    </form>
+    <div id="profile" class="profile"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

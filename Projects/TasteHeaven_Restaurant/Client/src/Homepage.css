@@ -1,0 +1,132 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f5f9;
+    flex-wrap: wrap;
+  }
+  
+  .leftcontent {
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 10%;
+    text-align: center;
+  }
+  
+  .typedjs {
+    font-family: "Montserrat";
+    font-size: 1.875rem;
+    font-weight: 500;
+    padding: 1rem;
+    margin: 1rem;
+    color: #ff1e00;
+  }
+  
+  .homeImg {
+    height: 60vh;
+  
+    margin: 10% 0 15% -1%;
+    padding: 1rem;
+  }
+  
+  .headerdiff {
+    color: blue;
+    font-weight: 600;
+  }
+  
+  .registercontent {
+    font-size: 1.5rem;
+    margin-top: 3%;
+    padding-left: 1%;
+  }
+  
+  .rgstrbtn {
+    margin: 1.25rem;
+    margin-bottom: 0;
+    width: max-content;
+    padding: 0.5rem;
+    border-radius: 0.3125rem;
+    background-color: blueviolet;
+    font-size: 1.25rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .lgnbtn {
+    margin: 1.25rem;
+    margin-left: 0.75rem;
+    margin-bottom: 0;
+    width: max-content;
+    padding: 0.5rem;
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: blueviolet;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    background-color: #f6f5f9;
+  }
+  
+  .rgstrbtn:hover {
+    color: blueviolet;
+    background-color: #f6f5f9;
+  }
+  
+  .lgnbtn:hover {
+    color: white;
+    background-color: blueviolet;
+  }
+  
+  @media only screen and (max-width: 48rem) {
+    .Home {
+      flex-direction: column-reverse;
+    }
+  
+    .leftcontent,.typedjs  {
+      font-size: 1.25rem;
+      padding: 0;
+    }
+  
+    .homeImg {
+      width: 90%;
+      margin: 10% 0;
+      height: 80%;
+    }
+  
+    .registercontent   {
+      font-size: 1.125rem;
+    }
+  
+    .rgstrbtn,
+    .lgnbtn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 30rem) {
+    .leftcontent {
+      font-size: 1rem;
+    }
+  
+    .homeImg {
+      width: 100%;
+      margin: 10% 0;
+    }
+  
+    .registercontent {
+      font-size: 0.875rem;
+    }
+  
+    .rgstrbtn,
+    .lgnbtn {
+      font-size: 0.75rem;
+    }
+  }
+  

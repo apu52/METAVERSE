@@ -1,0 +1,201 @@
+.userProfile-label{
+    font-size: 25px;
+    font-family: "Montserrat";
+    display: inline-block;
+    padding: 2% 5% 0 0;
+}
+.userProfile-input{
+border: none;
+border-bottom: 2px solid blue;
+padding-top: 1% ;
+width: 80%;
+font-size: 25px;
+    font-family: "Montserrat";
+    background-color: #f5f6f9;
+
+
+}
+.userProfile-profile-content{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    height:9vh
+}
+.userProfile-profile{
+
+    background-color: #f5f6f9;
+    width: 40%;
+    padding: 2% 2%;
+    margin-bottom:2% ;
+    /* margin: 0 auto; */
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgb(41, 40, 40);
+}
+.userProfile-header{
+    font-size: 35px;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 4%;
+    color: blueviolet;
+}
+.userProfile-userimg{
+    height: 30vh;
+    /* margin: 0 auto; */
+    display: block;
+    border-radius: 15px;
+    box-shadow:  8px 8px 8px rgb(0, 0, 0) ;
+}
+.Ordersummary-header{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    /* justify-content: center; */
+    width: 94%;
+    background-color: rgb(139, 13, 211);
+    border-radius: 10px;
+    margin:2% 0 0 1.3%;
+
+}
+
+
+.Ordersummary-header-elements{
+   width: 10%;
+   font-size: 25px;
+   font-family: "Montserrat";
+   text-align: center;
+   color: white;
+   border-right: 2px solid black;
+   
+}
+/* .table{
+    width: 82%;
+    margin-left: 9%;
+    box-shadow: 7px 7px 7px rgb(194, 184, 184);
+} */
+.profile-outer-box{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;   
+}
+table {
+    margin :0 auto;
+    width: 95%;
+    border-collapse: collapse;
+    box-shadow: 7px 7px 7px 7px rgb(57, 56, 56);
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: black;
+    background-color: #f5f5f5;
+  }
+  
+  th,td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 25%;
+  }
+  
+  th {
+    background-color: #525fe1;
+    color: white;
+  }
+
+  .carousel .slide img {
+    max-height: 300px;
+  }
+  
+  .carousel .slide p.legend {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: -40px;
+  }
+  thead th{
+    position: sticky;
+    top: 0;
+  }
+  .user-edit{
+    height: 5vh;
+    float: right;
+  color: #525fe1;
+  }
+  .user-edit:active{
+    transform: scale(1.1);
+  }
+.profile-edit-button{
+    padding: 1%;
+    width: 15%;
+    font-size: 1.25rem;
+    border: none;
+    background-color: #525fe1;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(24, 2, 49);
+
+
+}
+.profile-edit-button:active{
+    box-shadow: none;
+}
+  @media only screen and (max-width: 768px) {
+    /* tr{
+display: block;
+    } */
+    .userProfile-profile-content{
+        flex-direction: column;
+
+    }
+    .userprofile-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .userProfile-userimg{
+        display: block;
+    }
+    .userProfile-profile{
+        display: block;
+        margin-top: 5%;
+        width: 80%;
+    }
+    .profile-outer-box{
+       flex-direction: column;
+       display: block;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+    }
+    input{
+        text-align: center;
+    }
+    .profile-order-box{
+        width: 90%;
+        margin-top: 5%;
+        display: block;
+        margin: 0 auto;
+    }
+    th,td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        width: 33.33%;
+      }
+      thead th{
+        position: sticky;
+        top: 0;
+      }
+      .userProfile-input{
+        text-align: center;
+        overflow-y: hidden;
+      }
+      .userProfile-label{
+        text-align: center;
+        overflow-y: hidden;
+      }
+      .user-edit{
+        height: 3vh;
+      }
+  }

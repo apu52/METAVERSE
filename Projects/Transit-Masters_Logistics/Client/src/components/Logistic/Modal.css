@@ -1,0 +1,38 @@
+.Modal-content{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    margin: 0 auto;
+    display: block;
+    margin: 2.5% 2.5%;
+    font-weight: 600;
+}
+.Modal-box{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+    padding: 2%;
+    width:45%;
+    z-index: 50;
+    position: fixed;
+    height: fit-content;
+    
+
+}
+.Modal-btn{
+    padding: 1% 4%;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #0fd049;
+    border: none;
+    color: white;
+    display: block;
+    margin: 0% auto;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.Modal-btn:active{
+    box-shadow: none;
+}

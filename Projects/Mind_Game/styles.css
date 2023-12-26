@@ -1,0 +1,198 @@
+html {
+	box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+	box-sizing: inherit;
+  }
+  
+  html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: 'Concert One', 'Coda', san-serif, cursive;
+  }
+  
+  .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  .score-table {
+	text-align: left;
+	width: 500px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+  }
+  
+  .stars {
+	display: flex;
+	list-style: none;
+  }
+  
+  .restart {
+	cursor: pointer;
+  }
+  
+  .deck {
+	background: linear-gradient(135deg, rgba(207, 197, 229, 1) 0%, rgba(163, 154, 204, 1) 36%, rgba(79, 71, 169, 1) 100%);
+	margin: 0;
+	width: 612px;
+	min-height: 500px;
+	box-shadow: 10px 9px 31px 1px rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin-bottom: 15px;
+	align-items: center;
+  }
+  
+  .card {
+	transform: rotateY(0);
+	transition: 0.5s;
+	width: 125px;
+	height: 125px;
+	background: linear-gradient(to bottom, rgba(69, 72, 77, 1) 0%, rgba(0, 0, 0, 1) 100%);
+	box-shadow: 5px 5px 24px -3px rgba(0, 0, 0, 0.75);
+	border-radius: 8px;
+	font-size: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin-top: 15px;
+	cursor: pointer;
+  }
+  
+  .show {
+	transform: rotateY(180deg);
+	transition: 0.5s;
+	background: skyblue;
+	font-size: 33px;
+	color: white;
+	cursor: default;
+  }
+  
+  .match {
+	background: rgb(4, 172, 54);
+  }
+  
+  .no-match {
+	background: rgb(175, 38, 38);
+	transition: 0.1s;
+  }
+  
+  .modal {
+	z-index: 1;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+  
+  .modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(241, 241, 241);
+	padding: 1rem 1.5rem;
+	width: 35rem;
+	border-radius: 0.5rem;
+	text-align: center;
+  }
+  
+  .close-button {
+	float: right;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: lightgray;
+  }
+  
+  .close-button:hover {
+	background-color: darkgray;
+  }
+  
+  .show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+  
+  .tick {
+	color: rgba(0, 218, 29, 0.767);
+	font-size: 60px;
+	margin-left: 35px;
+  }
+  
+  .modal-heading {
+	letter-spacing: 2px;
+  }
+  
+  .stats {
+	color: rgb(143, 143, 143);
+	margin-top: 30px;
+  }
+  
+  .new-game {
+	background: rgb(75, 189, 0);
+	color: #fff;
+	border: 0;
+	padding: 1em 2em;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin-top: 25px;
+  }
+  
+  @media screen and (max-width: 600px) {
+	.deck {
+		width: 350px;
+		min-height: 280px;
+	}
+	.card {
+		width: 68px;
+		height: 68px;
+	}
+	.show{
+		font-size: 30px;
+	}
+	.modal-content {
+		width: 15rem;
+	}
+	.tick {
+		color: rgba(0, 218, 29, 0.767);
+		font-size: 45px;
+		margin-left: 25px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	.score-table {
+		width: 320px;
+	}
+  }

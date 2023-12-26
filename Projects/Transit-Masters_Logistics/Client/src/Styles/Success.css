@@ -1,0 +1,31 @@
+.success-box{
+    padding: 2%;
+}
+.success-header{
+    font-family: Montserrat;
+    font-size: 2rem;
+    color: green;
+    margin: 1% 0% 1% 0%;
+    font-weight: 800;
+}
+.success-subhead{
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    color: rgb(32, 18, 134);
+    margin-bottom: 1%;
+    font-weight: 600;
+}
+.success-track-header{
+    font-family: Montserrat;
+    font-size: 1.75rem;
+    color: blue;
+    margin: 1% 0%;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.success-track-content{
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    margin: 1% 0%;
+    
+}
