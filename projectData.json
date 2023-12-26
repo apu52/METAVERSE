@@ -706,6 +706,11 @@
       "projectTitle":"Solutry",
       "folderName":"IT_Solution",
       "thumbnailName":"itsoln.png"
+    },
+    "141": {
+      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
+      "folderName": "GamifiedDashboard",
+      "thumbnailName": "GamifiedDashboard.png"
     }
 }
 
