@@ -670,7 +670,7 @@
     "134": {
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
-      "thumbnailName":"Excercise_Guide.png"
+      "thumbnailName":"Excercise_Guide.PNG"
     },
     "135": {
       "projectTitle":"WildVine",
@@ -705,7 +705,7 @@
     "140": {
       "projectTitle":"EAT_FOOD_GAME",
       "folderName":"EAT_FOOD_GAME",
-      "thumbnailName":"EAT_FOOD_GAME.png"
+      "thumbnailName":"EAT_THE_FOOD.png"
     },
     "141": {
       "projectTitle":"Solutry",
@@ -748,10 +748,21 @@
       "thumbnailName":"Crypto.png"
     }
     ,
-    "147": {
+    "149": {
       "projectTitle":"SEO_WEBSITE",
       "folderName":"SEO_WEBSITE",
       "thumbnailName":"SEO_WEBSITE.png"
     }
+  "151": {
+      "projectTitle":"Wikipedia Clone",
+      "folderName":"Wikipedia-clone",
+      "thumbnailName":"Wikipedia-clone.png"
+    },
+  "152": {
+      "projectTitle":"Feedback Rating Window",
+      "folderName":"Feedback Rating",
+      "thumbnailName":"Feedback.png"
+  }
+
 }
 
