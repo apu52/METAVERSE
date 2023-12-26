@@ -732,7 +732,15 @@
       "projectTitle":"Password Strength Checker",
       "folderName":"Password-Strength",
       "thumbnailName":"password.png"
-
+    },
+    "146":{
+      "projectTitle":"An Space Exploration",
+      "folderName":"Space_Exploration",
+      "thumbnailName":"Space_Exploration.png"
+    },
+    "147": {
+      "projectTitle":"Marketing_agency",
+      "folderName":"Marketing_agency",
+      "thumbnailName":"Marketing_agency.png"
     }
 }
-
