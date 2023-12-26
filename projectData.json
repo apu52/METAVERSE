@@ -576,17 +576,11 @@
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
     },
-<<<<<<< HEAD
     "106": {
       "projectTitle":"Blog_Keeper",
       "folderName":"Blog_Keeper",
       "thumbnailName":"Blog_Keeper.png"
     },
-    "107": {
-      "projectTitle":"Family_Travel_Tracker",
-      "folderName":"Family_Travel_Tracker",
-      "thumbnailName":"Family_Travel_Tracker.png"
-=======
     "116": {
       "projectTitle":"barber Website",
       "folderName":"barber",
@@ -682,7 +676,7 @@
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
       "thumbnailName":"Excercise_Guide.png"
-    },
+    }
     "135": {
       "projectTitle":"WildVine",
       "folderName":"Wildvine",
@@ -718,35 +712,10 @@
       "folderName":"EAT_FOOD_GAME",
       "thumbnailName":"EAT_FOOD_GAME.png"
     },
-    "141": {
-      "projectTitle":"Solutry",
-      "folderName":"IT_Solution",
-      "thumbnailName":"itsoln.png"
-    },
-    "142": {
-      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
-      "folderName": "GamifiedDashboard",
-      "thumbnailName": "GamifiedDashboard.png"
-    },
-    "143": {
-      "projectTitle":"Password Strength Checker",
-      "folderName":"Password-Strength",
-      "thumbnailName":"password.png"
-    },
-    "144": {
-      "projectTitle": "DOCLABS",
-      "folderName": "Doclab",
-      "thumbnailName": "DOCLAB.png"
-    },
-    "145":{
-      "projectTitle":"An Space Exploration",
-      "folderName":"Space_Exploration",
-      "thumbnailName":"Space_Exploration.png"
-    },
-    "146": {
-      "projectTitle":"Marketing_agency",
-      "folderName":"Marketing_agency",
-      "thumbnailName":"Marketing_agency.png"
->>>>>>> 01c56d88d3a2fc5a3c034aaa34d666759f9bc6c9
-    }
+     "141": {
+      "projectTitle":"Family_Travel_Tracker",
+      "folderName":"Family_Travel_Tracker",
+      "thumbnailName":"Family_Travel_Tracker.png"
+     }
 }
+
