@@ -751,28 +751,33 @@
       "projectTitle":"Crypto_Tracker",
       "folderName":"Crypto Price Tracker",
       "thumbnailName":"Crypto.png"
-    }
-    ,
+    },
     "150": {
       "projectTitle":"SEO_WEBSITE",
       "folderName":"SEO_WEBSITE",
       "thumbnailName":"SEO_WEBSITE.png"
-    }
-  "151": {
+    },
+    "151": {
       "projectTitle":"Wikipedia Clone",
       "folderName":"Wikipedia-clone",
       "thumbnailName":"Wikipedia-clone.png"
     },
-  "152": {
+    "152": {
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
   },
-  "152": {
+  "153": {
       "projectTitle":"Cannon Shooting",
       "folderName":"Cannon-shooting",
       "thumbnailName":"Cannon-shooting.png"
-  }
+  },
+
+    "154": {
+      "projectTitle":"Tinder Clone",
+      "folderName":"tinder-clone",
+      "thumbnailName":"Tinder.png"
+    }
 
 }
 
