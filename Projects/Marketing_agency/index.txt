@@ -1,0 +1,216 @@
+InnoHub - We're available for marketing
+
+#---------- HEADER ----------#
+
+InnoHub
+
+Home
+Services
+Project
+About Us
+Blog
+Contact Us
+
+Get Started
+
+aria-label = Toggle menu
+<ion-icon name="menu-outline" class="open"></ion-icon>
+<ion-icon name="close-outline" class="close"></ion-icon>
+
+
+
+#---------- HERO ----------#
+
+InnoHub Marketing Agency
+
+We are available for marketing
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporthem incididunt ut labore et dolore magna aliqua.
+
+Get Started
+
+alt = hero banner
+
+
+
+#---------- SERVICE ----------#
+
+Services We Provided
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+<ion-icon name="chatbox"></ion-icon>
+
+SEO Optimization
+
+Sed ut perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+
+<ion-icon name="desktop"></ion-icon>
+Digital Marketing
+
+<ion-icon name="bulb"></ion-icon>
+Market Research
+
+<ion-icon name="phone-portrait"></ion-icon>
+Keyword Targeting
+
+<ion-icon name="archive"></ion-icon>
+Email Marketing
+
+<ion-icon name="build"></ion-icon>
+Marketing & Reporting
+
+
+
+#---------- PROJECT ----------#
+
+Our Recent Projects
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+alt = Designing a better cinema experience
+
+SEO Optimization
+
+Designing a better cinema experience
+
+View Details
+
+
+alt = Building design process within teams
+Digital Marketing
+
+alt = How intercom brings play into their design process
+Keyword Targeting
+
+alt = Stuck with to-do list, I created a new app for
+Email Marketing
+
+alt = Examples of different types of sprints
+Marketing & Reporting
+
+alt = Redesigning the New York times app
+Development
+
+
+
+#---------- ABOUT ----------#
+
+alt = about banner
+
+aria-label = Play video
+
+<ion-icon name="play" aria-hidden="true"></ion-icon>
+
+About Us
+
+Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In sagittis eg esta ante, sed viverra nunc tinci dunt nec elei fend et tiram.
+
+Who We Are
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+Our Success
+
+<ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+
+Our Mission
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in.
+
+
+
+#---------- CTA ----------#
+
+So What is Next?
+
+Are You Ready? Let's get to Work!
+
+Get Started
+
+
+
+#---------- BLOG ----------#
+
+Latest Articles Updated Weekly
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+alt = How to Become a Successful Entry Level UX Designer
+
+June 16, 2022
+
+How to Become a Successful Entry Level UX Designer
+
+alt = 2022 Local SEO Success: The Year of Everywhere
+
+alt = The Guide to Running a Client Discovery Process
+
+alt = 3 Ways to Get Client Approval for Scope Changes
+
+alt = Top 21 Must-Read Blogs For Creative Agencies
+
+
+
+#---------- CONTACT ----------#
+
+Let's Contact With Us
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+aria-label = name
+placeholder = Your name*
+
+aria-label = email
+placeholder = Email address*
+
+aria-label = subject
+placeholder = Subject
+
+aria-label = phone
+placeholder = Phone number
+
+aria-label = message
+placeholder = Your message...*
+
+Accept Terms of Services and Privacy Policy
+
+Send Message
+
+<ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+Mail Here
+hello@luaz.com
+info@luaz.com
+
+<ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+
+Visit Here
+27 Division St, New York,
+NY 10002, USA
+
+<ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+
+Call Here
++123 456 7890
++241 452 4526
+
+
+
+#---------- FOOTER ----------#
+
+&copy; 2022 All Rights Reserved by codewithsadee
+
+
+
+#---------- BACK TO TOP ----------#
+
+aria-label = back to top
+
+<ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
