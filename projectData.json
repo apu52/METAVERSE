@@ -731,44 +731,64 @@
       "thumbnailName": "GamifiedDashboard.png"
     },
     "145": {
+      "projectTitle": "Glowing",
+      "folderName": "glowing",
+      "thumbnailName": "beautypic.png"
+    },
+    "146": {
       "projectTitle":"Password Strength Checker",
       "folderName":"Password-Strength",
       "thumbnailName":"password.png"
     },
-    "146": {
+    "147": {
       "projectTitle": "DOCLABS",
       "folderName": "Doclab",
       "thumbnailName": "DOCLAB.png"
     },
-    "147":{
+    "148":{
       "projectTitle":"An Space Exploration",
       "folderName":"Space_Exploration",
       "thumbnailName":"Space_Exploration.png"
     },
-    "148": {
+    "149": {
       "projectTitle":"Marketing_agency",
       "folderName":"Marketing_agency",
       "thumbnailName":"Marketing_agency.png"
     },
-    "149": {
+    "150": {
       "projectTitle": "Matrix Calculator",
       "folderName": "Matrix App",
       "thumbnailName": "matrix.png"
     },
-    "150": {
+    "151": {
       "projectTitle":"Crypto_Tracker",
       "folderName":"Crypto Price Tracker",
       "thumbnailName":"Crypto.png"
     },
-  "151": {
+  "152": {
+      "projectTitle":"SEO_WEBSITE",
+      "folderName":"SEO_WEBSITE",
+      "thumbnailName":"SEO_WEBSITE.png"
+    },
+    "153": {
       "projectTitle":"Wikipedia Clone",
       "folderName":"Wikipedia-clone",
       "thumbnailName":"Wikipedia-clone.png"
     },
-  "152": {
+  "154": {
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
-  }
+    },
+    "155": {
+      "projectTitle":"Tinder Clone",
+      "folderName":"tinder-clone",
+      "thumbnailName":"Tinder.png"
+    },
+    "156": {
+      "projectTitle":"Jokes App",
+      "folderName":"JokesApp",
+      "thumbnailName":"Jokes.png"
+    }
 }
 
