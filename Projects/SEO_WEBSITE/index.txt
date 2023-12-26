@@ -1,0 +1,221 @@
+SCEO - Seo agency website
+
+
+
+# HEADER
+
+alt = SCEO logo
+
+<ion-icon name="menu-outline"></ion-icon>
+<ion-icon name="close-outline"></ion-icon>
+
+Home
+Service
+About
+Features
+Pricing
+FAQ's
+
+Let's Started
+
+
+
+# HERO
+
+Get more sales with SEO, PPC, and Email Marketing
+
+placeholder = Enter your name*
+placeholder = Enter your email*
+
+Get started now
+
+Free 30 days trial
+Exclusive Support
+No Fees
+
+alt = Seo illustration
+
+
+
+# SERVICE
+
+Get More Customers Online
+
+Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus, blandit and cursus varius and magnis sapien
+
+<ion-icon name="location-outline"></ion-icon>
+Local SEO
+Porta semper lacus cursus feugiat and primis ultrice
+
+<ion-icon name="bar-chart-outline"></ion-icon>
+E-Commerce SEO
+
+<ion-icon name="pie-chart-outline"></ion-icon>
+Advanced Analytics
+
+<ion-icon name="magnet-outline"></ion-icon>
+PPC Management
+
+
+
+# ABOUT
+
+alt = Seo illustration
+
+quick and secure
+
+First page rankings. First name basis
+
+Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
+
+Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
+
+
+alt = Seo illustration
+
+Advanced Analytics Review
+
+Quaerat sodales sapien euismod blandit at vitae ipsum primis undo and cubilia laoreet augue and luctus magna dolor luctus at egestas sapien vitae nemo egestas volute and turpis dolores aliquam quaerat sodales a sapien
+
+Improve Your Website Ranking Fast
+
+Fringilla risus, luctus mauris auctor euismod an iaculis luctus magna purus pretium ligula purus and quaerat
+
+Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at sodales sapien purus
+
+
+
+# FEATURES
+
+Market research
+Integrated marketing solutions that fuel business growth
+
+<ion-icon name="analytics-outline"></ion-icon>
+Advanced Analytics Review
+
+Porta semper lacus cursus feugiat primis ultrice ligula risus auctor tempus feugiat impedit undo auctor felis augue mauris aoreet tempor
+
+<ion-icon name="mail-open-outline"></ion-icon>
+Email Marketing Campaigns
+
+<ion-icon name="film-outline"></ion-icon>
+Video Marketing
+
+<ion-icon name="globe-outline"></ion-icon>
+Search Engine Optimization (SEO)
+
+<ion-icon name="magnet-outline"></ion-icon>
+Pay Per Click (PPC)
+
+<ion-icon name="layers-outline"></ion-icon>
+Content Marketing
+
+
+
+# PRICING
+
+Easiest to use
+
+One brilliant idea for every client
+
+Aliqum mullam blandit tempor sapien gravida at donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
+
+Pricing & packages
+
+alt = Pricing illustration
+
+
+
+# FAQ
+
+Frequently asked questions
+
+Everything you need to know before getting started
+
+Can I see SCEO in action before purchasing?
+
+Etiam amet mauris suscipit in odio integer congue metus vitae arcu mollis blandit ultrice ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
+
+What are the requirements for using SCEO?
+
+An enim nullam tempor sapien gravida a donec ipsum enim an porta justo integer at velna vitae auctor integer congue undo magna at pretium purus pretium
+
+Can I use SCEO on different devices?
+
+Fringilla risus, luctus mauris orci auctor purus ligula euismod pretium purus pretium rutrum tempor sapien
+
+Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium a purus
+
+Do you have a free trial?
+
+Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec and neque. Blandit justo aliquam molestie nunc sapien
+
+How does SCEO handle my privacy?
+
+Etiam amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis blandit ultrice ligula
+
+An enim nullam tempor sapien gravida donec congue leo metus. Vitae arcu mollis blandit integer at velna
+
+I have an issue with my account
+
+Fringilla risus, luctus mauris orci auctor purus
+
+Quaerat sodales sapien euismod blandit purus and ipsum primis in cubilia laoreet augue luctus
+
+Have more questions?
+Ask your question here
+
+
+
+# CTA
+
+Try SCEO free for 14 days. Start your trial now and pick a plan later
+
+Get started now
+
+Read The FAQs
+
+
+
+# FOOTER
+
+alt = SCEO logo
+
+Aliquam nullam tempor sapien donec and gravida congue an ipsum porta justo velna auctor magna and laoreet augue an auctor gravida donec
+
+Company
+
+About Us
+Careers
+Press & Media
+Contact Us
+
+Discover
+
+Our Blog
+Advertising
+Plans & Pricing
+Testimonials
+
+Legal
+
+Terms of Use
+Privacy Policy
+Cookie Policy
+Site Map
+
+Support
+
+FAQs
+Editor Help
+Community
+Live Chatting
+
+&copy; 2022 codewithsadee. All Rights Reserved
+
+GitHub
+Twitter
+Instagram
+YouTube
+
+<ion-icon name="arrow-up-outline"></ion-icon>
