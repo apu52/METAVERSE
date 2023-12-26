@@ -703,9 +703,21 @@
       "thumbnailName":"EAT_FOOD_GAME.png"
     },
     "141": {
+
       "projectTitle":"Ridex",
       "folderName":"ridex",
       "thumbnailName":"CARRENT.png"
+    },
+"142": {
+      "projectTitle":"Solutry",
+      "folderName":"IT_Solution",
+      "thumbnailName":"itsoln.png"
+    },
+    "143": {
+      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
+      "folderName": "GamifiedDashboard",
+      "thumbnailName": "GamifiedDashboard.png"
+
     }
 }
 
