@@ -726,6 +726,15 @@
       "projectTitle": "DOCLABS",
       "folderName": "Doclab",
       "thumbnailName": "DOCLAB.png"
+    },
+    "145":{
+      "projectTitle":"An Space Exploration",
+      "folderName":"Space_Exploration",
+      "thumbnailName":"Space_Exploration.png"
+    },
+    "146": {
+      "projectTitle":"Marketing_agency",
+      "folderName":"Marketing_agency",
+      "thumbnailName":"Marketing_agency.png"
     }
 }
-
