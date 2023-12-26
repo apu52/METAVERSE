@@ -707,10 +707,20 @@
       "folderName":"IT_Solution",
       "thumbnailName":"itsoln.png"
     },
-    "141": {
+    "142": {
       "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
       "folderName": "GamifiedDashboard",
       "thumbnailName": "GamifiedDashboard.png"
+    },
+    "143": {
+      "projectTitle": "Jokes Generator",
+      "folderName": "JokesApp",
+      "thumbnailName": "Jokes.png"
+    },
+    "144": {
+      "projectTitle": "Tinder Clone",
+      "folderName": "tinder-clone",
+      "thumbnailName": "Tinder.png"
     }
 }
 
