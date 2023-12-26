@@ -670,24 +670,29 @@
     "134": {
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
-      "thumbnailName":"Excercise_Guide.PNG"
+      "thumbnailName":"Excercise_Guide.png"
     },
     "135": {
+      "projectTitle":"WildVine",
+      "folderName":"Wildvine",
+      "thumbnailName":"charity.png"
+    },
+    "136": {
       "projectTitle":"Micro",
       "folderName":"micro_podcast",
       "thumbnailName":"podcastpic.png"
     },
-    "136": {
+    "137": {
       "projectTitle":"NewsApp",
       "folderName":"NewsApp",
       "thumbnailName":"newsApp.png"
     },
-    "137": {
+    "138": {
          "projectTitle": "Sports_Shoes_Website",
          "folderName": "Sports_Shoes_Website",
          "thumbnailName": "Sports_Shoes_Website.png"
     },
-    "138": {
+    "139": {
           "projectTitle":"Mastermind",
           "folderName":"Mastermind",
           "thumbnailName":"Mastermind.jpeg"
@@ -713,14 +718,23 @@
       "thumbnailName": "GamifiedDashboard.png"
     },
     "143": {
+      "projectTitle":"Password Strength Checker",
+      "folderName":"Password-Strength",
+      "thumbnailName":"password.png"
+    },
+    "144":{
+      "projectTitle":"An Space Exploration",
+      "folderName":"Space_Exploration",
+      "thumbnailName":"Space_Exploration.png"
+    },
+    "145": {
+      "projectTitle":"Marketing_agency",
+      "folderName":"Marketing_agency",
+      "thumbnailName":"Marketing_agency.png"
+    },
+    "146": {
       "projectTitle": "Jokes Generator",
       "folderName": "JokesApp",
       "thumbnailName": "Jokes.png"
-    },
-    "144": {
-      "projectTitle": "Tinder Clone",
-      "folderName": "tinder-clone",
-      "thumbnailName": "Tinder.png"
     }
 }
-
