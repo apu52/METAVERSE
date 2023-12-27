@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x:hidden;
+  width: 100%;
+ 
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("pages/pexels-cottonbro-studio-3993294.jpg");
+   
+  min-height: 380px;
+  max-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  
+
+  /* Needed to position the navbar */
+  /* position: relative; */
+}
+.tag
+{
+  text-align: center;
+  font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    z-index: 3;
+    position: relative;
+    font-family: axiforma-semiBold,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    text-shadow: 0 1px 8px rgb(0 0 0 / 20%);
+    margin-top: 100px;
+}
+.chooseimage
+{
+  background-color: #696561;
+  margin: auto;
+  
+  
+}
+.bgcolor
+{
+  background-color:black ;
+}
+.card:hover {
+  display: block;
+  color: #fff;
+  transform: scale(1.025);
+  transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+.rand{
+  position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 150px;
+    color: rgb(54, 54, 54);
+    margin-left: 1.3rem;
+    padding-top: 10px
+}
+.iQwVCC
+{
+  width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 22.1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(255, 255, 255) rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+}
+.xx
+{
+  margin-left: auto;
+  font-size: 3.6rem;
+    line-height: 4.8rem;
+    color: rgb(54, 54, 54);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+ 
+}
+.css-1dbjc4n {
+  -webkit-box-align: stretch;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  align-items: stretch;
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 4px;
+  align-self: center;
+    background-color:black;
+    
+  
+}
+/* .card:hover .backgroundEffect {
+  bottom: 0;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #1b9ce3;
+  /* animation: popBackground 0.3s ease-in */
+  
+ 
+
+
+

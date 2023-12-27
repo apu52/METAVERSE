@@ -1,0 +1,60 @@
+.current {
+  color: yellow;
+  /* text-decoration: underline; */
+}
+.current\:text-yellow-500:hover {
+  color: #ffd700;
+  transition: color 0.3s ease-in-out;
+}
+/* Add this to your stylesheet or styles.css */
+.radio-input:checked {
+  color: #ffcc00; /* Change this to your desired color */
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: none;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgba(255, 255, 255);
+
+  border-radius: 50%;
+
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.hover-underline {
+  position: relative;
+  transition: all 0.2s;
+}
+
+.hover-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #4299e1; /* Change to your desired underline color */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-underline:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
