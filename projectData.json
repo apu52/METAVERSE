@@ -647,25 +647,24 @@
         "thumbnailName":"HealthDashboard.png"
     },
     "130": {
-
       "projectTitle":"GameX",
       "folderName":"Gamex",
       "thumbnailName":"esportpi2.jpg"
-  },
-  "131": {
+    },
+    "131": {
        "projectTitle":"Bubble_Burst_Game",
        "folderName":"Bubble_Burst_Game",
        "thumbnailName":"Bubble_Burst_Game.png"
     },
     "132": {
-    "projectTitle": "Medication Schedule Website",
-    "folderName": "medicationSchedule",
-    "thumbnailName": "medicationSchedule.png"
+      "projectTitle": "Medication Schedule Website",
+      "folderName": "medicationSchedule",
+      "thumbnailName": "medicationSchedule.png"
     },
     "133": {
-      "projectTitle":"Transit-Masters",
-      "folderName":"Transit-Masters_Logistic",
-      "thumbnailName":"Transit-Masters_Logistics.png"
+        "projectTitle":"Transit-Masters",
+        "folderName":"Transit-Masters_Logistic",
+        "thumbnailName":"Transit-Masters_Logistics.png"
      },
     "134": {
       "projectTitle":"Excercise_Guide",
@@ -775,6 +774,7 @@
       "folderName":"Wikipedia-clone",
       "thumbnailName":"Wikipedia-clone.png"
     },
+
   "154": {
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
@@ -784,11 +784,32 @@
       "projectTitle":"Tinder Clone",
       "folderName":"tinder-clone",
       "thumbnailName":"Tinder.png"
-    },
+},
     "156": {
+        "projectTitle":"Feedback Rating Window",
+        "folderName":"Feedback Rating",
+        "thumbnailName":"Feedback.png"
+    },
+    "157": {
+        "projectTitle":"Cannon Shooting",
+        "folderName":"Cannon-shooting",
+        "thumbnailName":"Cannon-shooting.png"
+
+    },
+    "158": {
       "projectTitle":"Jokes App",
       "folderName":"JokesApp",
       "thumbnailName":"Jokes.png"
+    },
+    "159": {
+        "projectTitle":"Tinder Clone",
+        "folderName":"tinder-clone",
+        "thumbnailName":"Tinder.png"
+    },
+    "160": {
+        "projectTitle":"EduLand",
+        "folderName":"eduland",
+        "thumbnailName":"educationweb.png"
     }
 }
 
