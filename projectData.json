@@ -787,9 +787,14 @@
         "thumbnailName":"educationweb.png"
     },
     "157":{
-       "projectTitle":"An Plant Tracker App",
+        "projectTitle":"An Plant Tracker App",
         "folderName":"Plant_Tracker",
         "thumbnailName":"Plant_Tracker.png"
+    },
+    "158": {
+      "projectTitle":"Salon Booking Website",
+      "folderName":"Saloon-booking-website",
+      "thumbnailName":"SaloonBooking.png"
     }
 }
 
