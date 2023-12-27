@@ -772,14 +772,19 @@
         "thumbnailName":"Cannon-shooting.png"
     },
     "154": {
+      "projectTitle":"Jokes App",
+      "folderName":"JokesApp",
+      "thumbnailName":"Jokes.png"
+    },
+    "155": {
         "projectTitle":"Tinder Clone",
         "folderName":"tinder-clone",
         "thumbnailName":"Tinder.png"
     },
-    "155": {
-        "projectTitle":"Jokes App",
-        "folderName":"JokesApp",
-        "thumbnailName":"Jokes.png"
+    "156": {
+        "projectTitle":"EduLand",
+        "folderName":"eduland",
+        "thumbnailName":"educationweb.png"
     }
 }
 
