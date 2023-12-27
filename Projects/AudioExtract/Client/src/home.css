@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  font-size: 15px;
+}
+.home {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 10px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.welcome {
+  border-bottom: 1px solid;
+}
+.main {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.up {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+p{
+  font-size: 20px;
+}
+.Audio-preview {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border: 1px solid #9b0909;
+  border-radius: 15px;
+  position: relative;
+}
+.new_audio {
+  width: 14%;
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 4px rgb(19, 18, 18);
+}
+.new_audio:active{
+  box-shadow: none;
+}
+.leftaudio {
+  display: flex;
+  width: 140px;
+  align-items: center;
+  margin-left: 60px;
+}
+.rightaudio {
+  padding-left: 10px;
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: space-evenly;
+}
+.Audio-preview:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.Audio-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.fa-trash-can {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+@media screen and (max-width: 800px) {
+  .Audio-preview {
+    gap: 150px;
+  }
+  .leftaudio {
+    margin-left: 30px;
+    width: 125px;
+  }
+  .new_audio {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Audio-preview {
+    gap: 130px;
+  }
+  .leftaudio {
+    margin-left: 18px;
+    width: 100px;
+  }
+  .new_audio {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Audio-preview {
+    gap: 100px;
+  }
+  .leftaudio {
+    margin-left: 15px;
+  }
+  .new_audio {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Audio-preview {
+    gap: 80px;
+  }
+  .new_audio {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .leftaudio {
+    margin: 15px;
+  }
+  .Audio-preview {
+    gap: 25px;
+  }
+}
