@@ -647,25 +647,24 @@
         "thumbnailName":"HealthDashboard.png"
     },
     "130": {
-
       "projectTitle":"GameX",
       "folderName":"Gamex",
       "thumbnailName":"esportpi2.jpg"
-  },
-  "131": {
+    },
+    "131": {
        "projectTitle":"Bubble_Burst_Game",
        "folderName":"Bubble_Burst_Game",
        "thumbnailName":"Bubble_Burst_Game.png"
     },
     "132": {
-    "projectTitle": "Medication Schedule Website",
-    "folderName": "medicationSchedule",
-    "thumbnailName": "medicationSchedule.png"
+      "projectTitle": "Medication Schedule Website",
+      "folderName": "medicationSchedule",
+      "thumbnailName": "medicationSchedule.png"
     },
     "133": {
-      "projectTitle":"Transit-Masters",
-      "folderName":"Transit-Masters_Logistic",
-      "thumbnailName":"Transit-Masters_Logistics.png"
+        "projectTitle":"Transit-Masters",
+        "folderName":"Transit-Masters_Logistic",
+        "thumbnailName":"Transit-Masters_Logistics.png"
      },
     "134": {
       "projectTitle":"Excercise_Guide",
@@ -763,14 +762,14 @@
       "thumbnailName":"Wikipedia-clone.png"
     },
     "152": {
-      "projectTitle":"Feedback Rating Window",
-      "folderName":"Feedback Rating",
-      "thumbnailName":"Feedback.png"
+        "projectTitle":"Feedback Rating Window",
+        "folderName":"Feedback Rating",
+        "thumbnailName":"Feedback.png"
     },
     "153": {
-      "projectTitle":"Tinder Clone",
-      "folderName":"tinder-clone",
-      "thumbnailName":"Tinder.png"
+        "projectTitle":"Cannon Shooting",
+        "folderName":"Cannon-shooting",
+        "thumbnailName":"Cannon-shooting.png"
     },
     "154": {
       "projectTitle":"Jokes App",
@@ -778,6 +777,21 @@
       "thumbnailName":"Jokes.png"
     },
     "155": {
+        "projectTitle":"Tinder Clone",
+        "folderName":"tinder-clone",
+        "thumbnailName":"Tinder.png"
+    },
+    "156": {
+        "projectTitle":"EduLand",
+        "folderName":"eduland",
+        "thumbnailName":"educationweb.png"
+    },
+    "157":{
+        "projectTitle":"An Plant Tracker App",
+        "folderName":"Plant_Tracker",
+        "thumbnailName":"Plant_Tracker.png"
+    },
+    "158": {
       "projectTitle":"Salon Booking Website",
       "folderName":"Saloon-booking-website",
       "thumbnailName":"SaloonBooking.png"
