@@ -576,6 +576,11 @@
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
     },
+    "106": {
+      "projectTitle":"Blog_Keeper",
+      "folderName":"Blog_Keeper",
+      "thumbnailName":"Blog_Keeper.png"
+    },
     "116": {
       "projectTitle":"barber Website",
       "folderName":"barber",
@@ -822,7 +827,12 @@
       "folderName":"organica",
       "thumbnailName":"ORGANIC.png"
     },
-    "160":{
+    "164": {
+      "projectTitle":"Family_Travel_Tracker",
+      "folderName":"Family_Travel_Tracker",
+      "thumbnailName":"Family_Travel_Tracker.png"
+     },
+    "165":{
       "projectTitle":"Rock Band Touring Website",
       "folderName":"Rock_Band_Touring",
       "thumbnailName":"rockband.png"
