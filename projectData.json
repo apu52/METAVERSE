@@ -766,8 +766,14 @@
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
-    },
-    "153": {
+  },
+  "153": {
+      "projectTitle":"Cannon Shooting",
+      "folderName":"Cannon-shooting",
+      "thumbnailName":"Cannon-shooting.png"
+  },
+
+    "154": {
       "projectTitle":"Tinder Clone",
       "folderName":"tinder-clone",
       "thumbnailName":"Tinder.png"
@@ -777,5 +783,6 @@
       "folderName":"JokesApp",
       "thumbnailName":"Jokes.png"
     }
+
 }
 
