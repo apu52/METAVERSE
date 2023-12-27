@@ -766,7 +766,7 @@
       "folderName":"Crypto Price Tracker",
       "thumbnailName":"Crypto.png"
     },
-  "152": {
+    "152": {
       "projectTitle":"SEO_WEBSITE",
       "folderName":"SEO_WEBSITE",
       "thumbnailName":"SEO_WEBSITE.png"
@@ -776,66 +776,60 @@
       "folderName":"Wikipedia-clone",
       "thumbnailName":"Wikipedia-clone.png"
     },
-
-  "154": {
+    "154": {
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
     },
     "155": {
-      "projectTitle":"Tinder Clone",
-      "folderName":"tinder-clone",
-      "thumbnailName":"Tinder.png"
-    },
-    "156": {
-        "projectTitle":"Feedback Rating Window",
-        "folderName":"Feedback Rating",
-        "thumbnailName":"Feedback.png"
-    },
-    "157": {
         "projectTitle":"Cannon Shooting",
         "folderName":"Cannon-shooting",
         "thumbnailName":"Cannon-shooting.png"
     },
-    "158": {
+    "156": {
       "projectTitle":"Jokes App",
       "folderName":"JokesApp",
       "thumbnailName":"Jokes.png"
     },
-    "159": {
+    "157": {
         "projectTitle":"Tinder Clone",
         "folderName":"tinder-clone",
         "thumbnailName":"Tinder.png"
     },
-    "160": {
+    "158": {
         "projectTitle":"EduLand",
         "folderName":"eduland",
         "thumbnailName":"educationweb.png"
     },
-    "161":{
+    "159":{
         "projectTitle":"An Plant Tracker App",
         "folderName":"Plant_Tracker",
         "thumbnailName":"Plant_Tracker.png"
     },
-    "162": {
+    "160": {
       "projectTitle":"Salon Booking Website",
       "folderName":"Saloon-booking-website",
       "thumbnailName":"SaloonBooking.png"
     },
-    "163": {
+    "161": {
       "projectTitle":"Organica",
       "folderName":"organica",
       "thumbnailName":"ORGANIC.png"
     },
-    "164": {
+    "162": {
       "projectTitle":"Family_Travel_Tracker",
       "folderName":"Family_Travel_Tracker",
       "thumbnailName":"Family_Travel_Tracker.png"
      },
-    "165":{
+    "163":{
       "projectTitle":"Rock Band Touring Website",
       "folderName":"Rock_Band_Touring",
       "thumbnailName":"rockband.png"
+    },
+    "164": {
+      "projectTitle":"Linkedin Clone",
+      "folderName":"LinkedinClone",
+      "thumbnailName":"Linkedin.png"
     }
 }
 
