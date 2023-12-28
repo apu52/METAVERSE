@@ -1,0 +1,50 @@
+.audify {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 50%;
+  left: 50%;
+  width: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  background-color: rgb(149, 210, 246);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.closeBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: blueviolet;
+  color: black;
+  font-weight: 600;
+}
+.convertbutton {
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+  width: 50%;
+  background-color: blueviolet;
+  color: black;
+  font-weight: 600;
+}
+._title,
+._author,
+._comment {
+  font-size: 30px;
+  margin: 1%;
+  border-radius: 10px;
+}
+._input {
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100%;
+}
+.choosefile {
+  display: block;
+  margin: 1% auto;
+  padding: 1%;
+}
