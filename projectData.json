@@ -864,36 +864,36 @@
     "folderName":"Text_Editor",
     "thumbnailName":"Text_Editor.png"
   },
-   "174": {
+  "174": {
       "projectTitle":"Thala for a reason",
       "folderName":"ThalaProject",
       "thumbnailName":"ThalaProject.png"
   },
-    "175": {
+  "175": {
       "projectTitle":"Guess The Number",
       "folderName":"Guess_the_Number",
       "thumbnailName":"guessthenum.png"
-   },
-   "176": {
+  },
+  "176": {
     "projectTitle":"CyberWise",
     "folderName":"cyberWise",
     "thumbnailName":"cyberwiseee.png"
- },
+  },
   "177": {
       "projectTitle":"AudioExtract",
       "folderName":"AudioExtract",
       "thumbnailName":"AudioExtract.png"
-   },
-  "177": {
+  },
+  "178": {
       "projectTitle":"Twitter clone",
       "folderName":"Twitter Clone",
       "thumbnailName":"twitter.png"
-   },
-  "178": {
+  },
+  "179": {
       "projectTitle":"Secret Keeper",
       "folderName":"secret",
       "thumbnailName":"secret.png"
-   },
+  },
 
 
 }
