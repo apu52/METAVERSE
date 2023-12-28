@@ -278,8 +278,7 @@
     "projectTitle": "Bunny Catcher",
     "folderName": "Bunny_Catcher",
     "thumbnailName": "Bunny_Catcher.png"
-  }
-  ,
+  },
   "57": {
     "projectTitle": "PARALLAX_WEBSITE",
     "folderName": "PARALLAX_WEBSITE",
@@ -309,7 +308,6 @@
     "projectTitle": "Sentence Sweetener AI",
     "folderName": "Sentence_Sweetener_AI",
     "thumbnailName": "Sentence_Sweetener_AI.png"
-
  }, 
  "63": {
     "projectTitle": "Black Jack",
@@ -346,7 +344,7 @@
       "folderName": "Chess_Game",
       "thumbnailName": "chess_2023.png"
    },
-    "70": {
+  "70": {
        "projectTitle": "Minesweeper ",
        "folderName": "Minesweeper",
        "thumbnailName": "Minesweeper.png"
@@ -576,11 +574,6 @@
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
     },
-    "106": {
-      "projectTitle":"Blog_Keeper",
-      "folderName":"Blog_Keeper",
-      "thumbnailName":"Blog_Keeper.png"
-    },
     "116": {
       "projectTitle":"barber Website",
       "folderName":"barber",
@@ -701,156 +694,180 @@
           "folderName":"Mastermind",
           "thumbnailName":"Mastermind.jpeg"
     },
-    "139": {
+    "140": {
+      "projectTitle":"Blog_Keeper",
+      "folderName":"Blog_Keeper",
+      "thumbnailName":"Blog_Keeper.png"
+    },
+    "141": {
       "projectTitle":"TasteHeaven",
       "folderName":"TasteHeaven_Restaurant",
       "thumbnailName":"TasteHeaven_Restaurant.png"
     },
-    "140": {
+    "142": {
       "projectTitle":"EAT_FOOD_GAME",
       "folderName":"EAT_FOOD_GAME",
       "thumbnailName":"EAT_THE_FOOD.png"
     },
-    "141": {
+    "143": {
       "projectTitle":"Marketing_agency",
       "folderName":"Marketing_agency",
       "thumbnailName":"Marketing_agency.png"
     },
-  "142":{
+  "144":{
       "projectTitle":"Solutry",
       "folderName":"IT_Solution",
       "thumbnailName":"itsoln.png"
     },
-    "143": {
+    "145": {
       "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
       "folderName": "GamifiedDashboard",
       "thumbnailName": "GamifiedDashboard.png"
     },
-    "144": {
+    "146": {
       "projectTitle": "Rental_ride",
       "folderName": "Rental_ride",
       "thumbnailName": "Rental_ride.png"
     },
-    "145": {
+    "147": {
       "projectTitle": "Glowing",
       "folderName": "glowing",
       "thumbnailName": "beautypic.png"
     },
-    "146": {
+    "148": {
       "projectTitle":"Password Strength Checker",
       "folderName":"Password-Strength",
       "thumbnailName":"password.png"
     },
-    "147":{
+    "149":{
       "projectTitle": "DOCLABS",
       "folderName": "Doclab",
       "thumbnailName": "DOCLAB.png"
     },
-    "148":{
+    "150":{
       "projectTitle":"An Space Exploration",
       "folderName":"Space_Exploration",
       "thumbnailName":"Space_Exploration.png"
     },
-    "149": {
+    "151": {
       "projectTitle":"Marketing_agency",
       "folderName":"Marketing_agency",
       "thumbnailName":"Marketing_agency.png"
     },
-    "150": {
+    "152": {
       "projectTitle": "Matrix Calculator",
       "folderName": "Matrix App",
       "thumbnailName": "matrix.png"
     },
-    "151": {
+    "153": {
       "projectTitle":"Crypto_Tracker",
       "folderName":"Crypto Price Tracker",
       "thumbnailName":"Crypto.png"
     },
-    "152": {
+    "154": {
       "projectTitle":"SEO_WEBSITE",
       "folderName":"SEO_WEBSITE",
       "thumbnailName":"SEO_WEBSITE.png"
     },
-    "153": {
+    "155": {
       "projectTitle":"Wikipedia Clone",
       "folderName":"Wikipedia-clone",
       "thumbnailName":"Wikipedia-clone.png"
     },
-    "154": {
+    "156": {
       "projectTitle":"Feedback Rating Window",
       "folderName":"Feedback Rating",
       "thumbnailName":"Feedback.png"
     },
-    "155": {
+    "157": {
         "projectTitle":"Cannon Shooting",
         "folderName":"Cannon-shooting",
         "thumbnailName":"Cannon-shooting.png"
     },
-    "156": {
+    "158": {
       "projectTitle":"Jokes App",
       "folderName":"JokesApp",
       "thumbnailName":"Jokes.png"
     },
-    "157": {
+    "159": {
         "projectTitle":"Tinder Clone",
         "folderName":"tinder-clone",
         "thumbnailName":"Tinder.png"
     },
-    "158": {
+    "160": {
         "projectTitle":"EduLand",
         "folderName":"eduland",
         "thumbnailName":"educationweb.png"
     },
-    "159":{
+    "161":{
         "projectTitle":"An Plant Tracker App",
         "folderName":"Plant_Tracker",
         "thumbnailName":"Plant_Tracker.png"
     },
-    "160": {
+    "162": {
       "projectTitle":"Salon Booking Website",
       "folderName":"Saloon-booking-website",
       "thumbnailName":"SaloonBooking.png"
     },
-    "161": {
+    "163": {
       "projectTitle":"Organica",
       "folderName":"organica",
       "thumbnailName":"ORGANIC.png"
     },
-    "162": {
+    "164": {
       "projectTitle":"Family_Travel_Tracker",
       "folderName":"Family_Travel_Tracker",
       "thumbnailName":"Family_Travel_Tracker.png"
      },
-    "163":{
+    "165":{
       "projectTitle":"Rock Band Touring Website",
       "folderName":"Rock_Band_Touring",
       "thumbnailName":"rockband.png"
     },
-    "164": {
+    "166": {
       "projectTitle":"Linkedin Clone",
       "folderName":"LinkedinClone",
       "thumbnailName":"Linkedin.png"
     },
-    "165": {
+    "167": {
         "projectTitle":"Pixel Art",
         "folderName":"Pixel_Art",
         "thumbnailName":"Pixel_Art.png"
     },
-   "166": {
+   "168": {
       "projectTitle":"Text Reader",
       "folderName":"Text-Reader",
       "thumbnailName":"Text-Reader.png"
    },
-  "167": {
+  "169": {
       "projectTitle":"Crunchyroll Clone",
       "folderName":"Crunchyroll-Clone",
       "thumbnailName":"Crunchchyroll.png"
-   },
-  "168": {
+  },
+  "170": {
+      "projectTitle":"Channel Chart",
+      "folderName":"View_Channel_Chart",
+      "thumbnailName":"View_Channel_Chart.png"
+  },
+  "171": {
+      "projectTitle":"Flip a Coin",
+      "folderName":"Flip_a_coin",
+      "thumbnailName":"Flip_a_coin.png"
+  },
+  "172": {
+    "projectTitle":"Pomodoro Timer",
+    "folderName":"Pomodoro_Timer",
+    "thumbnailName":"pomodoro.png"
+  },
+  "173": {
+    "projectTitle":"Text_Editor",
+    "folderName":"Text_Editor",
+    "thumbnailName":"Text_Editor.png"
+  },
+   "174": {
       "projectTitle":"Thala for a reason",
       "folderName":"ThalaProject",
       "thumbnailName":"ThalaProject.png"
-  },
-  
+  }
 }
 

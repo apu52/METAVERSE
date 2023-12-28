@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Merriweather&family=Sevillana&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-color: #ffb6c1;
+}
+
+header {
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+
+.sub{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container h1{
+    color: black;
+}
+.container {
+  text-align: center;
+  position: relative;
+  color: #ffb6c1;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #ffb6c1;
+  border: 2px solid black;
+  z-index: -2;
+}
+.container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    background-color: #000000; 
+    border: 2px solid black;
+    z-index: -1; 
+}
+
+.pomodoro {
+  font-size: 30px;
+}
+
+#timer {
+  font-size: 2em;
+  margin: 100px 0 100px 0;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+#startBtn,
+#stopBtn,
+#resetBtn {
+  padding: 10px 10px;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  background-color: #ffb6c1;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  padding: 50px 20px;
+  border-radius: 10px;
+  text-align: center;
+  height: 30vh;
+  width: 30vw;
+  display: block;
+  background-color: black;
+  color: white;
+}
+#breakTimer {
+  font-size: 2em;
+  margin: 30px 0 30px 0;
+}
+.popup p {
+  font-size: 25px;
+}
+
+.popup button {
+  padding: 10px 5px;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+  background-color: #ffb6c1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
