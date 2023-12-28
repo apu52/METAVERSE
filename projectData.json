@@ -863,5 +863,16 @@
   "projectTitle":"Guess The Number",
   "folderName":"Guess_the_Number",
   "thumbnailName":"guessthenum.png"
+  },
+  "174": {
+    "projectTitle":"Text_Editor",
+    "folderName":"Text_Editor",
+    "thumbnailName":"Text_Editor.png"
+  },
+   "175": {
+      "projectTitle":"Thala for a reason",
+      "folderName":"ThalaProject",
+      "thumbnailName":"ThalaProject.png"
+  }
 }
-}
+

@@ -1,0 +1,105 @@
+
+.App,.box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.share{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:600px;
+}
+.container{
+  margin-top: 120px;
+  background:linear-gradient(black,rgb(65, 62, 62),rgb(71, 69, 69));
+  border-radius: 50px;
+  height: 400px;
+  width: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow:  10px 5px rgb(54, 57, 58) inset,10px 10px 5px rgb(38, 40, 41);
+
+}
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 100px;
+  padding: 0px 10px;
+  margin: 30px 0px;
+  background-color: rgb(218, 218, 159);
+}
+p{
+  color:gold;
+  font-size: 20px;
+}
+#btn1{
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
+}
+#btn3{
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 82px;
+  background-color: transparent;
+  border: none;
+
+}
+.twi-img1{
+  width: 50px;
+  border-radius: 20px;
+  
+}
+#cont1{
+  width:100px;
+  height: 100px;
+  background-size: contain;
+  margin-right: 10px;
+  background-image: url("https://i.pinimg.com/736x/62/df/ed/62dfed9c4df6bbcbd5e4cb6cc35cbdb6.jpg");
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
+
+}
+#cont2{
+  width:100px;
+  height: 100px;
+  background-size: contain;
+  margin-right: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/1200px-Orange_question_mark.svg.png");
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
+}
+#cont3{
+  width:100px;
+  height: 100px;
+  background-size: contain;
+  margin-right: 10px;
+  background-image: url("https://i.pinimg.com/736x/62/df/ed/62dfed9c4df6bbcbd5e4cb6cc35cbdb6.jpg");
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
+
+}
+@media(width<698px){
+  .container{
+    margin-top: 220px;
+    width:350px;
+    height: 400px;
+  }
+  input{
+    width:250px;
+  }
+  #cont1,#cont2,#cont3{
+    width:70px;
+    height: 70px;
+  }
+  .App{
+      overflow: hidden;
+    }
+}
