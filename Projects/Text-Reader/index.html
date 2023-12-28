@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Reader</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text Reader</h1>
+      <textarea name="dummy-text" id="text">
+A day or two passed, and there was great activity aboard the Pequod. Not only were the old sails being mended, but new sails were coming on board, and bolts of canvas, and coils of rigging; in short, everything betokened that the ship’s preparations were hurrying to a close. Captain Peleg seldom or never went ashore, but sat in his wigwam keeping a sharp look-out upon the hands: Bildad did all the purchasing and providing at the stores; and the men employed in the hold and on the rigging were working till long after night-fall.
+
+On the day following Queequeg’s signing the articles, word was given at all the inns where the ship’s company were stopping, that their chests must be on board before night, for there was no telling how soon the vessel might be sailing. So Queequeg and I got down our traps, resolving, however, to sleep ashore till the last. But it seems they always give very long notice in these cases, and the ship did not sail for several days. But no wonder; there was a good deal to be done, and there is no telling how many things to be thought of, before the Pequod was fully equipped.
+            
+Every one knows what a multitude of things—beds, sauce-pans, knives and forks, shovels and tongs, napkins, nut-crackers, and what not, are indispensable to the business of housekeeping. Just so with whaling, which necessitates a three-years’ housekeeping upon the wide ocean, far from all grocers, costermongers, doctors, bakers, and bankers. And though this also holds true of merchant vessels, yet not by any means to the same extent as with whalemen. For besides the great length of the whaling voyage, the numerous articles peculiar to the prosecution of the fishery, and the impossibility of replacing them at the remote harbors usually frequented, it must be remembered, that of all ships, whaling vessels are the most exposed to accidents of all kinds, and especially to the destruction and loss of the very things upon which the success of the voyage most depends. Hence, the spare boats, spare spars, and spare lines and harpoons, and spare everythings, almost, but a spare Captain and duplicate ship.
+            
+At the period of our arrival at the Island, the heaviest storage of the Pequod had been almost completed; comprising her beef, bread, water, fuel, and iron hoops and staves. But, as before hinted, for some time there was a continual fetching and carrying on board of divers odds and ends of things, both large and small. 
+        </textarea>
+
+      <label for="wpm">Words Per Minute</label>
+      <input type="number" id="wpm" min="1" value="90" />
+
+      <div class="btn-wrapper">
+        <button class="btn start" id="start">START</button>
+        <button class="btn end" id="stop">STOP</button>
+      </div>
+
+      <div class="reader-wrapper">
+        <!--aria-live="assertive" ---- to announce the text to screen readers -->
+        <div class="reader" aria-live="assertive"></div>
+      </div>
+    </div>
+    <script src="./app.js" type="text/javascript"></script>
+  </body>
+</html>

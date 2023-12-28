@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 10px;
+    font-family: 'lato', Arial, sans-serif;
+}
+body {
+    background: pink;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: pink;
+    width: 98vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+#text {
+    width: 70%;
+    min-height: 20rem;
+    margin-bottom: 2rem;
+}
+#wpm {
+    margin: 0 0 2rem 0;
+}
+.btn {
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    padding: 0.8rem 1.2rem;
+    width: 6rem;
+    transition: ease-in-out 0.2s;
+    color: white;
+}
+.btn:hover {
+    background: #d0cfcf;
+}
+
+.start{
+    background-color: green;
+}
+
+.end{
+    background-color: red;
+}
+
+.reader-wrapper {
+    background: white;
+    color: black;
+    font-size: 4rem;
+    margin: 4rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    word-wrap: anywhere;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+textarea{
+    padding: 5px;
+}
