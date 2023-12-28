@@ -647,25 +647,24 @@
         "thumbnailName":"HealthDashboard.png"
     },
     "130": {
-
       "projectTitle":"GameX",
       "folderName":"Gamex",
       "thumbnailName":"esportpi2.jpg"
-  },
-  "131": {
+    },
+    "131": {
        "projectTitle":"Bubble_Burst_Game",
        "folderName":"Bubble_Burst_Game",
        "thumbnailName":"Bubble_Burst_Game.png"
     },
     "132": {
-    "projectTitle": "Medication Schedule Website",
-    "folderName": "medicationSchedule",
-    "thumbnailName": "medicationSchedule.png"
+      "projectTitle": "Medication Schedule Website",
+      "folderName": "medicationSchedule",
+      "thumbnailName": "medicationSchedule.png"
     },
     "133": {
-      "projectTitle":"Transit-Masters",
-      "folderName":"Transit-Masters_Logistic",
-      "thumbnailName":"Transit-Masters_Logistics.png"
+        "projectTitle":"Transit-Masters",
+        "folderName":"Transit-Masters_Logistic",
+        "thumbnailName":"Transit-Masters_Logistics.png"
      },
     "134": {
       "projectTitle":"Excercise_Guide",
@@ -707,12 +706,137 @@
       "folderName":"EAT_FOOD_GAME",
       "thumbnailName":"EAT_FOOD_GAME.png"
     },
-     "142": {
+  "142":{
+      "projectTitle":"Solutry",
+      "folderName":"IT_Solution",
+      "thumbnailName":"itsoln.png"
+    },
+    "143": {
+      "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
+      "folderName": "GamifiedDashboard",
+      "thumbnailName": "GamifiedDashboard.png"
+    },
+    "144": {
+      "projectTitle": "Rental_ride",
+      "folderName": "Rental_ride",
+      "thumbnailName": "Rental_ride.png"
+    },
+    "145": {
+      "projectTitle": "Glowing",
+      "folderName": "glowing",
+      "thumbnailName": "beautypic.png"
+    },
+    "146": {
+      "projectTitle":"Password Strength Checker",
+      "folderName":"Password-Strength",
+      "thumbnailName":"password.png"
+    },
+    "147":{
+      "projectTitle": "DOCLABS",
+      "folderName": "Doclab",
+      "thumbnailName": "DOCLAB.png"
+    },
+    "148":{
+      "projectTitle":"An Space Exploration",
+      "folderName":"Space_Exploration",
+      "thumbnailName":"Space_Exploration.png"
+    },
+    "149": {
+      "projectTitle":"Marketing_agency",
+      "folderName":"Marketing_agency",
+      "thumbnailName":"Marketing_agency.png"
+    },
+    "150": {
+      "projectTitle": "Matrix Calculator",
+      "folderName": "Matrix App",
+      "thumbnailName": "matrix.png"
+    },
+    "151": {
+      "projectTitle":"Crypto_Tracker",
+      "folderName":"Crypto Price Tracker",
+      "thumbnailName":"Crypto.png"
+    },
+    "152": {
+      "projectTitle":"SEO_WEBSITE",
+      "folderName":"SEO_WEBSITE",
+      "thumbnailName":"SEO_WEBSITE.png"
+    },
+    "153": {
+      "projectTitle":"Wikipedia Clone",
+      "folderName":"Wikipedia-clone",
+      "thumbnailName":"Wikipedia-clone.png"
+    },
+    "154": {
+      "projectTitle":"Feedback Rating Window",
+      "folderName":"Feedback Rating",
+      "thumbnailName":"Feedback.png"
+    },
+    "155": {
+        "projectTitle":"Cannon Shooting",
+        "folderName":"Cannon-shooting",
+        "thumbnailName":"Cannon-shooting.png"
+    },
+    "156": {
+      "projectTitle":"Jokes App",
+      "folderName":"JokesApp",
+      "thumbnailName":"Jokes.png"
+    },
+    "157": {
+        "projectTitle":"Tinder Clone",
+        "folderName":"tinder-clone",
+        "thumbnailName":"Tinder.png"
+    },
+    "158": {
+        "projectTitle":"EduLand",
+        "folderName":"eduland",
+        "thumbnailName":"educationweb.png"
+    },
+    "159":{
+        "projectTitle":"An Plant Tracker App",
+        "folderName":"Plant_Tracker",
+        "thumbnailName":"Plant_Tracker.png"
+    },
+    "160": {
+      "projectTitle":"Salon Booking Website",
+      "folderName":"Saloon-booking-website",
+      "thumbnailName":"SaloonBooking.png"
+    },
+    "161": {
+      "projectTitle":"Organica",
+      "folderName":"organica",
+      "thumbnailName":"ORGANIC.png"
+    },
+    "162": {
       "projectTitle":"Family_Travel_Tracker",
       "folderName":"Family_Travel_Tracker",
       "thumbnailName":"Family_Travel_Tracker.png"
      },
-     "143": {
+    "163":{
+      "projectTitle":"Rock Band Touring Website",
+      "folderName":"Rock_Band_Touring",
+      "thumbnailName":"rockband.png"
+    },
+    "164": {
+      "projectTitle":"Linkedin Clone",
+      "folderName":"LinkedinClone",
+      "thumbnailName":"Linkedin.png"
+    },
+    "165": {
+        "projectTitle":"Pixel Art",
+        "folderName":"Pixel_Art",
+        "thumbnailName":"Pixel_Art.png"
+    },
+   "166": {
+      "projectTitle":"Text Reader",
+      "folderName":"Text-Reader",
+      "thumbnailName":"Text-Reader.png"
+   },
+  "167": {
+      "projectTitle":"Crunchyroll Clone",
+      "folderName":"Crunchyroll-Clone",
+      "thumbnailName":"Crunchchyroll.png"
+  },
+  "168": {
       "projectTitle":"Text_Editor",
       "folderName":"Text_Editor",
       "thumbnailName":"Text_Editor.png"

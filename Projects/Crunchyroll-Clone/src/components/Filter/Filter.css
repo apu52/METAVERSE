@@ -1,0 +1,25 @@
+.filter-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  flex-shrink: 0;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #eee;
+  color: black;
+}
+
+.filter-button:hover {
+  cursor: pointer;
+  background-color: #aaa;
+}
+
+.MuiMenu-list {
+  padding: 0 !important;
+}
