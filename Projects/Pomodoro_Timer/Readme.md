@@ -8,4 +8,4 @@
 <p>Hello Coders👨‍💻 ,I am Preeti Kintali, a learner and developer. This pomodoro timer⏱️ can be really useful to increase your productivity and use time efficiently. Do check it out👆🏻 .</p>
 
 # Screenshots
-<img src="assets/img/pomodoro.png" alt="Preview" width="460" height="400">
+<img src="pomodoro.png" alt="Preview" width="460" height="400">

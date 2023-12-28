@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgb(0, 180, 156);
+}
+
+.guessthenum {
+  display: flex;
+  height: 80vh;
+  width: 55vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  margin: auto;
+}
+
+
+.heading {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.content {
+  height: 30vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitbtn,.replaybtn {
+  background-color: black;
+  color: rgb(0, 180, 156);
+  cursor: pointer;
+  margin-top: 10px; 
+  height: 40px;
+  width: 100px;
+}
+
+#guess{
+  text-align: center;
+  height: 25px;
+  width: 100px;
+  margin: 15px 0 6px 0;
+}
+#result {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+#count {
+  margin-top: 10px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
