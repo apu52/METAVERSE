@@ -576,11 +576,6 @@
       "folderName":"Codeforces_API",
       "thumbnailName":"Codeforce_API.png"
     },
-    "106": {
-      "projectTitle":"Blog_Keeper",
-      "folderName":"Blog_Keeper",
-      "thumbnailName":"Blog_Keeper.png"
-    },
     "116": {
       "projectTitle":"barber Website",
       "folderName":"barber",
@@ -676,7 +671,7 @@
       "projectTitle":"Excercise_Guide",
       "folderName":"Excercise_Guide",
       "thumbnailName":"Excercise_Guide.png"
-    }
+    },
     "135": {
       "projectTitle":"WildVine",
       "folderName":"Wildvine",
@@ -702,20 +697,25 @@
           "folderName":"Mastermind",
           "thumbnailName":"Mastermind.jpeg"
     },
-    "139": {
+    "140": {
       "projectTitle":"TasteHeaven",
       "folderName":"TasteHeaven_Restaurant",
       "thumbnailName":"TasteHeaven_Restaurant.png"
     },
-    "140": {
+    "141": {
       "projectTitle":"EAT_FOOD_GAME",
       "folderName":"EAT_FOOD_GAME",
       "thumbnailName":"EAT_FOOD_GAME.png"
     },
-     "141": {
+     "142": {
       "projectTitle":"Family_Travel_Tracker",
       "folderName":"Family_Travel_Tracker",
       "thumbnailName":"Family_Travel_Tracker.png"
+     },
+     "143": {
+      "projectTitle":"Text_Editor",
+      "folderName":"Text_Editor",
+      "thumbnailName":"Text_Editor.png"
      }
 }
 
