@@ -832,9 +832,19 @@
       "thumbnailName":"Linkedin.png"
     },
     "165": {
+        "projectTitle":"Pixel Art",
+        "folderName":"Pixel_Art",
+        "thumbnailName":"Pixel_Art.png"
+    },
+   "166": {
+      "projectTitle":"Text Reader",
+      "folderName":"Text-Reader",
+      "thumbnailName":"Text-Reader.png"
+   },
+  "167": {
       "projectTitle":"Crunchyroll Clone",
       "folderName":"Crunchyroll-Clone",
       "thumbnailName":"Crunchchyroll.png"
-    }
+  }
 }
 
