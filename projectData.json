@@ -858,10 +858,16 @@
     "projectTitle":"Pomodoro Timer",
     "folderName":"Pomodoro_Timer",
     "thumbnailName":"pomodoro.png"
-},
+  },
   "173": {
     "projectTitle":"Text_Editor",
     "folderName":"Text_Editor",
     "thumbnailName":"Text_Editor.png"
+  },
+   "174": {
+      "projectTitle":"Thala for a reason",
+      "folderName":"ThalaProject",
+      "thumbnailName":"ThalaProject.png"
   }
 }
+
