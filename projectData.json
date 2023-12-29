@@ -885,15 +885,13 @@
       "thumbnailName":"AudioExtract.png"
   },
   "178": {
-      "projectTitle":"Twitter clone",
-      "folderName":"Twitter Clone",
+      "projectTitle":"Twitter Clone",
+      "folderName":"Twitter_Clone",
       "thumbnailName":"twitter.png"
   },
   "179": {
       "projectTitle":"Secret Keeper",
       "folderName":"secret",
       "thumbnailName":"secret.png"
-  },
-
-
+  }
 }
