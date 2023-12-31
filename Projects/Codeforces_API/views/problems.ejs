@@ -1,0 +1,124 @@
+<%-include ("partials/navbar.ejs")%>
+<div class="problem_tab">
+    <p>Problems Set</p>
+</div>
+<div class="problem_selection">
+    <form class="prob_options" action="/problems" method="post">
+        <div class="options_box">
+            <label for="ques_sel">Select Question Type:</label>
+            <select id="ques_sel" onchange="myfunction(this)">
+                <option value="none" selected>Select...</option>
+                <option value="code_q">Question Code</option>
+                <option value="tag_q">Question Tag</option>
+                <option value="rating_q">Question Rating</option>
+            </select>
+        </div>
+        <input type="text" name="ques_code" placeholder="Question Code" id="ques_code" autocomplete="off" autofocus aria-autocomplete="off">
+        <input list="que_rating" name="ques_rating" id="ques_rating" placeholder="Question Rating" autocomplete="off" autofocus aria-autocomplete="off">
+        <datalist id="que_rating">
+            <option value="800"></option>
+            <option value="900"></option>
+            <option value="1000"></option>
+            <option value="1100"></option>
+            <option value="1200"></option>
+            <option value="1300"></option>
+            <option value="1400"></option>
+            <option value="1500"></option>
+            <option value="1600"></option>
+            <option value="1700"></option>
+            <option value="1800"></option>
+            <option value="1900"></option>
+            <option value="2000"></option>
+            <option value="2100"></option>
+            <option value="2200"></option>
+            <option value="2300"></option>
+            <option value="2400"></option>
+            <option value="2500"></option>
+            <option value="2600"></option>
+            <option value="2700"></option>
+            <option value="2800"></option>
+            <option value="2900"></option>
+            <option value="3000"></option>
+            <option value="3100"></option>
+            <option value="3200"></option>
+            <option value="3300"></option>
+            <option value="3400"></option>
+            <option value="3500"></option>
+        </datalist>
+        <input list="ques_tags" id="ques_tag" name="ques_tag" placeholder="Tags" autocomplete="off" autofocus aria-autocomplete="off">
+        <datalist id="ques_tags">
+            <option value="binary%20search" title="Binary search">binary search</option>
+            <option value="bitmasks" title="Bitmasks">bitmasks</option>
+            <option value="brute%20force" title="Brute force">brute force</option>
+            <option value="chinese remainder theorem" title="Сhinese remainder theorem">chinese remainder theorem</option>
+            <option value="combinatorics" title="Combinatorics">combinatorics</option>
+            <option value="constructive algorithms" title="Constructive algorithms">constructive algorithms</option>
+            <option value="data structures" title="Heaps, binary search trees, segment trees, hash tables, etc">data structures</option>
+            <option value="dfs and similar" title="Dfs and similar">dfs and similar</option>
+            <option value="divide and conquer" title="Divide and Conquer">divide and conquer</option>
+            <option value="dp" title="Dynamic programming">dp</option>
+            <option value="dsu" title="Disjoint set union">dsu</option>
+            <option value="expression parsing" title="Parsing expression grammar">expression parsing</option>
+            <option value="fft" title="Fast Fourier transform">fft</option>
+            <option value="flows" title="Graph network flows">flows</option>
+            <option value="games" title="Games, Sprague–Grundy theorem">games</option>
+            <option value="geometry" title="Geometry, computational geometry">geometry</option>
+            <option value="graph matchings" title="Graph matchings, König's theorem, vertex cover of bipartite graph">graph matchings</option>
+            <option value="graphs" title="Graphs">graphs</option>
+            <option value="greedy" title="Greedy algorithms">greedy</option>
+            <option value="hashing" title="Hashing, hashtables">hashing</option>
+            <option value="implementation" title="Implementation problems, programming technics, simulation">implementation</option>
+            <option value="interactive" title="Interactive problem">interactive</option>
+            <option value="math" title="Mathematics including integration, differential equations, etc">math</option>
+            <option value="matrices" title="Matrix multiplication, determinant, Cramer's rule, systems of linear equations">matrices</option>
+            <option value="meet-in-the-middle" title="Meet-in-the-middle">meet-in-the-middle</option>
+            <option value="number theory" title="Number theory: Euler function, GCD, divisibility, etc">number theory</option>
+            <option value="probabilities" title="Probabilities, expected values, statistics, random variables, etc">probabilities</option>
+            <option value="schedules" title="Scheduling Algorithms">schedules</option>
+            <option value="shortest paths" title="Shortest paths on weighted and unweighted graphs">shortest paths</option>
+            <option value="sortings" title="Sortings, orderings">sortings</option>
+            <option value="string suffix structures" title="Suffix arrays, suffix trees, suffix automatas, etc">string suffix structures</option>
+            <option value="strings" title="Prefix- and Z-functions, suffix structures, Knuth–Morris–Pratt algorithm, etc">strings</option>
+            <option value="ternary search" title="Ternary search">ternary search</option>
+            <option value="trees" title="Trees">trees</option>
+            <option value="two pointers" title="Two pointers">two pointers</option>
+        </datalist>
+        <button type="submit" id="search_ques">Search</button>
+    </form>
+</div>
+    <%-include("problem_result.ejs")%>
+    <script>
+        let q_tag=document.getElementById("ques_tag");
+        let q_rate=document.getElementById("ques_rating");
+        let q_code=document.getElementById("ques_code");
+        q_rate.style.display="none";
+        q_tag.style.display="none";
+        q_code.style.display="none";
+        function myfunction(sel) {
+            var t= sel.options[sel.selectedIndex].text;
+            console.log(t);
+            let q_tag=document.getElementById("ques_tag");
+            let q_rate=document.getElementById("ques_rating");
+            let q_code=document.getElementById("ques_code");
+            if (t=="Question Tag"){
+                q_tag.style.display="block";
+                q_rate.style.display="none";
+                q_code.style.display="none";
+                
+            }
+            else if (t=="Question Code"){
+                q_code.style.display="block";
+                q_rate.style.display="none";
+                q_tag.style.display="none";
+            }
+            else if (t=="Question Rating"){
+                q_rate.style.display="block";
+                q_tag.style.display="none";
+                q_code.style.display="none";
+            }
+            else {
+                
+            }
+        }
+    </script>
+<%-include ("partials/footer.ejs")%>

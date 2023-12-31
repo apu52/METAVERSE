@@ -1,0 +1,68 @@
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+#Anutrickz_translateBTN {
+    position: fixed;
+    top: 10px;
+    right: 70px;
+    z-index: 99;
+}
+
+#Anutrickz_translateBTN svg {
+    width: 45px;
+    height: 45px
+}
+
+#ATLang_list {
+    width: 10rem;
+    right: 0px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 9;
+    background: #fff;
+    top: 100%;
+    color: #000;
+}
+
+#ATLang_list li {
+    list-style: none;
+    line-height: 1.5rem;
+    font-size: .875rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#ATLang_list ul {
+    margin: 0 auto
+}
+
+#Anutrickz_translateBTN.hover #ATLang_list {
+    display: block
+}
+
+.language-active {
+    color: green;
+}
+
+.language-list {
+    cursor: pointer;
+    margin: 3px;
+    align-items: center
+}
+
+#goog-gt-tt,
+.goog-te-banner-frame {
+    display: none !important
+}

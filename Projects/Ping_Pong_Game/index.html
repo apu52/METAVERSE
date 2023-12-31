@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Ping Pong Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="bg.jpg"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <canvas></canvas>
+        <div class="panel reveal">
+            <div class="stat"></div>
+            <h1>Ping Pong Game</h1>
+            <span>Modes: <div class="tooltip">a mode sharpens the head of computer. not fastens the game!</div></span>
+            <input type="text" hidden>
+            <ul class="gameMode">
+                <li class="mode baby" data-number=".05">Baby</li>
+                <li class="mode easy" data-number=".08">Easy</li>
+                <li class="mode normal" data-number=".1">Normal</li>
+                <li class="mode hard" data-number=".2">Hard</li>
+                <li class="mode insane" data-number=".3">Insane</li>
+            </ul>
+            <button class="play">Play</button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

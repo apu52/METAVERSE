@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <!-- <div><p class="sub">Its time to turn <br>
+        on your ultra mode</p>
+    </div> -->
+    <div class="container">
+        <header><h1>Pomodoro Timer</h1></header>
+        <!-- <p class="sub">It's time to turn on your ULTRA MODE</p> -->
+      <div class="pomodoro">
+        <div id="timer">25:00</div>
+        <div class="buttons">
+          <button id="startBtn" onclick="startTimer()">Start</button>
+          <button id="stopBtn" onclick="stopTimer()">Stop</button>
+          <button id="resetBtn" onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div><p class="sub">Your Ultra Mode !!</p>
+    </div> -->
+
+    <div id="overlay" class="overlay">
+      <div class="popup">
+        <p>Break Time!</p>
+        <div id="breakTimer">5:00</div>
+        <button class="resetBtn" onclick="resumeTimer()">Back To Work!</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+  <footer><div class="footer">Made with ❤️ by <a href="https://www.github.com/Preeti8021">Preeti8021</a></div></footer>
+</html>

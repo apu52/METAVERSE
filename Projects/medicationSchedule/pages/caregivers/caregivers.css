@@ -1,0 +1,113 @@
+.contacts {
+  position: relative;
+  justify-content: flex-start;
+  padding-block: 3rem;
+  padding-left: 0;
+}
+.contact {
+  position: relative;
+  box-sizing: content-box;
+  padding: 3rem;
+  width: 250px;
+  background-color: #6bffc7;
+  border-radius: 20px;
+}
+
+.contact .name {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.contact .position {
+  color: #647fb2;
+}
+.contact .phone {
+  color: #64a089;
+  font-size: 0.8em;
+  margin-top: 2rem;
+}
+.contact .message-container {
+  margin-top: 20px;
+}
+.contact .message,
+.contact .video-call {
+  padding: 1em;
+  background: #c9fbe8;
+  color: var(--accent-clr);
+  border-radius: 50%;
+}
+.message:hover,
+.video-call:hover {
+  background-color: #070b43b2;
+  color: #00ffa6;
+}
+.back {
+  position: fixed;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.8;
+}
+.header,
+.main {
+  position: relative;
+  z-index: 10;
+}
+.bottomNav {
+  z-index: 50;
+}
+.input-container {
+  position: relative;
+  margin-block: 2em;
+  width: min(100%, 500px);
+}
+.input-container .fa-search {
+  position: absolute;
+  display: block;
+  content: " ";
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.doctors {
+  position: relative;
+  justify-content: flex-start;
+  padding-block: 3rem;
+  padding-left: 0;
+}
+.doctors .contact {
+  background-color: white;
+  opacity: 0.8;
+  backdrop-filter: blur(10px);
+}
+.doctors .fa-star {
+  color: gold;
+}
+.doctors .contact button {
+  background-color: transparent;
+  color: var(--accent-clr);
+  border: 1px solid var(--accent-clr);
+  font-size: 0.8em;
+  margin-block: 2em;
+}
+input {
+  padding: 1em;
+  outline: none;
+  border: none;
+  border-radius: 500px;
+  width: 100%;
+}
+.back {
+  position: fixed;
+  z-index: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  .contact {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+}

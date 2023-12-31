@@ -1,0 +1,83 @@
+.buycard-box{
+    background-color: white;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px black;
+    width: 40%;
+
+}
+.buycard-header{
+    font-family: "Montserrat";
+     font-size: 2.25rem;
+     color:#1AACAC ;
+     font-weight: 600;
+     cursor: pointer;
+     margin: 5% 0;
+     text-align: center;
+}
+.buycard-input-box{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+}
+.buycard-input{
+    margin: 0 2vw;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    width: 60%;
+}
+.buycard-input:focus{
+    outline: none;
+    border-color:#1AACAC ;
+}
+.buycard-Items-subbox{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1% 0;
+    display: flex;
+    justify-content: center;
+}
+.buycard-Items-input{
+    margin: 0 1vw;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+}
+.buycard-Itemsbox{
+    display: flex;
+}
+.buycard-price{
+    font-size: 1.75rem;
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 600;
+    color: blueviolet;
+}
+.buycard-button{
+    padding: 1% 4%;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #1AACAC;
+    border: none;
+    color: white;
+    display: block;
+    margin: 0% auto;
+    margin-top: 10%;
+}
+.buycard-button:active{
+    box-shadow: none;
+}

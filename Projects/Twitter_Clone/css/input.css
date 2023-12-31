@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-button {
+    @apply my-1 flex w-fit gap-5 rounded-full p-3 hover:bg-darkGray;
+  }
+
+  .trends-button {
+    @apply flex cursor-pointer justify-between pl-4 hover:bg-darkGray;
+  }
+}
+
+@layer utilities {
+  .nav-header-text {
+    @apply mr-4 hidden xl:block;
+  }
+
+  .tweet-editor-logo {
+    @apply rounded-full p-2 hover:bg-darkGray;
+  }
+
+  .profile-pic {
+    @apply h-12 max-w-[48px];
+  }
+
+  .timeline-border {
+    @apply flex border-b-2 border-borderColor;
+  }
+
+  .tweet-username {
+    @apply flex items-center text-base;
+  }
+
+  .tweet-text {
+    @apply text-base leading-tight text-textColor;
+  }
+
+  .reaction-icons {
+    @apply mt-3 flex w-full justify-evenly text-lightGray;
+  }
+
+  .trends-button-list {
+    @apply py-1 text-base font-bold leading-none text-textColor;
+  }
+
+  .trending {
+    @apply pt-1 text-xs text-lightGray;
+  }
+
+  .tweet-counter {
+    @apply pb-1 text-base text-lightGray;
+  }
+
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

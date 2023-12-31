@@ -1,0 +1,268 @@
+/*-----------------------------------*\
+  #product-details.css
+\*-----------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------*\
+  #PRODUCT DETAILS
+\*-----------------------------------*/
+
+.product-details {
+
+  /**
+   * typography for this page
+   */
+
+  --fs-1: 2.2rem;
+  --fs-2: 2rem;
+
+}
+
+.product-details .wrapper {
+  padding-block-end: 50px;
+  border-block-end: 1px solid var(--light-gray);
+  margin-block-end: 40px;
+}
+
+.product-details-img { margin-block-end: 10px; }
+
+.product-display {
+  background-color: var(--light-gray);
+  margin-block-end: 15px;
+}
+
+.fade-anim { animation: fade 0.25s ease forwards; }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.product-thumbnail-list {
+  padding-block-end: 10px;
+  margin-block-end: 0;
+  gap: 10px;
+}
+
+.product-thumbnail-item {
+  background-color: var(--light-gray);
+  min-width: calc(50% - 5px);
+  scroll-snap-align: start;
+}
+
+.product-title,
+.product-price {
+  color: var(--russian-violet);
+  font-weight: var(--fw-700);
+}
+
+.product-title {
+  font-size: var(--fs-1);
+  margin-block-end: 5px;
+}
+
+.product-price { font-size: var(--fs-2); }
+
+.product-details-content > .rating-wrapper {
+  --justify-content: flex-start;
+  margin-block: 20px 30px;
+}
+
+.product-text {
+  color: var(--sonic-silver);
+  line-height: 1.8;
+}
+
+.product-weight-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  padding-block: 20px 30px;
+}
+
+.product-weight-title {
+  font-size: var(--fs-7);
+  color: var(--rhythm);
+  min-width: max-content;
+}
+
+.product-weight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.product-weight-radio { display: none; }
+
+.product-weight-label {
+  background-color: var(--spanish-gray);
+  color: var(--white);
+  font-size: var(--fs-8);
+  padding: 10px 15px;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.product-weight-radio:checked + .product-weight-label { background-color: var(--russian-violet); }
+
+.product-qty-input {
+  display: inline-block;
+  max-width: 154px;
+  color: var(--black);
+  font-weight: var(--fw-700);
+  border: 1px solid var(--spanish-gray);
+  padding: 11px 20px;
+  text-align: center;
+  outline: none;
+}
+
+.product-qty-input:focus { border-color: var(--emerald); }
+
+.product-qty-btn {
+  --fw: var(--fw-700);
+  border-radius: 0;
+  --padding: 13px 40px;
+}
+
+.product-qty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.description-title {
+  color: var(--russian-violet);
+  font-size: var(--fs-3);
+  margin-block-end: 15px;
+}
+
+.description-text {
+  color: var(--rhythm);
+  line-height: 1.8;
+  margin-block-end: 30px;
+}
+
+.description-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: var(--platinum);
+}
+
+.description-table :is(.table-data, .table-heading) {
+  color: var(--onyx);
+  font-size: var(--fs-7);
+  padding: 20px;
+}
+
+.table-heading { font-weight: var(--fw-500); }
+
+.description-table .table-data { text-align: center; }
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 480px screen
+ */
+
+@media (min-width: 480px) {
+
+  /**
+   * PRODUCT DETAILS
+   */
+
+  .product-details {
+
+    /**
+     * typography for this page
+     */
+
+    --fs-1: 3.4rem;
+    --fs-2: 2.8rem;
+
+  }
+
+  .product-title { margin-block-end: 15px; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  /**
+   * PRODUCT DETAILS
+   */
+
+  .product-thumbnail-item { min-width: calc(33.33% - 6.66px); }
+
+  .product-weight-title { --fs-7: 1.5rem; }
+
+  .product-qty-input { padding-block: 16.5px; }
+
+  .product-qty-btn {
+    --fs: 1.8rem;
+    --padding: 16px 40px;
+  }
+
+  .description-title { --fs-3: 2.2rem; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+  /**
+   * PRODUCT DETAILS
+   */
+
+  .product-details .wrapper {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 60px;
+  }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * PRODUCT DETAILS
+   */
+
+  .product-thumbnail-item { min-width: calc(25% - 7.5px); }
+
+}

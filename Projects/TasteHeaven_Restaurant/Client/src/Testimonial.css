@@ -1,0 +1,117 @@
+#testimonial {
+    background-color: #f6f5f9;
+}
+
+.testimonial-img {
+    height: 20vh;
+
+   
+  
+    /* margin-top: 14vh;
+    margin-left: 26.5vh; */
+    border: 5px solid blueviolet;
+}
+
+.testimonial-content {
+    /* background-color: red; */
+    text-align: center;
+    background-color: #E5E0FF;
+}
+
+.testimonial-overlap-card {
+
+ 
+    width: 50%;
+   margin: 10vh auto;
+    /* padding-top: 100vh; */
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 22px;
+    border: 1px solid black;
+    padding: 8%;
+    line-height: 1.2em;
+    border-radius: 15px;
+    background-color: #E5E0FF;
+   
+    border: none;
+    box-shadow: 4px 4px 4px white;
+
+}
+
+.testimonial-overlap-card:hover {
+    box-shadow: 6px 6px 6px blueviolet;
+}
+
+.testimonial-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-user {
+    /* text-align: center; */
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    float: right;
+    background-color: #E5E0FF;
+    color: blue;
+
+}
+
+.left-testimonial-btn {
+
+    z-index: 10;
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: 0.78%;
+    border: none;
+    background-color: #f6f5f9;
+
+
+}
+
+.testimonial-btn-img {
+    height: 40px;
+    background-color: #f6f5f9;
+    border: none;
+
+}
+
+.testimonial-btn-img:hover {
+    height: 42px;
+}
+
+.right-testimonial-btn {
+    z-index: 10;
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: 30.5%;
+    border: none;
+    background-color: #f6f5f9;
+}
+
+.testimonial-heading {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Montserrat";
+    color: blueviolet;
+    margin-top: 5%;
+}
+.testimonial-card{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and  (max-width: 768px) {
+    .testimonial-overlap-card {
+        font-size: 1rem;
+        display: block;
+        width: 50%;
+        height: 300px;
+    }
+    #testimonial{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Number Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="guessthenum">
+    <div class="heading"><h1>Number Guessing Game</h1></div>
+    <div class="content">
+      <p>Guess a number between 1 and 100:</p>
+      <input type="number" id="guess" min="1" max="100">
+      <button class="submitbtn" onclick="checkGuess()">Submit Guess</button>
+    </div>
+    
+    <div id="result"></div>
+    <div id="count"></div>
+    <button class="replaybtn" onclick="replayGame()" style="display: none;">Replay</button>
+  </div>
+  
+  <script src="script.js"></script>
+<footer><div class="footer">Made with ❤️ by <a href="https://www.github.com/Preeti8021">Preeti8021</a></div></footer>
+
+</body>
+</html>

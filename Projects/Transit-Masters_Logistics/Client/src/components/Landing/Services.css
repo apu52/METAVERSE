@@ -1,0 +1,89 @@
+#services{
+    background-color: white;
+}
+.services-card-img{
+    width:20vw;
+    height: 40vh;
+    background-color: #d4d3d3;
+}
+.online{
+    height: 30vh;
+    margin:8% 0 ;
+   
+}
+.services-card{
+    /* border: 1px solid black; */
+    width: fit-content;
+    text-align: center;
+    box-shadow: 8px 8px 8px white;
+    padding:2% 0;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #d4d3d3;
+}
+
+.services-card:hover{
+    box-shadow: 8px 8px 8px rgba(191, 191, 234, 0.639);
+}
+.services-card-header{
+  margin:0 0%;
+  color: blue;
+  font-family: "Montserrat";
+  font-size: 30px;
+  background-color: #d4d3d3;
+  
+  
+}
+
+.services-content-img{
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 5%;
+
+    
+}
+.servicesul>li{
+    /* margin:10px 10px 0px 0px; */
+     
+     padding: 10px;
+     list-style: none;
+     font-family: "Montserrat";
+     font-size: 20px;
+     color:black ;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: #d4d3d3;
+}
+.services-header{
+    text-align: center;
+    font-family: "Montserrat";
+     font-size: 40px;
+    color: #1AACAC;
+    font-weight: 600;
+     margin: 2%;
+     margin-top: 6%;
+     margin-left: -1%;
+     padding:3% ;
+     
+}
+@media only screen and (max-width: 768px) {
+    .services-card-img {
+      width: 60vw;
+      height: 40vh;
+    }
+  
+    .services-card {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .services-header {
+      font-size: 2.5rem;
+    }
+    .servicesul>li{
+        font-size: 0.8rem;
+    }
+    .services-content-img{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,78 @@
+.main {
+  width: 100vw;
+  padding: 3rem;
+  padding-bottom: calc(3rem + 80px);
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #476a5d;
+  margin-bottom: 1em;
+}
+.subtitle {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #476a5d;
+}
+.addButton {
+  background-color: white;
+  color: black;
+}
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #466977;
+  box-shadow: 0 -0px 10px rgba(0, 0, 0, 0.25);
+
+  justify-content: space-evenly;
+}
+
+.bottomNav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  /* font-size: 1.5em; */
+  text-align: center;
+  transition: 0.5s;
+  padding-inline: 3ch;
+  -webkit-tap-highlight-color: transparent;
+}
+.bottomNav .fa {
+  position: relative;
+  font-size: 1.7em;
+}
+.bottomNav .fa > .fa {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7em;
+  color: #466977;
+}
+.bottomNav a.active {
+  background-color: #589cb7;
+}
+.bottomNav a:hover {
+  color: #00ffa6;
+}
+
+@media (max-width: 600px) {
+  .bottomNav a {
+    padding-inline: unset;
+  }
+  .bottomNav a span {
+    display: none;
+  }
+
+  .bottomNav a.active {
+    color: #00ffa6;
+    background-color: transparent;
+  }
+}

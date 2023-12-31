@@ -1,0 +1,105 @@
+.body {
+    background-color: #C8C6C6;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    background-color: #f6f5f9;
+    padding: 40px 100px 60px 50px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.formlabel {
+    padding: 20px 10px 0px 0;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #6C63FF;
+    cursor: pointer;
+
+}
+
+.forminput {
+    width: 120%;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #f6f5f9;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    /* font-family: "Montserrat"; */
+
+}
+
+input[type="text"]:focus {
+    outline: none;
+    /*Important*/
+    font-family: "Montserrat";
+}
+
+.formbtn {
+    margin-top: 30px;
+    padding: 11px;
+    width: 70%;
+    margin-left: 15%;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    box-shadow: 3px 3px 3px #6C63FF;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-family: "Montserrat";
+}
+
+.formbtn:active {
+    box-shadow: none;
+}
+
+.card h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: blueviolet;
+    cursor: pointer;
+    font-size: 38px;
+    /* letter-spacing: 1.2px; */
+    line-height: 1.2em;
+    font-family: "Montserrat";
+}
+
+.formfoot {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.formfoot>a {
+    color: blueviolet;
+}
+
+.formfoot>a:visted {
+    color: blueviolet;
+
+}
+
+.errmsg {
+    /* padding: 20px 10px 0px 0; */
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: rgb(246, 20, 20);
+    cursor: pointer;
+    text-align: center;
+}

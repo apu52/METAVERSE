@@ -46,11 +46,7 @@
 
 
 <!-- <p class="invert-color" style="position: sticky; top: 30px; z-index:100; margin-left: 30px;">Theme :</p> -->
-<label class="theme-toggle" for="themeToggle" style="position: fixed; top: 28px; z-index: 100; margin-left: 30px">
 
-  <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-  <span class="slider"></span>
-</label>
 
 <body>
   <div class="cursor"></div>
@@ -97,6 +93,11 @@
 
         <div class="heading">
           <span>🚀&nbsp;</span><span>M</span><span>E</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
+          <label class="theme-toggle" for="themeToggle" style="z-index: 100; ">
+
+            <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
+            <span class="slider"></span>
+          </label>
         </div>
 
 

@@ -1,0 +1,35 @@
+.trackmodal-box{
+    padding: 2%;
+    font-size: 1.75rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    box-shadow: 4px 4px 4px white;
+}
+.trackmodal-input{
+    font-size: 1.5rem;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    caret-color: white;
+    color: white;
+}
+.trackmodal-btn{
+    display: block;
+    margin: 10% auto;
+    padding: 1% 10%;
+    background-color: #1ACCAC;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    box-shadow: 3px 3px 3px white;
+    cursor: pointer;
+
+
+}
+.trackmodal-btn:hover{
+    background-color: #0dad90;
+}
+.trackmodal-btn:active{
+    box-shadow: none;
+}

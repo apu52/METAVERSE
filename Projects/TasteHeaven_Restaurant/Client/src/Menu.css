@@ -1,0 +1,202 @@
+.Menu-flexbox {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0%;
+    padding-left: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f6f5f9;
+}
+
+.Menu-heading {
+    padding: 2%;
+    font-size: 35px;
+    font-family: "Montserrat";
+    line-height: 1.2em;
+    background-color: #f6f5f9;
+    color: blue;
+
+}
+
+.Menu-Logout-button {
+    padding: 10% 10%;
+    width: 11vw;
+    margin-top: -1%;
+    background-color: #f6f5f9;
+    color: #6C63FF;
+    font-family: "Montserrat";
+    font-size: 15px;
+    box-sizing: border-box;
+    border-color: #6C63FF;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px #3d35d3;
+}
+
+.Menu-Logout-button:hover {
+    background-color: #6C63FF;
+    border: none;
+    color: #f6f5f9;
+}
+
+.Menu-Logout-button:active {
+    box-shadow: none;
+}
+
+.Menu-user-name {
+    /* font-style: italic; */
+    font-family: "Poppins";
+    color: blueviolet;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right>li>a {
+    text-decoration: none;
+    color: #6C63FF;
+}
+
+.right>li>a:hover {
+    color: #3d35d3;
+}
+
+/*Navbar Styling**/
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #f6f5f9;  */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&family=Montserrat&family=Poppins:wght@300;400;500;600;700;800&family=Sacramento&display=swap');
+
+.navbar {
+    background-color: #f6f5f9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    display: flex;
+}
+
+.logo {
+    margin: 10px 10px 10px 5px;
+    padding: 10px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #6C63FF;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.logo:hover {
+    color: blue;
+}
+
+.left {
+    display: flex;
+}
+
+/* #11009E */
+.right>li {
+    margin: 10px 10px 10px 15px;
+
+    padding: 10px;
+    list-style: none;
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #6C63FF;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.right>li:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.material-symbols-rounded {
+    /* margin:10px 10px 10px 15px;
+    padding: 10px; */
+    font-size: 35px;
+    margin: 5px 0px 10px 15px;
+    padding: 10px 0px 10px 10px;
+    color: #6C63FF;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.material-symbols-rounded:hover {
+    color: blue;
+}
+
+.right>a {
+    text-decoration: none;
+}
+
+.right>a:visited {
+    color: #6C63FF;
+}
+
+.menu-nav-cart-icon {
+    height: 5vh;
+
+}
+
+.Menu-search-bar {
+    background-color: #f6f5f9;
+    padding: 0.8%;
+    width: 25%;
+    font-family: "Montserrat";
+    border-radius: 20px;
+    font-size: 18px;
+    position: relative;
+    border: 2px solid blueviolet;
+
+}
+
+.Menu-search-bar:focus {
+    outline: none;
+}
+
+.Menu-search-bar::placeholder {
+    color: black;
+    font-size: 18px;
+
+}
+
+.Menu-searchIcon {
+    z-index: 10;
+    position: absolute;
+    margin-left: 21%;
+    transform: rotate(-10deg);
+    height: 5%;
+    margin-top: 8px;
+}
+
+.Menu-404-notfound {
+    font-family: "Montserrat";
+    font-size: 45px;
+    color: Black;
+    font-weight: 600;
+    padding: 10%;
+
+}
+@media (max-width: 768px) {
+    .Menu-heading{
+        font-size:1.5rem ;
+    }
+    .Menu-Logout-button{
+        width:25vw !important;
+    }
+    .Menu-search-bar{
+        width: 50vw !important;
+        padding: 3vw;
+    }
+    .Menu-searchIcon{
+        display: none;
+    }
+}

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai',cursive;
+     /* background: rgb(58, 246, 58) ; */
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.mid{
+  width: 100%;
+    height: 60px;
+    background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+    position: sticky;
+   margin: 0px auto;
+  border-top: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    
+    }
+.navbar{
+    display: flex;
+   /* margin: 0;
+   padding: 0 100px; */
+}
+.navbar li{
+    display: inline-block;
+    font-size: 22px;
+    list-style: none;
+}
+.navbar li a{
+    color: black;
+    text-decoration: none;
+    padding: 28px 15px;
+   
+    /* display: block; */
+}
+.navbar li a span{
+    font-size: 30px;
+    color: black;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.btn input{
+    right: 34px;
+    top: 20px;
+    position: absolute;
+    color: black;
+    background-color: rgb(76, 206, 249);
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+}
+.btn input:hover{
+    background-color: grey;
+    color: #FF0000;
+}
+.slide{
+    font-size: 30px;
+    color: rgb(3, 73, 3);
+    bottom:5px;
+    background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+    text-shadow:0 3px 3px  rgb(3, 73, 3);
+}
+
+.main1{
+    /* background-color: aqua; */
+    background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+}
+.quote h4{
+    font-size: 20px;
+      color: red;
+      margin-left: 40px;
+      margin-top: 0px;
+      width: 50%;
+      text-shadow:0 3px 3px #000;
+}
+  .quote p{
+      width: 40%;
+      height: 50%;
+      font-size: 50px;
+      margin-top: 60px;
+      margin-left: 40px;
+      text-shadow:0 3px 3px #000;
+  }
+  
+  .button button{
+    background: red;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    /* margin-top: 20px; */
+    box-shadow: 0px 5px 15px 0px rgb(28, 0, 181,0.3);
+    margin-left: 40px;
+     
+  }
+  .button button:hover{
+      color: black;
+      background: grey;
+  }
+    .banner{
+        position: absolute;
+    /*border: 2px solid aqua;*/
+   display: inline-block;
+   right: 10px;
+   top: 150px;
+    }
+   
+
+  .section{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    background-image: url('f10.jpg');
+  }
+  .section:hover{
+    transition: 1.0s ease-out;
+  }
+  .sec-left{
+   flex-direction: row-reverse;
+    
+  }
+  footer{
+   
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+
+}
+.socials li{
+    margin: 0 10px;
+
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    text-align: center;
+
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+/* css for the translae module */
