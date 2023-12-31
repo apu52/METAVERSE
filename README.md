@@ -189,7 +189,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 <table>
 <tr>
 <td align="center"><a href="https://github.com/apu52"><img src="images/apu.jpeg" width=150px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
-<a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
+<a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-linkedin-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
 
 </tr>
