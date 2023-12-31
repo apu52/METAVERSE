@@ -60,7 +60,7 @@ function calculateAge() {
         case 'years':
             var age = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 365.25));
             var units = 'years';
-            displayResult(age,units);
+            displayResult(age,units); 
             break;
         case 'months':
             var ageInMonths = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 30.44));
@@ -109,7 +109,12 @@ function calculateAge() {
                 m3 = 11;
                 y3--;
             }
-            result.innerHTML = `You are ${y3} years, ${m3} months and ${d3} days old`;
+            result.innerHTML = `You are ${y3} years, ${m3} months and ${d3} days old!`; 
+            if (y3 === undefined || m3 === undefined || d3 === undefined ) {
+                var ageymd = NaN;
+                var units = "years, months and days"; 
+                displayResult(ageymd, units);
+            }
             break;
         default:
             alert('Invalid unit selected');
@@ -118,7 +123,7 @@ function calculateAge() {
 
 function displayResult(age, units) {
     var resultElement = document.getElementById('result');
-    resultElement.textContent = 'You are ' + age + ' ' + units + ' old';
+    resultElement.textContent = 'You are ' + age + ' ' + units + ' old!';
 }
 
 function resetFields() {
