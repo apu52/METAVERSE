@@ -1023,6 +1023,15 @@ ul.socials {
     margin: 0;
   }
 }
+
+/* responsive larger than 1600px screen */
+@media (min-width: 1600px) {
+  /* Heading */
+  .heading {
+    margin-top: 2%;
+  }
+}
+
 /* Responsive CSS for the heading*/
 @media (max-width: 760px) {
   .heading {
