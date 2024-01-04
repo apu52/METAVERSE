@@ -6,7 +6,7 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9fafa;
+    background-color: #123838;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,17 +26,21 @@
     padding: 10px;
     font-size: 16px;
     border: 1px solid #86a6da;
-    border-radius: 4px;
+    border-radius: 17px;
+    margin: 6px;
+    background: linear-gradient(rgb(127, 157, 167),rgb(255, 254, 254));
   }
   
   button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #0f3065;
+    background-color: #616e81;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #86a6da;
+    border-radius: 17px;
+    margin: 6px;
   }
   
   button:hover {
@@ -48,7 +52,7 @@
   .profile {
     max-width: 700px;
     margin: 0 auto;
-    background-color: #176e78;
+    background-color: #021113;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(91, 158, 192, 0.595);
