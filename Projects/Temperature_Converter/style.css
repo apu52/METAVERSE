@@ -270,8 +270,12 @@ label {
 
 
 @media only screen and (max-width: 575px) {
-    .container {
+     .container {
         transform: scale(0.95);
+        width:360px;
+    }
+    .inptsss div{
+        width:48%;
     }
 }
 
