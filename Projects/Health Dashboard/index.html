@@ -21,6 +21,26 @@
             color:var(--txt);
         }
 
+        /*form css*/
+        form {
+            background-color: var(--inbg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .hidden{
+            display: none;
+        }
+
         .dashboard-section {
             margin-top: 20px;
         }
@@ -88,6 +108,19 @@
         <label for="toggle"></label>
     </div>
 
+     <!-- Form to take user's name and age -->
+     <form id="userForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age:</label>
+            <input type="number" class="form-control" id="age" required>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="updateDashboard()">Update Dashboard</button>
+    </form>
+
     <div class="row">
         <div class="col-md-6">
             <div class="card">
@@ -95,8 +128,8 @@
                     <h5 class="card-title">User Dashboard</h5>
                     <div class="row">
                         <div class="col-6">
-                            <p class="card-text"><strong>Name:</strong> John Doe</p>
-                            <p class="card-text"><strong>Age:</strong> 30</p>
+                            <p class="card-text"><strong>Name:</strong> <div id="user-name"></div></p>
+                            <p class="card-text"><strong>Age:</strong> <div id="user-age"></div></p>
                             <p class="card-text"><strong>Height:</strong> 175 cm</p>
                             <p class="card-text"><strong>Weight:</strong> 70 kg</p>
                         </div>
@@ -180,6 +213,18 @@
 <!-- Bootstrap JS and Popper.js (order matters) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="index.js"></script>
+<script>
+    function updateDashboard() {
+        // Get user input values
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+
+        // Update the dashboard with the entered information
+        document.getElementById('user-name').textContent = name;
+        document.getElementById('user-age').textContent = age;
+        document.getElementById('userForm').classList.add('hidden');
+    }
+</script>
 </body>
 </html>
 
