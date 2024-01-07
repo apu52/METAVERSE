@@ -31,14 +31,14 @@
 
 ### This project is a part of following Open Source Programs
 
-<div>
+<div align="center">
   
   <img src="images/KWOC pic.png" width="70%">
 </div>
 
 ### This project was previously part of following Open Source Programs
 
-<div>
+<div align="center">
   <img src="images/Code collab carnival.png" width="57%">
   <img src="images/hack.jpeg" width="50%">
   <img src="images/Codepeak Pic.png" width="60%">
