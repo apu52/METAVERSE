@@ -7,9 +7,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* default colors */
+        :root{
+           --bg: white;
+           --txt:black;
+           --inbg:rgb(189, 189, 196);
+           --intxt:rgb(0, 0, 0);
+
+        }
         body {
             padding-top: 20px;
-            background-color: #f8f9fa;
+            background-color: var(--bg);
+            color:var(--txt);
         }
 
         .dashboard-section {
@@ -18,13 +27,66 @@
 
         .card {
             margin-bottom: 20px;
+            background-color: var(--inbg);
+            color:var(--intxt);
         }
+
+        .toggle input[type='checkbox'] {
+    display: none;
+}
+
+.toggle label {
+    background-color: #777;
+    border: 2px solid #555;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 100px;
+    height: 50px;
+}
+.toggle label::after {
+    background-color: #555;
+    border-radius: 50%;
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.3s;
+    width: 42px;
+    height: 42px;
+}
+.toggle input[type='checkbox']:checked ~ label {
+    background-color: #00a0fc;
+    border-color: #006dc9;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+    background-color: #0054b0;
+    transform: translateX(50px);
+}
+/*For the dark theme */
+.dark-theme{
+    --bg: #020202;
+    --txt:white;
+    --inbg:rgb(43, 43, 65);
+    --intxt:rgb(255, 234, 234);
+
+}
+
     </style>
 </head>
 <body>
 
 <div class="container">
     <h2 class="mb-4">Health Tracker</h2>
+    <div class="toggle">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle"></label>
+    </div>
 
     <div class="row">
         <div class="col-md-6">
@@ -117,6 +179,7 @@
 
 <!-- Bootstrap JS and Popper.js (order matters) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
 
