@@ -92,3 +92,10 @@ footer a:focus {
   color: white;
   font-weight: bold;
 }
+/* Responsive */
+@media(width<584px){
+  .guessthenum{
+    width:320px;
+  }
+
+}
