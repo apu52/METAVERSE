@@ -504,11 +504,15 @@ background: linear-gradient(90deg, rgba(0,255,187,1) 16%, rgba(0,241,255,1) 37%,
 
     margin-right: 1rem;
   }
+  .discover-more{
+    width: 88.6rem;
+    height: 1.8rem;
+  }
 
 
 
   .post__title{
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
   }
 
@@ -622,4 +626,5 @@ background: linear-gradient(90deg, rgba(0,255,187,1) 16%, rgba(0,241,255,1) 37%,
     margin-top: 1rem;
   }
 }
+
 
