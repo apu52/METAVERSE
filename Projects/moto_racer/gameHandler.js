@@ -1,7 +1,9 @@
 const score = document.querySelector('.score');
+const hscore = document.querySelector('.hscore');
 const startScreen = document.querySelector('.startScreen');
 const gameArea = document.querySelector('.gameArea');
 const level = document.querySelector('.level');
+let highestScore=0;
 
 // loading audio files
 
@@ -113,6 +115,39 @@ function moveEnemyCars(carElement){
     });
 } 
 
+function getHighestScore() {
+    // Retrieve the highest score from local storage, or default to 0 if not present
+    return parseInt(localStorage.getItem('highestScore')) || 0;
+  }
+// Function to update the highest score in local storage
+function updateHighestScore(newScore) {
+    // Get the current highest score
+    const currentHighestScore = getHighestScore();
+  
+    // Update the highest score if the new score is greater
+    if (newScore > currentHighestScore) {
+      localStorage.setItem('highestScore', newScore);
+      console.log('New highest score saved:', newScore);
+    }
+  }
+
+  // Function to check the current score against the highest score
+function checkScore(currentScore) {
+    highestScore = getHighestScore();
+  
+    console.log('Current Score:', currentScore);
+    console.log('Highest Score:', highestScore);
+  
+    if (currentScore > highestScore) {
+      console.log('Congratulations! You have a new highest score!');
+      // Update the highest score in local storage
+      updateHighestScore(currentScore);
+    } else {
+      console.log('Keep playing to beat the highest score!');
+    }
+  }
+
+
 function gamePlay() {
     let carElement = document.querySelector('.car');
     let road = gameArea.getBoundingClientRect();
@@ -133,7 +168,9 @@ function gamePlay() {
 
         player.score++;
         const ps = player.score - 1;
-        score.innerHTML = 'Score: ' + ps;          
+        checkScore(ps);
+        score.innerHTML = 'Score: ' + ps ; 
+        hscore.innerHTML=  'Highest Score:' + highestScore         
     }
 }
 document.addEventListener('keydown', (e)=>{
