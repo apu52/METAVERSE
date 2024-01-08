@@ -46,6 +46,18 @@
             font-size: 1.5em;
             box-shadow: 0 5px 5px #777;
         }
+        .hscore{
+            position: absolute;
+            top: 95px;
+            left: 40px;
+            background: #10ac84;
+            width: 300px;
+            line-height: 70px;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            box-shadow: 0 5px 5px #777;
+        }
         .startScreen{
             position: absolute;
             background-color: #ee5253;
