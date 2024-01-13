@@ -29,19 +29,14 @@
  
  ## 📌 Open Source Program
 
-### This project is a part of following Open Source Programs
+
+### This project was part of following Open Source Programs
 
 <div align="center">
-  
+  <img src="images/Codepeak Pic.png" width="60%">
   <img src="images/KWOC pic.png" width="70%">
-</div>
-
-### This project was previously part of following Open Source Programs
-
-<div align="center">
   <img src="images/Code collab carnival.png" width="57%">
   <img src="images/hack.jpeg" width="50%">
-  <img src="images/Codepeak Pic.png" width="60%">
 </div>
   
 ##  About METAVERSE
@@ -64,10 +59,6 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 - <h3>Diverse Metaverse Projects:</h3> Our repository features a wide spectrum of metaverse-related front-end projects. From HTML, CSS, and JavaScript to immersive React experiences, you'll find projects that push the boundaries of the metaverse.
 
 - <h3>🤝 Collaboration:</h3> Metaverse Front-End Playground thrives on collaboration. You can enhance existing metaverse projects, contribute new features, or even conjure up entirely new metaverse experiences. Your creative contributions are highly valued!
-
-
-
-- <h3> 🎉 KWOC'23 Affiliation:</h3> We're thrilled to be part of KWOC'23, the global celebration of open source. By contributing to Metaverse Front-End , you can earn KWOC'23 rewards and swag while shaping the future of the metaverse between the time span of December 9,2023 to January 15,2024.
 
 - <h3>🚀Learning Opportunity:</h3> If you're new to metaverse development, this repository is an excellent launchpad. Collaborate with experienced metaverse developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.
 
