@@ -24,9 +24,8 @@ If you'd like to dive into existing projects, you're welcome to contribute by ad
 - At first raise an issue in which you want to work
 - Then after assigning only then work on that issue & make a PR 
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
+- All of you can Find the Already existing Web Dev projects in the `Projects` Folder.
 - REMINDER: Commit inside the `Projects` Folder & Foldername should not have any space.
-- IMPORTANT: Add a screenshot of your project in `assets/img` folder with the appropriate name with underscore.
-- IMPORTANT: Edit the `projectsData.json` accordingly with your project info & the name you used for the image in img folder.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 - **REMINDER: Don't raise more than 1 `Issue` at a time**
 - **IMPORTANT: Don't make any type of `Pull Request` until & unless you get assigned to an `Issue`**
