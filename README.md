@@ -83,6 +83,8 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 - **Make sure to add the img of your new project in the `assets/img` folder**
 - **Make sure to Update `projectData.json` file after submitting PR**
 
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+
 ## How to make a Pull Request?
 
 **1.** Start by forking the [**METAVERSE**](https://github.com/apu52/METAVERSE) repository. Click on the <a href="https://github.com/apu52/METAVERSE/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
@@ -185,6 +187,15 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 </tr>
 </table>
+
+Thank you to all the amazing contributors who have made this project possible!!💝
+
+## License 
+<img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+
+
 
 ## Project Admin/Moderators
 
