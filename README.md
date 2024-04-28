@@ -52,6 +52,53 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 
 **METAVERSE** repo has secured a position in *top 50 maintainer repositories* in **QUINE HACTOBERFEST** challenge 🏅
 
+## Available Projects
+
+<table >
+<tr>
+<td align="center">S.No</td>
+<td align="center">Projects</td>
+<td align="center">S.No</td>
+<td align="center">Projects</td>
+<td align="center">S.No</td>
+<td align="center">Projects</td>
+<td align="center">S.No</td>
+<td align="center">Projects</td>
+</tr>
+<tr align="center">
+<td align="center"> 1.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/AI_Image%20_Generator">AI-Images-Generator</a>  </td>
+<td align="center"> 2.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/API_IMAGES">API_IMAGES</a></td>
+<td align="center"> 3.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/Age_Calculator">Age_Calculator</a></td>
+<td align="center"> 4.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/Amazon-Clone">Amazon-Clone</a></td>
+</tr>
+
+<tr align="center">
+<td align="center"> 5.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/Analog_Clock">Analog_Clock</a>  </td>
+<td align="center"> 6.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/Astronomy">Astronomy</a></td>
+<td align="center"> 7.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/AudioExtract">AudioExtract</a></td>
+<td align="center"> 8.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/BMI_Calculator">BMI_Calculator</a></td>
+</tr>
+
+<tr align="center">
+<td align="center"> 9.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/Bake_website">Bake_website</a>  </td>
+<td align="center"> 10.</td>
+<td align="center"> <a href="https://github.com/apu52/METAVERSE/tree/main/Projects/Band_Name_Generator">Band_Name_Generator</a></td>
+</tr>
+
+
+
+
+</table>
+
 ## Blog
 
 <h2>What You'll Discover Here:</h2>
