@@ -178,6 +178,13 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 </a>
 <div align="center">
 
+Thank you to all the amazing contributors who have made this project possible!!💝
+
+## License 
+<img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+
  # Project Admin
 <table>
 <tr>
@@ -188,12 +195,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 </tr>
 </table>
 
-Thank you to all the amazing contributors who have made this project possible!!💝
 
-## License 
-<img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
-
-<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
 
 
 
