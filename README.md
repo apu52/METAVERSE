@@ -73,7 +73,7 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues).
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
 - At first raise an issue in which you want to work
-- **Please do not make more than 2 issues at a time , Once your PR have been merged only then go for the next issue**
+- **Please do not make more than 1 issues at a time , Once your PR have been merged only then go for the next issue**
 - **Then when you are get assigned only then work on that issue & make a PR**
 - Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
