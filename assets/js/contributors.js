@@ -1,13 +1,12 @@
 // Initialising variables
 const cont = document.getElementById('contributor');
 
-// Replace these with the owner and repository name of the repository
 const owner = 'apu52';
 const repoName = 'METAVERSE';
 
-// Function to fetch contributors for a given page number
+// Function to fetch contributors
 async function fetchContributors(pageNumber) {
-    const perPage = 100; // You can adjust this based on your needs
+    const perPage = 100; 
     const url = `https://api.github.com/repos/${owner}/${repoName}/contributors?page=${pageNumber}&per_page=${perPage}`;
 
     const response = await fetch(url);
