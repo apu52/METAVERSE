@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Calculator</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    /* Custom color scheme */
+body {
+  background-color: #000000; /* Black */
+  color: #000000; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #aaaaaa; 
+  flex-grow: 1;
+}
+
+/* Additional CSS styles for hover effects and cursor */
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
+.blur-cursor {
+  cursor: pointer;
+  filter: blur(2px);
+}
+
+/* Custom styles for GST results */
+#result {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#result p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#result span {
+  font-weight: bold;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #000000; /* Black */
+  color: #FFFFFF; /* White text */
+  padding: 10px 0;
+}
+
+nav a {
+  color: #FFFFFF;
+  margin-right: 20px;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.1); /* Scale effect on hover */
+  color: #FFA500; 
+}
+
+/* Footer styles */
+footer {
+  margin-top: auto;
+  background-color: #000000; /* Black */
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #FFFFFF;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #FFA500;
+  
+}
+
+
+.calculated-text {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="flex justify-between items-center py-4 px-6 bg-orange-500 text-white">
+    <div class="flex items-center">
+      <i class="fas fa-code fa-lg mr-2"></i> <!-- Icon for website title -->
+      <a href="#" class="font-semibold">GST Calculator</a>
+    </div>
+    <div class="flex items-center">
+      <a href="#" class="mr-4">More Calculators</a>
+      <a href="#">Future Projects</a>
+    </div>
+  </nav>
+
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-4 text-center">GST Calculator</h1>
+    <div class="flex justify-center mb-4">
+      <input type="number" id="amount" placeholder="Enter Amount"
+        class="rounded-l-lg p-2 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white" />
+      <select id="rate" class="rounded-r-lg border border-gray-200 p-2 bg-white border-t border-b border-r">
+        <option value="0.25">0.25%</option>
+        <option value="5">5%</option>
+        <option value="10">10%</option>
+        <option value="12">12%</option>
+        <option value="18">18%</option>
+        <option value="28">28%</option>
+      </select>
+    </div>
+    <div id="result" class="p-4 bg-white rounded-lg shadow-md mb-4">
+      <h2 class="text-lg font-bold mb-2">Calculated GST:</h2>
+      <p>Amount Excluding GST: <span id="amountExcludingGST"></span></p>
+      <p>Amount Including GST: <span id="amountIncludingGST"></span></p>
+      <p>GST Amount: <span id="gstAmount"></span></p>
+      <div id="sgstCgst">
+        <p class="calculated-text" id="igstText"></p>
+        <p class="calculated-text" id="cgstText"></p>
+        <p class="calculated-text" id="sgstText"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/keshav-chaudhary283/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Keshav-Chaudhary" target="_blank"><i class="fab fa-github"></i></a>
+    <p>Made by Keshav Chaudhary 😎</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Include Font Awesome for icons -->
+  <script>
+    // JavaScript code for calculating GST
+    const amountInput = document.getElementById('amount');
+    const rateSelect = document.getElementById('rate');
+    const amountExcludingGST = document.getElementById('amountExcludingGST');
+    const amountIncludingGST = document.getElementById('amountIncludingGST');
+    const gstAmount = document.getElementById('gstAmount');
+    const igstText = document.getElementById('igstText');
+    const cgstText = document.getElementById('cgstText');
+    const sgstText = document.getElementById('sgstText');
+
+    amountInput.addEventListener('input', calculateGST);
+    rateSelect.addEventListener('change', calculateGST);
+
+    function calculateGST() {
+      const amount = parseFloat(amountInput.value) || 0;
+      const rate = parseFloat(rateSelect.value);
+      const gst = amount * (rate / 100);
+      const sgstAmount = gst / 2;
+      const cgstAmount = gst / 2;
+
+      amountExcludingGST.textContent = amount.toFixed(2);
+      amountIncludingGST.textContent = (amount + gst).toFixed(2);
+      gstAmount.textContent = gst.toFixed(2);
+
+      igstText.textContent = `IGST - Rs ${gst.toFixed(2)} or`;
+      cgstText.textContent = `CGST - Rs ${cgstAmount.toFixed(2)} +`;
+      sgstText.textContent = `SGST/UTGST - Rs ${sgstAmount.toFixed(2)}`;
+    }
+
+  </script>
+</body>
+
+</html>
+/* if you wanna use this as a source code then mention me */
