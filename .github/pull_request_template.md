@@ -13,15 +13,16 @@ Close #<issue_no>
 
 # Video (mandatory)
 <!--Please try to attach the working video of your new deployed project here -->
-<!-- It is not applicable for the templates of adding feature or fixing bugs -->
+
 
 # Checklist:
 
 - [ ] I have mentioned the issue number in my Pull Request.
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have created a helpful and easy to understand `README.md`
-- [ ] I have updated the `projectData.json` file for my contribution
-- [ ] I have added the img of my project in the `assets/img` section
+- [ ] I have gone through the  `contributing.md` file before contributing
+
+
 <!-- [X] - put a cross/X inside [] to check the box -->
 **Additional context (Mandatory )**
 
