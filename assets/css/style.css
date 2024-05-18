@@ -1004,10 +1004,8 @@ ul.socials {
   }
 }
 
-/* responsive larger than 1250px screen */
-@media (min-width: 1250px) {
-  /* MAIN */
-
+/* making the layout responsive on tablets*/
+@media only screen and (min-width:600px) {
   main {
     max-width: 2000px;
     margin-inline: auto;
@@ -1017,8 +1015,16 @@ ul.socials {
     align-items: stretch;
     gap: 25px;
   }
+
+  .main-content{
+    width: 85%;
+  }
+}
+
+/* responsive larger than 1250px screen */
+@media (min-width: 1250px) {
+  /* MAIN */
   .main-content {
-    min-width: 75%;
     width: 75%;
     margin: 0;
   }
@@ -1315,12 +1321,18 @@ ul.socials {
   background: #282c34;
   font-size: 2vmin;
   font-family: JetBrains Mono, monospace;
-  height: 90vh;
-  width: 70vw;
+  height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+}
+
+@media only screen and (max-width:600px){
+  #part{
+    height:60vh;
+  }
 }
 
 .string {
