@@ -226,38 +226,9 @@ git push origin YourBranchName
 Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo
 </p>
 
-## Project Contributors
-
-<p align ="center">
-  <img src="https://api.vaunt.dev/v1/github/entities/apu52/repositories/METAVERSE/contributors?format=svg&limit=54" width="700" height= "250" />
-</p>
-<a href="https://github.com/apu52/METAVERSE/graphs/contributors">
-<p align = "center" ><img src="https://contrib.rocks/image?repo=apu52/METAVERSE" /></p>
-</a>
 <div align="center">
 
-Thank you to all the amazing contributors who have made this project possible!!💝
-
-## License 
-<img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
-
-<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
-
- # Project Admin
-<table>
-<tr>
-<td align="center"><a href="https://github.com/apu52"><img src="images/apu.jpeg" width=120px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
- <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
-   </td>
-
-</tr>
-</table>
-
-
-
-
-
-## Project Admin/Moderators
+## Project Admin/Mentors
 
 <table>
 <tr>
@@ -286,3 +257,44 @@ Thank you to all the amazing contributors who have made this project possible!!�
 </tr>
 </table>
 </div>
+
+</div>
+
+<div align="center">
+
+ # Project Admin
+<table>
+<tr>
+<td align="center"><a href="https://github.com/apu52"><img src="images/apu.jpeg" width=120px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
+ <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+   </td>
+
+</tr>
+</table>
+
+</div>
+
+
+<div align="center">
+
+
+
+
+
+## Project Contributors
+
+<p align ="center">
+  <img src="https://api.vaunt.dev/v1/github/entities/apu52/repositories/METAVERSE/contributors?format=svg&limit=54" width="700" height= "250" />
+</p>
+<a href="https://github.com/apu52/METAVERSE/graphs/contributors">
+  <img align="center" src="https://contrib.rocks/image?max=100&repo=apu52/METAVERSE" />
+</a> 
+
+<div align="center">
+
+Thank you to all the amazing contributors who have made this project possible!!💝
+
+## License 
+<img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>

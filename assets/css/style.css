@@ -1043,7 +1043,6 @@ ul.socials {
   .heading {
     font-size: 4.5rem;
   }
-  
 }
 @media (max-width: 640px) {
   .heading {
@@ -1054,7 +1053,6 @@ ul.socials {
   .heading {
     font-size: 1.9rem;
   }
-  
 }
 
 .owner-info-container {
@@ -1309,6 +1307,7 @@ ul.socials {
   font-size: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
@@ -1327,6 +1326,7 @@ ul.socials {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
 }
 
 @media only screen and (max-width:600px){
