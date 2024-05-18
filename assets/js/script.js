@@ -1,3 +1,4 @@
+
 'use strict';
 
 // Pagination in project section
@@ -154,20 +155,31 @@ function disableDarkTheme() {
 
 
 function search() {
-  let input = document.getElementById('searchbar').value;
-  input = input.toLowerCase();
-  let searchelement = document.getElementsByClassName('project-item  active');
+  let input = document.getElementById('searchbar').value.toLowerCase();
+  let hasResults = false; // Initialize as false
+  let searchelement = document.getElementsByClassName('project-item active');
+  
   for (let i = 0; i < searchelement.length; i++) { 
-      if (!searchelement[i].innerHTML.toLowerCase().includes(input)) 
-      {
-          searchelement[i].style.display="none";
-      }
-      else 
-      {
-          searchelement[i].style.display="block";                 
-      }
+    if (searchelement[i].innerHTML.toLowerCase().includes(input)) {
+      searchelement[i].style.display = "block";
+      hasResults = true; // Set to true if a match is found
+    } else {
+      searchelement[i].style.display = "none";    
+    }
   }
+  console.log(hasResults, "Hello world")
+
+  const noResults = document.getElementById('noResults');
+  if (!hasResults) {
+    noResults.style.display = "block";
+    noResults.style.color = "red";    
+  } else {
+    noResults.style.display = "none";
+  }
+
 }
+
+
 
 function scrollToTop() {
   window.scrollTo({

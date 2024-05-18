@@ -130,6 +130,17 @@
     background: var(--primary);
     z-index: -1;
   }
+  .no-results-img{
+    width: 100%;
+  }
+  .no-result-heading{
+    color: #de6abb;
+    text-align: center;
+  }
+  .no-results-img2{
+    display: none;
+  }
+
   
   @keyframes glitch {
     0% {
