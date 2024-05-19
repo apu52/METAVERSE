@@ -55,6 +55,7 @@
 
 .addicon{
     display: flex;
+    align-items: center;
 }
 
 .navsearch{
@@ -90,6 +91,9 @@
     align-items: center;
     font-size: 1.2rem;
     color:#0f1111;
+    background-color: rgb(236, 157, 20);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .span{
@@ -101,15 +105,19 @@
     font-weight: 700;
 }
 .oo{
-background-color: wheat;
-
+background-color: white;
+}
+.nav-return{
+    margin-left: 3px;
+    margin-right: 10px;
 }
 
 
 .nav-cart i{
-font-size: 35px;
+font-size:30px ;
 
 }
+ 
 
 .nav-cart{
     font-size: 0.85rem;
@@ -127,22 +135,35 @@ font-size: 35px;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    font-weight: 700;
+    /* font-weight: 700; */
+}
+
+.panel i:hover{
+    opacity:2.2;
+    scale: 1.1;
 }
 .panel-ops p{
     display: inline;
     margin-left: 10px;
-    font-weight: 640;
+    /* font-weight: 640; */
 }
 
 .panel-ops{
     width: 70%;
-    font-size: 0.85rem;
+    font-size: 0.90rem;
+}
+.panel-ops p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .panel-left{
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     font-weight: 500;
+}
+.panel-left:hover{
+    opacity:2.2;
+    scale: 1.1;
 }
 
 .hero{
@@ -156,20 +177,21 @@ font-size: 35px;
 }
 
 .herowrite{
-    background-color: rgb(232, 225, 216);
+    background-color: white;
     color: #0f1111;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    margin-bottom: 30px;
-    padding: 7px;
+    width: 80%;
+    margin-bottom: 25px;
+    font-size:0.85rem;
+    /* padding: 7px; */
 
 }
 
 .herowrite a{
-    color: rgb(106, 153, 137);
+    color: #007185
 }
 
 .shops{
@@ -177,16 +199,21 @@ font-size: 35px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #caefe8;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .box{
     height: 400px;
-    width: 250px;
+    width: 23%;
     background-color: white;
     margin-top: 15px;
     padding: 20px 0px 15px;
     border-radius: 3px;
+}
+.box:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;    
+
 }
 
 .box-img{
@@ -216,19 +243,21 @@ font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: wheat;
-    height: 50px;
+    color: white;
+    height: 45px;
+    font-size: 0.95rem;
 }
 .panel2{
     background-color:  #232f3e;;
-    height: 286px;
+    height:500px;
     display:flex;
-    justify-content: space-around;
+    justify-content: center; /*space around*/
     color: white;
-    font-size: 20px;
+    align-items: center;
+    /* font-size: 20px;
     padding-left: 150px;
     padding-right: 150px;
-    padding-top: 10px;
+    padding-top: 10px; */
 }
 ul{
     margin-top: 20px;
@@ -252,7 +281,7 @@ ul p{
     height: 60px;
     color: white;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;/*space evenly*/
     border-top: 0.5px solid white;
     align-items: center;
 }
@@ -261,6 +290,11 @@ ul p{
     height: 60px;
     width: 100px;
     background-size: cover;
+}
+
+.logo1:hover{
+    opacity:2.2;
+    scale: 1.1;
 }
 
 .panel4 {
