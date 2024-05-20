@@ -28,6 +28,18 @@ sr.reveal('.about-container .box', { delay: 600, origin: 'top' })
 sr.reveal('.reviews-container ', { delay: 600, origin: 'top' })
 sr.reveal('.newsletter .box', { delay: 400, origin: 'bottom' })
 
-
+function useEffect() {
+  if (
+    document.referrer.includes("signup.html") ||
+    document.referrer.includes("signin.html")
+  ) {
+    const text = document.getElementById("up");
+    const text1 = document.getElementById("in");
+    text.innerHTML = "Signed-in";
+    text1.innerHTML = "";
+    text1.style.background = "#900c3f";
+  }
+}
+useEffect();
 
 
