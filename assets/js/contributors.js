@@ -32,7 +32,6 @@ async function fetchAllContributors() {
             allContributors = allContributors.concat(contributorsData);
             pageNumber++;
         }
-
         // Display contributors in the honeycomb-like layout
         allContributors.forEach((contributor) => {
             const contributorCard = document.createElement('div');
