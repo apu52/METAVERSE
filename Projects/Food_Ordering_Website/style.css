@@ -158,7 +158,7 @@ button{
 
 button:hover {
     background-color: gold;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
@@ -1229,6 +1229,15 @@ footer {
     }
 }
 
+button{
+     cursor: pointer;
+}
+
+button:hover {
+    background-color: gold;
+    border: 2px solid black;
+    border-radius: 5px;
+}
 
 
 footer .location {
