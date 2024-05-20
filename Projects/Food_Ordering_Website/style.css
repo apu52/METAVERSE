@@ -152,6 +152,16 @@ nav a:hover {
     cursor: pointer;
 }
 
+button{
+     cursor: pointer;
+}
+
+button:hover {
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .box1 .item3 button:hover {
     background-color: gold;
     border: 1px solid black;
