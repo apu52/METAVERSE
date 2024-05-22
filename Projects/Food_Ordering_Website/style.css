@@ -444,9 +444,16 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
 }
+
+.main3 .banner1 .food1 .money button:hover {
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 
 .main3 .banner1 .food2 {
     border: 1px solid rgb(0, 0, 0);
@@ -488,9 +495,15 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
 }
+.main3 .banner1 .food2 .money button:hover{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 
 .main3 .banner1 .food3 {
     border: 1px solid rgb(0, 0, 0);
@@ -532,8 +545,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner1 .food3 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main3 .banner1 .food4 {
@@ -576,8 +594,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner1 .food4 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main3 .banner2 {
@@ -630,10 +653,14 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
 }
-
+.main3 .banner2 .food1 .money button:hover{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+}
 .main3 .banner2 .food2 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
@@ -674,10 +701,14 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
 }
-
+.main3 .banner2 .food2 .money button:hover{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+}
 .main3 .banner2 .food3 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
@@ -718,8 +749,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner2 .food3 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main3 .banner2 .food4 {
@@ -762,8 +798,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner2 .food4 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main3 .banner3 {
@@ -816,9 +857,16 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
 }
+
+.main3 .banner3 .food1 .money button:hover{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 
 .main3 .banner3 .food2 {
     border: 1px solid rgb(0, 0, 0);
@@ -860,8 +908,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner3 .food2 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main3 .banner3 .food3 {
@@ -904,8 +957,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner3 .food3 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main3 .banner3 .food4 {
@@ -948,8 +1006,13 @@ nav a:hover {
     height: 100%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.763);
+    cursor: pointer;
+}
+.main3 .banner3 .food4 .money button:hover{
     background-color: gold;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .main4 {
@@ -1218,8 +1281,6 @@ footer {
         gap: 20px;
     }
 }
-
-
 
 footer .location {
     display: flex;
