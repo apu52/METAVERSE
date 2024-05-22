@@ -117,7 +117,8 @@ header {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background: url("libimg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.5)),
+    url("libimg2.jpg");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
@@ -524,6 +525,8 @@ header {
     border-left: 2px solid var(--main-color);
     margin: 1rem;
     display: block;
+    color: #320e4b;
+    background-color: #ffac38;
   }
 
   .navbar a:hover {
