@@ -1,18 +1,87 @@
 body {
   background-color: black;
+  overflow: hidden;
 }
 #canvas-container {
   margin: 0 auto;
   text-align: center;
 }
-#header-container {
-  text-align: center;
-  font-size: 40px;
-  color: white;
-}
 #score-container {
   text-align: center;
   font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+#start-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('background2.jpg') no-repeat center center/cover; 
+  z-index: 10;
+}
+#start-button {
+  background-color: yellow;
+  color: black;
+  font-size: 30px;
+  padding: 30px 50px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  transition: transform 0.2s, background-color 0.2s;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#start-button:hover {
+  background-color: gold;
+  transform: scale(1.1);
+}
+#end-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('background.jpg') no-repeat center center/cover; /* Add your background image path here */
+  z-index: 10;
+}
+#play-again-button {
+  background-color: yellow;
+  color: black;
+  font-size: 30px;
+  padding: 30px 40px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  transition: transform 0.2s, background-color 0.2s;
+  margin-top: 20px;
+}
+#play-again-button:hover {
+  background-color: gold;
+  transform: scale(1.1);
+}
+#end-score-container {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+  font-family: fantasy;
+}
+#remaining-bricks {
+  text-align: center;
+  font-size: 40px;
   color: white;
   padding: 10px;
 }
