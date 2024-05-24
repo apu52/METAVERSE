@@ -32,14 +32,20 @@ window.onload = function () {
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext("2d");
   var framesPerSecond = 30;
-  setInterval(updateAll, 1000 / framesPerSecond);
 
-  canvas.addEventListener("mousemove", updateMousePos);
-
-  brickReset();
-  ballRest();
-  canvas.addEventListener("touchstart", touchStart);
-  canvas.addEventListener("touchmove", touchMove);
+  hideEndContainer();
+  hidePlayAgainButton();
+  document.getElementById("start-button").addEventListener("click", function () {
+    document.getElementById("start-container").style.display = "none";
+    setInterval(updateAll, 1000 / framesPerSecond);
+    canvas.addEventListener("mousemove", updateMousePos);
+    brickReset();
+    ballRest();
+    canvas.addEventListener("touchstart", touchStart);
+    canvas.addEventListener("touchmove", touchMove);
+  });
+  setupPlayAgainButton(); // Call the setup function for play again button
+  document.getElementById("start-button").addEventListener("click", startGame); 
 };
 
 function updateAll() {
@@ -75,8 +81,9 @@ function ballMove() {
   ballY += ballSpeedY;
   // ballY
   if (ballY > canvas.height) {
-    // ballSpeedY = -ballSpeedY;
-    ballRest();
+    showEndContainer(); // Show end container when the ball is missed
+    showPlayAgainButton(); // Show play again button when the ball is missed
+    // ballRest();
     brickReset();
   } else if (ballY < 0 && ballSpeedY > 0.0) {
     ballSpeedY = -ballSpeedY;
@@ -111,6 +118,7 @@ function ballBrickColl() {
     if (isBrickAtColRow(ballBrickCol, ballBrickRow)) {
       brickGrid[brickIndexUnderBall] = false;
       brickCount--;
+      endScore = brickCount; // variable for end score
 
       var prevBallX = ballX - ballSpeedX;
       var prevBallY = ballY - ballSpeedY;
@@ -145,12 +153,16 @@ function ballBrickColl() {
   } else {
     updateScore(brickCount); // Update the score with the remaining brick count
   }
-  // colorText(ballBrickCol+","+ballBrickRow+": "+brickIndexUnderBall, mouseX, mouseY, 'white');
 }
 
 function updateScore(score) {
   var scoreElement = document.getElementById("score");
   scoreElement.textContent = "Bricks Remaining: " + score;
+
+  if (score === 0) {
+    showEndContainer(); // Show end container when score becomes 0
+    showPlayAgainButton(); // Show play again button when score becomes 0
+}
 }
 
 function paddleMove() {
@@ -192,11 +204,6 @@ function updateMousePos(evt) {
 
   paddleX = mouseX - PADDLE_WIDTH / 2;
 
-  // cheat to test ball in any position
-  // ballX = mouseX;
-  // ballY = mouseY;
-  // ballSpeedY = 4;
-  // ballSpeedY = -4;
 }
 function touchStart(evt) {
   var touch = evt.touches[0];
@@ -281,3 +288,32 @@ function colorCircle() {
   canvasContext.arc(ballX, ballY, 10, 0, Math.PI * 2, true);
   canvasContext.fill();
 }
+
+function showEndContainer() {
+  document.getElementById("end-container").style.display = "flex";
+  var remainingBricksElement = document.getElementById("remaining-bricks");
+  remainingBricksElement.textContent = "Your Score: " + (70 - endScore); 
+}
+
+function hideEndContainer() {
+  document.getElementById("end-container").style.display = "none";
+}
+
+function showPlayAgainButton() {
+  document.getElementById("play-again-button").style.display = "block";
+}
+
+function hidePlayAgainButton() {
+  document.getElementById("play-again-button").style.display = "none";
+}
+
+function setupPlayAgainButton() {
+  document.getElementById("play-again-button").addEventListener("click", function () {
+      hideEndContainer();
+      hidePlayAgainButton();
+      ballRest();
+      brickReset();
+  });
+}
+
+
