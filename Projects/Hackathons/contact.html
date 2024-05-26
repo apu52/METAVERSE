@@ -18,24 +18,20 @@
             padding: 0;
         }
         h1{
-            margin-top: 97px;
+            margin-top: 100px;
             text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #4CAF50;
         }
 
         .container11 {
-            max-width: 490px;
-            height: 455px;
-            margin: 0 auto;
-            padding-top: 119px;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background: rgb(70, 68, 68);
-            border-radius: 30px;
-  
-
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #222;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);      
         }
 
     
@@ -43,31 +39,63 @@
         
         label {
             display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ccc;
         }
 
         #name, #email,#message {
-            width: 390px;
-            padding: 10px;
+            width: 100%;
+            padding: 12px;
             margin-bottom: 20px;
             box-sizing: border-box;
-            border-radius: 20px;
-            background: linear-gradient(grey,white);
+            border-radius: 10px;
+            border: 1px solid #555;
+            background: #333;
+            color: #fff;
         }
-
-        button {
+        button, .btn-primary {
             background-color: #4CAF50;
             color: #fff;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             font-size: 16px;
-            margin-top:20px;
-            border-radius: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover, .btn-primary:hover {
+            background-color: #45a049;
+        }
+
+        footer{
+            text-align: center;
+        }
+        footer p{
+            background-color: grey;
+            padding: 20px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
         }
 
         @media screen and (max-width: 600px) {
-            input, textarea {
-                margin-bottom: 10px;
+            .container11 {
+                padding: 20px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            label {
+                font-size: 16px;
+            }
+            button {
+                font-size: 16px;
             }
         }
     </style>
@@ -81,8 +109,8 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Contests</a>
@@ -90,8 +118,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="./index.html">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
               </li>
            
           </ul>
@@ -118,11 +146,13 @@
                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             </div>
 
-                <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                <button type="button" class="btn btn-primary text-center" onclick="submitForm()">Submit</button>
             </form>
         </div>
     </div>
-
+    <footer>
+        <p>Copyright &copy; HackAmongUs.com. All rights reserved.</p>
+    </footer>
     <script>
         function submitForm() {
             // Add your form submission logic here
