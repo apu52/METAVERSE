@@ -1,79 +1,91 @@
-:root{
+:root {
     --bg: white;
-    --txt:black;
-
+    --txt: black;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #bbc6fa;
 }
+
 .container {
     background: var(--bg);
-    color:var(--txt);
-    width: 700px;
+    color: var(--txt);
+    width: 90%;
+    max-width: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
-.container h2{
+
+.container h2 {
     font-size: 32px;
     margin-bottom: 40px;
     position: relative;
 }
-.container h2::after{
+
+.container h2::after {
     content: '';
     width: 75px;
     height: 3px;
     border-radius: 3px;
-    background-color: rgb(23,124,229);
+    background-color: rgb(23, 124, 229);
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
-.container blockquote{
+
+.container blockquote {
     font-size: 26px;
     min-height: 110px;
 }
-.container blockquote::before,.container blockquote::after{
+
+.container blockquote::before, .container blockquote::after {
     content: '"';
 }
-.container span{
+
+.container span {
     display: block;
     margin-top: 10px;
     float: right;
     position: relative;
 }
-.container span::before{
+
+.container span::before {
     content: '';
     width: 20px;
     height: 2px;
-    background: rgb(23,124,229);
+    background: rgb(23, 124, 229);
     position: absolute;
     top: 50%;
     left: -30px;
 }
-.container div{
+
+.container div {
     width: 100%;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.container button{
-    background: rgb(23,124,229);
+
+.container button {
+    background: rgb(23, 124, 229);
     color: #fff;
     border-radius: 25px;
-    border: 1px solid rgb(23,124,229);
+    border: 1px solid rgb(23, 124, 229);
     width: 150px;
     height: 50px;
     display: flex;
@@ -82,16 +94,19 @@ body{
     margin: 5px;
     cursor: pointer;
 }
-.container button i{
+
+.container button i {
     width: 20px;
     font-size: 20px;
     margin-right: 10px;
-    color:  rgb(23,124,229);
+    color: rgb(23, 124, 229);
 }
-.container button:nth-child(2){
+
+.container button:nth-child(2) {
     background: transparent;
     color: #333333;
 }
+
 .toggle input[type='checkbox'] {
     display: none;
 }
@@ -107,6 +122,7 @@ body{
     width: 100px;
     height: 50px;
 }
+
 .toggle label::after {
     background-color: #555;
     border-radius: 50%;
@@ -120,6 +136,7 @@ body{
     width: 42px;
     height: 42px;
 }
+
 .toggle input[type='checkbox']:checked ~ label {
     background-color: #00a0fc;
     border-color: #006dc9;
@@ -129,11 +146,54 @@ body{
     background-color: #0054b0;
     transform: translateX(50px);
 }
+
 body.dark-theme {
     background-color: #333;
 }
-.dark-theme{
-    --bg: #020202;
-    --txt:white;
 
+.dark-theme {
+    --bg: #020202;
+    --txt: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    .container h2 {
+        font-size: 24px;
+    }
+    .container blockquote {
+        font-size: 20px;
+        min-height: 80px;
+    }
+    .container button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    .container h2 {
+        font-size: 20px;
+    }
+    .container blockquote {
+        font-size: 18px;
+        min-height: 60px;
+    }
+    .container span {
+        font-size: 14px;
+    }
+    .container button {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
 }
