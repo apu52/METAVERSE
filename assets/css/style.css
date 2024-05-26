@@ -1059,7 +1059,7 @@ ul.socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 5lh;
 }
 
 .owner-info {
@@ -1278,7 +1278,7 @@ ul.socials {
 }
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #fcf8f8;
-  top: 0;
+  padding-top: 20lh;
 }
 .animated-title > div.text-top div {
   animation: showTopText 0.5s;
