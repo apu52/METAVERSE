@@ -97,8 +97,9 @@ input:checked + .slider:before {
 
 .dark-theme {
   filter: invert(1) hue-rotate(180deg);
-  color: #000000;
+  /* color: #000000; */
 }
+
 
 .dark-theme .footer-content .socials li a {
   color: #000000;
