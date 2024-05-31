@@ -5,6 +5,9 @@ Welcome to our Food Ordering Website! This repository contains the code and reso
 ## Table of Contents
 
 - [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Footer Section](#footer-section)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -23,9 +26,21 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/food-ordering-website.git
+   git clone https://github.com/jayanththalla/food-ordering-website.git
+   ```
+2. Navigate to the project directory
+   ```bash
+   cd food-ordering-website
    ```
 
+3. Open index.html in your web browser to view the website
+
+## Footer Section
+## Recent Changes
+   -Redesigned footer to display "Our Services", "Contact", "Locations", and "Follow Us On" in a single row.
+   -Added hover effects to the "Our Services" section to enhance user interactivity.
+   -Included phone and email icons in the "Contact" section with hover effects for better usability.
+   -Enlarged the "Follow Us On" icons and added hover and pointer effects to improve visibility and user engagement.
 
 ## Contributing
 

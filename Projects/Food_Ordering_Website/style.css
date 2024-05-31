@@ -1246,71 +1246,88 @@ nav a:hover {
 
 footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     background-color: rgba(198, 196, 196, 0.82);
     width: 100%;
     margin-top: 90px;
-    /* height: 350px; */
     justify-content: space-between;
     padding: 20px 10px 0px 10px;
     gap: 20px;
 }
 
-@media screen and (max-width: 700px) and (min-width: 500px) {
+@media screen and (max-width: 700px) {
     footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: rgba(198, 196, 196, 0.82);
-        width: 100%;
-        margin-top: 90px;
-        justify-content: space-around;
-        padding: 20px 10px 0px 10px;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);  /* Change to 2 columns for medium screens */
     }
 }
 
-@media screen and (max-width: 500px) and (min-width: 300px) {
+@media screen and (max-width: 500px) {
     footer {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        background-color: rgba(198, 196, 196, 0.82);
-        width: 100%;
-        margin-top: 90px;
+        grid-template-columns: 1fr;  /* Change to 1 column for small screens */
         text-align: center;
-        padding: 20px 10px 0px 10px;
-        gap: 20px;
     }
 }
 
-footer .location {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-footer .quick {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-footer .quick a {
-    text-decoration: none;
-}
-
-footer .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
+footer .location, 
+footer .quick, 
+footer .contact, 
 footer .ourservice {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.contact p {
+    margin: 5px 0;
+}
+
+.contact p:last-child {
+    cursor: pointer; 
+    
+}
+
+.contact p:last-child:hover {
+    text-decoration: none;
+    color: rgb(132, 132, 215);
+}
+
+
+footer .quick a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .quick a:hover {
+    color: rgb(31, 52, 216);
+    text-decoration: none;
+}
+
 footer ion-icon {
-    margin-top: 19px;
+    margin-top: 20px;
     padding: 5px;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer; 
+}
+
+footer ion-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Hover for individual icons */
+footer ion-icon[name="logo-facebook"]:hover {
+    color: #4267B2;
+}
+
+footer ion-icon[name="logo-twitter"]:hover {
+    color: #1DA1F2;
+}
+
+footer ion-icon[name="logo-instagram"]:hover {
+    color: #C13584;
+}
+
+footer ion-icon[name="logo-linkedin"]:hover {
+    color: #0e76a8;
 }
