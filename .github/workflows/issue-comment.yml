@@ -1,0 +1,22 @@
+name: Comment on opening issue!
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Issue Opened
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo, number } = context.issue;
+            const commentauthor = context.payload.issue.user.login;
+            const commentBody = `Hello @${commentauthor} Thank you for creating a new issue! 🎉 Your issue is currently under review.\nPlease wait till the issue is reviewed and assigned.`;
+
+            await github.issues.createComment({ owner, repo, issue_number: number, body: commentBody });
+            console.log(`Commented on the issue: ${commentBody}.`);
