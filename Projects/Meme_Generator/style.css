@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+:root {
+        --x: 45deg;
+}
 body {
-        background: linear-gradient(135deg,#a90377,#90bafc);
+        background: #1229a0;
         font-family: 'Work Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 #root {
@@ -13,7 +19,7 @@ body {
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        font-family: 'Poppins',sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
       
 #root h2{
@@ -23,22 +29,75 @@ body {
 }
 
 #meme {
-        height: 470px;
-        width: 500px;
+        height: 55%;
+        width: 150%;
+        border-radius: 30px;
+        border: 10px solid #fbd208;
+        box-shadow: 5ch;
 }
       
-button {
-        font-size: 20px;
-        font-weight: 600;
-        padding: 10px 8px;
-        margin-top: 15px;
-        color: #fffbfb;
-        cursor: pointer;
-        border-radius: 20px;
-        background: linear-gradient(45deg, #06060f, #349b9b);
-        border: none;
-        box-shadow: 10px 10px 5px rgb(55, 57, 58);
-      }
+a {
+        margin: 20%;
+        position: relative;
+        width: 150px;
+        height: 55px;
+        display: inline-block;
+        border-radius: 1px;
+
+
+}
+
+a i {
+
+        position: absolute;
+        inset: -2px;
+        display: block;
+        border-radius: 5px;
+}
+
+a i,
+a i:nth-child(2)
+{
+        background: linear-gradient(var(--x),#04ff92, #0e1538,
+        #0e1538,#fbd208);
+}
+
+a i:nth-child(2){
+        filter: blur(100x);
+}
+
+
+a span {
+        position: absolute;
+        top: 1;
+        left: 1;
+        bottom: 1;
+        right: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 2px;
+        /* border: 2px solid #040a29; */
+        border-radius: 5px;
+        background-color: rgba(14,21,56,0.65);
+        overflow: hidden;
+}
+
+a span::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.075);
+        transform:skew(25deg); 
+}
+
 @media(width<500px){
         #meme{
                 width:340px;
