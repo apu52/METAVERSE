@@ -1,0 +1,5 @@
+
+.dark-theme h1 {
+    filter: invert(1) hue-rotate(180deg);
+    color: #000000;
+}

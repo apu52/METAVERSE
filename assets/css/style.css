@@ -95,9 +95,12 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-.dark-theme {
+.dark-theme a,.dark-theme b{
   filter: invert(1) hue-rotate(180deg);
   color: #000000;
+}
+.dark-theme {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .dark-theme .footer-content .socials li a {
@@ -716,7 +719,7 @@ main {
   font-size: 20px Permanent Marker;
   padding: 5px 15px;
   margin: 2px;
-  color: wheat;
+  color: #cc8500;
   cursor: pointer;
   border-radius: 50%;
   opacity: 0.7;
