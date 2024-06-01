@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form </title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .flexUl {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .flexUl li {
+            margin: 0 10px;
+        }
+        .flexUl li i {
+            font-size: 24px; /* Adjust icon size as needed */
+        }
+    </style>
 </head>
 
 <body>
@@ -19,35 +31,40 @@
             <div class="inputDiv">
                 <label for="name" class="username">Username</label>
                 <div class="userArea">
-                    <i class="fa-solid fa-user"></i><input type="text" name="name" id="name"
-                        placeholder="Type your username">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" id="name" placeholder="Type your username">
                 </div>
                 <hr>
             </div>
             <div class="inputDiv">
                 <label for="password" class="username">Password</label>
                 <div class="userArea">
-                    <i class="fa-solid fa-key"></i><input type="password" name="password" id="password"
-                        placeholder="Type your password">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="password" id="password" placeholder="Type your password">
                 </div>
                 <hr>
             </div>
 
-            
             <span class="forgotPassword">Forgot password?</span>
-            <button class="btn">Login</button>
+            <button type="submit" class="btn">Login</button>
             <div class="formBottom">
                 <p>Or Sign Up using</p>
                 <ul class="flexUl">
-                    <a href="https://www.faceboook.com" target="_blank">
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank">
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.google.com" target="_blank">
-                        <li><i class="fa-brands fa-google"></i></li>
-                    </a>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fa-brands fa-x-twitter"><img src="1.jpg" alt="X logo" width="59" height="39"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com" target="_blank">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </li>
                 </ul>
                 <p class="signUp">Or Sign Up using</p>
                 <p id="signUp">SIGN UP</p>
@@ -56,4 +73,5 @@
     </div>
     <!-- Login Form using HTML and CSS by raju_webdev -->
 </body>
+
 </html>
