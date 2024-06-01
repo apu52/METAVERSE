@@ -9,6 +9,7 @@ const BRICK_COLS = 10;
 const BRICK_ROWS = 10;
 var brickGrid = new Array(BRICK_COLS * BRICK_ROWS);
 var brickCount = 0;
+var endScore=0;
 
 // Ball
 var ballX = 75;
@@ -290,6 +291,9 @@ function colorCircle() {
 }
 
 function showEndContainer() {
+if(endScore===0){
+  endScore=70;
+}
   document.getElementById("end-container").style.display = "flex";
   var remainingBricksElement = document.getElementById("remaining-bricks");
   remainingBricksElement.textContent = "Your Score: " + (70 - endScore); 
