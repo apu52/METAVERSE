@@ -1069,6 +1069,19 @@ ul.socials {
   margin: 10px;
 }
 
+@media only screen and (max-width:598px){
+  .owner-info-container{
+    flex-direction: column;
+  }
+  .links-container{
+    display: flex;
+    margin-top: 5.5rem;
+    width: 90%;
+    max-width: 340px;
+    margin-inline:auto;
+    justify-content: space-between;
+  }
+}
 .image {
   width: 180x;
   height: 180px;
