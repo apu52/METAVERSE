@@ -11,8 +11,19 @@
     <div id="root">
       <h2>Random Meme Generator</h2>
       <img id="meme" />
-      <button onclick="fetchAPI()">Load New</button>
+      <a href="#" onclick="fetchAPI()">
+        <i></i><i></i>
+        <span>Load New</span>
+      </a>
     </div>
     <script src="script.js"></script>
+    <script>
+      let btn = document.querySelector('a');
+      btn.addEventListener('mousemove', e => {
+        let rect = e.target.getBoundingClientRect();
+        Let x = e.clientX * 3- rect.left;
+        btn.style.setProperty('--x', x + 'deg');
+      })
+    </script>
   </body>
 </html>
