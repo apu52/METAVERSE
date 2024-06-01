@@ -1062,7 +1062,7 @@ ul.socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5lh;
+  margin-top:2rem;
 }
 
 .owner-info {
@@ -1258,30 +1258,23 @@ ul.socials {
 .animated-title {
   color: #27bcda;
   font-family: "Mina", sans-serif;
-  height: 90vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 90vmin;
+  margin-inline: auto;
 }
 .animated-title > div {
-  height: 50%;
   overflow: hidden;
-  position: absolute;
   width: 100%;
 }
 .animated-title > div div {
   font-size: 10vmin;
   padding: 2vmin 0;
-  position: absolute;
 }
 .animated-title > div div span {
   display: block;
 }
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #fcf8f8;
-  padding-top: 20lh;
+  margin-top: 2rem;
 }
 .animated-title > div.text-top div {
   animation: showTopText 0.5s;
