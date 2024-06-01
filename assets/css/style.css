@@ -1069,6 +1069,8 @@ ul.socials {
   margin: 10px;
 }
 
+/* media queries for responsive repo owner info container*/
+
 @media only screen and (max-width:598px){
   .owner-info-container{
     flex-direction: column;
