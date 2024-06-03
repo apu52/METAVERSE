@@ -1331,3 +1331,26 @@ footer ion-icon[name="logo-instagram"]:hover {
 footer ion-icon[name="logo-linkedin"]:hover {
     color: #0e76a8;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    display: none; /* Hidden by default */
+    background-color: #f1c11a;
+    color: #fff;
+    text-align: center;
+    width: 50px; /* Set width to make it a circle */
+    height: 50px; /* Set height to make it a circle */
+    border-radius: 50%; /* Make the background a circle */
+    font-size: 18px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    line-height: 50px; /* Center the text vertically */
+}
+
+.back-to-top:hover {
+    background-color: #555;
+    cursor: pointer;
+}
