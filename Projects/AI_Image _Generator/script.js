@@ -152,4 +152,14 @@ function useEffect() {
     text1.style.background = "#900c3f";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const sidebar = document.getElementById("sidebar");
+
+  hamburgerMenu.addEventListener("click", function () {
+    sidebar.classList.toggle("open");
+    sidebar.classList.toggle("closed");
+  });
+});
 useEffect();
