@@ -49,7 +49,7 @@ nav a:hover {
 .container3 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     gap: 5px;
 }
@@ -150,13 +150,23 @@ nav a:hover {
     background-color: rgba(255, 217, 0, 0.763);
     font-size: 1.2rem;
     cursor: pointer;
+    box-shadow: 0 5px #999;
+    border-radius: 1rem;
 }
 
 .box1 .item3 button:hover {
     background-color: gold;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
+
+.box1 .item3 button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
 
 .box2 {
     width: 500px;
@@ -166,7 +176,10 @@ nav a:hover {
 .box2 img {
     width: 500px;
     height: 500px;
-    mix-blend-mode: darken;
+    /* mix-blend-mode: darken; */
+    border-radius: 50rem;
+    margin-top: 5rem;
+    border: 10px solid #4FC3F7;
 }
 
 .content {
@@ -354,8 +367,9 @@ nav a:hover {
 
     .main2 .box3 img {
         width: 300px;
-        /* border-radius: 2px; */
+        border-radius: 10rem;
         /* scale: 0.7; */
+        border: 5px solid #4FC3F7;
     }
 
     .main2 .box3 {
@@ -409,8 +423,8 @@ nav a:hover {
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner1 .food1 img {
@@ -446,6 +460,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 
 .main3 .banner1 .food1 .money button:hover {
@@ -454,14 +469,21 @@ nav a:hover {
     font-weight: 700;
 }
 
+.main3 .banner1 .food1 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}  
 
 .main3 .banner1 .food2 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner1 .food2 img {
@@ -497,6 +519,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner1 .food2 .money button:hover{
     background-color: gold;
@@ -504,14 +527,22 @@ nav a:hover {
     font-weight: 700;
 }
 
+.main3 .banner1 .food2 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
+
 
 .main3 .banner1 .food3 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner1 .food3 img {
@@ -547,6 +578,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner1 .food3 .money button:hover{
     background-color: gold;
@@ -554,13 +586,21 @@ nav a:hover {
     font-weight: 700;
 }
 
+.main3 .banner1 .food3 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
+
 .main3 .banner1 .food4 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner1 .food4 img {
@@ -595,13 +635,26 @@ nav a:hover {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
+    box-shadow: 0 5px #999;
     cursor: pointer;
 }
+
+
 .main3 .banner1 .food4 .money button:hover{
     background-color: gold;
     cursor: pointer;
     font-weight: 700;
 }
+
+
+.main3 .banner1 .food4 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}   
+
 
 .main3 .banner2 {
 
@@ -618,8 +671,8 @@ nav a:hover {
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+   box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner2 .food1 img {
@@ -654,6 +707,7 @@ nav a:hover {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
+    box-shadow: 0 5px #999;
     cursor: pointer;
 }
 .main3 .banner2 .food1 .money button:hover{
@@ -661,13 +715,23 @@ nav a:hover {
     cursor: pointer;
     font-weight: 700;
 }
+
+.main3 .banner2 .food1 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
+
+
 .main3 .banner2 .food2 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner2 .food2 img {
@@ -703,19 +767,28 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner2 .food2 .money button:hover{
     background-color: gold;
     cursor: pointer;
     font-weight: 700;
 }
+
+.main3 .banner2 .food2 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}  
 .main3 .banner2 .food3 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner2 .food3 img {
@@ -751,6 +824,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner2 .food3 .money button:hover{
     background-color: gold;
@@ -758,13 +832,21 @@ nav a:hover {
     font-weight: 700;
 }
 
+
+.main3 .banner2 .food3 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
 .main3 .banner2 .food4 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner2 .food4 img {
@@ -800,6 +882,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner2 .food4 .money button:hover{
     background-color: gold;
@@ -807,6 +890,14 @@ nav a:hover {
     font-weight: 700;
 }
 
+
+.main3 .banner2 .food4 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
 .main3 .banner3 {
 
     width: 100%;
@@ -822,8 +913,8 @@ nav a:hover {
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner3 .food1 img {
@@ -859,6 +950,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 
 .main3 .banner3 .food1 .money button:hover{
@@ -867,14 +959,21 @@ nav a:hover {
     font-weight: 700;
 }
 
+.main3 .banner3 .food1 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
 
 .main3 .banner3 .food2 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner3 .food2 img {
@@ -910,6 +1009,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner3 .food2 .money button:hover{
     background-color: gold;
@@ -917,13 +1017,21 @@ nav a:hover {
     font-weight: 700;
 }
 
+.main3 .banner3 .food2 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
 .main3 .banner3 .food3 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner3 .food3 img {
@@ -959,6 +1067,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner3 .food3 .money button:hover{
     background-color: gold;
@@ -966,13 +1075,21 @@ nav a:hover {
     font-weight: 700;
 }
 
+
+.main3 .banner3 .food3 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
 .main3 .banner3 .food4 {
     border: 1px solid rgb(0, 0, 0);
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 10px 10px 5px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner3 .food4 img {
@@ -1008,12 +1125,21 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 .main3 .banner3 .food4 .money button:hover{
     background-color: gold;
     cursor: pointer;
     font-weight: 700;
 }
+
+.main3 .banner3 .food4 .money button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
 
 .main4 {
     display: flex;
