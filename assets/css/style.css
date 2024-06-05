@@ -95,7 +95,7 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-.dark-theme a,.dark-theme b{
+.dark-theme a,.dark-theme li,.dark-theme b{
   filter: invert(1) hue-rotate(180deg);
   color: #000000;
 }
@@ -1115,7 +1115,7 @@ ul.socials {
     margin-top: -10px;
     li {
       font-family: Serif;
-      color: #eee;
+    
       font-weight: 700;
       padding: 0 10px;
       height: 45px;
