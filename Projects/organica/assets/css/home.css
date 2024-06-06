@@ -145,6 +145,7 @@
   --fs: var(--fs-8);
   --fw: var(--fw-400);
   --padding: 12px 25px;
+  animation: offersButtonAnimation 1.8s ease-in-out;
 }
 
 
