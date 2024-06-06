@@ -81,6 +81,7 @@
   max-width: max-content;
   padding: 20px;
   border-radius: 50%;
+  animation: serviceIconAnimation 1s ease-in-out;
 }
 
 .service-item {
