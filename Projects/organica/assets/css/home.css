@@ -51,6 +51,10 @@
   animation: heroTextAnimation 1.5s ease-in-out;
 }
 
+.hero .btn {
+  
+  animation: heroButtonAnimation 1.8s ease-in-out;
+}
 
 
 
