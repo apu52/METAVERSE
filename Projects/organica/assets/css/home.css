@@ -467,6 +467,17 @@
   justify-content: center;
 }
 
+.newsletter .section-subtitle {
+  animation: newsletterSubtitleAnimation 1s ease-in-out;
+}
+
+.newsletter .section-title {
+  animation: newsletterTitleAnimation 1.2s ease-in-out;
+}
+
+.newsletter .btn {
+  animation: newsletterButtonAnimation 1.5s ease-in-out;
+}
 
 
 
