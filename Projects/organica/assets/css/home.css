@@ -92,7 +92,10 @@
 
 .item-title { color: var(--white); }
 
-
+.service-item .item-title {
+  /* Add animation here */
+  animation: serviceTitleAnimation 1.2s ease-in-out;
+}
 
 
 
