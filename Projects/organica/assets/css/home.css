@@ -136,6 +136,7 @@
 .offers-card .card-title {
   color: var(--gunmetal-2);
   margin-block-end: 12px;
+  animation: offersTitleAnimation 1.5s ease-in-out;
 }
 
 .offers-card .btn {
