@@ -33,6 +33,7 @@
   color: var(--gunmetal-2);
   font-size: var(--fs-1);
   margin-block-end: 15px;
+  animation: heroTitleAnimation 1.2s ease-in-out;
 }
 
 .hero-title .span {
