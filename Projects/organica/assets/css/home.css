@@ -121,6 +121,7 @@
   max-width: max-content;
   margin-inline: auto;
   animation: offersCardAnimation 1s ease-in-out;
+  
 }
 
 .offers-card .card-subtitle {
@@ -129,6 +130,7 @@
   font-weight: var(--fw-700);
   text-transform: uppercase;
   margin-block-end: 5px;
+  animation: offersSubtitleAnimation 1.2s ease-in-out;
 }
 
 .offers-card .card-title {
