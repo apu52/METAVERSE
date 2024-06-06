@@ -225,7 +225,21 @@
 .cta .btn { margin-inline: auto; }
 
 
+.cta .section-subtitle {
+  animation: ctaSubtitleAnimation 1s ease-in-out;
+}
 
+.cta .section-title {
+  animation: ctaTitleAnimation 1.2s ease-in-out;
+}
+
+.cta .cta-text {
+  animation: ctaTextAnimation 1.5s ease-in-out;
+}
+
+.cta .btn {
+  animation: ctaButtonAnimation 1.8s ease-in-out;
+}
 
 
 /*-----------------------------------*\
