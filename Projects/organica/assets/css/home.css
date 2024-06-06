@@ -120,6 +120,7 @@
 .offers-card .card-banner img {
   max-width: max-content;
   margin-inline: auto;
+  animation: offersCardAnimation 1s ease-in-out;
 }
 
 .offers-card .card-subtitle {
