@@ -48,6 +48,7 @@
   font-size: var(--fs-4);
   line-height: 1.8;
   margin-block-end: 30px;
+  animation: heroTextAnimation 1.5s ease-in-out;
 }
 
 
