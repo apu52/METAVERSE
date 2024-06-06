@@ -26,6 +26,7 @@
   font-style: italic;
   letter-spacing: 2px;
   margin-block-end: 20px;
+  animation: heroSubtitleAnimation 1s ease-in-out;
 }
 
 .hero-title {
