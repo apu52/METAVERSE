@@ -309,7 +309,9 @@
   scroll-snap-align: center;
 }
 
-
+.partner-item .partner-logo img {
+  animation: partnerLogoAnimation 1s ease-in-out;
+}
 
 
 
