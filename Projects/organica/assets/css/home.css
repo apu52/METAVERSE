@@ -349,12 +349,14 @@
   color: var(--battleship-gray);
   line-height: 1.7;
   font-size: var(--fs-6);
+  animation: testimonialsTextAnimation 1s ease-in-out;
 }
 
 .testi-card .card-title {
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   margin-block: 25px 15px;
+  animation: testimonialsTitleAnimation 1.2s ease-in-out;
 }
 
 .testi-card .card-subtitle {
