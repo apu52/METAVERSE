@@ -417,7 +417,13 @@
 .blog-card .card-title a:is(:hover, :focus) { color: var(--emerald); }
 
 
+.blog-card .card-banner img {
+  animation: blogCardAnimation 1s ease-in-out;
+}
 
+.blog-card .card-title {
+  animation: blogTitleAnimation 1.2s ease-in-out;
+}
 
 
 /*-----------------------------------*\
