@@ -271,6 +271,17 @@
 
 .top-product-card:is(:hover, :focus-within) .btn { opacity: 1; }
 
+.top-product-card .card-banner img {
+  animation: topProductCardAnimation 1s ease-in-out;
+}
+
+.top-product-card .card-title {
+  animation: topProductTitleAnimation 1.2s ease-in-out;
+}
+
+.top-product-card .btn {
+  animation: topProductButtonAnimation 1.5s ease-in-out;
+}
 
 
 
