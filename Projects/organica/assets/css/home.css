@@ -26,12 +26,14 @@
   font-style: italic;
   letter-spacing: 2px;
   margin-block-end: 20px;
+  animation: heroSubtitleAnimation 1s ease-in-out;
 }
 
 .hero-title {
   color: var(--gunmetal-2);
   font-size: var(--fs-1);
   margin-block-end: 15px;
+  animation: heroTitleAnimation 1.2s ease-in-out;
 }
 
 .hero-title .span {
@@ -46,8 +48,13 @@
   font-size: var(--fs-4);
   line-height: 1.8;
   margin-block-end: 30px;
+  animation: heroTextAnimation 1.5s ease-in-out;
 }
 
+.hero .btn {
+  
+  animation: heroButtonAnimation 1.8s ease-in-out;
+}
 
 
 
@@ -74,6 +81,7 @@
   max-width: max-content;
   padding: 20px;
   border-radius: 50%;
+  animation: serviceIconAnimation 1s ease-in-out;
 }
 
 .service-item {
@@ -84,7 +92,10 @@
 
 .item-title { color: var(--white); }
 
-
+.service-item .item-title {
+  /* Add animation here */
+  animation: serviceTitleAnimation 1.2s ease-in-out;
+}
 
 
 
@@ -109,6 +120,8 @@
 .offers-card .card-banner img {
   max-width: max-content;
   margin-inline: auto;
+  animation: offersCardAnimation 1s ease-in-out;
+  
 }
 
 .offers-card .card-subtitle {
@@ -117,11 +130,13 @@
   font-weight: var(--fw-700);
   text-transform: uppercase;
   margin-block-end: 5px;
+  animation: offersSubtitleAnimation 1.2s ease-in-out;
 }
 
 .offers-card .card-title {
   color: var(--gunmetal-2);
   margin-block-end: 12px;
+  animation: offersTitleAnimation 1.5s ease-in-out;
 }
 
 .offers-card .btn {
@@ -130,6 +145,7 @@
   --fs: var(--fs-8);
   --fw: var(--fw-400);
   --padding: 12px 25px;
+  animation: offersButtonAnimation 1.8s ease-in-out;
 }
 
 
@@ -209,7 +225,21 @@
 .cta .btn { margin-inline: auto; }
 
 
+.cta .section-subtitle {
+  animation: ctaSubtitleAnimation 1s ease-in-out;
+}
 
+.cta .section-title {
+  animation: ctaTitleAnimation 1.2s ease-in-out;
+}
+
+.cta .cta-text {
+  animation: ctaTextAnimation 1.5s ease-in-out;
+}
+
+.cta .btn {
+  animation: ctaButtonAnimation 1.8s ease-in-out;
+}
 
 
 /*-----------------------------------*\
@@ -241,6 +271,17 @@
 
 .top-product-card:is(:hover, :focus-within) .btn { opacity: 1; }
 
+.top-product-card .card-banner img {
+  animation: topProductCardAnimation 1s ease-in-out;
+}
+
+.top-product-card .card-title {
+  animation: topProductTitleAnimation 1.2s ease-in-out;
+}
+
+.top-product-card .btn {
+  animation: topProductButtonAnimation 1.5s ease-in-out;
+}
 
 
 
@@ -268,7 +309,9 @@
   scroll-snap-align: center;
 }
 
-
+.partner-item .partner-logo img {
+  animation: partnerLogoAnimation 1s ease-in-out;
+}
 
 
 
@@ -306,12 +349,14 @@
   color: var(--battleship-gray);
   line-height: 1.7;
   font-size: var(--fs-6);
+  animation: testimonialsTextAnimation 1s ease-in-out;
 }
 
 .testi-card .card-title {
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   margin-block: 25px 15px;
+  animation: testimonialsTitleAnimation 1.2s ease-in-out;
 }
 
 .testi-card .card-subtitle {
@@ -372,7 +417,13 @@
 .blog-card .card-title a:is(:hover, :focus) { color: var(--emerald); }
 
 
+.blog-card .card-banner img {
+  animation: blogCardAnimation 1s ease-in-out;
+}
 
+.blog-card .card-title {
+  animation: blogTitleAnimation 1.2s ease-in-out;
+}
 
 
 /*-----------------------------------*\
@@ -416,6 +467,17 @@
   justify-content: center;
 }
 
+.newsletter .section-subtitle {
+  animation: newsletterSubtitleAnimation 1s ease-in-out;
+}
+
+.newsletter .section-title {
+  animation: newsletterTitleAnimation 1.2s ease-in-out;
+}
+
+.newsletter .btn {
+  animation: newsletterButtonAnimation 1.5s ease-in-out;
+}
 
 
 
@@ -877,4 +939,367 @@
 
   .partner-item { min-width: 16.66%; }
 
+}
+
+@keyframes heroSubtitleAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes heroTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes heroTextAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes heroButtonAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes serviceIconAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes serviceTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes offersCardAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes offersSubtitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes offersTitleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes offersButtonAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ctaSubtitleAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ctaTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ctaTextAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ctaButtonAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes topProductCardAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes topProductTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes topProductButtonAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes partnerLogoAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes testimonialsTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blogCardAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes blogTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes newsletterSubtitleAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes newsletterTitleAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes newsletterButtonAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
