@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Your own joke</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <span>😂</span>
+        <p id="joke"></p>
+        <button id="btn">Get Random Joke</button>
+    </div>
+    <h4 class="styling">Upload here</h4>
+    <form id="jokeForm">
+        <input type="text" id="newJoke" class="textin" placeholder="Enter your joke" required>
+        <input type="submit" class="btn1" value="Save Joke">
+    </form>
+
+    <script>
+        document.getElementById('jokeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const newJoke = document.getElementById('newJoke').value;
+            let jokes = JSON.parse(localStorage.getItem('jokes')) || [];
+            jokes.push(newJoke);
+            localStorage.setItem('jokes', JSON.stringify(jokes));
+            document.getElementById('newJoke').value = '';
+            alert('Joke saved!');
+        });
+
+        document.getElementById('btn').addEventListener('click', function() {
+            const jokes = JSON.parse(localStorage.getItem('jokes')) || [];
+            const jokeElement = document.getElementById('joke');
+            if (jokes.length > 0) {
+                const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+                jokeElement.innerHTML = randomJoke;
+            } else {
+                jokeElement.textContent = 'No jokes available. Add your joke!';
+            }
+            jokeElement.classList.add('fade');
+        });
+    </script>
+</body>
+</html>
