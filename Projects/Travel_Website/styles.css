@@ -254,21 +254,33 @@ header {
   position: relative;
   isolation: isolate;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
 
 .destination__card img {
   border-radius: 1rem;
 }
+
+.destination__card:hover {
+  transform: scale(1.05); 
+}
+
 .destination__card1 {
   overflow: hidden;
   position: relative;
   isolation: isolate;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .destination__card1 img {
   border-radius: 1rem;
   height: 403px;
+}
+
+.destination__card1:hover {
+  transform: scale(1.05); 
 }
 
 .destination__details {
@@ -320,12 +332,19 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 4rem 0;
+  
 }
 
 .trip__card {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip__card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .trip__details {
@@ -392,6 +411,11 @@ header {
 .gallary__col img {
   border-radius: 1rem;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallary__col img:hover {
+  transform: scale(1.05); 
 }
 
 .gallary__content {
@@ -441,6 +465,11 @@ header {
   border: none;
   border-radius: 5rem;
   font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.subscribe__form input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 .footer {
@@ -468,7 +497,7 @@ header {
   font-size: 0.8rem;
   margin-bottom: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .footer__col p:hover {

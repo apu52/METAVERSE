@@ -21,16 +21,19 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: left;
+  width: 100vw;
 }
 .recent {
   background-color: #631133;
   color: #ccc;
   width: 300px;
   height: 100vh;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding-left: 50px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 5;
 }
 .recent > ul {
   color: #c4c4c4;
@@ -42,6 +45,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-right: 26px;
+  margin-bottom: 5px;
 }
 #up {
   width: 100px;
@@ -75,8 +79,36 @@ a {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid #0000001a;
-  margin-left: 150px;
+  margin-left: 98px;
   margin-top: 150px;
+  flex-grow: 1;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (width < 1080px) {
+  .container {
+    width: 26rem;
+    margin-left: 30px;
+  }
+}
+@media screen and (width < 812px) {
+  .container {
+    width: 25rem;
+    margin-left: -92px;
+  }
+}
+@media screen and (width < 612px) {
+  .container {
+    margin-left: -182px;
+  }
+}
+@media screen and (width < 536px) {
+  .container {
+    margin-left: -252px;
+  }
 }
 
 h1 {
@@ -495,4 +527,30 @@ button[disabled] {
   height: 4px;
   background-color: #666666;
   border-radius: 50%;
+}
+
+.hamburger-menu {
+  display: block;
+  color: #fffbfb;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.recent.closed {
+  transform: translateX(-100%);
+}
+
+@media (max-width: 768px) {
+  .recent {
+    transform: translateX(-100%);
+  }
+
+  .recent.open {
+    transform: translateX(0);
+  }
 }

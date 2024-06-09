@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
   
   <!--
     - custom css link
@@ -96,16 +97,30 @@
 
       <div class="main-content">
 
-        <div class="heading">
-          <span>📧&nbsp;</span><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>&nbsp;&nbsp;</span><span>U</span><span>s</span>
+        <div class="heading1">
+          <div class="heading">
+            <span>💻&nbsp;</span><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
+          </div>
+          <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
+        
+            <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
+            <span class="slider"></span>
+          </label>
         </div>
-
+        
+        
+        <div class="search-container" id="search-container-id">
+          <input type="text" class="search-input" placeholder="Search" onkeyup="search()" id="searchbar">
+          <div class="search-btn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        
+          </div>
+        </div>
         <br>
-      </div>
-  </div>
-  <br>
-  <br>
-  <br>
+        
+        <br>
+        <br>
+        <br>
  <!-- Two-sided box with inline CSS -->
  <div class="animated-title" >
   <div class="text-top">
@@ -118,7 +133,7 @@
 </div>
  <div class="owner-info-container" >
     <div class="owner-info" style="text-align: center;">
-      <img src="arpan.jpeg" alt="" class="image">
+      <img src="arpan.jpeg" alt="" class="image ignore-dark-theme">
     </div>
     <div class="owner-info" style="text-align: left;">
       
@@ -135,18 +150,133 @@
             
         </div>        
       </h5> 
-      <p style="z-index: 10; position: relative;">
+      <div class="links-container" style="z-index: 10; position: relative;">
         <a href="https://www.youtube.com/@arpanchowdhury53" aria-label="Follow me on Youtube" title="Youtube (External Link)"
-              rel="noopener noreferrer" target="_blank"> Youtube  <i class="fa fa-youtube" aria-hidden="true"></i></a>
+              rel="noopener noreferrer" target="_blank"> Youtube  <i class="fa fa-youtube " aria-hidden="true"></i></a>
         <a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-              rel="noopener noreferrer" target="_blank"> Twitter  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+              rel="noopener noreferrer" target="_blank"> Twitter  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
         <a href= "https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
               title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
                 class="fa fa-linkedin-square" aria-hidden="true"></i></a>
           
-      </p>
+      </div>
     </div>
   </div>
+  <div class="animated-title" >
+    <div class="text-top">
+      <div>
+        <span>Project Maintainers</span>
+        <p>Shuvadipta Das</p>
+      </div>
+    </div>
+    
+  </div>
+   <div class="owner-info-container" >
+      <div class="owner-info" style="text-align: center;">
+        <img src="./images/shuv.jpg" alt="" class="image ignore-dark-theme">
+      </div>
+      <div class="owner-info" style="text-align: left;">
+        
+        <h5 class="wordCarousel">
+          <div>
+              <!-- Use classes 2,3,4, or 5 to match the number of words -->
+              <ul class="flip5">
+                  <li>B.Tech student at NSEC(CSE)'26 </li>
+                  <li>Rank 22  of HACKSQUAD '23</li>
+                  <li>@GSSOC - Rank 49 </li>
+              </ul>
+              
+          </div>        
+        </h5> 
+        <div class="links-container" style="z-index: 10; position: relative;">
+          <a href="https://www.youtube.com/@5h0ov" aria-label="Follow me on Youtube" title="Youtube (External Link)"
+                rel="noopener noreferrer" target="_blank"> Youtube  <i class="fa fa-youtube" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/5h0ovie" aria-label="Follow me on Twitter" title="Twitter (External Link)"
+                rel="noopener noreferrer" target="_blank"> Twitter  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href= "https://twitter.com/5h0ovie" aria-label="Follow me on Linkedin"
+                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
+                  class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            
+        </div>
+      </div>
+    </div>
+  
+    <div class="animated-title" >
+      <div class="text-top">
+        <div>
+          <p>Shruti Sen</p>
+        </div>
+      </div>
+      
+    </div>
+     <div class="owner-info-container" >
+        <div class="owner-info" style="text-align: center;">
+          <img src="/images/Shruti.jpg" alt="" class="image ignore-dark-theme">
+        </div>
+        <div class="owner-info" style="text-align: left;">
+          
+          <h5 class="wordCarousel">
+            <div>
+                <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                <ul class="flip5">
+                    <li>B.Tech student at NSEC(CSE)'26 </li>
+                    <li>Web Dev Intern</li>
+                    <li>HACKTOBERFEST 2022 & 2023</li>
+                    <li>Rank 22  of HACKSQUAD '23</li>
+                </ul>
+            </div>        
+          </h5> 
+          <div class="links-container" style="z-index: 10; position: relative;">
+            <a href="https://github.com/shruti-sen2004" aria-label="Follow me on Facebook" title="Facebook (External Link)"
+                  rel="noopener noreferrer" target="_blank"> Github  <i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://shruti-sen2004.github.io/Shruti_Portfolio/" aria-label="Visit my portfolio" title="portfolio (External Link)"
+                  rel="noopener noreferrer" target="_blank"> Portfolio  <i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href= "https://linkedin.com/in/shruti-sen-6b6924253" aria-label="Follow me on Linkedin"
+                  title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
+                    class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              
+          </div>
+        </div>
+      </div>
+  
+      <div class="animated-title" >
+        <div class="text-top">
+          <div>
+            <p>Ankita Sikdar</p>
+          </div>
+        </div>
+        
+      </div>
+       <div class="owner-info-container" >
+          <div class="owner-info" style="text-align: center;">
+            <img src="/images/Ankita.jpg" alt="" class="image ignore-dark-theme">
+          </div>
+          <div class="owner-info" style="text-align: left;">
+            
+            <h5 class="wordCarousel">
+              <div>
+                  <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                  <ul class="flip5">
+                      <li>B.Tech student at NSEC(CSE)'26 </li>
+                      <li>Web Dev Intern</li>
+                      <li>Rank 22  of HACKSQUAD '23</li>
+                  </ul>
+                  
+              </div>        
+            </h5> 
+            <div class="links-container" style="z-index: 10; position: relative;">
+              <a href="https://www.instagram.com/a_n_k_i_t_a_s_i_k_d_a_r/" aria-label="Follow me on Instagram" title="Instagram (External Link)"
+                    rel="noopener noreferrer" target="_blank"> Instagram  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://github.com/  AnkitaSikdar005" aria-label="Follow me on github" title="github (External Link)"
+                    rel="noopener noreferrer" target="_blank"> Github  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              <a href= "http://www.linkedin.com/in/ankita-sikdar-70210a253" aria-label="Follow me on Linkedin"
+                    title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
+                      class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                
+            </div>
+          </div>
+        </div>
+        
   <!-- End of two-sided box -->
 
 
@@ -189,9 +319,9 @@
             <ul class="socials">
             <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github" title="Github (External Link)"
                 rel="noopener noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="" aria-label="Follow me on Linkedin"
+            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
+                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
                 title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
           </ul> 
