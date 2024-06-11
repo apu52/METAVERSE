@@ -28,7 +28,9 @@ Close #<issue_no>
 
 ***Are you contributing under any Open-source programme?***
 <!--Mention it here-->
-
+- [ ] I'm a GSSOC'24 contributor
+- [ ] I'm a SSOC'24 contributor
+       
 
 
 
