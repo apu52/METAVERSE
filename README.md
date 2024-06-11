@@ -33,6 +33,9 @@
  
 ![GSSOC](https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88)
 
+![SSOC](https://github.com/apu52/METAVERSE/assets/114172928/f1f1c0d2-f6ef-4a6a-b853-1822dcdcee4e)
+
+
 
 ### This project was part of following Open Source Programs
 
