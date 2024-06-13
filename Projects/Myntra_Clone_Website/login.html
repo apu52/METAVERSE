@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        body{
+        body {
             background-color: #E3E6F3;
         }
         /* Style the form container */
@@ -13,7 +13,7 @@
             width: 300px;
             margin: 0 auto;
         }
-        h2{
+        h2 {
             display: flex;
             text-align: center;
             justify-content: center;
@@ -67,6 +67,17 @@
                 width: 90%;
             }
         }
+
+        /* Style for the message div */
+        #message {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 16px;
+            color: #dc3545; /* Red color for errors */
+        }
+        #message.success {
+            color: #28a745; /* Green color for success */
+        }
     </style>
 </head>
 <body>
@@ -79,10 +90,12 @@
         <button type="button" onclick="login()">Login</button>
     </form>
     <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    <div id="message"></div>
     <script>
         async function login() {
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
+            const messageDiv = document.getElementById('message');
 
             try {
                 const response = await fetch('http://localhost:5000/login', {
@@ -103,14 +116,22 @@
                 // Check if token is received
                 if (data.token) {
                     localStorage.setItem('token', data.token);
-                    alert('Login successful');
-                    window.location.href = 'index.html'; // Redirect to home page
+                    messageDiv.textContent = 'Login successful';
+                    messageDiv.classList.add('success');
+                    messageDiv.classList.remove('error');
+                    setTimeout(() => {
+                        window.location.href = 'index.html'; // Redirect to home page
+                    }, 1500); // Redirect after 1.5 seconds
                 } else {
-                    alert('Failed to login');
+                    messageDiv.textContent = 'Failed to login';
+                    messageDiv.classList.add('error');
+                    messageDiv.classList.remove('success');
                 }
             } catch (error) {
                 console.error(error);
-                alert('Failed to login'); 
+                messageDiv.textContent = 'Failed to login';
+                messageDiv.classList.add('error');
+                messageDiv.classList.remove('success');
             }
         }
     </script>
