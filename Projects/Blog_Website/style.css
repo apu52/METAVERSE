@@ -175,6 +175,10 @@ main{
     transition: transform 0.3s ease; 
 }
 
+    .h-card img:hover {  
+    transform: scale(1.05);
+  }
+
 /* cards */
 
 .v-card{
