@@ -224,6 +224,8 @@ footer{
     max-width: 120rem;
     align-items: center;
     margin: 0 auto;
+    background-color: #333; 
+    color: white; 
 }
 
 footer ul{
