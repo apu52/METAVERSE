@@ -172,6 +172,7 @@ main{
     bottom: 0;
     border-radius: 1rem;
     width: 40rem;
+    transition: transform 0.3s ease; 
 }
 
 /* cards */
