@@ -93,6 +93,10 @@ main{
     transition: color 0.3s ease;
 }
 
+    .hero_Content h1:hover { 
+    color: #212325;
+  }
+
 .hero_Content h4{
     line-height: 1.2;
     font-weight: 300;
