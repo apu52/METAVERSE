@@ -54,6 +54,7 @@ nav ul{
 
 nav ul li:hover{
     border-bottom: 3px solid gray;
+    color: #007bff;
 }
 
 /* Hero */
