@@ -151,6 +151,12 @@ main{
     padding: 1rem;
     font-size: 2rem;
     border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 .hstatus .date, .h-content p{
     color: gray;
