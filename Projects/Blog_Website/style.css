@@ -71,6 +71,7 @@ main{
     margin-bottom: 10vh;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .hero_Content h1{
