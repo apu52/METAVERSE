@@ -112,6 +112,7 @@ main{
 .heroImage img{
     width: 70rem;
     border-radius: 5rem;
+    transition: transform 0.3s ease;
 }
 
 /* long card section */
