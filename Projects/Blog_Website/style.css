@@ -105,6 +105,10 @@ main{
     transition: color 0.3s ease;
 }
 
+.hero_Content h4:hover {  
+    color: #212325;
+  }
+
 .heroImage img{
     width: 70rem;
     border-radius: 5rem;
