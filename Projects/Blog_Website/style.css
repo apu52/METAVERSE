@@ -114,7 +114,10 @@ main{
     border-radius: 5rem;
     transition: transform 0.3s ease;
 }
-
+.heroImage img:hover {
+    transform: scale(1.05); 
+  }
+    
 /* long card section */
 .h-card{
     display: flex;
