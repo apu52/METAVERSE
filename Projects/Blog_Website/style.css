@@ -209,6 +209,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     margin: 10rem auto;
+    gap: 2rem;
 }
 
 .c-wrapper{
