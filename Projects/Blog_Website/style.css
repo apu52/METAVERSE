@@ -100,7 +100,9 @@ main{
 .hero_Content h4{
     line-height: 1.2;
     font-weight: 300;
-    color: gray;
+    color: white;       
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
 }
 
 .heroImage img{
