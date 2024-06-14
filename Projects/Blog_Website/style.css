@@ -189,6 +189,7 @@ main{
     border: 1px solid gray;
     border-radius: .5rem;
     overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .v-card img{
     width: 35rem;
