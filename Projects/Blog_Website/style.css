@@ -191,6 +191,12 @@ main{
     overflow: hidden;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
+.v-card:hover {   
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
 .v-card img{
     width: 35rem;
 }
