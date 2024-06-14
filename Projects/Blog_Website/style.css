@@ -43,6 +43,8 @@ li{
 i{
     font-size: 3rem;
     color: #333;
+    transition: color 0.3s ease;
+    
 }
 
 nav ul{
