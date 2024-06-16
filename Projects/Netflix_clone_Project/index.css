@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
+/* Universal selector to reset margin and padding, and set the default font */
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+/* Body styling */
 body {
     background-color: black;
 }
 
+/* Main section with background image */
 .main {
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/51c1d7f7-3179-4a55-93d9-704722898999/be90e543-c951-40d0-9ef5-e067f3e33d16/IN-en-20240610-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     background-position: center center;
@@ -19,6 +22,7 @@ body {
     position: relative;
 }
 
+/* Overlay box for darkening the background image */
 .main .box {
     height: 644px;
     width: 100%;
@@ -28,6 +32,7 @@ body {
     background-color: black;
 }
 
+/* Navigation bar styling */
 nav {
     max-width: 60vw;
     justify-content: space-between;
@@ -37,6 +42,7 @@ nav {
     height: 100px;
 }
 
+/* Logo in navigation */
 nav img {
     color: red;
     width: 130px;
@@ -44,11 +50,13 @@ nav img {
     z-index: 10;
 }
 
+/* Navigation button styling */
 nav button {
     position: relative;
     z-index: 10;
 }
 
+/* Hero section styling */
 .hero {
     font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 100px);
@@ -62,6 +70,7 @@ nav button {
     padding: 0 30px;
 }
 
+/* Hero section title */
 .hero> :nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
@@ -69,18 +78,21 @@ nav button {
     text-align: center;
 }
 
+/* Hero section subtitle */
 .hero> :nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
 
+/* Hero section additional text */
 .hero> :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
 
+/* Separation bar between sections */
 .separation {
     height: 7px;
     background-color: rgb(46, 44, 44);
@@ -88,6 +100,7 @@ nav button {
     z-index: 20;
 }
 
+/* Button styling */
 .btn {
     padding: 3px 8px;
     font-weight: 400;
@@ -96,9 +109,9 @@ nav button {
     border-radius: 4px;
     border: 1px solid white;
     cursor: pointer;
-
 }
 
+/* Red button styling */
 .btn-red {
     background-color: red;
     color: white;
@@ -108,11 +121,13 @@ nav button {
     font-weight: 400;
 }
 
+/* Smaller red button styling */
 .btn-red-sm {
     background-color: red;
     color: white;
 }
 
+/* Hero section buttons container */
 .hero-buttons {
     display: flex;
     align-items: center;
@@ -120,6 +135,7 @@ nav button {
     gap: 16px;
 }
 
+/* Input field styling in main section */
 .main input {
     padding: 7px 101px 8px 14px;
     color: white;
@@ -129,6 +145,7 @@ nav button {
     border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
+/* First section styling */
 .first {
     display: flex;
     justify-content: center;
@@ -139,18 +156,19 @@ nav button {
     align-items: center;
 }
 
-
-
+/* Secondary image container */
 .secImg {
     position: relative;
 }
 
+/* Secondary image styling */
 .secImg img {
     width: 555px;
     position: relative;
     z-index: 10;
 }
 
+/* Secondary video styling */
 .secImg video {
     position: absolute;
     top: 51px;
@@ -158,44 +176,49 @@ nav button {
     width: 555px;
 }
 
+/* Text container in the first section */
 section.first>div {
     display: flex;
     flex-direction: column;
     padding: 34px 0;
 }
 
+/* Title in the first section */
 section.first>div :nth-child(1) {
     font-size: 48px;
     font-weight: bolder;
 }
 
-
+/* Subtitle in the first section */
 section.first>div :nth-child(2) {
     font-size: 24px;
-
 }
 
-
+/* FAQ section styling */
 .faq h2 {
     text-align: center;
     font-size: 48px;
 }
 
+/* FAQ section container */
 .faq {
     background: black;
     color: white;
     padding: 34px;
 }
 
+/* FAQ box hover effect */
 .faqbox:hover {
     background-color: #414141;
     color: white;
 }
 
+/* Invert color of SVG in FAQ box */
 .faqbox svg {
     filter: invert(1);
 }
 
+/* FAQ box styling */
 .faqbox {
     transition: all 1s ease-out;
     font-size: 24px;
@@ -208,6 +231,7 @@ section.first>div :nth-child(2) {
     cursor: pointer;
 }
 
+/* Footer styling */
 footer {
     color: white;
     max-width: 60vw;
@@ -215,21 +239,20 @@ footer {
     padding: 60px;
 }
 
+/* Questions section in footer */
 footer .questions {
     padding: 34px 0;
 }
 
-
+/* Footer grid styling */
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
 
-
-
+/* Responsive design for screens smaller than 1300px */
 @media screen and (max-width: 1300px) {
-
     nav {
         max-width: 90vw;
     }
@@ -279,14 +302,10 @@ footer .questions {
     .footer-item {
         align-items: center;
     }
-
-
 }
 
-
-
+/* Further adjustments for footer on smaller screens */
 @media screen and (max-width: 1300px) {
-
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -294,12 +313,13 @@ footer .questions {
     }
 }
 
-
+/* Footer links styling */
 .footer a {
     font-size: 14px;
     color: white;
 }
 
+/* Footer items container */
 .footer-item {
     display: flex;
     flex-direction: column;
