@@ -328,7 +328,7 @@ nav a:hover {
 .main2 .box4 .item4 h1 {
     text-align: center;
     font-family: cursive;
-    padding: 0px 480px 0px 0px;
+    padding: 0px 600px 0px 0px;
 }
 
 .us {
@@ -695,7 +695,7 @@ nav a:hover {
 footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: rgba(198, 196, 196, 0.82);
+    background-color: hsla(0, 16%, 87%, 0.6);
     width: 100%;
     margin-top: 90px;
     justify-content: space-between;
@@ -715,16 +715,23 @@ footer {
         text-align: center;
     }
 }
-
+.footer {
+    padding: 10px 10px 20px 30px;
+}
+footer .follows h2{
+    margin-bottom: 0px;
+}
+footer .follows ion-icon {
+    margin-top: 0px;
+}
 footer .location, 
 footer .quick, 
 footer .contact, 
 footer .ourservice {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
-
 .contact p {
     margin: 5px 0;
 }
