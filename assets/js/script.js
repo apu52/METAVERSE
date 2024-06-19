@@ -112,6 +112,10 @@ function toggleTheme() {
 }
 
 function enableDarkTheme() {
+  const navLinks = document.getElementsByClassName("nav-link");
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].style.backgroundImage = "linear-gradient(to right, #23abd4, #23abd4 50%, #000000 50%)";
+  }
   var elements = document.getElementsByTagName("*");
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -135,6 +139,10 @@ function enableDarkTheme() {
 }
 
 function disableDarkTheme() {
+  const navLinks = document.getElementsByClassName("nav-link");
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].style.backgroundImage = "linear-gradient(to right, #23abd4, #23abd4 50%, #fff 50%)";
+  }
   var elements = document.getElementsByTagName("*");
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
