@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #830781;
+  --primary-hover-color: #610447;
+  --background-color: #121212;
+  --secondary-background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --border-color: #333333;
+  --success-color: #640262;
+  --success-hover-color: #218838;
+  --danger-color: #dc3545;
+  --danger-hover-color: #c82333;
+  --info-color: #118192;
+  --infoo-color: #17a2b8;
+  --info-hover-color: #138496;
+  --infoo-hover-color: #0e6775;
+  --button-gradient-start: #f083df;
+  --button-gradient-end: #004a99;
+  --button-gradient-hover-start: #004a99;
+  --button-gradient-hover-end: #7f1973;
+  --add-to-bookshelf-gradient-start: #4CAF50; 
+  --add-to-bookshelf-gradient-end: #8BC34A;   
+  --add-to-bookshelf-gradient-hover-start: #388E3C; 
+  --add-to-bookshelf-gradient-hover-end: #689F38;  
+  --remove-from-bookshelf-gradient-start: #f44336; 
+  --remove-from-bookshelf-gradient-end: #e57373;   
+  --remove-from-bookshelf-gradient-hover-start: #d32f2f; 
+  --remove-from-bookshelf-gradient-hover-end: #f44336;   
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button.bg-gradient-to-r {
+  background: linear-gradient(to right, var(--add-to-bookshelf-gradient-start), var(--add-to-bookshelf-gradient-end));
+}
+
+button.bg-gradient-to-r:hover {
+  background: linear-gradient(to right, var(--add-to-bookshelf-gradient-hover-start), var(--add-to-bookshelf-gradient-hover-end));
+}
+
+
+button.bg-red-500 {
+  background: linear-gradient(to right, var(--remove-from-bookshelf-gradient-start), var(--remove-from-bookshelf-gradient-end));
+}
+
+button.bg-red-500:hover {
+  background: linear-gradient(to right, var(--remove-from-bookshelf-gradient-hover-start), var(--remove-from-bookshelf-gradient-hover-end));
+}
+
+
+.go-to-shelf-button {
+  background: linear-gradient(to right, var(--add-to-bookshelf-gradient-start), var(--add-to-bookshelf-gradient-end));
+  color: aliceblue;
+}
+
+.go-to-shelf-button:hover {
+  background: linear-gradient(to right, var(--add-to-bookshelf-gradient-hover-start), var(--add-to-bookshelf-gradient-hover-end));
+}
+
+
+.back-to-search-button {
+  background: linear-gradient(to right, var(--add-to-bookshelf-gradient-start), var(--add-to-bookshelf-gradient-end));
+  color: aliceblue;
+}
+
+.back-to-search-button:hover {
+  background: linear-gradient(to right, var(--add-to-bookshelf-gradient-hover-start), var(--add-to-bookshelf-gradient-hover-end));
+}
+
+header {
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: var(--info-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--info-hover-color);
+  text-decoration: underline;
+}
+
+.App-footer {
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.App-footer p {
+  margin: 5px 0;
+}
+
+.App-footer a {
+  color: var(--info-color);
+  text-decoration: none;
+}
+
+.App-footer a:hover {
+  color: var(--info-hover-color);
+  text-decoration: underline;
+}
+
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--add-to-bookshelf-gradient-hover-end);
+  border-radius: 4px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  border: 1px solid var(--add-to-bookshelf-gradient-hover-end);
+  border-radius: 4px;
+  background-color: var(--text-color);
+}
+
+.react-autosuggest__suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: var(--add-to-bookshelf-gradient-start);
+  color: var(--text-color);
+}
