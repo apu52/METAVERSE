@@ -911,6 +911,23 @@ body {
   background-color: var(--eerie-black-3);
   padding: 20px;
 }
+.social-media h3{
+  padding-left: 70px;
+  font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+.social-icons {
+  margin-bottom: 5.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons i {
+  font-size: 2.2rem;
+  color: var(--white-color);
+  padding: .8rem 2rem;
+  transition: color .5s;
+}
 
 .footer-list,
 .copyright {
