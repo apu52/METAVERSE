@@ -55,8 +55,13 @@ header {
   width: 40px;
 }
 .logo:hover {
-  background: #fff;
+  background: #900c3f;
   transition: 0.5s;
+}
+.title{
+  cursor: pointer;
+  padding-right: 100px;
+  color: #fffefd;
 }
 
 .navbar {
