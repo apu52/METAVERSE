@@ -21,6 +21,8 @@
   --blue-ryb: hsl(244, 86%, 59%);
   --cultured: hsl(0, 0%, 96%);
   --white: hsl(0, 0%, 100%);
+  --black:rgb(0, 0, 0);
+  --space-cadet1: hsl(223, 18%, 85%);
 
   /**
    * typography
@@ -150,7 +152,7 @@ body { background: var(--white); }
 }
 
 .btn-primary {
-  color: var(--white);
+  color: white;
   background: var(--red-crayola);
 }
 
@@ -160,7 +162,7 @@ body { background: var(--white); }
 
 .btn-secondary {
   background: var(--blue-ryb);
-  color: var(--white);
+  color: white;
 }
 
 .btn-secondary:is(:hover, :focus) { background: var(--red-crayola); }
@@ -265,7 +267,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background: var(--cultured);
+  background:transparent;
   padding-top: 130px;
   padding-bottom: var(--section-padding);
 }
@@ -486,6 +488,7 @@ body { background: var(--white); }
   border-radius: var(--radius-4);
   margin-bottom: 15px;
   transition: var(--transition);
+  color: var(--black);
 }
 
 .input-field:focus { outline-color: var(--red-crayola); }
@@ -597,7 +600,7 @@ body { background: var(--white); }
 .contact-link:is(:hover, :focus) { color: var(--red-crayola); }
 
 .footer-bottom {
-  background: var(--space-cadet);
+  background: var(--space-cadet1);
   padding-block: 30px;
 }
 
@@ -647,8 +650,8 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .go-top {
-  background: var(--white);
-  color: var(--space-cadet);
+  background:black;
+  color: white;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -674,10 +677,55 @@ body { background: var(--white); }
 
 .go-top:is(:hover, :focus) {
   background: var(--blue-ryb);
-  color: var(--white);
+  color: rgb(128, 127, 127);
+}
+/*Toggle button */
+.toggle input[type='checkbox'] {
+  display: none;
 }
 
+.toggle label {
+  background-color: #945ca5;
+  border: 2px solid #949494;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 90px;
+  height: 50px;
+}
+.toggle label::after {
+  background-color: #050505;
+  border-radius: 50%;
+  content: ' ';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 42px;
+  height: 42px;
+}
+.toggle input[type='checkbox']:checked ~ label {
+  background-color: #000000;
+  border-color: #691f5f;
+}
 
+.toggle input[type='checkbox']:checked ~ label::after {
+  background-color: #532150;
+  transform: translateX(40px);
+}
+/* Dark mode styles */
+
+.dark-theme{
+  --white:black;
+  --space-cadet: hsl(223, 18%, 85%);
+  --cultured:rgb(15, 15, 15);
+  --black:rgb(134, 129, 129);
+  --space-cadet1: hsl(228, 6%, 16%);
+}
 
 
 
