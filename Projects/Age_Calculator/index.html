@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="calculator"> 
-            <h1>Javascript <br><span>Age Calculator</span></h1>
-            <div class="input-box"> 
-                <div class="input-fields"> 
-                    <div style="display: flex; align-items: center; width: 100%; justify-content: center;">
-                        <p>Date of birth: </p>
-                        <input type="date" id="date">
-                    </div>
-                    <div style="display: flex; align-items: center; width: 100%; justify-content: center;">
-                        <p>Units: </p>
-                        <select id="unitSelector">
-                            <option value="ymd">Years, Months & Days</option>
-                            <option value="years">Years</option>
-                            <option value="months">Months</option>
-                            <option value="days">Days</option>
-                            <option value="dogYears">Dog Years</option>
-                            </select>
-                        </input>  
-                    </div>
+    <div id="container">
+        <div id="main">
+            <div id="heading">
+                <h1>Age Calculator</h1>
+            </div>
+
+            <div id="onemain">
+                <div id="oneone">
+                    <label for="ip1" id="ip1name"> DOB -   <input type="datetime-local" name="ip1" id="ip1"
+                            value="yyyy-01-01T00:00"></label>
+
+                    <label for="ip2" id="ip2name">Till - &nbsp;&nbsp;&nbsp;&nbsp;<input type="datetime-local" name="ip2"
+                            id="ip2"></label>
                 </div>
-                <div class="input-btns">
-                    <button onclick="calculateAge()" id="reset-button">Calculate</button>
-                    <button onclick="resetFields()" id="reset-button">Reset</button>
-                </div>
-                <div class="input-results">
-                    <p id="result"></p>
+                <div id="onetwo">
+                    <button type="button" onclick="calculateage()">Calculate</button>
+                    <button type="button" onclick="generatePDF()">Share Results</button>
                 </div>
             </div>
+
+            <div id="twomain">
+                <div id="twoone">
+                    <img src="./assets/child1.svg" alt="child" id="photo">
+                </div>
+
+                <div id="twotwo">
+                    <h2 id="op1">Age = 0 Years 0 Months</h2>
+                    <br>
+                    <h2>OR</h2>
+                    <br>
+                    <h2 id="op2">- 0 Months</h2>
+                    <h2 id="op7">- 0 Weeks</h2>
+                    <h2 id="op3">- 0 Days</h2>
+                    <h2 id="op4">- 0 Hrs</h2>
+                    <h2 id="op5">- 0 Minutes</h2>
+                    <h2 id="op6">- 0 Seconds</h2>
+                </div>
+            </div>
+
         </div>
-        
+
     </div>
-    <script src="script.js"></script>
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <p id="alert-message"></p>
+            <button id="close-alert">Close</button>
+        </div>
+    </div>
 </body>
+<!--Js library for PDF-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
 </html>
