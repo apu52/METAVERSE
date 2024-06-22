@@ -8,8 +8,8 @@
 .container {
     width: 100%;
     height: 100vh;
-    background: url(https://source.unsplash.com/purple-gradient-bexwsdM5BCw) center / cover no-repeat fixed;
-    color: #fff;
+    background: url(bgimg.png) center / cover no-repeat fixed;
+    color: ivory;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +21,12 @@
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff00;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    box-shadow: 0 0 32px #151515;
 }
 
 .calculator h1 {
@@ -36,7 +36,9 @@
 }
 
 .calculator h1 span {
-    color: #ffff76;
+    background: -webkit-linear-gradient(#b6021a,#01311f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .input-box {
@@ -92,11 +94,17 @@
     background: rgba(255, 255, 255, 0.28);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
-    box-shadow: 5px 5px 10px rgb(26, 27, 27);
+    box-shadow: 0px 7px 7px rgb(26, 27, 27);
     font-weight: 500;
     cursor: pointer;
     border: 0;
     outline: 0;
+    transition: all 0.3s;
+}
+
+.input-btns button:hover{
+    transform: translateY(4px);
+    box-shadow: 0px 3px 7px rgb(26, 27, 27);
 }
 
 .input-results {

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<style>
+    body {
+        background-color: #E3E6F3;
+    }
+    /* Style the form container */
+    #signup-form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* Style form labels */
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    /* Style form inputs */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    /* Style the signup button */
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+
+    /* Hover effect for the signup button */
+    button:hover {
+        background-color: #218838;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        #signup-form {
+            width: 90%;
+        }
+    }
+
+    /* Style for the message div */
+    #message {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 16px;
+        color: #dc3545; /* Red color for errors */
+    }
+    #message.success {
+        color: #28a745; /* Green color for success */
+    }
+</style>
+<body>
+    <h2>Signup</h2>
+    <form id="signup-form">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="signup()">Signup</button>
+    </form>
+    <div id="message"></div>
+
+    <script>
+        function validatePassword(password) {
+            const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+            return regex.test(password);
+        }
+
+        async function signup() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const messageDiv = document.getElementById('message');
+
+            // Validate password
+            if (!validatePassword(password)) {
+                messageDiv.textContent = 'Password must be at least 8 characters long, contain one uppercase letter, and one special character.';
+                messageDiv.classList.add('error');
+                messageDiv.classList.remove('success');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost:5000/signup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, email, password })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to sign up');
+                }
+
+                const data = await response.json();
+                console.log(data); // Logging the response for debugging
+                
+                // Display success message
+                messageDiv.textContent = 'User created successfully';
+                messageDiv.classList.add('success');
+                messageDiv.classList.remove('error');
+            } catch (error) {
+                console.error(error);
+                
+                // Display error message
+                messageDiv.textContent = 'Failed to sign up';
+                messageDiv.classList.add('error');
+                messageDiv.classList.remove('success');
+            }
+        }
+    </script>
+</body>
+</html>

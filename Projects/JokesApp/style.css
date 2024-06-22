@@ -1,29 +1,35 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Rubik",sans-serif;
+    font-family: "Rubik", sans-serif;
 }
-body{
+
+body {
     background-color: #fab22e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 }
-.wrapper{
+
+.wrapper {
     width: 80vmin;
     padding: 50px 40px;
     background-color: #15161a;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    margin: 60px 0px;
     border-radius: 5px;
-    box-shadow: 20px 20px 40px rgba(97,63,0,0.4);
+    box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
 }
-span{
+
+span {
     display: block;
     text-align: center;
     font-size: 100px;
 }
-p{
+
+p {
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
@@ -33,21 +39,88 @@ p{
     margin: 30px 0;
     opacity: 0;
 }
-.fade{
+#joke{
+    color: #fffafa;
+}
+
+.fade {
     opacity: 1;
     transition: opacity 1.5s;
 }
-button{
+
+button {
     display: block;
     background-color: #fab22e;
     border: none;
-    padding: 5px;
     font-size: 18px;
     color: #171721;
     font-weight: 600;
     padding: 12px 25px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.link {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 23px;
+    padding-top: 2px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.link:hover {
+    color: #f7f57f;
+    background-color: #000000;
+}
+ .textin , .btn1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.textin {
+    width: calc(100% - 22px);
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.btn1 {
+    background-color: #28a745;
+    color: #fff;
+}
+.btn1:hover{
+    background-color: #156b29;
+}
+#jokeForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+.styling{
+    font-size: large;
+    margin-bottom: 20px;
+
+}
+.styling:hover{
+    color: #232327;
 }
