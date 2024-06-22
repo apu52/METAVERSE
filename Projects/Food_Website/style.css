@@ -20,10 +20,12 @@ body{
     overflow: hidden;
 }
 #menu{
-    background: rgb(201, 197, 197);
+    background: rgb(255 239 239);
+    box-shadow: 2px 0px 15px #00000059;
+    z-index: 2;
 }
 .title{
-    padding: 0 30px;
+    padding: 30px;
 }
 #menu img{
     width: 150px;
@@ -38,7 +40,7 @@ body{
     margin: 0;
 }
 .border{
-    width: 80px;
+   width: 100%;
     height: 4px;
     margin: 3px 0;
     margin-bottom: 30px;
@@ -49,19 +51,21 @@ body{
 .menu-item a{
     display: block;
     text-decoration: none;
-    font-size: 20px;
-    padding: 8px 30px;
+    font-size: 24px;
+    padding: 10px 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 12px 0;
-    color: rgb(77, 45, 3);
+    margin-top: 10px;
+    color: rgb(34, 2, 2);
     font-weight: 300;
     
 }
 .menu-item a:hover{
-    background: rgb(233, 221, 58);
+    background: rgba(245, 203, 203, 0.829);
+    transition: 0.5s all ease-in-out;
 }
 #food-items{
-    background: rgb(243, 237, 237);
+    background: rgb(255 234 234 / 59%);
     overflow: auto;
     height: calc(100vh - 86px);
 }
@@ -69,12 +73,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     position: sticky;
     top: 0;
-    background: rgb(238, 229, 229);
-    z-index: 1;
+    background: rgb(249 204 204 / 45%);
+    z-index: 2;
+    box-shadow: 0px 5px 15px #00000026;
+    
+  
 }
 ::-webkit-scrollbar{
     display: none;
@@ -89,17 +97,26 @@ body{
 }
 .your-address{
     border: 1px solid indianred;
-    color: rgb(211, 18, 18);
-    padding: 5px 10px;
-    border-radius: 5px;
+    color: rgb(211, 44, 44);
+    padding: 5px 15px;
+    border-radius: 15px;
     width: 150px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     cursor: pointer;
+   
 }
 .add-box i{
     font-size: 20px;
+
+}
+.add-box{
+    transition: 0.5s all ease-in-out;
+}
+
+.add-box:hover{
+transform: scale(1.2);
 }
 
 #header select{
@@ -125,39 +142,51 @@ body{
     color: crimson;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
 }
+.user i:hover{
+    transform: scale(1.2);
+}
+.util i:hover{
+    transform: scale(1.2);
+}
+
 .util i:active{
     color: white;
     background: crimson;
 }
 #biryani,#paneer,#chicken,#vegetable,#chinese,#south-indian{
-    margin-top: 40px;   
+    margin-top: 100px;   
 }
 #paneer #item-card,#vegetable #item-card{
-    background: rgb(218, 253, 188);
+    background: rgb(245 113 134 / 15%);
 }
 #chinese #item-card,#south-indian #item-card{
-    background: rgb(221, 243, 243);
+    background: rgb(245 113 134 / 15%);
 }
 #category-name,.item-menu{
     margin: 10px;
     font-size: 35px;   
-    color: coral;
+    color: rgb(245, 65, 0);
     font-family: 'Aclonica', sans-serif;
 }
 #item-card{
     width: 180px;
-    height: 220px;
+    height: 250px;
     padding: 10px;
-    margin: 10px;
+    margin: 18px;
     display: inline-block;
-    border-radius: 5px;
-    background: rgb(253, 221, 226);
+    border-radius: 20px;
+  
+    background:rgb(245 113 134 / 15%);
     cursor: pointer;
     transition: 0.5s all step-end;
+    margin-bottom: 5px;
 }
+
 #item-card:hover img{
     transform: scale(1.2);
+    border-radius: 50%;
 }
 #card-top{
     display: flex;
@@ -166,10 +195,11 @@ body{
 }
 #rating{
     padding: 7px;
-    color: goldenrod;
-    background: black;
+    color: rgb(243 26 26);
+    background: rgb(255 177 187);
+   
     font-size: 14px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .fa-heart-o{
     padding: 6px;
@@ -184,7 +214,7 @@ color: white;
 #item-card img{
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 40%;
     margin: auto;
     display: block;
     margin-bottom: 15px;
@@ -285,33 +315,34 @@ color: white;
     color: rgb(1, 34, 1);
 }
 #cart{
-    background: whitesmoke;
+    background:#ffe6e6;
     padding-right: 30px;
     overflow-y: scroll;
+    box-shadow: -2px 0px 15px #00000038;
 }
 
 .item-menu{
-    margin: 0;
-    font-size: 30px;
-    margin-top: 40px;
-    color: indianred;
-    background: whitesmoke;
-    
+    background: #ffe6e6;
+ 
+
+    z-index: 2;
 }
-.list-card{
+.list-card {
     display: flex;
     align-items: center;
     margin-top: 15px;
+    margin-left: 15px;
     border-radius: 25px;
     cursor: pointer;
-    transition: 0.3s all ease-in-out;
+ transition: 0.3s all ease-in-out;
+}
+
+.list-card:hover{
+    background: rgb(245, 182, 192);
 }
 .list-card:hover{
-    background: rgb(255, 216, 222);
-}
-.list-card:hover img{
     transition: 0.5s all ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .list-card img{
     width: 50px;
@@ -323,14 +354,17 @@ color: white;
     margin: 0 10px;
     text-decoration: none;
     text-transform: capitalize;
-    color: rgb(94, 43, 43);
+    color:indianred;
+}
+.list-name .a{
+    font-weight: 500;
 }
 .taste-header{
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 10px;
     position: sticky;
     top: 0;
-    background: whitesmoke;
+    background: #ffe6e6;
 }
 #mobile-view{
     display: none;
