@@ -8,109 +8,90 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <div class="menu__container menu__container--2">
-            <div class="menu"><a href="./index.html">Home</a><a href="./features.html">Features</a><a href="./pricing.html">Pricing</a></div>
+            <div class="menu"><a href="./index.html">Home</a><a href="./features.html">Features</a><a
+                    href="./pricing.html">Pricing</a></div>
         </div>
     </header>
 
     <main>
-        <div class="container mt-5 col-6">
+        <div class="container mt-5 col-lg-6 col-md-8 col-sm-10">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Chapter Name" aria-label="Recipient's username"
+                <input type="text" class="form-control" placeholder="Chapter Name" aria-label="Chapter Name"
                     aria-describedby="button-addon2">
-                <button id="add_btn" class="btn btn-outline-success" type="button" id="button-addon2">Add
-                    Course</button>
+                <button id="add_btn" class="btn btn-outline-success" type="button">Add Course</button>
             </div>
             <ul id="parentList" class="list-group ">
-                <li class="list-group-item d-flex justify-content-between">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                     <h3 class="flex-grow-1">Chapter 1</h3>
                     <button class="bitn edit" onclick="editChapter(this)">Edit</button>
                     <button class="bitn remove" onclick="removeChapter(this)">Remove</button>
-                    
-            </div>
-
                 </li>
-
             </ul>
         </div>
-
     </main>
+
     <script>
         let addBtn = document.getElementById("add_btn");
-
         addBtn.addEventListener('click', addChapter)
         let parentList = document.getElementById("parentList");
+
         function addChapter(e) {
             if (parentList.children[0].className == "emptyMsg") {
                 parentList.children[0].remove()
             }
-                                         
-            let currentBtn = e.currentTarget; 
+
+            let currentBtn = e.currentTarget;
             let currentInput = currentBtn.previousElementSibling.value;
             let curerntChapterName = currentInput;
-          
 
             let newli = document.createElement("li")
-            newli.className = "list-group-item d-flex justify-content-between"  
-            newli.innerHTML = `<h3 class="flex-grow-1">${curerntChapterName}</h3> 
+            newli.className = "list-group-item d-flex justify-content-between align-items-center"
+            newli.innerHTML = `<h3 class="flex-grow-1">${curerntChapterName}</h3>
                     <button class="btn btn-danger mx-5" onclick="editChapter(this)">Edit</button>
                     <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>`
-           
-
-
-
-          
 
             parentList.appendChild(newli);
         }
 
         function removeChapter(currElement) {
-
             currElement.parentElement.remove();
             if (parentList.children.length <= 0) {
                 let newEmptyMsg = document.createElement("h3");
-                newEmptyMsg.classList.add("emptyMsg")       
-                newEmptyMsg.textContent = "Nothing is here.Please add a Chapter!!"
+                newEmptyMsg.classList.add("emptyMsg")
+                newEmptyMsg.textContent = "Nothing is here. Please add a Chapter!!"
                 newEmptyMsg.style.color = "green"
                 parentList.appendChild(newEmptyMsg);
             }
-
         }
+
         function editChapter(currElement) {
-  if (currElement.textContent == "Done") {
-      currElement.textContent = "Edit";
-      let currChapterName = currElement.previousElementSibling.value;
-      let currHeading = document.createElement("h3");
-      currHeading.className = "flex-grow-1"
-      currHeading.textContent = currChapterName
-      currElement.parentElement.replaceChild(currHeading, currElement.previousElementSibling)
-
-  }
-
-  else {
-      currElement.textContent = "Done"
-      let currChapterName = currElement.previousElementSibling.textContent
-      let currInput = document.createElement("input")
-      currInput.type = "text";
-      currInput.placeholder = "Chapter Name"
-      currInput.className = "form-control";
-
-      currInput.value = currChapterName;
-      currElement.parentElement.replaceChild(currInput, currElement.previousElementSibling)
-
-  }
-
-
-}
-       
-       
-
+            if (currElement.textContent == "Done") {
+                currElement.textContent = "Edit";
+                let currChapterName = currElement.previousElementSibling.value;
+                let currHeading = document.createElement("h3");
+                currHeading.className = "flex-grow-1"
+                currHeading.textContent = currChapterName
+                currElement.parentElement.replaceChild(currHeading, currElement.previousElementSibling)
+            } else {
+                currElement.textContent = "Done"
+                let currChapterName = currElement.previousElementSibling.textContent
+                let currInput = document.createElement("input")
+                currInput.type = "text";
+                currInput.placeholder = "Chapter Name"
+                currInput.className = "form-control";
+                currInput.value = currChapterName;
+                currElement.parentElement.replaceChild(currInput, currElement.previousElementSibling)
+            }
+        }
     </script>
 </body>
 
