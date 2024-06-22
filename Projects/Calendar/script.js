@@ -8,6 +8,9 @@ const prevNextIcon = document.querySelectorAll(".icons span");
 const months = ["January", "February", "March", "April", "May", "June", "July",
                 "August", "September", "October", "November", "December"];
 
+const yearSelect = document.getElementById('year-select');
+const monthSelect = document.getElementById('month-select');                
+
 const renderCalendar = () => {
     let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
     lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
@@ -30,6 +33,25 @@ const renderCalendar = () => {
     currentDate.textContent = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
     daysTag.innerHTML = liTag;
 }
+const populateYearSelect = () => {
+  let yearOptions = '';
+  for (let year = 1900; year <= 2100; year++) {
+      yearOptions += `<option value="${year}">${year}</option>`;
+  }
+  yearSelect.innerHTML = yearOptions;
+  yearSelect.value = currYear;
+}
+
+populateYearSelect();
+yearSelect.addEventListener('change', () => {
+  currYear = parseInt(yearSelect.value);
+  renderCalendar();
+});
+
+monthSelect.addEventListener('change', () => {
+  currMonth = parseInt(monthSelect.value);
+  renderCalendar();
+});
 
 renderCalendar();
 
