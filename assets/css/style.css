@@ -1088,6 +1088,16 @@ ul.socials {
   }
 }
 
+.links-container a i {
+  color: #000000; 
+}
+
+@media (prefers-color-scheme: dark) {
+  .links-container a i {
+      color: #fff;
+  }
+}
+
 /* media query for cursor on mobile*/
 @media only screen and (max-width:898px){
   .cursor-container{
