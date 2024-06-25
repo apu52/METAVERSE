@@ -1,4 +1,24 @@
+// main.js or any common JavaScript file
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { firebaseConfig } from "../config/firebaseConfig.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
+// Initialize Firebase
+// const { firebaseConfig } = window; 
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+      // User is signed in, show profile icon
+      document.getElementById('signin-link').style.display = 'none';
+      document.getElementById('profile-link').style.display = 'inline-block';
+  } else {
+      // No user is signed in, show sign-in button
+      document.getElementById('signin-link').style.display = 'inline-block';
+      document.getElementById('profile-link').style.display = 'none';
+  }
+});
 
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -27,19 +47,3 @@ sr.reveal('.services-container .box', { delay: 600, origin: 'top' })
 sr.reveal('.about-container .box', { delay: 600, origin: 'top' })
 sr.reveal('.reviews-container ', { delay: 600, origin: 'top' })
 sr.reveal('.newsletter .box', { delay: 400, origin: 'bottom' })
-
-function useEffect() {
-  if (
-    document.referrer.includes("signup.html") ||
-    document.referrer.includes("signin.html")
-  ) {
-    const text = document.getElementById("up");
-    const text1 = document.getElementById("in");
-    text.innerHTML = "Signed-in";
-    text1.innerHTML = "";
-    text1.style.background = "#900c3f";
-  }
-}
-useEffect();
-
-

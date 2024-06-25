@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=VR2unU5QHRTh&format=png&color=000000" type="image/x-icon">
     <title>Book Review Website</title>
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
@@ -16,7 +16,7 @@
     <!-- HEADER -->
     <header>
         <a href="#" class="logo">
-        <img width="64" height="64" src="https://img.icons8.com/external-outline-berkahicon/64/000000/external-book-linely-literacy-outline-berkahicon-8.png" alt="external-book-linely-literacy-outline-berkahicon-8"/>
+            <img width="64" height="64" src="https://img.icons8.com/external-outline-berkahicon/64/000000/external-book-linely-literacy-outline-berkahicon-8.png" alt="external-book-linely-literacy-outline-berkahicon-8"/>
         </a>
         <h2 class="title">Book Review</h2>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -27,12 +27,13 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#reviews">Reviews</a></li>
         </ul>
-        <div class="header-btn">
-            <a href="signup.html" class="sign-up" id="up">Sign Up</a>
-            <a href="signin.html" class="sign-in" id="in">Sign In</a>
+        <div class="header-btn" id="header-btn">
+            <a href="signin.html" class="sign-in" id="signin-link">Sign In</a>
+            <a href="#" class="profile" id="profile-link" style="display: none;"><i class='bx bxs-user'></i> Profile</a>
         </div>
-
+        
     </header>
+    
     <!-- HOME -->
     <section class="home" id="home">
         <div class="text">
@@ -91,7 +92,7 @@
         <div class="services-container">
             <div class="box">
                 <div class="box-img">
-                    <img src="set1.jpg" alt="">
+                    <img src="images/set1.jpg" alt="">
                 </div>
                 <p>2023</p>
                 <h3>2024 Medical Study</h3>
@@ -101,7 +102,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="set2.jpeg" alt="">
+                    <img src="images/set2.jpeg" alt="">
                 </div>
                 <p>2022</p>
                 <h3>2023 JEE Mains</h3>
@@ -111,7 +112,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="set3.jpeg" alt="">
+                    <img src="images/set3.jpeg" alt="">
                 </div>
                 <p>2023</p>
                 <h3>Physics Concepts</h3>
@@ -121,7 +122,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="set1.jpg" alt="">
+                    <img src="images/set1.jpg" alt="">
                 </div>
                 <p>2020</p>
                 <h3>Anime</h3>
@@ -131,7 +132,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="set4.jpeg" alt="">
+                    <img src="images/set4.jpeg" alt="">
                 </div>
                 <p>2021</p>
                 <h3>2024 Medical Study</h3>
@@ -141,7 +142,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="set2.jpeg" alt="">
+                    <img src="images/set2.jpeg" alt="">
                 </div>
                 <p>2022</p>
                 <h3>Mathematics</h3>
@@ -163,7 +164,7 @@
         </div>
         <div class="about-container">
             <div class="about-img">
-                <img src="openbook1.webp" alt="">
+                <img src="images/openbook1.webp" alt="">
             </div>
             <div class="about-text">
                 <span>About Us</span>
@@ -184,7 +185,7 @@
         <div class="reviews-container">
             <div class="box">
                 <div class="rev-img">
-                    <img src="rev1.jpg" alt="">
+                    <img src="images/rev1.jpg" alt="">
                 </div>
                 <h2>John</h2>
                 <div class="stars">
@@ -202,7 +203,7 @@
             </div>
             <div class="box">
                 <div class="rev-img">
-                    <img src="rev2.jpg" alt="">
+                    <img src="images/rev2.jpg" alt="">
                 </div>
                 <h2>George</h2>
                 <div class="stars">
@@ -219,7 +220,7 @@
             </div>
             <div class="box">
                 <div class="rev-img">
-                    <img src="rev3.jpg" alt="">
+                    <img src="images/rev3.jpg" alt="">
                 </div>
                 <h2>Harris</h2>
                 <div class="stars">
@@ -263,7 +264,10 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- LINK TO JS -->
-    <script src="main.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="config/firebaseConfig.js"></script> -->
+    <script type="module" src="scripts/main.js"></script>
 
 </body>
 

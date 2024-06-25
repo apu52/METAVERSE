@@ -1,0 +1,147 @@
+/* Contents of header.css */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #ff7b19;
+  --second-color: #e53f71;
+  --text-color: #444;
+  --gradient: linear-gradient(#e53f71, #653780);
+}
+
+/* CUSTOM SCROLL BAR */
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #900c3f;
+  padding: 15px 100px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo:hover {
+  background: #900c3f;
+  transition: 0.5s;
+}
+
+.title {
+  cursor: pointer;
+  padding-right: 100px;
+  color: #fffefd;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: white;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.header-btn a {
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header-btn .sign-in {
+  background: #474fa0;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.header-btn .sign-in:hover {
+  background: var(--main-color);
+  transition: 0.5s;
+}
+
+
+/* Contents of footer.css */
+/* footer.css */
+
+.footer {
+    position: relative; /* Change to fixed to keep it at the bottom of the viewport */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #deba8e;
+    color: #000;
+  }
+  
+  .footer .social a {
+    padding: 10px;
+    color: #444;
+    font-size: 21px;
+  }
+  
+  .footer .copyright {
+    padding: 10px; /* Add padding for better separation */
+  }
+  
