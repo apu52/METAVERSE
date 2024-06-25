@@ -1,12 +1,11 @@
 // config/firebaseConfig.js
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyAXumTKt1TDm79yDRCpiAQnYdwtYA807uc",
-    authDomain: "metaverse-bookreview.firebaseapp.com",
-    projectId: "metaverse-bookreview",
-    storageBucket: "metaverse-bookreview.appspot.com",
-    messagingSenderId: "34163914287",
-    appId: "1:34163914287:web:1d5512c201f90deafaf8da",
-    measurementId: "G-YM1MGLP67N"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
   };
   
