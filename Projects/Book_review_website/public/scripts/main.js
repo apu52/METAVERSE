@@ -20,6 +20,10 @@ setPersistence(auth, browserSessionPersistence)
   });
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const signinLink = document.getElementById('signin-link');
+    const profileDropdown = document.getElementById('profile-dropdown');
+    const signoutLink = document.getElementById('signout-link');
+    const editProfileLink = document.getElementById('editprofile-link');
     console.log("content loaded");
     // Check if there's a signed-in user
     const user = JSON.parse(localStorage.getItem('user'));
@@ -27,22 +31,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (user) {
         console.log("user exists");
         try {
+            signinLink.style.display = 'none';
+            profileDropdown.style.display = 'block';
             console.log(user.uid);
-            // const userDoc = doc(db, 'users', user.uid);
-            // const userDoc = await getDoc(userDocRef);
-            // console.log(userDocRef)
-            // const userDoc = await getDoc(doc(db, 'users', user.uid));
-            // if (userDoc) {
-                // const userData = userDoc.data();
                 const displayName = user.displayName;
                 console.log(displayName);
                 const profileName = document.getElementById('profile-name');
                 if (profileName) {
                     profileName.textContent = displayName;
                 }
-            // } else {
-            //     console.log('User document not found in Firestore.');
-            // }
         } catch (error) {
             console.error('Error fetching user data from Firestore:', error);
         }
@@ -59,15 +56,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     } else {
         // User is signed out
-        const profileLink = document.getElementById('profile-link');
-        if (profileLink) {
-            profileLink.style.display = 'none';
-        }
-        const signinLink = document.getElementById('signin-link');
-        if (signinLink) {
-            signinLink.style.display = 'inline-block';
-        }
+        signinLink.style.display = 'inline-block';
+        profileDropdown.style.display = 'none';
     }
+    signoutLink.addEventListener('click', async (e) => {
+        e.preventDefault();
+        try {
+            await signOut(auth);
+            localStorage.clear(); 
+            window.location.href = "signin.html"; // Redirect after sign out
+        } catch (error) {
+            console.error('Error signing out:', error);
+        }
+    });
+
+    // Add event listener for edit profile link if needed
+    editProfileLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Handle edit profile functionality here
+    });
   });
 
 let menu = document.querySelector('#menu-icon');

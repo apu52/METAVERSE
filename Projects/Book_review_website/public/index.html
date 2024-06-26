@@ -29,10 +29,17 @@
         </ul>
         <div class="header-btn" id="header-btn">
             <a href="signin.html" class="sign-in" id="signin-link">Sign In</a>
-            <a href="#" class="profile" id="profile-link" style="display: none;">
-                <i class='bx bxs-user'></i> <span id="profile-name">Profile</span>
-              </a>
+            <div class="dropdown" id="profile-dropdown" style="display: none;">
+                <button class="profile" id="profile-link">
+                    <i class='bx bxs-user'></i> <span id="profile-name">Profile</span> <i class="bx bx-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" id="signout-link">Sign Out</a>
+                    <a href="#" id="editprofile-link">Edit Profile</a>
+                </div>
+            </div>
         </div>
+        
         
     </header>
     
