@@ -1,11 +1,19 @@
 // console.log('signin.js loaded');
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { firebaseConfig } from "../config/firebaseConfig.js";
-import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged,browserSessionPersistence, setPersistence } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 // console.log('configs loaded');
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+// setPersistence(auth, browserSessionPersistence);
+setPersistence(auth, browserSessionPersistence)
+  .then(() => {
+    console.log("Firebase auth persistence set successfully.");
+  })
+  .catch((error) => {
+    console.error("Error setting Firebase auth persistence:", error);
+  });
 
 const signinForm = document.getElementById("signin-form");
 const errorMessage = document.getElementById("error-message");
@@ -41,7 +49,15 @@ signinForm.addEventListener("submit", async (e) => {
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         signinForm.reset();
+        localStorage.setItem('user', JSON.stringify(userCredential.user));
         window.location.href = "../index.html";
+        // const unsubscribe = onAuthStateChanged(auth, (user) => {
+        //     if (user) {
+        //       // User is signed in, redirect to index.html
+        //       window.location.href = "../index.html";
+        //       unsubscribe(); // Stop listening for further changes
+        //     }
+        //   });
     } catch (error) {
         console.error(error.message);
         errorMessage.textContent = error.message;
@@ -54,6 +70,14 @@ googleSigninButton.addEventListener("click", async () => {
     try {
         const provider = new GoogleAuthProvider();
         const userCredential = await signInWithPopup(auth, provider);
+        localStorage.setItem('user', JSON.stringify(userCredential.user));
+        // const unsubscribe = onAuthStateChanged(auth, (user) => {
+        //     if (user) {
+        //       // User is signed in, redirect to index.html
+        //       window.location.href = "../index.html";
+        //       unsubscribe(); // Stop listening for further changes
+        //     }
+        //   });
         window.location.href = "../index.html";
     } catch (error) {
         console.error(error.message);
