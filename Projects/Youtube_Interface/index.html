@@ -1,414 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <aside>
-            <div class="bars">
-                <img src="icons/bars.svg" alt="bars" width="20px">
+    <head>
+        <title>Youtube Replica</title>
+        <link rel="stylesheet" href="style/video.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/general.css">
+        <link rel="stylesheet" href="style/sidebar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="left_sec">
+                <img class="option" src="headerphotos/hamburger-menu.svg">
+                <img class="youtube_logo" src="headerphotos/youtube-logo.svg">
+
             </div>
-            <div class="sideI1">
-                <i>
-                    <img src="icons/home.svg" alt="home">
-                </i>
-                <p>Home</p>
+            <div class="middle_sec">
+                <input class="searchbox" type="text" placeholder="Search">
+                <button class="searchbutton">
+                    <img class="searchphoto" src="headerphotos/search.svg">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voicesearchbuton">
+                    <img class="voicesearchphoto" src="headerphotos/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+                
+
             </div>
-            <div class="sideI1">
-                <i>
-                    <img src="icons/shorts.svg" alt="home" width="20px">
-                </i>
-                <p>Shorts</p>
+            <div class="right_sec">
+                <div class="create-container">
+                    <img class="videosymb" src="headerphotos/upload.svg">
+                <div class="tooltip">Create</div>
+                </div>
+                <div class=" notification-container">
+                    <img class="notification" src="headerphotos/notifications.svg">
+                    <div class="notification-no">5</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+             <img class="profilephoto" src="headerphotos/profile.jpeg">
+
             </div>
-            <div class="sideI1">
-                <i>
-                    <img src="icons/video-gallary.svg" alt="home" width="20px">
-                </i>
-                <p>Subscriptions</p>
+
+        </div>
+
+        <div class="sidebar">
+           <div class="home">
+            <img class="homephoto" src="sidebarphotos/home.svg">
+            <div>Home</div>
+           </div>
+           <div class="shorts">
+            <img class="shortsphoto" src="sidebarphotos/SNIPSHORTS.png">
+            <div>Shorts</div>
+           </div>
+           <div class="subcriptions">
+            <img class="subcriptionsphoto" src="sidebarphotos/subscriptions.svg">
+            <div>Subcriptions</div>
+           </div>
+           <div class="you">
+            <img class="youphoto" src="sidebarphotos/YOU.svg">
+            <div>You</div>
+           </div>
+
+        </div>
+        
+    <div class="maingrid">
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720.webp">
+                <div class="videotime">49:48</div>
+
             </div>
-            <div class="sideI1">
-                <i>
-                    <img src="icons/video-library.svg" alt="home" width="20px">
-                </i>
-                <p>Library</p>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/unnamed.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Our Planet | Coastal Seas | FULL EPISODE | Netflix</p>
+                    <p class=" channelname">Netflix &#x2713;</p>
+                    <p class="videostatus">25M views &#x2022; 3 years ago</p>
+                    
+                </div>
             </div>
-        </aside>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="images/yt.png" alt="Youtube Logo" width="90px">
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720 (1).webp">
+                <div class="videotime">13:47</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/bonappetite.jpg">
                 </div>
-                <div class="center-nav">
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                        <button>
-                            <img src="icons/sear.png" alt="search button" width="25px">
-                        </button>
-                    </div>
-                    <div class="mike">
-                        <img src="icons/mic.svg" alt="mic" width="20px">
-                    </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Every Single Job in a Michelin-Starred Kitchen | Bon Appétit</p>
+                    <p class=" channelname">Bon Appétit &#x2713;</p>
+                    <p class="videostatus">263K views &#x2022; 4 days ago</p>
+                    
                 </div>
-                <div class="sidenav">
-                    <i>
-                        <img src="icons/video-add.svg" alt="video upload" width="30px">
-                    </i>
-                    <!-- <i>
-                        <img src="/icons/dot-grid.svg" alt="All apps">
-                    </i> -->
-                    <i>
-                        <img src="icons/note.svg" alt="bell" width="30px">
-                    </i>
-                    <i>
-                        <img src="images/avatar.png" alt="avatar" width="40px">
-                    </i>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(2).webp">
+                <div class="videotime">20:30</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/ng.jpg">
                 </div>
-            </nav>
-            <nav>
-                <div class="tags">
-                    <div class="tag dark">All</div>
-                    <div class="tag light">Programming</div>
-                    <div class="tag light">Development</div>
-                    <div class="tag light">Stock Market</div>
-                    <div class="tag light">Websites</div>
-                    <div class="tag light">Html</div>
-                    <div class="tag light">CSS</div>
+                <div class=" channeldetail1">
+                    <p class="caption">From Ladakh to Kerala! | It Happens Only in India | Full Episode | S04-E04 | National Geographic</p>
+                    <p class=" channelname">National Geographic India &#x2713;</p>
+                    <p class="videostatus">900K views &#x2022; 5 months ago</p>
+                    
                 </div>
-            </nav>
-            <main>
-                <div class="cards">
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/thumb.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/avatar.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    What happens with photos after deleting them? | #youtube
-                                </h3>
-                                <div class="name">
-                                    <p>Aditya</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        14 views
-                                    </div>
-                                    <div class="ago">
-                                        • 3 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/5min.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/5minThum.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Cloud Service Models : Infrastructure as a Service (IaaS) ll Cloud...
-                                </h3>
-                                <div class="name">
-                                    <p>5 Minutes Engineering</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        353k views
-                                    </div>
-                                    <div class="ago">
-                                        • 4 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/gmthum.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/gm.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    What is Artificial Intelligence | Learn AI with Real Life Exampl...
-                                </h3>
-                                <div class="name">
-                                    <p>Gate Smashers</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        654k views
-                                    </div>
-                                    <div class="ago">
-                                        • 4 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/nessoThumb.jpg" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/nesso.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Construction of Moore Machine
-                                </h3>
-                                <div class="name">
-                                    <p>Neso Acadamy</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        530k views
-                                    </div>
-                                    <div class="ago">
-                                        • 6 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/harrysirThum.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/harrysir.jpg" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    C Language Tutorial For Beginners In Hindi (With Notes) 🔥
-                                </h3>
-                                <div class="name">
-                                    <p>CodeWithHarry</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        15M views
-                                    </div>
-                                    <div class="ago">
-                                        • 2 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/anshT.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/anshu.jpg" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    New Feature Made for Developers 😎 | Figma 2023 Update
-                                </h3>
-                                <div class="name">
-                                    <p>Do Some Coding</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        200k views
-                                    </div>
-                                    <div class="ago">
-                                        • 9 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/5min.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/5minThum.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Cloud Service Models : Infrastructure as a Service (IaaS) ll Cloud...
-                                </h3>
-                                <div class="name">
-                                    <p>5 Minutes Engineering</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        353k views
-                                    </div>
-                                    <div class="ago">
-                                        • 4 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/challa.jpg" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/yrf.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Challa | Full Song | Jab Tak Hai Jaan | Shah Rukh Khan, Katrina Kaif | Rabbi | A. R. Rahman | Gulzar
-                                </h3>
-                                <div class="name">
-                                    <p>YRF</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        98M views
-                                    </div>
-                                    <div class="ago">
-                                        • 3 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/thumb.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/avatar.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    What happens with photos after deleting them? | #youtube
-                                </h3>
-                                <div class="name">
-                                    <p>Aditya</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        2.8M views
-                                    </div>
-                                    <div class="ago">
-                                        • 3 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/anshT.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/anshu.jpg" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    New Feature Made for Developers 😎 | Figma 2023 Update
-                                </h3>
-                                <div class="name">
-                                    <p>Do Some Coding</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        200k views
-                                    </div>
-                                    <div class="ago">
-                                        • 9 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/nessoThumb.jpg" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/nesso.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Construction of Moore Machine
-                                </h3>
-                                <div class="name">
-                                    <p>Neso Acadamy</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        530k views
-                                    </div>
-                                    <div class="ago">
-                                        • 6 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="card">
-                            <img src="images/gmthum.png" alt="thumbnail" width="370px">
-                        </div>
-                        <div class="avatar-content">
-                            <div class="avt">
-                                <img src="images/gm.png" alt="Channel Logo" width="45px">
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    What is Artificial Intelligence | Learn AI with Real Life Exampl...
-                                </h3>
-                                <div class="name">
-                                    <p>Gate Smashers</p>
-                                    <img src="icons/tick.svg" alt="tick" width="17px">
-                                </div>
-                                <div class="views">
-                                    <div class="v">
-                                        654k views
-                                    </div>
-                                    <div class="ago">
-                                        • 4 years ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(3).webp">
+                <div class="videotime">10:42</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/dancingbacon.jpg">
                 </div>
-            </main>
-        </header>
+                <div class=" channeldetail1">
+                    <p class="caption">The Most Famous Ramen Vending Machine Restaurant</p>
+                    <p class=" channelname">DancingBacons &#x2713;</p>
+                    <p class="videostatus">1.7M views &#x2022; 1.7M view</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(4).webp">
+                <div class="videotime">8:19</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/munchies.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">The Legendary Dosa Man of NYC | Street Food Icons</p>
+                    <p class=" channelname">Munchies &#x2713;</p>
+                    <p class="videostatus">19M views &#x2022; 4 years ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(5).webp">
+                <div class="videotime">45:01</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/ng.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Surviving Siachen | Extreme Flight: Indian Air Force | Full Episode | S01-E01 | National Geographic</p>
+                    <p class=" channelname">National Geographic India &#x2713;</p>
+                    <p class="videostatus">1.9M views &#x2022; 1 month ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720 (6).webp">
+                <div class="videotime">6:49</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/kanishk.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Welcome to Moonland of India in Ladakh | Moon like Landscape | Lamayuru</p>
+                    <p class=" channelname">Kanishk Gupta &#x2713;</p>
+                    <p class="videostatus">149K views &#x2022; 1 year ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(7).webp">
+                <div class="videotime">10:53</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/insider news.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">How People In Nepal Risk Their Lives To Find 'Mad Honey' | Risky Business | Insider News</p>
+                    <p class=" channelname">Insider News &#x2713;</p>
+                    <p class="videostatus">4.1M views &#x2022; 9 months ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(8).webp">
+                <div class="videotime">57:33</div>
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/shinchanv.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Shinchan New Episode 2023 - Episod Shinchan Cartoon - Shinchan In Hindi - Shinchan Movie</p>
+                    <p class=" channelname">Prabhat Deep Official</p>
+                    <p class="videostatus">1M views &#x2022; 1 month ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(9).webp">
+                <div class="videotime">1:32:11</div>
+
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/mr bean.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Mr Bean's PARTY Snacks | Mr Bean Full Episodes | Mr Bean Official</p>
+                    <p class=" channelname">Mr Bean &#x2713;</p>
+                    <p class="videostatus">
+                        4.6M  views &#x2022; 1 years ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(10).webp">
+                <div class="videotime">5:37</div>
+
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/masterchefworld.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">Make your own Pizza 🍕 | MasterChef Canada | MasterChef World</p>
+                    <p class=" channelname">MasterChef World</p>
+                    <p class="videostatus">349K views &#x2022; 6 months ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="videoprev1">
+            <div class="videothumb">
+                <img class="thumb1" src="thumbnail/hq720(11).webp">
+                <div class="videotime">42:08</div>
+
+            </div>
+            <div class="videoinfo1">
+                <div class="channelphotoprev1 ">
+                    <img class="channelphoto1" src="channelimage/wonder.jpg">
+                </div>
+                <div class=" channeldetail1">
+                    <p class="caption">30 Greatest Man-Made Wonders of the World - Travel Video</p>
+                    <p class=" channelname">touropia</p>
+                    <p class="videostatus">8.2M views &#x2022; 2 years ago</p>
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
-</body>
+
+    
+    </body>
 </html>

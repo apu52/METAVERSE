@@ -1,0 +1,46 @@
+.sidebar{
+    position:fixed;
+    left:0;
+    bottom:0;
+    top:56px;
+    width: 64px;
+    background-color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    z-index: 200;
+    padding-top: 3px;
+
+}
+.home, .shorts, .subcriptions, .you{
+    height: 44px;
+    width: 64px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    cursor:pointer;
+
+    
+}
+.home:hover, .shorts:hover, .subcriptions:hover, .you:hover{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+
+}
+.homephoto, .shortsphoto, .subcriptionsphoto, .youphoto{
+    height: 24px;
+    padding-bottom: 5px;
+}
+
+.home div, .shorts div, .subcriptions div, .you div{
+    font-family: Roboto;
+    font-size: 10px;
+    
+
+}
+.shortsphoto{
+    height: 30px;
+}
