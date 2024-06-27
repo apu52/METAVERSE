@@ -862,7 +862,7 @@ span:nth-child(7) {
 }
 
 .main {
-  display: flex;
+  /* display: flex; Removed  */ 
   flex-direction: column;
 }
 
