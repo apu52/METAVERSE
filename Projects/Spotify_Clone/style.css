@@ -56,6 +56,10 @@ a {
     text-decoration: none;
     color: white;
 }
+.logo{
+    width:70%;
+    max-height: 80%;
+}
 
 .nav {
     background-color: #121212;
@@ -64,7 +68,7 @@ a {
     flex-direction: column;
     justify-content: center;
     height: 100px;
-    padding: 0.5rem 0.75rem;
+    padding: 2.5rem 0.75rem;
 }
 
 .nav-option {

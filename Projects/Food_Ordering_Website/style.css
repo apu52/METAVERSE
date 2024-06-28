@@ -49,7 +49,7 @@ nav a:hover {
 .container3 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     gap: 5px;
 }
@@ -150,13 +150,23 @@ nav a:hover {
     background-color: rgba(255, 217, 0, 0.763);
     font-size: 1.2rem;
     cursor: pointer;
+    box-shadow: 0 5px #999;
+    border-radius: 1rem;
 }
 
 .box1 .item3 button:hover {
     background-color: gold;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
+
+.box1 .item3 button:active{
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+} 
 
 .box2 {
     width: 500px;
@@ -166,7 +176,10 @@ nav a:hover {
 .box2 img {
     width: 500px;
     height: 500px;
-    mix-blend-mode: darken;
+    /* mix-blend-mode: darken; */
+    border-radius: 50rem;
+    margin-top: 5rem;
+    border: 10px solid #4FC3F7;
 }
 
 .content {
@@ -315,7 +328,7 @@ nav a:hover {
 .main2 .box4 .item4 h1 {
     text-align: center;
     font-family: cursive;
-    padding: 0px 480px 0px 0px;
+    padding: 0px 600px 0px 0px;
 }
 
 .us {
@@ -354,8 +367,9 @@ nav a:hover {
 
     .main2 .box3 img {
         width: 300px;
-        /* border-radius: 2px; */
+        border-radius: 10rem;
         /* scale: 0.7; */
+        border: 5px solid #4FC3F7;
     }
 
     .main2 .box3 {
@@ -399,7 +413,7 @@ nav a:hover {
     /* height: 450px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 15px;
     /* gap: 20px; */
     padding: 10px;
 }
@@ -409,8 +423,8 @@ nav a:hover {
     /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
+    box-shadow: 5px 5px 3px blueviolet;
+    /* overflow-y: scroll; */
 }
 
 .main3 .banner1 .food1 img {
@@ -446,6 +460,7 @@ nav a:hover {
     border-radius: 5px;
     background-color: rgba(255, 217, 0, 0.763);
     cursor: pointer;
+    box-shadow: 0 5px #999;
 }
 
 .main3 .banner1 .food1 .money button:hover {
@@ -454,578 +469,18 @@ nav a:hover {
     font-weight: 700;
 }
 
-
-.main3 .banner1 .food2 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner1 .food2 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner1 .food2 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner1 .food2 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner1 .food2 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner1 .food2 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner1 .food2 .money button:hover{
+.main3 .banner1 .food1 .money button:active{
     background-color: gold;
     cursor: pointer;
     font-weight: 700;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}  
+.main3 .banner1 .food1:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 15px 15px blueviolet;
 }
 
-
-.main3 .banner1 .food3 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner1 .food3 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner1 .food3 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner1 .food3 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner1 .food3 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner1 .food3 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner1 .food3 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main3 .banner1 .food4 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner1 .food4 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner1 .food4 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner1 .food4 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner1 .food4 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner1 .food4 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner1 .food4 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main3 .banner2 {
-
-    width: 100%;
-    /* height: 450px; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 10px;
-}
-
-.main3 .banner2 .food1 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner2 .food1 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner2 .food1 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner2 .food1 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner2 .food1 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner2 .food1 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner2 .food1 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-.main3 .banner2 .food2 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner2 .food2 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner2 .food2 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner2 .food2 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner2 .food2 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner2 .food2 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner2 .food2 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-.main3 .banner2 .food3 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner2 .food3 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner2 .food3 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner2 .food3 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner2 .food3 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner2 .food3 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner2 .food3 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main3 .banner2 .food4 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner2 .food4 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner2 .food4 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner2 .food4 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner2 .food4 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner2 .food4 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner2 .food4 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main3 .banner3 {
-
-    width: 100%;
-    /* height: 450px; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 10px;
-}
-
-.main3 .banner3 .food1 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner3 .food1 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner3 .food1 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner3 .food1 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner3 .food1 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner3 .food1 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-
-.main3 .banner3 .food1 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-
-.main3 .banner3 .food2 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner3 .food2 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner3 .food2 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner3 .food2 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner3 .food2 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner3 .food2 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner3 .food2 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main3 .banner3 .food3 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner3 .food3 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner3 .food3 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner3 .food3 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner3 .food3 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner3 .food3 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner3 .food3 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main3 .banner3 .food4 {
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px rgb(6, 6, 6);
-    overflow-y: scroll;
-}
-
-.main3 .banner3 .food4 img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px solid black;
-}
-
-.main3 .banner3 .food4 h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.main3 .banner3 .food4 .des {
-    padding: 0px 20px 0px 20px;
-}
-
-.main3 .banner3 .food4 .money {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-weight: bold;
-}
-
-.main3 .banner3 .food4 .money button {
-    width: 5rem;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(255, 217, 0, 0.763);
-    cursor: pointer;
-}
-.main3 .banner3 .food4 .money button:hover{
-    background-color: gold;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.main4 {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.main4 .rev {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
 
 .main4 #cust {
     font-family: cursive;
@@ -1080,13 +535,6 @@ nav a:hover {
         gap: 50px;
         padding: 50px;
     }
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width: 700px) and (min-width: 300px) {
@@ -1247,7 +695,7 @@ nav a:hover {
 footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: rgba(198, 196, 196, 0.82);
+    background-color: hsla(0, 16%, 87%, 0.6);
     width: 100%;
     margin-top: 90px;
     justify-content: space-between;
@@ -1267,16 +715,23 @@ footer {
         text-align: center;
     }
 }
-
+.footer {
+    padding: 10px 10px 20px 30px;
+}
+footer .follows h2{
+    margin-bottom: 0px;
+}
+footer .follows ion-icon {
+    margin-top: 0px;
+}
 footer .location, 
 footer .quick, 
 footer .contact, 
 footer .ourservice {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
-
 .contact p {
     margin: 5px 0;
 }
@@ -1330,4 +785,27 @@ footer ion-icon[name="logo-instagram"]:hover {
 
 footer ion-icon[name="logo-linkedin"]:hover {
     color: #0e76a8;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    display: none; /* Hidden by default */
+    background-color: #f1c11a;
+    color: #fff;
+    text-align: center;
+    width: 50px; /* Set width to make it a circle */
+    height: 50px; /* Set height to make it a circle */
+    border-radius: 50%; /* Make the background a circle */
+    font-size: 18px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    line-height: 50px; /* Center the text vertically */
+}
+
+.back-to-top:hover {
+    background-color: #555;
+    cursor: pointer;
 }

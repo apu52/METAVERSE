@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #E3E6F3;
+        }
+        /* Style the form container */
+        #login-form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        h2 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 200px;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* Style form labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        /* Style form inputs */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        /* Style the login button */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            font-size: 20px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        /* Hover effect for the login button */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            #login-form {
+                width: 90%;
+            }
+        }
+
+        /* Style for the message div */
+        #message {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 16px;
+            color: #dc3545; /* Red color for errors */
+        }
+        #message.success {
+            color: #28a745; /* Green color for success */
+        }
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    <div id="message"></div>
+    <script>
+        async function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const messageDiv = document.getElementById('message');
+
+            try {
+                const response = await fetch('http://localhost:5000/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to login');
+                }
+
+                const data = await response.json();
+                console.log(data); // Logging the response for debugging
+
+                // Check if token is received
+                if (data.token) {
+                    localStorage.setItem('token', data.token);
+                    messageDiv.textContent = 'Login successful';
+                    messageDiv.classList.add('success');
+                    messageDiv.classList.remove('error');
+                    setTimeout(() => {
+                        window.location.href = 'index.html'; // Redirect to home page
+                    }, 1500); // Redirect after 1.5 seconds
+                } else {
+                    messageDiv.textContent = 'Failed to login';
+                    messageDiv.classList.add('error');
+                    messageDiv.classList.remove('success');
+                }
+            } catch (error) {
+                console.error(error);
+                messageDiv.textContent = 'Failed to login';
+                messageDiv.classList.add('error');
+                messageDiv.classList.remove('success');
+            }
+        }
+    </script>
+</body>
+</html>

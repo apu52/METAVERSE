@@ -1,0 +1,103 @@
+body {
+    background-color: #d1ce7c;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.inputDiv {
+    margin-bottom: 20px;
+}
+
+.username {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.userArea {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.userArea i {
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+hr {
+    margin: 10px 0;
+    border: 0.5px solid #ccc;
+}
+
+.forgotPassword {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn {
+    background: linear-gradient(90deg, rgba(209,28,95,1) 0%, rgba(223,88,75,1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.formBottom {
+    margin-top: 20px;
+}
+
+.flexUl {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.flexUl li {
+    margin: 0 10px;
+}
+
+.flexUl li i {
+    font-size: 24px;
+}
+
+.signUp {
+    margin-top: 20px;
+    cursor: pointer;
+}

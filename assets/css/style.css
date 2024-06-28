@@ -5,6 +5,8 @@
 @import "https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap";
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mina&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 
 html,
 body {
@@ -95,7 +97,7 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-.dark-theme a,.dark-theme b{
+.dark-theme a,.dark-theme li,.dark-theme b{
   filter: invert(1) hue-rotate(180deg);
   color: #000000;
 }
@@ -860,7 +862,7 @@ span:nth-child(7) {
 }
 
 .main {
-  display: flex;
+  /* display: flex; Removed  */ 
   flex-direction: column;
 }
 
@@ -1022,6 +1024,7 @@ ul.socials {
   .main-content{
     width: 85%;
   }
+  
 }
 
 /* responsive larger than 1250px screen */
@@ -1069,6 +1072,38 @@ ul.socials {
   margin: 10px;
 }
 
+/* media queries for responsive repo owner info container*/
+
+@media only screen and (max-width:598px){
+  .owner-info-container{
+    flex-direction: column;
+  }
+  .links-container{
+    display: flex;
+    margin-top: 5.5rem;
+    width: 90%;
+    max-width: 340px;
+    margin-inline:auto;
+    justify-content: space-between;
+  }
+}
+
+.links-container a i {
+  color: #000000; 
+}
+
+@media (prefers-color-scheme: dark) {
+  .links-container a i {
+      color: #fff;
+  }
+}
+
+/* media query for cursor on mobile*/
+@media only screen and (max-width:898px){
+  .cursor-container{
+    display:none;
+  }
+}
 .image {
   width: 180x;
   height: 180px;
@@ -1092,13 +1127,20 @@ ul.socials {
     margin-top: -10px;
     li {
       font-family: Serif;
-      color: #eee;
+    
       font-weight: 700;
       padding: 0 10px;
       height: 45px;
       margin-bottom: 45px;
       display: block;
     }
+  }
+}
+/*Media query for font size of word carousel on mobile*/
+@media only screen and (max-width:598px){
+  .wordCarousel{
+    font-size: 24px;
+    text-align: center;
   }
 }
 
@@ -1299,11 +1341,14 @@ ul.socials {
 
 #para {
   color: #b616c7;
-  font-family: Cochin, serif;
-  font-size: 30px;
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
   margin-top: 40px;
   margin-bottom: 40px;
-  text-align: center;
+  text-align: justify;
+  line-height: 1.4;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
@@ -1323,11 +1368,18 @@ ul.socials {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+  padding: 50px;
 }
 
 @media only screen and (max-width:600px){
   #part{
     height:60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .large-font-mobile {
+    font-size: 8px;
   }
 }
 

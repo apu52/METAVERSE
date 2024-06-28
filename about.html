@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
   
   <!--
     - custom css link
@@ -58,18 +59,17 @@
       <div class="radio-wrapper">
         
         <div class="btn">
-            <a href="index.html">HOME</a>
+            <a id="aid" class="nav-link" href="index.html">Home</a>
             <label class="number">r1</label>
         </div>
       </div>
       
       <div class="radio-wrapper">
-        <input type="radio"  id="value-2" name="btn" class="input">
+        <!-- <input type="radio"  id="value-2" name="btn" class="input"> -->
         <div class="btn">
-        <a href="about.html">
-        </a>
-          <span aria-hidden="">ABOUT</span>
-          <span aria-hidden="" class="btn__glitch">_Cyber🦾</span>
+        <a id="aid" class="nav-link" href="about.html">About</a>
+          <!-- <span >ABOUT</span> -->
+          <!-- <span aria-hidden="" class="btn__glitch">_Cyber🦾</span> -->
           <label class="number">r2</label>
         </div>
 
@@ -77,12 +77,12 @@
       <div class="radio-wrapper">
         <!-- <input type="radio" id="value-3" name="btn" class="input"> -->
         <div class="btn">
-          <a href="contact.html">
-          CONTACT
+          <a id="aid" class="nav-link" href="contact.html">
+          Contact
         </a>
           
-          <span aria-hidden=""></span>
-          <span aria-hidden="" class="btn__glitch">CONTACT</span>
+          <!-- <span aria-hidden=""></span> -->
+          <!-- <span aria-hidden="" class="btn__glitch">CONTACT</span> -->
           <label class="number">r3</label>
         </div> 
       </div>
@@ -101,15 +101,6 @@
             <span class="slider"></span>
           </label>
         </div>
-
-
-        <div class="search-container" id="search-container-id">
-          <input type="text" class="search-input" placeholder="Search" onkeyup="search()" id="searchbar">
-          <div class="search-btn">
-            <i class="fa fa-search" aria-hidden="true"></i>
-
-          </div>
-        </div>
         <br>
 
   <br>
@@ -119,10 +110,10 @@
 
   <!-- About part -->
   <div class="contributors">
-    <h1>Welcome to the Metaverse Front-End Playground community! We're dedicated to fostering a collaborative and inclusive environment for all contributors.</h1>
+    <h1>Welcome to the <span class="highlight">Metaverse Front-End Playground</span> community!</h1>
 
-    <p id ="para">Your gateway to the future of web development in the metaverse! 🌐🚀
-      Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!</p>
+    <p id ="para">Your gateway to the future of web development in the metaverse!  🌐🚀
+      Metaverse Front-End Playground is an open-source repository created to empower developersto explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!</p>
       <p id ="para"> Our repository features a wide spectrum of metaverse-related 
         front-end projects. From HTML, CSS, and JavaScript
          to immersive React experiences, you'll find projects 
@@ -130,13 +121,13 @@
     </div>
   <div id="part">
     <h1 id="design"></h1>
-  <div class="string">
-    <h1 class="greeting en"> METAVERSE as secured a position in top 50 maintainer repositories in QUINE HACTOBERFEST challenge 🏅</h1>
-    <h1 class="greeting es"> METAVERSE is open to PR submissions for the CODEPEAK'23 , from December 7, 2023, to December 28, 2023🏅</h1>
-    <h1 class="greeting de"> We're thrilled to be part of KWOC'23.Earn KWOC'23 rewards and swag while shaping the future of the metaverse between the time span of December 9,2023 to 
+  <div class="string large-font-mobile" style="text-align: left; display: flex; flex-direction: column; gap: 20px;">
+    <h1 class="greeting en"> METAVERSE as secured a position in <b style="color: green;">top 50</b> maintainer repositories in <b style="color: rgb(100, 100, 247);">QUINE HACTOBERFEST challenge</b> 🏅</h1>
+    <h1 class="greeting es"> METAVERSE was open to PR submissions for the <b style="color: rgb(249, 64, 64);">CODEPEAK'23</b> , from December 7, 2023, to December 28, 2023🏅</h1>
+    <h1 class="greeting de"> We were thrilled to be part of <b style="color: rgb(249, 64, 64);">KWOC'23</b>.KWOC'23 participants earned rewards and swag while shaping the future of the metaverse between the time span of December 9,2023 to 
       January 15,2024.</h1>
-    <h1 class="greeting it"> Collaborate with experienced metaverse 
-      developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds</h1>  
+    <h1 class="greeting it" style="color: rgb(33, 191, 33);"> Collaborate with experienced metaverse 
+      developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.</h1>  
   </div>
   <h1 class="closure"></h1>     
   </div>
@@ -176,11 +167,11 @@
           </div>
 
             <ul class="socials">
-            <li><a href="" aria-label="Follow me on Github" title="Github (External Link)"
+            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github" title="Github (External Link)"
                 rel="noopener noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="" aria-label="Follow me on Linkedin"
+            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
+                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
                 title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
           </ul> 
