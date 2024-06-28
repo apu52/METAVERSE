@@ -3,7 +3,7 @@ console.log("loaded main.js");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { firebaseConfig } from "../config/firebaseConfig.js";
 import { getAuth, browserSessionPersistence, setPersistence, signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+import { getFirestore, query, collection, where, getDocs } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 console.log("configs done");
 // Initialize Firebase
 // const { firebaseConfig } = window; 
@@ -27,11 +27,19 @@ setPersistence(auth, browserSessionPersistence)
 document.addEventListener('DOMContentLoaded', async () => {
     
     console.log("content loaded");
-    // Check if there's a signed-in user
     const user = JSON.parse(localStorage.getItem('user'));
-    console.log("user fetched",user);
-    if (user) {
-        // console.log("user exists",signinLink);
+    console.log("user exists",user);
+    const q = query(collection(db, "users"), where("uid", "==", user.uid));
+
+    const querySnapshot = await getDocs(q);
+
+    // Check if there's a signed-in user
+    // const userDocRef = doc(db, 'users', user.uid);
+    // console.log('Fetching user document:', querySnapshot); // Log the document path
+    if (!querySnapshot.empty) {
+        // There should be only one document matching the query, so access the first one
+        const userDoc = querySnapshot.docs[0];
+        console.log('User document data:', userDoc.data());
         try {
             const signinLink = document.getElementById('signin-link');
             const profileDropdown = document.getElementById('profile-dropdown');
@@ -40,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             signinLink.style.display = 'none';
             profileDropdown.style.display = 'block';
             console.log(user.uid);
-                const displayName = user.displayName;
+                const displayName = userDoc.data().displayName;
                 console.log(displayName);
                 const profileName = document.getElementById('profile-name');
                 if (profileName) {
@@ -49,9 +57,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         } catch (error) {
             console.error('Error fetching user data from Firestore:', error);
         }
-        
-    
-        // Handle UI elements based on user authentication state
         const profileLink = document.getElementById('profile-link');
         if (profileLink) {
             profileLink.style.display = 'inline-block';
@@ -62,12 +67,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             signinLink.style.display = 'none';
         }
     } else {
+        console.log('No matching documents.');
         const signinLink = document.getElementById('signin-link');
         const profileDropdown = document.getElementById('profile-dropdown');
         // User is signed out
         signinLink.style.display = 'inline-block';
         profileDropdown.style.display = 'none';
     }
+    
     const signoutLink = document.getElementById('signout-link');
     signoutLink.addEventListener('click', async (e) => {
         e.preventDefault();

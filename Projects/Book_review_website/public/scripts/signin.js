@@ -2,10 +2,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { firebaseConfig } from "../config/firebaseConfig.js";
 import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged,browserSessionPersistence, setPersistence } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { getFirestore, query, collection, where, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+
 // console.log('configs loaded');
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getFirestore(app);
 // setPersistence(auth, browserSessionPersistence);
 setPersistence(auth, browserSessionPersistence)
   .then(() => {
@@ -51,13 +54,6 @@ signinForm.addEventListener("submit", async (e) => {
         signinForm.reset();
         localStorage.setItem('user', JSON.stringify(userCredential.user));
         window.location.href = "../index.html";
-        // const unsubscribe = onAuthStateChanged(auth, (user) => {
-        //     if (user) {
-        //       // User is signed in, redirect to index.html
-        //       window.location.href = "../index.html";
-        //       unsubscribe(); // Stop listening for further changes
-        //     }
-        //   });
     } catch (error) {
         console.error(error.message);
         errorMessage.textContent = error.message;
@@ -67,22 +63,43 @@ signinForm.addEventListener("submit", async (e) => {
 const googleSigninButton = document.getElementById("google-signin");
 
 googleSigninButton.addEventListener("click", async () => {
-    try {
-        const provider = new GoogleAuthProvider();
-        const userCredential = await signInWithPopup(auth, provider);
-        localStorage.setItem('user', JSON.stringify(userCredential.user));
-        // const unsubscribe = onAuthStateChanged(auth, (user) => {
-        //     if (user) {
-        //       // User is signed in, redirect to index.html
-        //       window.location.href = "../index.html";
-        //       unsubscribe(); // Stop listening for further changes
-        //     }
-        //   });
-        window.location.href = "../index.html";
-    } catch (error) {
-        console.error(error.message);
-        errorMessage.textContent = error.message;
-    }
+  try {
+      const provider = new GoogleAuthProvider();
+      const userCredential = await signInWithPopup(auth, provider);
+      const user = userCredential.user;
+      
+      // Check if the user exists in Firestore
+      // const userRef = doc(db, 'users', user.uid);
+      // const userDoc = await getDoc(userRef);
+      const q = query(collection(db, "users"), where("uid", "==", user.uid));
+
+      const querySnapshot = await getDocs(q);
+      if (!querySnapshot.empty) {
+        // There should be only one document matching the query, so access the first one
+        const userDoc = querySnapshot.docs[0];
+
+            // User already exists, redirect to index.html or perform further actions
+            localStorage.setItem('user', JSON.stringify(user)); // Save user info in localStorage if needed
+            window.location.href = "../index.html";
+        
+    }else {
+          // User does not exist, create a new document in Firestore
+          await addDoc(collection(db, 'users'), {
+              uid: user.uid,
+              displayName: user.displayName,
+              email: user.email,
+              username: user.email.split("@")[0]
+              // Add any other user data you want to store
+          });
+
+          localStorage.setItem('user', JSON.stringify(user)); // Save user info in localStorage if needed
+          window.location.href = "../index.html";
+      }
+    
+  } catch (error) {
+      console.error(error.message);
+      errorMessage.textContent = error.message;
+  }
 });
 
 // Check if user is signed in on page load

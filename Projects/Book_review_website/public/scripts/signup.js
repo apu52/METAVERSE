@@ -43,10 +43,14 @@ signupForm.addEventListener('submit', async (e) => {
         // If user does not exist, proceed with creating a new user
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
+        user.displayName=name;
 
-        // Update user's profile with the provided display name
-        await user.updateProfile({
-            displayName: name
+        // Store additional user info in Firestore
+        await addDoc(collection(db, 'users'), {
+            uid: user.uid,
+            displayName: name, // Use the provided name as displayName
+            email: user.email,
+            username: username
         });
 
         console.log('User signed up successfully:', user);
