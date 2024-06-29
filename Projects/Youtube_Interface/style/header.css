@@ -149,6 +149,15 @@ margin-left: 15px;
 
 
 }
+.right_sec a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .right_sec a:hover {
+    opacity: 0.8;
+  }
  
 .videosymb, .notification {
     width: 24px;
