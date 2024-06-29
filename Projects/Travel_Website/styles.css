@@ -523,7 +523,25 @@ header {
   color: var(--secondary-color);
   border-top: 1px solid var(--text-light);
 }
-
+.social-media h3{
+  font-size:1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 110px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons i {
+  font-size: 1.8rem;
+  color:#fafcff;
+  padding:.3rem 2rem;
+  transition: color .5s;
+}
+.social-icons li{
+  list-style-type: none;
+}
 @media (width < 1200px) {
   .header__image img:nth-child(1) {
     max-width: 300px;
