@@ -8,8 +8,31 @@
 body {
   font-family: 'Libre Baskerville', serif;
   text-align: center;
-  margin-top: 30px;
-  background-color: rgb(0, 180, 156);
+  /* margin-top: 30px; */
+  background-color: #a0e4ff;
+}
+
+.grad1{
+  background-color: #4accff;
+  /* height: 100vh; */
+  width: 30vw;
+  aspect-ratio: 1;
+  position: fixed;
+  border-radius: 50%;
+  top: -10vh;
+  left: 10vw;
+  z-index: -1;
+}
+
+.grad2{
+  background-color: #4accff;
+  width: 30vw;
+  aspect-ratio: 1;
+  position: fixed;
+  border-radius: 50%;
+  bottom: -10vh;
+  right: 10vw;
+  z-index: -1;
 }
 
 .guessthenum {
@@ -20,12 +43,17 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid black;
+  background: linear-gradient(230deg,white, #ffffffb3, #ffffff68, #ffffffc7);
   margin: auto;
+  border-radius: 3rem;
+  margin-top: 30px;
 }
 
 
 .heading {
+  background: -webkit-linear-gradient(blue, #00ddff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 20px;
   font-size: 20px;
 }
@@ -37,15 +65,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: blue;
 }
 
 .submitbtn,.replaybtn {
-  background-color: black;
-  color: rgb(0, 180, 156);
+  background: linear-gradient(180deg, #00a2ff,#4accff);
+  border-radius: 7px;
+  color: white;
+  font-weight: 700;
   cursor: pointer;
   margin-top: 10px; 
   height: 40px;
   width: 100px;
+  border-color: #00a2ff;
+  box-shadow: 0 5px 5px 0px gray;
+  transition: all 0.3s;
+}
+
+.submitbtn:hover {
+  background: linear-gradient(180deg, #4accff, #00a2ff);
+  transform: translateY(4px);
+  box-shadow: 0 1px 5px 0px gray;
 }
 
 #guess{
