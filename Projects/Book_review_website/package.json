@@ -1,0 +1,17 @@
+{
+  "name": "book_review_website",
+  "version": "1.0.0",
+  "description": "- A Book Review Website for students preparing for competitions or the general book readers also; the old readers of a book can post their  reviews on this website and the new students will get help from this; I will be making the frontend of the website for now;",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "undici": "^6.19.2"
+  }
+}
