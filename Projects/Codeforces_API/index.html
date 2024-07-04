@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title class="title"> Rock Paper Scissor</title>
+    <link rel="stylesheet" href="rps.css">
+    <link rel="stylesheet" href="shepherd-main/shepherd.js/dist/css/shepherd.css"/>
+	<script type="module" src="shepherd-main/shepherd.js/dist/shepherd.mjs"></script>
+</head>
+
+<body>
+    <div class="div">
+
+   
+    <p class="title">Rock Paper Scissor</p>
+    <div class="div-button">
+
+    
+    <button class="button-class" onclick="playerchoice('rock'); ">
+    <img class="move-icon" src="rock-paper-scissor-photos/rock-emoji.png"></button>
+
+    <button class="button-class" onclick="playerchoice('paper');">
+        <img class="move-icon" src="rock-paper-scissor-photos/paper-emoji.png"></button>
+
+    <button class="button-class" onclick="playerchoice('scissor');">
+        <img class="move-icon" src="rock-paper-scissor-photos/scissor-emoji.png"></button>
+
+    </div>
+    <p class="js-write"></p>
+    <!-- <p class="js-you-write"></p>
+    <p class="js-comp-write"></p> -->
+    <p class="js-move-write"></p>
+    <p class="js-score-write score"></p>
+     
+    <div>
+        <button class="reset-button"onclick="
+        score.wins =0;
+        score.losses =0;
+        score.ties =0;
+        
+        localStorage.removeItem('score');
+        updatescore();
+
+        ">Reset Score</button>
+
+        <button class=" js-ap apcss" 
+        onclick="
+                autoplay();
+                stop();">Auto Play</button>
+    </div>
+   
+
+    </div>
+    <div class="footer"><p>Build with passion by <a href="https://github.com/sakshiglaze">sakshiglaze</a> <3</p></div>
+
+
+
+    <script src="rps-script.js"></script>
+</body>
+
+</html>
