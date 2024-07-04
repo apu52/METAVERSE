@@ -232,6 +232,22 @@ h4 {
     linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
 }
 
+.card:hover {
+   transform: scale(1.05);
+   box-shadow: 2px 3px 3px #333;
+}
+
+.sport-logo:hover{
+  transform: scale(1.2);
+}
+
+.footer .footer-container .footer-lists ul li a:hover{
+  color: #00ed82;
+}
+.get-bundle:hover {
+  background-color: #eee;
+  color:#0d3640;
+}
 .categories .cover-text {
   position: absolute;
   top: 20px;
