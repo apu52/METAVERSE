@@ -197,7 +197,10 @@ font-size:30px ;
 .shops{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    justify-content: space-around;
     background-color: #caefe8;
     /* padding-bottom: 60px; */
 }
@@ -439,5 +442,32 @@ ul p{
 @media only screen and (max-width:476px){
     .navsearch{
        display: none;
+    }
+}
+
+/* media for responsiveness of shops */
+
+
+
+.box {
+    flex-basis: calc(25% - 15px);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .box {
+        flex-basis: calc(33.333% - 13.333px);
+    }
+}
+
+@media (max-width: 900px) {
+    .box {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex-basis: 100%;
     }
 }
