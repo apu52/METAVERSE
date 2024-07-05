@@ -1031,8 +1031,12 @@ ul.socials {
 @media (min-width: 1250px) {
   /* MAIN */
   .main-content {
-    width: 75%;
+    width: 100%;
     margin: 0;
+  }
+  .sub-main-content{
+    width: 70%;
+    margin-left:15% ;
   }
 }
 
@@ -1440,3 +1444,27 @@ ul.socials {
     transform: translatey(-16.5vmin);
   }
 }
+.socials .fa-brands.fa-github{
+  transition:all 0.3s ease-in-out;
+}
+.socials .fa-brands.fa-github:hover{
+  color: black;
+  transform: scale(1.5);
+}
+.socials .fa-brands.fa-x-twitter{
+  transition:all 0.3s ease-in-out;
+}
+.socials .fa-brands.fa-x-twitter:hover{
+  color: black;
+  transform: scale(1.5);
+}
+.socials .fa-brands.fa-linkedin{
+  transition:all 0.3s ease-in-out;
+}
+.socials .fa-brands.fa-linkedin:hover{
+  color: #0077B5;
+  transform: scale(1.5);
+}
+/* .socials{
+  margin-bottom: 1rem;
+} */
