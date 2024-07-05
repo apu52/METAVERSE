@@ -22,7 +22,7 @@
     <main>
         <div class="container mt-5 col-6">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Chapter Name" aria-label="Recipient's username"
+                <input type="text" id="chapterInput" class="form-control" placeholder="Chapter Name" aria-label="Recipient's username"
                     aria-describedby="button-addon2">
                 <button id="add_btn" class="btn btn-outline-success" type="button" id="button-addon2">Add
                     Course</button>
@@ -30,87 +30,71 @@
             <ul id="parentList" class="list-group ">
                 <li class="list-group-item d-flex justify-content-between">
                     <h3 class="flex-grow-1">Chapter 1</h3>
-                    <button class="bitn edit" onclick="editChapter(this)">Edit</button>
-                    <button class="bitn remove" onclick="removeChapter(this)">Remove</button>
-                    
-            </div>
-
+                    <button class="btn btn-danger mx-5" onclick="editChapter(this)">Edit</button>
+                    <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>
                 </li>
-
             </ul>
         </div>
-
     </main>
     <script>
         let addBtn = document.getElementById("add_btn");
 
         addBtn.addEventListener('click', addChapter)
         let parentList = document.getElementById("parentList");
+
         function addChapter(e) {
-            if (parentList.children[0].className == "emptyMsg") {
+            let currentInput = document.getElementById("chapterInput").value.trim();
+            if (currentInput === "") {
+                alert("Chapter name cannot be empty!");
+                return;
+            }
+
+            if (parentList.children[0]?.className === "emptyMsg") {
                 parentList.children[0].remove()
             }
-                                         
-            let currentBtn = e.currentTarget; 
-            let currentInput = currentBtn.previousElementSibling.value;
+
             let curerntChapterName = currentInput;
-          
 
             let newli = document.createElement("li")
             newli.className = "list-group-item d-flex justify-content-between"  
             newli.innerHTML = `<h3 class="flex-grow-1">${curerntChapterName}</h3> 
                     <button class="btn btn-danger mx-5" onclick="editChapter(this)">Edit</button>
                     <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>`
-           
-
-
-
-          
 
             parentList.appendChild(newli);
+            document.getElementById("chapterInput").value = "";  // Clear the input field after adding
         }
 
         function removeChapter(currElement) {
-
             currElement.parentElement.remove();
             if (parentList.children.length <= 0) {
                 let newEmptyMsg = document.createElement("h3");
                 newEmptyMsg.classList.add("emptyMsg")       
-                newEmptyMsg.textContent = "Nothing is here.Please add a Chapter!!"
+                newEmptyMsg.textContent = "Nothing is here. Please add a Chapter!!"
                 newEmptyMsg.style.color = "green"
                 parentList.appendChild(newEmptyMsg);
             }
-
         }
+
         function editChapter(currElement) {
-  if (currElement.textContent == "Done") {
-      currElement.textContent = "Edit";
-      let currChapterName = currElement.previousElementSibling.value;
-      let currHeading = document.createElement("h3");
-      currHeading.className = "flex-grow-1"
-      currHeading.textContent = currChapterName
-      currElement.parentElement.replaceChild(currHeading, currElement.previousElementSibling)
-
-  }
-
-  else {
-      currElement.textContent = "Done"
-      let currChapterName = currElement.previousElementSibling.textContent
-      let currInput = document.createElement("input")
-      currInput.type = "text";
-      currInput.placeholder = "Chapter Name"
-      currInput.className = "form-control";
-
-      currInput.value = currChapterName;
-      currElement.parentElement.replaceChild(currInput, currElement.previousElementSibling)
-
-  }
-
-
-}
-       
-       
-
+            if (currElement.textContent === "Done") {
+                currElement.textContent = "Edit";
+                let currChapterName = currElement.previousElementSibling.value;
+                let currHeading = document.createElement("h3");
+                currHeading.className = "flex-grow-1"
+                currHeading.textContent = currChapterName
+                currElement.parentElement.replaceChild(currHeading, currElement.previousElementSibling)
+            } else {
+                currElement.textContent = "Done"
+                let currChapterName = currElement.previousElementSibling.textContent
+                let currInput = document.createElement("input")
+                currInput.type = "text";
+                currInput.placeholder = "Chapter Name"
+                currInput.className = "form-control";
+                currInput.value = currChapterName;
+                currElement.parentElement.replaceChild(currInput, currElement.previousElementSibling)
+            }
+        }
     </script>
 </body>
 
