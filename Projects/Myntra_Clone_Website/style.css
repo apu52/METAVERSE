@@ -99,6 +99,11 @@ body{
     color: #1a1a1a;
     transition: color 0.3s ease, transform 0.2s ease;
 }
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
 #navbar li a.active::after,
 #navbar li a:hover::after{
     content: "";
@@ -131,6 +136,10 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    transition: background-position 0.5s ease;
+}
+.hero:hover {
+    background-position: top 20% right 10%; /* Shift background on hover */
 }
 .hero h4{
     padding-bottom: 15px;
@@ -138,6 +147,7 @@ body{
 .hero h1{
     color: #088178;
 }
+
 .hero button{
     font-size: 16px;
     font-weight: 700;
