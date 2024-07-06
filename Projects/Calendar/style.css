@@ -196,10 +196,45 @@ header .icons span{
     width:300px;
 }
 
+/* Dropdown Styles */
+select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* For older versions of Chrome */
+    -moz-appearance: none; /* For older versions of Firefox */
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+    width: 15%;
+    max-width: 200px; /* Adjust width as needed */
+}
+
+select:hover,
+select:focus {
+    background-color: var(--orangeColor); /* Hover and focus background color */
+    color: var(--whiteColor); /* Hover and focus text color */
+}
+
+/* Dark Mode Dropdown Styles */
+body.dark select {
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    border-color: var(--mainColor);
+}
+
+body.dark select:hover,
+body.dark select:focus {
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
 
 /* Dark Mode */
 body.dark{
-    --textColor: white;
+    --textColor: black;
     --mainColor: #3fffef;
     --bodyColor: #37486d;
 }

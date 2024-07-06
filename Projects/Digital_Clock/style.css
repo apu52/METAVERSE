@@ -12,7 +12,9 @@
     position: relative;
 }
 .container{
-    width: 800px;
+    width: 99vw;
+    max-width: 800px;
+
     height: 180px;
     position: absolute;
     top: 50%;
@@ -74,4 +76,11 @@
 }
 #secs::after{
     content: 'SECS';
+}
+
+@media (max-width:780px) {
+    .clock span{
+        font-size: 60px;
+    }
+    
 }

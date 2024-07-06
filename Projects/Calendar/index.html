@@ -20,7 +20,7 @@
     <header>
       <input type="checkbox" id="mode-toggle">
       <label for="mode-toggle" class="switch">
-          <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+          <i class="bi bi-brightness-high" id="toggleDark"></i>
       </label>
     </header>
     <div class="calendars">
@@ -31,6 +31,21 @@
       <header>Calendar</header>
       <div class="wrapper">
         <header>
+          <select id="year-select"></select>
+          <select id="month-select">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
           <p class="current-date"></p>
           <div class="icons">
             <span id="prev" class="material-symbols-rounded">chevron_left</span>

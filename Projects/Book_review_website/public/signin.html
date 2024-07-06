@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="css/signin.css">
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Link to your Firebase and Sign In Script -->
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <a href="#" class="logo">
+      <img width="64" height="64" src="https://img.icons8.com/external-outline-berkahicon/64/000000/external-book-linely-literacy-outline-berkahicon-8.png" alt="Logo">
+    </a>
+    <h2 class="title">Book Review</h2>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#ride">Guide</a></li>
+      <li><a href="index.html#services">Books</a></li>
+      <li><a href="index.html#about">About us</a></li>
+      <li><a href="index.html#reviews">Reviews</a></li>
+    </ul>
+    <div class="header-btn" id="header-btn">
+      <a href="signin.html" class="sign-in" id="signin-link">Sign In</a>
+      <a href="#" class="profile" id="profile-link" style="display: none;"><i class='bx bxs-user'></i> Profile</a>
+  </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <h2>Sign In</h2>
+      <form id="signin-form">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Sign In</button>
+        </div>
+        <div class="form-group">
+          <button type="button" id="google-signin">
+            <i class='bx bxl-google'></i> Sign In with Google <!-- Added Google icon here -->
+          </button>
+        </div>
+        
+      </form>
+      <div class="form-group">
+        <button id="signup-btn" onclick="console.log('Button clicked via HTML')">Sign Up</button>
+      </div>
+      <div id="error-message" class="error-message"></div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="copyright">
+      <p>&#169; Dweb All Rights Reserved</p>
+    </div>
+    <div class="social">
+      <a href=""><i class='bx bxl-facebook'></i></a>
+      <a href=""><i class='bx bxl-twitter'></i></a>
+      <a href=""><i class='bx bxl-instagram'></i></a>
+    </div>
+  </footer>
+  <script type="module" src="/scripts/signin.js"></script>
+</body>
+</html>

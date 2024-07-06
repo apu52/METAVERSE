@@ -222,7 +222,47 @@ git push origin YourBranchName
 
 **10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
- <h2>Congratulations! You've made your first contribution! 🙌🏼</h2>
+Congratulations! You've made your first contribution! 🙌🏼
+ 
+## Quick Docker Setup 🐳
+### Requirement:
+
+* Docker Desktop
+
+### Let's Begin:
+1. Make sure you have followed steps 1, 2, and 3 from the above procedure.
+2. #### Verify Docker Status:
+To ensure a seamless Docker experience, it's essential to check the status of the Docker service on your system.To verify whether the Docker service is currently active or inactive, you can use the following steps:
+* Check Docker Service Status:
+```bash
+systemctl status docker
+```
+if it's inactive, you'll need to take corrective action.
+
+* To activate the Docker service, use the following command:
+```bash
+systemctl start docker
+```
+3. #### Build:
+Now, let's build the Docker image named 'metaverse' using the docker build command:
+```bash
+docker build -t metaverse .
+```
+4. #### Run:
+Write the following command to run a Docker container named 'metaverseee'
+```bash
+docker run -d -p 3000:80 --name metaverseee metaverse
+```
+5. Wait until the ***[Container ID]*** appears.
+6. Search the following syntax in your web browser to view the website.
+```bash
+localhost:3000
+```
+7. #### Stop:
+Run the following command to stop the Docker container:
+```bash
+docker stop [container ID]
+```
 
 </br>
 <p align = "center">

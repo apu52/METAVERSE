@@ -55,8 +55,13 @@ header {
   width: 40px;
 }
 .logo:hover {
-  background: #fff;
+  background: #900c3f;
   transition: 0.5s;
+}
+.title{
+  cursor: pointer;
+  padding-right: 100px;
+  color: #fffefd;
 }
 
 .navbar {
@@ -118,7 +123,7 @@ header {
   min-height: 100vh;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.5)),
-    url("libimg2.jpg");
+    url("../images/libimg2.jpg");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;

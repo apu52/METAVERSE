@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .home {
   height: 100vh;
   display: flex;
@@ -16,12 +21,17 @@
   flex: 1;
   position: relative;
 }
-button {
-  background-color: #5d5b8d;
-  color: #ddddf7;
-  font-size: 10px;
-  border: none;
-  cursor: pointer;
+.sidebar .btn  {
+  background-color: #04AA6D !important;
+  border: none !important;
+  color: white !important ;
+  padding: 15px 32px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-size: 16px !important;
+  margin: 4px 2px !important;
+  cursor: pointer !important;
 }
 .messages {
   height: calc(100% - 96px);
