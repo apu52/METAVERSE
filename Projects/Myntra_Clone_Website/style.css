@@ -280,6 +280,17 @@ body{
     bottom: 20px;
     right: 10px;
 }
+.cart{
+    animation: cartAnimation 0.5s infinite alternate;
+}
+@keyframes cartAnimation {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
 #banner{
     display: flex;
     flex-direction: column;
@@ -291,7 +302,9 @@ body{
     height: 40vh;
     background-size: cover;
     background-position: center;
+    transition: background-position 0.5s ease;
 }
+
 #banner h4{
     color: #fff;
     font-size: 16px;
