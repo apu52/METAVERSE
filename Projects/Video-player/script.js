@@ -9,7 +9,7 @@ function updateVideo() {
   if (videoEl.paused) {
     videoEl.play();
     playBtn.innerHTML = `<ion-icon name="pause"><ion-icon>`;
-  } else if (!videoEl.paused) {
+  } else  {
     videoEl.pause();
     playBtn.innerHTML = `<ion-icon name="play"><ion-icon>`;
   }
@@ -43,21 +43,25 @@ function updateProgress() {
           to right,
           #f00 0%,
           #f00 ${Math.round(currentValue)}%,
-          rgba(255, 255, 255, 0.5) 0%,
+          rgba(255, 255, 255, 0.5) ${Math.round(currentValue)}%,
           rgba(255, 255, 255, 0.5) 100%
         )`;
 }
 
 function updateTime() {
-  let currentValue = Math.round(videoEl.currentTime);
-  let secondValue =
-    currentValue < 10 ? `0:0${currentValue}` : `0:${currentValue}`;
-
-  timeEl.innerHTML = `${secondValue}   / 0:${Math.round(videoEl.duration)}`;
+  let currentMinutes = Math.floor(videoEl.currentTime / 60);
+  let currentSeconds = Math.floor(videoEl.currentTime % 60);
+  let durationMinutes = Math.floor(videoEl.duration / 60);
+  let durationSeconds = Math.floor(videoEl.duration % 60);
+  
+  if (currentSeconds < 10) currentSeconds = `0${currentSeconds}`;
+  if (durationSeconds < 10) durationSeconds = `0${durationSeconds}`;
+  
+  timeEl.innerHTML = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
 }
 
 progressEl.addEventListener("input", (e) => {
-  videoEl.currentTime = JSON.parse(progressEl.value * videoEl.duration) / 100;
+  videoEl.currentTime = (progressEl.value * videoEl.duration) / 100;
 });
 
 videoEl.addEventListener("click", (e) => {
@@ -65,5 +69,11 @@ videoEl.addEventListener("click", (e) => {
 });
 
 fullScreenEl.addEventListener("click", (e) => {
-  videoEl.requestFullscreen();
+  if (videoEl.requestFullscreen) {
+    videoEl.requestFullscreen();
+  } else if (videoEl.webkitRequestFullscreen) { /* Safari */
+    videoEl.webkitRequestFullscreen();
+  } else if (videoEl.msRequestFullscreen) { /* IE11 */
+    videoEl.msRequestFullscreen();
+  }
 });
