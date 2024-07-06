@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial ;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.div-buttton{
+    display:flex;
+    flex-direction: row;
+}
+.title{
+    font-size: 30px ;
+    font-weight: bold;
+}
+.move-icon{
+    
+    height: 50px;
+    width: 50px;
+   
+}
+.button-class{
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 60px;
+    border: 3px solid white;
+    padding: 6px 1px;
+    margin-right: 10px;
+}
+.button-class:hover{
+
+    box-shadow: 0 0 70px rgba(255, 80, 89, 0.4),
+            0 0 50px rgba(255, 80, 89, 0.3),
+            0 0 30px rgba(255, 80, 89, 0.2),
+            0 0 20px rgba(255, 80, 89, 0.1),
+            0 0 10px rgba(255, 80, 89, 0.05),
+            0 0 5px rgba(255, 80, 89, 1);
+}
+.button-class img{
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+.button-class img:hover{
+    transform: scale(1.5);
+   
+}
+.reset-button,.apcss{
+    padding:8px 15px ;
+    font-family: Arial ;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 80, 89);
+}
+.reset-button:hover ,.apcss:hover{
+    background-color:  rgb(244, 112, 118);
+}
+.score{
+    margin-top: 50px;
+}
+.footer{
+    text-align: center;
+    padding-bottom: 0.3rem;
+}

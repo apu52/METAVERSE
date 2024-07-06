@@ -8,37 +8,38 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <div class="menu__container menu__container--2">
-            <div class="menu"><a href="./index.html">Home</a><a href="./features.html">Features</a><a href="./pricing.html">Pricing</a></div>
+            <div class="menu"><a href="./index.html">Home</a><a href="./features.html">Features</a><a
+                    href="./pricing.html">Pricing</a></div>
         </div>
     </header>
 
     <main>
-        <div class="container mt-5 col-6">
+        <div class="container mt-5 col-lg-6 col-md-8 col-sm-10">
             <div class="input-group mb-3">
-                <input type="text" id="chapterInput" class="form-control" placeholder="Chapter Name" aria-label="Recipient's username"
-                    aria-describedby="button-addon2">
-                <button id="add_btn" class="btn btn-outline-success" type="button" id="button-addon2">Add
-                    Course</button>
+               <input type="text" id="chapterInput" class="form-control" placeholder="Chapter Name" aria-label="Chapter Name" aria-describedby="button-addon2">
+                <button id="add_btn" class="btn btn-outline-success" type="button">Add Course</button>
             </div>
             <ul id="parentList" class="list-group ">
-                <li class="list-group-item d-flex justify-content-between">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                     <h3 class="flex-grow-1">Chapter 1</h3>
                     <button class="btn btn-danger mx-5" onclick="editChapter(this)">Edit</button>
-                    <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>
+                  <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>
                 </li>
             </ul>
         </div>
     </main>
+
     <script>
         let addBtn = document.getElementById("add_btn");
-
         addBtn.addEventListener('click', addChapter)
         let parentList = document.getElementById("parentList");
 
@@ -56,8 +57,8 @@
             let curerntChapterName = currentInput;
 
             let newli = document.createElement("li")
-            newli.className = "list-group-item d-flex justify-content-between"  
-            newli.innerHTML = `<h3 class="flex-grow-1">${curerntChapterName}</h3> 
+            newli.className = "list-group-item d-flex justify-content-between align-items-center"
+            newli.innerHTML = `<h3 class="flex-grow-1">${curerntChapterName}</h3>
                     <button class="btn btn-danger mx-5" onclick="editChapter(this)">Edit</button>
                     <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>`
 
