@@ -36,19 +36,21 @@ const questions = [
         ]
     },
     {
-        question: "What is the most poplate density country in the world?",
+        question: "What is the most densely populated country in the world?",
         answers:[
-            {text: "Singapur", correct:false},
+            {text: "Singapore", correct:false},
             {text: "Monaco", correct: true},
-            {text: "Baharin", correct: false},
-            {text: "Zibratal", correct: false}
+            {text: "Bahrain", correct: false},
+            {text: "Gibraltar", correct: false}
         ]
     }
 ];
 
 const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
+const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const tourModal = document.getElementById("tour-modal");
+const closeModalButton = document.getElementById("close-modal");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -59,43 +61,44 @@ function startQuiz(){
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
 function showQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex+1;
-    questionElement.innerHTML = questionNo + "." + currentQuestion.question;
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-    currentQuestion.answers.forEach(answer =>{
+    currentQuestion.answers.forEach((answer, index) => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add('btn');
-        answerButton.appendChild(button);
+        button.dataset.index = index + 1;
+        answerButtons.appendChild(button);
 
         if(answer.correct){
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click",SelecAnswer);
+        button.addEventListener("click", selectAnswer);
     });
 }
 
 function resetState(){
     nextButton.style.display = "none";
-    while(answerButton.firstChild){
-        answerButton.removeChild(answerButton.firstChild);
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-function SelecAnswer(e){
-    const selectedBin = e.target;
-    const isCorrect = selectedBin.dataset.correct === 'true';
+function selectAnswer(e){
+    const selectedButton = e.target;
+    const isCorrect = selectedButton.dataset.correct === 'true';
     if(isCorrect){
-        selectedBin.classList.add("correct");
+        selectedButton.classList.add("correct");
         score++;
+    } else {
+        selectedButton.classList.add("incorrect");
     }
-    else{
-        selectedBin.classList.add("incorrect");
-    }
-    Array.from(answerButton.children).forEach(button =>{
+    Array.from(answerButtons.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         }
@@ -112,24 +115,43 @@ function showScore(){
 }
 
 function handleNextButton(){
-    currentQuestionIndex++ ;
-    if(currentQuestionIndex<questions.length){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
         showQuestion();
-    }
-    else{
+    } else {
         showScore();
     }
 }
 
-nextButton.addEventListener("click",()=>{
-    if(currentQuestionIndex<questions.length){
+nextButton.addEventListener("click", () => {
+    if(currentQuestionIndex < questions.length){
         handleNextButton();
-    }
-    else{
+    } else {
         startQuiz();
     }
 });
 
+
+document.addEventListener("keydown", (e) => {
+    if(e.key >= 1 && e.key <= 4){
+        const btn = document.querySelector(`[data-index='${e.key}']`);
+        if(btn) btn.click();
+    }
+    if(e.key === "Enter") {
+        if (tourModal.style.display === "block") {
+            closeModalButton.click();
+        } else if (nextButton.style.display === "block") {
+            nextButton.click();
+        }
+    }
+});
+
+window.onload = () => {
+    tourModal.style.display = "block";
+};
+
+closeModalButton.addEventListener("click", () => {
+    tourModal.style.display = "none";
+});
+
 startQuiz();
-
-
