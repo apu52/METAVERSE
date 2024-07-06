@@ -78,11 +78,16 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+    transition: box-shadow 0.3s ease;
 }
+.header:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
 #navbar li{
     padding: 0 20px ;
@@ -92,11 +97,7 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: #1a1a1a;
-    transition: .3s ease;
-}
-#navbar li a:hover,
-#navbar li a.active{
-    color: #088178;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
