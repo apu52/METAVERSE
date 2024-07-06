@@ -304,7 +304,9 @@ body{
     background-position: center;
     transition: background-position 0.5s ease;
 }
-
+#banner:hover {
+    background-position: center; 
+}
 #banner h4{
     color: #fff;
     font-size: 16px;
@@ -316,6 +318,10 @@ body{
 }
 #banner span{
     color: #ff4500;
+}
+
+#banner button{
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 #banner button:hover{
     color: #fff;
@@ -337,10 +343,17 @@ body{
     background-size: cover;
     background-position: center;
     padding: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+#sm-banner .banner-box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  }
+
 #sm-banner .banner-box2{
     background-image: url(banner/b10.jpg);
 }
+
 #sm-banner h4{
     color: #fff;
     font-size: 20px;
@@ -386,6 +399,7 @@ body{
 #banner3 .banner-box3{
     background-image: url(banner/b18.jpg);
 }
+
 #banner3 h2{
     color: #fff;
     font-weight: 900;
