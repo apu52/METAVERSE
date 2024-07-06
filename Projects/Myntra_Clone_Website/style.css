@@ -419,7 +419,11 @@ body{
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
+    transition: background-position 0.5s ease;
 }
+#newsletter:hover {
+    background-position: 15% 25%;
+  }
 #newsletter h4{
     font-size: 22px;
     font-weight: 600;
@@ -466,6 +470,10 @@ footer .col{
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+footer .col:hover {
+    transform: translateY(-5px); 
 }
 footer .logo{
     margin-bottom: 30px;
@@ -486,14 +494,14 @@ footer a{
     color: #222;
     margin-bottom: 10px;
     margin: 0 0 8px 0;
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 footer .follow i{
     font-size: 1.8rem;
     color: #000;
     padding-right:4px;
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 footer .install .row img{
     border: 1px solid #088178;
@@ -560,6 +568,10 @@ footer .copyright{
 .small-img-col{
     flex-basis: 24%;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.small-img-col:hover {
+    transform: scale(1.1); 
 }
 #productdetails .single-pro-details{
     width: 50%;
