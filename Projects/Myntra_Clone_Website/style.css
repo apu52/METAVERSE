@@ -158,6 +158,11 @@ body{
     padding: 14px 80px 14px 65px;
     cursor: pointer;
     background-repeat: no-repeat;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hero button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 #feature{
     display: flex;
@@ -173,9 +178,11 @@ body{
     border: 1px solid #cce7d0;
     border-radius: 4px;
     margin: 15px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 #feature .fe-box:hover{
     box-shadow: 20px 20px 54px rgba(0,0,0,0.03);
+    transform: translateY(-5px);
 }
 #feature .fe-box img{
     width: 100%;
