@@ -233,8 +233,10 @@ body{
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 #product1 .pro:hover{
+    transform: translateY(-5px);
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
 }
 #product1 .pro img{
