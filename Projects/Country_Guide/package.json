@@ -1,0 +1,21 @@
+{
+  "name": "country-guide-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "country:sass": "sass ./sass:css --watch --style compressed"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "bootstrap": "^5.3.1",
+    "normalize.css": "^8.0.1",
+    "sass": "1.66.1"
+  }
+}
