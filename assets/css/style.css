@@ -1468,3 +1468,11 @@ ul.socials {
 /* .socials{
   margin-bottom: 1rem;
 } */
+.policy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.policy a{
+  margin: 10px 10px 50px 10px;
+}
