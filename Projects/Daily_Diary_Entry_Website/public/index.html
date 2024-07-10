@@ -1,52 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Logging Your Progress</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Log Your Day</h1>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse Daily Diary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8; /* Off-white background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #a3a3ff; /* Pastel blue */
+            font-size: 2.2em;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            font-size: 1em;
+            resize: none;
+            outline: none;
+            background-color: #fffae3; /* Pastel yellow */
+        }
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffb3ba; /* Pastel pink */
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff8b94; /* Darker pastel pink */
+        }
+        .entries {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .entry {
+            background: #e3ffe3; /* Pastel green */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .entry strong {
+            color: #333;
+            font-size: 1em;
+        }
+        .entry p {
+            margin: 10px 0 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-      <div class="previousLogs">
-        <h2>Previous Entries</h2>
-        <table>
-          <tbody id="logTableBody">
-            <!-- Previous logs will be inserted here dynamically -->
-          </tbody>
-        </table>
-      </div>
-      <form action="/" method="POST">
-        <label for="logMessage"> New Log:</label>
-        <textarea
-          id="logMessage"
-          name="logMessage"
-          spellcheck="false"
-        ></textarea>
-        <button type="submit">Log</button>
-      </form>
+        <h1>Metaverse Daily Diary</h1>
+        <textarea id="entry" placeholder="Write your daily entry here..."></textarea>
+        <button onclick="addEntry()">Add Entry</button>
+        <div class="entries" id="entries"></div>
     </div>
     <script>
-      // Fetch the previous logs and insert them into the table
-      fetch("/logs")
-        .then((response) => response.json())
-        .then((logs) => {
-          const logTableBody = document.getElementById("logTableBody");
-          logs["logs"].forEach((log) => {
-            const row = document.createElement("tr");
-            const timestampCell = document.createElement("td");
-            timestampCell.textContent = log.timestamp;
-            const messageCell = document.createElement("td");
-            //replacing \n and \r with <br>
-            log.text = log.text.replace(/(?:\r\n|\r|\n)/g, "<br>");
-            messageCell.innerHTML = log.text;
-            row.appendChild(timestampCell);
-            row.appendChild(messageCell);
-            logTableBody.appendChild(row);
-            window.scrollTo(0, document.body.scrollHeight);
-          });
-        });
+        function addEntry() {
+            const entryText = document.getElementById('entry').value;
+            if (entryText.trim() === '') return;
+
+            const entry = {
+                text: entryText,
+                date: new Date().toLocaleString()
+            };
+
+            let entries = JSON.parse(localStorage.getItem('diaryEntries')) || [];
+            entries.push(entry);
+            localStorage.setItem('diaryEntries', JSON.stringify(entries));
+
+            document.getElementById('entry').value = '';
+            loadEntries();
+        }
+
+        function loadEntries() {
+            const entries = JSON.parse(localStorage.getItem('diaryEntries')) || [];
+            const entriesDiv = document.getElementById('entries');
+            entriesDiv.innerHTML = '';
+
+            entries.forEach(entry => {
+                const entryDiv = document.createElement('div');
+                entryDiv.className = 'entry';
+                entryDiv.innerHTML = `<strong>${entry.date}</strong><p>${entry.text}</p>`;
+                entriesDiv.appendChild(entryDiv);
+            });
+        }
+
+        window.onload = loadEntries;
     </script>
-  </body>
+</body>
 </html>
