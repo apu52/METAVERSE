@@ -414,6 +414,16 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.about-sec > a{
+    color: grey;
+}
+
+.about-sec > a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
 footer .col{
     display: flex;
     flex-direction: column;
