@@ -78,11 +78,16 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+    transition: box-shadow 0.3s ease;
 }
+.header:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
 #navbar li{
     padding: 0 20px ;
@@ -92,11 +97,12 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: #1a1a1a;
-    transition: .3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 #navbar li a:hover,
 #navbar li a.active{
     color: #088178;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
@@ -130,6 +136,10 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    transition: background-position 0.5s ease;
+}
+.hero:hover {
+    background-position: top 20% right 10%; /* Shift background on hover */
 }
 .hero h4{
     padding-bottom: 15px;
@@ -137,6 +147,7 @@ body{
 .hero h1{
     color: #088178;
 }
+
 .hero button{
     font-size: 16px;
     font-weight: 700;
@@ -147,6 +158,11 @@ body{
     padding: 14px 80px 14px 65px;
     cursor: pointer;
     background-repeat: no-repeat;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hero button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 #feature{
     display: flex;
@@ -162,9 +178,11 @@ body{
     border: 1px solid #cce7d0;
     border-radius: 4px;
     margin: 15px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 #feature .fe-box:hover{
     box-shadow: 20px 20px 54px rgba(0,0,0,0.03);
+    transform: translateY(-5px);
 }
 #feature .fe-box img{
     width: 100%;
@@ -215,8 +233,10 @@ body{
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 #product1 .pro:hover{
+    transform: translateY(-5px);
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
 }
 #product1 .pro img{
@@ -260,6 +280,17 @@ body{
     bottom: 20px;
     right: 10px;
 }
+.cart{
+    animation: cartAnimation 0.5s infinite alternate;
+}
+@keyframes cartAnimation {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
 #banner{
     display: flex;
     flex-direction: column;
@@ -271,6 +302,10 @@ body{
     height: 40vh;
     background-size: cover;
     background-position: center;
+    transition: background-position 0.5s ease;
+}
+#banner:hover {
+    background-position: center; 
 }
 #banner h4{
     color: #fff;
@@ -283,6 +318,10 @@ body{
 }
 #banner span{
     color: #ff4500;
+}
+
+#banner button{
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 #banner button:hover{
     color: #fff;
@@ -304,10 +343,17 @@ body{
     background-size: cover;
     background-position: center;
     padding: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+#sm-banner .banner-box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  }
+
 #sm-banner .banner-box2{
     background-image: url(banner/b10.jpg);
 }
+
 #sm-banner h4{
     color: #fff;
     font-size: 20px;
@@ -353,6 +399,7 @@ body{
 #banner3 .banner-box3{
     background-image: url(banner/b18.jpg);
 }
+
 #banner3 h2{
     color: #fff;
     font-weight: 900;
@@ -372,7 +419,11 @@ body{
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
+    transition: background-position 0.5s ease;
 }
+#newsletter:hover {
+    background-position: 15% 25%;
+  }
 #newsletter h4{
     font-size: 22px;
     font-weight: 600;
@@ -419,6 +470,10 @@ footer .col{
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+footer .col:hover {
+    transform: translateY(-5px); 
 }
 footer .logo{
     margin-bottom: 30px;
@@ -439,14 +494,14 @@ footer a{
     color: #222;
     margin-bottom: 10px;
     margin: 0 0 8px 0;
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 footer .follow i{
     font-size: 1.8rem;
     color: #000;
     padding-right:4px;
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 footer .install .row img{
     border: 1px solid #088178;
@@ -513,6 +568,10 @@ footer .copyright{
 .small-img-col{
     flex-basis: 24%;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.small-img-col:hover {
+    transform: scale(1.1); 
 }
 #productdetails .single-pro-details{
     width: 50%;
