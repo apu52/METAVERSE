@@ -1,33 +1,217 @@
+body {
+  font-family: "Montserrat";
+}
+
 .gradient-background {
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+  background: linear-gradient(300deg, #f4b5b5, #e34159, rgb(197, 76, 76));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+
+  50% {
+    background-position: 100% 50%;
   }
-  .feature-icon {
-    width: 4rem;
-    height: 4rem;
-    border-radius: .75rem;
+
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .icon-square {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.75rem;
+}
+
+#title {
+  padding: 3% 14%;
+}
+
+.navbar-brand {
+  color: aliceblue;
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  color: aliceblue;
+  font-size: 1.2rem;
+
+}
+
+h1 {
+  padding-top: 50px;
+  font-style: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: rgb(249, 223, 225);
+}
+
+.iphone {
+  padding-top: 20px;
+  width: 65%;
+  transform: rotate(12deg);
+}
+
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
   }
-  
-  .profile-img {
-    height: 100px;
-    border-radius: 50%;
+
+  .iphone {
+    transform: rotate(0deg);
+    width: 40%;
   }
+}
+
+#features {
+  padding: 5% 14%;
+}
+
+#features h3 {
+  font-weight: 700;
+  color: #605f5f;
+}
+
+#features p {
+  font-weight: 600;
+  color: #575454;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5px;
+
+}
+
+.icon {
+  height: 4rem;
+  width: 4.5rem;
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: rgb(175, 69, 69);
+}
+
+
+#testimonial {
+  padding: 7% 15%;
+  text-align: center;
+  color: #f8f2f2;
+  font-weight: 700;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimoial-img {
+  width: 5%;
+  border-radius: 100%;
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  #testimonial-carousel {
+    padding: 5% 10%;
+  }
+
+  .testimoial-img {
+    width: 20px;
+    margin: 5px;
+  }
+}
+
+.logo-img {
+  display: block;
+  margin: auto;
+  height: 32px;
+}
+
+
+#footer {
+  color: #fff;
+  font-family: "Ubuntu";
+  padding: 60px;
+}
+
+#footer h4 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#footer h4::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background: #fac2c2;
+  left: 0;
+  bottom: 0;
+}
+
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+#footer ul li {
+  margin-bottom: 10px;
+}
+
+#footer ul li a {
+  color: aliceblue;
+  font-weight: 600;
+
+}
+
+#footer .signup_form {
+  padding-bottom: 30px;
+}
+
+#footer .signup_form input {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+#footer .signup_form button {
+  padding: 10px;
+  background: #f9d5da;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #f66a7a;
+}
+
+.footer-icon {
+  margin-right: 30px;
+}
+
+.footer-social-icons i {
+  font-size: 1.6rem;
+  margin: 0 10px;
+}
+
+.footer-social-icons i:hover {
+  color: #f2cbd0;
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 800;
+  padding-top: 10px;
+  border-top: 2px solid #f2cbd0;
+}
