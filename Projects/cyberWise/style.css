@@ -1,20 +1,31 @@
+*{
+    margin: 1rem;
+}
 body {
     padding: 20px;
     font-family: Arial, sans-serif;
-    color: #f1efef;
-    background-image: url(background.jpg);
-    background-size: cover; /* Ensures the background image covers the entire container */
-    background-attachment: fixed; /* Prevents the background image from scrolling with the content */
-    background-position: center; /* Centers the background image */
+    color: white !important;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important; 
+    font-size: 1.5rem;
+}
+
+.navbar-brand{
+    font-size: 3rem !important;
 }
 
 /* Style the headers */
 h1 {
     color: #fff;
-    font-size: 2em;
+    font-size: 3rem !important;
+    margin-bottom: 1rem;
     text-align: center;
-    margin-bottom: 20px;
-    -webkit-line-clamp: 1;
 }
 
 h2 {
@@ -38,7 +49,10 @@ div {
 
 /* Add some basic styling to the pages */
 #page1, #page2, #page3 {
-    padding: 20px;
+    padding: 1rem;
+    display: flex !important;
+    justify-content: space-around !important;
+    margin: 1rem;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(151, 135, 135, 0.3);
@@ -73,7 +87,7 @@ div {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 3rem;
     }
 
     h2 {
@@ -92,7 +106,7 @@ div {
 /* Mobile-first approach */
 @media (max-width: 576px) {
     h1 {
-        font-size: 1.2em;
+        font-size: 2rem;
     }
 
     h2 {
@@ -225,7 +239,10 @@ body{
     height: 200px;
 }
 
-
+.text-box{
+    text-align: justify;
+    font-size: 1.15rem;
+}
 
 .about-left-content h2{
     font-size: 2rem;
