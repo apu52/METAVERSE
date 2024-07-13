@@ -643,6 +643,27 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
+.toTop{
+  width: 3vw;
+  aspect-ratio: 1;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border-color: var(--primary-color);
+  cursor: pointer;
+  color: var(--extra-light);
+  font-weight: 900;
+  font-size: 1vw;
+  position: fixed;
+  padding: 1vw;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.3s;
+}
+
+.toTop:hover{
+  background-color: var(--primary-color-dark);
+}
+
 .footer {
   background-color: var(--text-dark);
 }
