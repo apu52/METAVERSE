@@ -45,8 +45,12 @@
                 <!-- Existing list item example -->
                 <li class="list-group-item d-flex justify-content-between">
                     <h3 class="flex-grow-1">Chapter 1</h3>
-                    <button class="btn btn-danger mx-5" onclick="editChapter(this)">Edit</button>
+                    <span class="badge bg-primary">2024-07-31</span>
+                    <button class="btn btn-danger mx-2" onclick="editChapter(this)">Edit</button>
                     <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>
+                    <label class="form-check-label ms-3">
+                        <input type="checkbox" class="form-check-input" onchange="toggleReminder(this)"> Remind Me
+                    </label>
                 </li>
             </ul>
         </div>
@@ -80,7 +84,10 @@
             newli.innerHTML = `<h3 class="flex-grow-1">${curerntChapterName}</h3>
                                <span class="badge bg-primary">${deadline}</span>
                                <button class="btn btn-danger mx-2" onclick="editChapter(this)">Edit</button>
-                               <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>`;
+                               <button class="btn btn-warning" onclick="removeChapter(this)">Remove</button>
+                               <label class="form-check-label ms-3">
+                                   <input type="checkbox" class="form-check-input" onchange="toggleReminder(this)"> Remind Me
+                               </label>`;
 
             parentList.appendChild(newli);
             document.getElementById("chapterInput").value = ""; // Clear the input fields after adding
@@ -97,6 +104,26 @@
                     return "low-priority";
                 default:
                     return "";
+            }
+        }
+
+        function toggleReminder(checkbox) {
+            let listItem = checkbox.closest(".list-group-item");
+            if (checkbox.checked) {
+                let deadline = new Date(listItem.querySelector(".badge").textContent);
+                scheduleNotification(deadline, listItem);
+            } else {
+                // Remove scheduled notification logic if needed
+            }
+        }
+
+        function scheduleNotification(deadline, listItem) {
+            let currentTime = new Date();
+            if (deadline > currentTime) {
+                let timeToNotify = deadline - currentTime;
+                setTimeout(() => {
+                    alert(`Reminder: Deadline for ${listItem.querySelector("h3").textContent} is today!`);
+                }, timeToNotify);
             }
         }
 
