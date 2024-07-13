@@ -11,8 +11,4 @@ Tech stack: Bootstrap is used and CSS animations are added.The website will have
 
 ## Screenshot
 
-![Alt text](<Screenshot 2023-10-16 143401-1.png>)
-
-
-
-
+![Screenshot 2024-07-06 130255](https://github.com/Arushi-N4/METAVERSE/assets/145531852/deb85470-1b58-43e3-9232-2d8b1381c886)

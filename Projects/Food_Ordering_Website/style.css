@@ -742,20 +742,20 @@ footer .ourservice {
 }
 
 .contact p:last-child:hover {
-    text-decoration: none;
-    color: rgb(132, 132, 215);
+    color: black;
+    text-decoration: underline;
 }
 
 
 footer .quick a {
-    color: black;
+    color: gray;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer .quick a:hover {
-    color: rgb(31, 52, 216);
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
 }
 
 footer ion-icon {
@@ -808,4 +808,16 @@ footer ion-icon[name="logo-linkedin"]:hover {
 .back-to-top:hover {
     background-color: #555;
     cursor: pointer;
+}
+
+.location > P,.ourservice >p{
+    color:  grey;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+    
+.location > P:hover,.ourservice >p:hover{
+    color: black;
+    text-decoration: underline;
 }
