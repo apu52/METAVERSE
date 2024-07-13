@@ -24,7 +24,7 @@
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
-  
+
   <!--
     - custom css link
   -->
@@ -32,7 +32,6 @@
   <link rel="stylesheet" href="./assets/css/about.css">
   <link rel="stylesheet" href="./assets/css/scroll.css">
   <link rel="stylesheet" href="./assets/css/contributors.css">
-  <link rel="stylesheet" href="./assets/css/cursor_transition.css">
 
   <!--
     - google font link
@@ -43,6 +42,31 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <style>
+    .circle {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
+      transition: transform 0.1s, left 0.1s, top 0.1s;
+      box-shadow: 0 0 20px #23bdf5,
+        0 0 60px #f523f5,
+        0 0 100px #23bdf5;
+    }
+
+    .circle-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
 </head>
 <!-- Light-Dark theme SWITCH -->
 
@@ -51,23 +75,93 @@
 
 
 <body>
+  <div class="circle-container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const coords = { x: 0, y: 0 };
+      const circles = document.querySelectorAll(".circle");
+
+      circles.forEach(function (circle) {
+        circle.x = 0;
+        circle.y = 0;
+      });
+
+      window.addEventListener("mousemove", function (e) {
+        coords.x = e.pageX;
+        coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+      });
+
+      function animateCircles() {
+        let x = coords.x;
+        let y = coords.y;
+
+        circles.forEach(function (circle, index) {
+          circle.style.left = `${x - 12}px`;
+          circle.style.top = `${y - 12}px`;
+          circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+
+          const nextCircle = circles[index + 1] || circles[0];
+          circle.x = x;
+          circle.y = y;
+
+          x += (nextCircle.x - x) * 0.25;
+          y += (nextCircle.y - y) * 0.25;
+        });
+
+        requestAnimationFrame(animateCircles);
+      }
+
+      animateCircles();
+    });
+  </script>
   <div class="cursor"></div>
 
   <div class="main">
     <div class="container">
-      
+
       <div class="radio-wrapper">
-        
+
         <div class="btn">
-            <a id="aid" class="nav-link" href="index.html">Home</a>
-            <label class="number">r1</label>
+          <a id="aid" class="nav-link" href="index.html">Home</a>
+          <label class="number">r1</label>
         </div>
       </div>
-      
+
       <div class="radio-wrapper">
         <!-- <input type="radio"  id="value-2" name="btn" class="input"> -->
         <div class="btn">
-        <a id="aid" class="nav-link" href="about.html">About</a>
+          <a id="aid" class="nav-link" href="about.html">About</a>
           <!-- <span >ABOUT</span> -->
           <!-- <span aria-hidden="" class="btn__glitch">_Cyber🦾</span> -->
           <label class="number">r2</label>
@@ -78,113 +172,125 @@
         <!-- <input type="radio" id="value-3" name="btn" class="input"> -->
         <div class="btn">
           <a id="aid" class="nav-link" href="contact.html">
-          Contact
-        </a>
-          
+            Contact
+          </a>
+
           <!-- <span aria-hidden=""></span> -->
           <!-- <span aria-hidden="" class="btn__glitch">CONTACT</span> -->
           <label class="number">r3</label>
-        </div> 
+        </div>
       </div>
     </div>
     <main>
 
       <div class="main-content">
         <div class="sub-main-content">
-        <div class="heading1">
-          <div class="heading">
-            <span>💻&nbsp;</span><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
+          <div class="heading1">
+            <div class="heading">
+              <span>💻&nbsp;</span><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
+            </div>
+            <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
+
+              <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
+              <span class="slider"></span>
+            </label>
           </div>
-          <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
+          <br>
 
-            <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-            <span class="slider"></span>
-          </label>
-        </div>
-        <br>
-
-  <br>
-  <br>
-  <br>
-
-
-  <!-- About part -->
-  <div class="contributors">
-    <h1>Welcome to the <span class="highlight">Metaverse Front-End Playground</span> community!</h1>
-
-    <p id ="para">Your gateway to the future of web development in the metaverse!  🌐🚀
-      Metaverse Front-End Playground is an open-source repository created to empower developersto explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!</p>
-      <p id ="para"> Our repository features a wide spectrum of metaverse-related 
-        front-end projects. From HTML, CSS, and JavaScript
-         to immersive React experiences, you'll find projects 
-         that push the boundaries of the metaverse!</p>
-    </div>
-  <div id="part">
-    <h1 id="design"></h1>
-  <div class="string large-font-mobile" style="text-align: left; display: flex; flex-direction: column; gap: 20px;">
-    <h1 class="greeting en"> METAVERSE as secured a position in <b style="color: green;">top 50</b> maintainer repositories in <b style="color: rgb(100, 100, 247);">QUINE HACTOBERFEST challenge</b> 🏅</h1>
-    <h1 class="greeting es"> METAVERSE was open to PR submissions for the <b style="color: rgb(249, 64, 64);">CODEPEAK'23</b> , from December 7, 2023, to December 28, 2023🏅</h1>
-    <h1 class="greeting de"> We were thrilled to be part of <b style="color: rgb(249, 64, 64);">KWOC'23</b>.KWOC'23 participants earned rewards and swag while shaping the future of the metaverse between the time span of December 9,2023 to 
-      January 15,2024.</h1>
-    <h1 class="greeting it" style="color: rgb(33, 191, 33);"> Collaborate with experienced metaverse 
-      developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.</h1>  
-  </div>
-  <h1 class="closure"></h1>     
-  </div>
-</div>
-  </main>
-  
-  <!-- FOOTER -->
-  <div class="main" id="footer">
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="wave-creation">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
-        </g>
-      </svg>
-    </div>
-
-
-    <footer class="page-footer font-small unique-color-dark pt-4">
-      <div class="container1">
-        <div class="list-unstyled list-inline text-center py-2 text-black">
           <br>
           <br>
-          <div class="socials-text" style="text-align: center; margin-bottom:50px">
-            <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
-            <br>
-            <br>
-            <a href="https://github.com/apu52/METAVERSE" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
-              checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on github</a>
-          </div>
+          <br>
 
-          <ul class="socials">
-            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github" title="Github (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
-                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-          </ul> 
+
+          <!-- About part -->
+          <div class="contributors">
+            <h1>Welcome to the <span class="highlight">Metaverse Front-End Playground</span> community!</h1>
+
+            <p id="para">Your gateway to the future of web development in the metaverse! 🌐🚀
+              Metaverse Front-End Playground is an open-source repository created to empower developersto explore,
+              innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase
+              your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our
+              dynamic community!</p>
+            <p id="para"> Our repository features a wide spectrum of metaverse-related
+              front-end projects. From HTML, CSS, and JavaScript
+              to immersive React experiences, you'll find projects
+              that push the boundaries of the metaverse!</p>
+          </div>
+          <div id="part">
+            <h1 id="design"></h1>
+            <div class="string large-font-mobile"
+              style="text-align: left; display: flex; flex-direction: column; gap: 20px;">
+              <h1 class="greeting en"> METAVERSE as secured a position in <b style="color: green;">top 50</b> maintainer
+                repositories in <b style="color: rgb(100, 100, 247);">QUINE HACTOBERFEST challenge</b> 🏅</h1>
+              <h1 class="greeting es"> METAVERSE was open to PR submissions for the <b
+                  style="color: rgb(249, 64, 64);">CODEPEAK'23</b> , from December 7, 2023, to December 28, 2023🏅</h1>
+              <h1 class="greeting de"> We were thrilled to be part of <b
+                  style="color: rgb(249, 64, 64);">KWOC'23</b>.KWOC'23 participants earned rewards and swag while
+                shaping the future of the metaverse between the time span of December 9,2023 to
+                January 15,2024.</h1>
+              <h1 class="greeting it" style="color: rgb(33, 191, 33);"> Collaborate with experienced metaverse
+                developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.</h1>
+            </div>
+            <h1 class="closure"></h1>
+          </div>
         </div>
-        <div class="policy">
-          <a href="privacynotice.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
-              <a href="copyright.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="main" id="footer">
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="wave-creation">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
+          </g>
+        </svg>
       </div>
-    </footer>
-  </div>
-  </section>
+
+
+      <footer class="page-footer font-small unique-color-dark pt-4">
+        <div class="container1">
+          <div class="list-unstyled list-inline text-center py-2 text-black">
+            <br>
+            <br>
+            <div class="socials-text" style="text-align: center; margin-bottom:50px">
+              <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
+              <br>
+              <br>
+              <a href="https://github.com/apu52/METAVERSE" target="_blank"
+                style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
+                checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on
+                github</a>
+            </div>
+
+            <ul class="socials">
+              <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
+                  title="Github (External Link)" rel="noopener noreferrer" target="_blank"><i
+                    class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter"
+                  title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
+                    class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
+                  title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="policy">
+            <a href="privacynotice.html" target="_blank"
+              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
+            <a href="copyright.html" target="_blank"
+              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </section>
   </div>
 
   <!-- SCROLL TO TOP BUTTON -->
@@ -202,4 +308,5 @@
   <script src="./assets/js/mouse_transition.js"></script>
 
 </body>
+
 </html>
