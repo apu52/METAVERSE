@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Unique key of the Deployment instance
+  name: my-node-app
+spec:
+  # 2 Pods should exist at all times.
+  replicas: 2
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        # Apply this label to pods and default
+        # the Deployment label selector to this value
+        app: node-app
+    spec:
+      containers:
+        - name: node-app
+          # Run this image
+          image: YOUR_IMAGE_NAME
