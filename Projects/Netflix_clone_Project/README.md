@@ -7,7 +7,6 @@
 
 <p>Hello Coders👨‍💻 ,I am Jatin Gupta, a aspiring Web developer.🤖 Here is the project of the front-end Web Developement. We all use the most famous streaming platform Netflix. So, here is the frontend clone of the landing page👆🏻 .</p>
 
-
 # Screenshots
 ![Netflix]
 ![Alt text](image.png)
