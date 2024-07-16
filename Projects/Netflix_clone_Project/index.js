@@ -1,5 +1,4 @@
-function sendMail(e){
-    e.preventDefault();
+function sendMail(){
     var params={
         email_id:document.getElementById("membership-email").value,
         from_name:"Netflix",
