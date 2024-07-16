@@ -120,3 +120,16 @@ body {
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 
+.high-priority {
+  background-color: red;
+  color: white; 
+}
+
+.medium-priority {
+  background-color: yellow;
+}
+
+.low-priority {
+  background-color: green;
+  color: white;
+}

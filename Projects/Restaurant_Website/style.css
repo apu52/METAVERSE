@@ -193,6 +193,7 @@ footer {
   display: flex;
   padding: 30px;
   justify-content: space-between;
+  z-index: 100000;
 }
 
 .link_lists ul {
@@ -214,4 +215,118 @@ footer {
 .newslatter input {
   padding: 5px 40px;
   margin-bottom: 10px;
+}
+
+
+/* Style for menu page */
+.menu-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-content {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+}
+
+.menu-content h2 {
+  margin-top: 60px; /* Ensure there's enough space between sections */
+}
+
+.menu-section {
+  scroll-margin-top: 130px; /* Adjust this value to match the height of your navbar */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 calc(20% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 180px; /* Adjust this value to make the card smaller */
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.card-content p {
+  margin: 5px 0 0;
+  color: #777;
+}
+
+.menu-sidebar {
+  width: 20%;
+  margin-top: 0;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 0;
+  top: 130px; /* Adjust this value to align with the top margin of .menu-page */
+  height: calc(100% - 150px); /* Adjust this value based on the height of your navbar */
+  overflow-y: auto;
+}
+
+
+.menu-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-sidebar li {
+  margin-bottom: 10px;
+}
+
+.menu-sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-sidebar a:hover {
+  background-color: #f2f2f2;
+  color: #ff6347;
+}
+
+.menu-sidebar a.active {
+  background-color: #ff6347;
+  color: #ffffff;
+}
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 99, 71, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
