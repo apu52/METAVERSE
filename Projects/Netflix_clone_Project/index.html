@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "-OBmWZjadmE1odXKm",
+        });
+    })();
+    </script>
 </head>
 
 <body>
@@ -25,8 +35,8 @@
             <span>Join today. Cancel anytime.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
             <div class="hero-buttons">
-                <input type="text" placeholder="Email Address">
-                <button class="btn btn-red">Get Started &gt;</button>
+                <input type="text" placeholder="Email Address" id="membership-email">
+                <button class="btn btn-red" onclick="sendMail()">Get Started &gt;</button>
             </div>
         </div>
 
@@ -162,6 +172,7 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
