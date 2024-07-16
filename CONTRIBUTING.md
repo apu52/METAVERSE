@@ -27,7 +27,7 @@ If you'd like to dive into existing projects, you're welcome to contribute by ad
 - All of you can Find the Already existing Web Dev projects in the `Projects` Folder.
 - REMINDER: Commit inside the `Projects` Folder & Foldername should not have any space.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
-- **REMINDER: Don't raise more than 1 `Issue` at a time**
+- **REMINDER: Don't raise more than 2 `Issue` at a time**
 - **IMPORTANT: Don't make any type of `Pull Request` until & unless you get assigned to an `Issue`**
 - Add screenshots or screen captures to your `Pull Request` to help us understand the effects of the changes that are included in your commits.
 

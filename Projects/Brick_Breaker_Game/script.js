@@ -86,14 +86,14 @@ function ballMove() {
     showPlayAgainButton(); // Show play again button when the ball is missed
     // ballRest();
     brickReset();
-  } else if (ballY < 0 && ballSpeedY > 0.0) {
-    ballSpeedY = -ballSpeedY;
+  } else if (ballY <= 0) {
+    ballSpeedY *= -1;   
   }
   // ballx
-  if (ballX > canvas.width && ballSpeedX > 0.0) {
-    ballSpeedX = -ballSpeedX;
-  } else if (ballX < 0 && ballSpeedX < 0.0) {
-    ballSpeedX = -ballSpeedX;
+  if (ballX >= canvas.width && ballSpeedX >= 0.0) {   
+    ballSpeedX *=-1;
+  } else if (ballX <= 0 && ballSpeedX <= 0.0) {
+    ballSpeedX *=-1;
   }
 }
 

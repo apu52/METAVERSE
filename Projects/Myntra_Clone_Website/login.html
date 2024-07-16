@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
     <style>
         body {
@@ -17,7 +18,7 @@
             display: flex;
             text-align: center;
             justify-content: center;
-            margin-top: 200px;
+            margin-top: 50px;
             font-size: 30px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
@@ -81,6 +82,27 @@
     </style>
 </head>
 <body>
+    <section class="header">
+        <a href="#"><img src="logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#product1">Featured</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class='bx bxs-shopping-bag'></i></a></li>
+                <a href="#" id="close"><i class='bx bx-window-close'></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bxs-shopping-bag'></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
     <h2>Login</h2>
     <form id="login-form">
         <label for="email">Email</label><br>

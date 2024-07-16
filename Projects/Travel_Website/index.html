@@ -9,21 +9,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Arpan Codes | Tourguide</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <nav>
       <div class="nav__logo">Tourguide<span>.</span></div>
       <ul class="nav__links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">Destinations</a></li>
-        <li class="link"><a href="#">Pricing</a></li>
-        <li class="link"><a href="#">Reviews</a></li>
+        <li class="link"><a href="#Home">Home</a></li>
+        <li class="link"><a href="#Destinations">Destinations</a></li>
+        <li class="link"><a href="#Packages">Packages</a></li>
+        <li class="link"><a href="#Gallery">Trip Gallery</a></li>
+        <li class="link"><a href="#Pricing">Pricing</a></li>
+        <li class="link"><a href="#Reviews">Reviews</a></li>
       </ul>
       <button class="btn">Contact Us</button>
     </nav>
     <header>
-      <div class="section__container header__container">
+      <div class="section__container header__container" id="Home">
         <div class="header__image">
           <img src="https://i.ibb.co/88Qnjxg/pexels-josh-hild-2422259.jpg" alt="header" />
           <img src="https://i.ibb.co/w4Jqjdf/pexels-andrei-tanase-1271619.jpg" alt="header" />
@@ -52,7 +60,7 @@
       </div>
     </header>
 
-    <section class="section__container destination__container">
+    <section class="section__container destination__container" id="Destinations">
       <div class="section__header">
         <div>
           <h2 class="section__title">Explore top destinations</h2>
@@ -98,7 +106,7 @@
       </div>
     </section>
 
-    <section class="trip">
+    <section class="trip" id="Packages">
       <div class="section__container trip__container">
         <h2 class="section__title">Best trip package</h2>
         <p class="section__subtitle">
@@ -146,7 +154,7 @@
       </div>
     </section>
 
-    <section class="gallary">
+    <section class="gallary" id="Gallery">
       <div class="section__container gallary__container">
         <div class="image__gallary">
           <div class="gallary__col">
@@ -172,6 +180,102 @@
       </div>
     </section>
 
+    <section class="pricing" id="Pricing">
+      <h1 class="h1">Choose the plan that fits for you</h1>
+    <p class="p">
+      Explore your suitable and dream places around the world. Here you can find your right package.
+    </p>
+
+    <div class="pricing-container">
+      <div class="plan">
+        <h2>Basic</h2>
+        <div class="price">$5</div>
+        <ul class="features">
+          <li><i class="fas fa-check-circle"></i> 5% Discounts on Accommodations</li>
+          <li><i class="fas fa-check-circle"></i> Exclusive Travel Guides</li>
+          <li><i class="fas fa-check-circle"></i> Monthly Travel Webinars</li>
+          <li><i class="fas fa-check-circle"></i> Priority Customer Support</li>
+        </ul>
+        <button class="button">Purchase</button>
+      </div>
+      <div class="plan popular">
+        <span>Most Popular</span>
+        <h2>Premium</h2>
+        <div class="price">$10</div>
+        <ul class="features">
+          <li><i class="fas fa-check-circle"></i> 15% Discounts on Accommodations</li>
+          <li><i class="fas fa-check-circle"></i>Exclusive Travel Guides</li>
+          <li><i class="fas fa-check-circle"></i> Monthly Travel Webinars</li>
+          <li><i class="fas fa-check-circle"></i> Points/Rewards Program</li>
+          <li><i class="fas fa-check-circle"></i> Cancellation Protection</li>
+          <li><i class="fas fa-check-circle"></i> Exclusive Travel Merchandise</li>
+        </ul>
+        <button class="button">Purchase</button>
+      </div>
+      <div class="plan">
+        <h2>Ultimate</h2>
+        <div class="price">$15</div>
+        <ul class="features">
+          <li><i class="fas fa-check-circle"></i> 25% Discounts on Accommodations </li>
+          <li><i class="fas fa-check-circle"></i> Basic and Premium plan perks included</li>
+          <li><i class="fas fa-check-circle"></i> Airport Lounge Access and Free Travel Insurance</li>
+          <li><i class="fas fa-check-circle"></i> Unlimited Access to Premium Content</li>
+        </ul>
+        <button class="button">Purchase</button>
+      </div>
+    </div>
+      
+    </section>
+
+    <section class="reviews" id="Reviews">
+
+      <h2 class="testimonial-heading section__title" align-items="center">Reviews</h2>
+      <p class="p">
+        See what people think about us
+      </p>
+            <div class="testimonial-container">
+              <div class="testimonial-user">
+                <img class="testi-img" src="./img/testimonial1.jpg" alt="">
+                <div>
+                  <p><sup><i class="fas fa-quote-left"></i></sup>TourGuide made our dream vacation a reality! From the
+                    breathtaking landscapes to the seamless logistics, every moment was a new adventure. The personalized
+                    itinerary and expert guides added a special touch to our journey. We can't wait to book our next trip with
+                    TourGuide!<sup><i class="fas fa-quote-right"></i></sup></p>
+                  <div class="user-info">
+                    <h3>Joseph</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-user" >
+                <img class="testi-img" src="./img/Abhisek Tamang.jpg" alt="">
+                <div>
+                  <p><sup><i class="fas fa-quote-left"></i></sup>Our cultural tour with TourGuide exceeded all expectations.
+                    The
+                    immersive experiences, knowledgeable guides, and carefully curated activities allowed us to connect with
+                    the
+                    local culture in a way we never thought possible. Thanks to TourGuide.<sup><i
+                        class="fas fa-quote-right"></i></sup></p>
+                  <div class="user-info">
+                    <h3>Charles</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-user" >
+                <img class="testi-img" src="./img/testimonial2.jpg" alt="">
+                <div>
+                  <p><sup><i class="fas fa-quote-left"></i></sup>Traveling with the family has never been easier! TourGuide
+                    took
+                    care of every detail, ensuring a stress-free and enjoyable vacation for all. The kid-friendly activities
+                    and
+                    family-oriented guides made our trip unforgettable.<sup><i class="fas fa-quote-right"></i></sup></p>
+                  <div class="user-info">
+                    <h3>Katie</h3>
+                  </div>
+                </div>
+              </div>   
+            </div>
+    </section>
+
     <section class="subscribe">
       <div class="section__container subscribe__container">
         <div class="subscribe__content">
@@ -189,6 +293,8 @@
         </div>
       </div>
     </section>
+
+    <a href="#"><button class="toTop">^</button></a>
 
     <footer class="footer">
       <div class="section__container footer__container">
@@ -214,6 +320,31 @@
           <p><span>Email:</span> tour@tourguide.com</p>
           <p><span>Phone:</span> +91 8562145852</p>
         </div>
+        <div class="social-media">
+              <h3>Follow Us</h3>
+        <ul class="social-icons">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+      </div>
       </div>
       <div class="footer__bar">
         Copyright © 2023 Arpan Chowdhury. All rights reserved.

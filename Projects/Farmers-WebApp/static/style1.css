@@ -127,7 +127,8 @@ body{
     left: 350px;
     width: 100%;
     background: #fff;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: 10rem;
     padding: 25px 30px;
     /* margin-top: 7em; */
     border-radius: 15px;

@@ -25,10 +25,10 @@
   }
   
   .btn {
-    --primary: #ff184c;
+    /* --primary: #ff184c;
     --shadow-primary: #fded00;
     --color: white;
-    --font-size: 9px;
+    --font-size: 50px;
     --shadow-primary-hue: 180;
     --shadow-secondary-hue: 60;
     --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
@@ -43,29 +43,71 @@
     --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
     --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
     color: var(--color);
-    text-transform: uppercase;
+    text-transform: uppercase; */
     font-size: 15px;
-    letter-spacing: 3px;
+    /* letter-spacing: 1px; */
     position: relative;
     font-weight: 900;
     width: 100%;
     height: 100%;
     line-height: 38px;
-    text-align: center;
+    text-align: center;/*
     transition: background 0.2s, 0.3s;
+    */
+  } 
+  .btn a{
+    text-decoration: none;
+    display: block;
+    /* padding: 5px 0; */
+    font-family: 'Poppins';
+    font-size: 20px;
+    /* line-height: 1; */
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #23abd4, #23abd4 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+     text-shadow: 0 0 3px #fff,0 0 10px rgba(167, 45, 237, 0.3), 0 0 20px rgba(167, 45, 237, 0.4), 0 0 30px rgba(167, 45, 237, 0.5), 0 0 40px rgba(167, 45, 237, 0.6), 0 0 50px rgba(167, 45, 237, 0.7);
   }
   
-  .input:checked + .btn {
+  .btn a:before{
+    display: block;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    bottom: -3px;
+    z-index: 0;
+    position: absolute;
+    background: #23abd4;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn a:hover{
+  background-position: 0%;
+
+  }
+  .btn a:hover:before{
+    width: 100%;
+  }
+  /* .input:checked + .btn {
     --primary: #6c3697;
     --shadow-primary: #00e572;
-  }
+  } */
   
-  .input:hover + .btn {
+  /* .input:hover + .btn {
     --primary: #006042;
     --font-size: 11px;
   }
-  
-  .btn:after, .btn:before {
+   */
+  /* .btn:after, .btn:before {
     content: '';
     position: absolute;
     top: 0;
@@ -74,17 +116,17 @@
     bottom: 0;
     clip-path: var(--clip);
     z-index: -1;
-  }
+  } */
   
-  .btn:before {
+  /* .btn:before {
     background: var(--shadow-primary);
     transform: translate(var(--border), 0);
   }
   
   .btn:after {
     background: var(--primary);
-  }
-  
+  } */
+/*   
   .btn__tag {
     position: absolute;
     padding: 1px 4px;
@@ -129,7 +171,7 @@
     clip-path: var(--clip);
     background: var(--primary);
     z-index: -1;
-  }
+  } */
   .no-results-img{
     width: 100%;
   }

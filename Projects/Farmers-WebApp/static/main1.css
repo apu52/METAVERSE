@@ -276,3 +276,191 @@ nav{
     opacity: .4;
     font-weight: 200;
 }
+
+
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Bhai', cursive;
+  background-color: #f0f0f0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  margin-top: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: #4CAF50;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 0.5rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon i, .icon a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  /* margin: 4rem auto; */
+  padding: 10rem;
+  /* margin-top: 10rem; */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 0px black;
+}
+
+/* Taluka select styles */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Crop info styles */
+.crop-info {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#crop-image {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 8px;
+}
+
+#crop-details {
+  flex: 1;
+}
+
+#crop-name {
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+#crop-description, #crop-scheme, #crop-price {
+  margin-bottom: 0.5rem;
+}
+header{
+	width: 100%;
+	height: 90vh;
+  }
+  .menu{
+	margin: auto;
+  }
+  nav{
+	width: 100%;
+	height: 80px;
+	background: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 80px;
+	position: fixed;
+	top: 0px;
+	 background:  rgb(93, 242, 135);
+  }
+  .logo{
+	font-family: sans-serif;
+	font-size: 2.3em;
+  }
+  .logo span{
+	color:rgb(248, 59, 59);
+  }
+  .menu a{
+	text-decoration: none;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: black;
+  }
+  /* .menu a:first-child{
+	color: #e74c3c;
+  } */
+  .menu a:hover{
+	 color:#e74c3c;
+  }
+  .menu a span{
+	font-size: 30px;
+	color: black;
+  }
+  .icon i{
+	font-size: 20px;
+  }
+  .icon i:hover{
+   color: #e74c3c;
+  }
+  .icon{
+	display: none;
+  }
+  .icon a{
+	display: none;
+   text-decoration: none;
+   background: #e74c3c;
+   color: white;
+   padding: 10px 20px;
+   margin-left: 30px;
+   border-radius: 5px;
+  }
+  .icon a:hover{
+  background-color: aqua;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 5px 5px aqua;
+  color: rgb(233, 50, 50);
+  }
