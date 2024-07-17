@@ -34,20 +34,36 @@ const checkWin = ()=>{
     })
 }
 
+// Function to check for a draw
+const checkDraw = () => {
+    let boxtexts = document.querySelectorAll('.boxtext');
+    for(let i = 0; i < boxtexts.length; i++) {
+        if(boxtexts[i].innerText === "") {
+            return false;
+        }
+    }
+    return true;
+}
+
 // Game Logic
 // music.play()
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
     element.addEventListener('click', ()=>{
-        if(boxtext.innerText === ''){
+        if (!isgameover && boxtext.innerText === ''){
             boxtext.innerText = turn;
             turn = changeTurn();
             audioTurn.play();
             checkWin();
             if (!isgameover){
-                document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-            } 
+                if(checkDraw()) {
+                    document.getElementsByClassName("info")[0].innerText  = "It's a Draw";
+                    isgameover = true;
+                } else {
+                    document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
+                }
+            }
         }
     })
 })
@@ -64,4 +80,3 @@ reset.addEventListener('click', ()=>{
     document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
-
