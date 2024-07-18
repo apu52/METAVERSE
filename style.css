@@ -23,6 +23,22 @@
     z-index: 10;
     opacity: 0;
   }
+
+  .nav-wrapper{
+    position:fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    /* background-color: black; */
+    z-index: 999;
+  }
+  .progress-bar{
+    height: 5px;
+    width: 0;
+    background-color: rgb(179, 76, 252);
+    
+  }
   
   .btn {
     /* --primary: #ff184c;
