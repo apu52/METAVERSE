@@ -21,7 +21,7 @@ h2{
 }
 h4{
     font-size: 20px;
-    color: #222;
+    color: #b5a0a0;
 }
 h6{
     font-weight: 700;
@@ -96,7 +96,7 @@ body{
 #navbar li a{
     font-size: 16px;
     font-weight: 500;
-    color: #1a1a1a;
+    color: #040404;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 #navbar li a:hover,
@@ -690,7 +690,7 @@ footer .copyright{
 }
 .about-header h2,
 .about-header p{
-    color: #fff;
+    color: #f2c9c9;
 }
 #about-head{
     display: flex;
@@ -714,7 +714,7 @@ footer .copyright{
 #about-app .video video{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 /* Contact Section */
