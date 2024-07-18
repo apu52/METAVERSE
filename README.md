@@ -1,30 +1,33 @@
-# <p align = "center"> METAVERSE </p>
-<img align ="center" > ![image](./images/Metaverse_poster.gif) </img>
-<div align="center">
- <p>
+# <p align="center">METAVERSE</p>
 
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=apu52%2FMETAVERSE%20&countColor=%23263759&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/apu52/METAVERSE)
-![GitHub Repo stars](https://img.shields.io/github/stars/apu52/METAVERSE)
-![GitHub contributors](https://img.shields.io/github/contributors/apu52/METAVERSE)
-![GitHub last commit](https://img.shields.io/github/last-commit/apu52/METAVERSE)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/apu52/METAVERSE)
-
-![Github](https://img.shields.io/github/license/apu52/METAVERSE)
-![GitHub issues](https://img.shields.io/github/issues/apu52/METAVERSE)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/apu52/METAVERSE)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/apu52/METAVERSE)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/apu52/METAVERSE)
-
- </p>
- </div>
- <br>
- <p align="center">
-   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE"/>
+<p align="center">
+  <img src="./images/Metaverse_poster.gif" alt="Metaverse Poster" />
 </p>
+
+<div align="center">
+  <p>
+    <a href="https://github.com/ellerbrock/open-source-badges/">
+      <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" alt="Open Source Love svg1" />
+    </a>
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome" />
+    <img src="https://api.visitorbadge.io/api/visitors?path=apu52%2FMETAVERSE%20&countColor=%23263759&style=flat" alt="Visitors" />
+    <img src="https://img.shields.io/github/forks/apu52/METAVERSE" alt="GitHub forks" />
+    <img src="https://img.shields.io/github/stars/apu52/METAVERSE" alt="GitHub Repo stars" />
+    <img src="https://img.shields.io/github/contributors/apu52/METAVERSE" alt="GitHub contributors" />
+    <img src="https://img.shields.io/github/last-commit/apu52/METAVERSE" alt="GitHub last commit" />
+    <img src="https://img.shields.io/github/repo-size/apu52/METAVERSE" alt="GitHub repo size" />
+    <img src="https://img.shields.io/github/license/apu52/METAVERSE" alt="GitHub license" />
+    <img src="https://img.shields.io/github/issues/apu52/METAVERSE" alt="GitHub issues" />
+    <img src="https://img.shields.io/github/issues-closed-raw/apu52/METAVERSE" alt="GitHub closed issues" />
+    <img src="https://img.shields.io/github/issues-pr/apu52/METAVERSE" alt="GitHub pull requests" />
+    <img src="https://img.shields.io/github/issues-pr-closed/apu52/METAVERSE" alt="GitHub closed pull requests" />
+  </p>
+</div>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE" alt="Welcome to the METAVERSE"/>
+</p>
+
  
  
  ## 📌 Open Source Program
