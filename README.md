@@ -27,9 +27,27 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE" alt="Welcome to the METAVERSE"/>
 </p>
- 
+
+<div>
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#about-metaverse">About METAVERSE</a></li>
+    <li><a href="#announcement">Announcement</a></li>
+    <li><a href="#achievement">Achievement</a></li>
+    <li><a href="#available-projects">Available Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#what-can-you-contribute">What can you contribute?</a></li>
+    <li><a href="#how-to-contribute">How to contribute?</a></li>
+    <li><a href="#how-to-make-a-pull-request">How to make a pull request?</a></li>
+    <li><a href="#quick-docker-setup">Quick Docker Setup</a></li>
+    <li><a href="#project-contributors">Project Contributors</a></li>
+    <li><a href="#license">License</a></li>
+</ul>
+</div>
+
  
  ## 📌 Open Source Program
+
 
  ### This project is now OFFICIALLY accepted for
  
@@ -48,21 +66,22 @@
   <img src="images/hack.jpeg" width="50%">
 </div>
   
-##  About METAVERSE
+<h2 id="about-metaverse">About METAVERSE</h2>
 Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!
 
 We also have a Discord server to discuss doubts and suggestions! Make sure to join it here: <br />
 [![image](https://github.com/Sibam-Paul/METAVERSE/assets/158052549/774e200e-e719-4920-bf81-8eb74f96fbdf)](https://discord.gg/dvHgzTMsap)
 
-## Announcement 📢
+<h2 id="announcement">Announcement 📢</h2>
+
 All of the projects of this repo can be seen in the deployment link in the **about** section
 
-## Achievement 🏆
+<h2 id="achievement">Achievement 🏆</h2>
 
 **METAVERSE** repo has secured a position in *top 50 maintainer repositories* in **QUINE HACTOBERFEST** challenge 🏅
 
-## Available Projects
+<h2 id="available-projects">Available Projects</h2>
 
 <table >
 <tr>
@@ -112,9 +131,9 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 & many more.......
 
 You can find All the Projects 
-<h2>Live Project -- https://apu52.github.io/METAVERSE/</h2>
+<h3>Live Project -- https://apu52.github.io/METAVERSE/</h2>
 
-## Blog
+<h2 id="blog">Blog</h>
 
 <h2>What You'll Discover Here:</h2>
 
@@ -124,12 +143,12 @@ You can find All the Projects
 
 - <h3>🚀Learning Opportunity:</h3> If you're new to metaverse development, this repository is an excellent launchpad. Collaborate with experienced metaverse developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.
 
-## What you can Contribute?
+<h2 id="what-can-you-contribute">What can you contribute?</h2>
 
 - Find All the details in [**CONTRIBUTING.md**](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md) before contributing
 - Please follow guidelines in [**Code_of_Conduct.md**](https://github.com/apu52/METAVERSE/blob/main/Code_of_conduct.md)
 
-## How to Contribute?
+<h2 id="how-to-contribute">How to contribute?</h2>
 
 - Drop a Star in this repo
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues).
@@ -148,7 +167,8 @@ You can find All the Projects
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
 
-## How to make a Pull Request?
+<h2 id="how-to-make-a-pull-request">How to make a Pull Request?</h2>
+
 
 **1.** Start by forking the [**METAVERSE**](https://github.com/apu52/METAVERSE) repository. Click on the <a href="https://github.com/apu52/METAVERSE/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
@@ -226,7 +246,8 @@ git push origin YourBranchName
 
 Congratulations! You've made your first contribution! 🙌🏼
  
-## Quick Docker Setup 🐳
+<h2 id="quick-docker-setup">Quick Docker Setup 🐳</h2>
+
 ### Requirement:
 
 * Docker Desktop
@@ -351,7 +372,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 
 
-## Project Contributors
+<h2 id="project-contributors">Project Contributors</h2>
 
 <p align ="center">
   <img src="https://api.vaunt.dev/v1/github/entities/apu52/repositories/METAVERSE/contributors?format=svg&limit=54" width="700" height= "250" />
