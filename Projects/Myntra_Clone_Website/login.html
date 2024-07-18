@@ -1,161 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/Common Files/style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        body {
-            background-color: #E3E6F3;
+      #search #search_icon{
+            top: unset;
         }
-        /* Style the form container */
-        #login-form {
-            width: 300px;
-            margin: 0 auto;
+      #boxbody{
+          margin-top: 15rem;
         }
-        h2 {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            margin-top: 50px;
-            font-size: 30px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        /* Style form labels */
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 18px;
-        }
-
-        /* Style form inputs */
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        p {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-        /* Style the login button */
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            font-size: 20px;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            border-radius: 25px;
-        }
-
-        /* Hover effect for the login button */
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            #login-form {
-                width: 90%;
-            }
-        }
-
-        /* Style for the message div */
-        #message {
-            margin-top: 15px;
-            text-align: center;
-            font-size: 16px;
-            color: #dc3545; /* Red color for errors */
-        }
-        #message.success {
-            color: #28a745; /* Green color for success */
-        }
+      h3{
+          margin-top: 1.5rem;
+          font-size: 1.5rem;
+      }
     </style>
+
 </head>
 <body>
-    <section class="header">
-        <a href="#"><img src="logo.png" class="logo"></a>
-
-        <div>
-            <ul id="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#product1">Featured</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="./Contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class='bx bxs-shopping-bag'></i></a></li>
-                <a href="#" id="close"><i class='bx bx-window-close'></i></a>
-            </ul>
+    <!-- HEADER SECTION WITH NAV BAR -->
+    <header>
+        
+        <ul id="nav_bar">
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="../Homepages/homeLiving.html">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+        </ul> 
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
         </div>
-        <div id="mobile">
-            <a href="cart.html"><i class='bx bxs-shopping-bag'></i></a>
-            <i id="bar" class='bx bx-menu'></i>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                  <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+                <div id="drop">
+                    <a href="../Profile/profile.html" class="dropList">login</a>
+                    <a href="../Profile/signup.html" class="dropList">sign up</a>
+                </div>
+
+
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
         </div>
-    </section>
-    <h2>Login</h2>
-    <form id="login-form">
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="button" onclick="login()">Login</button>
-    </form>
-    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
-    <div id="message"></div>
-    <script>
-        async function login() {
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const messageDiv = document.getElementById('message');
 
-            try {
-                const response = await fetch('http://localhost:5000/login', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ email, password })
-                });
+                <!-- TOGGLE MENU -->
+                <div id="toggle">
+                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="top">
+                            <a href="../Homepages/menHomePage.html">men</a>
+                            <a href="../Homepages/womenHomePage.html">women</a>
+                            <a href="#">kids</a>
+                            <a href="../Homepages/homeLiving.html">home & living</a>
+                            <a href="#">beauty</a>
+                            <a href="#">studio</a>
+                        </div> 
+                        <div class="bottom">
+                            <i class="fa-regular fa-user fa_user" id="profile"></i>
+                            <i class="fa-regular fa-heart fa_wishlist"></i>
+                            <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                        </div>               
+                    </div>
+                </div>
 
-                if (!response.ok) {
-                    throw new Error('Failed to login');
-                }
+    </header>
 
-                const data = await response.json();
-                console.log(data); // Logging the response for debugging
+    <div id="boxbody">        
+        <div class="imgbo">
+                <img src="https://bit.ly/3iYuMIl" alt="">
+        </div>
 
-                // Check if token is received
-                if (data.token) {
-                    localStorage.setItem('token', data.token);
-                    messageDiv.textContent = 'Login successful';
-                    messageDiv.classList.add('success');
-                    messageDiv.classList.remove('error');
-                    setTimeout(() => {
-                        window.location.href = 'index.html'; // Redirect to home page
-                    }, 1500); // Redirect after 1.5 seconds
-                } else {
-                    messageDiv.textContent = 'Failed to login';
-                    messageDiv.classList.add('error');
-                    messageDiv.classList.remove('success');
-                }
-            } catch (error) {
-                console.error(error);
-                messageDiv.textContent = 'Failed to login';
-                messageDiv.classList.add('error');
-                messageDiv.classList.remove('success');
-            }
-        }
-    </script>
+       <div class="signin">
+                
+           <h2> Login</h2> <p id="or">or</p> <h2>SignUp</h2>
+          
+           <h3>Mobile</h3>
+           <input type="tel" placeholder="Mobile Number*" id="mob">
+           
+           
+          
+           <p style="font-size: 1rem;display: block;">By continuing, I agree to the <span> Terms of     Use </span> and <span>privacy policy</span>  </p>
+       
+           <button id="signup_button">continue</button>
+             <p style="font-size: 1rem;display: block;">Have trouble logging in?<span> Get help</span> </p>
+             <p style="font-size: 1rem;display: block;">Already have an account ? <span id="logIn"> Login </span></p>
+    
+        </div>
+
+    </div>
+
 </body>
 </html>
+
+<script src="../Common Files/headerMenu.js"></script>
+<script src="../Profile/signup.js"></script>
+<script src="../Common Files/hyperlinks.js"></script>

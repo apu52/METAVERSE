@@ -1391,3 +1391,75 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   .back-top-btn { padding: 15px; }
 
 }
+/* CONTACT US */
+.contact-form-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form-container {
+  background-color: var(--indian-yellow);
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h1 {
+  text-align: center;
+  color: white;
+ size: 4rem;
+}
+
+.contact-form-container form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form-container form label {
+  font-weight: bold;
+  color: white;
+}
+
+.contact-form-container form input[type="text"],
+.contact-form-container form input[type="email"],
+.contact-form-container form input[type="tel"],
+.contact-form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px; 
+  background: white;  
+  box-sizing: border-box;
+  color: var(--davys-gray);
+}
+
+.contact-form-container form textarea {
+  height: 100px;
+}
+
+.contact-form-container form button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid white;
+}
+.btnn:is(:hover, :focus){
+
+    background-color: var(--white);
+    color: var(--eerie-black-1);
+}
+.contact-form-container input::placeholder{
+color: black;
+}
+.contact-form-container textarea::placeholder{
+  color: black;
+  }
+  
