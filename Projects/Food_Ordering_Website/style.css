@@ -172,7 +172,23 @@ nav a:hover {
     width: 500px;
     height: 500px;
 }
+.Newsletter{
+    display: flex;
+    justify-content: space-around
+}
+.Newsletter .input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.Newsletter .btn{
+    border-radius: 5px;
+    padding: 5px ;
+}
+.Newsletter .btn:hover{
+    background-color: #f1c11a;
 
+}
 .box2 img {
     width: 500px;
     height: 500px;
