@@ -17,7 +17,7 @@ body {
 
 .container {
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
     width: 510px;
     /* height: 373px; */
@@ -294,7 +294,7 @@ label {
 .background-image {
     margin: 0;
     padding: 0;
-    background: url()  center / cover no-repeat fixed;
+    background: url(https://cdn.pixabay.com/photo/2020/01/15/09/36/thermometer-4767445_1280.jpg)  center / cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
