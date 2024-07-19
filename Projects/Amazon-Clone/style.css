@@ -471,3 +471,72 @@ ul p{
         flex-basis: 100%;
     }
 }
+.panel3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 20vh;
+    /* Adjust background color to match your design */
+}
+
+.logo1 {
+    width: 100px; /* Adjust size as needed */
+    height: 50px; /* Adjust height as needed */
+    background: url('amazon_logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+.language-selector select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    background:transparent;
+    color: #CCC;
+    border: 1px solid transparent;
+}
+#fot{
+    display: flex;
+    width: 25vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.language-selector{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 6px;
+}
+.language-selector i{
+color: #ccc;
+font-size: 15px;
+}
+#Ind{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 6px;
+    width: 90px;
+    align-items: center;
+    margin-left: 10px;
+}
+#flag img{
+height: 10px;
+width: 15px;
+padding-left: 5px;
+margin-right: 5px;
+}
+#Ind #in{
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    background: transparent;
+    color: #CCC;
+    border: 1px solid transparent;
+}
+.icn{
+    display: flex;
+   
+}

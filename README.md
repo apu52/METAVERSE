@@ -133,7 +133,7 @@ You can find All the Projects
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues).
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
 - At first raise an issue in which you want to work
-- **Please do not make more than 1 issues at a time , Once your PR have been merged only then go for the next issue**
+- **Please do not make more than 2 issues at a time , Once your PR have been merged only then go for the next issue**
 - **Then when you are get assigned only then work on that issue & make a PR**
 - Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
@@ -271,7 +271,32 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <div align="center">
 
-## Project Admin/Mentors
+## GSSOC'24 Mentor 👨‍💻
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/heysagnik"><img src="images/sagnik.jfif" width=130px height=130px /></a></br> <h4 style="color:red;">Sagnik Sahoo</h4>
+ <a href="https://www.linkedin.com/in/heysagnik/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+   </td>
+
+</tr>
+</table>
+
+## SSOC'24 Mentor 👨‍💻
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/anuragverma108"><img src="images/Anurag.jfif" width=130px height=130px /></a></br> <h4 style="color:red;">Anurag Verma</h4>
+ <a href="https://www.linkedin.com/in/anurag-verma-b91417253/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+   </td>
+
+</tr>
+</table>
+
+
+<div align="center">
+
+## METAVERSE Project Moderators(admin)
 
 <table>
 <tr>
