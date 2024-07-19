@@ -180,6 +180,18 @@ nav a:hover {
     border-radius: 50rem;
     margin-top: 5rem;
     border: 10px solid #4FC3F7;
+    animation: float 6s ease-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+  transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 
 .content {
