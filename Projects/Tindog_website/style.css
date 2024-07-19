@@ -218,7 +218,7 @@ h1 {
 /* Contact Us Section */
 .contact-section {
   padding: 50px 0;
-  background: #ce5a5a;
+  background: linear-gradient(300deg, #f4b5b5, #e34159, rgb(197, 76, 76));
   border-radius: 4px;
 }
 
@@ -300,6 +300,6 @@ b, strong {
   color: white;
 }
 #cont{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
