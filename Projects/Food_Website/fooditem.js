@@ -417,6 +417,81 @@ const foodItem= [
     img: 'Images/Sambar Bara.png',
     quantity: 1
 },
+{
+    id: 47,
+    name: 'Chocolate Cake',
+    category: 'desserts',
+    rating: 4.5,
+    price: 7,
+    img: 'Images/chocolate.jpeg',
+    quantity: 1
+  },
+  {
+    id: 48,
+    name: 'Cheesecake',
+    category: 'desserts',
+    rating: 4.7,
+    price: 8,
+    img: 'Images/cheesecake.webp',
+    quantity: 1
+  },
+  {
+    id: 49,
+    name: 'Gulab Jamun',
+    category: 'desserts',
+    rating: 4.8,
+    price: 5,
+    img: 'Images/gulabjamun.jpeg',
+    quantity: 1
+  },
+ 
+  {
+    id: 52,
+    name: 'Tiramisu',
+    category: 'desserts',
+    rating: 4.9,
+    price: 9,
+    img: 'Images/tiramisu.jpeg',
+    quantity: 1
+},
+{
+    id: 53,
+    name: 'Panna Cotta',
+    category: 'desserts',
+    rating: 4.6,
+    price: 7,
+    img: 'Images/pannacotta.jpeg',
+    quantity: 1
+},
+{
+    id: 54,
+    name: 'Baklava',
+    category: 'desserts',
+    rating: 4.8,
+    price: 8,
+    img: 'Images/baklava.jpeg',
+    quantity: 1
+},
+{
+    id: 55,
+    name: 'Apple Pie',
+    category: 'desserts',
+    rating: 4.7,
+    price: 6,
+    img: 'Images/apple-pie.jpeg',
+    quantity: 1
+},
+{
+    id: 56,
+    name: 'Lava Cake',
+    category: 'desserts',
+    rating: 4.9,
+    price: 7,
+    img: 'Images/lava.jpeg',
+    quantity: 1
+}
+
+
 ]
 
 export {foodItem};
