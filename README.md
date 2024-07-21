@@ -1,33 +1,53 @@
-# <p align = "center"> METAVERSE </p>
-<img align ="center" > ![image](./images/Metaverse_poster.gif) </img>
-<div align="center">
- <p>
+# <p align="center">METAVERSE</p>
 
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=apu52%2FMETAVERSE%20&countColor=%23263759&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/apu52/METAVERSE)
-![GitHub Repo stars](https://img.shields.io/github/stars/apu52/METAVERSE)
-![GitHub contributors](https://img.shields.io/github/contributors/apu52/METAVERSE)
-![GitHub last commit](https://img.shields.io/github/last-commit/apu52/METAVERSE)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/apu52/METAVERSE)
-
-![Github](https://img.shields.io/github/license/apu52/METAVERSE)
-![GitHub issues](https://img.shields.io/github/issues/apu52/METAVERSE)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/apu52/METAVERSE)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/apu52/METAVERSE)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/apu52/METAVERSE)
-
- </p>
- </div>
- <br>
- <p align="center">
-   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE"/>
+<p align="center">
+  <img src="./images/Metaverse_poster.gif" alt="Metaverse Poster" />
 </p>
- 
+
+<div align="center">
+  <p>
+    <a href="https://github.com/ellerbrock/open-source-badges/">
+      <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" alt="Open Source Love svg1" />
+    </a>
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome" />
+    <img src="https://api.visitorbadge.io/api/visitors?path=apu52%2FMETAVERSE%20&countColor=%23263759&style=flat" alt="Visitors" />
+    <img src="https://img.shields.io/github/forks/apu52/METAVERSE" alt="GitHub forks" />
+    <img src="https://img.shields.io/github/stars/apu52/METAVERSE" alt="GitHub Repo stars" />
+    <img src="https://img.shields.io/github/contributors/apu52/METAVERSE" alt="GitHub contributors" />
+    <img src="https://img.shields.io/github/last-commit/apu52/METAVERSE" alt="GitHub last commit" />
+    <img src="https://img.shields.io/github/repo-size/apu52/METAVERSE" alt="GitHub repo size" />
+    <img src="https://img.shields.io/github/license/apu52/METAVERSE" alt="GitHub license" />
+    <img src="https://img.shields.io/github/issues/apu52/METAVERSE" alt="GitHub issues" />
+    <img src="https://img.shields.io/github/issues-closed-raw/apu52/METAVERSE" alt="GitHub closed issues" />
+    <img src="https://img.shields.io/github/issues-pr/apu52/METAVERSE" alt="GitHub pull requests" />
+    <img src="https://img.shields.io/github/issues-pr-closed/apu52/METAVERSE" alt="GitHub closed pull requests" />
+  </p>
+</div>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE" alt="Welcome to the METAVERSE"/>
+</p>
+
+<div>
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#about-metaverse">About METAVERSE</a></li>
+    <li><a href="#announcement">Announcement</a></li>
+    <li><a href="#achievement">Achievement</a></li>
+    <li><a href="#available-projects">Available Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#what-can-you-contribute">What can you contribute?</a></li>
+    <li><a href="#how-to-contribute">How to contribute?</a></li>
+    <li><a href="#how-to-make-a-pull-request">How to make a pull request?</a></li>
+    <li><a href="#quick-docker-setup">Quick Docker Setup</a></li>
+    <li><a href="#project-contributors">Project Contributors</a></li>
+    <li><a href="#license">License</a></li>
+</ul>
+</div>
+
  
  ## 📌 Open Source Program
+
 
  ### This project is now OFFICIALLY accepted for
  
@@ -46,21 +66,22 @@
   <img src="images/hack.jpeg" width="50%">
 </div>
   
-##  About METAVERSE
+<h2 id="about-metaverse">About METAVERSE</h2>
 Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!
 
 We also have a Discord server to discuss doubts and suggestions! Make sure to join it here: <br />
 [![image](https://github.com/Sibam-Paul/METAVERSE/assets/158052549/774e200e-e719-4920-bf81-8eb74f96fbdf)](https://discord.gg/dvHgzTMsap)
 
-## Announcement 📢
+<h2 id="announcement">Announcement 📢</h2>
+
 All of the projects of this repo can be seen in the deployment link in the **about** section
 
-## Achievement 🏆
+<h2 id="achievement">Achievement 🏆</h2>
 
 **METAVERSE** repo has secured a position in *top 50 maintainer repositories* in **QUINE HACTOBERFEST** challenge 🏅
 
-## Available Projects
+<h2 id="available-projects">Available Projects</h2>
 
 <table >
 <tr>
@@ -110,9 +131,9 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 & many more.......
 
 You can find All the Projects 
-<h2>Live Project -- https://apu52.github.io/METAVERSE/</h2>
+<h3>Live Project -- https://apu52.github.io/METAVERSE/</h2>
 
-## Blog
+<h2 id="blog">Blog</h>
 
 <h2>What You'll Discover Here:</h2>
 
@@ -122,18 +143,18 @@ You can find All the Projects
 
 - <h3>🚀Learning Opportunity:</h3> If you're new to metaverse development, this repository is an excellent launchpad. Collaborate with experienced metaverse developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.
 
-## What you can Contribute?
+<h2 id="what-can-you-contribute">What can you contribute?</h2>
 
 - Find All the details in [**CONTRIBUTING.md**](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md) before contributing
 - Please follow guidelines in [**Code_of_Conduct.md**](https://github.com/apu52/METAVERSE/blob/main/Code_of_conduct.md)
 
-## How to Contribute?
+<h2 id="how-to-contribute">How to contribute?</h2>
 
 - Drop a Star in this repo
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues).
 - Fork the Repo create a branch for any issue that you are working on and commit your work.
 - At first raise an issue in which you want to work
-- **Please do not make more than 1 issues at a time , Once your PR have been merged only then go for the next issue**
+- **Please do not make more than 2 issues at a time , Once your PR have been merged only then go for the next issue**
 - **Then when you are get assigned only then work on that issue & make a PR**
 - Please try to make a separate branch in your fork in case of PR
 - Create a [**Pull Request**](https://github.com/apu52/METAVERSE/pulls), which will be promptly reviewed and given suggestions for improvements by the community.
@@ -146,7 +167,8 @@ You can find All the Projects
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
 
-## How to make a Pull Request?
+<h2 id="how-to-make-a-pull-request">How to make a Pull Request?</h2>
+
 
 **1.** Start by forking the [**METAVERSE**](https://github.com/apu52/METAVERSE) repository. Click on the <a href="https://github.com/apu52/METAVERSE/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
@@ -224,7 +246,8 @@ git push origin YourBranchName
 
 Congratulations! You've made your first contribution! 🙌🏼
  
-## Quick Docker Setup 🐳
+<h2 id="quick-docker-setup">Quick Docker Setup 🐳</h2>
+
 ### Requirement:
 
 * Docker Desktop
@@ -271,7 +294,32 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <div align="center">
 
-## Project Admin/Mentors
+## GSSOC'24 Mentor 👨‍💻
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/heysagnik"><img src="images/sagnik.jfif" width=130px height=130px /></a></br> <h4 style="color:red;">Sagnik Sahoo</h4>
+ <a href="https://www.linkedin.com/in/heysagnik/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+   </td>
+
+</tr>
+</table>
+
+## SSOC'24 Mentor 👨‍💻
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/anuragverma108"><img src="images/Anurag.jfif" width=130px height=130px /></a></br> <h4 style="color:red;">Anurag Verma</h4>
+ <a href="https://www.linkedin.com/in/anurag-verma-b91417253/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+   </td>
+
+</tr>
+</table>
+
+
+<div align="center">
+
+## METAVERSE Project Moderators(admin)
 
 <table>
 <tr>
@@ -324,7 +372,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 
 
-## Project Contributors
+<h2 id="project-contributors">Project Contributors</h2>
 
 <p align ="center">
   <img src="https://api.vaunt.dev/v1/github/entities/apu52/repositories/METAVERSE/contributors?format=svg&limit=54" width="700" height= "250" />

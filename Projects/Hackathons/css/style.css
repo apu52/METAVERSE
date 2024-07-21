@@ -88,4 +88,121 @@ footer p{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
+    
+}
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 0 0;
+    font-family: 'Work Sans', sans-serif;
+    padding-top:2rem ;
+}
+
+.footer-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #00bfff;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:25vw;
+    margin: auto;
+    margin-top: 3rem;
+}
+.socials i{
+    font-size: 2rem;
+}
+.socials a:hover .fa-facebook {
+    color: #3b5998; /* Facebook blue */
+}
+
+.socials a:hover .fa-twitter {
+    color: #00acee; /* Twitter blue */
+}
+
+.socials a:hover .fa-instagram {
+    color: #e4405f; /* Instagram gradient color */
+}
+
+.socials a:hover .fa-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.socials li {
+    margin-bottom: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #3b5998; /* Default Facebook color */
+}
+
+.footer-bottom {
+    background: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+#one{
+    width:40vw;
+}
+#two{
+    width:40vw;
+}
+#foot{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+#twop{
+    height: 25vh;
 }
