@@ -37,7 +37,7 @@
 
 .calculator h1 span {
     background: -webkit-linear-gradient(#b6021a,#01311f);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
