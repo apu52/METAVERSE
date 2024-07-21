@@ -215,6 +215,71 @@ h1 {
   padding-top: 10px;
   border-top: 2px solid #f2cbd0;
 }
+
+/* Container styling */
+#faq {
+  padding: 2rem 0;
+  background-color: #f8f9fa; /* Light background for contrast */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Header styling */
+#faq .display-4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40; /* Darker text color */
+  margin-bottom: 2rem;
+}
+
+/* Accordion button styling */
+.accordion-button {
+  background-color: #ffffff; /* White background */
+  color: #343a40; /* Dark text color */
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 1.3rem; /* Slightly larger text */
+  font-weight: 600;
+}
+
+/* Accordion button hover and focus */
+.accordion-button:hover,
+.accordion-button:focus {
+  background-color: #e9ecef; /* Light gray background on hover */
+  color: #495057; /* Slightly lighter text color on hover */
+  box-shadow: none; /* Remove default shadow */
+}
+
+/* Accordion item styling */
+.accordion-item {
+  border: 1px solid #dee2e6; /* Light border around each item */
+  border-radius: 0.25rem; /* Rounded corners */
+  margin-bottom: 0.5rem; /* Space between items */
+}
+
+/* Accordion body styling */
+.accordion-body {
+  font-size: 1rem; /* Standard text size */
+  color: #495057; /* Darker text color */
+  padding: 1rem; /* Padding inside the body */
+}
+
+/* Active item styling */
+.accordion-button:not(.collapsed) {
+  color: #ffffff; /* White text color for active state */
+  background: linear-gradient(300deg, #f4b5b5, #e34159, rgb(197, 76, 76)); /* Bootstrap primary color */
+  border-color: #007bff; /* Match border color to background */
+}
+
+/* Disabled item styling */
+.accordion-button:disabled {
+  opacity: 0.5; /* Semi-transparent for disabled state */
+  cursor: not-allowed; /* Pointer cursor */
+}
+.display-4{
+  color: black;
+  font-weight: 400 !important;
+
 /* Contact Us Section */
 .contact-section {
   padding: 50px 0;
@@ -302,4 +367,5 @@ b, strong {
 #cont{
   margin-top: 1rem;
   margin-bottom: 2rem;
+
 }
