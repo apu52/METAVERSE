@@ -39,7 +39,7 @@
       <div class="container3">
         <span><ion-icon name="search"></ion-icon></span>
         <span><ion-icon name="heart"></ion-icon></span>
-        <span><ion-icon name="cart"></ion-icon></span>
+        <a href="cart.html" class="cart"><span><ion-icon name="cart" ></ion-icon></span></a>
       </div>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -84,97 +84,86 @@
     </div>
     <div class="banner1">
       <div class="food1 card">
-        <img src="buger.jpg" alt="">
+        <img src="burger.png" alt="Burger">
         <h2>Burger</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.79 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.79 <button data-item="Burger" data-price="79" data-image="burger.png">Order</button></p>
       </div>
       <div class="food1">
-        <img src="cake.jpg" alt="">
+        <img src="cake.jpg" alt="Pineapple Cake">
         <h2>Pineapple Cake</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.149 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.149 <button data-item="Pineapple Cake" data-price="149" data-image="cake.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="pasta.jpg" alt="">
+        <img src="pasta.jpg" alt="Red Sauce Pasta">
         <h2>Red Sauce Pasta</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.89 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.89 <button data-item="Red Sauce Pasta" data-price="89" data-image="pasta.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="pizza.jpg" alt="">
+        <img src="pizza.jpg" alt="Mushroom Pizza">
         <h2>Mushroom Pizza</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.199 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.199 <button data-item="Mushroom Pizza" data-price="199" data-image="pizza.jpg">Order</button></p>
       </div>
     </div>
     <div class="banner1">
       <div class="card">
-      <div class="food1">
-        <img src="lasagna.webp" alt="">
-        <h2>Lasagna</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.299 <button> Order </button></p>
+        <div class="food1">
+          <img src="lasagna.webp" alt="Lasagna">
+          <h2>Lasagna</h2>
+          <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+          <p class="money">Rs.299 <button data-item="Lasagna" data-price="299" data-image="lasagna.webp">Order</button></p>
+        </div>
       </div>
-      </div>
       <div class="food1">
-        <img src="juse.jpg" alt="">
+        <img src="juse.jpg" alt="Mix Fruit Juice">
         <h2>Mix Fruit Juice</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.59 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.59 <button data-item="Mix Fruit Juice" data-price="59" data-image="juse.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="Spanchi.jpg" alt="">
+        <img src="Spanchi.jpg" alt="Muffin">
         <h2>Muffin</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.99 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.99 <button data-item="Muffin" data-price="99" data-image="Spanchi.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="sandwich.jpg" alt="">
+        <img src="sandwich.jpg" alt="Sandwich">
         <h2>Sandwich</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.179 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.179 <button data-item="Sandwich" data-price="179" data-image="sandwich.jpg">Order</button></p>
       </div>
     </div>
     <div class="banner1">
       <div class="food1">
-        <img src="ice_cream.jpg" alt="">
+        <img src="ice_cream.jpg" alt="Strawberry Ice Cream">
         <h2>Strawberry Ice Cream</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.49/scoop <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.49/scoop <button data-item="Strawberry Ice Cream" data-price="49" data-image="ice_cream.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="chocolate.jpg" alt="">
+        <img src="chocolate.jpg" alt="Vanilla Filled Chocolates">
         <h2>Vanilla Filled Chocolates</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.89 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.89 <button data-item="Vanilla Filled Chocolates" data-price="89" data-image="chocolate.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="chocolate_Drink.jpg" alt="">
+        <img src="chocolate_Drink.jpg" alt="Chocolate Shake">
         <h2>Chocolate Shake</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.89 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.89 <button data-item="Chocolate Shake" data-price="89" data-image="chocolate_Drink.jpg">Order</button></p>
       </div>
       <div class="food1">
-        <img src="gallary_4.jpg" alt="">
+        <img src="gallary_4.jpg" alt="Dry-fruit Cake">
         <h2>Dry-fruit Cake</h2>
-        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium
-          velit iure?</p>
-        <p class="money">Rs.129 <button> Order </button></p>
+        <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae dolorum dicta praesentium velit iure?</p>
+        <p class="money">Rs.129 <button data-item="Dry-fruit Cake" data-price="129" data-image="gallary_4.jpg">Order</button></p>
       </div>
     </div>
-  </main>
+</main>
+
   <main class="main4" id="review">
     <div class="rev">
       <h1>Customer <span id="cust">Review</span></h1>
@@ -253,7 +242,13 @@
       <p>Fast Delivey</p>
       <p>Easy Payments</p>
       <p>24x7 Service</p>
+      <h3>Subscribe to Newsletter</h3>
+      <div class="Newsletter" >
+      <input type="text" class="input" placeholder="Enter Your Email id" required>
+      <button class="btn" >Subscribe</button></div>
     </div>
+  
+  
     <a href="#" class="back-to-top" id="backToTopBtn">↑</a>
   </footer>
 
