@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <title>Country Guide App</title>
-    <!-- links -->
-    <link rel="icon" type="image/svg+xml" href="./country-guide.svg" />
-    <!-- fontawesome icons -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <!-- importing google fonts  -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- other styles -->
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- bootstrap javascript -->
-    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- our main js file -->
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Guide</title>
+    <style>
+        body {
+            background-color: #2C3E50; /* Dark background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ECF0F1; /* Light text color */
+        }
+        .main {
+            text-align: center;
+            background-color: #34495E; /* Card background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498DB; /* Button background */
+            color: #fff; /* Button text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #2980B9; /* Button hover background */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Welcome to Country Guide</h1>
+        <p><a href="https://countryguide-5ne5ux013-nishants-projects-7fc25a7b.vercel.app/">Click Here To Visit</a></p>
+    </div>
+</body>
 </html>
