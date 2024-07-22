@@ -297,3 +297,188 @@ body {
 }
 
 /* ---------------> End Of Cart <---------------- */
+#footer {
+  color: #fff;
+  font-family: "Ubuntu";
+  padding: 60px;
+}
+.gradient-background{
+  background: #333;
+}
+
+#footer h4 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#footer h4::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background:var(--primaryColor);
+  left: 0;
+  bottom: 0;
+}
+
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+#footer ul li {
+  margin-bottom: 10px;
+}
+
+#footer ul li a {
+  color: aliceblue;
+  font-weight: 600;
+
+}
+
+#footer .signup_form {
+  padding-bottom: 30px;
+}
+
+#footer .signup_form input {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+#footer .signup_form button {
+  padding: 10px;
+  background: var(--primaryColor);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: black;
+}
+
+.footer-icon {
+  margin-right: 30px;
+}
+
+.footer-social-icons i {
+  font-size: 1.6rem;
+  margin: 0 10px;
+}
+
+.footer-social-icons i:hover {
+  color: #f2cbd0;
+  transform: scale(1.1);
+}
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.footer p {
+  margin: 0;
+}
+b, strong {
+  font-weight: 600;
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+}
+.location{
+  width: 20%;
+}
+.cnt{
+  width: 40%;
+}
+.cnt h3{
+  color: white;
+}
+.location h3{
+  color: white;
+}
+#cont{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+}
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .col-md-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-12 {
+      flex: 0 0 auto;
+      width: 100%;
+  }
+}
+.copyright {
+  text-align: center;
+  font-weight: 800;
+  padding-top: 10px;
+  border-top: 2px solid var(--primaryColor);
+  margin-top: 30px;
+}
+.gradient-background {
+  background: #333;
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+#footer h4 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+}
+#footer ul li a {
+  color: aliceblue;
+  font-weight: 600;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
