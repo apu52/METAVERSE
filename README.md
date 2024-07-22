@@ -162,7 +162,38 @@ You can find All the Projects
 - Find the already Existing Projects in the `Projects` Folder
 - Add screenshots or video prototypes to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
+<h2> Installation and Setup</h2>
 
+<h3> Prerequisites</h3>
+
+- Node.js
+- npm
+
+<h3> Steps</h3>
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/apu52/METAVERSE.git
+   ```
+2. **Navigate to the project directory**:
+    ```bash
+   cd METAVERSE
+   ```
+  
+3. **Install Dependencies**:
+    ```bash
+   npm install
+   ```
+4. **Run the project**:
+   ```bash
+   npm start
+   ```
+5. **Contribution Guidelines**
+Move detailed steps to a new `CONTRIBUTING.md` file and link to it:
+
+<h3> Contributing</h3>
+- Please read [CONTRIBUTING.md](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md) for details before contributing.
+- Follow the guidelines in [Code_of_Conduct.md](https://github.com/apu52/METAVERSE/blob/main/Code_of_Conduct.md).
 
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
