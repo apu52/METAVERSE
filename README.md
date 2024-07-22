@@ -46,18 +46,17 @@
 </div>
 
  
- ## 📌 Open Source Program
+<h2>📌 Open Source Program</h2>
 
+<h3> This project is now OFFICIALLY accepted for</h3>
 
- ### This project is now OFFICIALLY accepted for
  
 ![GSSOC](https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88)
 
 ![SSOC](https://github.com/apu52/METAVERSE/assets/114172928/f1f1c0d2-f6ef-4a6a-b853-1822dcdcee4e)
 
 
-
-### This project was part of following Open Source Programs
+<h3> This project was part of following Open Source Programs</h3>
 
 <div align="center">
   <img src="images/Codepeak Pic.png" width="50%">
@@ -131,7 +130,7 @@ All of the projects of this repo can be seen in the deployment link in the **abo
 & many more.......
 
 You can find All the Projects 
-<h3>Live Project -- https://apu52.github.io/METAVERSE/</h2>
+<h3>Live Project -- https://apu52.github.io/METAVERSE/</h3>
 
 <h2 id="blog">Blog</h>
 
@@ -208,7 +207,7 @@ git switch YourBranchName
 - In your forked repository click on `Fetch upstream`.
 - Click `Fetch and merge`.
 
-### Alternatively, Git CLI way to Sync forked repository with origin repository:
+<h3> Alternatively, Git CLI way to Sync forked repository with origin repository:</h3>
 
 ```bash
 git fetch upstream
@@ -218,7 +217,8 @@ git fetch upstream
 git merge upstream/main
 ```
 
-### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
+<h3 id="github-docs-syncing">Github Docs for Syncing</h3>
+<a href="https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">Read the documentation</a>
 
 **7.** Make your changes to the source code.
 
@@ -248,13 +248,15 @@ Congratulations! You've made your first contribution! 🙌🏼
  
 <h2 id="quick-docker-setup">Quick Docker Setup 🐳</h2>
 
-### Requirement:
+
+<h3> Requirement:</h3>
 
 * Docker Desktop
 
-### Let's Begin:
+<h3>Let's Begin:</h3>
+
 1. Make sure you have followed steps 1, 2, and 3 from the above procedure.
-2. #### Verify Docker Status:
+2. <h4>Verify Docker Status:</h4>
 To ensure a seamless Docker experience, it's essential to check the status of the Docker service on your system.To verify whether the Docker service is currently active or inactive, you can use the following steps:
 * Check Docker Service Status:
 ```bash
@@ -266,12 +268,12 @@ if it's inactive, you'll need to take corrective action.
 ```bash
 systemctl start docker
 ```
-3. #### Build:
+3. <h4>Build</h4>
 Now, let's build the Docker image named 'metaverse' using the docker build command:
 ```bash
 docker build -t metaverse .
 ```
-4. #### Run:
+4. <h4>Run </h4>
 Write the following command to run a Docker container named 'metaverseee'
 ```bash
 docker run -d -p 3000:80 --name metaverseee metaverse
@@ -281,7 +283,7 @@ docker run -d -p 3000:80 --name metaverseee metaverse
 ```bash
 localhost:3000
 ```
-7. #### Stop:
+7. <h4>Stop: </h4>
 Run the following command to stop the Docker container:
 ```bash
 docker stop [container ID]
@@ -294,7 +296,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <div align="center">
 
-## GSSOC'24 Mentor 👨‍💻
+<h2>GSSOC'24 Mentor 👨‍💻</h2>
 
 <table>
 <tr>
@@ -305,7 +307,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 </tr>
 </table>
 
-## SSOC'24 Mentor 👨‍💻
+<h2>SSOC'24 Mentor 👨‍💻</h2>
 
 <table>
 <tr>
@@ -319,7 +321,7 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <div align="center">
 
-## METAVERSE Project Moderators(admin)
+<h2>METAVERSE Project Moderators(admin)</h2>
 
 <table>
 <tr>
@@ -353,7 +355,8 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 <div align="center">
 
- # Project Admin
+ <h1>Project Admin</h1>
+
 <table>
 <tr>
 <td align="center"><a href="https://github.com/apu52"><img src="images/apu.jpeg" width=120px height=150px /></a></br> <h4 style="color:red;">Arpan Chowdhury</h4>
@@ -385,7 +388,9 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 
 Thank you to all the amazing contributors who have made this project possible!!💝
 
-## License 
+ 
+<h2> License</h2>
+
 <img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
