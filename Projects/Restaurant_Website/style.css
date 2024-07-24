@@ -92,6 +92,25 @@ a:hover {
     width: 20px;
     height: 20px;
   }
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* add this to make the nav sticky */
+    top: 0; /* add this to make the nav sticky */
+    width: 100%; /* add this to make the nav full width */
+    z-index: 50;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* add this to make the navigation full width */
+  }
+  
 }
 
 @media (max-width: 480px) {
