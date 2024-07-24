@@ -1,0 +1,47 @@
+@use "functions" as m;
+@use "variables";
+.card-display {
+  button {
+    margin: m.rem(20);
+    width: m.rem(120);
+    font-size: m.rem(14);
+    font-family: 500;
+    border: none;
+    text-align: center;
+    padding: m.rem(8) m.rem(20);
+    background-color: var(--Light_Mode_Background);
+    box-shadow: var(--Button_Shadow_Light);
+    color: var(--Light_Mode_Text);
+  }
+  .row {
+    margin-top: m.rem(50);
+    .flag {
+      width: m.rem(488);
+      display: block;
+      margin-inline: auto;
+    }
+  }
+  .content {
+    color: var(--Light_Mode_Text);
+    span {
+      font-weight: 200;
+    }
+    h1 {
+      font-size: m.rem(30);
+    }
+    .border-countries {
+      .border {
+        padding: m.rem(2) m.rem(5);
+        max-width: m.rem(140);
+        height: fit-content;
+        border-radius: m.rem(3);
+
+        cursor: pointer;
+        &:hover {
+          background: var(--Light_Mode_Hover);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
