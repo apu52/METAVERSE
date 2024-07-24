@@ -190,9 +190,7 @@ You can find All the Projects
 5. **Contribution Guidelines**
 Move detailed steps to a new `CONTRIBUTING.md` file and link to it:
 
-<h3> Contributing</h3>
-- Please read [CONTRIBUTING.md](https://github.com/apu52/METAVERSE/blob/main/CONTRIBUTING.md) for details before contributing.
-- Follow the guidelines in [Code_of_Conduct.md](https://github.com/apu52/METAVERSE/blob/main/Code_of_Conduct.md).
+
 
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
@@ -275,7 +273,9 @@ git push origin YourBranchName
 
 **10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-Congratulations! You've made your first contribution! 🙌🏼
+**Congratulations! You've made your first contribution!** 🙌🏼
+
+<p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
  
 <h2 id="quick-docker-setup">Quick Docker Setup 🐳</h2>
 
