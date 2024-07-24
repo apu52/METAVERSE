@@ -1,0 +1,237 @@
+
+:root {
+    --white-alpha-40: rgba(255, 255, 255, 0.40);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Animation Keyframes */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceTop {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+/* **** Background Circles ****  */
+
+.bg-circles div {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bg-circles .circle-1 {
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    left: 10%;
+    top: 20%;
+    opacity: 0.3;
+    filter: blur(10px);
+    animation: bounceTop 5s ease-in-out infinite;
+}
+
+.bg-circles .circle-2 {
+    height: 150px;
+    width: 150px;
+    background-color: #cc2b5e;
+    left: 29%;
+    top: 60%;
+    opacity: 0.4;
+    filter: blur(10px);
+    animation: zoomInOut 8s linear infinite;
+}
+
+.bg-circles .circle-3 {
+    height: 150px;
+    width: 150px;
+    background-color:#57bacd;
+    right: 28%;
+    top: 15%;
+    opacity: 0.6;
+    filter: blur(10px);
+    animation: zoomInOut 8s linear infinite;
+}
+
+.bg-circles .circle-4 {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    right: 10%;
+    top: 80%;
+    opacity: 0.6;
+    filter: blur(10px);
+    animation: bounceTop 8s linear infinite;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d48080, #ffb88c);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 5px rgba(110, 104, 104, 0.7);
+}
+
+.todo-app h2 {
+    color: #cc2b5e;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.todo-app h2 img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ee8e8e;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: #000;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ed5f4f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #cc2b5e;
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url('images/icon.png');
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url('images/check.png');
+    height: 50px;
+    width: 50px;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+/* Responsive Design  */
+
+@media (max-width:760px) {
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .row {
+        max-width: 400px;
+    }
+
+    button {
+        max-width: 400px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
