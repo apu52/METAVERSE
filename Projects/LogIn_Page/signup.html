@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Signup Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -26,7 +26,7 @@
 
 <body>
     <div class="container">
-        <h2 class="t-center">Login</h2>
+        <h2 class="t-center">Sign up</h2>
         <form action="">
             <div class="inputDiv">
                 <label for="name" class="username">Username</label>
@@ -37,18 +37,26 @@
                 <hr>
             </div>
             <div class="inputDiv">
-                <label for="password" class="username">Password</label>
+                <label for="password" class="username">Set Password</label>
                 <div class="userArea">
                     <i class="fa-solid fa-key"></i>
                     <input type="password" name="password" id="password" placeholder="Type your password">
                 </div>
                 <hr>
             </div>
+            <div class="inputDiv">
+                <label for="password" class="username">Confirm Password</label>
+                <div class="userArea">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="password" id="confpassword" placeholder="Type your password">
+                </div>
+                <hr>
+            </div>
 
-            <a href=forgot.html>Forgot password?</a>
-            <button type="submit" class="btn">Login</button>
+            
+            <button type="submit" class="btn" id="signup">Sign up</button>
             <div class="formBottom">
-                <p>Or Sign Up using</p>
+                <p>Or Login using</p>
                 <ul class="flexUl">
                     <li>
                         <a href="https://www.facebook.com" target="_blank">
@@ -66,11 +74,22 @@
                         </a>
                     </li>
                 </ul>
-                <p class="signUp">Or Sign Up using</p>
-                <p id="signUp"><a href="signup.html">SIGN UP</a></p>
+                <p class="signUp">Or Login using</p>
+                <p id="signUp"><a href="index.html">Login</a></p>
             </div>
         </form>
     </div>
+    <script>
+    document.getElementById('signup').addEventListener('click', function() {
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confpassword').value;
+    
+    if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+    }
+});
+
+    </script>
     <!-- Login Form using HTML and CSS by raju_webdev -->
 </body>
 
