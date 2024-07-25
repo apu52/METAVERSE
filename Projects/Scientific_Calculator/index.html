@@ -114,23 +114,23 @@ input[type="text"]{
 	</tr>
 
 	<tr>
-		<td><button type="button" value="1" onclick="number(value)"> 1 </button> </td>
-		<td><button type="button" value="2" onclick="number(value)"> 2 </button> </td>
-		<td><button type="button" value="3" onclick="number(value)"> 3 </button> </td>
+		<td><button type="button" value="1" onclick="number(this.value)"> 1 </button> </td>
+		<td><button type="button" value="2" onclick="number(this.value)"> 2 </button> </td>
+		<td><button type="button" value="3" onclick="number(this.value)"> 3 </button> </td>
 		<td><button type="button" value="BACKSPC" onclick="BACKSPC()"> < </button> </td>
 	</tr>
 
 	<tr>
-		<td><button type="button" value="4" onclick="number(value)"> 4</button> </td>
-		<td><button type="button" value="5" onclick="number(value)"> 5 </button> </td>
-		<td><button type="button" value="6" onclick="number(value)"> 6 </button> </td>
+		<td><button type="button" value="4" onclick="number(this.value)"> 4</button> </td>
+		<td><button type="button" value="5" onclick="number(this.value)"> 5 </button> </td>
+		<td><button type="button" value="6" onclick="number(this.value)"> 6 </button> </td>
 		<td><button type="button" value="-" onclick="number(value)"> - </button> </td>
 	</tr>
 
 	<tr>
-		<td><button type="button" value="7" onclick="number(value)"> 7 </button> </td>
-		<td><button type="button" value="8" onclick="number(value)"> 8 </button> </td>
-		<td><button type="button" value="9" onclick="number(value)"> 9 </button> </td>
+		<td><button type="button" value="7" onclick="number(this.value)"> 7 </button> </td>
+		<td><button type="button" value="8" onclick="number(this.value)"> 8 </button> </td>
+		<td><button type="button" value="9" onclick="number(this.value)"> 9 </button> </td>
 		<td><button type="button" value="/" onclick="number(value)"> / </button> </td>
 	</tr>
 
@@ -185,11 +185,26 @@ input[type="text"]{
 	}
 
 	function number(value){
-	document.calcul.result.value += value;
+		if (document.calcul.result.value === "0" || document.calcul.result.value === "") {
+    document.calcul.result.value = value;
+  } else {
+    document.calcul.result.value += value;
+  }
+
 	}
 
+	function operator(value) {
+  if (document.calcul.result.value.slice(-1) === '+' ||
+      document.calcul.result.value.slice(-1) === '-' ||
+      document.calcul.result.value.slice(-1) === '*' ||
+      document.calcul.result.value.slice(-1) === '/') {
+    document.calcul.result.value = document.calcul.result.value.slice(0, -1);
+  }
+  document.calcul.result.value += value;
+}
+
 	function remv(){
-	document.calcul.result.value=" ";
+	document.calcul.result.value="";
 	}
 
 	function equal(){
