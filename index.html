@@ -71,6 +71,11 @@
     z-index: 9999;
   }
   
+  @media (max-width: 740px) {
+    .circle-container{
+      display: none;
+    }
+  }
 </style>
 <body>
 
@@ -187,7 +192,16 @@
           <label class="number"></label>
         </div> 
       </div>
-
+      <div class="radio-wrapper">
+        <!-- <input type="radio" id="value-2" name="btn" class="input"> -->
+        <!-- <input type="radio" id="value-3" name="btn" class="input"> -->
+        <div class="btn" style="width: 115% !important;">
+          <a id="aid" class="nav-link" href="contributor.html">Contributors</a>
+          <!-- <span aria-hidden=""></span> -->
+          <!-- <span aria-hidden="" class="btn__glitch">CONTACT</span> -->
+          <label class="number"></label>
+        </div> 
+      </div>
 
     </div>
     <main>
@@ -230,12 +244,7 @@
         </div>
        
 
-  <!-- Contributors section -->
-  <div class="contributors">
-    <h1>Our Valuable Contributors</h1>
-    <div id="contributor"></div>
-  </div>
-</div>
+
   <!--
         FOOTER
   -->

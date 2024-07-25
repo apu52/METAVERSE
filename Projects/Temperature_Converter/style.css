@@ -17,7 +17,7 @@ body {
 
 .container {
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     width: 510px;
     /* height: 373px; */
@@ -27,14 +27,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    /* box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37); */
 }
 
 .container h1 {
     font-family: 'Montserrat', cursive;
     font-size: 2.6rem; 
     font-weight: 600; 
-    color: black;
+    color: #fc3503;
     text-align: center;
     user-select: none;
     letter-spacing: 1px;
@@ -43,7 +43,7 @@ body {
 .container h2 {
     font-family: 'Comfortaa', cursive;
     text-align: center;  
-    color: black;
+    color: #fc3503;
     font-weight: 700;
     font-size: 1.4rem;
     user-select: none;
@@ -60,7 +60,7 @@ body {
 
 #p1 {
     /* font-family: system-ui; */ 
-    color: black;
+    color: #fc3503;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -95,14 +95,14 @@ body {
 
 .inputs label {
     font-family: 'Comfortaa', sans-serif; 
-    color: black; 
+    color: #fc3503; 
     font-weight: 600; 
 } 
 
 input::placeholder {
     font-size: 1rem; 
     transform: translateY(-5px); 
-    color: rgba(0,0,0, 0.795);
+    color: rgba(252, 53, 3, 0.795);
 } 
 
 input::content {
@@ -131,7 +131,7 @@ input::content {
 
 .inptsss #type1, #type2 {
     border: none; 
-    color: black;
+    color: rgb(252, 53, 3);
     background-color: transparent;
 }
 
@@ -180,13 +180,20 @@ input::content {
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(10px);
-    color: black;
+    color: rgb(252, 53, 3);
     border-bottom: solid black 1px;
     border-top: none;
     border-left: none;
     border-right: solid black 1px;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0px 5px 7px 0px black;
+    transition: all 0.3s;
+}
+
+#btn:hover{
+    transform: translateY(3px);
+    box-shadow: 0px 2px 7px 0px black;
 }
 
 #btn:active {
@@ -194,7 +201,7 @@ input::content {
     font-size: 1.2rem;
     font-weight: 600;
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
-    color: black;
+    color: rgb(252, 53, 3);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -233,7 +240,7 @@ input::content {
 label {
     font-size: 17px;
     font-family: -webkit-pictograph;
-    color: black;
+    color: rgb(252, 53, 3);
 }
 
 .footer {
@@ -294,7 +301,7 @@ label {
 .background-image {
     margin: 0;
     padding: 0;
-    background: url(https://cdn.pixabay.com/photo/2020/01/15/09/36/thermometer-4767445_1280.jpg)  center / cover no-repeat fixed;
+    background: url(bgimg.jpg)  center / cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

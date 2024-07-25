@@ -390,3 +390,20 @@ footer h2{
 
 
 }
+   /* social icon hover */
+.icon_container .icon .fa-facebook:hover{
+    color:#1877F2;
+}
+.icon_container .icon .fa-instagram:hover{
+    color: rgb(219 39 119);
+}
+.icon_container .icon .fa-linkedin:hover{
+    color:#0a66c2;
+}
+.icon_container .icon .fa-twitter:hover{
+    color:#1DA1F2;
+}
+.icon a{
+    text-decoration: none;
+    color: white;
+}
