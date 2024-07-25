@@ -1,0 +1,68 @@
+@use "mixin" as m;
+:root {
+  --Dark_Mode_Elements: hsl(209, 23%, 22%);
+  --Dark_Mode_Background: hsl(207, 26%, 17%);
+  --Light_Mode_Text: hsl(200, 15%, 8%);
+  --Light_Mode_Input: hsl(0, 0%, 52%);
+  --Light_Mode_Background: hsl(0, 0%, 98%);
+  --Dark_Mode_Text: hsl(0, 0%, 100%);
+  --Light_Mode_Elements: hsl(0, 0%, 100%);
+  //   ma added styles
+  --Light_Mode_Shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  --Dark_Mode_Shadow: 0 0 20px rgba(233, 233, 233, 0.2);
+  --Button_Shadow_Light: 5px 10px 15px rgba(0, 0, 0, 0.1);
+  --Button_Shadow_Dark: 5px 10px 15px rgba(233, 233, 233, 0.1);
+  transition: 0.2s;
+  --Light_Mode_Border: hsl(200, 15%, 8%);
+  --Light_Mode_Hover: rgba(59, 59, 59, 0.15);
+}
+// toggling the dark theme and the light theme
+body.dark-mode {
+  --Light_Mode_Text: hsl(0, 0%, 100%);
+  --Light_Mode_Background: hsl(207, 26%, 17%);
+  --Light_Mode_Elements: hsl(209, 23%, 22%);
+  //   ma styles
+  --Light_Mode_Shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  --Button_Shadow_Light: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+  --Light_Mode_Border: hsl(0, 0%, 98%);
+  --Light_Mode_Hover: rgba(170, 170, 170, 0.5);
+}
+
+body {
+  @include m.changeTheme("dark") {
+    --Light_Mode_Text: hsl(0, 0%, 100%);
+    --Light_Mode_Background: hsl(207, 26%, 17%);
+    --Light_Mode_Elements: hsl(209, 23%, 22%);
+    //   ma styles
+    --Light_Mode_Shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    --Button_Shadow_Light: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+    --Light_Mode_Border: hsl(0, 0%, 98%);
+    --Light_Mode_Hover: rgba(170, 170, 170, 0.5);
+
+    // styles for the light mode when toggled
+    &.light-mode {
+      --Light_Mode_Text: hsl(200, 15%, 8%);
+      --Light_Mode_Input: hsl(0, 0%, 52%);
+      --Light_Mode_Background: hsl(0, 0%, 98%);
+      --Light_Mode_Elements: hsl(0, 0%, 100%);
+      //   ma added styles
+      --Light_Mode_Shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      --Button_Shadow_Light: 5px 10px 15px rgba(0, 0, 0, 0.1);
+      --Light_Mode_Border: hsl(200, 15%, 8%);
+      --Light_Mode_Hover: rgba(59, 59, 59, 0.15);
+    }
+  }
+  // @include m.changeTheme("light") {
+  //   --Light_Mode_Text: hsl(200, 15%, 8%);
+  //   --Light_Mode_Input: hsl(0, 0%, 52%);
+  //   --Light_Mode_Background: hsl(0, 0%, 98%);
+  //   --Light_Mode_Elements: hsl(0, 0%, 100%);
+  //   //   ma added styles
+  //   --Light_Mode_Shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  //   --Button_Shadow_Light: 5px 10px 15px rgba(0, 0, 0, 0.1);
+  //   --Light_Mode_Border: hsl(200, 15%, 8%);
+  //   --Light_Mode_Hover: rgba(59, 59, 59, 0.15);
+  // }
+}
