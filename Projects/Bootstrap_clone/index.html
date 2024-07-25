@@ -28,7 +28,7 @@
 <meta name="twitter:title" content="Bootstrap">
 <meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-QWtXg70B5aFfF7X67eKGG8LzCg+Y81TZoQO5t8Yv6UGLjU0V2KtpO6O2v8Ia0Jexj4GtqOg/UbGKoHK9pW4lKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <meta property="og:url" content="https://getbootstrap.com/">
 <meta property="og:title" content="Bootstrap">
 <meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
@@ -37,7 +37,9 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="2000">
 <meta property="og:image:height" content="1000">
-
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Include Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
   <body>
@@ -72,8 +74,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0" style="width: 40%;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Docs</a>
             </li>
@@ -91,7 +93,7 @@
               <a class="nav-link">Blog</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" style="margin-right: 25%;">
             <input
               class="form-control me-2"
               type="search"
@@ -100,6 +102,24 @@
             />
             <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
+          <div style="display: flex;gap:30px;">
+            <div style="border-right: solid 1px gray;display: flex;gap: 20px;padding-right: 20px;align-items: center;">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.305 3.438 9.8 8.208 11.385.6.11.793-.26.793-.577 0-.284-.01-1.042-.015-2.044-3.338.724-4.042-1.61-4.042-1.61-.545-1.382-1.333-1.752-1.333-1.752-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.805 1.305 3.49.998.108-.774.417-1.305.76-1.605-2.665-.307-5.466-1.333-5.466-5.93 0-1.31.465-2.38 1.236-3.22-.124-.308-.536-1.524.116-3.176 0 0 1.005-.322 3.3 1.23a11.517 11.517 0 0 1 3-.405c1.017.002 2.038.137 3 .405 2.292-1.552 3.296-1.23 3.296-1.23.654 1.652.242 2.868.118 3.176.77.84 1.234 1.91 1.234 3.22 0 4.61-2.805 5.62-5.475 5.922.43.372.817 1.1.817 2.22 0 1.606-.015 2.896-.015 3.286 0 .32.192.694.8.576C20.565 21.797 24 17.305 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="#1DA1F2" d="M22.46 5.5c-.81.36-1.68.6-2.58.71a4.53 4.53 0 0 0 1.98-2.5c-.87.52-1.84.9-2.87 1.1a4.56 4.56 0 0 0-7.79 4.15C6.34 8.8 3.53 6.12 1.44 3A4.54 4.54 0 0 0 2.3 9.8c-.75-.02-1.46-.22-2.08-.55v.06c0 2.1 1.51 3.85 3.5 4.25-.37.1-.77.15-1.18.15-.29 0-.58-.03-.86-.08.58 1.8 2.3 3.12 4.33 3.16a9.12 9.12 0 0 1-5.48 1.88c-.36 0-.71-.02-1.06-.07a12.87 12.87 0 0 0 6.88 2c8.3 0 12.86-6.9 12.86-12.86 0-.2 0-.4-.02-.6a9.13 9.13 0 0 0 2.24-2.34l.01-.02z"/>
+              </svg>
+              <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+            </div>
+            <div style="width: 55px;">v5.3<select style="background-color: transparent;border: none;outline: none;color: white;"></select></div>
+         
+          
+            
+            
+               
+          </div>
         </div>
       </div>
     </nav>
@@ -125,7 +145,7 @@
       </p>
     </div>
     <div class="buttn">
-      <button type="button" class="btn btn-outline-secondary">
+      <button  onclick="copyToClipboard()" type="button" class="btn btn-outline-secondary">
         npm i bootstrap@5.3.0
         <span class="material-symbols-outlined copy_btn"> content_paste </span>
       </button>
@@ -136,7 +156,9 @@
         </button>
       </span>
     </div>
-
+    <div id="copyPopup" class="copy-popup">
+      Text copied to clipboard!
+    </div>
     <div class="textInLine">
       <p class="text-body-secondary mb-0 paraText">
         <span>Currently <strong>v5.3.0</strong></span>
@@ -468,8 +490,22 @@
   
     </footer>
   
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
     "></script>
+    <script>
+      // Function to copy text to clipboard
+      function copyToClipboard() {
+        const text = 'npm i bootstrap@5.3.0';
+        navigator.clipboard.writeText(text);
+        
+        // Show copy confirmation popup
+        const copyPopup = document.getElementById('copyPopup');
+        copyPopup.style.display = 'block';
+        setTimeout(() => {
+          copyPopup.style.display = 'none';
+        }, 2000); // Hide popup after 2 seconds
+      }
+    </script>
   </body>
 </html>
