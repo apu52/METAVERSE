@@ -13,6 +13,16 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
 
 :root {
 
@@ -1174,4 +1184,223 @@ textarea.input-field {
 
   .contact-card .card-icon { padding: 15px; }
 
+}
+/* footer styling  */
+#footer {
+  color: #fff;
+  font-family: "Ubuntu";
+  padding: 60px;
+}
+.gradient-background{
+  background: #333;
+}
+
+
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+#footer ul li {
+  margin-bottom: 10px;
+}
+
+#footer ul li a {
+  color: aliceblue;
+  font-weight: 600;
+
+}
+
+#footer .signup_form {
+  padding-bottom: 30px;
+}
+
+#footer .signup_form input {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background: white;
+  margin-right: 5px;
+}
+
+#footer .signup_form button {
+  padding: 10px;
+  background-image: var(--gradient);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: black;
+}
+
+.footer-icon {
+  margin-right: 30px;
+}
+
+.footer-social-icons i {
+  font-size: 2.6rem;
+  margin: 0 10px;
+}
+
+.footer-social-icons i:hover {
+  color: #f2cbd0;
+  transform: scale(1.1);
+}
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.footer p {
+  margin: 0;
+}
+b, strong {
+  font-weight: 600;
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+}
+.location{
+  width: 20%;
+}
+.cnt{
+  width: 40%;
+}
+.cnt h3{
+  color: white;
+}
+.location h3{
+  color: white;
+}
+#cont{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+}
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .col-md-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-12 {
+      flex: 0 0 auto;
+      width: 100%;
+  }
+}
+.copyright {
+  text-align: center;
+  font-weight: 800;
+  padding-top: 10px;
+  border-top: 2px solid var(--gradient);
+  margin-top: 30px;
+}
+.gradient-background {
+  background: #333;
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+#footer h4 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+}
+#footer ul li a {
+  color: aliceblue;
+  font-weight: 600;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
+#footer {
+  color: #fff;
+  font-family: "Ubuntu";
+  padding: 60px;
+}
+#footer h4 {
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#footer h4::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-image: var(--gradient);
+  left: 0;
+  bottom: 0;
+}
+.subscribe{
+  display: flex;
+}
+button {
+  appearance: auto;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  writing-mode: horizontal-tb !important;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
 }

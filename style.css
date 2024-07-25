@@ -29,16 +29,30 @@
     top: 0px;
     left: 0;
     width: 100%;
-    height: 5px;
+    height: px;
     /* background-color: black; */
     z-index: 999;
   }
   .progress-bar{
-    height: 5px;
+    height: 7px;
     width: 0;
-    background-color: rgb(179, 76, 252);
-    
+    background-color: #f523f5;
+    opacity: 0.8;
+    transition: transform 0.1s, left 0.1s, top 0.1s;
+    box-shadow: 0 0 20px #23bdf5,
+      0 0 60px #f523f5,
+      0 0 100px #23bdf5;
   }
+
+  @keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
   
   .btn {
     /* --primary: #ff184c;
