@@ -34,7 +34,7 @@ body {
     font-family: 'Montserrat', cursive;
     font-size: 2.6rem; 
     font-weight: 600; 
-    color: rgb(255, 255, 255);
+    color: #fc3503;
     text-align: center;
     user-select: none;
     letter-spacing: 1px;
@@ -43,7 +43,7 @@ body {
 .container h2 {
     font-family: 'Comfortaa', cursive;
     text-align: center;  
-    color: rgb(255, 255, 255);
+    color: #fc3503;
     font-weight: 700;
     font-size: 1.4rem;
     user-select: none;
@@ -60,7 +60,7 @@ body {
 
 #p1 {
     /* font-family: system-ui; */ 
-    color: rgb(255, 255, 255);
+    color: #fc3503;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -95,14 +95,14 @@ body {
 
 .inputs label {
     font-family: 'Comfortaa', sans-serif; 
-    color: rgb(255, 255, 255); 
+    color: #fc3503; 
     font-weight: 600; 
 } 
 
 input::placeholder {
     font-size: 1rem; 
     transform: translateY(-5px); 
-    color: rgba(255, 255, 255, 0.795);
+    color: rgba(252, 53, 3, 0.795);
 } 
 
 input::content {
@@ -131,7 +131,7 @@ input::content {
 
 .inptsss #type1, #type2 {
     border: none; 
-    color: rgb(255, 255, 255);
+    color: rgb(252, 53, 3);
     background-color: transparent;
 }
 
@@ -180,7 +180,7 @@ input::content {
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(10px);
-    color: rgb(255, 255, 255);
+    color: rgb(252, 53, 3);
     border-bottom: solid black 1px;
     border-top: none;
     border-left: none;
@@ -201,7 +201,7 @@ input::content {
     font-size: 1.2rem;
     font-weight: 600;
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0)); 
-    color: rgb(255, 255, 255);
+    color: rgb(252, 53, 3);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -240,7 +240,7 @@ input::content {
 label {
     font-size: 17px;
     font-family: -webkit-pictograph;
-    color: rgb(255, 255, 255);
+    color: rgb(252, 53, 3);
 }
 
 .footer {
