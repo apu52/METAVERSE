@@ -681,7 +681,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-
+/*  */
 .subscribe__form form {
   width: 100%;
   max-width: 400px;
@@ -704,7 +704,7 @@ header {
 .subscribe__form input:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+/*  */
 .toTop {
   width: 3vw;
   aspect-ratio: 1;
