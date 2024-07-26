@@ -12,6 +12,23 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.nav-bar{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+
+.nav-bar li a{
+  color: rgb(170, 167, 167) !important;
+  transition-duration: 0.5s !important;
+}
+
+.nav-bar li a:hover{
+  color: white !important;
+}
+
 button {
   padding: 10px 15px;
   border: none;
@@ -37,15 +54,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
-
 .logo_container {
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .logo_container img {
-  width: 40px;
-  height: 40px;
+  height: 60px;
 }
 
 
