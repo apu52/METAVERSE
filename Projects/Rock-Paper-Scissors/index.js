@@ -7,6 +7,7 @@ const result_p=document.querySelector(".result>p");
 const rock_div=document.getElementById("rock")
 const paper_div=document.getElementById("paper")
 const scissors_div=document.getElementById("scissors")
+const reset=document.getElementById("reset");
 
 function getComputerChoice(){
     const choices=['rock', 'paper', 'scissors'];
@@ -73,7 +74,14 @@ function game(userChoice){
 }
 
 
+function resetButton(){
+    userScore = 0;
+  compScore = 0;
+  userScore_span.innerHTML = userScore;
+  compScore_span.innerHTML = compScore;
+  result_p.innerHTML = "";
 
+}
 
 function main(){
 
@@ -86,6 +94,10 @@ function main(){
     })
     scissors_div.addEventListener('click', function(){
         game("scissors");
+    })
+
+    reset.addEventListener('click',function(){
+        resetButton();
     })
 
 }
