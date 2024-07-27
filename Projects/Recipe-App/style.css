@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,12 +13,11 @@ body {
 
 header nav {
     background-color: #212121;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-
 }
 
 header nav h1 {
@@ -30,9 +29,7 @@ header nav h1 {
 }
 
 header nav form {
-    display: flex;
-    justify-content: center;
-
+ display: flex;
 }
 
 form input[type="text"],
@@ -40,7 +37,7 @@ button [type="submit"] {
     border: none;
     font-size: 18px;
     padding: 10px;
-    border-radius: 4px;
+    border-left: 15px;
 }
 
 form button[type="submit"] {
@@ -48,6 +45,8 @@ form button[type="submit"] {
     color: #ffff;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+    padding: 10px;
+
 }
 
 form button[type="submit"]:hover,
@@ -57,8 +56,8 @@ form button[type="submit"]:hover,
         flex-direction: column;
     }
 }
-
-/*Main Section*/
+/*
+/*Main Section
 .recipe-container {
     text-align: center;
     display: grid;
@@ -95,8 +94,8 @@ form button[type="submit"]:hover,
     margin-block: 5px;
 }
 
-recipe p {
-    font-size: 20px;
+.recipe p {
+    font-size: 15px;
     color: #4a4a4a;
     margin: 5px 0;
 }
@@ -116,7 +115,9 @@ recipe p {
     background-color: #f44336;
     color: #fff;
 }
-
+.recipe button:hover {
+    transform: scale(1.12);
+}
 .recipe-details {
     display: none;
     position: fixed;
@@ -205,7 +206,6 @@ body::-webkit-scrollbar-track {
     align-items: center;
 }
 
-/*Responsive code*/
 @media screen and (max-width:600px) {
     header nav {
         flex-direction: column;
@@ -218,7 +218,7 @@ body::-webkit-scrollbar-track {
     }
 }
 
-/* *: Selects all elements on the page.
+: Selects all elements on the page.
 margin: 0; padding: 0;: Resets the margin and padding of all elements to zero, providing a consistent starting point.
 box-sizing: border-box;: Ensures that the width and height of an element include padding and border, but not the margin.
 font-family: Verdana, Geneva, Tahoma, sans-serif;: Sets a default font family for all text on the page.
@@ -437,3 +437,132 @@ Copy code
 
 
 */
+
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual recipe card */
+.recipe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+/* Image inside the recipe card */
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.recipe img:hover{
+    transform: scale(1.02);
+}
+
+/* Recipe title */
+.recipe h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Recipe details */
+.recipe p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Highlight span inside paragraph */
+.recipe p span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* View Recipe button */
+.recipe button {
+    background-color: rgb(136, 1, 1);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.recipe button:hover {
+    background-color: rgb(136, 1, 1);
+}
+
+/* Recipe card hover effect */
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+#recipeForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Search input box */
+.searchBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Input focus effect */
+.searchBox:focus {
+    border-color: #007bff;
+}
+
+/* Search button */
+.searchBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.searchBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Icon inside button */
+.searchBtn i {
+    margin-right: 5px;
+}
