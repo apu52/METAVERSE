@@ -238,3 +238,121 @@ li{
   ::-webkit-scrollbar-thumb:hover {
     background: #1b0093
   }
+
+
+  @media (max-width : 1000px) {
+    
+    .skills-info{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 50px;
+        margin: 0 50px;
+    }
+
+    .skills-description{
+        margin-left: 50px;
+    }
+
+    .education-all{
+        margin-left: 50px;
+    }
+
+    .edu-list .item{
+        width: 400px;
+    }
+
+    .bars{
+        width: 400px;
+    }
+
+    .bars .line{
+        height: 5px;
+    }
+
+    .bars .info{
+        font-size: 0.8em;
+    }
+
+    .skills-description h3{
+        font-size: 1.5em;
+    }
+
+    .skills-info h4{
+        font-size: 1.2em;
+    }
+
+    .edu-list .item .year{
+        font-size: 0.8em;
+    }
+
+    .edu-list .item p{
+        font-size: 0.8em;
+    }
+
+    .bars .info span{
+        font-size: 0.8em;
+    }
+
+    .bars .line:before{
+        border-radius: 2px;
+    }
+
+    .bars .html:before{
+        width: 100%;
+    }
+
+    .bars .css:before{
+        width: 40%;
+    }
+
+    .bars .javascript:before{
+        width: 13%;
+    }
+
+    .bars .python:before{
+        width: 47%;
+    }
+
+    .container h1{
+        font-size: 40px;
+    }
+
+    .skills-info h4 label{
+        font-size: 0.8em;
+    }
+
+    .bars .line{
+        height: 5px;
+    }
+
+    .bars .info{
+        font-size: 0.8em;
+    }
+
+    .bars .info span{
+        font-size: 0.8em;
+    }
+
+    .skills-description h3{
+        font-size: 1.5em;
+    }
+
+    .skills-info h4{
+        font-size: 1.2em;
+    }
+
+    .edu-list .item .year{
+        font-size: 0.8em;
+    }
+
+    .edu-list .item p{
+        font-size: 0.8em;
+    }
+
+    .bars .info span{
+        font-size: 0.8em;
+    }
+
+    .bars .line:before{
+        border-radius: 2px;
+    }
+  }
