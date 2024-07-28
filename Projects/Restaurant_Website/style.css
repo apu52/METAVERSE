@@ -32,40 +32,45 @@ body {
 button {
   padding: 10px 15px;
   border: none;
-  transition: 0.2 ease-in-out;
+  transition: 0.2s ease-in-out;
 }
+
 button:hover {
   opacity: 0.8;
-  transition: 0.2 ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-/*Navigatin */
-
+/* Navigation styling */
 nav {
   background-color: #333;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   z-index: 50;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+
 .logo_container {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .logo_container img {
   height: 60px;
+  margin-right: 10px; /* Adjust the spacing as needed */
 }
 
-
+.logo_container h2 {
+  color: rgb(170, 167, 167);
+  transition-duration: 0.5s !important;
+}
 .bar_icon {
   display: none;
 }
