@@ -639,7 +639,7 @@ body { background: var(--white); }
   transition: var(--transition);
 }
 
-.social-link:is(:hover, :focus) { background: var(--red-crayola); }
+/* .social-link:is(:hover, :focus) { background: var(--red-crayola); } */
 
 
 
@@ -1178,4 +1178,121 @@ body { background: var(--white); }
 
   .newsletter-content { width: 55%; }
 
+}
+
+/* FAQ Section */
+.faq {
+  padding: 5rem 0;
+  background-color: #f9f9f9;
+}
+
+.faq .section-subtitle,
+.faq .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+.faq-answer p {
+  margin: 1rem 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 150px; /* Adjust as needed */
+}
+
+ .faq-item.active .faq-question {
+      background: var(--red-crayola);
+  color: #fff;
+} 
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .header,
+body.dark-mode .footer,
+body.dark-mode .faq,
+body.dark-mode .features,
+body.dark-mode .service,
+body.dark-mode .blog,
+body.dark-mode .newsletter {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .faq-question {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode .faq-item.active .faq-question {
+  background-color: var(--red-crayola);
+}
+
+body.dark-mode .faq-item {
+  border-color: #444;
+}
+
+body.dark-mode .nav-toggle-btn,
+body.dark-mode .nav-toggle-btn .open,
+body.dark-mode .nav-toggle-btn .close {
+  color: #f1f1f1;
+}
+
+body.dark-mode .toggle label {
+  background-color: #333;
+}
+
+body.dark-mode .toggle input:checked + label {
+  background-color: #0077B5;
+}
+/* social icon */
+#fb:is(:hover, :focus) {
+  background: 	#1877F2;
+}
+#insta:is(:hover, :focus) {
+  background:  linear-gradient(45deg, #833AB4, #FD1D1D, #FCB045);;
+}
+#linkd:is(:hover, :focus) {
+  background:  #0077B5 ;
+}
+#twit:is(:hover, :focus) {
+  background:  #1DA1F2;
 }
