@@ -63,3 +63,31 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+
+  const toggleSwitch = document.querySelector('#toggle');
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme) {
+    document.body.classList.add(currentTheme);
+    if (currentTheme === 'dark-mode') {
+      toggleSwitch.checked = true;
+    }
+  }
+
+  toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', '');
+    }
+  });
+});
