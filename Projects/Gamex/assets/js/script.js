@@ -46,3 +46,26 @@ window.addEventListener("scroll", function () {
   }
 
 })
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.querySelector(".contact-form");
+
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
+
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    // Here, you can add your form submission logic, such as sending the data to a server.
+
+    alert("Thank you for your message!");
+
+    // Reset form after submission
+    contactForm.reset();
+  });
+});
