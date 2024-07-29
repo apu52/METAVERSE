@@ -29,6 +29,10 @@ img {
   font-size: 40px;
   letter-spacing: 5px;
 }
+.news-card:hover{
+  scale: 1.05;
+  transition: all ease-in 0.2s;
+}
 .options-container {
   margin: 10em 0 2em 0;
   display: flex;
