@@ -352,3 +352,15 @@ border-radius: 16px;
   text-decoration: none;
   line-height: 0%;
 }
+.copy-popup {
+  position: fixed;
+  left: 42%;
+  bottom: 30px;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.9);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+  z-index: 9999;
+}
