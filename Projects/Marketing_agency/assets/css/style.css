@@ -1404,3 +1404,69 @@ button {
   border-color: buttonborder;
   border-image: initial;
 }
+.faq {
+  padding: 2rem 0;
+}
+
+.faq-accordion {
+  border-top: 1px solid #ddd;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+
+.faq-toggle:hover {
+  background-color: #f7f7f7;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.faq-toggle[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-content {
+  display: none;
+  padding: 0 1rem;
+  font-size: 1.9rem;
+  color: #555;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.faq-content[aria-hidden="false"] {
+  display: block;
+}
+
+.faq-link {
+  color: #13c4a1;
+  text-decoration: none;
+}
+
+.faq-link:hover {
+  text-decoration: underline;
+}
+.faq-toggle:hover{
+  background-image: var(--gradient);
+  color: white;
+}

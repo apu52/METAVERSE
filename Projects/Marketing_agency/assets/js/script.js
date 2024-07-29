@@ -56,3 +56,23 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        
+        // Close all other sections
+        document.querySelectorAll('.faq-content').forEach(content => {
+          content.setAttribute('aria-hidden', 'true');
+          content.previousElementSibling.setAttribute('aria-expanded', 'false');
+        });
+        
+        // Toggle current section
+        toggle.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+        toggle.nextElementSibling.setAttribute('aria-hidden', isExpanded ? 'true' : 'false');
+      });
+    });
+  });
