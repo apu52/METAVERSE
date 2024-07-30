@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Registration</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="formbox">
+      <h2>REGISTER</h2>
+      <form action="#" onsubmit="submitForm(); return false;">
+        <div class="inputbox">
+          <input type="text" id="name" required>
+          <label>Name</label>
+        </div>
+        
+        <div class="inputbox">
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+        
+        <div class="inputbox">
+          <input type="tel" id="phone" required>
+          <label>Phone Number</label>
+        </div>
+        
+        <div class="inputbox">
+          <input type="password" id="password" required>
+          <label>Password</label>
+        </div>
+
+        <div class="inputbox">
+            <input type="password" id="confirm" required>
+            <label>Confirm Password</label>
+        </div>
+        
+        <div class="inputbox">
+          <input type="text" id="hostel" required>
+          <label>Hostel</label>
+        </div>
+        
+        <div class="inputbox">
+          <input type="text" id="room" required>
+          <label>Room No.</label>
+        </div>
+        
+        <div class="button">
+          <button type="submit" class="btn">REGISTER</button>
+        </div>
+        
+        <div class="login">
+          <p>Already have an account?
+            <a href="./login.html" class="login1">LOGIN</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="http://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    function submitForm(){
+      alert("Registration successful! Redirecting to login page.");
+      window.location.href = './login.html';
+    }
+  </script>
+</body>
+</html>
