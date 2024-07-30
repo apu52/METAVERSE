@@ -362,18 +362,19 @@ section .card:hover {
 
 .main2 .box4 {
 
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
 }
 
 .main2 .box4 .item4 h1 {
     text-align: center;
     font-family: cursive;
-    padding: 0px 600px 0px 0px;
+    padding: 0px 430px 0px 0px;
+    /* font-size: 2vw; */
 }
 
 .us {
@@ -617,6 +618,10 @@ section .card:hover {
 
 }
 
+.main4 .rev h1{
+    text-align: center;
+    padding: 10px 0;
+}
 .main4 .banner4 {
     width: 100%;
     /* height: 450px; */
