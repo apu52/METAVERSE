@@ -112,7 +112,7 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+              <a href="#contact" class="navbar-link skewBg" data-nav-link>Contact</a>
             </li>
 
           </ul>
@@ -910,7 +910,35 @@
 
         </div>
       </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title h2" id="contact">Contact Us</h2>
+      <p class="section-subtitle">We would love to hear from you!</p>
 
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="contact-form-wrapper">
+            <form action="/submit-form" method="post">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -949,6 +977,8 @@
 
         </div>
       </section>
+
+
 
     </article>
   </main>
