@@ -122,45 +122,48 @@ li a{
    letter-spacing: 2px;
 } */
 
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    background-color: #f4f4f4;
-}
-
-.about-box {
-    background: linear-gradient(145deg, #271a5c, #755cb9);
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-    transform-style: preserve-3d;
-    transform: perspective(1000px) rotateY(20deg);
-    transition: transform 0.3s ease-in-out;
-}
-
-.about-box:hover {
-    transform: perspective(1000px) rotateY(0deg);
-}
-
-.about-box h1 {
+#about{
+    margin:30px 30px 60px 30px;
     text-align: center;
-    color: #fff9f9;
-    margin-bottom: 20px;
+    padding: 100px 30px 100px 30px;
+
+    /* min-height: 100%; */
+    position:relative;
+
+}
+#about h1
+{
+    margin:auto 0;
 }
 
-.about-box p {
-    color: #fefbfb;
-    line-height: 1.6;
-    margin: 10px 0;
+#about::before {
+    content: "";
+    background-image: url(LOGO-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 500px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.35;
 }
 
-.about-box span {
-    font-weight: bold;
-    color: #fcf5f5;
+
+
+
+#about h1{
+    font-size: 50px;
+    font-family: 'Ysabeau', sans-serif;
+
+}
+
+#about p{
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: rgb(59, 59, 135);
 }
 
 #issues{
