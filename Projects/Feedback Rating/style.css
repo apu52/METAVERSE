@@ -5,8 +5,10 @@
 }
 
 body {
-  background-color: #fef9f2;
-  font-family: "Montserrat", sans-serif;
+  background: url(./assests/images.jpg)no-repeat;
+  background-size: 100%;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +18,7 @@ body {
 }
 
 .panel-container {
-  background-color: #fef9f2;
+  background-color: white;
   box-shadow: 0 0 40px rgba(185, 20, 20, 0.676);
   border-radius: 4px;
   font-size: 90%;
@@ -26,7 +28,9 @@ body {
   align-items: center;
   text-align: center;
   padding: 30px;
-  max-width: 400px;
+  max-width: 700px;
+  height: 400px;
+  
 }
 
 .panel-container strong {
@@ -35,20 +39,23 @@ body {
 
 .ratings-container {
   display: flex;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .rating {
+  background-color: white;
   flex: 1;
   cursor: pointer;
   padding: 20px;
   margin: 10px 5px;
+  width: 120px;
 }
 
 .rating:hover,
 .rating.active {
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .rating img {
@@ -56,6 +63,7 @@ body {
 }
 
 .rating small {
+  font-size: 15px;
   color: #555;
   display: inline-block;
   margin: 10px 0 0;
@@ -67,15 +75,25 @@ body {
 }
 
 .btn {
-  color: #ecbfc2cf;
-  background-color: #4f0a0a;
-  border: 0;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 20px;
   border-radius: 4px;
   padding: 12px 30px;
   font-family: inherit;
   cursor: pointer;
-}
+  animation: pulse-animation 2s infinite;
 
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
 .btn:focus {
   outline: none;
 }

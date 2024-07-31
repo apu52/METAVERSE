@@ -1,0 +1,22 @@
+@use "sass:map" as m;
+@use "functions" as f;
+$themes: (
+  "dark": " prefers-color-scheme: dark ",
+  "light": " prefers-color-scheme: light ",
+);
+$grid-breakpoints: (
+  "xs": f.rem(0),
+  "small": f.rem(525),
+  "medium": f.rem(768),
+  "largeg": f.rem(1024),
+);
+@mixin changeTheme($value) {
+  @media (m.get($themes,$value)) {
+    @content;
+  }
+}
+@mixin smallScreen($value) {
+  @media (max-width: m.get($grid-breakpoints,$value)) {
+    @content;
+  }
+}

@@ -5,16 +5,15 @@
     box-sizing: border-box;
 }
 .hero{
-    width: 100%;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
     min-height: 100vh;
     background: linear-gradient(45deg,#08001f,#30197d);
     color: #fff;
     position: relative;
 }
 .container{
-    width: 99vw;
-    max-width: 800px;
-
+    width: -webkit-fill-available;
     height: 180px;
     position: absolute;
     top: 50%;

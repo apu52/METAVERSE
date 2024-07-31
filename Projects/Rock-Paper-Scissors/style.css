@@ -95,3 +95,20 @@ body{
     font-size: 25px;
 }
 
+#reset {
+    background-color: rgb(154, 25, 25);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;  
+  }
+  
+  #reset:hover {
+    background-color: rgb(152, 65, 65);
+  }
+  

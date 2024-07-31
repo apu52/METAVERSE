@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
+  <title> 🐍 Snake Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+
+
 </head>
 <body>
-    <div class="playground">
-       
-    </div>
-    <div class="snake"></div>
-    <div class="food"></div>
-   <div class="score">
-    <div class="input">MOVE<input type="text"></div>
-    <br><br>
-    <h1>SCORE : 0 </h1>
-   </div>
-   
-    <Script src="app.js"></Script>
+
+<div>
+<div class="container er"  style="height:600px;width:600px;top: 0; bottom: 0; margin: auto; position: absolute; left: 0; right: 0;">
+<div class="hideThis"><p>Press <span class="glyphicon glyphicon-arrow-up"></span>  , <span class="glyphicon glyphicon-arrow-left"></span> , <span class="glyphicon glyphicon-arrow-down"></span> , <span class="glyphicon glyphicon-arrow-right"></span> To Start Game</p></div>
+<div class="row">
+<div class="col-md-1 00" ></div><div class="col-md-1 01"  ></div><div class="col-md-1 02"  ></div><div class="col-md-1 03"  ></div><div   class="col-md-1 04"></div><div   class="col-md-1 05"></div><div   class="col-md-1 06"></div><div   class="col-md-1 07"></div><div   class="col-md-1 08"></div><div   class="col-md-1 09"></div>
+</div>
+<div class="row">
+<div class="col-md-1 10"  ></div><div class="col-md-1 11"  ></div><div class="col-md-1 12"  ></div><div class="col-md-1 13"  ></div><div class="col-md-1 14"  ></div><div class="col-md-1 15"  ></div><div class="col-md-1 16"  ></div><div class="col-md-1 17"  ></div><div class="col-md-1 18"  ></div><div class="col-md-1 19"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 20"  ></div><div class="col-md-1 21"  ></div><div class="col-md-1 22"  ></div><div class="col-md-1 23"  ></div><div class="col-md-1 24"  ></div><div class="col-md-1 25"  ></div><div class="col-md-1 26"  ></div><div class="col-md-1 27"  ></div><div class="col-md-1 28"  ></div><div class="col-md-1 29"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 30"  ></div><div class="col-md-1 31"  ></div><div class="col-md-1 32"  ></div><div class="col-md-1 33"  ></div><div class="col-md-1 34"  ></div><div class="col-md-1 35"  ></div><div class="col-md-1 36"  ></div><div class="col-md-1 37"  ></div><div class="col-md-1 38"  ></div><div class="col-md-1 39"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 40"  ></div><div class="col-md-1 41"  ></div><div class="col-md-1 42"  ></div><div class="col-md-1 43"  ></div><div class="col-md-1 44"  ></div><div class="col-md-1 45"  ></div><div class="col-md-1 46"  ></div><div class="col-md-1 47"  ></div><div class="col-md-1 48"  ></div><div class="col-md-1 49"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 50"  ></div><div class="col-md-1 51"  ></div><div class="col-md-1 52 " ></div><div class="col-md-1 53 " ></div><div class="col-md-1 54"  ></div><div class="col-md-1 55"  ></div><div class="col-md-1 56"  ></div><div class="col-md-1 57"  ></div><div class="col-md-1 58"  ></div><div class="col-md-1 59"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 60"  ></div><div class="col-md-1 61"  ></div><div class="col-md-1 62"  ></div><div class="col-md-1 63"  ></div><div class="col-md-1 64"  ></div><div class="col-md-1 65"  ></div><div class="col-md-1 66"  ></div><div class="col-md-1 67"  ></div><div class="col-md-1 68"  ></div><div class="col-md-1 69"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 70"  ></div><div class="col-md-1 71"  ></div><div class="col-md-1 72"  ></div><div class="col-md-1 73"  ></div><div class="col-md-1 74"  ></div><div class="col-md-1 75"  ></div><div class="col-md-1 76"  ></div><div class="col-md-1 77"  ></div><div class="col-md-1 78"  ></div><div class="col-md-1 79"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 80"  ></div><div class="col-md-1 81"  ></div><div class="col-md-1 82"  ></div><div class="col-md-1 83"  ></div><div class="col-md-1 84"  ></div><div class="col-md-1 85"  ></div><div class="col-md-1 86"  ></div><div class="col-md-1 87"  ></div><div class="col-md-1 88"  ></div><div class="col-md-1 89"  ></div>
+</div>
+<div class="row">
+<div class="col-md-1 90"  ></div><div class="col-md-1 91"  ></div><div class="col-md-1 92"  ></div><div class="col-md-1 93"  ></div><div class="col-md-1 94"  ></div><div class="col-md-1 95"  ></div><div class="col-md-1 96"  ></div><div class="col-md-1 97"  ></div><div class="col-md-1 98"  ></div><div class="col-md-1 99"  ></div>
+</div>
+</div>
+<h1  id="scoreCard"> ✨ Score - <span id="scoreCardPrint">0</span> </h1>
+<h1  id="titlee"> <span>Snake Game 🐍</span> </h1>
+</div>
 </body>
 </html>

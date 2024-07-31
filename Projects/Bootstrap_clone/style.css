@@ -320,6 +320,14 @@ border-radius: 16px;
   float: right;
 }
 
+.footer-links > p{
+  transition-duration: 0.2s;
+}
+
+.footer-links > p:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 1000px) {
   .section-5 img {
@@ -343,4 +351,16 @@ border-radius: 16px;
   font-size: smaller;
   text-decoration: none;
   line-height: 0%;
+}
+.copy-popup {
+  position: fixed;
+  left: 42%;
+  bottom: 30px;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.9);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+  z-index: 9999;
 }
