@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: black;
+	overflow-x: hidden;
+}
+
+/* MENU + LOGIN + SIGNUP + CONTACT PAGE */
+.head_container {
+	margin-top: 66px;
+}
+
+.head_container::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(https://cdn.tasteatlas.com//images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg?mw=1800);
+	background-size:cover;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+.head_container .mainhead {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.head_container .mainhead h1 {
+	font-family: "Bree Serif", serif;
+	font-size: 3.8rem;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+/* MENU PAGE SPECIFICS */
+.menu-container {
+	padding: 55px 10px 30px 10px;
+	background-color: rgb(224, 224, 252);
+}
+
+.menu-container .container-fluid {
+	width: 80%;
+}
+
+@media screen and (width>=360px) and (width<=576px) {
+	.menu-container .container-fluid {
+		width: 60%;
+	}
+}
+
+@media screen and (width < 360px) {
+	.menu-container .container-fluid {
+		width: 100%;
+	}
+}
+
+.menu-container .nav-pills {
+	padding-bottom: 50px;
+}
+
+.menu-container .nav-pills button {
+	padding: 0.5rem 0.3rem;
+	text-transform: uppercase;
+	border-radius: 20px;
+}
+
+.menu-container .nav-pills .nav-link {
+	color: rgb(204, 12, 12);
+}
+
+.menu-container .nav-pills .nav-link.active {
+	background-color: rgb(204, 12, 12);
+	color: white;
+}
+
+.menu-items .row {
+	align-items: stretch;
+}
+
+.menu-items .card {
+	height: 100%;
+	background: white;
+	border: 1px solid rgb(186, 186, 201);
+	border-radius: 20px;
+	text-align: center;
+	font-family: "Bree Serif", serif;
+	transition: all 0.4s linear;
+}
+
+.menu-items .card:hover {
+	box-shadow: 0 0 10px rgba(224, 224, 252, 0.678);
+	transform: translateY(-5px);
+}
+
+.menu-items .card-thumbnail img {
+	object-fit: cover;
+	width: 100%;
+	aspect-ratio: 7/5;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.menu-items .black-overlay:before {
+	content: "";
+	width: 100%;
+	aspect-ratio: 7/5;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.244);
+	visibility: hidden;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.4s linear;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.menu-items .card .btn {
+	position: absolute;
+	left: 20%;
+	top: 18%;
+	width: 60%;
+	font-size: 1.1rem;
+	padding: 3px 0;
+	border: 1.3px solid orangered;
+	border-radius: 20px;
+	font-family: "Bree Serif", serif;
+	background-color: orangered;
+	color: white;
+	transition: all 0.3s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1000;
+}
+
+.menu-items .card:hover .card-thumbnail .btn {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu-items .card .btn:hover {
+	border: 1.3px solid orangered;
+	background-color: white;
+	color: orangered;
+}
+
+.menu-items .card:hover .card-thumbnail .black-overlay:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu-items .card h3 {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.menu-items .card p {
+	margin-bottom: 0.5rem;
+}
+
+.menu-items .pagination {
+	padding-top: 1.5rem;
+}
+
+.menu-items .pagination li {
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+.menu-items .pagination .btn {
+	border-radius: 50%;
+	font-size: 1.1rem;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	font-weight: 600;
+	color: rgb(177, 0, 0);
+}
+
+.menu-items .pagination .btn.active {
+	border: 2px solid rgb(177, 0, 0);
+}
+
+.menu-items .pagination .btn.prev,
+.menu-items .pagination .btn.next {
+	background-color: rgb(204, 12, 12);
+	border-color: rgb(204, 12, 12);
+	color: white;
+}
+
+.menu-items .pagination .btn.prev:is(:hover, :focus),
+.menu-items .pagination .btn.next:is(:hover, :focus) {
+	background-color: rgb(177, 0, 0);
+	border-color: rgb(177, 0, 0);
+	box-shadow: 0px 5px 5px rgba(177, 0, 0, 0.429);
+}
+
+.filter_container {
+	text-align: center;
+	margin: 20px 0;
+	color: aliceblue;
+	background-color: transparent;
+}
+
+.filter_container h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.filter_container .filters {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.filter_container label {
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.filter_container select {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+.filter_container select:hover,
+.filter_container select:focus {
+	border-color: #dc3545;
+}
+
+.filter_container button {
+	padding: 10px 20px;
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.filter_container button:hover {
+	background-color: #dc3545;
+}
+
+@media (max-width: 768px) {
+	.filter_container .filters {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.filter_container label,
+	.filter_container select,
+	.filter_container button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.filter_container button {
+		margin-top: 10px;
+	}
+}
+
+/* CONTACT US PAGE */
+.contact-wrapper{
+	background-color: rgb(208, 50, 50);
+}
+
+.contact-wrapper h1{
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+
+.contact-wrapper .text{
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #080808;
+	margin-bottom: 2rem;
+}
+
+.contact-wrapper .icon i{
+	font-size: 1.4rem;
+	color: rgb(208, 50, 50);
+	position: absolute;
+}
+
+.contact-wrapper .icon{
+	height: 3rem;
+	width: 3rem;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+.contact-wrapper .single-contact{
+	min-width: 60%;
+	max-width: 100%;
+	height: 100%;
+	background-color: white;
+	padding: 15px;
+	border-radius: 20px;
+	align-items: center;
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+}
+.single-contact {
+	display: flex;
+	align-items: center; /* Center items vertically */
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s;
+  }
+  
+  .single-contact:hover {
+	transform: scale(1.03);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+  }
+
+  .single-contact .icon {
+	width: 55px;
+	height: 55px;
+	margin-right: 1px;
+	border-radius: 50%;
+	background-color: #dc3545;
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	margin-right: 15px;
+  }
+  
+  .single-contact .icon i {
+	font-size: 1.8rem;
+	color: #fff;
+  }
+  
+  .single-contact .contact-info {
+	flex: 1;
+	text-align: left;
+  }
+  
+  .single-contact h5 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+  }
+  
+  .single-contact p {
+	margin-bottom: 0;
+  }
+  
+  
+.contact-wrapper .title{
+	font-weight: 700;
+}
+
+.contact-wrapper .single-contact p{
+	margin-bottom: 0;
+	overflow-wrap: break-word;
+}
+
+.contact-wrapper .contact-info{
+	width: 70%;
+}
+
+.contact-form-wrapper{
+	background-color: rgb(208, 50, 50);
+}
+
+.contact-form-wrapper .form-control{
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+	border: none;
+	padding-left: 25px;
+	
+}
+
+.contact-form-wrapper input{
+	padding: 15px;
+	border-radius: 30px;
+
+}
+
+.contact-form-wrapper textarea{
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.contact-form-wrapper .btn {
+	padding: 10px 20px;
+	margin-top: 5px;
+	border: none;
+	border-radius: 30px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: black;
+	background: #ec0f25e3;
+	box-shadow: 0px 10px 40px -12px #b10f1f85;
+  }
+  
+/*.contact-form-wrapper .btn:hover {
+	background: rgba(208, 50, 50, 0.9);
+  }
+*/
+.contact-form-wrapper {
+	background-color: white;
+	padding: 30px 0;
+  }
+  
+  .contact-form-wrapper .form {
+	background-color: rgb(224, 224, 252);
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+  }
+  
+  .contact-form-wrapper .form .form-group {
+	margin-bottom: 20px;
+  }
+  
+  .contact-form-wrapper .form .form-group input[type="text"],
+  .contact-form-wrapper .form .form-group input[type="email"],
+  .contact-form-wrapper .form .form-group textarea {
+	width: 100%;
+	padding: 15px;
+	border-radius: 30px;
+	border: 1px solid red;
+	transition: border-color 0.3s;
+  }
+  /*
+  .contact-form-wrapper .form .form-group input[type="text"]:focus,
+  .contact-form-wrapper .form .form-group input[type="email"]:focus,
+  .contact-form-wrapper .form .form-group textarea:focus {
+	border-color: #dc3545;
+  }*/
+  
+  .contact-form-wrapper .form .form-group textarea {
+	resize: vertical;
+  }
+  
+  .contact-form-wrapper .form .btn-primary {
+	width: 100%;
+  }
+  
+  .thumbnail {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .thumbnail img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.head_container_service {
+	height: 500px;
+}
+
+.head_container_service:before {
+	background-image: url(https://cdn.tasteatlas.com//images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg?mw=1300);
+	content: "";
+	position: absolute;
+	height: 500px;
+	width: 100%;
+	opacity: 0.4;
+	z-index: -1;
+
+}
+
+.service-img {
+	background-image: url(https://cdn.tasteatlas.com//images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg?mw=1300);
+	/*content: "";
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  opacity: 0.4;*/
+	height: 550px;
+	width: 100%;
+	padding-top: 15px;
+	background-size: cover;
+}
+
+.head_container_service .mainhead {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.but {
+	border: 1.3px solid brown;
+	font-size: 1.1rem;
+	padding: 3px 25px;
+	border-radius: 4px;
+	font-family: "Bree Serif", serif;
+	color: brown;
+	background-color: #f2f2f2;
+}
+
+.butt {
+	width: 80%;
+	border: 1.3px solid red;
+	font-size: 1.1rem;
+	padding: 3px 0;
+	border-radius: 20px;
+	font-family: "Bree Serif", serif;
+	background-color: orangered;
+	color: white;
+	margin-bottom: 9px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.butt:hover {
+	background-color: white;
+	color: orangered;
+}
+
+.first_cont {
+	display: flex;
+	justify-content: center;
+}
+
+.first_cont .items {
+	background-color: #f2f2f2;
+	border: 3px solid rgba(138, 37, 37);
+	box-shadow: 0 0 20px rgba(138, 37, 37, 0.5);
+	padding: 25px 10px;
+	margin: 15px;
+	height: 270px;
+	width: 230px;
+	border-radius: 10px;
+	text-align: center;
+	font-family: "Bree Serif", serif;
+}
+
+.first_cont .items img {
+	justify-content: center;
+	height: 160px;
+	width: 200px;
+}
+
+.first_cont .items h3 {
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+.first_cont .items p {
+	margin-bottom: 20px;
+}
+
+/* service */
+.service_container {
+	box-sizing: border-box;
+	background-color: var(--container-bg);
+}
+
+.second_cont {
+	display: flex;
+	padding: 40px;
+	justify-content: center;
+}
+
+.second_cont1 {
+	display: flex;
+	padding: 0px 20px 100px 20px;
+	justify-content: center;
+}
+
+.deals {
+	display: flex;
+	background-color: var(--container-bg);
+	border: 2px solid rgb(138, 37, 37);
+	/* box-shadow: 0 0 10px rgba(138, 37, 37, 0.5); */
+	border-radius: 10px;
+	padding: 15px 30px;
+	margin: 20px 50px;
+}
+
+.deals p {
+	font-size: 1.1rem;
+	/* font-weight: bold; */
+	padding-top: 15px;
+	font-family: "Bree Serif", serif;
+	color: var(--a);
+}
+
+.deals i {
+	margin: 0px 10px;
+	padding: 0px 10px;
+	font-size: 2rem;
+	filter: var(--invert);
+}
+
+/* Book Table */
+.book-table-container {
+	padding: 2vw;
+	background-color: rgb(224, 224, 252);
+}
+
+.book-table-container .image-holder {
+	display: table-cell;
+	width: auto;
+	background: url(https://cdn12.picryl.com/photo/2016/12/31/dining-table-table-cutlery-tableware-7ce371-1024.jpg);
+	background-size: cover;
+}
+
+.book-table-container .form-container {
+	display: table;
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-table-container form {
+	display: table-cell;
+	width: 400px;
+	background-color: #ffffff;
+	padding: 40px 60px;
+	color: #505e6c;
+}
+
+.book-table-container form h2 {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.book-table-container form .form-control {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #dfe7f1;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	color: inherit;
+	text-indent: 0px;
+	height: 40px;
+	max-width: max-content;
+}
+
+/* testimonal */
+.testimonalsection {
+	padding-top: 400px;
+}
+
+.testimonal__container {
+	display: flex;
+}
+
+.testimonal__card {
+	text-align: center;
+	padding: 2rem 3rem 2.5rem;
+	border: 2px solid var(--container-bg);
+	transition: border 0.4s, background-color 0.4s;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(224, 224, 252, 0.678);
+	border: 1px solid var(--container-bg);
+	padding: 40px 30px;
+	margin: 5px;
+	color: var(--a);
+}
+
+.testimonal__image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto 1.5rem;
+}
+
+.testimonal__title {
+	margin-bottom: 0.75rem;
+}
+
+.testimonal__description {
+	margin-bottom: 1.25rem;
+}
+
+.section__title {
+	text-align: center;
+	font-size: 2rem;
+	color: rgb(58, 58, 66);
+}
+
+/* Cart page styling */
+.cart-section {
+	padding: 55px 70px 30px 70px;
+	background-color: rgb(224, 224, 252);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cart {
+	width: 80%;
+	background-color: #f2f2f2;
+	text-align: center;
+	font-family: "Bree Serif", serif;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+}
+
+.cart table,
+th,
+td {
+	text-align: center;
+	border: 2px solid black;
+	width: 75%;
+	color: black;
+}
+
+#bill {
+	color: rgb(196, 74, 74);
+}
+
+.star-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #ccc;
+	/* Default color for empty star */
+	font-size: 15px;
+	padding: 0;
+}
+
+.star-button:hover,
+.star-button:focus {
+	color: #f1c40f;
+	/* Yellow color for filled star */
+	outline: none;
+}
+
+.star-button.rated {
+	color: #f1c40f;
+	/* Yellow color for filled star */
+}
+
+.star-button.hover {
+	color: #f1c40f;
+	/* Yellow color for hovered star */
+}
+
+.star-button.greyed {
+	color: #ccc;
+	/* Grey color for greyed out star */
+}
+
+/* Cart -> Input Section for Coupon Code  */
+
+#haveCoupon {
+	text-align: center;
+	font-size: 1.2rem;
+	margin: 0.5rem;
+}
+
+.inputForCoupon {
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.enterCouponCode {
+	display: flex;
+	gap: 1rem;
+}
+
+#inputCode {
+	padding: 18px;
+	margin-right: 10px;
+	width: 250px;
+	border-radius: 0.3rem;
+	background-color: white;
+	font-size: medium;
+	border: 2px solid black;
+}
+
+#inputCode:hover {
+	border: 2px solid #a52a2a;
+}
+
+#applyCouponButton {
+	width: 5rem;
+	border-radius: 0.3rem;
+	padding: 10px 20px;
+	background-color: #a52a2a;
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+#applyCouponButton:hover {
+	background-color: #a52a2ad7;
+}
+
+.menu_items .items img:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.menu_items .items img {
+	transition: 3s, 1s ease-in-out;
+}
+
+/* .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+} */
+/* 
+.img-fluid {
+	height: 300px;
+	width: 300px;
+	margin-top: 250px;
+	margin-left: 100px;
+} */
+
+.img-fluid{
+	width:400px;
+	margin-right:150px;
+	transition: width 0.15s;
+}
+.img-fluid:hover{
+	width:450px;
+}
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+	background-image: linear-gradient(to top, rgb(246, 10, 10), rgb(248, 145, 49), rgb(236, 239, 56));
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+	width: 12px;
+  }
+  
+  /* Scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+	background-color: #ff0707;
+	border-radius: 10px;
+	border: 0.3px solid white;
+	background-image: -webkit-linear-gradient(
+	  90deg,
+	  rgb(20, 21, 12) 0%,
+	  rgb(0, 0, 0) 25%,
+	  transparent 100%,
+	  rgb(247, 4, 4) 75%,
+	  transparent
+	);
+	transition: background-color 0.3s;
+  }
+  
+  /* Scrollbar thumb hover effect */
+  ::-webkit-scrollbar-thumb:hover {
+	background-color: #dc3545; 
+	cursor: pointer;
+  }
+  .row{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .row div{
+    width: 25vw;
+    margin-bottom: 1rem;
+  }
+  
+    </style>
+
+  </head>
+
+  <body>
+        <!-- Progress bar -->
+        <div id="progressBar"></div>
+        <script>
+            window.onscroll = function () {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("progressBar").style.width = scrolled + "%";
+            };
+        </script>
+        <!-- end -->
+       
+
+    <div class="head_container">
+      <div class="mainhead">
+        <h1 class="m-0">CONTACT US</h1>
+      </div>
+    </div>
+
+    <section class="contact-wrapper">
+      <div class="container py-5">
+          <h1>GET IN TOUCH</h1>
+          <p class="text">
+              If you have any questions, feel free to reach out to us through the
+              following channels:
+          </p>
+          <div class="row g-4 align-items-stretch">
+              <div class="col-lg-4">
+                  <div class="single-contact d-flex">
+                      <div class="icon">
+                          <i class="fa-solid fa-location-dot" style="top: 13px; left: 15px"></i>
+                      </div>
+                      <div class="contact-info my-auto">
+                          <h5 class="title">Location</h5>
+                          <p>123 Food Street, Culinary City, 56789</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="single-contact d-flex">
+                      <div class="icon">
+                          <i class="fa-solid fa-phone-volume" style="top: 13px; left: 13px"></i>
+                      </div>
+                      <div class="contact-info my-auto">
+                          <h5 class="title">Call Now</h5>
+                          <p>+88-7010-7010 <br />+61 934-759-8561</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="single-contact d-flex">
+                      <div class="icon">
+                          <i class="fa-solid fa-envelope" style="top: 13px; left: 13px"></i>
+                      </div>
+                      <div class="contact-info my-auto">
+                          <h5 class="title">Email</h5>
+                          <p>info@restaurantwebsite.com<br />service@restaurantwebsite.com</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="contact-form-wrapper pt-3 pb-5">
+      <div class="container">
+          <div class="row align-items-center justify-content-between g-4">
+              <div class="col-md-6">
+                  <div class="thumbnail d-flex justify-content-center">
+                <img src="./images/noto_pot-of-food.svg" alt="" style="height: 100%;width: 100%;"/>
+                     
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                  <form class="form text-center" id="contactForm">
+                      <div class="form-group row">
+                          <div class="col-6 mb-3">
+                              <input type="text" class="form-control" id="first-name" placeholder="First Name" />
+                          </div>
+                          <div class="col-6 mb-3">
+                              <input type="text" class="form-control" id="last-name" placeholder="Last Name" required />
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="mb-3">
+                              <input type="email" class="form-control" id="email" placeholder="Email" required />
+                          </div>
+                          <div class="mb-3">
+                              <textarea class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_container container">
+          <div class="footer_logo">
+            <img src="./images/noto_pot-of-food.svg" alt="" />
+          </div>
+          <div class="link_lists">
+            <h3>Main Links</h3>
+            <ul>
+              <li>Order Tracking</li>
+              <li>New Order</li>
+              <li>Contact Us</li>
+              <li>News & Blogs</li>
+            </ul>
+          </div>
+          <div class="link_lists">
+            <h3>Support</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="newslatter">
+            <h3>Join Our Newsletter</h3>
+            <input type="email" placeholder="Enter you email..." />
+            <h3>Follow Us</h3>
+            <div class="social_icons">
+              
+              <div class="bar_icons">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="bar_icons">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="bar_icons">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+      document.getElementById("copyright-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+    <script src="../contact-form.js"></script>
+    <script src="top.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

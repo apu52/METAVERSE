@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- For hamburger menu -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+    integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .cart-page {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .cart h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .cart-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    .cart-item h2 {
+      margin: 0;
+      flex-grow: 1;
+    }
+    .cart-item p {
+      margin: 0;
+      padding: 5px;
+    }
+    .cart-item .quantity-controls {
+      display: flex;
+      align-items: center;
+      width: 100px;
+      font-size: 18px;
+
+    }
+    .cart-item .quantity-controls button {
+      margin: 0 5px;
+      padding: 10px;
+      font-size: 15px;
+    }
+    .cart-item .remove {
+      margin-left: 20px;
+      cursor: pointer;
+      color: white;
+      padding: 15px;
+      background-color: red;
+      border-radius: 20px;
+
+    }
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <span><img class="logo" src="detailed-chef-logo-template_23-2148986823.avif" alt="" /></span>
+      <nav id="nav">
+        <ul id="nav-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="index.html#review">Review</a></li>
+        </ul>
+      </nav>
+      <div class="container3">
+        <span><ion-icon name="search"></ion-icon></span>
+        <span><ion-icon name="heart"></ion-icon></span>
+        <a href="cart.html" class="cart"><span><ion-icon name="cart" ></ion-icon></span></a>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+  <div class="cart-page">
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <p class="total" id="total"></p>
+  </div>
+  <script>
+    // Function to update the cart in localStorage
+    function updateCart(cart) {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    // Function to display the cart items
+    function displayCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartItemsContainer = document.getElementById('cart-items');
+      const totalContainer = document.getElementById('total');
+      let total = 0;
+
+      cartItemsContainer.innerHTML = '';
+      cart.forEach((item, index) => {
+        if (!item.quantity) {
+          item.quantity = 1;
+        }
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+          <img src="${item.image}" alt="${item.item}">
+          <h2>${item.item}</h2>
+          <div class="quantity-controls">
+            <button onclick="changeQuantity(${index}, -1)">-</button>
+            <p>${item.quantity}</p>
+            <button onclick="changeQuantity(${index}, 1)">+</button>
+          </div>
+          <p>Rs.${(item.price * item.quantity).toFixed(2)}</p>
+          <span class="remove" onclick="removeItem(${index})">Remove</span>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+        total += item.price * item.quantity;
+      });
+
+      totalContainer.textContent = `Total: Rs.${total.toFixed(2)}`;
+      updateCart(cart); // Update the cart in localStorage after setting default quantity
+    }
+
+    // Function to add an item to the cart
+    function addToCart(item) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const existingItemIndex = cart.findIndex(cartItem => cartItem.item === item.item);
+
+      if (existingItemIndex !== -1) {
+        cart[existingItemIndex].quantity += 1;
+      } else {
+        item.quantity = 1;
+        cart.push(item);
+      }
+
+      updateCart(cart);
+      alert(`${item.item} has been added to your cart!`);
+    }
+
+    // Function to change the quantity of an item
+    function changeQuantity(index, change) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart[index].quantity += change;
+
+      if (cart[index].quantity <= 0) {
+        cart[index].quantity = 1;
+      }
+
+      updateCart(cart);
+      displayCart();
+    }
+
+    // Function to remove an item from the cart
+    function removeItem(index) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.splice(index, 1);
+
+      updateCart(cart);
+      displayCart();
+    }
+
+    // Call displayCart when the page loads
+    window.onload = displayCart;
+  </script>
+</body>
+</html>

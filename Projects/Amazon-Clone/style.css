@@ -61,7 +61,7 @@
 .navsearch{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(251, 169, 16);
+    background-color: #ffd814;
     width: 620px;
     height: 40px;
     border-radius: 4px;

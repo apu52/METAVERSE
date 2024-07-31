@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">Bakery</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html#reservation" class="nav-link">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bakers.html" class="nav-link">Bakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">Profile</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  <div class="wrapper">
+    <div class="form-container">
+      <form id="login-form" class="active">
+        <h2>Login</h2>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required>
+          <label>Enter your password</label>
+        </div>
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember">
+            <p>Remember me</p>
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit">Log In</button>
+        <div class="toggle-form">
+          <p>Don't have an account? <a href="#" onclick="toggleForm()">Signup</a></p>
+        </div>
+      </form>
+      <form id="signup-form">
+        <h2>Signup</h2>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Enter your name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required>
+          <label>Enter your password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required>
+          <label>Confirm your password</label>
+        </div>
+        <button type="submit">Sign Up</button>
+        <div class="toggle-form">
+          <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm() {
+      const loginForm = document.getElementById('login-form');
+      const signupForm = document.getElementById('signup-form');
+      loginForm.classList.toggle('active');
+      signupForm.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

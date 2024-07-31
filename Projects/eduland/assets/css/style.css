@@ -536,10 +536,10 @@ body { background: var(--white); }
   transition: var(--transition);
 }
 
-.footer .social-link:is(:hover, :focus) {
+/* .footer .social-link:is(:hover, :focus) {
   background: var(--rich-black-fogra-29);
   color: var(--cultured);
-}
+} */
 
 .footer-link-box {
   display: grid;
@@ -1101,4 +1101,72 @@ body { background: var(--white); }
 
   .cta-banner { left: 68%; }
 
+}
+.faq {
+  padding: 60px 0;
+  padding-block: var(--section-padding);
+  background: var(--floral-white);
+}
+
+.faq .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* colour on hover of social icons */
+
+.footer #goog:is(:hover, :focus) {
+  background:#EA4335;
+  color: white;
+}
+.footer #twit:is(:hover, :focus) {
+  background:#1DA1F2;
+  color: white;
+}
+.footer #insta:is(:hover, :focus) {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCB045);
+  color: white;
+}
+.footer #linkd:is(:hover, :focus) {
+  background: #0077B5;
+  color: white;
 }

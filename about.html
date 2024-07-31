@@ -66,6 +66,33 @@
       pointer-events: none;
       z-index: 9999;
     }
+
+    @media (max-width: 740px) {
+      .circle-container {
+        display: none;
+      }
+    }
+
+    .progress-bar {
+      height: 7px;
+      width: 0;
+      background-color: #f523f5;
+      opacity: 0.8;
+      transition: transform 0.1s, left 0.1s, top 0.1s;
+      box-shadow: 0 0 20px #23bdf5,
+        0 0 60px #f523f5,
+        0 0 100px #23bdf5;
+    }
+
+    @keyframes colors {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
   </style>
 </head>
 <!-- Light-Dark theme SWITCH -->
@@ -75,6 +102,13 @@
 
 
 <body>
+  <!-- Scroll down progress bar -->
+
+  <div class="nav-wrapper">
+    <div class="progress-bar"></div>
+  </div>
+
+  <script src="scrolldownprogressbar.js"></script>
   <div class="circle-container">
     <div class="circle"></div>
     <div class="circle"></div>
@@ -181,6 +215,16 @@
           <label class="number">r3</label>
         </div>
 
+      </div>
+      <div class="radio-wrapper">
+        <!-- <input type="radio" id="value-2" name="btn" class="input"> -->
+        <!-- <input type="radio" id="value-3" name="btn" class="input"> -->
+        <div class="btn" style="width: 115% !important;">
+          <a id="aid" class="nav-link" href="contributor.html">Contributors </a>
+          <!-- <span aria-hidden=""></span> -->
+          <!-- <span aria-hidden="" class="btn__glitch">CONTACT</span> -->
+          <label class="number"></label>
+        </div>
       </div>
     </div>
     <main>

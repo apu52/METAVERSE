@@ -64,10 +64,21 @@ nav a:hover {
     cursor: pointer;
 }
 
+.section  {
+    transform: translateY(4px)  }
+.section button:hover {
+    color: gold;
+    cursor: pointer;
+}
 .logo {
     height: 80px;
     width: 80px;
     margin-top: 5px;
+}
+
+.cart{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -111,6 +122,12 @@ nav a:hover {
         display: block;
     }
 }
+
+
+section .card:hover { 
+        transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
 .main1 {
     display: flex;
@@ -172,7 +189,23 @@ nav a:hover {
     width: 500px;
     height: 500px;
 }
+.Newsletter{
+    display: flex;
+    justify-content: space-around
+}
+.Newsletter .input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.Newsletter .btn{
+    border-radius: 5px;
+    padding: 5px ;
+}
+.Newsletter .btn:hover{
+    background-color: #f1c11a;
 
+}
 .box2 img {
     width: 500px;
     height: 500px;
@@ -180,6 +213,18 @@ nav a:hover {
     border-radius: 50rem;
     margin-top: 5rem;
     border: 10px solid #4FC3F7;
+    animation: float 6s ease-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+  transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 
 .content {

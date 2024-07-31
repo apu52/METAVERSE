@@ -1,0 +1,36 @@
+@use "functions" as m;
+@use "variables";
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--Light_Mode_Background);
+  position: relative;
+  padding-bottom: m.rem(90);
+
+  .title {
+    // border-bottom: 1px solid;
+    background-color: var(--Light_Mode_Elements);
+
+    h1 {
+      color: var(--Light_Mode_Text);
+      font-size: clamp(m.rem(20), 5vw, m.rem(35));
+    }
+    button {
+      color: var(--Light_Mode_Text);
+      background: transparent;
+      border: none;
+      font-size: clamp(m.rem(12), 2.5vw, m.rem(16));
+      i {
+        font-size: 1.2em;
+      }
+    }
+    box-shadow: var(--Light_Mode_Shadow);
+  }
+  .author {
+    color: var(--Light_Mode_Text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
