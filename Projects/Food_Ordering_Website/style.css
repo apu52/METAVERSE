@@ -443,10 +443,11 @@ section .card:hover {
 .menu h1::after {
     content: '';
     width: 0;
-    height: 2px;
+    height: 30px;
     display: block;
     background-color: gold;
     transition: 0.2s linear;
+
 }
 
 .menu h1:hover::after {
