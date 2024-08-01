@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <nav class="navbar  navbar-dark my-3">
-            <a class="navbar-brand" href="index.html">Hard Rock Navigator 🎸
+            <a class="navbar-brand" href="#">Hard Rock Navigator 🎸
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             </button>
@@ -30,7 +30,8 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -48,30 +49,32 @@
                     <button id="search-music" class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
-            
+
             <!-- === Fancy results === -->
             <div id="all-results" class="search-result col-md-8 mx-auto py-4">
                 <!-- single result -->
-                
             </div>
             <!-- Single Lyrics -->
             <div id="lyrics-or-details">
-
             </div>
-            
-            
-
-
         </main>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Custom Script Here -->
+    <!-- AOS - Animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom Script -->
     <script src="script.js"></script>
+    
+    <!-- Initializing AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
