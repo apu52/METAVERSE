@@ -37,6 +37,8 @@ body{
 .single-result{
   background: rgba(175, 128, 128, 0.2);
   border-radius: 15px;
+  padding-right: 120px;
+  align-items: center;
 }
 
 .details{
@@ -50,3 +52,9 @@ body{
 .single-lyrics{
   margin-bottom: 100px;
 }
+
+.lyrics-content {
+  text-align: center;
+}
+
+
