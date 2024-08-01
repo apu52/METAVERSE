@@ -243,14 +243,61 @@
     </section>
 
     <!-- Footer -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Social Media Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <style>
+        .copyright {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .copyright p {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .social a:hover {
+            color: #ddd;
+        }
+        .social .custom-icon {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
     <div class="copyright">
         <p>&#169; Dweb All Rights Reserved</p>
         <div class="social">
-            <a href=""><i class='bx bxl-facebook'></i></a>
-            <a href=""><i class='bx bxl-twitter'></i></a>
-            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.twitter.com" target="_blank">
+                <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <!-- Replace the below path with the path data for the new X logo -->
+                    <path d="M18 3H6c-1.66 0-3 1.34-3 3v12c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3zm-7.6 15H8.3l2.6-4-2.2-3h2.1l1.4 2 1.4-2h2.1l-2.2 3 2.6 4h-2.1l-1.6-2.5-1.6 2.5z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
+</body>
+</html>
+
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/scrollreveal"></script>
