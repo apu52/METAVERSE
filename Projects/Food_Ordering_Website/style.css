@@ -12,7 +12,7 @@ html {
 header {
     position: relative;
     background: hsla(0, 16%, 87%, 0.6);
-    
+
     padding: 0.2rem 0;
     z-index: 999;
     box-shadow: 10px 10px 5px rgb(102, 99, 99);
@@ -23,7 +23,7 @@ header {
     align-items: center;
     justify-content: space-around;
     margin-inline: auto;
-    color:black;
+    color: black;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 nav a:hover {
@@ -49,7 +49,7 @@ nav a:hover {
 .container3 {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
 }
@@ -64,19 +64,22 @@ nav a:hover {
     cursor: pointer;
 }
 
-.section  {
-    transform: translateY(4px)  }
+.section {
+    transform: translateY(4px)
+}
+
 .section button:hover {
     color: gold;
     cursor: pointer;
 }
+
 .logo {
     height: 80px;
     width: 80px;
     margin-top: 5px;
 }
 
-.cart{
+.cart {
     text-decoration: none;
     color: black;
 }
@@ -124,10 +127,10 @@ nav a:hover {
 }
 
 
-section .card:hover { 
-        transform: scale(1.05);
+section .card:hover {
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+}
 
 .main1 {
     display: flex;
@@ -177,35 +180,40 @@ section .card:hover {
     border-radius: 1rem;
 }
 
-.box1 .item3 button:active{
+.box1 .item3 button:active {
     background-color: gold;
     cursor: pointer;
     font-weight: 700;
     box-shadow: 0 2px #666;
     transform: translateY(4px);
-} 
+}
 
 .box2 {
     width: 500px;
     height: 500px;
 }
-.Newsletter{
+
+.Newsletter {
     display: flex;
     justify-content: space-around
 }
-.Newsletter .input{
+
+.Newsletter .input {
     border-radius: 5px;
     border: 1px solid black;
     padding: 5px;
 }
-.Newsletter .btn{
+
+.Newsletter .btn {
     border-radius: 5px;
-    padding: 5px ;
+    padding: 5px;
 }
-.Newsletter .btn:hover{
+
+.Newsletter .btn:hover {
     background-color: #f1c11a;
 
 }
+
 .box2 img {
     width: 500px;
     height: 500px;
@@ -215,16 +223,19 @@ section .card:hover {
     border: 10px solid #4FC3F7;
     animation: float 6s ease-out infinite;
 }
+
 @keyframes float {
-  0%{
-    transform: translateY(0px);
-  }
-  50%{
-  transform: translateY(-50px);
-  }
-  100%{
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .content {
@@ -516,13 +527,14 @@ section .card:hover {
     font-weight: 700;
 }
 
-.main3 .banner1 .food1 .money button:active{
+.main3 .banner1 .food1 .money button:active {
     background-color: gold;
     cursor: pointer;
     font-weight: 700;
     box-shadow: 0 2px #666;
     transform: translateY(4px);
-}  
+}
+
 .main3 .banner1 .food1:hover {
     transform: scale(1.05);
     box-shadow: 10px 15px 15px blueviolet;
@@ -618,14 +630,186 @@ section .card:hover {
 
 
 }
+#review {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
 
-.main4 .rev h1{
+#review>h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#review>h1 span{
+    color: #f1c11a;
+}
+.reviewcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 1.8rem;
+    border-radius: 1.8rem;
+    gap: 40px;
+    overflow: hidden;
+    width: 70%;
+    height: 65%;
+    position: absolute;
+    background-color: gold;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+
+.reviewcard:nth-child(1) {
+    z-index: 9;
+}
+
+.reviewCardLeft img {
+    border-radius: 3rem;
+    width: 24vw;
+    height: 29vw;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviewCardRight {
+    display: flex;
+    gap: 2.2rem;
+    flex-direction: column;
+}
+
+.reviewCardRight img {
+    height: 1rem;
+}
+
+.reviewCardRight h3 {
+    font-size: 5rem;
+}
+
+.reviewCardRight h2 {
+    font-size: 1.5rem;
+    text-align: start;
+    font-weight: 500;
+}
+
+.reviewPersonName {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.reviewsButtons {
+    width: 12rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.reviewBtnleft,
+.reviewBtnRight {
+    font-size: 2.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1024px) {
+    #review>h1 {
+        font-size: 5vw;
+    }
+
+    .reviewcard {
+        padding: 0 2rem;
+        width: 85%;
+        height: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    #review {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .reviewcard {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .reviewsButtons {
+        position: absolute;
+        bottom: 0;
+        height: 5vh;
+    }
+
+    .reviewCardLeft img {
+        border-radius: 2rem;
+        width: 90vw;
+        height: 45vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+@media (max-width:425px) {
+    .reviewcard h1 {
+        font-size: 7vw;
+    }
+
+    .reviewcard p {
+        font-size: 4vw;
+    }
+
+    .reviewcard h2 {
+        font-size: 6vw;
+    }
+
+    .reviewCardRight {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .reviewCardLeft img {
+        height: 70vw;
+        width: 86vw;
+    }
+
+    #review>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* .main4 .rev h1{
     text-align: center;
     padding: 10px 0;
 }
 .main4 .banner4 {
     width: 100%;
-    /* height: 450px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -634,7 +818,6 @@ section .card:hover {
 
 .main4 .banner4 .rev1 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -654,7 +837,6 @@ section .card:hover {
 
 .main4 .banner4 .rev2 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -673,7 +855,6 @@ section .card:hover {
 
 .main4 .banner4 .rev3 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -692,7 +873,6 @@ section .card:hover {
 
 .main4 .banner4 .rev4 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -715,12 +895,11 @@ section .card:hover {
     align-items: center;
     padding: 0px 50px 0px 50px;
     text-align: center;
-}
-
+} */
+/* 
 @media screen and (max-width: 1100px) and (min-width: 700px) {
     .main4 .banner4 {
         width: 100%;
-        /* height: 450px; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
@@ -733,7 +912,6 @@ section .card:hover {
 @media screen and (max-width: 700px) and (min-width: 300px) {
     .main4 .banner4 {
         width: 100%;
-        /* height: 450px; */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
@@ -741,7 +919,7 @@ section .card:hover {
     }
 
 
-}
+} */
 
 footer {
     display: grid;
@@ -756,40 +934,47 @@ footer {
 
 @media screen and (max-width: 700px) {
     footer {
-        grid-template-columns: repeat(2, 1fr);  /* Change to 2 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Change to 2 columns for medium screens */
     }
 }
 
 @media screen and (max-width: 500px) {
     footer {
-        grid-template-columns: 1fr;  /* Change to 1 column for small screens */
+        grid-template-columns: 1fr;
+        /* Change to 1 column for small screens */
         text-align: center;
     }
 }
+
 .footer {
     padding: 10px 10px 20px 30px;
 }
-footer .follows h2{
+
+footer .follows h2 {
     margin-bottom: 0px;
 }
+
 footer .follows ion-icon {
     margin-top: 0px;
 }
-footer .location, 
-footer .quick, 
-footer .contact, 
+
+footer .location,
+footer .quick,
+footer .contact,
 footer .ourservice {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .contact p {
     margin: 5px 0;
 }
 
 .contact p:last-child {
-    cursor: pointer; 
-    
+    cursor: pointer;
+
 }
 
 .contact p:last-child:hover {
@@ -814,7 +999,7 @@ footer ion-icon {
     padding: 5px;
     font-size: 24px;
     transition: color 0.3s, transform 0.3s;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 footer ion-icon:hover {
@@ -842,18 +1027,23 @@ footer ion-icon[name="logo-linkedin"]:hover {
     position: fixed;
     bottom: 120px;
     right: 50px;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     background-color: #f1c11a;
     color: #fff;
     text-align: center;
-    width: 50px; /* Set width to make it a circle */
-    height: 50px; /* Set height to make it a circle */
-    border-radius: 50%; /* Make the background a circle */
+    width: 50px;
+    /* Set width to make it a circle */
+    height: 50px;
+    /* Set height to make it a circle */
+    border-radius: 50%;
+    /* Make the background a circle */
     font-size: 18px;
     text-decoration: none;
     z-index: 1000;
     transition: opacity 0.3s ease;
-    line-height: 50px; /* Center the text vertically */
+    line-height: 50px;
+    /* Center the text vertically */
 }
 
 .back-to-top:hover {
@@ -861,14 +1051,16 @@ footer ion-icon[name="logo-linkedin"]:hover {
     cursor: pointer;
 }
 
-.location > P,.ourservice >p{
-    color:  grey;
+.location>P,
+.ourservice>p {
+    color: grey;
     cursor: pointer;
     text-decoration: none;
     transition: color 0.3s;
 }
-    
-.location > P:hover,.ourservice >p:hover{
+
+.location>P:hover,
+.ourservice>p:hover {
     color: black;
     text-decoration: underline;
 }
