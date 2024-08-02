@@ -529,10 +529,6 @@ body {
 }
 
 
-
-
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -638,6 +634,13 @@ body {
   margin-block-end: 25px;
 }
 
+.footer-link {
+  padding-block: 4px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) { color: var(--amber); }
+
 .footer-text .link {
   display: inline-block;
   color: var(--portland-orange);
@@ -656,6 +659,54 @@ body {
   flex-shrink: 0;
   font-size: 22px;
   color: var(--portland-orange);
+}
+
+/* Contact Form Styling */
+#contact {
+  padding: 50px 0;
+  background-color: #F7BB4A;
+  margin-bottom: 20rem;
+}
+
+.contact-form-wrapper {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  border-color: #5cb85c;
+  box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+.btn-primary {
+  background-color: #5cb85c;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #4cae4c;
 }
 
 .social-list {
@@ -1081,7 +1132,6 @@ body {
 
 
 
-
 /**
  * responsive for large than 1200px screen
  */
@@ -1134,6 +1184,7 @@ body {
   .footer { padding-block-start: 40px; }
 
 }
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -1198,9 +1249,10 @@ body {
   background-color: #5cb85c;
   border: none;
   color: white;
-  padding: 15px;
+  padding: 15px 25px;
   font-size: 1.2em;
   border-radius: 10px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
