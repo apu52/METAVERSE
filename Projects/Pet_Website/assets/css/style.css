@@ -255,6 +255,7 @@ body {
   z-index: 4;
 }
 
+
 .header.active {
   position: fixed;
   box-shadow: var(--shadow-1);
@@ -350,9 +351,6 @@ body {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -444,6 +442,7 @@ body {
   border: 1px solid var(--platinum);
   border-radius: var(--radius-10);
   margin-block-end: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-card :is(.wrapper, .rating-wrapper) { display: flex; }
@@ -477,6 +476,58 @@ body {
   font-size: var(--fs-4);
   font-weight: var(--fw-700);
 }
+
+/* Product Card Hover Effects */
+.product-card:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.05); /* Smooth scaling on hover */
+  transition: var(--transition-2); /*  Smooth transition */
+}
+
+.product-card:is(:hover, :focus-within) .card-title {
+  color: var(--portland-orange); /* Title color change on hover */
+}
+
+.product-card .card-action-btn { 
+  display: none; 
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--portland-orange);
+  color: var(--white);
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.product-card:is(:hover, :focus-within) .card-action-btn {
+  display: block;
+  opacity: 1;
+}
+
+/* Styling the "Add to Cart" icon */
+.product-card .card-action-btn:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--portland-orange);
+  border: 1px solid var(--portland-orange); /* Add a border */
+}
+
+/* Styling the hover image */
+.product-card .img-cover.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-card:is(:hover, :focus-within) .img-cover.default {
+  opacity: 0;
+}
+
+.product-card:is(:hover, :focus-within) .img-cover.hover {
+  opacity: 1;
+}
+
 
 
 
