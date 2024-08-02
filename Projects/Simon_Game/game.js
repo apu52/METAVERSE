@@ -14,22 +14,19 @@ $(document).ready(function () {
   // Start game when the "Start" button is clicked
   $("#start-game").click(function () {
     $("#popup, #overlay").addClass("hidden");
-    nextSequence();
-    started = true;
+    startGame();
   });
 
   $("#restart-game").click(function () {
-    nextSequence();
-    started = true;
+    startGame();
     $("#restart-game").addClass("hidden");
   });
+
   // Start game when a key is pressed
   $(document).keypress(function () {
     if (!started) {
       $("#popup").addClass("hidden");
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
+      startGame();
     }
   });
 });
@@ -45,8 +42,6 @@ $(".btn").click(function () {
 });
 
 function checkAnswer(currentLevel) {
-  console.log(gamePattern[currentLevel]);
-  console.log(userClickedPattern[currentLevel]);
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     if (userClickedPattern.length === gamePattern.length) {
       if (level > highestScore) {
@@ -104,5 +99,12 @@ function startOver() {
   level = 0;
   gamePattern = [];
   started = false;
+}
+
+function startGame() {
+  level = 0;
+  gamePattern = [];
+  started = true;
   $(".highscore").text(highestScore);
+  nextSequence();
 }
