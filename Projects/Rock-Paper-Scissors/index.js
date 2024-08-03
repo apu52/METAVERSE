@@ -1,7 +1,9 @@
 let userScore=0;
 let compScore= 0;
+let tieScore= 0;
 const userScore_span=document.getElementById("user_score");
 const compScore_span=document.getElementById("comp_score");
+const tieScore_span=document.getElementById("tie_score");
 const scoreBoard_div=document.querySelector(".score_board");
 const result_p=document.querySelector(".result>p");
 const rock_div=document.getElementById("rock")
@@ -41,6 +43,8 @@ function lose(userChoice,compChoice){
 
 //here we are making a function where the user and the computer ties
 function tie(userChoice,compChoice){
+    tieScore++;
+    tieScore_span.innerHTML = tieScore;
     result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(compChoice)}. It's a DRAW!`;
     
 }
@@ -77,8 +81,10 @@ function game(userChoice){
 function resetButton(){
     userScore = 0;
   compScore = 0;
+  tieScore = 0;
   userScore_span.innerHTML = userScore;
   compScore_span.innerHTML = compScore;
+  tieScore_span.innerHTML = tieScore;
   result_p.innerHTML = "";
 
 }

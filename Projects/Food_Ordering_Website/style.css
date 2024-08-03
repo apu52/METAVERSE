@@ -12,29 +12,36 @@ html {
 header {
     position: relative;
     background: hsla(0, 16%, 87%, 0.6);
-    
     padding: 0.2rem 0;
     z-index: 999;
     box-shadow: 10px 10px 5px rgb(102, 99, 99);
+    position: sticky;
+    top: 0;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-inline: auto;
     color:black;
 }
-
 nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
     gap: 2rem;
 }
 
+#nav{
+    width: 40%;
+    position: relative;
+    left: 5%;
+}
 nav a {
     text-decoration: none;
     color:black;
+    font-size: 1.3rem;
 }
 
 nav a:hover {
@@ -51,12 +58,13 @@ nav a:hover {
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    gap: 5px;
+    position: relative;
+    right: -7%;
 }
 
 .container3 span {
-    font-size: 30px;
-    padding-right: 50px;
+    font-size: 26px;
+    padding-right: 35px;
 }
 
 .container3 span:hover {
