@@ -61,3 +61,31 @@ const activeElemOnScroll = function () {
 }
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
+// faq
+document.addEventListener("DOMContentLoaded", function() {
+  const faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach(question => {
+      question.addEventListener("click", function() {
+          // Toggle the 'active' class on the clicked question
+          this.classList.toggle("active");
+
+          // Get the corresponding answer element
+          const answer = this.nextElementSibling;
+
+          // Toggle the display of the answer
+          if (answer.style.maxHeight) {
+              answer.style.maxHeight = null;
+          } else {
+              // Close all other answers before opening the clicked one
+              faqQuestions.forEach(item => {
+                  if (item !== this) {
+                      item.classList.remove("active");
+                      item.nextElementSibling.style.maxHeight = null;
+                  }
+              });
+              answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+      });
+  });
+});
