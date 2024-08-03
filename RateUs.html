@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Rating App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @keyframes shine {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+        }
+
+        .navbar {
+            background-color: #16213e;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar .nav-wrapper {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-link i {
+            margin-right: 8px;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            background-color: #16213e;
+            color: white;
+            transition: transform 0.2s;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .emoji {
+            font-size: 2rem;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: transform 0.2s, text-shadow 0.2s;
+        }
+
+        .emoji:hover {
+            transform: scale(3.5);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .emoji.selected {
+            transform: scale(1.5);
+            animation: shine 1s infinite;
+        }
+
+        .textarea-container {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+
+        .submit-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-wrapper">
+            <a id="aid" class="nav-link" href="">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a id="aid" class="nav-link" href="./about.html">
+                <i class="fas fa-info-circle"></i> About
+            </a>
+            <a id="aid" class="nav-link" href="./contact.html">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+            <a id="aid" class="nav-link" href="RateUs.html">
+                <i class="fas fa-star"></i> Rate Us
+            </a>
+            <a id="aid" class="nav-link" href="./contributor.html">
+                <i class="fas fa-users"></i> Contributors
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="emojis">
+            <span class="emoji" role="img" aria-label="cry">&#128546;</span>
+            <span class="emoji" role="img" aria-label="neutral">&#128528;</span>
+            <span class="emoji" role="img" aria-label="smile">&#128522;</span>
+            <span class="emoji" role="img" aria-label="laugh">&#128514;</span>
+            <span class="emoji" role="img" aria-label="super">&#128526;</span>
+        </div>
+        <div class="textarea-container">
+            <textarea placeholder="Leave your feedback here..."></textarea>
+        </div>
+        <button class="submit-button">Submit</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+        document.querySelectorAll('.emoji').forEach(emoji => {
+            emoji.addEventListener('click', () => {
+                document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+                emoji.classList.add('selected');
+            });
+        });
+
+        document.querySelector('.submit-button').addEventListener('click', () => {
+            const selectedEmoji = document.querySelector('.emoji.selected');
+            const feedback = document.querySelector('textarea').value;
+
+            if (selectedEmoji && feedback.trim() !== '') {
+                Toastify({
+                    text: "Feedback submitted successfully!",
+                    backgroundColor: "green",
+                    gravity: "top",
+                    position: "center",
+                    duration: 3000
+                }).showToast();
+            } else {
+                Toastify({
+                    text: "Please select an emoji and provide feedback.",
+                    backgroundColor: "red",
+                    gravity: "top",
+                    position: "center",
+                    duration: 3000
+                }).showToast();
+            }
+        });
+    </script>
+</body>
+</html>
