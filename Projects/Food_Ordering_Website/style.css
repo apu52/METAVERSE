@@ -626,14 +626,13 @@ section .card:hover {
 
 
 }
-
+/* 
 .main4 .rev h1{
     text-align: center;
     padding: 10px 0;
 }
 .main4 .banner4 {
     width: 100%;
-    /* height: 450px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -642,7 +641,6 @@ section .card:hover {
 
 .main4 .banner4 .rev1 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -662,7 +660,6 @@ section .card:hover {
 
 .main4 .banner4 .rev2 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -681,7 +678,6 @@ section .card:hover {
 
 .main4 .banner4 .rev3 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -700,7 +696,6 @@ section .card:hover {
 
 .main4 .banner4 .rev4 {
     border: 1px solid rgb(0, 0, 0);
-    /* width: 25%; */
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgb(6, 6, 6);
@@ -728,7 +723,6 @@ section .card:hover {
 @media screen and (max-width: 1100px) and (min-width: 700px) {
     .main4 .banner4 {
         width: 100%;
-        /* height: 450px; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
@@ -741,7 +735,6 @@ section .card:hover {
 @media screen and (max-width: 700px) and (min-width: 300px) {
     .main4 .banner4 {
         width: 100%;
-        /* height: 450px; */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
@@ -749,6 +742,176 @@ section .card:hover {
     }
 
 
+} */
+#review {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+#review>h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.reviewcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 1.8rem;
+    border-radius: 1.8rem;
+    gap: 40px;
+    overflow: hidden;
+    width: 70%;
+    height: 65%;
+    position: absolute;
+    background-color: #ffc83d;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+
+.reviewcard:nth-child(1) {
+    z-index: 9;
+}
+
+.reviewCardLeft img {
+    border-radius: 3rem;
+    width: 24vw;
+    height: 29vw;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviewCardRight {
+    display: flex;
+    gap: 2.2rem;
+    flex-direction: column;
+}
+
+.reviewCardRight img {
+    height: 1rem;
+}
+
+.reviewCardRight h3 {
+    font-size: 5rem;
+}
+
+.reviewCardRight h2 {
+    font-size: 1.8rem;
+    text-align: start;
+    font-weight: 500;
+}
+
+.reviewPersonName {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.reviewsButtons {
+    width: 12rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.reviewBtnleft,
+.reviewBtnRight {
+    font-size: 2.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1024px) {
+    #review>h1 {
+        font-size: 5vw;
+    }
+
+    .reviewcard {
+        padding: 0 2rem;
+        width: 85%;
+        height: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    #review {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .reviewcard {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .reviewsButtons {
+        position: absolute;
+        bottom: 0;
+        height: 5vh;
+    }
+
+    .reviewCardLeft img {
+        border-radius: 2rem;
+        width: 90vw;
+        height: 45vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+@media (max-width:425px) {
+    .reviewcard h1 {
+        font-size: 7vw;
+    }
+
+    .reviewcard p {
+        font-size: 4vw;
+    }
+
+    .reviewcard h2 {
+        font-size: 6vw;
+    }
+
+    .reviewCardRight {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .reviewCardLeft img {
+        height: 70vw;
+        width: 86vw;
+    }
+
+    #review>h1 {
+        font-size: 2.5rem;
+    }
 }
 
 footer {
