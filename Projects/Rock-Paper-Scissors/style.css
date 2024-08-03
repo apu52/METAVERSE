@@ -67,10 +67,11 @@ body{
     font-weight: bold;
     font-size: 25px;
     color: rgb(22, 21, 21);
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
 }
-
+.tie{
+    margin-left: 445px;
+}
 .result{
     color: rgb(14, 14, 14);
     font-weight: bold;
@@ -94,7 +95,13 @@ body{
     font-weight: bold;
     font-size: 25px;
 }
-
+#tie_score{
+    color: rgb(236, 18, 232);
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 25px;
+}
 #reset {
     background-color: rgb(154, 25, 25);
     color: white;
