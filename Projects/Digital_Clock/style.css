@@ -19,7 +19,67 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
+.date{
+    width: 87%;
+    height: 70%;
+    background: rgba(235,0,255,0.11);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    position: relative;
+    bottom: 157px;
+    left: 43px;
+}
+.date span{
+    font-size: 80px;
+    width: 214px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.date span::after{
+    content: '';
+    font-size: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#day::after{
+    content: 'DATE';
+}
+#month::after{
+    content: 'MONTH';
+}
+#year::after{
+    content: 'YEAR';
+}
+
+.name{
+    width: 87%;
+    height: 70%;
+    background: rgba(235,0,255,0.11);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    position: relative;
+    bottom: 107px;
+    left: 43px;
+}
+.name span{
+    font-size: 60px;
+    width: 206px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
 .clock{
     width: 100%;
     height: 100%;
@@ -29,6 +89,8 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(40px);
+    position: relative;
+    bottom: 111px;
 }
 .container::before{
     content: '';
