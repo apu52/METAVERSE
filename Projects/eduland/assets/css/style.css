@@ -1183,3 +1183,75 @@ body { background: var(--white); }
 .hero-banner:hover img {
   transform: rotateX(10deg) rotateY(10deg);
 }
+/* contact styling */
+.contact {
+  padding: 60px 0;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-info-item ion-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.contact-form {
+  flex: 2;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+.contact .btn {
+  display: inline-block;
+  margin-top: 10px;
+}

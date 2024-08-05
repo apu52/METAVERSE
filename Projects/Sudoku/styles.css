@@ -1,71 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 body {
-    background-color: #f6cce5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f4f8;
 }
 
-#container {
-  text-align: center;
-}
-
-.padd {
-    font-size: 5.6rem;
-    font-family: 'Water Brush', cursive;
-}
-
-table {
-  border-collapse: collapse;
+h1 {
+  margin-bottom: 20px;
+  color: #333;
   font-size: 2em;
-  margin: 0 auto;
 }
 
-colgroup,
-tbody {
-  border: solid medium;
+#sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  gap: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-td {
-  border: solid thin;
-  height: 1.4em;
-  width: 1.4em;
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
   text-align: center;
-  padding: 0;
+  line-height: 40px;
+  font-size: 18px;
+  background-color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.btns{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.sudoku-cell:focus {
+  outline: none;
+  background-color: #e0e0e0;
+  border-color: #666;
+}
+
+.sudoku-cell:nth-child(3n),
+.sudoku-cell:nth-child(3n + 3),
+.sudoku-cell:nth-child(27n),
+.sudoku-cell:nth-child(27n + 9) {
+  /* border-right: 2px solid #333; */
+  /* border-bottom: 2px solid #333; */
 }
 
 button {
-  margin-top: 15px;
-  font-size: 1.5em;
-  background-color: #A288E3;
+  background-color: #4CAF50;
   color: white;
-  margin-left: 5px;
-  border: #A288E3;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
   border-radius: 5px;
-  padding: 5px 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-button:hover{
-    color: #A288E3;
-    background-color: white;
-    outline: #A288E3;
-    transition: all 1s ease;
-    cursor: pointer;
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
 }
 
-@media screen and (max-width: 460px) {
-    .padd {
-        font-size: 4.2rem;
-    }
+button:active {
+  background-color: #397d3b;
+  transform: scale(0.95);
+}
 
-    table {
-      font-size: 1.5em;
-    }
-
-    button{
-        font-size: 1rem;
-    }
+#controls {
+  margin-top: 20px;
 }
