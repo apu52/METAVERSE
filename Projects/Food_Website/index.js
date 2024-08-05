@@ -8,6 +8,7 @@ function displayItems() {
     var chinese = document.getElementById('chinese');
     var southIndian = document.getElementById('south-indian');
     var desserts = document.getElementById('desserts'); // New desserts section
+    var Beverages = document.getElementById('Beverages'); // New Beverages section
 
     const biryaniData = foodItem.filter((item) => item.category == 'biryani');
     const chickenData = foodItem.filter((item) => item.category == 'chicken');
@@ -16,6 +17,7 @@ function displayItems() {
     const chineseData = foodItem.filter((item) => item.category == 'chinese');
     const southData = foodItem.filter((item) => item.category == 'south indian');
     const dessertsData = foodItem.filter((item) => item.category == 'desserts'); // New desserts data
+    const BeveragesData = foodItem.filter((item) => item.category == 'Beverages'); // New Beverages data
 
     const renderItems = (data, container) => {
         data.map(item => {
@@ -64,6 +66,7 @@ function displayItems() {
     renderItems(chineseData, chinese);
     renderItems(southData, southIndian);
     renderItems(dessertsData, desserts); // Render desserts
+    renderItems(BeveragesData, Beverages); // Render Beverages
 }
 displayItems();
 

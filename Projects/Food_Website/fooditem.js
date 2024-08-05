@@ -489,6 +489,78 @@ const foodItem= [
     price: 7,
     img: 'Images/lava.jpeg',
     quantity: 1
+},
+{
+    id: 57,
+    name: 'Cappuccino',
+    category: 'Beverages',
+    rating: 4.7,
+    price: 4,
+    img: 'Images/cappuccino.jpeg',
+    quantity: 1
+},
+{
+    id: 58,
+    name: 'Latte',
+    category: 'Beverages',
+    rating: 4.8,
+    price: 4.5,
+    img: 'Images/latte.jpeg',
+    quantity: 1
+},
+{
+    id: 59,
+    name: 'Espresso',
+    category: 'Beverages',
+    rating: 4.9,
+    price: 3,
+    img: 'Images/espresso.jpeg',
+    quantity: 1
+},
+{
+    id: 60,
+    name: 'Mocha',
+    category: 'Beverages',
+    rating: 4.6,
+    price: 5,
+    img: 'Images/mocha.jpeg',
+    quantity: 1
+},
+{
+    id: 61,
+    name: 'Green Tea',
+    category: 'Beverages',
+    rating: 4.5,
+    price: 3.5,
+    img: 'Images/greentea.jpeg',
+    quantity: 1
+},
+{
+    id: 62,
+    name: 'Iced Coffee',
+    category: 'Beverages',
+    rating: 4.8,
+    price: 4.5,
+    img: 'Images/icedcoffee.jpeg',
+    quantity: 1
+},
+{
+    id: 63,
+    name: 'Smoothie',
+    category: 'Beverages',
+    rating: 4.7,
+    price: 5.5,
+    img: 'Images/smoothie.jpeg',
+    quantity: 1
+},
+{
+    id: 64,
+    name: 'Lemonade',
+    category: 'Beverages',
+    rating: 4.9,
+    price: 3.5,
+    img: 'Images/lemonade.jpeg',
+    quantity: 1
 }
 
 
