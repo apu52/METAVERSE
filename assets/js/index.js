@@ -1,5 +1,5 @@
 // Fetch the project data from the JSON file
-fetch('./projectData.json')
+fetch('../../projectData.json')
   .then(response => response.json())
   .then(projectsData => {
     const projectListContainer = document.querySelector('.project-list');
@@ -8,11 +8,9 @@ fetch('./projectData.json')
     getProjectsInPage();
   })
 
-
 // Generate <li> tags dynamically
 const generateLiTags = projectsData => {
   const liTags = [];
-
   for (let tagNumber = 1; tagNumber <= 666; tagNumber++) {
     const projectData = projectsData[tagNumber.toString()];
 
@@ -21,7 +19,9 @@ const generateLiTags = projectsData => {
 
       const liTag = `
           <li class="project-item active" data-filter-item data-category="open source">
-            <a href="./Projects/${folderName}" target = "_blank" aria-label=${projectTitle}>
+            <a href="../../Projects/${folderName}" target = "_blank" aria-label=${projectTitle}>
+
+      
               <figure class="project-img">
 
                 <img src="./assets/img/${thumbnailName}" alt="${projectTitle}" loading="lazy">
