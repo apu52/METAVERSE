@@ -79,6 +79,8 @@
       display: none;
     }
   }
+  
+
 </style>
 <body>
 
@@ -155,41 +157,49 @@
 
 <!-- Scroll down progress bar -->
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <div class="nav-wrapper">
   <div class="progress-bar"></div>
 </div>
 
-  <div class="main">
-    <div class="container">
-      <div class="radio-wrapper">
-        <div class="btn">
-          <a id="aid" class="nav-link" href="">Home</a>
-          <label class="number"></label>
-        </div>
-      </div>
-      <div class="radio-wrapper">
-        <div class="btn">
-          <a id="aid" class="nav-link" href="about.html">About</a>
-          <label class="number"></label>
-        </div>
-      </div>
-      <div class="radio-wrapper">
-        <div class="btn">
-          <a id="aid" class="nav-link" href="contact.html">Contact</a>
-          <label class="number"></label>
-        </div> 
-      </div>
-      <div class="radio-wrapper">
-        <div class="btn" style="width: 115% !important;">
-          <a id="aid" class="nav-link" href="contributor.html">Contributors</a>
-          <label class="number"></label>
-        </div> 
+<div class="main">
+  <div class="container">
+    <div class="radio-wrapper">
+      <div class="btn">
+        <a id="aid" class="nav-link" href="">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <label class="number"></label>
       </div>
     </div>
-    <div class="hamburger" id="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
+    <div class="radio-wrapper">
+      <div class="btn">
+        <a id="aid" class="nav-link" href="about.html">
+          <i class="fas fa-info-circle"></i> About
+        </a>
+        <label class="number"></label>
+      </div>
+    </div>
+    <div class="radio-wrapper">
+      <div class="btn">
+        <a id="aid" class="nav-link" href="contact.html">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+        <label class="number"></label>
+      </div> 
+    </div>
+    <div class="radio-wrapper">
+      <div class="btn" style="width: 200% !important;">
+        <a id="aid" class="nav-link" href="contributor.html">
+          <i class="fas fa-users"></i> Contributors
+        </a>
+        <label class="number"></label>
+      </div> 
+    </div>
+  </div>
+</div>
+
     </div>
     <main>
 
@@ -303,16 +313,7 @@
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
   <script src="scrolldownprogressbar.js"></script>
-  <script>
-    const hamburger = document.getElementById('hamburger');
-const container = document.querySelector('.container');
 
-hamburger.addEventListener('click', () => {
-  container.classList.toggle('open');
-  hamburger.classList.toggle('open');
-});
-
-  </script>
 </body>
 
 </html>
