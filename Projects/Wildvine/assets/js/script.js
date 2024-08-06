@@ -44,3 +44,8 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 50 ? header.classList.add("active")
     : header.classList.remove("active");
 });
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Thank you for reaching out! We will get back to you soon.');
+  // Here you can handle form submission with AJAX or other methods
+});
