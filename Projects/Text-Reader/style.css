@@ -1,64 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-html, body {
-    font-size: 10px;
-    font-family: 'lato', Arial, sans-serif;
-}
 body {
-    background: pink;
-    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
+    padding: 30px;
+    background-image: url(BG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(95%);
 }
+
 .container {
-    background: pink;
-    width: 98vw;
-    min-height: 70vh;
+    background-color:rgb(57, 57, 57);
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #fdfbfb;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+textarea {
+    width: 97%;
+    height: 200px;
+    margin-bottom: 1em;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: white;
+    font-size: 2em;
+}
+
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+.btn-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 2rem;
-    padding: 2rem 1rem;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1em;
+    font-weight: 300px;
 }
-#text {
-    width: 70%;
-    min-height: 20rem;
-    margin-bottom: 2rem;
-}
-#wpm {
-    margin: 0 0 2rem 0;
-}
+
 .btn {
+    padding: 10px 20px;
+    font-size: 1em;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 4px;
     cursor: pointer;
-    margin: 0 1rem;
-    padding: 0.8rem 1.2rem;
-    width: 6rem;
-    transition: ease-in-out 0.2s;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn.start {
+    background-color: #4CAF50;
     color: white;
 }
-.btn:hover {
-    background: #d0cfcf;
+
+.btn.start:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.start{
-    background-color: green;
+.btn.end {
+    background-color: #f44336;
+    color: white;
 }
 
-.end{
-    background-color: red;
+.btn.end:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.reader-wrapper {
+    margin-top: 20px;
+}
+
+.reader {
+    font-size: 0.5em;
+    font-weight: bold;
+    color: #333333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    min-height: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reader::after {
+    content: '|';
+    display: inline-block;
+    opacity: 1;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    textarea {
+        height: 150px;
+    }
+    
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .reader {
+        font-size: 1.5em;
+    }
+}
 .reader-wrapper {
     background: white;
     color: black;
@@ -67,12 +179,4 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     word-wrap: anywhere;
-}
-
-h1{
-    margin-bottom: 50px;
-}
-
-textarea{
-    padding: 5px;
 }
