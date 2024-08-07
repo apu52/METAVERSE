@@ -5,14 +5,38 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>Arpan Codes | Tourguide</title>
   <style>
     html {
       scroll-behavior: smooth;
     }
+    .icon1 {
+  position: absolute;
+  top: calc(65%);
+  left: 5.4%;
+  color: grey;
+}
+.icon2 {
+  position: absolute;
+  top: calc(33%);
+  left: 5.4%;
+  color: grey;
+}
+.icon3 {
+  position: absolute;
+  top: calc(30%);
+  left: 5.4%;
+  color: grey;
+}
   </style>
 </head>
 
@@ -27,7 +51,7 @@
       <li class="link"><a href="#Pricing">Pricing</a></li>
       <li class="link"><a href="#Reviews">Reviews</a></li>
     </ul>
-    <button class="btn">Contact Us</button>
+    <button class="btn"><a href="#Contact">Contact Us</a></button>
   </nav>
   <header>
     <div class="section__container header__container" id="Home">
@@ -300,7 +324,50 @@
       </div>
     </div>
   </section>
-
+  <div class="container" id="Contact">
+    <div class="items">
+      <div class="contact" data-aos="slide-right">
+        <div>
+          <h1 class="section__title" style="height: 90px;">Contact Us</h1>
+          <p>Feel Free to drop us a message with any inquiries or feedback.We're here to assist you!</p>
+          <img src="./img/flat-design-illustration-customer-support_23-2148887720.avif">
+        </div>
+      </div>
+      <div class="contact-form" data-aos="fade-in">
+        <h1>Contact Us</h1>
+        <form id="contact-form" name="CalcDiverse Contact" autocomplete="off">
+          <div class="one" style="position: relative;">
+            <i class="icon1 fa-solid fa-user"></i>
+            <input type="text" id="Name" placeholder="Name" style="padding-left: 6%;">
+          </div>
+          <div style="position: relative;">
+            <i class="icon2 fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email" class="contact-us-email-fix" style="padding-left:6%; width: 50% !important;
+            padding-left: 6% !important;
+            padding-bottom: 10px !important;
+            margin: 20px !important;
+            margin-left: 30px !important;
+            outline: none !important;
+            border: none !important;
+            font-size: 15px !important;
+            background: none !important;
+            border-bottom: 1px solid var(--text-dark) !important;
+            color: var(--text-dark) !important;
+            font-family: 'Oxygen', sans-serif !important; border-radius: 20px;" required>
+          </div>
+          <div style="position: relative;">
+            <i class="icon3 fa-solid fa-message"></i>
+            <textarea id="message" placeholder="Type your message here.." style="padding-left:6%;"
+              required></textarea><br>
+          </div>
+          <button type="submit" class="btn btn-style" data-aos="fade-in" id="btn-style"
+            style="margin-right: 40px;box-shadow: 2px 2px 8px red;">Send</button>
+          <button onclick="window.location.href='feed.html'" class="btn  btn-style" data-aos="fade-in"
+            id="btn-style" style="box-shadow: 2px 2px 8px red;">Feedback</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <a href="#"><button class="toTop">^</button></a>
 
   <footer class="footer">
