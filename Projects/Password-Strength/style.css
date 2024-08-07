@@ -141,3 +141,20 @@ body {
 .show.hide::before {
   content: "Hide";
 }
+#reset {
+  display: block;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto;  
+}
+
+#reset:hover {
+  background-color: #0056b3;
+}
