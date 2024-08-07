@@ -4,8 +4,6 @@ This is a modern, sleek news application built using React and the NewsAPI. It a
 
 [LIVE LINK](https://main--inferno-news-app.netlify.app)
 
-Created for Cantilever Web Development Internship
-
 ## Features
 
 - Sort news articles by categories
@@ -37,7 +35,7 @@ Follow these instructions to clone the project and run it locally on your machin
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Inferno2211/news-app.git
+   git clone https://github.com/apu52/METAVERSE.git
    cd news-app
    ```
 
