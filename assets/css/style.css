@@ -13,23 +13,23 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  /* overflow-x: hidden; */
 }
 
 body {
   max-width: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 /* CSS for Light-Dark Theme SWITCH */
 .theme-toggle {
   position: relative;
-  width: 40px;
-  height: 20px;
-  margin-left: 0 5px;
-}
-
-.invert-color {
-  filter: invert(100%);
+  width: 60px;
+  height: 30px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-toggle input {
@@ -37,6 +37,65 @@ body {
   width: 0;
   height: 0;
 }
+
+.slider {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+  box-shadow: 0 0 20px #fb16e4;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 30px;
+  bottom: 3px;
+  background: url("https://img.icons8.com/fluency/16/000000/smiling-sun.png");
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(30px);
+  background: url("https://img.icons8.com/external-flatart-icons-flat-flatarticons/16/external-moon-nature-flatart-icons-flat-flatarticons-4.png");
+  background-size: cover;
+  left:0px;
+}
+
+.dark-theme .slider {
+  background-color: black;
+}
+
+.dark-theme a,
+.dark-theme li,
+.dark-theme b {
+  filter: invert(1) hue-rotate(180deg);
+  color: #000000;
+}
+
+.dark-theme {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.dark-theme .footer-content .socials li a {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
 
 /* METAVERSE heading **/
 .heading {
@@ -52,67 +111,7 @@ body {
   padding-top: 3%;
 }
 
-.slider {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  border-radius: 34px;
-  transition: background-color 0.4s;
-  box-shadow: 0 0 20px #fb16e4;
-}
-
-.slider .dark-theme {
-  background-color: black;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background: url("https://img.icons8.com/fluency/16/000000/smiling-sun.png");
-  border-radius: 50%;
-  transition: transform 0.4s;
-}
-
-.dark-theme .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background: url("https://img.icons8.com/external-flatart-icons-flat-flatarticons/16/external-moon-nature-flatart-icons-flat-flatarticons-4.png");
-  border-radius: 50%;
-  transition: transform 0.4s;
-}
-
-input:checked + .slider:before {
-  transform: translateX(20px);
-}
-
-.dark-theme a,.dark-theme li,.dark-theme b{
-  filter: invert(1) hue-rotate(180deg);
-  color: #000000;
-}
-.dark-theme {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-.dark-theme .footer-content .socials li a {
-  color: #000000;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
+/* footer */
 
 footer {
   position: absolute;
