@@ -1,53 +1,164 @@
+/* General Body Styles */
 body {
-    background-color: #c5840b;
-    font-family: Verdana;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
 
-  form {
-    background-color: #fafafa;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .form-control {
-    text-align: left;
-    margin-bottom: 25px;
-  }
+/* Header Styles */
+.content {
+  text-align: center;
+}
 
-  .form-control label {
-    display: block;
-    margin-bottom: 10px;
-  }
+.content img {
+  margin: 0 auto;
+}
 
-  .form-control input,
-  .form-control select,
-  .form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
-  }
+.content h1 {
+  color: #333;
+  font-size: 40px;
+}
 
-  .form-control input[type="radio"],
-  .form-control input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-  }
+/* Main Container Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  button {
-    background-color: #25c405;
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  
+/* Form Section Styles */
+.form-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Control Styles */
+.form-control {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+select {
+  height: 40px;
+}
+
+/* Textarea */
+textarea {
+  height: 100px;
+  resize: vertical;
+  font-size:19px;
+}
+
+/* Underline Effect */
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+input:focus + label, input:valid + label, select:focus + label, select:valid + label {
+  color: #007bff;
+}
+
+input:focus ~ .underline, input:valid ~ .underline, select:focus ~ .underline, select:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+/* Radio and Checkbox Groups */
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+  background-color: gray;
+}
+
+button[type="submit"]:active {
+  background-color: gray;
+  box-shadow: none;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Additional Buttons (if any) */
+button.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.btn-cancel:hover {
+  background-color: #c82333;
+}
+
+button.btn-cancel:active {
+  background-color: #a71d2a;
+  box-shadow: none;
+}
+
+button.btn-cancel:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+}
