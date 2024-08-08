@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <title>Tinder Landing Page</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinder Landing Page</title>
 
-    <!-- Favicon  -->
-    <link rel="icon" href="images/favicon.ico" />
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" />
 
-    <!-- CSS File  -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="header">
-      <video autoplay loop muted play-inline class="back-video">
-        <source src="videos/background.mp4" type="video/mp4" />
-      </video>
-      <nav>
-        <img src="images/logo.png" class="logo" />
-        <ul>
-          <li><a href="./starting/start.html">Start</a></li>
-          <li><a href="#">Learn</a></li>
-          <li><a href="#">Safety</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Download</a></li>
-        </ul>
-      </nav>
+  <!-- CSS File -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <video autoplay loop muted play-inline class="back-video">
+      <source src="videos/background.mp4" type="video/mp4" />
+    </video>
+    <nav>
+      <img src="images/logo.png" class="logo" />
+      <ul>
+        <li><a href="./starting/start.html">Start</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+    </nav>
 
-      <div class="text-box">
-        <h1 style="color: aliceblue;">Start Something Epic</h1>
-        <p style="color: aliceblue;">Connect With People You Know But Haven't Met Yet</p>
-        <button type="button" class="btn">Create account</button>
-      </div>
-      <a href="#" class="download"
-        >DOWNLOAD THE APP <img src="images/down-arrow.png"
-      /></a>
+    <div class="text-box">
+      <h1 style="color: aliceblue;">Start Something Epic</h1>
+      <p style="color: aliceblue;">Connect With People You Know But Haven't Met Yet</p>
+      <button type="button" class="btn" id="createAccountBtn">Create account</button>
     </div>
-  </body>
+    <a href="#" class="download">
+      DOWNLOAD THE APP <img src="images/down-arrow.png" />
+    </a>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    var modal = document.getElementById("loginModal");
+    var btn = document.getElementById("createAccountBtn");
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+  
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  
+    document.getElementById("loginForm").onsubmit = function(event) {
+      event.preventDefault(); 
+      window.location.href = "./starting/start.html";
+    }
+  </script>
+  
+</body>
 </html>

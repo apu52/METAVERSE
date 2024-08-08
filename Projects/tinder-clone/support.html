@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support - Tinder Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .support-section {
+        padding: 50px;
+        text-align: center;
+        background: #f9f9f9;
+    }
+
+    .support-section h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .support-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .faq-section {
+      margin-top: 20px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq-item h3 {
+      margin: 0;
+    }
+
+    .faq-item p {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .faq-item.active p {
+      display: block;
+    }
+
+    .faq-item .arrow {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      font-size: 18px;
+    }
+
+    .contact-form {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 30px auto; 
+      max-width: 600px; 
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    .contact-form button {
+      background: #ff3e3b;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact-form button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      background: #ff3e3b;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-other">
+        <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo" /></a>
+      <ul>
+        <li><a href="./starting/start.html">Start</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="support-section">
+    <h1>Need Help?</h1>
+    
+    <!-- FAQs Section -->
+    <div class="faq-section">
+      <div class="faq-item">
+        <h3>How do I create an account? <span class="arrow">+</span></h3>
+        <p>To create an account, click on the 'Create account' button on the homepage and fill out the registration form.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I reset my password? <span class="arrow">+</span></h3>
+        <p>Click on the 'Forgot password?' link on the login page and follow the instructions to reset your password.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I delete my account? <span class="arrow">+</span></h3>
+        <p>To delete your account, go to the account settings and select 'Delete Account'. Follow the prompts to confirm.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What should I do if I encounter a bug? <span class="arrow">+</span></h3>
+        <p>If you encounter a bug, please contact our support team through the contact form below and provide details about the issue.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I contact support? <span class="arrow">+</span></h3>
+        <p>You can contact support using the form below or reach out to us via email at support@example.com.</p>
+      </div>
+    </div>
+    
+    <!-- Contact Form Section -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="submit_contact_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Tinder Clone. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to handle FAQ toggles
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+        const arrow = item.querySelector('.arrow');
+        arrow.textContent = item.classList.contains('active') ? '-' : '+';
+      });
+    });
+  </script>
+</body>
+</html>
