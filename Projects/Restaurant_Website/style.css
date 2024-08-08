@@ -25,11 +25,11 @@ button:hover {
 /*Navigatin */
 
 nav {
-  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
-  position: sticky;
-  top: 0;
-  margin: 10px;
-  background-color: white;
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   z-index: 50;
 }
@@ -39,14 +39,89 @@ nav {
   align-items: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.logo_container {
+  margin-right: 1rem;
 }
 
-.bar_icon {
-  font-size: 32px;
+.logo_container img {
+  width: 40px;
+  height: 40px;
 }
+
+
+.bar_icon {
+  display: none;
+}
+.bar_icon img {
+  width: 20px;
+  height: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  margin-right: 2rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .bar_icon {
+    display: block;
+  }
+  ul {
+    display: none;
+  }
+  .bar_icon img {
+    width: 20px;
+    height: 20px;
+  }
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* add this to make the nav sticky */
+    top: 0; /* add this to make the nav sticky */
+    width: 100%; /* add this to make the nav full width */
+    z-index: 50;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* add this to make the navigation full width */
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .logo_container {
+    margin-right: 0;
+  }
+  .bar_icon {
+    margin-left: 1rem;
+  }
+}
+
 
 /* Hero Section */
 .hero {

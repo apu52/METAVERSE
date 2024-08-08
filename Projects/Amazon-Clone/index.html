@@ -42,7 +42,7 @@
             </div>
 
             <div class="nav-signin border">
-                <p><span>Hello, Sign in</span></p>
+                <p onclick="window.location.href='signin.html'"><span>Hello, Sign in</span></p>
                 <select class="oo">
                 <option><p class="nav-sec">Accounts & Lists</p></option>
                 </select>
@@ -208,7 +208,31 @@
             </ul>
         </div>
         <div class="panel3">
+            <div id="fot">
             <div class="logo1"></div>
+            <!-- Language Selector -->
+             <div class="icn">
+            <div class="language-selector">
+                <i class="fa-solid fa-globe"></i>
+                <select id="languageSelect">
+                    
+                        
+                     
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+            <div id="Ind">
+                <div id="flag">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfE2aaTiS34_NIKDcftmD-hQ7_h9UaPKcOHA&s">
+                </div>
+                <div id="in">India</div>
+            </div>
+            </div>
+
+        </div>
         </div>
         <div class="panel5">
           <ul>
@@ -306,7 +330,26 @@
         </div>
     </footer>
     <script>
-       
+       // Example: Redirect based on language selection
+document.getElementById('languageSelect').addEventListener('change', function() {
+    const selectedLanguage = this.value;
+    switch (selectedLanguage) {
+        case 'en':
+            window.location.href = 'https://www.amazon.com'; // English site
+            break;
+        case 'hi':
+            window.location.href = 'https://www.amazon.in'; // Hindi site (example)
+            break;
+        case 'es':
+            window.location.href = 'https://www.amazon.es'; // Spanish site (example)
+            break;
+        // Add more cases for other languages and corresponding URLs
+        default:
+            // Handle default case if needed
+            break;
+    }
+});
+
     </script>
 </body>
 </html>

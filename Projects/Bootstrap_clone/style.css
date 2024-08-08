@@ -320,6 +320,14 @@ border-radius: 16px;
   float: right;
 }
 
+.footer-links > p{
+  transition-duration: 0.2s;
+}
+
+.footer-links > p:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 1000px) {
   .section-5 img {

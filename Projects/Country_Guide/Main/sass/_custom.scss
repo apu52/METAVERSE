@@ -1,0 +1,8 @@
+$light: hsl(0, 0%, 100%);
+$font-weight-normal: 600;
+$font-weight-bold: 800;
+$btn-border-width: none;
+$text-muted: red;
+$border-width: 2px;
+
+@use "../node_modules/bootstrap/scss/bootstrap.scss";

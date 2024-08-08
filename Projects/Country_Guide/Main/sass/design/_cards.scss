@@ -1,0 +1,78 @@
+// import some modules
+@use "functions" as m;
+@use "variables";
+@use "mixin" as mix;
+
+//
+.cards {
+  // designing the form
+
+  form {
+    #search {
+      padding-right: 10%;
+      @include mix.smallScreen(small) {
+        width: 100%;
+      }
+    }
+    #search,
+    select {
+      height: m.rem(35);
+      font-size: m.rem(14);
+      padding-top: m.rem(5);
+      padding-bottom: m.rem(5);
+      outline: none;
+      box-shadow: var(--Button_Shadow_Light);
+      background-color: var(--Light_Mode_Elements);
+      color: var(--Light_Mode_Text);
+    }
+    select {
+      border: none;
+      @include mix.smallScreen(small) {
+        margin-top: m.rem(25);
+      }
+    }
+  }
+  // designing the cards
+  .cards-container {
+    gap: m.rem(48);
+
+    margin: 0;
+    .card {
+      width: m.rem(288);
+      height: m.rem(353.5);
+      border-radius: 10px;
+      padding: 0;
+      box-shadow: var(--Button_Shadow_Light);
+      background-color: var(--Light_Mode_Elements);
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      img {
+        display: block;
+        height: m.rem(192);
+        object-fit: fill;
+        color: var(--Light_Mode_Text);
+        font-size: m.rem(12);
+        font-weight: lighter;
+      }
+      .card-body {
+        padding: 0;
+        color: var(--Light_Mode_Text);
+        h6 {
+          padding: m.rem(16);
+          font-size: m.rem(17);
+          margin: m.rem(5) 0 0;
+          height: m.rem(62.8);
+        }
+        ul {
+          padding: m.rem(16);
+          height: m.rem(94);
+
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}

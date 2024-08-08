@@ -1,0 +1,17 @@
+@use "sass:math";
+
+// function to convert px to rems
+
+@function rem($size) {
+  @if math.is-unitless($size) {
+    @return math.div($size, 16) + rem;
+  } @else {
+    @error "The value contains an error";
+  }
+}
+// these are the screen sizes to consider
+// device widths to be used
+$deviceWidth: (
+  "desktop": 1440,
+  "mobile": 375,
+);

@@ -31,7 +31,6 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/scroll.css">
   <link rel="stylesheet" href="./assets/css/contributors.css">
-  <link rel="stylesheet" href="./assets/css/cursor_transition.css">
 
   <!--
     - google font link
@@ -42,6 +41,36 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+   <style>
+     .circle {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
+      transition: transform 0.1s, left 0.1s, top 0.1s;
+      box-shadow: 0 0 20px #23bdf5,
+        0 0 60px #f523f5,
+        0 0 100px #23bdf5;
+    }
+
+    .circle-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    @media (max-width: 740px) {
+    .circle-container{
+      display: none;
+    }
+  }
+   </style>
 </head>
 <!-- Light-Dark theme SWITCH -->
 
@@ -54,7 +83,82 @@
 </label>
 
 <body>
-  <div class="cursor"></div>
+  <div class="circle-container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const coords = { x: 0, y: 0 };
+        const circles = document.querySelectorAll(".circle");
+
+        circles.forEach(function (circle) {
+            circle.x = 0;
+            circle.y = 0;
+        });
+
+        window.addEventListener("mousemove", function (e) {
+            coords.x = e.pageX;
+            coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+        });
+
+        function animateCircles() {
+            let x = coords.x;
+            let y = coords.y;
+
+            circles.forEach(function (circle, index) {
+                circle.style.left = `${x - 12}px`;
+                circle.style.top = `${y - 12}px`;
+                circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+
+                const nextCircle = circles[index + 1] || circles[0];
+                circle.x = x;
+                circle.y = y;
+
+                x += (nextCircle.x - x) * 0.25;
+                y += (nextCircle.y - y) * 0.25;
+            });
+
+            requestAnimationFrame(animateCircles);
+        }
+
+        animateCircles();
+    });
+</script>
+
+<div class="nav-wrapper">
+  <div class="progress-bar"></div>
+</div>
+
+<script src="scrolldownprogressbar.js"></script>
 
   <div class="main">
     <div class="container">
@@ -62,7 +166,7 @@
         
         <div class="btn">
             <a id="aid" class="nav-link" href="index.html">Home</a>
-            <label class="number">r1</label>
+            <label class="number"></label>
         </div>
       </div>
       <div class="radio-wrapper">
@@ -74,7 +178,7 @@
           <!-- <span aria-hidden=""></span> -->
           <!-- <span aria-hidden="" class="btn__glitch">ABOUT</span> -->
           
-          <label class="number">r2</label>
+          <label class="number"></label>
         </div>
 
       </div>
@@ -85,7 +189,17 @@
           <a id="aid" class="nav-link" href="contact.html">Contact</a>
           <!-- <span aria-hidden=""></span> -->
           <!-- <span aria-hidden="" class="btn__glitch">CONTACT</span> -->
-          <label class="number">r3</label>
+          <label class="number"></label>
+        </div> 
+      </div>
+      <div class="radio-wrapper">
+        <!-- <input type="radio" id="value-2" name="btn" class="input"> -->
+        <!-- <input type="radio" id="value-3" name="btn" class="input"> -->
+        <div class="btn" style="width: 115% !important;">
+          <a id="aid" class="nav-link" href="contributor.html">Contributor</a>
+          <!-- <span aria-hidden=""></span> -->
+          <!-- <span aria-hidden="" class="btn__glitch">CONTACT</span> -->
+          <label class="number"></label>
         </div> 
       </div>
     </div>
@@ -100,7 +214,6 @@
           <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
         
             <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-            <span class="slider"></span>
           </label>
         </div>
         <br>
@@ -263,6 +376,34 @@
             </div>
           </div>
         </div>
+        <!-- contact us form -->
+         <div id="contact-us">
+        <div class="contact-container">
+          <h1 style="color: rgb(241, 17, 17);">Contact Us - Metaverse</h1>
+          <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+             <div id="sub"> <button type="submit">Submit</button></div>
+          </form>
+      </div>
+      </div>
+  
+      <!-- Popup -->
+      <div id="popup" class="popup">
+          <span id="popup-message" class="popup-message"></span>
+          
+      </div>
         
   <!-- End of two-sided box -->
 
@@ -340,6 +481,7 @@
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
+  <script src="./assets/js/contact.js"></script>
 
 </body>
 

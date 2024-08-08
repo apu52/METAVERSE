@@ -375,6 +375,7 @@ select {
 .crop-info {
   display: flex;
   margin-top: 2rem;
+  overflow: auto;
 }
 
 #crop-image {

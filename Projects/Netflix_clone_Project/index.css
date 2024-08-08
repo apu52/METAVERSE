@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 /* Universal selector to reset margin and padding, and set the default font */
 * {
     padding: 0;
@@ -195,41 +196,16 @@ section.first>div :nth-child(2) {
 }
 
 /* FAQ section styling */
-.faq h2 {
-    text-align: center;
-    font-size: 48px;
+
+.bold1{
+    font-size: 46px;
+    font-weight: 700;
+    position: relative;
+    z-index:3;
+    color:white;
 }
 
-/* FAQ section container */
-.faq {
-    background: black;
-    color: white;
-    padding: 34px;
-}
 
-/* FAQ box hover effect */
-.faqbox:hover {
-    background-color: #414141;
-    color: white;
-}
-
-/* Invert color of SVG in FAQ box */
-.faqbox svg {
-    filter: invert(1);
-}
-
-/* FAQ box styling */
-.faqbox {
-    transition: all 1s ease-out;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #2d2d2d;
-    padding: 24px;
-    max-width: 60vw;
-    margin: 34px auto;
-    cursor: pointer;
-}
 
 /* Footer styling */
 footer {
