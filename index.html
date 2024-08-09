@@ -73,7 +73,8 @@
     pointer-events: none;
     z-index: 9999;
   }
-  
+
+
   @media (max-width: 740px) {
     .circle-container{
       display: none;
@@ -252,12 +253,58 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<style>
+  .main{
+    padding-top: 4rem;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+  }
+
+  .hamburger {
+  display: none;
+  cursor: pointer;
+  }
+  .hamburger i {
+  color: white;
+  font-size: 24px;
+  }
+  
+  @media (max-width: 770px) {
+    .circle-container{
+      display: none;
+    }
+    .hamburger {
+      color: white;
+    display: block;
+    }
+
+    .container {
+      display: none;
+    }
+
+    .container.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+</style>
+
 <div class="nav-wrapper">
   <div class="progress-bar"></div>
 </div>
 
 <div class="main">
-  <div class="container">
+  
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="container" id="nav-menu">
     <div class="radio-wrapper">
       <div class="btn">
         <a id="aid" class="nav-link" href="">
@@ -299,6 +346,14 @@
       </div> 
     </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+    }
+
+  </script>
 </div>
 
     </div>
