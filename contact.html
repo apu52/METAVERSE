@@ -92,6 +92,70 @@
     justify-content: center;
     align-items: center;
 }
+#contact-us{
+  margin: 80px 0px;
+}
+.contact-container {
+
+        background: #202020;
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        color: #ff9bbd;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .funky-input, .funky-textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #303030;
+        color: #fff;
+        font-size: 1em;
+        transition: background 0.3s ease;
+    }
+    .funky-textarea{
+      max-width: 100%;
+    }
+    .funky-input:focus, .funky-textarea:focus {
+        background: #404040;
+        outline: none;
+    }
+
+    .funky-button {
+        background: linear-gradient(90deg, #ff9bbd, #ff61a6);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .funky-button:hover {
+        transform: scale(1.1);
+    }
+
+    .funky-button:active {
+        transform: scale(0.95);
+    }
 
 .spinner-inner {
     width: 100px;
@@ -528,26 +592,28 @@ const interval = setInterval(() => {
           </div>
         </div>
         <!-- contact us form -->
-         <div id="contact-us">
-        <div class="contact-container">
-          <h1 style="color: rgb(241, 17, 17);">Contact Us - Metaverse</h1>
-          <form id="contact-form" class="contact-form">
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-
-             <div id="sub"> <button type="submit">Submit</button></div>
-          </form>
-      </div>
+        <div id="contact-us">
+          <div class="contact-container">
+              <h1  class="heading1"  style="color: #ff9bbd; font-family: 'Poppins', sans-serif;">Contact Us</h1>
+              <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required class="funky-input">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required class="funky-input">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required class="funky-textarea"></textarea>
+                  </div>
+      
+                  <div id="sub">
+                      <button type="submit" class="funky-button">Submit</button>
+                  </div>
+              </form>
+          </div>
       </div>
   
       <!-- Popup -->
