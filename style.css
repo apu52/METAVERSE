@@ -87,18 +87,18 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     flex-direction: column;
     display: none;
-  }
+  } */
   
-  .hamburger {
+  /* .hamburger {
     display: flex;
-  }
-
+  } */
+/* 
   .container.open {
     display: flex;
-  }
+  } */
 
   .hamburger.open .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
