@@ -735,6 +735,7 @@ body.dark-theme .items {
 
 .contact {
   background-color: var(--extra-light);
+  width: 121%;
 }
 
 .contact h1 {
@@ -770,6 +771,8 @@ body.dark-theme .items {
 
 .contact-form form {
   padding: auto;
+  position: relative;
+  left: 130px;
 }
 
 .contact-form h1 {
