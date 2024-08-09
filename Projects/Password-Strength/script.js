@@ -53,3 +53,11 @@ function Strength(password) {
       show.classList.remove("hide");
     }
   };
+ let reset = document.querySelector("#reset");
+  reset.onclick = function(){
+    password.value = "";
+    container.classList.remove("weak");
+  container.classList.remove("moderate");
+  container.classList.remove("strong");
+
+  }
