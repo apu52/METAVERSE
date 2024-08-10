@@ -22,10 +22,12 @@ body {
 
 /* CSS for Light-Dark Theme SWITCH */
 .theme-toggle {
-  position: relative;
+  position: fixed;
   width: 40px;
   height: 20px;
-  margin-left: 0 5px;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
 }
 
 .invert-color {

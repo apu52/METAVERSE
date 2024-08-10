@@ -1,11 +1,16 @@
 /* Common Styles */
 .container {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  z-index: 100;
 }
 
 .radio-wrapper {
