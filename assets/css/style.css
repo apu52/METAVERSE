@@ -171,6 +171,60 @@ footer {
 
   color: #cacdd2;
 }
+/* Newsletter Section Styles */
+.newsletter-section {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: -50px;
+}
+
+.newsletter-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 16px;
+  width: 250px;
+  color: white;
+  margin-right: 10px;
+}
+
+#newsletter-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(215, 213, 85);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#newsletter-form button:hover {
+  background-color: rgb(120, 118, 52);
+}
+
+.success-message, .error-message {
+  margin-top: 10px;
+  font-size: 14px;
+}
 
 .socials {
   list-style: none;

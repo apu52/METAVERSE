@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupMessage = document.getElementById('popup-message');
     const popupClose = document.getElementById('popup-close');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
 
         if (!name) {
             showPopup('Please enter your name.');
@@ -18,7 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (!message) {
             showPopup('Please enter your message.');
         } else {
-            showPopup('Form submitted successfully!', true);
+            try {
+                const response = await fetch('http://localhost:3000/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    showPopup('We Have Recieved Your Query. We Will Contact You Soon!!', true);
+                } else {
+                    showPopup('Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                showPopup('An error occurred. Please try again.');
+            }
         }
     });
 
@@ -29,8 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function showPopup(message, success = false) {
         popupMessage.textContent = message;
         popupMessage.style.color = success ? 'white' : 'red';
+        popup.style.textAlign = "center";
         popup.style.display = 'block';
-        setTimeout(closePopup, 3000);
+        setTimeout(closePopup, 3000); // Popup will close automatically after 3 seconds
     }
 
     function closePopup() {

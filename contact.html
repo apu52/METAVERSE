@@ -92,6 +92,70 @@
     justify-content: center;
     align-items: center;
 }
+#contact-us{
+  margin: 80px 0px;
+}
+.contact-container {
+
+        background: #202020;
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        color: #ff9bbd;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .funky-input, .funky-textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #303030;
+        color: #fff;
+        font-size: 1em;
+        transition: background 0.3s ease;
+    }
+    .funky-textarea{
+      max-width: 100%;
+    }
+    .funky-input:focus, .funky-textarea:focus {
+        background: #404040;
+        outline: none;
+    }
+
+    .funky-button {
+        background: linear-gradient(90deg, #ff9bbd, #ff61a6);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .funky-button:hover {
+        transform: scale(1.1);
+    }
+
+    .funky-button:active {
+        transform: scale(0.95);
+    }
 
 .spinner-inner {
     width: 100px;
@@ -246,7 +310,49 @@ const interval = setInterval(() => {
 </script>
 <!-- Preloader Ends -->
 <div id="content"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+  <style>
+    .main{
+      padding-top: 4rem;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 5rem;
+    }
+  
+    .hamburger {
+    display: none;
+    cursor: pointer;
+    }
+    .hamburger i {
+    color: white;
+    font-size: 24px;
+    }
+    
+    @media (max-width: 770px) {
+      .circle-container{
+        display: none;
+      }
+      .hamburger {
+        color: white;
+      display: block;
+      }
+  
+      .container {
+        display: none;
+      }
+  
+      .container.active {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+  </style>
 
 <div class="nav-wrapper">
   <div class="progress-bar"></div>
@@ -254,44 +360,62 @@ const interval = setInterval(() => {
 
 <script src="scrolldownprogressbar.js"></script>
 
+
 <div class="main">
-  <div class="container">
+  
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="container" id="nav-menu">
     <div class="radio-wrapper">
       <div class="btn">
-        <a id="aid" class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
-        <label class="number">r1</label>
-      </div>
-    </div>
-
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a>
+        <a id="aid" class="nav-link" href="">
+          <i class="fas fa-home"></i> Home
+        </a>
         <label class="number"></label>
       </div>
     </div>
-
     <div class="radio-wrapper">
       <div class="btn">
-        <a id="aid" class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-        <label class="number">r3</label>
-      </div>
-    </div>
-
-    <!-- New RateUs link -->
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="rateus.html"><i class="fas fa-star"></i> RateUs</a>
+        <a id="aid" class="nav-link" href="about.html">
+          <i class="fas fa-info-circle"></i> About
+        </a>
         <label class="number"></label>
       </div>
     </div>
-
     <div class="radio-wrapper">
-      <div class="btn" style="width: 150% !important;">
-        <a id="aid" class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a>
+      <div class="btn">
+        <a id="aid" class="nav-link" href="contact.html">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
         <label class="number"></label>
-      </div>
+      </div> 
+    </div>
+    <div class="radio-wrapper">
+      <div class="btn">
+        <a id="aid" class="nav-link" href="RateUs.html">
+          <i class="fas fa-star"></i> RateUs
+        </a>
+        <label class="number"></label>
+      </div> 
+    </div>
+    <div class="radio-wrapper">
+      <div class="btn" style="width: 160px !important;">
+        <a id="aid" class="nav-link" href="contributor.html">
+          <i class="fas fa-users"></i> Contributors
+        </a>
+        <label class="number"></label>
+      </div> 
     </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+    }
+
+  </script>
 </div>
 
     <main>
@@ -468,26 +592,28 @@ const interval = setInterval(() => {
           </div>
         </div>
         <!-- contact us form -->
-         <div id="contact-us">
-        <div class="contact-container">
-          <h1 style="color: rgb(241, 17, 17);">Contact Us - Metaverse</h1>
-          <form id="contact-form" class="contact-form">
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-
-             <div id="sub"> <button type="submit">Submit</button></div>
-          </form>
-      </div>
+        <div id="contact-us">
+          <div class="contact-container">
+              <h1  class="heading1"  style="color: #ff9bbd; font-family: 'Poppins', sans-serif;">Contact Us</h1>
+              <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required class="funky-input">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required class="funky-input">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required class="funky-textarea"></textarea>
+                  </div>
+      
+                  <div id="sub">
+                      <button type="submit" class="funky-button">Submit</button>
+                  </div>
+              </form>
+          </div>
       </div>
   
       <!-- Popup -->

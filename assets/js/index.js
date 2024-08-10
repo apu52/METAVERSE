@@ -1,12 +1,20 @@
 // Fetch the project data from the JSON file
 fetch('../../projectData.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
   .then(projectsData => {
     const projectListContainer = document.querySelector('.project-list');
     projectListContainer.innerHTML = generateLiTags(projectsData);
     getPageNumbers();
     getProjectsInPage();
   })
+  .catch(error => {
+    console.error('There has been a problem with your fetch operation:', error);
+  });
 
 // Generate <li> tags dynamically
 const generateLiTags = projectsData => {
@@ -19,14 +27,11 @@ const generateLiTags = projectsData => {
 
       const liTag = `
           <li class="project-item active" data-filter-item data-category="open source">
-            <a href="../../Projects/${folderName}" target = "_blank" aria-label=${projectTitle}>
-
-      
+            <a href="/Projects/${folderName}" target="_blank" aria-label="${projectTitle}">
               <figure class="project-img">
-
-                <img src="./assets/img/${thumbnailName}" alt="${projectTitle}" loading="lazy">
+                <img src="/assets/img/${thumbnailName}" alt="${projectTitle}" loading="lazy">
               </figure>
-              <h3 class="project-title"><a href="https://github.com/apu52/METAVERSE/tree/main/Projects/${folderName}" target="_blank" aria-label=${projectTitle}>${tagNumber}. ${projectTitle} 🔗</a></h3>
+              <h3 class="project-title"><a href="https://github.com/apu52/METAVERSE/tree/main/Projects/${folderName}" target="_blank" aria-label="${projectTitle}">${tagNumber}. ${projectTitle} 🔗</a></h3>
               <p class="project-category">Take a Look and Learn!</p>
             </a>
           </li>
@@ -39,8 +44,6 @@ const generateLiTags = projectsData => {
   return liTags.join('\n');
 };
 
-
-
 window.addEventListener('scroll', function() {
   var scrollToTopButton = document.getElementById('progress');
   if (window.pageYOffset > 200) {
@@ -50,11 +53,9 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
 const searchContainer = document.getElementById("search-container-id");
 const searchInput = document.getElementById("searchbar");
 
 searchContainer.addEventListener("click", function () {
-  // Focus on the input field when the div is clicked
   searchInput.focus();
 });

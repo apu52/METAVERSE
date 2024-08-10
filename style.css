@@ -95,7 +95,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     flex-direction: column;
     display: none;
   }
@@ -103,10 +103,12 @@
   .navbar.open .container {
     display: flex; /* Show the navbar when the menu is open */
   }
+
   
-  .hamburger {
+  /* .hamburger {
     display: flex;
   }
+
 
 
   .hamburger.open .line:nth-child(1) {

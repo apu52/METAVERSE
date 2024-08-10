@@ -7,7 +7,9 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #2374ab;
+  /* background-color: #2374ab; */
+  background: url('/Projects/CurrencyConverter/assets/images.jpeg');
+  background-size: cover;
 }
 
 #currency-h1 {
@@ -16,7 +18,7 @@ body {
   justify-content: center;
 }
 #currency-h1 h1 {
-  color: whitesmoke;
+  color: black;
   font-weight: 500;
   margin: 0px;
   position: absolute;
@@ -46,15 +48,15 @@ body {
   box-shadow: none;
 }
 #currency-container .btn-primary {
-  background-color: #d17b0f;
-  border: 2px solid #d17b0f;
+  background-color: rgb(2, 175, 2);
+  border: 2px solid green;
   color: #121416;
   font-weight: 500;
   padding: 10px 50px;
 }
 #currency-container .btn-primary:hover {
-  background-color: #e98911;
-  border: 2px solid #e98911;
+  background-color:white ;
+  border: 2px solid green;
 }
 
 #currency-converter {
