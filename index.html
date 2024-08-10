@@ -74,6 +74,32 @@
     z-index: 9999;
   }
 
+  .navbar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 100;
+  } 
+  .dark-theme .navbar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar-container{
+    backdrop-filter: blur(10px);
+  }
+
+  .dark-theme a{
+    color: black;
+  }
+
+  .main-content{
+    padding-top: 4rem;
+  }
+  
 
   @media (max-width: 740px) {
     .circle-container{
@@ -317,12 +343,14 @@
   <div class="progress-bar"></div>
 </div>
 
-<div class="main">
-  
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
+<div class="main navbar" id="navbar">
+  <div class="hamburger" onclick="toggleNavbar()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
   </div>
-  <div class="container" id="nav-menu">
+  <div  class="container navbar-container">
+
     <div class="radio-wrapper">
       <div class="btn">
         <a id="aid" class="nav-link" href="">
@@ -375,6 +403,14 @@
 </div>
 
     </div>
+    <script>
+      function toggleNavbar() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('open');
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('open');
+      }
+    </script>
     <main>
 
       <div class="main-content">
@@ -383,8 +419,8 @@
           <div class="heading">
           <span>🚀&nbsp;</span><span>M</span><span>E</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
         </div>
-          <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-
+          <label class="theme-toggle" for="themeToggle" >
+          
             <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
             <span class="slider"></span>
           </label>

@@ -1,11 +1,16 @@
 /* Common Styles */
 .container {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  z-index: 100;
 }
 
 .radio-wrapper {
@@ -69,6 +74,7 @@
 }
 
 .hamburger {
+  color: white;
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -78,10 +84,17 @@
   z-index: 1001;
 }
 
+.main.navbar.dark-theme {
+  background: #1a1a1a; /* Dark background */
+  color: #f0f0f0; /* Light text color */
+}
+
+
+
 .hamburger .line {
   width: 30px;
   height: 3px;
-  background: #23abd4;
+  background: white;
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
 }
@@ -90,15 +103,18 @@
   /* .container {
     flex-direction: column;
     display: none;
-  } */
+  }
+
+  .navbar.open .container {
+    display: flex; /* Show the navbar when the menu is open */
+  }
+
   
   /* .hamburger {
     display: flex;
-  } */
-/* 
-  .container.open {
-    display: flex;
-  } */
+  }
+
+
 
   .hamburger.open .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
