@@ -34,17 +34,18 @@
   position: relative;
   z-index: 1;
   text-align: center;
+  /* color: white; */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   background-image: linear-gradient(to right, #23abd4, #23abd4 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   transition: all 0.3s ease-in-out;
 }
-
+/* 
 .nav-link:hover {
   text-shadow: 0 0 3px #fff, 0 0 10px rgba(167, 45, 237, 0.3), 0 0 20px rgba(167, 45, 237, 0.4), 0 0 30px rgba(167, 45, 237, 0.5), 0 0 40px rgba(167, 45, 237, 0.6), 0 0 50px rgba(167, 45, 237, 0.7);
-}
+} */
 
 .btn a:before {
   display: block;
