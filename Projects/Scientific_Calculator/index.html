@@ -95,6 +95,128 @@
 </head>
 
 <body>
+<form name="calcul">
+<table align="center">
+
+	<tr>
+		<td colspan="4"> <input type="text" name="result" placeholder="0" style="text-align:right"> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="sin" onclick="sin()"> sin </button> </td>
+		<td><button type="button" value="cos" onclick="cos()"> cos</button> </td>
+		<td><button type="button" value="tan" onclick="tan()"> tan </button> </td>
+		<td colspan="2">
+		 <button type="button" value="C" class="clear" onclick="remv()"> C </button>
+	 </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="x^2" onclick="square()"> x<sup>2 </button> </td>
+		<td><button type="button" value="x^3" onclick="cubed()"> x<sup>3 </button> </td>
+		<td><button type="button" value="sqrt2" onclick="sqrt2()"> &radic; </button> </td>
+		<td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="1" onclick="number(this.value)"> 1 </button> </td>
+		<td><button type="button" value="2" onclick="number(this.value)"> 2 </button> </td>
+		<td><button type="button" value="3" onclick="number(this.value)"> 3 </button> </td>
+		<td><button type="button" value="BACKSPC" onclick="BACKSPC()"> < </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="4" onclick="number(this.value)"> 4</button> </td>
+		<td><button type="button" value="5" onclick="number(this.value)"> 5 </button> </td>
+		<td><button type="button" value="6" onclick="number(this.value)"> 6 </button> </td>
+		<td><button type="button" value="-" onclick="number(value)"> - </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="7" onclick="number(this.value)"> 7 </button> </td>
+		<td><button type="button" value="8" onclick="number(this.value)"> 8 </button> </td>
+		<td><button type="button" value="9" onclick="number(this.value)"> 9 </button> </td>
+		<td><button type="button" value="/" onclick="number(value)"> / </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="." onclick="number(value)"> . </button> </td>
+		<td><button type="button" value="0" onclick="number(value)"> 0 </button> </td>
+		<td><button type="button" value="*" onclick="number(value)"> * </button> </td>
+		<td><button type="button" value="%" onclick="number(value)"> % </button> </td>
+	</tr>
+
+	<tr>
+		<td colspan="2"> <button type="button" value="=" onclick="equal()" class="equal">=</button> </td>
+		<td><button type="button" value="+" onclick="number(value)"> + </button> </td>
+	</tr>
+
+</table>
+</form>
+
+
+<script>
+	function sin(){
+	document.calcul.result.value=Math.sin(document.calcul.result.value);
+	}
+
+	function cos(){
+	document.calcul.result.value=Math.cos(document.calcul.result.value);
+	}
+
+	function tan(){
+	document.calcul.result.value=Math.tan(document.calcul.result.value);
+	}
+
+	function BACKSPC(){
+	var a = document.calcul.result.value;
+	document.calcul.result.value = a.substr(0, a.length-1);
+	}
+
+	function square(){
+	document.calcul.result.value = Math.pow(document.calcul.result.value, 2);
+	}
+
+	function cubed(){
+	document.calcul.result.value = Math.pow(document.calcul.result.value, 3);
+	}
+
+	function sqrt2(){
+	document.calcul.result.value = Math.pow(document.calcul.result.value, 1/2);
+	}
+
+	function sqrt3(){
+	document.calcul.result.value = Math.pow(document.calcul.result.value, 1/3);
+	}
+
+	function number(value){
+		if (document.calcul.result.value === "0" || document.calcul.result.value === "") {
+    document.calcul.result.value = value;
+  } else {
+    document.calcul.result.value += value;
+  }
+
+	}
+
+	function operator(value) {
+  if (document.calcul.result.value.slice(-1) === '+' ||
+      document.calcul.result.value.slice(-1) === '-' ||
+      document.calcul.result.value.slice(-1) === '*' ||
+      document.calcul.result.value.slice(-1) === '/') {
+    document.calcul.result.value = document.calcul.result.value.slice(0, -1);
+  }
+  document.calcul.result.value += value;
+}
+
+	function remv(){
+	document.calcul.result.value="";
+	}
+
+	function equal(){
+	document.calcul.result.value=eval(document.calcul.result.value);
+	}
+</script>
+=======
     <form name="calcul">
         <table align="center">
             <tr>
@@ -280,5 +402,6 @@
             alert(`Mode switched to ${isDegree ? "Degree" : "Radian"}`);
         }
     </script>
+
 </body>
 </html>
