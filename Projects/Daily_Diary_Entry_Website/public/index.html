@@ -17,36 +17,79 @@
           </tbody>
         </table>
       </div>
-      <form action="/" method="POST">
+      <form id="logForm">
         <label for="logMessage"> New Log:</label>
-        <textarea
-          id="logMessage"
-          name="logMessage"
-          spellcheck="false"
-        ></textarea>
+        <textarea id="logMessage" name="logMessage" spellcheck="false"></textarea>
         <button type="submit">Log</button>
       </form>
     </div>
+
     <script>
-      // Fetch the previous logs and insert them into the table
-      fetch("/logs")
-        .then((response) => response.json())
-        .then((logs) => {
-          const logTableBody = document.getElementById("logTableBody");
-          logs["logs"].forEach((log) => {
-            const row = document.createElement("tr");
-            const timestampCell = document.createElement("td");
-            timestampCell.textContent = log.timestamp;
-            const messageCell = document.createElement("td");
-            //replacing \n and \r with <br>
-            log.text = log.text.replace(/(?:\r\n|\r|\n)/g, "<br>");
-            messageCell.innerHTML = log.text;
-            row.appendChild(timestampCell);
-            row.appendChild(messageCell);
-            logTableBody.appendChild(row);
-            window.scrollTo(0, document.body.scrollHeight);
-          });
+      document.addEventListener('DOMContentLoaded', () => {
+        const logForm = document.getElementById('logForm');
+        const logMessage = document.getElementById('logMessage');
+        const logTableBody = document.getElementById('logTableBody');
+
+        // Load logs from local storage
+        const logs = JSON.parse(localStorage.getItem('logs')) || [];
+
+        // Display logs
+        logs.forEach(log => {
+          addLogToTable(log);
         });
+
+        // Add new log
+        logForm.addEventListener('submit', event => {
+          event.preventDefault();
+          const log = {
+            id: Date.now(),
+            timestamp: new Date().toLocaleString(),
+            text: logMessage.value
+          };
+          logs.push(log);
+          localStorage.setItem('logs', JSON.stringify(logs));
+          addLogToTable(log);
+          logMessage.value = '';
+        });
+
+        // Add log to table
+        function addLogToTable(log) {
+          const row = document.createElement('tr');
+          row.setAttribute('data-id', log.id);
+
+          const timestampCell = document.createElement('td');
+          timestampCell.textContent = log.timestamp;
+
+          const messageCell = document.createElement('td');
+          messageCell.innerHTML = log.text.replace(/(?:\r\n|\r|\n)/g, '<br>');
+
+          const deleteCell = document.createElement('td');
+          const deleteButton = document.createElement('button');
+          deleteButton.textContent = 'Delete';
+          deleteButton.addEventListener('click', () => {
+            deleteLog(log.id);
+          });
+          deleteCell.appendChild(deleteButton);
+
+          row.appendChild(timestampCell);
+          row.appendChild(messageCell);
+          row.appendChild(deleteCell);
+
+          logTableBody.appendChild(row);
+          window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        // Delete log
+        function deleteLog(id) {
+          const logIndex = logs.findIndex(log => log.id === id);
+          if (logIndex > -1) {
+            logs.splice(logIndex, 1);
+            localStorage.setItem('logs', JSON.stringify(logs));
+            const row = document.querySelector(`tr[data-id='${id}']`);
+            logTableBody.removeChild(row);
+          }
+        }
+      });
     </script>
   </body>
 </html>
