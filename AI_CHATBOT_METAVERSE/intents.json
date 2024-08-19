@@ -1,0 +1,115 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "How are you",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello! Welcome to the Metaverse Front-End Playground. How can I assist you today?",
+        "Hi there! How can I help you with the Metaverse Front-End Playground today?",
+        "Hello! How can we make your experience better with the Metaverse Front-End Playground?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later"],
+      "responses": [
+        "Goodbye! Thank you for visiting the Metaverse Front-End Playground.",
+        "See you later! Have a great day!",
+        "Bye! Come back again soon to the Metaverse Front-End Playground."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank you so much"],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "Anytime! We're here to assist you.",
+        "My pleasure! If you have more questions, feel free to ask."
+      ]
+    },
+    {
+      "tag": "mission",
+      "patterns": [
+        "What is the Metaverse Front-End Playground?",
+        "Tell me about the Metaverse Front-End Playground",
+        "What does the Metaverse Front-End Playground do?",
+        "What is the mission of the Metaverse Front-End Playground?"
+      ],
+      "responses": [
+        "The Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Our mission is to provide a platform for developers to showcase their projects and dive into the virtual realm."
+      ]
+    },
+    {
+      "tag": "features",
+      "patterns": [
+        "What features does the Metaverse Front-End Playground offer?",
+        "Tell me about the features of the Metaverse Front-End Playground",
+        "What can the Metaverse Front-End Playground do?"
+      ],
+      "responses": [
+        "The Metaverse Front-End Playground offers several features, including a platform for developers to showcase their metaverse projects, tools for innovation and collaboration, and a dynamic community for networking and learning."
+      ]
+    },
+    {
+      "tag": "community",
+      "patterns": [
+        "What is the community like?",
+        "Can I join the community?",
+        "Tell me about the Metaverse Front-End Playground community"
+      ],
+      "responses": [
+        "The Metaverse Front-End Playground community is a dynamic and inclusive group of developers from all backgrounds. Whether you're a seasoned developer or a newcomer, you're invited to join us and collaborate on exciting projects."
+      ]
+    },
+    {
+      "tag": "collaboration",
+      "patterns": [
+        "How can I collaborate on projects?",
+        "Can I contribute to existing projects?",
+        "Tell me about collaboration opportunities"
+      ],
+      "responses": [
+        "You can collaborate on projects by joining our repository on GitHub and participating in ongoing projects. Feel free to contribute your ideas, code, and expertise to help us innovate in the metaverse space."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "What projects are available?",
+        "Can I see some projects?",
+        "Tell me about the projects in the Metaverse Front-End Playground"
+      ],
+      "responses": [
+        "You can explore various projects on our GitHub repository. We have a wide range of projects showcasing different aspects of metaverse development, from virtual reality experiences to interactive web applications."
+      ]
+    },
+    {
+      "tag": "volunteer",
+      "patterns": [
+        "How can I volunteer?",
+        "Can I volunteer for the Metaverse Front-End Playground?",
+        "Tell me about volunteering opportunities"
+      ],
+      "responses": [
+        "Thank you for your interest in volunteering! Please visit our GitHub repository and get involved in our projects. Your contributions are valuable and appreciated."
+      ]
+    },
+    {
+      "tag": "donate",
+      "patterns": [
+        "How can I donate?",
+        "Can I donate to the Metaverse Front-End Playground?",
+        "Tell me about donation options"
+      ],
+      "responses": [
+        "Thank you for considering a donation! You can support our projects by contributing to our GitHub repository. Your donations help us continue our mission to innovate and collaborate in the metaverse space."
+      ]
+    }
+  ]
+}
