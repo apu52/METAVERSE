@@ -1,6 +1,6 @@
 ## Metaverse Front-End Playground Code of Conduct
 
-Welcome to the Metaverse Front-End Playground community! We're dedicated to fostering a collaborative and inclusive environment for all contributors. To ensure a positive experience, we've established the following code of conduct:
+Welcome to the Metaverse Front-End Playground community! We are committed to cultivating a collaborative and inclusive environment for all members. To maintain a positive and respectful experience, we have outlined the following code of conduct:
 
 - Respect and Inclusivity
 - No Code Deletion
