@@ -28,10 +28,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: screenshots
+    id: Screenshots/Videos
     attributes:
-      label: Add ScreenShots
-      description: Add sufficient ScreenShots to explain your issue.
+      label: Add ScreenShots/Videos
+      description: Add sufficient ScreenShots/Videos to explain your issue.
   - type: dropdown
     id: devices
     attributes:
@@ -50,9 +50,11 @@ body:
       options:
         - label: "I have read the Contributing Guidelines"
           required: true
-        - label: "I'm a GSSOC'24 contributor"
+        - label: "I'm a WOB'24(Winter Of Blockchain) contributor"
           required: False
-        - label: "I'm a SSOC'24 contributor"
+        - label: "I'm a GSSOC'24 Extended contributor"
+          required: False
+        - label: "I'm a Hactoberfest'24 Extended contributor"
           required: False
         - label: "I have starred the repository"
           required: true
