@@ -28,7 +28,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Screenshots/Videos
+    id: Screenshots
     attributes:
       label: Add ScreenShots/Videos
       description: Add sufficient ScreenShots/Videos to explain your issue.
