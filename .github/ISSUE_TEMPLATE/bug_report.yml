@@ -32,6 +32,7 @@ body:
     attributes:
       label: Add ScreenShots/Videos
       description: Add sufficient ScreenShots/Videos to explain your issue.
+      required: true
   - type: dropdown
     id: devices
     attributes:
