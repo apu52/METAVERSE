@@ -37,7 +37,7 @@ body:
     id: devices
     attributes:
       label: On which device are you experiencing this bug?
-      multiple: true
+      required: true
       options:
         - Android
         - iPhone
