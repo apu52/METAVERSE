@@ -24,7 +24,7 @@
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
-  
+
   <!--
     - custom css link
   -->
@@ -41,8 +41,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-   <style>
-     .circle {
+  <style>
+    .circle {
       position: absolute;
       width: 25px;
       height: 25px;
@@ -66,135 +66,145 @@
     }
 
     @media (max-width: 740px) {
-    .circle-container{
-      display: none;
+      .circle-container {
+        display: none;
+      }
     }
-  }
 
-  #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
-.spinner {
-    position: relative;
-    width: 130px; 
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#contact-us{
-  margin: 80px 0px;
-}
-.contact-container {
+    .spinner {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        background: #202020;
-        padding: 20px;
-        border-radius: 15px;
-        max-width: 600px;
-        margin: auto;
+    #contact-us {
+      margin: 80px 0px;
+    }
+
+    .contact-container {
+
+      background: #202020;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
     }
 
     .contact-form {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
 
     .form-group {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
 
     label {
-        color: #ff9bbd;
-        font-size: 1.2em;
-        margin-bottom: 5px;
-        display: block;
+      color: #ff9bbd;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      display: block;
     }
 
-    .funky-input, .funky-textarea {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        background: #303030;
-        color: #fff;
-        font-size: 1em;
-        transition: background 0.3s ease;
+    .funky-input,
+    .funky-textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #303030;
+      color: #fff;
+      font-size: 1em;
+      transition: background 0.3s ease;
     }
-    .funky-textarea{
+
+    .funky-textarea {
       max-width: 100%;
     }
-    .funky-input:focus, .funky-textarea:focus {
-        background: #404040;
-        outline: none;
+
+    .funky-input:focus,
+    .funky-textarea:focus {
+      background: #404040;
+      outline: none;
     }
 
     .funky-button {
-        background: linear-gradient(90deg, #ff9bbd, #ff61a6);
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 50px;
-        font-size: 1.2em;
-        cursor: pointer;
-        transition: transform 0.3s ease;
+      background: linear-gradient(90deg, #ff9bbd, #ff61a6);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
     .funky-button:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
 
     .funky-button:active {
-        transform: scale(0.95);
+      transform: scale(0.95);
     }
 
-.spinner-inner {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%;
-    border: 10px solid transparent; 
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent; 
-    border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff); 
-    border-image-slice: 1;
-    animation: spin 1s linear infinite;
-}
+    .spinner-inner {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff);
+      border-image-slice: 1;
+      animation: spin 1s linear infinite;
+    }
 
-#loading-percentage {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(45deg, #be18ff, #ffffff); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-}
+    #loading-percentage {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(45deg, #be18ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
 
-#content {
-    display: none;
-}
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
-   </style>
+    #content {
+      display: none;
+    }
+  </style>
 </head>
 <!-- Light-Dark theme SWITCH -->
 
@@ -238,185 +248,187 @@
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
-</div>
-<script>
+  </div>
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const coords = { x: 0, y: 0 };
-        const circles = document.querySelectorAll(".circle");
+      const coords = { x: 0, y: 0 };
+      const circles = document.querySelectorAll(".circle");
 
-        circles.forEach(function (circle) {
-            circle.x = 0;
-            circle.y = 0;
+      circles.forEach(function (circle) {
+        circle.x = 0;
+        circle.y = 0;
+      });
+
+      window.addEventListener("mousemove", function (e) {
+        coords.x = e.pageX;
+        coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+      });
+
+      function animateCircles() {
+        let x = coords.x;
+        let y = coords.y;
+
+        circles.forEach(function (circle, index) {
+          circle.style.left = `${x - 12}px`;
+          circle.style.top = `${y - 12}px`;
+          circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+
+          const nextCircle = circles[index + 1] || circles[0];
+          circle.x = x;
+          circle.y = y;
+
+          x += (nextCircle.x - x) * 0.25;
+          y += (nextCircle.y - y) * 0.25;
         });
 
-        window.addEventListener("mousemove", function (e) {
-            coords.x = e.pageX;
-            coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
-        });
+        requestAnimationFrame(animateCircles);
+      }
 
-        function animateCircles() {
-            let x = coords.x;
-            let y = coords.y;
-
-            circles.forEach(function (circle, index) {
-                circle.style.left = `${x - 12}px`;
-                circle.style.top = `${y - 12}px`;
-                circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
-
-                const nextCircle = circles[index + 1] || circles[0];
-                circle.x = x;
-                circle.y = y;
-
-                x += (nextCircle.x - x) * 0.25;
-                y += (nextCircle.y - y) * 0.25;
-            });
-
-            requestAnimationFrame(animateCircles);
-        }
-
-        animateCircles();
+      animateCircles();
     });
-</script>
+  </script>
 
-<!-- Preloader starts -->
-<div id="preloader">
-  <div class="spinner">
+  <!-- Preloader starts -->
+  <div id="preloader">
+    <div class="spinner">
       <div class="spinner-inner"></div>
       <div id="loading-percentage">0%</div>
-  </div>
-</div>
-<script>
-  window.addEventListener('load', () => {
-const preloader = document.getElementById('preloader');
-const content = document.getElementById('content');
-const loadingPercentage = document.getElementById('loading-percentage');
-
-let percentage = 0;
-
-const interval = setInterval(() => {
-  percentage += 10; 
-  loadingPercentage.textContent = `${percentage}%`;
-  if (percentage >= 100) {
-      clearInterval(interval);
-      setTimeout(() => {
-          preloader.style.display = 'none';
-          content.style.display = 'block';
-          document.body.style.overflow = 'auto'; 
-      }, 300); 
-  }
-}, 100); 
-});
-
-</script>
-<!-- Preloader Ends -->
-<div id="content"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <style>
-    .main{
-      padding-top: 4rem;
-    }
-    .container{
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-bottom: 5rem;
-    }
-  
-    .hamburger {
-    display: none;
-    cursor: pointer;
-    }
-    .hamburger i {
-    color: white;
-    font-size: 24px;
-    }
-    
-    @media (max-width: 770px) {
-      .circle-container{
-        display: none;
-      }
-      .hamburger {
-        color: white;
-      display: block;
-      }
-  
-      .container {
-        display: none;
-      }
-  
-      .container.active {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    
-  </style>
-
-<div class="nav-wrapper">
-  <div class="progress-bar"></div>
-</div>
-
-<script src="scrolldownprogressbar.js"></script>
-
-
-<div class="main">
-  
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="container" id="nav-menu">
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="">
-          <i class="fas fa-home"></i> Home
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="about.html">
-          <i class="fas fa-info-circle"></i> About
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="contact.html">
-          <i class="fas fa-envelope"></i> Contact
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="RateUs.html">
-          <i class="fas fa-star"></i> RateUs
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn" style="width: 160px !important;">
-        <a id="aid" class="nav-link" href="contributor.html">
-          <i class="fas fa-users"></i> Contributors
-        </a>
-        <label class="number"></label>
-      </div> 
     </div>
   </div>
-
   <script>
-    function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
-    }
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      const loadingPercentage = document.getElementById('loading-percentage');
+
+      let percentage = 0;
+
+      const interval = setInterval(() => {
+        percentage += 10;
+        loadingPercentage.textContent = `${percentage}%`;
+        if (percentage >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+            document.body.style.overflow = 'auto';
+          }, 300);
+        }
+      }, 100);
+    });
 
   </script>
-</div>
+  <!-- Preloader Ends -->
+  <div id="content">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      .main {
+        padding-top: 4rem;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5rem;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .hamburger i {
+        color: white;
+        font-size: 24px;
+      }
+
+      @media (max-width: 770px) {
+        .circle-container {
+          display: none;
+        }
+
+        .hamburger {
+          color: white;
+          display: block;
+        }
+
+        .container {
+          display: none;
+        }
+
+        .container.active {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+
+    <div class="nav-wrapper">
+      <div class="progress-bar"></div>
+    </div>
+
+    <script src="scrolldownprogressbar.js"></script>
+
+
+    <div class="main">
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="about.html">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="contact.html">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="RateUs.html">
+              <i class="fas fa-star"></i> RateUs
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn" style="width: 160px !important;">
+            <a id="aid" class="nav-link" href="contributor.html">
+              <i class="fas fa-users"></i> Contributors
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function toggleMenu() {
+          const navMenu = document.getElementById('nav-menu');
+          navMenu.classList.toggle('active');
+        }
+
+      </script>
+    </div>
 
     <main>
 
@@ -427,279 +439,289 @@ const interval = setInterval(() => {
             <span>💻&nbsp;</span><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
           </div>
           <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-        
+
             <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
           </label>
         </div>
         <br>
-        
+
         <br>
         <br>
         <br>
- <!-- Two-sided box with inline CSS -->
- <div class="animated-title" >
-  <div class="text-top">
-    <div>
-      <span>Repo Owner</span>
-      <p>Arpan Chowdhury</p>
-    </div>
-  </div>
-  
-</div>
- <div class="owner-info-container" >
-    <div class="owner-info" style="text-align: center;">
-      <img src="arpan.jpeg" alt="" class="image ignore-dark-theme">
-    </div>
-    <div class="owner-info" style="text-align: left;">
-      
-      <h5 class="wordCarousel">
-        <div>
-            <!-- Use classes 2,3,4, or 5 to match the number of words -->
-            <ul class="flip5">
-                <li>B.Tech student at NSEC(CSE)'26 </li>
-                <li>Web Dev Intern</li>
-                <li>Mulearn GCEK portfolio Competition Winner</li>
-                <li>@GSSOC - Rank 85, @SSOC'23 </li>
-                <li>Hacksquad winner</li>
-            </ul>
-            
-        </div>        
-      </h5> 
-      <div class="links-container" style="z-index: 10; position: relative;">
-        <a href="https://www.youtube.com/@arpanchowdhury53" aria-label="Follow me on Youtube" title="Youtube (External Link)"
-              rel="noopener noreferrer" target="_blank"> Youtube  <i class="fa fa-youtube " aria-hidden="true"></i></a>
-        <a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-              rel="noopener noreferrer" target="_blank"> Twitter  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-        <a href= "https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
-              title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
-                class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          
-      </div>
-    </div>
-  </div>
-  <div class="animated-title" >
-    <div class="text-top">
-      <div>
-        <span>Project Maintainers</span>
-        <p>Shuvadipta Das</p>
-      </div>
-    </div>
-    
-  </div>
-   <div class="owner-info-container" >
-      <div class="owner-info" style="text-align: center;">
-        <img src="./images/shuv.jpg" alt="" class="image ignore-dark-theme">
-      </div>
-      <div class="owner-info" style="text-align: left;">
-        
-        <h5 class="wordCarousel">
-          <div>
-              <!-- Use classes 2,3,4, or 5 to match the number of words -->
-              <ul class="flip5">
-                  <li>B.Tech student at NSEC(CSE)'26 </li>
-                  <li>Rank 22  of HACKSQUAD '23</li>
-                  <li>@GSSOC - Rank 49 </li>
-              </ul>
-              
-          </div>        
-        </h5> 
-        <div class="links-container" style="z-index: 10; position: relative;">
-          <a href="https://www.youtube.com/@5h0ov" aria-label="Follow me on Youtube" title="Youtube (External Link)"
-                rel="noopener noreferrer" target="_blank"> Youtube  <i class="fa fa-youtube" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/5h0ovie" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"> Twitter  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-          <a href= "https://twitter.com/5h0ovie" aria-label="Follow me on Linkedin"
-                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
-                  class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            
-        </div>
-      </div>
-    </div>
-  
-    <div class="animated-title" >
-      <div class="text-top">
-        <div>
-          <p>Shruti Sen</p>
-        </div>
-      </div>
-      
-    </div>
-     <div class="owner-info-container" >
-        <div class="owner-info" style="text-align: center;">
-          <img src="./images/Shruti.jpg" alt="" class="image ignore-dark-theme">
-        </div>
-        <div class="owner-info" style="text-align: left;">
-          
-          <h5 class="wordCarousel">
+        <!-- Two-sided box with inline CSS -->
+        <div class="animated-title">
+          <div class="text-top">
             <div>
+              <span>Repo Owner</span>
+              <p>Arpan Chowdhury</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="owner-info-container">
+          <div class="owner-info" style="text-align: center;">
+            <img src="arpan.jpeg" alt="" class="image ignore-dark-theme">
+          </div>
+          <div class="owner-info" style="text-align: left;">
+
+            <h5 class="wordCarousel">
+              <div>
                 <!-- Use classes 2,3,4, or 5 to match the number of words -->
                 <ul class="flip5">
-                    <li>B.Tech student at NSEC(CSE)'26 </li>
-                    <li>Web Dev Intern</li>
-                    <li>HACKTOBERFEST 2022 & 2023</li>
-                    <li>Rank 22  of HACKSQUAD '23</li>
+                  <li>B.Tech student at NSEC(CSE)'26 </li>
+                  <li>Web Dev Intern</li>
+                  <li>Mulearn GCEK portfolio Competition Winner</li>
+                  <li>@GSSOC - Rank 85, @SSOC'23 </li>
+                  <li>Hacksquad winner</li>
                 </ul>
-            </div>        
-          </h5> 
-          <div class="links-container" style="z-index: 10; position: relative;">
-            <a href="https://github.com/shruti-sen2004" aria-label="Follow me on Facebook" title="Facebook (External Link)"
-                  rel="noopener noreferrer" target="_blank"> Github  <i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://shruti-sen2004.github.io/Shruti_Portfolio/" aria-label="Visit my portfolio" title="portfolio (External Link)"
-                  rel="noopener noreferrer" target="_blank"> Portfolio  <i class="fa fa-link" aria-hidden="true"></i></a>
-            <a href= "https://linkedin.com/in/shruti-sen-6b6924253" aria-label="Follow me on Linkedin"
-                  title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
-                    class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-              
+
+              </div>
+            </h5>
+            <div class="links-container" style="z-index: 10; position: relative;">
+              <a href="https://www.youtube.com/@arpanchowdhury53" aria-label="Follow me on Youtube"
+                title="Youtube (External Link)" rel="noopener noreferrer" target="_blank"> Youtube <i
+                  class="fa fa-youtube " aria-hidden="true"></i></a>
+              <a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter"
+                title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"> Twitter <i
+                  class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
+                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn <i
+                  class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="animated-title" >
-        <div class="text-top">
-          <div>
-            <p>Ankita Sikdar</p>
+        <div class="animated-title">
+          <div class="text-top">
+            <div>
+              <span>Project Maintainers</span>
+              <p>Shuvadipta Das</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="owner-info-container">
+          <div class="owner-info" style="text-align: center;">
+            <img src="./images/shuv.jpg" alt="" class="image ignore-dark-theme">
+          </div>
+          <div class="owner-info" style="text-align: left;">
+
+            <h5 class="wordCarousel">
+              <div>
+                <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                <ul class="flip5">
+                  <li>B.Tech student at NSEC(CSE)'26 </li>
+                  <li>Rank 22 of HACKSQUAD '23</li>
+                  <li>@GSSOC - Rank 49 </li>
+                </ul>
+
+              </div>
+            </h5>
+            <div class="links-container" style="z-index: 10; position: relative;">
+              <a href="https://www.youtube.com/@5h0ov" aria-label="Follow me on Youtube" title="Youtube (External Link)"
+                rel="noopener noreferrer" target="_blank"> Youtube <i class="fa fa-youtube" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/5h0ovie" aria-label="Follow me on Twitter" title="Twitter (External Link)"
+                rel="noopener noreferrer" target="_blank"> Twitter <i class="fa-brands fa-x-twitter"
+                  aria-hidden="true"></i></a>
+              <a href="https://twitter.com/5h0ovie" aria-label="Follow me on Linkedin" title="Linkedin (External Link)"
+                rel="noopener noreferrer" target="_blank">LinkedIn <i class="fa fa-linkedin-square"
+                  aria-hidden="true"></i></a>
+
+            </div>
           </div>
         </div>
-        
-      </div>
-       <div class="owner-info-container" >
+
+        <div class="animated-title">
+          <div class="text-top">
+            <div>
+              <p>Shruti Sen</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="owner-info-container">
+          <div class="owner-info" style="text-align: center;">
+            <img src="./images/Shruti.jpg" alt="" class="image ignore-dark-theme">
+          </div>
+          <div class="owner-info" style="text-align: left;">
+
+            <h5 class="wordCarousel">
+              <div>
+                <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                <ul class="flip5">
+                  <li>B.Tech student at NSEC(CSE)'26 </li>
+                  <li>Web Dev Intern</li>
+                  <li>HACKTOBERFEST 2022 & 2023</li>
+                  <li>Rank 22 of HACKSQUAD '23</li>
+                </ul>
+              </div>
+            </h5>
+            <div class="links-container" style="z-index: 10; position: relative;">
+              <a href="https://github.com/shruti-sen2004" aria-label="Follow me on Facebook"
+                title="Facebook (External Link)" rel="noopener noreferrer" target="_blank"> Github <i
+                  class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://shruti-sen2004.github.io/Shruti_Portfolio/" aria-label="Visit my portfolio"
+                title="portfolio (External Link)" rel="noopener noreferrer" target="_blank"> Portfolio <i
+                  class="fa fa-link" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/in/shruti-sen-6b6924253" aria-label="Follow me on Linkedin"
+                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn <i
+                  class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="animated-title">
+          <div class="text-top">
+            <div>
+              <p>Ankita Sikdar</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="owner-info-container">
           <div class="owner-info" style="text-align: center;">
             <img src="./images/Ankita.jpg" alt="" class="image ignore-dark-theme">
           </div>
           <div class="owner-info" style="text-align: left;">
-            
+
             <h5 class="wordCarousel">
               <div>
-                  <!-- Use classes 2,3,4, or 5 to match the number of words -->
-                  <ul class="flip5">
-                      <li>B.Tech student at NSEC(CSE)'26 </li>
-                      <li>Web Dev Intern</li>
-                      <li>Rank 22  of HACKSQUAD '23</li>
-                  </ul>
-                  
-              </div>        
-            </h5> 
+                <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                <ul class="flip5">
+                  <li>B.Tech student at NSEC(CSE)'26 </li>
+                  <li>Web Dev Intern</li>
+                  <li>Rank 22 of HACKSQUAD '23</li>
+                </ul>
+
+              </div>
+            </h5>
             <div class="links-container" style="z-index: 10; position: relative;">
-              <a href="https://www.instagram.com/a_n_k_i_t_a_s_i_k_d_a_r/" aria-label="Follow me on Instagram" title="Instagram (External Link)"
-                    rel="noopener noreferrer" target="_blank"> Instagram  <i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="https://github.com/  AnkitaSikdar005" aria-label="Follow me on github" title="github (External Link)"
-                    rel="noopener noreferrer" target="_blank"> Github  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-              <a href= "http://www.linkedin.com/in/ankita-sikdar-70210a253" aria-label="Follow me on Linkedin"
-                    title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn  <i
-                      class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                
+              <a href="https://www.instagram.com/a_n_k_i_t_a_s_i_k_d_a_r/" aria-label="Follow me on Instagram"
+                title="Instagram (External Link)" rel="noopener noreferrer" target="_blank"> Instagram <i
+                  class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://github.com/  AnkitaSikdar005" aria-label="Follow me on github"
+                title="github (External Link)" rel="noopener noreferrer" target="_blank"> Github <i
+                  class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              <a href="http://www.linkedin.com/in/ankita-sikdar-70210a253" aria-label="Follow me on Linkedin"
+                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank">LinkedIn <i
+                  class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
             </div>
           </div>
         </div>
         <!-- contact us form -->
         <div id="contact-us">
           <div class="contact-container">
-              <h1  class="heading1"  style="color: #ff9bbd; font-family: 'Poppins', sans-serif;">Contact Us</h1>
-              <form id="contact-form" class="contact-form">
-                  <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" name="name" required class="funky-input">
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" name="email" required class="funky-input">
-                  </div>
-                  <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea id="message" name="message" rows="5" required class="funky-textarea"></textarea>
-                  </div>
-      
-                  <div id="sub">
-                      <button type="submit" class="funky-button">Submit</button>
-                  </div>
-              </form>
+            <h1 class="heading1" style="color: #ff9bbd; font-family: 'Poppins', sans-serif;">Contact Us</h1>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required class="funky-input">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required class="funky-input">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required class="funky-textarea"></textarea>
+              </div>
+
+              <div id="sub">
+                <button type="submit" class="funky-button">Submit</button>
+              </div>
+            </form>
           </div>
-      </div>
-  
-      <!-- Popup -->
-      <div id="popup" class="popup">
+        </div>
+
+        <!-- Popup -->
+        <div id="popup" class="popup">
           <span id="popup-message" class="popup-message"></span>
-          
-      </div>
-        
-  <!-- End of two-sided box -->
+
+        </div>
+
+        <!-- End of two-sided box -->
 
 
-  
 
-  <!--
+
+        <!--
         FOOTER
   -->
-  <div class="main" id="footer">
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="wave-creation">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
-        </g>
-      </svg>
-    </div>
-
-
-    <footer class="page-footer font-small unique-color-dark pt-4">
-      <div class="container1">
-        <div class="list-unstyled list-inline text-center py-2 text-black">
-          <br>
-          <br>
-          <div class="socials-text" style="text-align: center; margin-bottom:50px">
-            <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
-            <br>
-            <br>
-            <a href="https://github.com/apu52/METAVERSE" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
-              checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on github</a>
+        <div class="main" id="footer">
+          <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="wave-creation">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
+              </g>
+            </svg>
           </div>
 
-            <ul class="socials">
-            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github" title="Github (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
-                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          </ul> 
+
+          <footer class="page-footer font-small unique-color-dark pt-4">
+            <div class="container1">
+              <div class="list-unstyled list-inline text-center py-2 text-black">
+                <br>
+                <br>
+                <div class="socials-text" style="text-align: center; margin-bottom:50px">
+                  <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
+                  <br>
+                  <br>
+                  <a href="https://github.com/apu52/METAVERSE" target="_blank"
+                    style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
+                    checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on
+                    github</a>
+                </div>
+
+                <ul class="socials">
+                  <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
+                      title="Github (External Link)" rel="noopener noreferrer" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter"
+                      title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
+                        class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
+                      title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
+                        class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+              <div class="policy">
+                <a href="privacynotice.html" target="_blank"
+                  style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
+                <a href="copyright.html" target="_blank"
+                  style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
+              </div>
+            </div>
+          </footer>
         </div>
-        <div class="policy">
-          <a href="privacynotice.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
-              <a href="copyright.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-        </div>
+        </section>
       </div>
-    </footer>
-  </div>
-  </section>
-  </div>
 
-  </main>
+    </main>
 
-  <!-- SCROLL TO TOP BUTTON -->
-  <div id="progress">
-    <span id="progress-value">&#x1F815;</span>
-  </div>
+    <!-- SCROLL TO TOP BUTTON -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
 
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/index.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/scroll.js"></script>
-  <script src="./assets/js/contributors.js"></script>
-  <script src="./assets/js/mouse_transition.js"></script>
-  <script src="./assets/js/contact.js"></script>
-</div>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/contributors.js"></script>
+    <script src="./assets/js/mouse_transition.js"></script>
+    <script src="./assets/js/contact.js"></script>
+  </div>
 </body>
 
 </html>

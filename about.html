@@ -72,7 +72,7 @@
         display: none;
       }
 
-      #para{
+      #para {
         font-size: large;
       }
     }
@@ -99,64 +99,68 @@
     }
 
     #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
-.spinner {
-    position: relative;
-    width: 130px; 
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .spinner {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.spinner-inner {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%;
-    border: 10px solid transparent; 
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent; 
-    border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff); 
-    border-image-slice: 1;
-    animation: spin 1s linear infinite;
-}
+    .spinner-inner {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff);
+      border-image-slice: 1;
+      animation: spin 1s linear infinite;
+    }
 
-#loading-percentage {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(45deg, #be18ff, #ffffff); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-}
+    #loading-percentage {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(45deg, #be18ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
 
-#content {
-    display: none;
-}
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
+    #content {
+      display: none;
+    }
   </style>
 </head>
 <!-- Light-Dark theme SWITCH -->
@@ -245,142 +249,144 @@
   </script>
 
   <!-- Preloader starts -->
-<div id="preloader">
-  <div class="spinner">
+  <div id="preloader">
+    <div class="spinner">
       <div class="spinner-inner"></div>
       <div id="loading-percentage">0%</div>
-  </div>
-</div>
-<script>
-  window.addEventListener('load', () => {
-const preloader = document.getElementById('preloader');
-const content = document.getElementById('content');
-const loadingPercentage = document.getElementById('loading-percentage');
-
-let percentage = 0;
-
-const interval = setInterval(() => {
-  percentage += 10; 
-  loadingPercentage.textContent = `${percentage}%`;
-  if (percentage >= 100) {
-      clearInterval(interval);
-      setTimeout(() => {
-          preloader.style.display = 'none';
-          content.style.display = 'block';
-          document.body.style.overflow = 'auto'; 
-      }, 300); 
-  }
-}, 100); 
-});
-
-</script>
-<!-- Preloader Ends -->
-<div id="content"> 
-
-  <div class="cursor"></div>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-  <style>
-    .main{
-      padding-top: 4rem;
-    }
-    .container{
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-bottom: 5rem;
-    }
-  
-    .hamburger {
-    display: none;
-    cursor: pointer;
-    }
-    .hamburger i {
-    color: white;
-    font-size: 24px;
-    }
-    
-    @media (max-width: 770px) {
-      .circle-container{
-        display: none;
-      }
-      .hamburger {
-        color: white;
-      display: block;
-      }
-  
-      .container {
-        display: none;
-      }
-  
-      .container.active {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    
-  </style>
-
-
-<div class="main">
-  
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="container" id="nav-menu">
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="">
-          <i class="fas fa-home"></i> Home
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="about.html">
-          <i class="fas fa-info-circle"></i> About
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="contact.html">
-          <i class="fas fa-envelope"></i> Contact
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="RateUs.html">
-          <i class="fas fa-star"></i> RateUs
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn" style="width: 160px !important;">
-        <a id="aid" class="nav-link" href="contributor.html">
-          <i class="fas fa-users"></i> Contributors
-        </a>
-        <label class="number"></label>
-      </div> 
     </div>
   </div>
-
   <script>
-    function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
-    }
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      const loadingPercentage = document.getElementById('loading-percentage');
+
+      let percentage = 0;
+
+      const interval = setInterval(() => {
+        percentage += 10;
+        loadingPercentage.textContent = `${percentage}%`;
+        if (percentage >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+            document.body.style.overflow = 'auto';
+          }, 300);
+        }
+      }, 100);
+    });
 
   </script>
-</div>
+  <!-- Preloader Ends -->
+  <div id="content">
+
+    <div class="cursor"></div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+      .main {
+        padding-top: 4rem;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5rem;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .hamburger i {
+        color: white;
+        font-size: 24px;
+      }
+
+      @media (max-width: 770px) {
+        .circle-container {
+          display: none;
+        }
+
+        .hamburger {
+          color: white;
+          display: block;
+        }
+
+        .container {
+          display: none;
+        }
+
+        .container.active {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+
+
+    <div class="main">
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="about.html">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="contact.html">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="RateUs.html">
+              <i class="fas fa-star"></i> RateUs
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn" style="width: 160px !important;">
+            <a id="aid" class="nav-link" href="contributor.html">
+              <i class="fas fa-users"></i> Contributors
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function toggleMenu() {
+          const navMenu = document.getElementById('nav-menu');
+          navMenu.classList.toggle('active');
+        }
+
+      </script>
+    </div>
 
     <main>
 
@@ -403,16 +409,17 @@ const interval = setInterval(() => {
           <br>
 
           <style>
-            #part{
+            #part {
               height: auto;
               width: 100%;
             }
+
             @media (max-width:768px) {
-              #part{
+              #part {
                 padding: 3rem 0.5rem;
               }
- 
-              
+
+
             }
           </style>
 
@@ -521,7 +528,7 @@ const interval = setInterval(() => {
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
-</div>
+  </div>
 </body>
 
 </html>
