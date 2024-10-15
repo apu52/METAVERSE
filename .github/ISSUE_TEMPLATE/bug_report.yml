@@ -55,7 +55,7 @@ body:
           required: False
         - label: "I'm a GSSOC'24 Extended contributor"
           required: False
-        - label: "I'm a Hacktoberfest'24 Extended contributor"
+        - label: "I'm a Hacktoberfest'24  contributor"
           required: False
         - label: "I have starred the repository"
           required: true
