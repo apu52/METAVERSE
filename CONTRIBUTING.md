@@ -17,6 +17,27 @@ If you'd like to dive into existing projects, you're welcome to contribute by ad
 
  ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
+## Bonus Wat to Contribute?
+
+
+**🚀 Integrate Your Web3 Project into the Metaverse 🌐**
+
+Now, you can seamlessly add your Web3 project as a valid contribution to the Metaverse! 🪙✨ This exciting update allows decentralized applications (dApps), NFTs, and blockchain-based innovations to thrive in the virtual world. 🏞️🔗 Enhance your digital experience with secure, transparent transactions and verified ownership, all within the immersive Metaverse. 💡🌍 Get ready to unlock endless possibilities! 🌈👾
+
+ ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
+
+## Contributing Guidelines (For adding new WEB3 project only):
+
+
+- Add your New WEB 3 Project inside the `Projects` folder 
+- Commit inside the `Projects` Folder & Foldername(of your project) should not have any space.
+- Add a very ready-to-go & understandable `README.MD` within the Project folder of yours inside the `Projects` folder
+- Add one prototype Image of your new Project under `assets/img` folder (with the same name of the folder of your added project)
+- **Add only WEB 3 Based Projects(no NEW WEB 2 based projests will be considered)**
+
+
+ ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
+
   ## How to Contribute?
 - Drop a Star ⭐ in this repo
 - Take a look at the existing [Issues](https://github.com/apu52/METAVERSE/issues). 
@@ -30,6 +51,8 @@ If you'd like to dive into existing projects, you're welcome to contribute by ad
 - **REMINDER: Don't raise more than 2 `Issue` at a time**
 - **IMPORTANT: Don't make any type of `Pull Request` until & unless you get assigned to an `Issue`**
 - Add screenshots or screen captures to your `Pull Request` to help us understand the effects of the changes that are included in your commits.
+
+ ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
 ### Alternatively, contribute using GitHub Desktop
 
