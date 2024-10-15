@@ -10,6 +10,13 @@ Close #<issue_no>
 <!-- Example Close #244  -->
 <!-- Replace `issue_no` with the issue number which is fixed in this PR -->
 
+# Type of PR
+
+- [ ] Bug fix
+- [ ] Feature enhancement
+- [ ] Documentation update
+- [ ] Add WEB3 project
+- [ ] Other (specify): _______________
 
 # Video (mandatory)
 <!--Please try to attach the working video of your new deployed project here -->
