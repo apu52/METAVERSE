@@ -4,7 +4,7 @@ Title :
 
 Issue No. :
 
-Code Stack : 
+Tech Stack : 
 
 Close #<issue_no>
 <!-- Example Close #244  -->
@@ -19,18 +19,28 @@ Close #<issue_no>
 
 - [ ] I have mentioned the issue number in my Pull Request.
 - [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have created a helpful and easy to understand `README.md`
 - [ ] I have gone through the  `contributing.md` file before contributing
-
+- [ ] I have Starred the Repository.
 
 <!-- [X] - put a cross/X inside [] to check the box -->
+
+# Checklist:(In case of Adding New WEB3 project only)
+
+- [ ] I have made my Commits(of new project) under the  `Projects` folder
+- [ ] I have created a helpful and easy to understand `README.md`
+- [ ] i have added the image of my project under `asstes/img` folder
+
+<!-- [X] - put a cross/X inside [] to check the box -->
+
 **Additional context (Mandatory )**
 
 ***Are you contributing under any Open-source programme?***
 <!--Mention it here-->
-- [ ] I'm a GSSOC'24 contributor
-- [ ] I'm a SSOC'24 contributor
-       
+- [ ] I'm a GSSOC'24 extended contributor
+- [ ] I'm a Winter of Blockchain(WOB'24) contributor
+- [ ] I'm a Hactoberfest'24 contributor  
+
+
 
 
 
