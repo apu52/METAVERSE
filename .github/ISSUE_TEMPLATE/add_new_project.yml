@@ -1,0 +1,60 @@
+
+name: Add New project 
+description: new project
+title: "[New Project]: "
+labels: project
+body:
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: Is there an existing issues & project for this?
+      description: Please search to see if the Project already exists  you want to add.
+      options:
+        - label: I have searched the existing issues & projects
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Name of The Web 3 Project
+      description: Title of the Project.
+      placeholder: Just the name of the project
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Tech Stack
+      description: Tech Stack of your project
+    validations:
+      required: true
+  - type: textarea
+    id: Screenshots
+    attributes:
+      label: Add ScreenShots/Videos
+      description: Add sufficient ScreenShots/Videos to explain your project.
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Description
+      description: Brief Description of your web 3 project
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Record
+      options:
+        - label: "I have added my `commits` in the `projects` folder "
+          required: true
+        - label: "I have added the img of my project under `assets/img` folder "
+          required: true
+        - label: "I have read the Contributing Guidelines"
+          required: true
+        - label: "I'm a WOB'24(Winter Of Blockchain) contributor"
+          required: False
+        - label: "I'm a GSSOC'24 Extended contributor"
+          required: False
+        - label: "I'm a Hacktoberfest'24 Extended contributor"
+          required: False
+        - label: "I have starred the repository"
+          required: true
