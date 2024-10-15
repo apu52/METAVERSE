@@ -50,19 +50,31 @@
 
 <h3> This project is now OFFICIALLY accepted for</h3>
 
- 
-![GSSOC](https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88)
+ ![image](https://github.com/user-attachments/assets/5c3ca05d-0fac-43cc-ada6-0453be9ca0e2)
 
-![SSOC](https://github.com/apu52/METAVERSE/assets/114172928/f1f1c0d2-f6ef-4a6a-b853-1822dcdcee4e)
+
+ ![image](https://github.com/user-attachments/assets/8bce67af-b1d9-477f-952a-1bcdcedfc207)
+ 
+
+![image](https://github.com/user-attachments/assets/05ad17cd-64fe-4993-adfc-78c10071b688)
+
 
 
 <h3> This project was part of following Open Source Programs</h3>
 
 <div align="center">
+
+   ![GSSOC](https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88)
+
+![SSOC](https://github.com/apu52/METAVERSE/assets/114172928/f1f1c0d2-f6ef-4a6a-b853-1822dcdcee4e)
   <img src="images/Codepeak Pic.png" width="50%">
   <img src="images/KWOC pic.png" width="50%">
   <img src="images/Code collab carnival.png" width="50%">
   <img src="images/hack.jpeg" width="50%">
+  
+ 
+
+  
 </div>
   
 <h2 id="about-metaverse">About METAVERSE</h2>
