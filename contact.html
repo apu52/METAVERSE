@@ -322,6 +322,10 @@ const interval = setInterval(() => {
       flex-direction: row;
       justify-content: space-evenly;
       margin-bottom: 5rem;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
   
     .hamburger {
@@ -331,6 +335,9 @@ const interval = setInterval(() => {
     .hamburger i {
     color: white;
     font-size: 24px;
+    list-style: none;
+    padding: 0;
+    animation: changeText 10s infinite;
     }
     
     @media (max-width: 770px) {
@@ -339,7 +346,7 @@ const interval = setInterval(() => {
       }
       .hamburger {
         color: white;
-      display: block;
+        display: block;
       }
   
       .container {
@@ -349,7 +356,9 @@ const interval = setInterval(() => {
       .container.active {
         display: flex;
         flex-direction: column;
-      }
+        }
+
+      
     }
     
   </style>
