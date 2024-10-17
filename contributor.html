@@ -272,7 +272,25 @@ const interval = setInterval(() => {
     </div>
     <main style="width: 90vw;display: flex;flex-wrap: wrap;justify-content: center;">
 
-      <div id="contributor" ></div>
+      <div class="contributor-page">
+        <!-- Stats Section -->
+        <section class="stats">
+          <h2>Project Statistics</h2>
+          <div id="stats" class="stats-container">
+              <!-- Stat Cards will be inserted here -->
+          </div>
+        </section>
+
+        <!-- Contributors Grid -->
+        <section class="contributors">
+            <h2>Meet Our Contributors</h2>
+            <div id="contributors" class="contributors-container">
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+      </div>
 
   </main>
   <div class="main" id="footer">
@@ -337,6 +355,7 @@ const interval = setInterval(() => {
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
 </div>
 </body>
