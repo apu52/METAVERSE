@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect('mongodburl', {
+mongoose.connect('mongodb://localhost:27017/', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
