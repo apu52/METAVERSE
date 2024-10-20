@@ -75,26 +75,30 @@ function getProjectsInPage() {
 
 function goToNextPage() {
   const pageTile = document.querySelectorAll(".page-tile");
-  pageTile[pageActive].classList.remove("active");
-  pageActive++;
-  pageTile[pageActive].click();
-  pageTile[pageActive].classList.add("active");
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  if (pageActive < pageTile.length - 1) { // Check if pageActive is within bounds
+    pageTile[pageActive].classList.remove("active");
+    pageActive++;
+    pageTile[pageActive].click();
+    pageTile[pageActive].classList.add("active");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 }
 
 function goToPreviousPage() {
   const pageTile = document.querySelectorAll(".page-tile");
-  pageTile[pageActive].classList.remove("active");
-  pageActive--;
-  pageTile[pageActive].click();
-  pageTile[pageActive].classList.add("active");
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  if (pageActive > 0) { // Check if pageActive is within bounds
+    pageTile[pageActive].classList.remove("active");
+    pageActive--;
+    pageTile[pageActive].click();
+    pageTile[pageActive].classList.add("active");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 }
 
 // Light-Dark

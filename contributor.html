@@ -7,338 +7,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>METAVERSE</title>
 
-  <!-- Primary Meta Tags -->
-  <title></title>
-  <meta name="title" content="METAVERSE" />
-  <meta name="description"
-    content="Welcome to the Metaverse Front-End Playground – your gateway to the future of web development in the metaverse! 🌐🚀 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!" />
-  <meta name="language" content="English">
-  <meta name="keywords"
-    content="METAVERSE, Frontend Projects, Coding, Web Development, Projects, Stopwatch, Calculator.">
-
-
-  <!--
-    - favicon
-  -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
-  
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/scroll.css">
-  <link rel="stylesheet" href="./assets/css/contributors.css">
-  <link rel="stylesheet" href="./assets/css/cursor_transition.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-     #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.spinner {
-    position: relative;
-    width: 130px; 
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.spinner-inner {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%;
-    border: 10px solid transparent; 
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent; 
-    border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff); 
-    border-image-slice: 1;
-    animation: spin 1s linear infinite;
-}
-
-#loading-percentage {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(45deg, #be18ff, #ffffff); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-#content {
-    display: none;
-}
-
+    .contributor:hover {
+      transform: scale(1.1);
+      border: 1px solid #e38110;
+      border-radius: 10px;
+      background-color: #e38110;
+      box-shadow: 0 0 12px #e38110;
+      transition: all 0.3s ease-in-out;
+    }
   </style>
 </head>
-<!-- Light-Dark theme SWITCH -->
-
-
-<!-- <p class="invert-color" style="position: sticky; top: 30px; z-index:100; margin-left: 30px;">Theme :</p> -->
-<label class="theme-toggle" for="themeToggle" style="position: fixed; top: 28px; z-index: 100; margin-left: 30px">
-
-  <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-  <span class="slider"></span>
-</label>
 
 <body>
-
-  <!-- Preloader starts -->
-<div id="preloader">
-  <div class="spinner">
-      <div class="spinner-inner"></div>
-      <div id="loading-percentage">0%</div>
-  </div>
-</div>
-<script>
-  window.addEventListener('load', () => {
-const preloader = document.getElementById('preloader');
-const content = document.getElementById('content');
-const loadingPercentage = document.getElementById('loading-percentage');
-
-let percentage = 0;
-
-const interval = setInterval(() => {
-  percentage += 10; 
-  loadingPercentage.textContent = `${percentage}%`;
-  if (percentage >= 100) {
-      clearInterval(interval);
-      setTimeout(() => {
-          preloader.style.display = 'none';
-          content.style.display = 'block';
-          document.body.style.overflow = 'auto'; 
-      }, 300); 
-  }
-}, 100); 
-});
-
-</script>
-<!-- Preloader Ends -->
-<div id="content"> 
-
-  <div class="nav-wrapper">
-    <div class="progress-bar"></div>
-  </div>
-  
-  <script src="scrolldownprogressbar.js"></script>
-  
-  <div class="cursor"></div>
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <style>
-    .main{
-      padding-top: 4rem;
-    }
-    .container{
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-bottom: 5rem;
-    }
-  
-    .hamburger {
-    display: none;
-    cursor: pointer;
-    }
-    .hamburger i {
-    color: white;
-    font-size: 24px;
-    }
-    
-    @media (max-width: 770px) {
-      .circle-container{
-        display: none;
-      }
-      .hamburger {
-        color: white;
-      display: block;
-      }
-  
-      .container {
-        display: none;
-      }
-  
-      .container.active {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    
-  </style>
-
-
-<div class="main">
-  
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="container" id="nav-menu">
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="">
-          <i class="fas fa-home"></i> Home
-        </a>
-        <label class="number"></label>
-      </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">METAVERSE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="RateUs.html">Rate Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="copyright.html">Copyright</a>
+        </li>
+      </ul>
     </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="about.html">
-          <i class="fas fa-info-circle"></i> About
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="contact.html">
-          <i class="fas fa-envelope"></i> Contact
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="RateUs.html">
-          <i class="fas fa-star"></i> RateUs
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn" style="width: 160px !important;">
-        <a id="aid" class="nav-link" href="contributor.html">
-          <i class="fas fa-users"></i> Contributors
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-  </div>
+  </nav>
 
-  <script>
-    function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
-    }
-
-  </script>
-</div>
-
-    </div>
-    <div class="heading1">
-      <div class="heading">
-       <span>C</span><span>O</span><span>N</span><span>T</span><span>R</span><span>I</span><span>B</span><span>U</span><span>T</span><span>O</span><span>R</span><span>S</span>
-      </div>
-      <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-    
-        <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-      </label>
-    </div>
-    <main style="width: 90vw;display: flex;flex-wrap: wrap;justify-content: center;">
-
-      <div id="contributor" ></div>
-
-  </main>
-  <div class="main" id="footer">
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="wave-creation">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
-        </g>
-      </svg>
-    </div>
-
-
-    <footer class="page-footer font-small unique-color-dark pt-4">
-      <div class="container1">
-        <div class="list-unstyled list-inline text-center py-2 text-black">
-          <br>
-          <br>
-          <div class="socials-text" style="text-align: center; margin-bottom:50px">
-            <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
-            <br>
-            <br>
-            <a href="https://github.com/apu52/METAVERSE" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
-              checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on github</a>
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+    <h1 class="text-center">Contributors</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card contributor-card">
+          <img src="./images/arpan.jpeg" class="card-img-top" alt="Arpan Chowdhury">
+          <div class="card-body">
+            <h5 class="card-title">Arpan Chowdhury</h5>
+            <p class="card-text">B.Tech student at NSEC(CSE)'26, Web Dev Intern.</p>
+            <a href="https://github.com/apu52" class="btn btn-primary">View Profile</a>
           </div>
-
-            <ul class="socials">
-            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github" title="Github (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
-                title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          </ul> 
-        </div>
-        <div class="policy">
-          <a href="privacynotice.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
-              <a href="copyright.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
         </div>
       </div>
-    </footer>
-  </div>
-  <!-- SCROLL TO TOP BUTTON -->
-  <div id="progress">
-    <span id="progress-value">&#x1F815;</span>
+      <div class="col-md-4">
+        <div class="card contributor-card">
+          <img src="./images/shuv.jpg" class="card-img-top" alt="Shuvadipta Das">
+          <div class="card-body">
+            <h5 class="card-title">Shuvadipta Das</h5>
+            <p class="card-text">B.Tech student at NSEC(CSE)'26, Rank 22 of HACKSQUAD '23.</p>
+            <a href="https://github.com/shuvadipta" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card contributor-card">
+          <img src="./images/Shruti.jpg" class="card-img-top" alt="Shruti Sen">
+          <div class="card-body">
+            <h5 class="card-title">Shruti Sen</h5>
+            <p class="card-text">B.Tech student at NSEC(CSE)'26, Web Dev Intern.</p>
+            <a href="https://github.com/shruti-sen2004" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/index.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/scroll.js"></script>
-  <script src="./assets/js/contributors.js"></script>
-  <script src="./assets/js/mouse_transition.js"></script>
-</div>
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3">
+      Developed with ❤️ by <b>METAVERSE</b> Collaborators
+      <br>
+      <a href="https://github.com/apu52/METAVERSE" target="_blank" class="text-dark">Check us out on GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

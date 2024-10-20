@@ -5,523 +5,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>METAVERSE</title>
+  <title>About METAVERSE</title>
 
-  <!-- Primary Meta Tags -->
-  <title></title>
-  <meta name="title" content="METAVERSE" />
-  <meta name="description"
-    content="Welcome to the Metaverse Front-End Playground – your gateway to the future of web development in the metaverse! 🌐🚀 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!" />
-  <meta name="language" content="English">
-  <meta name="keywords"
-    content="METAVERSE, Frontend Projects, Coding, Web Development, Projects, Stopwatch, Calculator.">
-
-
-  <!--
-    - favicon
-  -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/about.css">
-  <link rel="stylesheet" href="./assets/css/scroll.css">
-  <link rel="stylesheet" href="./assets/css/contributors.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-  <style>
-    .circle {
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      pointer-events: none;
-      background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
-      transition: transform 0.1s, left 0.1s, top 0.1s;
-      box-shadow: 0 0 20px #23bdf5,
-        0 0 60px #f523f5,
-        0 0 100px #23bdf5;
-    }
-
-    .circle-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 9999;
-    }
-
-    @media (max-width: 740px) {
-      .circle-container {
-        display: none;
-      }
-
-      #para{
-        font-size: large;
-      }
-    }
-
-    .progress-bar {
-      height: 7px;
-      width: 0;
-      background-color: #f523f5;
-      opacity: 0.8;
-      transition: transform 0.1s, left 0.1s, top 0.1s;
-      box-shadow: 0 0 20px #23bdf5,
-        0 0 60px #f523f5,
-        0 0 100px #23bdf5;
-    }
-
-    @keyframes colors {
-      0% {
-        filter: hue-rotate(0deg);
-      }
-
-      100% {
-        filter: hue-rotate(360deg);
-      }
-    }
-
-    #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.spinner {
-    position: relative;
-    width: 130px; 
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.spinner-inner {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%;
-    border: 10px solid transparent; 
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent; 
-    border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff); 
-    border-image-slice: 1;
-    animation: spin 1s linear infinite;
-}
-
-#loading-percentage {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(45deg, #be18ff, #ffffff); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-#content {
-    display: none;
-}
-
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<!-- Light-Dark theme SWITCH -->
-
-
-<!-- <p class="invert-color" style="position: sticky; top: 30px; z-index:100; margin-left: 30px;">Theme :</p> -->
-
 
 <body>
-  <!-- Scroll down progress bar -->
-
-  <div class="nav-wrapper">
-    <div class="progress-bar"></div>
-  </div>
-
-  <script src="scrolldownprogressbar.js"></script>
-  <div class="circle-container">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const coords = { x: 0, y: 0 };
-      const circles = document.querySelectorAll(".circle");
-
-      circles.forEach(function (circle) {
-        circle.x = 0;
-        circle.y = 0;
-      });
-
-      window.addEventListener("mousemove", function (e) {
-        coords.x = e.pageX;
-        coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
-      });
-
-      function animateCircles() {
-        let x = coords.x;
-        let y = coords.y;
-
-        circles.forEach(function (circle, index) {
-          circle.style.left = `${x - 12}px`;
-          circle.style.top = `${y - 12}px`;
-          circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
-
-          const nextCircle = circles[index + 1] || circles[0];
-          circle.x = x;
-          circle.y = y;
-
-          x += (nextCircle.x - x) * 0.25;
-          y += (nextCircle.y - y) * 0.25;
-        });
-
-        requestAnimationFrame(animateCircles);
-      }
-
-      animateCircles();
-    });
-  </script>
-
-  <!-- Preloader starts -->
-<div id="preloader">
-  <div class="spinner">
-      <div class="spinner-inner"></div>
-      <div id="loading-percentage">0%</div>
-  </div>
-</div>
-<script>
-  window.addEventListener('load', () => {
-const preloader = document.getElementById('preloader');
-const content = document.getElementById('content');
-const loadingPercentage = document.getElementById('loading-percentage');
-
-let percentage = 0;
-
-const interval = setInterval(() => {
-  percentage += 10; 
-  loadingPercentage.textContent = `${percentage}%`;
-  if (percentage >= 100) {
-      clearInterval(interval);
-      setTimeout(() => {
-          preloader.style.display = 'none';
-          content.style.display = 'block';
-          document.body.style.overflow = 'auto'; 
-      }, 300); 
-  }
-}, 100); 
-});
-
-</script>
-<!-- Preloader Ends -->
-<div id="content"> 
-
-  <div class="cursor"></div>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-  <style>
-    .main{
-      padding-top: 4rem;
-    }
-    .container{
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-bottom: 5rem;
-    }
-  
-    .hamburger {
-    display: none;
-    cursor: pointer;
-    }
-    .hamburger i {
-    color: white;
-    font-size: 24px;
-    }
-    
-    @media (max-width: 770px) {
-      .circle-container{
-        display: none;
-      }
-      .hamburger {
-        color: white;
-      display: block;
-      }
-  
-      .container {
-        display: none;
-      }
-  
-      .container.active {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    
-  </style>
-
-
-<div class="main">
-  
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="container" id="nav-menu">
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="">
-          <i class="fas fa-home"></i> Home
-        </a>
-        <label class="number"></label>
-      </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">METAVERSE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="RateUs.html">Rate Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contributor.html">Contributors</a>
+        </li>
+      </ul>
     </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="about.html">
-          <i class="fas fa-info-circle"></i> About
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="contact.html">
-          <i class="fas fa-envelope"></i> Contact
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="RateUs.html">
-          <i class="fas fa-star"></i> RateUs
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn" style="width: 160px !important;">
-        <a id="aid" class="nav-link" href="contributor.html">
-          <i class="fas fa-users"></i> Contributors
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+    <h1 class="text-center">About Us</h1>
+    <p class="text-center">Welcome to the Metaverse Front-End Playground – your gateway to the future of web development in the metaverse! 🌐🚀</p>
+    <p>Your gateway to the future of web development in the metaverse! 🌐🚀</p>
   </div>
 
-  <script>
-    function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
-    }
-
-  </script>
-</div>
-
-    <main>
-
-      <div class="main-content">
-        <div class="sub-main-content">
-          <div class="heading1">
-            <div class="heading">
-              <span>💻&nbsp;</span><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
-            </div>
-            <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-
-              <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-              <span class="slider"></span>
-            </label>
-          </div>
-          <br>
-
-          <br>
-          <br>
-          <br>
-
-          <style>
-            #part{
-              height: auto;
-              width: 100%;
-            }
-            @media (max-width:768px) {
-              #part{
-                padding: 3rem 0.5rem;
-              }
- 
-              
-            }
-          </style>
-
-
-          <!-- About part -->
-          <div class="contributors">
-            <h1>Welcome to the <span class="highlight">Metaverse Front-End Playground</span> community!</h1>
-
-            <p id="para">Your gateway to the future of web development in the metaverse! 🌐🚀
-              Metaverse Front-End Playground is an open-source repository created to empower developersto explore,
-              innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase
-              your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our
-              dynamic community!</p>
-            <p id="para"> Our repository features a wide spectrum of metaverse-related
-              front-end projects. From HTML, CSS, and JavaScript
-              to immersive React experiences, you'll find projects
-              that push the boundaries of the metaverse!</p>
-          </div>
-          <div id="part">
-            <h1 id="design"></h1>
-            <div class="string large-font-mobile"
-              style="text-align: left; display: flex; flex-direction: column; gap: 20px;">
-              <h1 class="greeting en"> METAVERSE as secured a position in <b style="color: green;">top 50</b> maintainer
-                repositories in <b style="color: rgb(100, 100, 247);">QUINE HACTOBERFEST challenge</b> 🏅</h1>
-              <h1 class="greeting es"> METAVERSE was open to PR submissions for the <b
-                  style="color: rgb(249, 64, 64);">CODEPEAK'23</b> , from December 7, 2023, to December 28, 2023🏅</h1>
-              <h1 class="greeting de"> We were thrilled to be part of <b
-                  style="color: rgb(249, 64, 64);">KWOC'23</b>.KWOC'23 participants earned rewards and swag while
-                shaping the future of the metaverse between the time span of December 9,2023 to
-                January 15,2024.</h1>
-              <h1 class="greeting it" style="color: rgb(33, 191, 33);"> Collaborate with experienced metaverse
-                developers, gain valuable insights, and immerse yourself in creating groundbreaking virtual worlds.</h1>
-            </div>
-            <h1 class="closure"></h1>
-          </div>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <div class="main" id="footer">
-      <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-          </defs>
-          <g class="wave-creation">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
-          </g>
-        </svg>
-      </div>
-
-
-      <footer class="page-footer font-small unique-color-dark pt-4">
-        <div class="container1">
-          <div class="list-unstyled list-inline text-center py-2 text-black">
-            <br>
-            <br>
-            <div class="socials-text" style="text-align: center; margin-bottom:50px">
-              <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
-              <br>
-              <br>
-              <a href="https://github.com/apu52/METAVERSE" target="_blank"
-                style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
-                checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on
-                github</a>
-            </div>
-
-            <ul class="socials">
-              <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
-                  title="Github (External Link)" rel="noopener noreferrer" target="_blank"><i
-                    class="fa-brands fa-github"></i></a></li>
-              <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter"
-                  title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
-                    class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
-                  title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
-                    class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="policy">
-            <a href="privacynotice.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
-            <a href="copyright.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-          </div>
-        </div>
-      </footer>
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3">
+      Developed with ❤️ by <b>METAVERSE</b> Collaborators
+      <br>
+      <a href="https://github.com/apu52/METAVERSE" target="_blank" class="text-dark">Check us out on GitHub</a>
     </div>
-    </section>
-  </div>
+  </footer>
 
-  <!-- SCROLL TO TOP BUTTON -->
-  <div id="progress">
-    <span id="progress-value">&#x1F815;</span>
-  </div>
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/index.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/scroll.js"></script>
-  <script src="./assets/js/contributors.js"></script>
-  <script src="./assets/js/mouse_transition.js"></script>
-</div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
