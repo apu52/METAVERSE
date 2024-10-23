@@ -1,7 +1,3 @@
-## Project Structure ✨
-
-<!-- START_STRUCTURE -->
-```
 ├── 404.html
 ├── CONTRIBUTING.md
 ├── Code_of_conduct.md
@@ -5871,5 +5867,3 @@
 ├── scrolldownprogressbar.js
 ├── service-app.yml
 └── style.css
-```
-<!-- END_STRUCTURE -->
