@@ -327,8 +327,20 @@
     display: block;
     }
 
-    .container {
+    .container{
       display: none;
+    }
+    .dark-theme .container{
+      display: flex;
+      padding: 20px 0;
+        top: -20px;
+        flex-direction: column;
+    }
+    .open .container {
+      display: flex;
+      padding: 20px 0;
+        top: -20px;
+        flex-direction: column;
     }
 
     .container.active {
