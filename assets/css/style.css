@@ -766,6 +766,10 @@ main {
 .search-btn {
   padding-right: 10px;
 }
+/* sets search-input width to 800px when user is inputting a query else is set to 0  */
+.search-input:focus{
+  width: 800px;
+}
 
 /*-----------------------------------*\
   #PAGINATION SECTION
