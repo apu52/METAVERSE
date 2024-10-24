@@ -28,6 +28,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE" alt="Welcome to the METAVERSE"/>
 </p>
 
+<h2>✨ Project Structure</h2> 
+
+Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
+
 <div>
   <h2>Table of Contents</h2>
   <ul>
