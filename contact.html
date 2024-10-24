@@ -617,7 +617,9 @@
             <form id="contact-form" class="contact-form">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required class="funky-input">
+                <input type="text" id="name" name="name" required class="funky-input" pattern="[a-zA-Z ]+"
+                    oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')"
+                    oninput="this.setCustomValidity('')">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
