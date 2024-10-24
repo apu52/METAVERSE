@@ -5870,6 +5870,10 @@
 ├── projectData.json
 ├── repo_structure.txt
 ├── scrolldownprogressbar.js
+├── seo_optimization/
+│   ├── index.html
+│   └── styles/
+│       └── styles.css
 ├── service-app.yml
 └── style.css
 ```
