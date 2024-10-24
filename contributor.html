@@ -24,7 +24,7 @@
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
-  
+
   <!--
     - custom css link
   -->
@@ -44,65 +44,69 @@
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
   <style>
-     #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
-.spinner {
-    position: relative;
-    width: 130px; 
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .spinner {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.spinner-inner {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%;
-    border: 10px solid transparent; 
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent; 
-    border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff); 
-    border-image-slice: 1;
-    animation: spin 1s linear infinite;
-}
+    .spinner-inner {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff);
+      border-image-slice: 1;
+      animation: spin 1s linear infinite;
+    }
 
-#loading-percentage {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(45deg, #be18ff, #ffffff); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    color: transparent; 
-}
+    #loading-percentage {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(45deg, #be18ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
 
-#content {
-    display: none;
-}
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
+    #content {
+      display: none;
+    }
   </style>
 </head>
 <!-- Light-Dark theme SWITCH -->
@@ -118,161 +122,163 @@
 <body>
 
   <!-- Preloader starts -->
-<div id="preloader">
-  <div class="spinner">
+  <div id="preloader">
+    <div class="spinner">
       <div class="spinner-inner"></div>
       <div id="loading-percentage">0%</div>
-  </div>
-</div>
-<script>
-  window.addEventListener('load', () => {
-const preloader = document.getElementById('preloader');
-const content = document.getElementById('content');
-const loadingPercentage = document.getElementById('loading-percentage');
-
-let percentage = 0;
-
-const interval = setInterval(() => {
-  percentage += 10; 
-  loadingPercentage.textContent = `${percentage}%`;
-  if (percentage >= 100) {
-      clearInterval(interval);
-      setTimeout(() => {
-          preloader.style.display = 'none';
-          content.style.display = 'block';
-          document.body.style.overflow = 'auto'; 
-      }, 300); 
-  }
-}, 100); 
-});
-
-</script>
-<!-- Preloader Ends -->
-<div id="content"> 
-
-  <div class="nav-wrapper">
-    <div class="progress-bar"></div>
-  </div>
-  
-  <script src="scrolldownprogressbar.js"></script>
-  
-  <div class="cursor"></div>
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <style>
-    .main{
-      padding-top: 4rem;
-    }
-    .container{
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-bottom: 5rem;
-    }
-  
-    .hamburger {
-    display: none;
-    cursor: pointer;
-    }
-    .hamburger i {
-    color: white;
-    font-size: 24px;
-    }
-    
-    @media (max-width: 770px) {
-      .circle-container{
-        display: none;
-      }
-      .hamburger {
-        color: white;
-      display: block;
-      }
-  
-      .container {
-        display: none;
-      }
-  
-      .container.active {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    
-  </style>
-
-
-<div class="main">
-  
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="container" id="nav-menu">
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="">
-          <i class="fas fa-home"></i> Home
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="about.html">
-          <i class="fas fa-info-circle"></i> About
-        </a>
-        <label class="number"></label>
-      </div>
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="contact.html">
-          <i class="fas fa-envelope"></i> Contact
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn">
-        <a id="aid" class="nav-link" href="RateUs.html">
-          <i class="fas fa-star"></i> RateUs
-        </a>
-        <label class="number"></label>
-      </div> 
-    </div>
-    <div class="radio-wrapper">
-      <div class="btn" style="width: 160px !important;">
-        <a id="aid" class="nav-link" href="contributor.html">
-          <i class="fas fa-users"></i> Contributors
-        </a>
-        <label class="number"></label>
-      </div> 
     </div>
   </div>
-
   <script>
-    function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
-    }
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      const loadingPercentage = document.getElementById('loading-percentage');
+
+      let percentage = 0;
+
+      const interval = setInterval(() => {
+        percentage += 10;
+        loadingPercentage.textContent = `${percentage}%`;
+        if (percentage >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+            document.body.style.overflow = 'auto';
+          }, 300);
+        }
+      }, 100);
+    });
 
   </script>
-</div>
+  <!-- Preloader Ends -->
+  <div id="content">
 
+    <div class="nav-wrapper">
+      <div class="progress-bar"></div>
     </div>
-    <div class="heading1">
-      <div class="heading">
-       <span>C</span><span>O</span><span>N</span><span>T</span><span>R</span><span>I</span><span>B</span><span>U</span><span>T</span><span>O</span><span>R</span><span>S</span>
+
+    <script src="scrolldownprogressbar.js"></script>
+
+    <div class="cursor"></div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      .main {
+        padding-top: 4rem;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5rem;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .hamburger i {
+        color: white;
+        font-size: 24px;
+      }
+
+      @media (max-width: 770px) {
+        .circle-container {
+          display: none;
+        }
+
+        .hamburger {
+          color: white;
+          display: block;
+        }
+
+        .container {
+          display: none;
+        }
+
+        .container.active {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+
+
+    <div class="main">
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
       </div>
-      <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-    
-        <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-      </label>
-    </div>
-    <main style="width: 90vw;display: flex;flex-wrap: wrap;justify-content: center;">
+      <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="about.html">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="contact.html">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn">
+            <a id="aid" class="nav-link" href="RateUs.html">
+              <i class="fas fa-star"></i> RateUs
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="btn" style="width: 160px !important;">
+            <a id="aid" class="nav-link" href="contributor.html">
+              <i class="fas fa-users"></i> Contributors
+            </a>
+            <label class="number"></label>
+          </div>
+        </div>
+      </div>
 
-      <div id="contributor" ></div>
+      <script>
+        function toggleMenu() {
+          const navMenu = document.getElementById('nav-menu');
+          navMenu.classList.toggle('active');
+        }
+
+      </script>
+    </div>
+
+  </div>
+  <div class="heading1">
+    <div class="heading">
+      <span>C</span><span>O</span><span>N</span><span>T</span><span>R</span><span>I</span><span>B</span><span>U</span><span>T</span><span>O</span><span>R</span><span>S</span>
+    </div>
+    <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
+
+      <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
+    </label>
+  </div>
+  <main style="width: 90vw;display: flex;flex-wrap: wrap;justify-content: center;">
+
+    <div id="contributor"></div>
 
   </main>
   <div class="main" id="footer">
@@ -306,21 +312,23 @@ const interval = setInterval(() => {
               checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on github</a>
           </div>
 
-            <ul class="socials">
-            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github" title="Github (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter" title="Twitter (External Link)"
-                rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+          <ul class="socials">
+            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
+                title="Github (External Link)" rel="noopener noreferrer" target="_blank"><i class="fa fa-github"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/ArpanCh40193288" aria-label="Follow me on Twitter"
+                title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
+                  class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
             <li><a href="https://www.linkedin.com/in/arpan-chowdhury-775294251" aria-label="Follow me on Linkedin"
                 title="Linkedin (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          </ul> 
+          </ul>
         </div>
         <div class="policy">
           <a href="privacynotice.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
-              <a href="copyright.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
+            style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
+          <a href="copyright.html" target="_blank"
+            style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
         </div>
       </div>
     </footer>
@@ -338,7 +346,7 @@ const interval = setInterval(() => {
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
-</div>
+  </div>
 </body>
 
 </html>
