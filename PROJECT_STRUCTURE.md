@@ -5840,6 +5840,7 @@
 │       ├── contact.js
 │       ├── contributors.js
 │       ├── index.js
+│       ├── projectData.json
 │       ├── script.js
 │       └── scroll.js
 ├── backend/
@@ -5867,7 +5868,6 @@
 ├── package-lock.json
 ├── package.json
 ├── privacynotice.html
-├── projectData.json
 ├── repo_structure.txt
 ├── scrolldownprogressbar.js
 ├── seo_optimization/
