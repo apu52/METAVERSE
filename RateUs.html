@@ -156,17 +156,42 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
+        let feedbackSubmitted = false;
+    
         document.querySelectorAll('.emoji').forEach(emoji => {
             emoji.addEventListener('click', () => {
-                document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
-                emoji.classList.add('selected');
+                if (feedbackSubmitted) {
+                    // Allow selecting an emoji again even if feedback was submitted
+                    document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+                    emoji.classList.add('selected');
+                } else {
+                    document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+                    emoji.classList.add('selected');
+                }
             });
         });
-
+    
         document.querySelector('.submit-button').addEventListener('click', () => {
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
-
+    
+            if (feedbackSubmitted) {
+                Toastify({
+                    text: "Review already submitted.",
+                    backgroundColor: "orange",
+                    gravity: "top",
+                    position: "center",
+                    duration: 3000
+                }).showToast();
+    
+                // Clear textarea and stop emoji blinking on resubmit attempt
+                document.querySelector('textarea').value = '';
+                if (selectedEmoji) {
+                    selectedEmoji.classList.remove('selected');
+                }
+                return;
+            }
+    
             if (selectedEmoji && feedback.trim() !== '') {
                 Toastify({
                     text: "Feedback submitted successfully!",
@@ -175,6 +200,15 @@
                     position: "center",
                     duration: 3000
                 }).showToast();
+    
+                // Clear the textarea
+                document.querySelector('textarea').value = '';
+    
+                // Remove the 'selected' class from the emoji to stop blinking
+                selectedEmoji.classList.remove('selected');
+    
+                // Mark feedback as submitted
+                feedbackSubmitted = true;
             } else {
                 Toastify({
                     text: "Please select an emoji and provide feedback.",
@@ -186,5 +220,6 @@
             }
         });
     </script>
-</body>
+    
+    </body>
 </html>
