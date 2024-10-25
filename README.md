@@ -28,6 +28,10 @@
   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-the-METAVERSE" alt="Welcome to the METAVERSE"/>
 </p>
 
+<h2>✨ Project Structure</h2> 
+
+Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
+
 <div>
   <h2>Table of Contents</h2>
   <ul>
@@ -45,37 +49,30 @@
 </ul>
 </div>
 
+
  
 <h2>📌 Open Source Program</h2>
 
-<h3> This project is now OFFICIALLY accepted for</h3>
+<h3>This project is now OFFICIALLY accepted for</h3>
 
- ![image](https://github.com/user-attachments/assets/5c3ca05d-0fac-43cc-ada6-0453be9ca0e2)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5c3ca05d-0fac-43cc-ada6-0453be9ca0e2" width="350" height="200" style="margin: 10px;">
+  <img src="https://github.com/user-attachments/assets/8bce67af-b1d9-477f-952a-1bcdcedfc207" width="350" height="200" style="margin: 10px;">
+  <img src="https://github.com/user-attachments/assets/05ad17cd-64fe-4993-adfc-78c10071b688" width="250" height="200" style="margin: 10px;">
+</p>
+
+<h3>This project was part of the following Open Source Programs</h3>
+
+<p align="center">
+  <img src="https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88" width="700" height="150" style="margin: 10px;"> <br>
+  <img src="https://github.com/apu52/METAVERSE/assets/114172928/f1f1c0d2-f6ef-4a6a-b853-1822dcdcee4e" width="160" height="200" style="margin: 10px;">
+  <img src="images/Codepeak Pic.png" width="160" height="200" style="margin: 10px;">
+  <img src="images/KWOC pic.png" width="160" height="200" style="margin: 10px;">
+  <img src="images/Code collab carnival.png" width="160" height="200" style="margin: 10px;">
+  <img src="images/hack.jpeg" width="160" height="200" style="margin: 10px;">
+</p>
 
 
- ![image](https://github.com/user-attachments/assets/8bce67af-b1d9-477f-952a-1bcdcedfc207)
- 
-
-![image](https://github.com/user-attachments/assets/05ad17cd-64fe-4993-adfc-78c10071b688)
-
-
-
-<h3> This project was part of following Open Source Programs</h3>
-
-<div align="center">
-
-   ![GSSOC](https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88)
-
-![SSOC](https://github.com/apu52/METAVERSE/assets/114172928/f1f1c0d2-f6ef-4a6a-b853-1822dcdcee4e)
-  <img src="images/Codepeak Pic.png" width="50%">
-  <img src="images/KWOC pic.png" width="50%">
-  <img src="images/Code collab carnival.png" width="50%">
-  <img src="images/hack.jpeg" width="50%">
-  
- 
-
-  
-</div>
   
 <h2 id="about-metaverse">About METAVERSE</h2>
 Welcome to the "Metaverse Front-End Playground" – your gateway to the future of web development in the metaverse! 🌐🚀
@@ -367,30 +364,40 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 <h2>METAVERSE Project Moderators(admin)</h2>
 
 <table>
-<tr>
-<td align="center"><a href="https://github.com/5h0ov"><img src="images/shuv.jpg" width=130px height=130px /></a></br> <h4 style="color:red;">Shuvadipta Das</h4>
- <a href="https://www.linkedin.com/in/shuvadipta-das-915b28216/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
-   </td>
+  <tr>
+    <!-- Profile 1 -->
+    <td align="center">
+      <a href="https://github.com/5h0ov">
+        <img src="images/shuv.jpg" width="130px" height="130px" />
+      </a><br>
+      <h4 style="color:red;">Shuvadipta Das</h4>
+      <a href="https://www.linkedin.com/in/shuvadipta-das-915b28216/">
+        <img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px" />
+      </a>
+    </td>
+    
 
-</tr>
-</table>
+  <td align="center">
+      <a href="https://github.com/shruti-sen2004">
+        <img src="images/Shruti.jpg" width="130px" height="150px" />
+      </a><br>
+      <h4 style="color:red;">Shruti Sen</h4>
+      <a href="https://www.linkedin.com/in/shruti-sen-6b6924253/">
+        <img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px" />
+      </a>
+    </td>
 
-<table>
-<tr>
-<td align="center"><a href="https://github.com/shruti-sen2004"><img src="images/Shruti.jpg" width=130px height=150px /></a></br> <h4 style="color:red;">Shruti Sen</h4>
-<a href="https://www.linkedin.com/in/shruti-sen-6b6924253/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
- </td>
-
-</tr>
-</table>
-
-<table>
-<tr>
-<td align="center"><a href=" https://github.com/AnkitaSikdar005"><img src="images/Ankita.jpg" width=130px height=150px /></a></br> <h4 style="color:red;">Ankita Sikdar</h4>
-<a href="https://www.linkedin.com/in/ankita-sikdar-70210a253"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
- </td>
-
-</tr>
+<!-- Profile 3 -->
+   <td align="center">
+      <a href="https://github.com/AnkitaSikdar005">
+        <img src="images/Ankita.jpg" width="130px" height="150px" />
+      </a><br>
+      <h4 style="color:red;">Ankita Sikdar</h4>
+      <a href="https://www.linkedin.com/in/ankita-sikdar-70210a253">
+        <img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px" />
+      </a>
+    </td>
+  </tr>
 </table>
 </div>
 
