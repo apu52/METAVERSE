@@ -174,6 +174,16 @@ footer {
 
   color: #cacdd2;
 }
+
+
+/* Newsletter Section Styles */
+
+/* Style placeholder text to be white */
+input::placeholder {
+  color: white;
+  font-style: italic;
+}
+
 /* Newsletter Section Styles */
 .newsletter-section {
   color: #fff;
@@ -181,24 +191,43 @@ footer {
   text-align: center;
   border-radius: 10px;
   margin-top: -50px;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+/* Heading styles */
 .newsletter-section h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Existing margin-bottom for spacing */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transform for size change */
 }
 
+/* Change heading color and size on hover */
+.newsletter-section h3:hover {
+  color: rgb(255, 255, 102); /* Vibrant yellow on hover */
+  transform: scale(1.1); /* Increase size by 10% */
+}
+
+/* Paragraph styles */
 .newsletter-section p {
   font-size: 16px;
-  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transform for size change */
 }
 
+/* Change paragraph color and size on hover */
+.newsletter-section p:hover {
+  color: rgb(255, 255, 102); /* Vibrant yellow on hover */
+  transform: scale(1.05); /* Increase size by 5% */
+}
+
+/* Form styles */
 #newsletter-form {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px; /* Gap between input and button */
 }
 
+/* Input field styles */
 #newsletter-form input[type="email"] {
   padding: 10px;
   border-radius: 5px;
@@ -206,28 +235,43 @@ footer {
   font-size: 16px;
   width: 250px;
   color: white;
-  margin-right: 10px;
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for input field */
+#newsletter-form input[type="email"]:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #f0e68c;
+  box-shadow: 0 0 10px yellow; /* Glowing effect */
+  transform: scale(1.05); /* Slight size increase on hover */
+}
+
+/* Button styles */
 #newsletter-form button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(215, 213, 85);
-  color: white;
+  background-color: rgb(215, 213, 85); /* Initial background color */
+  color: black; /* Default black text */
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for button */
 #newsletter-form button:hover {
-  background-color: rgb(120, 118, 52);
+  background-color: rgb(255, 255, 102); /* Vibrant yellow */
+  color: black; /* Keep text black */
+  box-shadow: 0 0 15px yellow; /* Glowing effect */
+  transform: scale(1.05); /* Slight size increase on hover */
 }
 
 .success-message, .error-message {
   margin-top: 10px;
   font-size: 14px;
 }
+
 
 .socials {
   list-style: none;
@@ -721,6 +765,10 @@ main {
 }
 .search-btn {
   padding-right: 10px;
+}
+/* sets search-input width to 800px when user is inputting a query else is set to 0  */
+.search-input:focus{
+  width: 800px;
 }
 
 /*-----------------------------------*\
