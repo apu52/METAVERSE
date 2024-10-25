@@ -9,8 +9,7 @@ const fetchProjectData = async () => {
     return projectsData;
   } catch (error) {
     console.error('There has been a problem with your fetch operation:', error);
-    // Return a default dataset or an empty object
-    return {}; // or return a default dataset if you have one
+    return {}; // Return an empty object on error
   }
 };
 
@@ -21,21 +20,18 @@ fetchProjectData().then(projectsData => {
     projectListContainer.innerHTML = '<p>No projects available. Please check back later.</p>';
   } else {
     projectListContainer.innerHTML = generateLiTags(projectsData);
-    getPageNumbers();
-    getProjectsInPage();
+    getPageNumbers(); // Ensure pagination is set up if needed
+    getProjectsInPage(); // Load projects for the current page
   }
 });
 
 // Generate <li> tags dynamically
 const generateLiTags = projectsData => {
   const liTags = [];
-  // Loop through all project entries in the projectsData
   for (const key in projectsData) {
     const projectData = projectsData[key];
-
     if (projectData) {
       const { projectTitle, folderName, thumbnailName } = projectData;
-
       const liTag = `
           <li class="project-item active" data-filter-item data-category="open source">
             <a href="/Projects/${folderName}" target="_blank" aria-label="${projectTitle}">
@@ -47,11 +43,9 @@ const generateLiTags = projectsData => {
             </a>
           </li>
         `;
-
       liTags.push(liTag);
     }
   }
-
   return liTags.join('\n');
 };
 
