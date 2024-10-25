@@ -1,26 +1,37 @@
-// Fetch the project data from the JSON file
-fetch('../../projectData.json')
-  .then(response => {
+// Function to fetch project data from the JSON file
+const fetchProjectData = async () => {
+  try {
+    const response = await fetch('../../projectData.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    return response.json();
-  })
-  .then(projectsData => {
-    const projectListContainer = document.querySelector('.project-list');
+    const projectsData = await response.json();
+    return projectsData;
+  } catch (error) {
+    console.error('There has been a problem with your fetch operation:', error);
+    // Return a default dataset or an empty object
+    return {}; // or return a default dataset if you have one
+  }
+};
+
+// Fetch the project data and update the UI
+fetchProjectData().then(projectsData => {
+  const projectListContainer = document.querySelector('.project-list');
+  if (Object.keys(projectsData).length === 0) {
+    projectListContainer.innerHTML = '<p>No projects available. Please check back later.</p>';
+  } else {
     projectListContainer.innerHTML = generateLiTags(projectsData);
     getPageNumbers();
     getProjectsInPage();
-  })
-  .catch(error => {
-    console.error('There has been a problem with your fetch operation:', error);
-  });
+  }
+});
 
 // Generate <li> tags dynamically
 const generateLiTags = projectsData => {
   const liTags = [];
-  for (let tagNumber = 1; tagNumber <= 666; tagNumber++) {
-    const projectData = projectsData[tagNumber.toString()];
+  // Loop through all project entries in the projectsData
+  for (const key in projectsData) {
+    const projectData = projectsData[key];
 
     if (projectData) {
       const { projectTitle, folderName, thumbnailName } = projectData;
@@ -31,7 +42,7 @@ const generateLiTags = projectsData => {
               <figure class="project-img">
                 <img src="/assets/img/${thumbnailName}" alt="${projectTitle}" loading="lazy">
               </figure>
-              <h3 class="project-title"><a href="https://github.com/apu52/METAVERSE/tree/main/Projects/${folderName}" target="_blank" aria-label="${projectTitle}">${tagNumber}. ${projectTitle} 🔗</a></h3>
+              <h3 class="project-title"><a href="https://github.com/apu52/METAVERSE/tree/main/Projects/${folderName}" target="_blank" aria-label="${projectTitle}">${key}. ${projectTitle} 🔗</a></h3>
               <p class="project-category">Take a Look and Learn!</p>
             </a>
           </li>
