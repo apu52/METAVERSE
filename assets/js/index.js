@@ -1,7 +1,7 @@
 // Function to fetch project data from the JSON file
 const fetchProjectData = async () => {
   try {
-    const response = await fetch('../../projectData.json');
+    const response = await fetch('projectData.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
