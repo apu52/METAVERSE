@@ -28,7 +28,7 @@
             background-color: #1a1a2e;
         }
 
-        .navbar {
+        /* .navbar {
             background-color: #16213e;
             color: white;
             padding: 15px 0;
@@ -56,7 +56,72 @@
 
         .navbar .nav-link i {
             margin-right: 8px;
+        } */
+        .navbar {
+            background-color: #16213e;
+            /* Dark background for the navbar */
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            
         }
+
+        .navbar .nav-wrapper {
+            display: flex;
+            gap: 160px;
+            margin-top: 7px;
+        }
+
+        .navbar .nav-link {
+            position: relative;
+           
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+           
+            transition: color 0.3s ease;
+            
+        }
+
+        .navbar .nav-link i {
+            margin-right: 8px;
+        }
+
+        .navbar .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+           
+            width: 0%;
+            
+            height: 2px;
+            
+            background-color: #007bff;
+            
+            transition: width 0.4s ease;
+            
+        }
+
+        .navbar .nav-link:hover {
+            color: #007bff;
+            
+        }
+
+        .navbar .nav-link:hover::after {
+            width: 100%;
+            
+        }
+
 
         .container {
             border: 2px solid black;
@@ -123,28 +188,29 @@
             background-color: #333;
         } */
         .submit-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: 2px solid transparent; /* Invisible border initially */
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.4s ease;
-}
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            /* Invisible border initially */
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.4s ease;
+        }
 
-.submit-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
-    border-color: #00aaff; /* Border appears on hover */
-}
+        .submit-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
+            border-color: #00aaff;
+            /* Border appears on hover */
+        }
 
-.submit-button:active {
-    transform: scale(1);
-    box-shadow: none;
-}
-
+        .submit-button:active {
+            transform: scale(1);
+            box-shadow: none;
+        }
     </style>
 </head>
 
@@ -184,7 +250,7 @@
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
         let feedbackSubmitted = false;
-    
+
         document.querySelectorAll('.emoji').forEach(emoji => {
             emoji.addEventListener('click', () => {
                 if (feedbackSubmitted) {
@@ -197,11 +263,11 @@
                 }
             });
         });
-    
+
         document.querySelector('.submit-button').addEventListener('click', () => {
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
-    
+
             if (feedbackSubmitted) {
                 Toastify({
                     text: "Review already submitted.",
@@ -210,7 +276,7 @@
                     position: "center",
                     duration: 3000
                 }).showToast();
-    
+
                 // Clear textarea and stop emoji blinking on resubmit attempt
                 document.querySelector('textarea').value = '';
                 if (selectedEmoji) {
@@ -218,7 +284,7 @@
                 }
                 return;
             }
-    
+
             if (selectedEmoji && feedback.trim() !== '') {
                 Toastify({
                     text: "Feedback submitted successfully!",
@@ -227,13 +293,13 @@
                     position: "center",
                     duration: 3000
                 }).showToast();
-    
+
                 // Clear the textarea
                 document.querySelector('textarea').value = '';
-    
+
                 // Remove the 'selected' class from the emoji to stop blinking
                 selectedEmoji.classList.remove('selected');
-    
+
                 // Mark feedback as submitted
                 feedbackSubmitted = true;
             } else {
@@ -248,5 +314,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>
