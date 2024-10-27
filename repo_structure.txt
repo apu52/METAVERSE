@@ -5831,7 +5831,8 @@
 │   │   ├── transaction_management-home.png
 │   │   ├── transaction_management-login.png
 │   │   ├── twitter.png
-│   │   └── typingmaster.png
+│   │   ├── typingmaster.png
+│   │   └── x-logo.jpg
 │   └── js/
 │       ├── contact.js
 │       ├── contributors.js
