@@ -1,3 +1,4 @@
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -6,6 +7,10 @@ const mongoose = require('mongoose');
 const { subscribeUser } = require('./controllers/subscribe');
 const dotenv = require('dotenv');
 dotenv.config();
+
+
+
+
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -16,44 +21,45 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://haseebzaki:hzaki123@cluster0.k7v9clo.mongodb.net/metaverse', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+mongoose.connect("mongodburl", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 const contactSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    message: String,    
-    date: { type: Date, default: Date.now },
+  name: String,
+  email: String,
+  message: String,
+  date: { type: Date, default: Date.now },
+
 });
 
-const Contact = mongoose.model('Contact', contactSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
-app.post('/contact', async (req, res) => {
-    const { name, email, message } = req.body;
+app.post("/contact", async (req, res) => {
+  const { name, email, message } = req.body;
 
-    // Save contact information to MongoDB
-    const newContact = new Contact({ name, email, message });
+  // Save contact information to MongoDB
+  const newContact = new Contact({ name, email, message });
 
-    try {
-        await newContact.save();
+  try {
+    await newContact.save();
 
-        // Create a transporter object with your SMTP server details
-        const transporter = nodemailer.createTransport({
-            service: 'Gmail', // or another email service
-            auth: {
-                user: 'your email ',
-                pass: 'your app password',
-            },
-        });
+    // Create a transporter object with your SMTP server details
+    const transporter = nodemailer.createTransport({
+      service: "Gmail", // or another email service
+      auth: {
+        user: "your email ",
+        pass: "your app password",
+      },
+    });
 
-        // Set up email data with unicode symbols
-        const mailOptions = {
-            from: '"Metaverse Team" <no-reply@metaverse.com>',
-            to: email,
-            subject: 'Acknowledgment - We received your message',
-            html: `
+    // Set up email data with unicode symbols
+    const mailOptions = {
+      from: '"Metaverse Team" <no-reply@metaverse.com>',
+      to: email,
+      subject: "Acknowledgment - We received your message",
+      html: `
             <div style="background-color: #f9f9f9; padding: 20px; font-family: Arial, sans-serif; color: #333;">
                 <div style="text-align: center; margin-bottom: 20px;">
                     <h1 style="color: #9c27b0; font-size: 36px;">Metaverse</h1>
@@ -75,23 +81,30 @@ app.post('/contact', async (req, res) => {
                 </div>
             </div>
             `,
-        };
-        
-        // Send the email
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return res.status(500).send({ success: false, message: 'Failed to send email.' });
-            }
-            res.send({ success: true, message: 'Email sent successfully, and contact information stored.' });
-        });
-    } catch (err) {
-        res.status(500).send({ success: false, message: 'Failed to save contact information.' });
-    }
+    };
+
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return res
+          .status(500)
+          .send({ success: false, message: "Failed to send email." });
+      }
+      res.send({
+        success: true,
+        message: "Email sent successfully, and contact information stored.",
+      });
+    });
+  } catch (err) {
+    res
+      .status(500)
+      .send({ success: false, message: "Failed to save contact information." });
+  }
 });
 
 app.post("/subscribe", subscribeUser)
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
