@@ -354,28 +354,25 @@
         </div>
       </div>
 
-      <script>
-        function toggleMenu() {
-          const navMenu = document.getElementById('nav-menu');
-          navMenu.classList.toggle('active');
-        }
+      <div class="contributor-page">
+        <!-- Stats Section -->
+        <section class="stats">
+          <h2>Project Statistics</h2>
+          <div id="stats" class="stats-container">
+              <!-- Stat Cards will be inserted here -->
+          </div>
+        </section>
 
-      </script>
-    </div>
-
-  </div>
-  <div class="heading1">
-    <div class="heading">
-      <span>C</span><span>O</span><span>N</span><span>T</span><span>R</span><span>I</span><span>B</span><span>U</span><span>T</span><span>O</span><span>R</span><span>S</span>
-    </div>
-    <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-
-      <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-    </label>
-  </div>
-  <main style="width: 90vw;display: flex;flex-wrap: wrap;justify-content: center;">
-
-    <div id="contributor"></div>
+        <!-- Contributors Grid -->
+        <section class="contributors">
+            <h2>Meet Our Contributors</h2>
+            <div id="contributors" class="contributors-container">
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+      </div>
 
   </main>
   <div class="main" id="footer">
@@ -442,6 +439,7 @@
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
   </div>
 </body>
