@@ -3,7 +3,9 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+const { subscribeUser } = require('./controllers/subscribe');
+const dotenv = require('dotenv');
+dotenv.config();
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect('mongodburl', {
+mongoose.connect('mongodb+srv://haseebzaki:hzaki123@cluster0.k7v9clo.mongodb.net/metaverse', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -22,7 +24,7 @@ mongoose.connect('mongodburl', {
 const contactSchema = new mongoose.Schema({
     name: String,
     email: String,
-    message: String,
+    message: String,    
     date: { type: Date, default: Date.now },
 });
 
@@ -86,6 +88,8 @@ app.post('/contact', async (req, res) => {
         res.status(500).send({ success: false, message: 'Failed to save contact information.' });
     }
 });
+
+app.post("/subscribe", subscribeUser)
 
 // Start the server
 app.listen(PORT, () => {
