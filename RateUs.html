@@ -107,7 +107,7 @@
             border-radius: 5px;
         }
 
-        .submit-button {
+        /* .submit-button {
             margin-top: 10px;
             padding: 10px 20px;
             font-size: 1rem;
@@ -121,7 +121,30 @@
 
         .submit-button:hover {
             background-color: #333;
-        }
+        } */
+        .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid transparent; /* Invisible border initially */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.4s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
+    border-color: #00aaff; /* Border appears on hover */
+}
+
+.submit-button:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
     </style>
 </head>
 
@@ -160,17 +183,42 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
+        let feedbackSubmitted = false;
+    
         document.querySelectorAll('.emoji').forEach(emoji => {
             emoji.addEventListener('click', () => {
-                document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
-                emoji.classList.add('selected');
+                if (feedbackSubmitted) {
+                    // Allow selecting an emoji again even if feedback was submitted
+                    document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+                    emoji.classList.add('selected');
+                } else {
+                    document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+                    emoji.classList.add('selected');
+                }
             });
         });
-
+    
         document.querySelector('.submit-button').addEventListener('click', () => {
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
-
+    
+            if (feedbackSubmitted) {
+                Toastify({
+                    text: "Review already submitted.",
+                    backgroundColor: "orange",
+                    gravity: "top",
+                    position: "center",
+                    duration: 3000
+                }).showToast();
+    
+                // Clear textarea and stop emoji blinking on resubmit attempt
+                document.querySelector('textarea').value = '';
+                if (selectedEmoji) {
+                    selectedEmoji.classList.remove('selected');
+                }
+                return;
+            }
+    
             if (selectedEmoji && feedback.trim() !== '') {
                 Toastify({
                     text: "Feedback submitted successfully!",
@@ -179,6 +227,15 @@
                     position: "center",
                     duration: 3000
                 }).showToast();
+    
+                // Clear the textarea
+                document.querySelector('textarea').value = '';
+    
+                // Remove the 'selected' class from the emoji to stop blinking
+                selectedEmoji.classList.remove('selected');
+    
+                // Mark feedback as submitted
+                feedbackSubmitted = true;
             } else {
                 Toastify({
                     text: "Please select an emoji and provide feedback.",
@@ -191,5 +248,5 @@
         });
     </script>
 </body>
-
 </html>
+

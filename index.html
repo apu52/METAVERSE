@@ -317,7 +317,6 @@
       .container {
         display: flex;
         align-items: center;
-        flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 5rem;
       }
@@ -332,30 +331,30 @@
         font-size: 24px;
       }
 
+      .hamburger.open .line {
+        background-color: #fff;
+      }
+
       @media (max-width: 770px) {
         .circle-container {
           display: none;
         }
 
         .hamburger {
-          color: white;
           display: block;
+          color: white;
         }
 
         .container {
           display: none;
+          flex-direction: column;
         }
 
         .container.active {
           display: flex;
-          flex-direction: column;
         }
       }
     </style>
-
-    <div class="nav-wrapper">
-      <div class="progress-bar"></div>
-    </div>
 
     <div class="main navbar" id="navbar">
       <div class="hamburger" onclick="toggleNavbar()">
@@ -363,68 +362,44 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="container navbar-container">
 
+      <div class="container navbar-container" id="nav-menu">
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="index.html">
-              <i class="fas fa-home"></i> Home
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="about.html">
-              <i class="fas fa-info-circle"></i> About
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="contact.html">
-              <i class="fas fa-envelope"></i> Contact
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="RateUs.html">
-              <i class="fas fa-star"></i> RateUs
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="RateUs.html"><i class="fas fa-star"></i> RateUs</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn" style="width: 160px !important;">
-            <a id="aid" class="nav-link" href="contributor.html">
-              <i class="fas fa-users"></i> Contributors
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a>
           </div>
         </div>
       </div>
-
-      <script>
-        function toggleMenu() {
-          const navMenu = document.getElementById('nav-menu');
-          navMenu.classList.toggle('active');
-        }
-
-      </script>
     </div>
 
-  </div>
-  <script>
-    function toggleNavbar() {
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('open');
-      const hamburger = document.querySelector('.hamburger');
-      hamburger.classList.toggle('open');
-    }
-  </script>
+    <script>
+      function toggleNavbar() {
+        const navbar = document.getElementById('nav-menu');
+        navbar.classList.toggle('active');
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('open');
+      }
+    </script>
   <main>
 
     <div class="main-content">
@@ -520,9 +495,17 @@
             <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
                 title="GitHub (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://twitter.com/METAVERSE" aria-label="Follow me on Twitter"
+            <!-- <li><a href="https://twitter.com/METAVERSE" aria-label="Follow me on Twitter"
                 title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa-brands fa-twitter"></i></a></li>
+                  class="fa-brands fa-twitter"></i></a></li> -->
+                  <li>
+                    <a href="https://twitter.com/METAVERSE" aria-label="Follow me on X"
+                        title="X (External Link)" rel="noopener noreferrer" target="_blank">
+                      <img class="fa-brands fa-x" src="assets/img/x-logo.jpg" alt="X Logo" style="width: 24px; height: 24px;">
+                    </a>
+                  </li>
+                  
+
             <li><a href="https://www.linkedin.com/in/METAVERSE" aria-label="Follow me on LinkedIn"
                 title="LinkedIn (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa-brands fa-linkedin"></i></a></li>

@@ -1556,10 +1556,10 @@ ul.socials {
   color: black;
   transform: scale(1.5);
 }
-.socials .fa-brands.fa-x-twitter{
+.socials .fa-brands.fa-x{
   transition:all 0.3s ease-in-out;
 }
-.socials .fa-brands.fa-x-twitter:hover{
+.socials .fa-brands.fa-x:hover{
   color: black;
   transform: scale(1.5);
 }
