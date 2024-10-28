@@ -5670,7 +5670,8 @@
 │   │   ├── about.css
 │   │   ├── contributors.css
 │   │   ├── scroll.css
-│   │   └── style.css
+│   │   ├── style.css
+│   │   └── toastify.css
 │   ├── img/
 │   │   ├── AI_Image _Generator.png
 │   │   ├── API_IMAGES.png
@@ -5863,8 +5864,11 @@
 │       ├── contributors.js
 │       ├── index.js
 │       ├── script.js
-│       └── scroll.js
+│       ├── scroll.js
+│       └── subscribe.js
 ├── backend/
+│   ├── controllers/
+│   │   └── subscribe.js
 │   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
