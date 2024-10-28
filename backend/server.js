@@ -1,8 +1,15 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const mongoose = require("mongoose");
+
+const express = require('express');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const mongoose = require('mongoose');
+const { subscribeUser } = require('./controllers/subscribe');
+const dotenv = require('dotenv');
+dotenv.config();
+
+
+
 
 // Initialize Express app
 const app = express();
@@ -24,6 +31,7 @@ const contactSchema = new mongoose.Schema({
   email: String,
   message: String,
   date: { type: Date, default: Date.now },
+
 });
 
 const Contact = mongoose.model("Contact", contactSchema);
@@ -93,6 +101,8 @@ app.post("/contact", async (req, res) => {
       .send({ success: false, message: "Failed to save contact information." });
   }
 });
+
+app.post("/subscribe", subscribeUser)
 
 // Start the server
 app.listen(PORT, () => {

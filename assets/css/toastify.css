@@ -1,0 +1,38 @@
+/* Custom Toastify styling */
+.toastify {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.toastify-success {
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Green gradient */
+    color: #fff;
+}
+
+.toastify-error {
+    background: linear-gradient(135deg, #FF3D00, #FF6E40); /* Red gradient */
+    color: #fff;
+}
+
+.toastify-close {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.toastify .toastify-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Icon Styling */
+.toastify .toastify-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
