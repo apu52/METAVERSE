@@ -349,12 +349,21 @@ Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height
 </tr>
 </table>
 
-<h2>GSSOC'24 Mentor 👨‍💻</h2>
-
 <table>
 <tr>
 <td align="center"><a href="https://github.com/kunal9960"><img src="images/Kunal.jpg" width=130px height=130px /></a></br> <h4 style="color:red;">Kunal Dalvi</h4>
  <a href="https://www.linkedin.com/in/kunal-dalvi-0b273b2b4/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+   </td>
+
+</tr>
+</table>
+
+<h2>GSSOC'24 Mentor 👨‍💻</h2>
+
+<table>
+<tr>
+<td align="center"><a href="https://github.com/heysagnik"><img src="images/sagnik.jfif" width=130px height=130px /></a></br> <h4 style="color:red;">Sagnik Sahoo</h4>
+ <a href="https://www.linkedin.com/in/heysagnik/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
    </td>
 
 </tr>
