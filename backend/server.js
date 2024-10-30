@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect("mongodburl", {
+mongoose.connect("mongodb+srv://amnalpha7:IAtC1nJtXv4avH4Q@cluster0.y6w4aqp.mongodb.net/Meta", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -33,6 +33,37 @@ const contactSchema = new mongoose.Schema({
   date: { type: Date, default: Date.now },
 
 });
+
+const feedbackSchema= new mongoose.Schema({
+    feedback: {
+        type:String,
+        trim:true
+    }
+});
+
+const Feedback=mongoose.model("Feedbabck",feedbackSchema);
+
+app.post("/rate-us",async(req,res)=> {
+    try {
+        const {feedback}=req.body;
+
+        const feedbackData=await Feedback.create({
+            feedback
+        });
+
+        res.status(200).json({
+            success:true,
+            message:"feedback submitted successfully",
+            data:feedbackData
+        });
+    } catch(e) {
+        res.status(500).send({
+            success:false,
+            message:e.message+" "+"error in storing the feedback in db"
+        });
+    }
+    
+})
 
 const Contact = mongoose.model("Contact", contactSchema);
 

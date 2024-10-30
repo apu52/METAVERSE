@@ -264,10 +264,10 @@
             });
         });
 
-        document.querySelector('.submit-button').addEventListener('click', () => {
+        document.querySelector('.submit-button').addEventListener('click', async () => {
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
-
+            
             if (feedbackSubmitted) {
                 Toastify({
                     text: "Review already submitted.",
@@ -286,22 +286,52 @@
             }
 
             if (selectedEmoji && feedback.trim() !== '') {
-                Toastify({
-                    text: "Feedback submitted successfully!",
-                    backgroundColor: "green",
+                try {
+                    const result =await fetch("http://localhost:3000/rate-us", {
+                    method:"POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body:JSON.stringify({feedback}),
+                    });
+                    const res=await result.json();
+                    if(res.success) {
+                        Toastify({
+                        text: "Feedback submitted successfully!",
+                        backgroundColor: "green",
+                        gravity: "top",
+                        position: "center",
+                        duration: 3000
+                        }).showToast();
+                        // Clear the textarea
+                        document.querySelector('textarea').value = '';
+
+                        // Remove the 'selected' class from the emoji to stop blinking
+                        selectedEmoji.classList.remove('selected');
+
+                        // Mark feedback as submitted
+                        feedbackSubmitted = true;
+                    }
+                    else {
+                        Toastify({
+                        text: "failed to submit Feedback. try again",
+                        backgroundColor: "red",
+                        gravity: "top",
+                        position: "center",
+                        duration: 3000
+                        }).showToast();
+                    }
+
+                }catch(e) {
+                    Toastify({
+                    text: "server Error",
+                    backgroundColor: "red",
                     gravity: "top",
                     position: "center",
                     duration: 3000
-                }).showToast();
-
-                // Clear the textarea
-                document.querySelector('textarea').value = '';
-
-                // Remove the 'selected' class from the emoji to stop blinking
-                selectedEmoji.classList.remove('selected');
-
-                // Mark feedback as submitted
-                feedbackSubmitted = true;
+                    }).showToast();
+                }
+                
             } else {
                 Toastify({
                     text: "Please select an emoji and provide feedback.",
