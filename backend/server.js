@@ -6,6 +6,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const { subscribeUser } = require('./controllers/subscribe');
 const dotenv = require('dotenv');
+const { submitFeedback } = require('./controllers/feedback');
 dotenv.config();
 
 
@@ -43,27 +44,7 @@ const feedbackSchema= new mongoose.Schema({
 
 const Feedback=mongoose.model("Feedbabck",feedbackSchema);
 
-app.post("/rate-us",async(req,res)=> {
-    try {
-        const {feedback}=req.body;
 
-        const feedbackData=await Feedback.create({
-            feedback
-        });
-
-        res.status(200).json({
-            success:true,
-            message:"feedback submitted successfully",
-            data:feedbackData
-        });
-    } catch(e) {
-        res.status(500).send({
-            success:false,
-            message:e.message+" "+"error in storing the feedback in db"
-        });
-    }
-    
-})
 
 const Contact = mongoose.model("Contact", contactSchema);
 
@@ -134,6 +115,7 @@ app.post("/contact", async (req, res) => {
 });
 
 app.post("/subscribe", subscribeUser)
+app.post('/rate-us', submitFeedback);
 
 // Start the server
 app.listen(PORT, () => {
