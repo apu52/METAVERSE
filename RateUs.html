@@ -113,7 +113,7 @@
         }
 
         .navbar .nav-link:hover {
-            color: #007bff;
+            color:yellow;
             
         }
 
@@ -127,13 +127,13 @@
             border: 2px solid black;
             padding: 20px;
             text-align: center;
-            background-color: #16213e;
+            background-color: #5a6583;
             color: white;
             transition: transform 0.2s;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 50%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -168,8 +168,13 @@
             height: 100px;
             padding: 10px;
             font-size: 1rem;
-            border: 1px solid black;
+            border: 2px solid black;
             border-radius: 5px;
+            transition: 0.3s;
+
+        }
+        textarea:hover{
+            background-color: rgb(242, 186, 83);
         }
 
         .email-container {
@@ -177,6 +182,15 @@
             border-radius: 10;
             padding: 4px;
             
+        }
+        #email-input{
+        padding: 10px 34px;
+        border-radius: 23px;
+        border: 2px solid rgb(0, 0, 0);
+
+        }
+        #email-input:hover{
+            background-color: rgb(242, 186, 83);
         }
         /* .submit-button {
             margin-top: 10px;
@@ -232,8 +246,7 @@
             <a id="aid" class="nav-link" href="./contact.html">
                 <i class="fas fa-envelope"></i> Contact
             </a>
-            <a id="aid" class="nav-link" href="RateUs.html">
-                <i class="fas fa-star"></i> Rate Us
+           
             </a>
             <a id="aid" class="nav-link" href="./contributor.html">
                 <i class="fas fa-users"></i> Contributors
