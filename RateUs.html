@@ -172,6 +172,12 @@
             border-radius: 5px;
         }
 
+        .email-container {
+            margin: 10px 0px;
+            border-radius: 10;
+            padding: 4px;
+            
+        }
         /* .submit-button {
             margin-top: 10px;
             padding: 10px 20px;
@@ -245,6 +251,9 @@
         <div class="textarea-container">
             <textarea placeholder="Leave your feedback here..."></textarea>
         </div>
+        <div class="email-container">
+            <input type="email" placeholder="Enter your email" id="email-input" required>
+        </div>
         <button class="submit-button">Submit</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -267,6 +276,7 @@
         document.querySelector('.submit-button').addEventListener('click', async () => {
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
+            const email = document.querySelector('#email-input').value.trim(); // Get the email input value
             
             if (feedbackSubmitted) {
                 Toastify({
@@ -276,65 +286,67 @@
                     position: "center",
                     duration: 3000
                 }).showToast();
-
                 // Clear textarea and stop emoji blinking on resubmit attempt
                 document.querySelector('textarea').value = '';
+                document.querySelector('#email-input').value = ''; // Clear email input
                 if (selectedEmoji) {
                     selectedEmoji.classList.remove('selected');
                 }
                 return;
             }
 
-            if (selectedEmoji && feedback.trim() !== '') {
+            if (selectedEmoji && feedback.trim() !== '' && email) {
                 try {
-                    const result =await fetch("http://localhost:3000/rate-us", {
-                    method:"POST",
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body:JSON.stringify({feedback}),
+                    const result = await fetch("http://localhost:3000/rate-us", {
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            emoji: selectedEmoji.innerHTML, // Get the selected emoji
+                            feedback: feedback,
+                            email: email // Include email in the body
+                        }),
                     });
-                    const res=await result.json();
-                    if(res.success) {
+                    const res = await result.json();
+                    if (res.success) {
                         Toastify({
-                        text: "Feedback submitted successfully!",
-                        backgroundColor: "green",
-                        gravity: "top",
-                        position: "center",
-                        duration: 3000
+                            text: "Feedback submitted successfully!",
+                            backgroundColor: "green",
+                            gravity: "top",
+                            position: "center",
+                            duration: 3000
                         }).showToast();
-                        // Clear the textarea
+                        // Clear the textarea and email input
                         document.querySelector('textarea').value = '';
+                        document.querySelector('#email-input').value = '';
 
                         // Remove the 'selected' class from the emoji to stop blinking
                         selectedEmoji.classList.remove('selected');
 
                         // Mark feedback as submitted
                         feedbackSubmitted = true;
-                    }
-                    else {
+                    } else {
                         Toastify({
-                        text: "failed to submit Feedback. try again",
+                            text: "Failed to submit feedback. Please try again.",
+                            backgroundColor: "red",
+                            gravity: "top",
+                            position: "center",
+                            duration: 3000
+                        }).showToast();
+                    }
+                } catch (e) {
+                    Toastify({
+                        text: "Server error",
                         backgroundColor: "red",
                         gravity: "top",
                         position: "center",
                         duration: 3000
-                        }).showToast();
-                    }
-
-                }catch(e) {
-                    Toastify({
-                    text: "server Error",
-                    backgroundColor: "red",
-                    gravity: "top",
-                    position: "center",
-                    duration: 3000
                     }).showToast();
                 }
-                
             } else {
                 Toastify({
-                    text: "Please select an emoji and provide feedback.",
+                    text: "Please select an emoji, provide feedback, and enter your email.",
                     backgroundColor: "red",
                     gravity: "top",
                     position: "center",
