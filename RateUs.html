@@ -92,37 +92,61 @@
             
         }
 
+        .stargaze {
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .stargaze video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.5) contrast(1.2) saturate(1.5);
+        }
 
         .container {
-            border: 2px solid black;
-            height: 280px;
-            padding: 5px;
+            border: 2px solid #007bff;
+            height: auto;
+            padding: 20px;
             text-align: center;
-            background-color: #16213e;
+            background-color: rgba(22, 33, 62, 0.9);
             color: white;
-            transition: transform 0.2s;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 75%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 600px;
         }
 
         .container:hover {
             transform: translate(-50%, -50%) scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
         }
 
         .emoji {
-            font-size: 2rem;
+            font-size: 2.5rem;
             cursor: pointer;
-            margin: 0 10px;
+            margin: 0 15px;
             transition: transform 0.2s, text-shadow 0.2s;
         }
 
         .emoji:hover {
             transform: scale(3.5);
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         .emoji.selected {
@@ -135,26 +159,36 @@
         }
 
         textarea {
-            width: 80%;
-            height: 100px;
+            width: 90%;
+            height: 120px;
             padding: 10px;
             font-size: 1rem;
-            border: 1px solid black;
+            border: 1px solid #007bff;
             border-radius: 5px;
+            background-color: #1a1a2e;
+            color: white;
         }
 
         .email-container {
-            margin: 10px 0px;
-            border-radius: 10;
+            margin: 20px 0;
             padding: 4px;
-            
         }
+
+        .email-container input {
+            width: 90%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #1a1a2e;
+            color: white;
+        }
+
         .submit-button {
             background-color: #007bff;
             color: white;
             padding: 10px 20px;
             border: 2px solid transparent;
-            /* Invisible border initially */
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
@@ -166,40 +200,11 @@
             transform: scale(1.1);
             box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
             border-color: #00aaff;
-            /* Border appears on hover */
         }
 
         .submit-button:active {
             transform: scale(1);
             box-shadow: none;
-        }
-
-        .stargaze {
-            top: 50%;
-            left: 50%;
-            width: 70%;
-            height: 70%;
-            z-index: -1;
-            pointer-events: none;
-            position: fixed;
-            border-radius: 50px;
-            transform: translate(-50%, -50%);
-            padding: 10px;
-            background: linear-gradient(45deg, #012a4a, #013a63, #01497c, #014f86, #2a6f97, #2c7da0, #468faf, #61a5c2, #89c2d9, #a9d6e5);
-            background-size: 400% 400%;
-            animation: gradientAnimation 5s ease infinite;
-        }
-
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
         }
     </style>
 </head>
@@ -224,16 +229,17 @@
             </a>
         </div>
     </div>
-    <div>
-        <iframe class="stargaze" src="./assets/main.webm">
-            <p>Your browser does not support iframes.</p>
-        </iframe>
+    <div class="stargaze">
+        <video autoplay loop muted playsinline>
+            <source src="./assets/main.webm" type="video/webm">
+            <p>Your browser does not support HTML5 video.</p>
+        </video>
     </div>  
     <div class="container">
         <div class="emojis">
             <span class="emoji" role="img" aria-label="cry">&#128546;</span>
             <span class="emoji" role="img" aria-label="neutral">&#128528;</span>
-            <span class="emoji" role="img" aria-label="smile">&#128522;</span>
+            <span class=" emoji" role="img" aria-label="smile">&#128522;</span>
             <span class="emoji" role="img" aria-label="laugh">&#128514;</span>
             <span class="emoji" role="img" aria-label="super">&#128526;</span>
         </div>
