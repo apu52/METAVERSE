@@ -27,36 +27,6 @@
             font-family: Arial, sans-serif;
             background-color: #1a1a2e;
         }
-
-        /* .navbar {
-            background-color: #16213e;
-            color: white;
-            padding: 15px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
-
-        .navbar .nav-wrapper {
-            display: flex;
-            gap: 30px;
-        }
-
-        .navbar .nav-link {
-            color: white;
-            text-decoration: none;
-            font-size: 1.4rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar .nav-link i {
-            margin-right: 8px;
-        } */
         .navbar {
             background-color: #16213e;
             /* Dark background for the navbar */
@@ -125,7 +95,8 @@
 
         .container {
             border: 2px solid black;
-            padding: 20px;
+            height: 280px;
+            padding: 5px;
             text-align: center;
             background-color: #16213e;
             color: white;
@@ -133,7 +104,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 50%;
+            top: 75%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -178,21 +149,6 @@
             padding: 4px;
             
         }
-        /* .submit-button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            background-color: black;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            border-radius: 5px;
-        }
-
-        .submit-button:hover {
-            background-color: #333;
-        } */
         .submit-button {
             background-color: #007bff;
             color: white;
@@ -217,6 +173,34 @@
             transform: scale(1);
             box-shadow: none;
         }
+
+        .stargaze {
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            height: 70%;
+            z-index: -1;
+            pointer-events: none;
+            position: fixed;
+            border-radius: 50px;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background: linear-gradient(45deg, #012a4a, #013a63, #01497c, #014f86, #2a6f97, #2c7da0, #468faf, #61a5c2, #89c2d9, #a9d6e5);
+            background-size: 400% 400%;
+            animation: gradientAnimation 5s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
 </head>
 
@@ -240,6 +224,11 @@
             </a>
         </div>
     </div>
+    <div>
+        <iframe class="stargaze" src="./assets/main.webm">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </div>  
     <div class="container">
         <div class="emojis">
             <span class="emoji" role="img" aria-label="cry">&#128546;</span>
