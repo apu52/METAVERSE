@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Editor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .editor-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            color: #4caf50;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar button:hover {
+            background-color: #e7e7e7;
+        }
+
+        .canvas {
+            flex: 1;
+            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .canvas-element {
+            position: absolute;
+            border: 1px solid #ccc;
+            cursor: move;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="editor-container">
+        <!-- Sidebar for tools -->
+        <div class="sidebar">
+            <h2>Tools</h2>
+            <button onclick="addText()">Add Text</button>
+            <button onclick="addImage()">Add Image</button>
+            <button onclick="addShape()">Add Shape</button>
+        </div>
+
+        <!-- Canvas area -->
+        <div class="canvas" id="canvas">
+            <!-- Elements will be added dynamically here -->
+        </div>
+    </div>
+
+    <script>
+        // To add text box
+        function addText() {
+            const text = document.createElement('div');
+            text.classList.add('canvas-element');
+            text.contentEditable = true;
+            text.style.left = '50px';
+            text.style.top = '50px';
+            text.innerText = 'Edit text here';
+            document.getElementById('canvas').appendChild(text);
+            makeDraggable(text);
+        }
+
+        // To add image placeholder
+        function addImage() {
+            const image = document.createElement('div');
+            image.classList.add('canvas-element');
+            image.style.left = '100px';
+            image.style.top = '100px';
+            image.style.width = '100px';
+            image.style.height = '100px';
+            image.style.backgroundColor = '#ddd';
+            image.innerText = 'Image';
+            document.getElementById('canvas').appendChild(image);
+            makeDraggable(image);
+        }
+
+        // To add shape
+        function addShape() {
+            const shape = document.createElement('div');
+            shape.classList.add('canvas-element');
+            shape.style.left = '150px';
+            shape.style.top = '150px';
+            shape.style.width = '100px';
+            shape.style.height = '100px';
+            shape.style.backgroundColor = '#4caf50';
+            shape.innerText = 'Shape';
+            document.getElementById('canvas').appendChild(shape);
+            makeDraggable(shape);
+        }
+
+        // Make elements draggable
+        function makeDraggable(element) {
+            let posX = 0, posY = 0, initialX = 0, initialY = 0;
+
+            element.onmousedown = dragMouseDown;
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                initialX = e.clientX;
+                initialY = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                posX = initialX - e.clientX;
+                posY = initialY - e.clientY;
+                initialX = e.clientX;
+                initialY = e.clientY;
+                element.style.top = (element.offsetTop - posY) + "px";
+                element.style.left = (element.offsetLeft - posX) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+</body>
+</html>
