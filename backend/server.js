@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const { subscribeUser } = require('./controllers/subscribe');
 const dotenv = require('dotenv');
 const { submitFeedback } = require('./controllers/feedback');
+const {Contactus} = require('./controllers/contactus');
 dotenv.config();
 
 
@@ -116,6 +117,7 @@ app.post("/contact", async (req, res) => {
 
 app.post("/subscribe", subscribeUser)
 app.post('/rate-us', submitFeedback);
+app.post('/contact-us', Contactus);
 
 // Start the server
 app.listen(PORT, () => {
