@@ -74,7 +74,7 @@
     "folderName": "Finance_Tracker",
     "thumbnailName": "Finanace_Tracker.png",
     "tags": [
-      "finance",
+      "business",
       "tracker",
       "productivity",
       "money-management"
@@ -121,7 +121,8 @@
       "event",
       "programming",
       "community",
-      "competition"
+      "competition",
+      "social"
     ]
   },
   "13": {
@@ -154,7 +155,8 @@
       "authentication",
       "security",
       "beginner",
-      "user-management"
+      "user-management",
+      "utility"
     ]
   },
   "16": {
@@ -209,7 +211,7 @@
       "ui",
       "component",
       "beginner",
-      "frontend"
+      "Web Design"
     ]
   },
   "21": {
@@ -403,7 +405,7 @@
     "thumbnailName": "Lauching_page.png",
     "tags": [
       "Timer",
-      "Landing Page",
+      "Web Design",
       "Countdown"
     ]
   },
@@ -1154,7 +1156,8 @@
     "tags": [
       "gallery",
       "images",
-      "media"
+      "media",
+      "Web Design"
     ]
   },
   "115": {
@@ -1164,7 +1167,8 @@
     "tags": [
       "app",
       "productivity",
-      "notes"
+      "notes",
+      "utility"
     ]
   },
   "116": {
@@ -1184,7 +1188,8 @@
     "tags": [
       "finance",
       "app",
-      "tracking"
+      "tracking",
+      "utility"
     ]
   },
   "118": {
@@ -1194,7 +1199,8 @@
     "tags": [
       "dashboard",
       "social media",
-      "analytics"
+      "analytics",
+      "utility"
     ]
   },
   "119": {
@@ -1224,7 +1230,8 @@
     "tags": [
       "blog",
       "travel",
-      "content"
+      "content",
+      "Web Design"
     ]
   },
   "122": {
@@ -1254,7 +1261,9 @@
     "tags": [
       "platform",
       "events",
-      "virtual"
+      "virtual",
+      "Web Design",
+      "Social"
     ]
   },
   "125": {
@@ -1334,7 +1343,9 @@
     "tags": [
       "gallery",
       "media",
-      "virtual"
+      "virtual",
+      "Web Design",
+      "Social"
     ]
   },
   "133": {
@@ -1344,7 +1355,8 @@
     "tags": [
       "forum",
       "community",
-      "discussion"
+      "discussion",
+      "social"
     ]
   },
   "134": {
@@ -1364,7 +1376,9 @@
     "tags": [
       "platform",
       "books",
-      "reviews"
+      "reviews",
+      "community",
+      "social"
     ]
   },
   "136": {
@@ -1504,7 +1518,8 @@
     "tags": [
       "marketplace",
       "freelancing",
-      "jobs"
+      "jobs",
+      "business"
     ]
   },
   "150": {
@@ -1514,7 +1529,8 @@
     "tags": [
       "platform",
       "education",
-      "learning"
+      "learning",
+      "productinv"
     ]
   },
   "151": {

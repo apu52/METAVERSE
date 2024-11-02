@@ -136,3 +136,10 @@ document.head.appendChild(style);
 
 // Initialize the page with all projects
 fetchAndFilterProjects();
+
+const filterButton = document.getElementById('filter-button');
+  const tagsContainer = document.getElementById('tags-container');
+
+  filterButton.addEventListener('click', () => {
+    tagsContainer.classList.toggle('hidden');
+  });
