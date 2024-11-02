@@ -39,7 +39,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!-- Light-Dark theme SWITCH -->
 
@@ -430,7 +430,21 @@
           </div>
         </div>
         <br>
+        <div class="filter-tags">
+          <h2 class="text-xl font-bold mb-4">Filter by Tags:</h2>
+          <div id="tags-container" class="flex flex-wrap gap-2">
+            <!-- Tag buttons will be dynamically created here -->
+            <button class="tag-button" value="1">Tool</button>
+            <button class="tag-button" value="2">Utility</button>
+            <button class="tag-button" value="3">game</button>
+            <button class="tag-button" value="4">clone</button>
+            <button class="tag-button" value="5">Web Design</button>
+            <button class="tag-button" value="6">food</button>
+            <button class="tag-button" value="7">business</button>
+          </div>
+        </div>
 
+      
         <!-- Projects -->
         <ul class="project-list" id="projectList"></ul>
 
