@@ -21,6 +21,7 @@
     - favicon
   -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/themeToggle.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/1a1ffb78ee.js" crossorigin="anonymous"></script>
@@ -396,11 +397,14 @@
             <div class="heading">
               <span>💻&nbsp;</span><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
             </div>
-            <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-
-              <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-              <span class="slider"></span>
-            </label>
+            <div class="container">
+            
+              <label class="switch">
+                  <input type="checkbox" id="theme-toggle">
+                  <span class="slider"></span>
+              </label>
+             
+          </div>
           </div>
           <br>
 
@@ -528,6 +532,7 @@
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
+  <script src="./assets/js/toggletheme."></script>
   </div>
 </body>
 

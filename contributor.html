@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="./assets/css/scroll.css">
   <link rel="stylesheet" href="./assets/css/contributors.css">
   <link rel="stylesheet" href="./assets/css/cursor_transition.css">
+  <link rel="stylesheet" href="./assets/css/themeToggle.css">
 
   <!--
     - google font link
@@ -44,6 +45,7 @@
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
   <style>
+
     #preloader {
       position: fixed;
       top: 0;
@@ -79,6 +81,9 @@
       border-image-slice: 1;
       animation: spin 1s linear infinite;
     }
+
+
+
 
     #loading-percentage {
       position: absolute;
@@ -136,15 +141,6 @@
   }
   </style>
 </head>
-<!-- Light-Dark theme SWITCH -->
-
-
-<!-- <p class="invert-color" style="position: sticky; top: 30px; z-index:100; margin-left: 30px;">Theme :</p> -->
-<label class="theme-toggle" for="themeToggle" style="position: fixed; top: 28px; z-index: 100; margin-left: 30px">
-
-  <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-  <span class="slider"></span>
-</label>
 
 <body>
 <div class="circle-container">
@@ -178,6 +174,14 @@
   <div class="circle"></div>
   <div class="circle"></div>
   <div class="circle"></div>
+  <div class="container">
+            
+    <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+    </label>
+   
+</div>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -441,6 +445,7 @@
   <script src="./assets/js/contributors.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
+  <script src="./assets/js/toggletheme.js"></script>
   </div>
 </body>
 
