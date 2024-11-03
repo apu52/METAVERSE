@@ -5671,6 +5671,7 @@
 │   │   ├── contributors.css
 │   │   ├── scroll.css
 │   │   ├── style.css
+│   │   ├── themeToggle.css
 │   │   └── toastify.css
 │   ├── img/
 │   │   ├── AI_Image _Generator.png
@@ -5836,6 +5837,7 @@
 │   │   ├── medicationSchedule.png
 │   │   ├── menja.png
 │   │   ├── mindgame.png
+│   │   ├── moon.icon.png
 │   │   ├── moto_racer.png
 │   │   ├── newsApp.png
 │   │   ├── noresultimg.png
@@ -5850,6 +5852,7 @@
 │   │   ├── rockband.png
 │   │   ├── secret.png
 │   │   ├── solver.png
+│   │   ├── sun.icon.png
 │   │   ├── tetris_Game_pic.png
 │   │   ├── tiktok.png
 │   │   ├── towerblock.png
@@ -5866,7 +5869,8 @@
 │   │   ├── index.js
 │   │   ├── script.js
 │   │   ├── scroll.js
-│   │   └── subscribe.js
+│   │   ├── subscribe.js
+│   │   └── toggletheme.js
 │   ├── main.mp4
 │   └── main.webm
 ├── backend/
