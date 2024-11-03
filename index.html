@@ -39,7 +39,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!-- Light-Dark theme SWITCH -->
 
@@ -430,7 +430,36 @@
           </div>
         </div>
         <br>
+        <div class="filter-container my-8">
+          <!-- Filter Button -->
+          <button id="filter-button" class="flex items-center gap-2 text-lg font-medium text-gray-800 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 011 1v1a1 1 0 01-.293.707L13 10.414V15a1 1 0 01-.553.894l-4 2A1 1 0 017 17v-6.586L3.293 6.707A1 1 0 013 6V5z" clip-rule="evenodd" />
+            </svg>
+            <span>Filter by Tags</span>
+          </button>
+          
+          <!-- Tag Options Container -->
+          <div id="tags-container" class="hidden flex flex-wrap gap-3 mt-4">
+            <!-- Tag Buttons -->
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="1">Tool</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="2">Utility</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="3">Game</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="4">Clone</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="5">Web Design</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="6">Food</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="7">Business</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="8">Social</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="9">Entertainment</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="10">Music</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="11">Productivity</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="12">App</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="13">Education</button>
+          </div>
+        </div>
+        
 
+      
         <!-- Projects -->
         <ul class="project-list" id="projectList"></ul>
 
