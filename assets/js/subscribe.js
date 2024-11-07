@@ -11,9 +11,9 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
             },
             body: JSON.stringify({ email })
         });
-
+    
         if (response.ok) {
-            // Show Toastify success notification
+            // Show success message
             Toastify({
                 text: "Subscription successful! A confirmation email has been sent.",
                 duration: 3000,
@@ -23,9 +23,10 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
                 className: "toastify toastify-success",
                 stopOnFocus: true,
             }).showToast();
-
+    
             document.getElementById('newsletter-form').reset();
         } else {
+            // Show failure message
             Toastify({
                 text: "Failed to subscribe. Please try again.",
                 duration: 3000,
@@ -37,6 +38,7 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
             }).showToast();
         }
     } catch (error) {
+        // Show network error message
         Toastify({
             text: "Error occurred. Please check your connection and try again.",
             duration: 3000,
@@ -48,4 +50,4 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
         }).showToast();
         console.error('Error:', error);
     }
-});
+})

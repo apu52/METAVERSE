@@ -48,7 +48,7 @@
 }
 
 .nav-link:hover {
-  text-shadow: 0 0 3px #fff, 0 0 10px rgba(167, 45, 237, 0.3), 0 0 20px rgba(167, 45, 237, 0.4), 0 0 30px rgba(167, 45, 237, 0.5), 0 0 40px rgba(167, 45, 237, 0.6), 0 0 50px rgba(167, 45, 237, 0.7);
+  text-shadow: 0 0 3px #4b4949, 0 0 10px rgba(167, 45, 237, 0.3), 0 0 20px rgba(167, 45, 237, 0.4), 0 0 30px rgba(167, 45, 237, 0.5), 0 0 40px rgba(167, 45, 237, 0.6), 0 0 50px rgba(167, 45, 237, 0.7);
 }
 
 .btn a:before {
@@ -85,8 +85,8 @@
 }
 
 .main.navbar.dark-theme {
-  background: #1a1a1a; /* Dark background */
-  color: #f0f0f0; /* Light text color */
+  background: #000000; /* Dark background */
+  color: #a49090; /* Light text color */
 }
 
 

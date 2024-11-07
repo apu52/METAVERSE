@@ -15,6 +15,7 @@
     --secondary-font-color: #e1b164;
     --body-font-color: #515151;
     --white-color: #fff;
+    --black-color: #000000;
     --dark-bg: #121212;
 }
 
@@ -156,7 +157,7 @@ header {
 
 .nav-link {
     display: block;
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -183,7 +184,7 @@ header {
     font-family: var(--main-font);
     font-size: 3.5rem;
     font-weight: 900;
-    color: var(--white-color);
+    color: var(--black-color);
     text-transform: uppercase;
     letter-spacing: .5rem;
     margin-right: -.5rem;
