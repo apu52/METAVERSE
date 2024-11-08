@@ -50,7 +50,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(230, 225, 225);
   padding-bottom: 6%;
   padding-top: 3%;
 }
@@ -62,14 +62,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 34px;
   transition: background-color 0.4s;
   box-shadow: 0 0 20px #fb16e4;
 }
 
 .slider .dark-theme {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 .slider:before {
@@ -114,7 +114,7 @@ input:checked + .slider:before {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 footer {
@@ -234,14 +234,14 @@ input::placeholder {
   border: 1px solid white;
   font-size: 16px;
   width: 250px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover effect for input field */
 #newsletter-form input[type="email"]:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-color: #f0e68c;
   box-shadow: 0 0 10px yellow; /* Glowing effect */
   transform: scale(1.05); /* Slight size increase on hover */
@@ -1573,11 +1573,25 @@ ul.socials {
 /* .socials{
   margin-bottom: 1rem;
 } */
-.policy{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.policy {
+  text-align: center;
+  margin-top: 20px;
 }
-.policy a{
-  margin: 10px 10px 50px 10px;
+
+.policy a {
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
 }
+
+.policy a:hover {
+  text-decoration: underline;
+}
+
+.policy p {
+  font-size: 18px;
+  color: rgb(215, 213, 85);
+  margin-top: 10px;
+  font-style: italic;
+}
+

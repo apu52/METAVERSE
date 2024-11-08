@@ -53,14 +53,13 @@ body.dark {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     transition: 0.4s;
     background-size: 18px 18px;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 /* Sun icon in light mode */
 body.light .slider:before {
@@ -72,7 +71,7 @@ body.dark .slider:before {
     background-image: url('/assets/img/moon.icon.png'); /* Update path as necessary */
 }
 
-/* Move knob to right when checked */
+/* Move knob to the right when checked */
 input:checked + .slider:before {
-    transform: translateX(26px); /* Move knob to the right */
+    transform: translateX(26px);
 }
