@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light and Dark themes */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Container styling for the toggle switch */
+.switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Toggle slider styling */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Slider knob styling */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: 0.4s;
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Sun icon in light mode */
+body.light .slider:before {
+    background-image: url('/assets/img/sun.icon.png'); /* Update path as necessary */
+}
+
+/* Moon icon in dark mode */
+body.dark .slider:before {
+    background-image: url('/assets/img/moon.icon.png'); /* Update path as necessary */
+}
+
+/* Move knob to the right when checked */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

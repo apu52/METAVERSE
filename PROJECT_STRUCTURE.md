@@ -2534,6 +2534,26 @@
 │   │   ├── logo.png
 │   │   ├── script.js
 │   │   └── style.css
+│   ├── CrowdFunding/
+│   │   ├── CrowdFunding .sol
+│   │   ├── README.md
+│   │   ├── artifacts/
+│   │   │   ├── CrowdFunding.json
+│   │   │   ├── CrowdFunding_metadata.json
+│   │   │   └── build-info/
+│   │   │       └── 461a9e78c9cead4ae179ea1ef4fb02db.json
+│   │   ├── contracts/
+│   │   │   ├── 1_Storage.sol
+│   │   │   ├── 2_Owner.sol
+│   │   │   └── 3_Ballot.sol
+│   │   ├── scripts/
+│   │   │   ├── deploy_with_ethers.ts
+│   │   │   ├── deploy_with_web3.ts
+│   │   │   ├── ethers-lib.ts
+│   │   │   └── web3-lib.ts
+│   │   └── tests/
+│   │       ├── Ballot_test.sol
+│   │       └── storage.test.js
 │   ├── Crunchyroll-Clone/
 │   │   ├── README.md
 │   │   ├── package-lock.json
@@ -5650,7 +5670,9 @@
 │   │   ├── about.css
 │   │   ├── contributors.css
 │   │   ├── scroll.css
-│   │   └── style.css
+│   │   ├── style.css
+│   │   ├── themeToggle.css
+│   │   └── toastify.css
 │   ├── img/
 │   │   ├── AI_Image _Generator.png
 │   │   ├── API_IMAGES.png
@@ -5683,6 +5705,7 @@
 │   │   ├── Code_editor.png
 │   │   ├── Country_Guide.png
 │   │   ├── Creative_agency.png
+│   │   ├── CrowdFunding.png
 │   │   ├── Crunchchyroll.png
 │   │   ├── Crypto.png
 │   │   ├── DENTISTWEB.png
@@ -5814,6 +5837,7 @@
 │   │   ├── medicationSchedule.png
 │   │   ├── menja.png
 │   │   ├── mindgame.png
+│   │   ├── moon.icon.png
 │   │   ├── moto_racer.png
 │   │   ├── newsApp.png
 │   │   ├── noresultimg.png
@@ -5828,6 +5852,7 @@
 │   │   ├── rockband.png
 │   │   ├── secret.png
 │   │   ├── solver.png
+│   │   ├── sun.icon.png
 │   │   ├── tetris_Game_pic.png
 │   │   ├── tiktok.png
 │   │   ├── towerblock.png
@@ -5835,17 +5860,31 @@
 │   │   ├── transaction_management-home.png
 │   │   ├── transaction_management-login.png
 │   │   ├── twitter.png
-│   │   └── typingmaster.png
-│   └── js/
-│       ├── contact.js
-│       ├── contributors.js
-│       ├── index.js
-│       ├── script.js
-│       └── scroll.js
+│   │   ├── typingmaster.png
+│   │   └── x-logo.jpg
+│   ├── js/
+│   │   ├── contact.js
+│   │   ├── contactus.js
+│   │   ├── contributors.js
+│   │   ├── index.js
+│   │   ├── script.js
+│   │   ├── scroll.js
+│   │   ├── subscribe.js
+│   │   └── toggletheme.js
+│   ├── main.mp4
+│   └── main.webm
 ├── backend/
+│   ├── controllers/
+│   │   ├── contactus.js
+│   │   ├── feedback.js
+│   │   └── subscribe.js
+│   ├── model/
+│   │   └── feedback.model.js
 │   ├── package-lock.json
 │   ├── package.json
-│   └── server.js
+│   ├── server.js
+│   └── services/
+│       └── emailService.js
 ├── contact.html
 ├── contributor.html
 ├── copyright.html
@@ -5855,7 +5894,9 @@
 │   ├── Anurag.jfif
 │   ├── Code collab carnival.png
 │   ├── Codepeak Pic.png
+│   ├── Disha.png
 │   ├── KWOC pic.png
+│   ├── Kunal.jpg
 │   ├── Metaverse_poster.gif
 │   ├── Shruti.jpg
 │   ├── apu.jpeg

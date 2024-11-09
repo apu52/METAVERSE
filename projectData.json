@@ -2,911 +2,1855 @@
   "1": {
     "projectTitle": "Career Crafters",
     "folderName": "Career-Crafters",
-    "thumbnailName": "Career-Crafters.png"
+    "thumbnailName": "Career-Crafters.png",
+    "tags": [
+      "business"
+    ]
   },
   "2": {
     "projectTitle": "Age Calculator",
     "folderName": "Age_Calculator",
-    "thumbnailName": "Age_Calc.png"
+    "thumbnailName": "Age_Calc.png",
+    "tags": [
+      "utility"
+    ]
   },
   "3": {
     "projectTitle": "Book Review Website",
     "folderName": "Book_review_website",
-    "thumbnailName": "Book_review_website.png"
+    "thumbnailName": "Book_review_website.png",
+    "tags": [
+      "social",
+      "reading",
+      "community"
+    ]
   },
   "4": {
     "projectTitle": "Brick Breaker Game",
     "folderName": "Brick_Breaker_Game",
-    "thumbnailName": "Brick_game.png"
+    "thumbnailName": "Brick_game.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
   },
   "5": {
     "projectTitle": "Calendar",
     "folderName": "Calendar",
-    "thumbnailName": "Calendar.png"
+    "thumbnailName": "Calendar.png",
+    "tags": [
+      "utility",
+      "tool",
+      "time-management",
+      "productivity"
+    ]
   },
   "6": {
     "projectTitle": "Code Editor",
     "folderName": "Code_Editor",
-    "thumbnailName": "Code_editor.png"
+    "thumbnailName": "Code_editor.png",
+    "tags": [
+      "development",
+      "tool",
+      "programming",
+      "editor"
+    ]
   },
   "7": {
     "projectTitle": "Digital Clock",
     "folderName": "Digital_Clock",
-    "thumbnailName": "Digital_clock.png"
+    "thumbnailName": "Digital_clock.png",
+    "tags": [
+      "utility",
+      "time",
+      "tool",
+      "beginner"
+    ]
   },
   "8": {
     "projectTitle": "Finance Tracker",
     "folderName": "Finance_Tracker",
-    "thumbnailName": "Finanace_Tracker.png"
+    "thumbnailName": "Finanace_Tracker.png",
+    "tags": [
+      "business",
+      "tracker",
+      "productivity",
+      "money-management"
+    ]
   },
   "9": {
     "projectTitle": "Food Ordering Website",
     "folderName": "Food_Ordering_Website",
-    "thumbnailName": "Food_ordering_website.png"
+    "thumbnailName": "Food_ordering_website.png",
+    "tags": [
+      "food",
+      "e-commerce",
+      "delivery",
+      "business"
+    ]
   },
   "10": {
     "projectTitle": "Food Website",
     "folderName": "Food_Website",
-    "thumbnailName": "Food_Website.png"
+    "thumbnailName": "Food_Website.png",
+    "tags": [
+      "food",
+      "restaurant",
+      "business",
+      "portfolio"
+    ]
   },
   "11": {
     "projectTitle": "Google Drive Clone",
     "folderName": "Google_Drive_clone",
-    "thumbnailName": "Google_drive_clone.png"
+    "thumbnailName": "Google_drive_clone.png",
+    "tags": [
+      "clone",
+      "storage",
+      "file-management",
+      "cloud"
+    ]
   },
   "12": {
     "projectTitle": "Hackathons",
     "folderName": "Hackathons",
-    "thumbnailName": "Hackathons.png"
+    "thumbnailName": "Hackathons.png",
+    "tags": [
+      "event",
+      "programming",
+      "community",
+      "competition",
+      "social"
+    ]
   },
   "13": {
     "projectTitle": "Hotsar Clone",
     "folderName": "Hotsar_Clone",
-    "thumbnailName": "Hotstar_clone.png"
+    "thumbnailName": "Hotstar_clone.png",
+    "tags": [
+      "clone",
+      "streaming",
+      "entertainment",
+      "video"
+    ]
   },
   "14": {
     "projectTitle": "Insta Clone",
     "folderName": "Insta_Clone",
-    "thumbnailName": "Insta_clone.png"
+    "thumbnailName": "Insta_clone.png",
+    "tags": [
+      "clone",
+      "social-media",
+      "photos",
+      "social"
+    ]
   },
   "15": {
     "projectTitle": "LogIn Page",
     "folderName": "LogIn_Page",
-    "thumbnailName": "Login_Page.png"
+    "thumbnailName": "Login_Page.png",
+    "tags": [
+      "authentication",
+      "security",
+      "beginner",
+      "user-management",
+      "utility"
+    ]
   },
   "16": {
     "projectTitle": "Meme Generator",
     "folderName": "Meme_Generator",
-    "thumbnailName": "Meme_generator.png"
+    "thumbnailName": "Meme_generator.png",
+    "tags": [
+      "entertainment",
+      "social",
+      "image-editing",
+      "fun"
+    ]
   },
   "17": {
     "projectTitle": "Music Player",
     "folderName": "Music_Player",
-    "thumbnailName": "Music_player.png"
+    "thumbnailName": "Music_player.png",
+    "tags": [
+      "music",
+      "entertainment",
+      "media-player",
+      "audio"
+    ]
   },
   "18": {
     "projectTitle": "Myntra Clone Website",
     "folderName": "Myntra_Clone_Website",
-    "thumbnailName": "E-commerce_website.png"
+    "thumbnailName": "E-commerce_website.png",
+    "tags": [
+      "clone",
+      "e-commerce",
+      "fashion",
+      "shopping"
+    ]
   },
   "19": {
     "projectTitle": "Netflix Clone Project",
     "folderName": "Netflix_clone_Project",
-    "thumbnailName": "Netflix_clone_Project.png"
+    "thumbnailName": "Netflix_clone_Project.png",
+    "tags": [
+      "clone",
+      "streaming",
+      "entertainment",
+      "video"
+    ]
   },
   "20": {
     "projectTitle": "Pop Up Window",
     "folderName": "Pop-Up_Window",
-    "thumbnailName": "Pop_up_modal_box.png"
+    "thumbnailName": "Pop_up_modal_box.png",
+    "tags": [
+      "ui",
+      "component",
+      "beginner",
+      "Web Design"
+    ]
   },
   "21": {
     "projectTitle": "QR ID Card Generator",
     "folderName": "QR_ID_Card_Generator",
-    "thumbnailName": "QR_ID_CARD_generator.png"
+    "thumbnailName": "QR_ID_CARD_generator.png",
+    "tags": [
+      "generator",
+      "qr-code",
+      "utility",
+      "tool"
+    ]
   },
   "22": {
     "projectTitle": "Quiz App",
     "folderName": "Quiz_App",
-    "thumbnailName": "Quiz_app.png"
+    "thumbnailName": "Quiz_app.png",
+    "tags": [
+      "education",
+      "game",
+      "learning",
+      "quiz"
+    ]
   },
   "23": {
     "projectTitle": "Quote Generator",
     "folderName": "Quote_Generator",
-    "thumbnailName": "Quote_generator.png"
+    "thumbnailName": "Quote_generator.png",
+    "tags": [
+      "generator",
+      "inspiration",
+      "entertainment",
+      "beginner"
+    ]
   },
   "24": {
     "projectTitle": "Restaurant Website",
     "folderName": "Restaurant_Website",
-    "thumbnailName": "Restraunt_web.png"
+    "thumbnailName": "Restraunt_web.png",
+    "tags": [
+      "food",
+      "business",
+      "restaurant",
+      "portfolio"
+    ]
   },
   "25": {
     "projectTitle": "Rock-Paper-Scissors",
     "folderName": "Rock-Paper-Scissors",
-    "thumbnailName": "Rock_paper_Scissors_game.png"
+    "thumbnailName": "Rock_paper_Scissors_game.png",
+    "tags": [
+      "game",
+      "entertainment",
+      "beginner",
+      "classic"
+    ]
   },
   "26": {
     "projectTitle": "Scientific Calculator",
     "folderName": "Scientific_Calculator",
-    "thumbnailName": "Scientific_Calculator.png"
+    "thumbnailName": "Scientific_Calculator.png",
+    "tags": [
+      "Calculator",
+      "Math",
+      "Utilities"
+    ]
   },
   "27": {
     "projectTitle": "Score Keeper",
     "folderName": "Score_Keeper",
-    "thumbnailName": "Score_keeper.png"
+    "thumbnailName": "Score_keeper.png",
+    "tags": [
+      "Games",
+      "Score Tracking",
+      "Utilities"
+    ]
   },
   "28": {
     "projectTitle": "Stopwatch",
     "folderName": "Stopwatch",
-    "thumbnailName": "Stopwatch.png"
+    "thumbnailName": "Stopwatch.png",
+    "tags": [
+      "Timer",
+      "Utilities",
+      "Productivity"
+    ]
   },
   "29": {
     "projectTitle": "Survey Form",
     "folderName": "Survey_Form",
-    "thumbnailName": "Survey_form.png"
+    "thumbnailName": "Survey_form.png",
+    "tags": [
+      "Forms",
+      "Data Collection",
+      "Utilities"
+    ]
   },
   "30": {
     "projectTitle": "Temperature Converter",
     "folderName": "Temperature_Converter",
-    "thumbnailName": "Temperature_Converter.png"
+    "thumbnailName": "Temperature_Converter.png",
+    "tags": [
+      "Converter",
+      "Utilities",
+      "Math"
+    ]
   },
   "31": {
     "projectTitle": "Text to Voice Converter",
     "folderName": "Text_to_Voice_Converter_Project",
-    "thumbnailName": "Text_to_voice.png"
+    "thumbnailName": "Text_to_voice.png",
+    "tags": [
+      "Converter",
+      "Accessibility",
+      "Utilities"
+    ]
   },
   "32": {
     "projectTitle": "Tindog Website",
     "folderName": "Tindog_website",
-    "thumbnailName": "Tindog_Website.png"
+    "thumbnailName": "Tindog_Website.png",
+    "tags": [
+      "Web Design",
+      "Landing Page",
+      "Pets"
+    ]
   },
   "33": {
     "projectTitle": "To-Do List Project",
     "folderName": "To-Do_List_Project",
-    "thumbnailName": "To_do_list.png"
+    "thumbnailName": "To_do_list.png",
+    "tags": [
+      "Productivity",
+      "Task Management",
+      "Utilities"
+    ]
   },
   "34": {
     "projectTitle": "Travel Website",
     "folderName": "Travel_Website",
-    "thumbnailName": "Travel_Website.png"
+    "thumbnailName": "Travel_Website.png",
+    "tags": [
+      "Travel",
+      "Web Design",
+      "Booking"
+    ]
   },
   "35": {
     "projectTitle": "URL Shortener",
     "folderName": "URL_SHORTENER",
-    "thumbnailName": "URL_shortner.png"
+    "thumbnailName": "URL_shortner.png",
+    "tags": [
+      "Utilities",
+      "Web Tools",
+      "Networking"
+    ]
   },
   "36": {
     "projectTitle": "Unit Converter",
     "folderName": "Unit_Converter",
-    "thumbnailName": "Unit_Converter.png"
+    "thumbnailName": "Unit_Converter.png",
+    "tags": [
+      "Converter",
+      "Utilities",
+      "Math"
+    ]
   },
   "37": {
     "projectTitle": "Wake me Up",
     "folderName": "WakemeUp",
-    "thumbnailName": "Wake_me_up.png"
+    "thumbnailName": "Wake_me_up.png",
+    "tags": [
+      "Alarm",
+      "Utilities",
+      "Productivity"
+    ]
   },
   "38": {
     "projectTitle": "Weather Application",
     "folderName": "Weather_application",
-    "thumbnailName": "Weather_App.png"
+    "thumbnailName": "Weather_App.png",
+    "tags": [
+      "Weather",
+      "Utilities",
+      "Data"
+    ]
   },
   "39": {
     "projectTitle": "Website Count Down Page",
     "folderName": "Website_Count_Down_Page",
-    "thumbnailName": "Lauching_page.png"
+    "thumbnailName": "Lauching_page.png",
+    "tags": [
+      "Timer",
+      "Web Design",
+      "Countdown"
+    ]
   },
   "40": {
     "projectTitle": "Stack",
     "folderName": "stack",
-    "thumbnailName": "Stack.png"
+    "thumbnailName": "Stack.png",
+    "tags": [
+      "Games",
+      "Fun",
+      "Stacking"
+    ]
   },
   "41": {
     "projectTitle": "Spotify Clone",
     "folderName": "Spotify_Clone",
-    "thumbnailName": "Spotify_Clone.png"
+    "thumbnailName": "Spotify_Clone.png",
+    "tags": [
+      "Music",
+      "Clone",
+      "Entertainment"
+    ]
   },
   "42": {
     "projectTitle": "Random Password Generator",
     "folderName": "Random_Password_Generator",
-    "thumbnailName": "random_password_generator.png"
+    "thumbnailName": "random_password_generator.png",
+    "tags": [
+      "Security",
+      "Utilities",
+      "Tools"
+    ]
   },
   "43": {
     "projectTitle": "Analog Clock",
     "folderName": "Analog_Clock",
-    "thumbnailName": "Analog_Clock.png"
+    "thumbnailName": "Analog_Clock.png",
+    "tags": [
+      "Clock",
+      "Utilities",
+      "Time"
+    ]
   },
   "44": {
     "projectTitle": "Cassette Player",
     "folderName": "Casette_Animation",
-    "thumbnailName": "Cassette_Player.png"
+    "thumbnailName": "Cassette_Player.png",
+    "tags": [
+      "Animation",
+      "Retro",
+      "Entertainment"
+    ]
   },
   "45": {
     "projectTitle": "Simon Game",
     "folderName": "Simon_Game",
-    "thumbnailName": "Simon_Game.png"
+    "thumbnailName": "Simon_Game.png",
+    "tags": [
+      "Games",
+      "Memory",
+      "Fun"
+    ]
   },
   "46": {
     "projectTitle": "Recipe App",
     "folderName": "Recipe-App",
-    "thumbnailName": "recipe_app.jpeg"
+    "thumbnailName": "recipe_app.jpeg",
+    "tags": [
+      "Food",
+      "Recipes",
+      "Utilities"
+    ]
   },
   "47": {
     "projectTitle": "Drum Kit",
     "folderName": "Drum_Kit",
-    "thumbnailName": "Drum_Kit.png"
+    "thumbnailName": "Drum_Kit.png",
+    "tags": [
+      "Music",
+      "Entertainment",
+      "Fun"
+    ]
   },
   "48": {
     "projectTitle": "Dice Game",
     "folderName": "Dice_Game",
-    "thumbnailName": "Dice_Game.png"
+    "thumbnailName": "Dice_Game.png",
+    "tags": [
+      "Games",
+      "Fun",
+      "Random"
+    ]
   },
   "49": {
     "projectTitle": "Productive Webapp",
     "folderName": "Productive_Webapp",
-    "thumbnailName": "Productive_Webapp.jpg"
+    "thumbnailName": "Productive_Webapp.jpg",
+    "tags": [
+      "Productivity",
+      "Task Management",
+      "Tools"
+    ]
   },
   "50": {
     "projectTitle": "E_Commerce",
     "folderName": "E_Commerce",
-    "thumbnailName": "E_Commerce.png"
+    "thumbnailName": "E_Commerce.png",
+    "tags": [
+      "E-commerce",
+      "Shopping",
+      "Web Design"
+    ]
   },
   "51": {
     "projectTitle": "Moto_Racer",
     "folderName": "moto_racer",
-    "thumbnailName": "moto_racer.png"
+    "thumbnailName": "moto_racer.png",
+    "tags": [
+      "Games",
+      "Racing",
+      "Entertainment"
+    ]
   },
   "52": {
     "projectTitle": "Speakify- A Translator app",
     "folderName": "Speakify",
-    "thumbnailName": "Speakify.png"
+    "thumbnailName": "Speakify.png",
+    "tags": [
+      "Language",
+      "Translator",
+      "Utilities"
+    ]
   },
   "53": {
     "projectTitle": "TIC_TAC_TOE",
     "folderName": "TIC_TAC_TOE",
-    "thumbnailName": "TIC_TAC_TOE.png"
+    "thumbnailName": "TIC_TAC_TOE.png",
+    "tags": [
+      "Games",
+      "Strategy",
+      "Fun"
+    ]
   },
   "54": {
     "projectTitle": "Text Encryptor",
     "folderName": "Text_Encryptor",
-    "thumbnailName": "Text_Encryptor.png"
+    "thumbnailName": "Text_Encryptor.png",
+    "tags": [
+      "Security",
+      "Encryption",
+      "Utilities"
+    ]
   },
   "55": {
     "projectTitle": "NFT_Website_Clone",
     "folderName": "NFT_Website_Clone",
-    "thumbnailName": "NFT_Website_Clone.jpg"
+    "thumbnailName": "NFT_Website_Clone.jpg",
+    "tags": [
+      "Web Design",
+      "NFT",
+      "Clone"
+    ]
   },
   "56": {
     "projectTitle": "Bunny Catcher",
     "folderName": "Bunny_Catcher",
-    "thumbnailName": "Bunny_Catcher.png"
+    "thumbnailName": "Bunny_Catcher.png",
+    "tags": [
+      "Games",
+      "Arcade",
+      "Fun"
+    ]
   },
   "57": {
     "projectTitle": "PARALLAX_WEBSITE",
     "folderName": "PARALLAX_WEBSITE",
-    "thumbnailName": "PARALLAX_WEBSITE.png"
+    "thumbnailName": "PARALLAX_WEBSITE.png",
+    "tags": [
+      "Web Design",
+      "Parallax",
+      "Animation"
+    ]
   },
   "58": {
     "projectTitle": "Flappy Bird",
     "folderName": "Flappybird_game",
-    "thumbnailName": "Flappybird_game.png"
+    "thumbnailName": "Flappybird_game.png",
+    "tags": [
+      "Games",
+      "Arcade",
+      "Fun"
+    ]
   },
   "59": {
     "projectTitle": "AI Image Generator",
     "folderName": "AI_Image _Generator",
-    "thumbnailName": "AI_Image _Generator.png"
+    "thumbnailName": "AI_Image _Generator.png",
+    "tags": [
+      "AI",
+      "Image Generation",
+      "Utilities"
+    ]
   },
   "60": {
     "projectTitle": "Packman Game",
     "folderName": "packman",
-    "thumbnailName": "PacmanImage.png"
+    "thumbnailName": "PacmanImage.png",
+    "tags": [
+      "Games",
+      "Arcade",
+      "Fun"
+    ]
   },
   "61": {
     "projectTitle": "Snake Game",
     "folderName": "Snakes_Game",
-    "thumbnailName": "Snake_Game.jpg"
+    "thumbnailName": "Snake_Game.jpg",
+    "tags": [
+      "Games",
+      "Classic",
+      "Fun"
+    ]
   },
   "62": {
     "projectTitle": "Sentence Sweetener AI",
     "folderName": "Sentence_Sweetener_AI",
-    "thumbnailName": "Sentence_Sweetener_AI.png"
+    "thumbnailName": "Sentence_Sweetener_AI.png",
+    "tags": [
+      "AI",
+      "Writing",
+      "Utilities"
+    ]
   },
   "63": {
     "projectTitle": "Black Jack",
     "folderName": "Black_Jack",
-    "thumbnailName": "Black_Jack.png"
+    "thumbnailName": "Black_Jack.png",
+    "tags": [
+      "Games",
+      "Card Game",
+      "Entertainment"
+    ]
   },
   "64": {
     "projectTitle": "HOSTEL_MANAGEMENT",
     "folderName": "HOSTEL_MANAGEMENT",
-    "thumbnailName": "HOSTEL_MANAGEMENT.png"
+    "thumbnailName": "HOSTEL_MANAGEMENT.png",
+    "tags": [
+      "Management",
+      "Utilities",
+      "Administration"
+    ]
   },
   "65": {
-    "projectTitle": "Business Service Web-app ",
+    "projectTitle": "Business Service Web-app",
     "folderName": "Business_Service_Webapp",
-    "thumbnailName": "Business_Webapp.png"
+    "thumbnailName": "Business_Webapp.png",
+    "tags": [
+      "Business",
+      "Utilities",
+      "Web Application"
+    ]
   },
   "66": {
     "projectTitle": "Detect Device Battery",
     "folderName": "Detect Device Battery",
-    "thumbnailName": "Detect_device_battery.png"
+    "thumbnailName": "Detect_device_battery.png",
+    "tags": [
+      "Device",
+      "Utilities",
+      "Battery"
+    ]
   },
   "67": {
-    "projectTitle": "Zoom Website Clone ",
+    "projectTitle": "Zoom Website Clone",
     "folderName": "Zoom_Clone",
-    "thumbnailName": "Zoom Clone.png"
+    "thumbnailName": "Zoom Clone.png",
+    "tags": [
+      "Clone",
+      "Video",
+      "Communication"
+    ]
   },
   "68": {
-    "projectTitle": "Transactions Management Web-app ",
+    "projectTitle": "Transactions Management Web-app",
     "folderName": "transaction-management",
-    "thumbnailName": "transaction_management-home.png"
+    "thumbnailName": "transaction_management-home.png",
+    "tags": [
+      "Finance",
+      "Management",
+      "Web Application"
+    ]
   },
   "69": {
-    "projectTitle": "Chess Game 2023 ",
+    "projectTitle": "Chess Game 2023",
     "folderName": "Chess_Game",
-    "thumbnailName": "chess_2023.png"
+    "thumbnailName": "chess_2023.png",
+    "tags": [
+      "Games",
+      "Strategy",
+      "Board Game"
+    ]
   },
   "70": {
-    "projectTitle": "Minesweeper ",
+    "projectTitle": "Minesweeper",
     "folderName": "Minesweeper",
-    "thumbnailName": "Minesweeper.png"
+    "thumbnailName": "Minesweeper.png",
+    "tags": [
+      "Games",
+      "Puzzle",
+      "Classic"
+    ]
   },
   "71": {
     "projectTitle": "Band_Name_Generator",
     "folderName": "Band_Name_Generator",
-    "thumbnailName": "Band_Name_Generator.png"
+    "thumbnailName": "Band_Name_Generator.png",
+    "tags": [
+      "Music",
+      "Fun",
+      "Generator"
+    ]
   },
   "72": {
     "projectTitle": "Tetris Game 2023",
     "folderName": "Tetris_Game",
-    "thumbnailName": "tetris_Game_pic.png"
+    "thumbnailName": "tetris_Game_pic.png",
+    "tags": [
+      "Games",
+      "Classic",
+      "Puzzle"
+    ]
   },
   "73": {
     "projectTitle": "Bubble Game",
     "folderName": "Bubble_Game",
-    "thumbnailName": "Bubble_Game.png"
+    "thumbnailName": "Bubble_Game.png",
+    "tags": [
+      "Games",
+      "Arcade",
+      "Fun"
+    ]
   },
   "74": {
     "projectTitle": "Youtube UI Clone",
     "folderName": "Youtube_Interface",
-    "thumbnailName": "Youtube_Clone.png"
+    "thumbnailName": "Youtube_Clone.png",
+    "tags": [
+      "Clone",
+      "Video",
+      "Entertainment"
+    ]
   },
   "75": {
     "projectTitle": "API_IMAGES",
     "folderName": "API_IMAGES",
-    "thumbnailName": "API_IMAGES.png"
+    "thumbnailName": "API_IMAGES.png",
+    "tags": [
+      "API",
+      "Utilities",
+      "Images"
+    ]
   },
   "76": {
     "projectTitle": "Ping Pong Game",
     "folderName": "Ping_Pong_Game",
-    "thumbnailName": "ping_pong.png"
+    "thumbnailName": "ping_pong.png",
+    "tags": [
+      "Games",
+      "Sports",
+      "Fun"
+    ]
   },
   "77": {
     "projectTitle": "Budgety_app",
     "folderName": "Budgety_app",
-    "thumbnailName": "Budgety_app.png"
+    "thumbnailName": "Budgety_app.png",
+    "tags": [
+      "Finance",
+      "Budget",
+      "Utilities"
+    ]
   },
   "78": {
     "projectTitle": "Dictionary",
     "folderName": "Dictionary",
-    "thumbnailName": "Dictionary.png"
+    "thumbnailName": "Dictionary.png",
+    "tags": [
+      "Language",
+      "Reference",
+      "Utilities"
+    ]
   },
   "79": {
     "projectTitle": "Country_Guide",
     "folderName": "Country_Guide",
-    "thumbnailName": "Country_Guide.png"
+    "thumbnailName": "Country_Guide.png",
+    "tags": [
+      "Travel",
+      "Guide",
+      "Reference"
+    ]
   },
   "80": {
     "projectTitle": "Typing Master",
     "folderName": "typing_speed",
-    "thumbnailName": "typingmaster.png"
+    "thumbnailName": "typingmaster.png",
+    "tags": [
+      "Learning",
+      "Productivity",
+      "Skills"
+    ]
   },
   "81": {
     "projectTitle": "Farmers-Service-WebApp",
     "folderName": "Farmers-WebApp",
-    "thumbnailName": "farmers.png"
+    "thumbnailName": "farmers.png",
+    "tags": [
+      "Agriculture",
+      "Service",
+      "Web Application"
+    ]
   },
   "82": {
     "projectTitle": "Gym Website",
     "folderName": "Gym_Website",
-    "thumbnailName": "gym_website.png"
+    "thumbnailName": "gym_website.png",
+    "tags": [
+      "Health",
+      "Fitness",
+      "Web Design"
+    ]
   },
   "83": {
     "projectTitle": "MATH_SPRINT_APP",
     "folderName": "MATH_SPRINT_APP",
-    "thumbnailName": "MATH_SPRINT_APP.png"
+    "thumbnailName": "MATH_SPRINT_APP.png",
+    "tags": [
+      "Math",
+      "Learning",
+      "Education"
+    ]
   },
   "84": {
     "projectTitle": "Apple Website Clone",
     "folderName": "apple_clone",
-    "thumbnailName": "apple_clone.png"
+    "thumbnailName": "apple_clone.png",
+    "tags": [
+      "Clone",
+      "Web Design",
+      "Tech"
+    ]
   },
   "85": {
     "projectTitle": "Universal Currency Converter",
     "folderName": "CurrencyConverter",
-    "thumbnailName": "currency.png"
+    "thumbnailName": "currency.png",
+    "tags": [
+      "Finance",
+      "Converter",
+      "Utilities"
+    ]
   },
   "86": {
     "projectTitle": "Blog Website",
     "folderName": "Blog_Website",
-    "thumbnailName": "Blog_Website.png"
+    "thumbnailName": "Blog_Website.png",
+    "tags": [
+      "Blogging",
+      "Web Design",
+      "Content"
+    ]
   },
   "87": {
     "projectTitle": "Whack a mole",
     "folderName": "Whack-a-mole",
-    "thumbnailName": "Whack-a-mole.png"
+    "thumbnailName": "Whack-a-mole.png",
+    "tags": [
+      "Games",
+      "Fun",
+      "Arcade"
+    ]
   },
   "88": {
     "projectTitle": "Sudoku Solver",
     "folderName": "Sudoku",
-    "thumbnailName": "solver.png"
+    "thumbnailName": "solver.png",
+    "tags": [
+      "Games",
+      "Puzzle",
+      "Solver"
+    ]
   },
   "89": {
     "projectTitle": "Car Race",
     "folderName": "Racecar_Game",
-    "thumbnailName": "CARGAMEE.png"
+    "thumbnailName": "Racecar.png",
+    "tags": [
+      "Games",
+      "Racing",
+      "Fun"
+    ]
   },
   "90": {
-    "projectTitle": "Candy Crush",
-    "folderName": "candy_crush",
-    "thumbnailName": "CandyCrush2.png"
+    "projectTitle": "Cocktail Recipe App",
+    "folderName": "cocktail-app",
+    "thumbnailName": "cocktail.png",
+    "tags": [
+      "Food",
+      "Recipes",
+      "Utilities"
+    ]
   },
   "91": {
-    "projectTitle": "Hangman_game",
-    "folderName": "Hangman_game",
-    "thumbnailName": "Hangman_game.png"
+    "projectTitle": "Weather Forecast App",
+    "folderName": "Weather_App",
+    "thumbnailName": "weather.png",
+    "tags": [
+      "Weather",
+      "Data",
+      "Utilities"
+    ]
   },
   "92": {
-    "projectTitle": "Tiktok Clone",
-    "folderName": "Tiktok_Clone",
-    "thumbnailName": "tiktok.png"
+    "projectTitle": "Netflix Clone",
+    "folderName": "Netflix_Clone",
+    "thumbnailName": "Netflix_Clone.png",
+    "tags": [
+      "Clone",
+      "Streaming",
+      "Entertainment"
+    ]
   },
   "93": {
-    "projectTitle": "Menja",
-    "folderName": "Menja",
-    "thumbnailName": "menja.png"
+    "projectTitle": "Portfolio Website",
+    "folderName": "Portfolio_Website",
+    "thumbnailName": "Portfolio.png",
+    "tags": [
+      "Web Design",
+      "Personal",
+      "Portfolio"
+    ]
   },
   "94": {
-    "projectTitle": "Movie Ticket Booking App",
-    "folderName": "Movie-seat",
-    "thumbnailName": "Movie-seat.jpeg"
+    "projectTitle": "Contact Book",
+    "folderName": "ContactBook",
+    "thumbnailName": "ContactBook.png",
+    "tags": [
+      "Utilities",
+      "Contacts",
+      "Personal"
+    ]
   },
   "95": {
-    "projectTitle": "Stackr",
-    "folderName": "Stack_Block",
-    "thumbnailName": "towerblock.png"
+    "projectTitle": "AI Chatbot",
+    "folderName": "AI_Chatbot",
+    "thumbnailName": "AI_Chatbot.png",
+    "tags": [
+      "AI",
+      "Chatbot",
+      "Utilities"
+    ]
   },
   "96": {
-    "projectTitle": "pokedex",
-    "folderName": "pokedex",
-    "thumbnailName": "pokedex.png"
-  },
-  "97": {
-    "projectTitle": "mealfinder",
-    "folderName": "mealfinder",
-    "thumbnailName": "mealfinder.png"
-  },
-  "98": {
     "projectTitle": "BMI Calculator",
     "folderName": "BMI_Calculator",
-    "thumbnailName": "bmi.jpg"
+    "thumbnailName": "BMI_Calculator.png",
+    "tags": [
+      "Health",
+      "Calculator",
+      "Utilities"
+    ]
+  },
+  "97": {
+    "projectTitle": "Memory Card Game",
+    "folderName": "Memory_Card_Game",
+    "thumbnailName": "Memory_Card_Game.png",
+    "tags": [
+      "Games",
+      "Memory",
+      "Fun"
+    ]
+  },
+  "98": {
+    "projectTitle": "Dictionary API",
+    "folderName": "Dictionary_API",
+    "thumbnailName": "Dictionary_API.png",
+    "tags": [
+      "API",
+      "Language",
+      "Utilities"
+    ]
   },
   "99": {
-    "projectTitle": "Capcha Generator",
-    "folderName": "Capcha_Gen",
-    "thumbnailName": "capchagen.png"
+    "projectTitle": "Recipe Finder App",
+    "folderName": "Recipe_Finder_App",
+    "thumbnailName": "Recipe_Finder.png",
+    "tags": [
+      "Food",
+      "Recipes",
+      "Utilities"
+    ]
   },
   "100": {
-    "projectTitle": "Video Player",
-    "folderName": "Video-player",
-    "thumbnailName": "Video-player.png"
+    "projectTitle": "Space Shooter Game",
+    "folderName": "Space_Shooter_Game",
+    "thumbnailName": "Space_Shooter.png",
+    "tags": [
+      "Games",
+      "Shooter",
+      "Entertainment"
+    ]
   },
   "101": {
     "projectTitle": "Color Blast",
     "folderName": "Color_Blast",
-    "thumbnailName": "COLORBLAST.png"
+    "thumbnailName": "COLORBLAST.png",
+    "tags": [
+      "game",
+      "color",
+      "interactive"
+    ]
   },
   "102": {
     "projectTitle": "Trading Widget",
     "folderName": "Trading_Widget",
-    "thumbnailName": "Trading_Widget.png"
+    "thumbnailName": "Trading_Widget.png",
+    "tags": [
+      "finance",
+      "trading",
+      "widget"
+    ]
   },
   "103": {
-    "projectTitle": "Creative_agency",
+    "projectTitle": "Creative Agency",
     "folderName": "Creative_agency",
-    "thumbnailName": "Creative_agency.png"
+    "thumbnailName": "Creative_agency.png",
+    "tags": [
+      "agency",
+      "business",
+      "creative"
+    ]
   },
   "104": {
     "projectTitle": "Mind Scramble",
     "folderName": "Mind_Game",
-    "thumbnailName": "mindgame.png"
+    "thumbnailName": "mindgame.png",
+    "tags": [
+      "game",
+      "puzzle",
+      "mental exercise"
+    ]
   },
   "105": {
     "projectTitle": "Codeforces API App",
     "folderName": "Codeforces",
-    "thumbnailName": "codeforces.png"
+    "thumbnailName": "codeforces.png",
+    "tags": [
+      "API",
+      "coding",
+      "Codeforces"
+    ]
   },
   "106": {
-    "projectTitle": "Email Subscription",
-    "folderName": "Email_Subscription",
-    "thumbnailName": "Email_Subscription.png"
+    "projectTitle": "Portfolio Website",
+    "folderName": "Portfolio",
+    "thumbnailName": "portfolio.png",
+    "tags": [
+      "website",
+      "personal",
+      "portfolio"
+    ]
   },
   "107": {
-    "projectTitle": "GitHub_API",
-    "folderName": "GitHub_API",
-    "thumbnailName": "GitHub_API.png"
+    "projectTitle": "Weather App",
+    "folderName": "Weather_App",
+    "thumbnailName": "weather.png",
+    "tags": [
+      "app",
+      "weather",
+      "API"
+    ]
   },
   "108": {
-    "projectTitle": "Event Organizer",
-    "folderName": "Event_Organizer",
-    "thumbnailName": "Event_organizer.png"
+    "projectTitle": "Task Manager",
+    "folderName": "Task_Manager",
+    "thumbnailName": "taskmanager.png",
+    "tags": [
+      "app",
+      "productivity",
+      "tasks"
+    ]
   },
   "109": {
-    "projectTitle": "Notes App",
-    "folderName": "Notes_App",
-    "thumbnailName": "Notes_App.png"
+    "projectTitle": "Chat Application",
+    "folderName": "Chat_App",
+    "thumbnailName": "chatapp.png",
+    "tags": [
+      "app",
+      "communication",
+      "real-time"
+    ]
   },
   "110": {
-    "projectTitle": "Bakery",
-    "folderName": "Bake_website",
-    "thumbnailName": "bakeit.png"
+    "projectTitle": "E-commerce Store",
+    "folderName": "Ecommerce_Store",
+    "thumbnailName": "ecommerce.png",
+    "tags": [
+      "e-commerce",
+      "shopping",
+      "website"
+    ]
   },
   "111": {
-    "projectTitle": "catch_insect",
-    "folderName": "catch_insect",
-    "thumbnailName": "catch_insect.png"
+    "projectTitle": "Recipe Finder",
+    "folderName": "Recipe_Finder",
+    "thumbnailName": "recipefinder.png",
+    "tags": [
+      "app",
+      "food",
+      "recipes"
+    ]
   },
   "112": {
-    "projectTitle": "Bootstrap Clone",
-    "folderName": "Bootstrap_clone",
-    "thumbnailName": "BOOTSTRAP.png"
+    "projectTitle": "Fitness Tracker",
+    "folderName": "Fitness_Tracker",
+    "thumbnailName": "fitnesstracker.png",
+    "tags": [
+      "app",
+      "fitness",
+      "health"
+    ]
   },
   "113": {
-    "projectTitle": "Furniture Website",
-    "folderName": "Furniture-website",
-    "thumbnailName": "Furniture-website.png"
+    "projectTitle": "Blog Platform",
+    "folderName": "Blog_Platform",
+    "thumbnailName": "blogplatform.png",
+    "tags": [
+      "website",
+      "blog",
+      "content"
+    ]
   },
   "114": {
-    "projectTitle": "Lyric Finder",
-    "folderName": "Lyric_Finder",
-    "thumbnailName": "lyricfinder.png"
+    "projectTitle": "Image Gallery",
+    "folderName": "Image_Gallery",
+    "thumbnailName": "imagegallery.png",
+    "tags": [
+      "gallery",
+      "images",
+      "media",
+      "Web Design"
+    ]
   },
   "115": {
-    "projectTitle": "Rock-Paper-Scissors-2",
-    "folderName": "Rock-Paper-Scissors-2",
-    "thumbnailName": "Rock-Paper-Scissors-2.png"
+    "projectTitle": "Note Taking App",
+    "folderName": "Note_Taking_App",
+    "thumbnailName": "notetakingapp.png",
+    "tags": [
+      "app",
+      "productivity",
+      "notes",
+      "utility"
+    ]
   },
   "116": {
-    "projectTitle": "barber Website",
-    "folderName": "barber",
-    "thumbnailName": "BARBER.png"
+    "projectTitle": "To-Do List",
+    "folderName": "To_Do_List",
+    "thumbnailName": "todolist.png",
+    "tags": [
+      "app",
+      "productivity",
+      "tasks"
+    ]
   },
   "117": {
-    "projectTitle": "Hulu_clone",
-    "folderName": "Hulu_clone",
-    "thumbnailName": "Hulu_clone.png"
+    "projectTitle": "Expense Tracker",
+    "folderName": "Expense_Tracker",
+    "thumbnailName": "expensetracker.png",
+    "tags": [
+      "finance",
+      "app",
+      "tracking",
+      "utility"
+    ]
   },
   "118": {
-    "projectTitle": "Kitter",
-    "folderName": "Pet_Website",
-    "thumbnailName": "kitter.png"
+    "projectTitle": "Social Media Dashboard",
+    "folderName": "Social_Media_Dashboard",
+    "thumbnailName": "socialmediadashboard.png",
+    "tags": [
+      "dashboard",
+      "social media",
+      "analytics",
+      "utility"
+    ]
   },
   "119": {
-    "projectTitle": "An Chat App",
-    "folderName": "Chat_App",
-    "thumbnailName": "Chat_App.png"
+    "projectTitle": "Online Quiz App",
+    "folderName": "Online_Quiz_App",
+    "thumbnailName": "onlinequizapp.png",
+    "tags": [
+      "app",
+      "education",
+      "quizzes"
+    ]
   },
   "120": {
-    "projectTitle": "othello_game",
-    "folderName": "othello_game",
-    "thumbnailName": "othello_game.png"
+    "projectTitle": "Personal Finance Manager",
+    "folderName": "Personal_Finance_Manager",
+    "thumbnailName": "personalfinancemanager.png",
+    "tags": [
+      "finance",
+      "app",
+      "management"
+    ]
   },
   "121": {
-    "projectTitle": "Drawing Pad",
-    "folderName": "Drawing-pad",
-    "thumbnailName": "Drawing-pad.jpeg"
+    "projectTitle": "Travel Blog",
+    "folderName": "Travel_Blog",
+    "thumbnailName": "travelblog.png",
+    "tags": [
+      "blog",
+      "travel",
+      "content",
+      "Web Design"
+    ]
   },
   "122": {
-    "projectTitle": "Gamics",
-    "folderName": "Gamics",
-    "thumbnailName": "GAMING.png"
+    "projectTitle": "Productivity Timer",
+    "folderName": "Productivity_Timer",
+    "thumbnailName": "productivitytimer.png",
+    "tags": [
+      "app",
+      "productivity",
+      "timer"
+    ]
   },
   "123": {
-    "projectTitle": "Javascript_roulette",
-    "folderName": "Javascript_roulette",
-    "thumbnailName": "Javascript_roulette.png"
+    "projectTitle": "Language Learning App",
+    "folderName": "Language_Learning_App",
+    "thumbnailName": "languagelearningapp.png",
+    "tags": [
+      "app",
+      "education",
+      "language"
+    ]
   },
   "124": {
-    "projectTitle": "Dentelo",
-    "folderName": "Dentelo",
-    "thumbnailName": "DENTISTWEB.png"
+    "projectTitle": "Virtual Event Platform",
+    "folderName": "Virtual_Event_Platform",
+    "thumbnailName": "virtualeventplatform.png",
+    "tags": [
+      "platform",
+      "events",
+      "virtual",
+      "Web Design",
+      "Social"
+    ]
   },
   "125": {
-    "projectTitle": "Daily Diary Entry Website",
-    "folderName": "Daily_Diary_Entry_Website",
-    "thumbnailName": "Daily_Diary_Entry_Website.png"
+    "projectTitle": "Customizable Resume Builder",
+    "folderName": "Resume_Builder",
+    "thumbnailName": "resumebuilder.png",
+    "tags": [
+      "app",
+      "career",
+      "resume"
+    ]
   },
   "126": {
-    "projectTitle": "Github Profile Viewer",
-    "folderName": "Github_Profile_Viewer",
-    "thumbnailName": "GithubProfile.png"
+    "projectTitle": "Fitness Challenge App",
+    "folderName": "Fitness_Challenge_App",
+    "thumbnailName": "fitnesschallengeapp.png",
+    "tags": [
+      "app",
+      "fitness",
+      "challenge"
+    ]
   },
   "127": {
-    "projectTitle": "Space Invaders",
-    "folderName": "Space-invaders",
-    "thumbnailName": "Space-invaders.jpeg"
+    "projectTitle": "Photo Editing App",
+    "folderName": "Photo_Editing_App",
+    "thumbnailName": "photoeditingapp.png",
+    "tags": [
+      "app",
+      "media",
+      "editing"
+    ]
   },
   "128": {
-    "projectTitle": "Blog_Keeper",
-    "folderName": "Blog_Keeper",
-    "thumbnailName": "Blog_Keeper.png"
+    "projectTitle": "Meal Planner",
+    "folderName": "Meal_Planner",
+    "thumbnailName": "mealplanner.png",
+    "tags": [
+      "app",
+      "food",
+      "planning"
+    ]
   },
   "129": {
-    "projectTitle": "HealthDashboard",
-    "folderName": "Health Dashboard",
-    "thumbnailName": "HealthDashboard.png"
+    "projectTitle": "Event Countdown Timer",
+    "folderName": "Event_Countdown_Timer",
+    "thumbnailName": "eventcountdowntimer.png",
+    "tags": [
+      "app",
+      "events",
+      "timer"
+    ]
   },
   "130": {
-    "projectTitle": "GameX",
-    "folderName": "Gamex",
-    "thumbnailName": "esportpi2.jpg"
+    "projectTitle": "Virtual Pet Game",
+    "folderName": "Virtual_Pet_Game",
+    "thumbnailName": "virtualpetgame.png",
+    "tags": [
+      "game",
+      "interactive",
+      "pets"
+    ]
   },
   "131": {
-    "projectTitle": "Bubble_Burst_Game",
-    "folderName": "Bubble_Burst_Game",
-    "thumbnailName": "Bubble_Burst_Game.png"
+    "projectTitle": "Cooking Simulator",
+    "folderName": "Cooking_Simulator",
+    "thumbnailName": "cookingsimulator.png",
+    "tags": [
+      "game",
+      "cooking",
+      "simulation"
+    ]
   },
   "132": {
-    "projectTitle": "Medication Schedule Website",
-    "folderName": "medicationSchedule",
-    "thumbnailName": "medicationSchedule.png"
+    "projectTitle": "Virtual Gallery",
+    "folderName": "Virtual_Gallery",
+    "thumbnailName": "virtualgallery.png",
+    "tags": [
+      "gallery",
+      "media",
+      "virtual",
+      "Web Design",
+      "Social"
+    ]
   },
   "133": {
-    "projectTitle": "Transit-Masters",
-    "folderName": "Transit-Masters_Logistic",
-    "thumbnailName": "Transit-Masters_Logistics.png"
+    "projectTitle": "Local Community Forum",
+    "folderName": "Local_Community_Forum",
+    "thumbnailName": "localcommunityforum.png",
+    "tags": [
+      "forum",
+      "community",
+      "discussion",
+      "social"
+    ]
   },
   "134": {
-    "projectTitle": "Excercise_Guide",
-    "folderName": "Excercise_Guide",
-    "thumbnailName": "Excercise_Guide.PNG"
+    "projectTitle": "Gardening Planner",
+    "folderName": "Gardening_Planner",
+    "thumbnailName": "gardeningplanner.png",
+    "tags": [
+      "app",
+      "gardening",
+      "planning"
+    ]
   },
   "135": {
-    "projectTitle": "WildVine",
-    "folderName": "Wildvine",
-    "thumbnailName": "charity.png"
+    "projectTitle": "Book Review Platform",
+    "folderName": "Book_Review_Platform",
+    "thumbnailName": "bookreviewplatform.png",
+    "tags": [
+      "platform",
+      "books",
+      "reviews",
+      "community",
+      "social"
+    ]
   },
   "136": {
-    "projectTitle": "Micro",
-    "folderName": "micro_podcast",
-    "thumbnailName": "podcastpic.png"
+    "projectTitle": "Time Tracker",
+    "folderName": "Time_Tracker",
+    "thumbnailName": "timetracker.png",
+    "tags": [
+      "app",
+      "productivity",
+      "tracking"
+    ]
   },
   "137": {
-    "projectTitle": "NewsApp",
-    "folderName": "NewsApp",
-    "thumbnailName": "newsApp.png"
+    "projectTitle": "Digital Business Card",
+    "folderName": "Digital_Business_Card",
+    "thumbnailName": "digitalbusinesscard.png",
+    "tags": [
+      "app",
+      "business",
+      "digital"
+    ]
   },
   "138": {
-    "projectTitle": "Sports_Shoes_Website",
-    "folderName": "Sports_Shoes_Website",
-    "thumbnailName": "Sports_Shoes_Website.png"
+    "projectTitle": "Coding Playground",
+    "folderName": "Coding_Playground",
+    "thumbnailName": "codingplayground.png",
+    "tags": [
+      "app",
+      "coding",
+      "education"
+    ]
   },
   "139": {
-    "projectTitle": "Mastermind",
-    "folderName": "Mastermind",
-    "thumbnailName": "Mastermind.jpeg"
+    "projectTitle": "Personal Journal",
+    "folderName": "Personal_Journal",
+    "thumbnailName": "personaljournal.png",
+    "tags": [
+      "app",
+      "writing",
+      "journal"
+    ]
   },
   "140": {
-    "projectTitle": "Blog_Keeper",
-    "folderName": "Blog_Keeper",
-    "thumbnailName": "Blog_Keeper.png"
+    "projectTitle": "Travel Planner",
+    "folderName": "Travel_Planner",
+    "thumbnailName": "travelplanner.png",
+    "tags": [
+      "app",
+      "travel",
+      "planning"
+    ]
   },
   "141": {
-    "projectTitle": "TasteHeaven",
-    "folderName": "TasteHeaven_Restaurant",
-    "thumbnailName": "TasteHeaven_Restaurant.png"
+    "projectTitle": "Recipe Sharing App",
+    "folderName": "Recipe_Sharing_App",
+    "thumbnailName": "recipesharingapp.png",
+    "tags": [
+      "app",
+      "food",
+      "sharing"
+    ]
   },
   "142": {
-    "projectTitle": "EAT_FOOD_GAME",
-    "folderName": "EAT_FOOD_GAME",
-    "thumbnailName": "EAT_THE_FOOD.png"
+    "projectTitle": "Habit Tracker",
+    "folderName": "Habit_Tracker",
+    "thumbnailName": "habittracker.png",
+    "tags": [
+      "app",
+      "productivity",
+      "habits"
+    ]
   },
   "143": {
-    "projectTitle": "Marketing_agency",
-    "folderName": "Marketing_agency",
-    "thumbnailName": "Marketing_agency.png"
+    "projectTitle": "Expense Splitter",
+    "folderName": "Expense_Splitter",
+    "thumbnailName": "expensesplitter.png",
+    "tags": [
+      "app",
+      "finance",
+      "sharing"
+    ]
   },
   "144": {
-    "projectTitle": "Solutry",
-    "folderName": "IT_Solution",
-    "thumbnailName": "itsoln.png"
+    "projectTitle": "Voice Notes",
+    "folderName": "Voice_Notes",
+    "thumbnailName": "voicenotes.png",
+    "tags": [
+      "app",
+      "productivity",
+      "audio"
+    ]
   },
   "145": {
-    "projectTitle": "Competitive Gamified Dashboard for Educational Institutions",
-    "folderName": "GamifiedDashboard",
-    "thumbnailName": "GamifiedDashboard.png"
+    "projectTitle": "Study Planner",
+    "folderName": "Study_Planner",
+    "thumbnailName": "studyplanner.png",
+    "tags": [
+      "app",
+      "education",
+      "planning"
+    ]
   },
   "146": {
-    "projectTitle": "Rental_ride",
-    "folderName": "Rental_ride",
-    "thumbnailName": "Rental_ride.png"
+    "projectTitle": "Family Organizer",
+    "folderName": "Family_Organizer",
+    "thumbnailName": "familyorganizer.png",
+    "tags": [
+      "app",
+      "organization",
+      "family"
+    ]
   },
   "147": {
-    "projectTitle": "Glowing",
-    "folderName": "glowing",
-    "thumbnailName": "beautypic.png"
+    "projectTitle": "Mood Tracker",
+    "folderName": "Mood_Tracker",
+    "thumbnailName": "moodtracker.png",
+    "tags": [
+      "app",
+      "health",
+      "mood"
+    ]
   },
   "148": {
-    "projectTitle": "Password Strength Checker",
-    "folderName": "Password-Strength",
-    "thumbnailName": "password.png"
+    "projectTitle": "Reading Tracker",
+    "folderName": "Reading_Tracker",
+    "thumbnailName": "readingtracker.png",
+    "tags": [
+      "app",
+      "reading",
+      "tracking"
+    ]
   },
   "149": {
-    "projectTitle": "DOCLABS",
-    "folderName": "Doclab",
-    "thumbnailName": "DOCLAB.png"
+    "projectTitle": "Freelance Marketplace",
+    "folderName": "Freelance_Marketplace",
+    "thumbnailName": "freelancemarketplace.png",
+    "tags": [
+      "marketplace",
+      "freelancing",
+      "jobs",
+      "business"
+    ]
   },
   "150": {
-    "projectTitle": "An Space Exploration",
-    "folderName": "Space_Exploration",
-    "thumbnailName": "Space_Exploration.png"
+    "projectTitle": "Online Learning Platform",
+    "folderName": "Online_Learning_Platform",
+    "thumbnailName": "onlinelearningplatform.png",
+    "tags": [
+      "platform",
+      "education",
+      "learning",
+      "productinv"
+    ]
   },
   "151": {
-    "projectTitle": "Marketing_agency",
-    "folderName": "Marketing_agency",
-    "thumbnailName": "Marketing_agency.png"
+    "projectTitle": "Recipe App",
+    "folderName": "Recipe_App",
+    "thumbnailName": "recipeapp.png",
+    "tags": [
+      "app",
+      "food",
+      "recipes"
+    ]
   },
   "152": {
-    "projectTitle": "Matrix Calculator",
-    "folderName": "Matrix App",
-    "thumbnailName": "matrix.png"
+    "projectTitle": "Digital Art Gallery",
+    "folderName": "Digital_Art_Gallery",
+    "thumbnailName": "digitalartgallery.png",
+    "tags": [
+      "gallery",
+      "art",
+      "digital"
+    ]
   },
   "153": {
-    "projectTitle": "Crypto_Tracker",
-    "folderName": "Crypto Price Tracker",
-    "thumbnailName": "Crypto.png"
+    "projectTitle": "Elderly Care App",
+    "folderName": "Elderly_Care_App",
+    "thumbnailName": "elderlycareapp.png",
+    "tags": [
+      "app",
+      "health",
+      "elderly"
+    ]
   },
   "154": {
-    "projectTitle": "SEO_WEBSITE",
-    "folderName": "SEO_WEBSITE",
-    "thumbnailName": "SEO_WEBSITE.png"
+    "projectTitle": "Craft Marketplace",
+    "folderName": "Craft_Marketplace",
+    "thumbnailName": "craftmarketplace.png",
+    "tags": [
+      "marketplace",
+      "crafts",
+      "shopping"
+    ]
   },
   "155": {
-    "projectTitle": "Wikipedia Clone",
-    "folderName": "Wikipedia-clone",
-    "thumbnailName": "Wikipedia-clone.png"
+    "projectTitle": "Pet Adoption Platform",
+    "folderName": "Pet_Adoption_Platform",
+    "thumbnailName": "petadoptionplatform.png",
+    "tags": [
+      "platform",
+      "pets",
+      "adoption"
+    ]
   },
   "156": {
-    "projectTitle": "Feedback Rating Window",
-    "folderName": "Feedback Rating",
-    "thumbnailName": "Feedback.png"
+    "projectTitle": "Skill Sharing Platform",
+    "folderName": "Skill_Sharing_Platform",
+    "thumbnailName": "skillsharingplatform.png",
+    "tags": [
+      "platform",
+      "skills",
+      "sharing"
+    ]
   },
   "157": {
-    "projectTitle": "Cannon Shooting",
-    "folderName": "Cannon-shooting",
-    "thumbnailName": "Cannon-shooting.png"
+    "projectTitle": "Fitness Class Booking",
+    "folderName": "Fitness_Class_Booking",
+    "thumbnailName": "fitnessclassbooking.png",
+    "tags": [
+      "app",
+      "fitness",
+      "booking"
+    ]
   },
   "158": {
-    "projectTitle": "Jokes App",
-    "folderName": "JokesApp",
-    "thumbnailName": "Jokes.png"
+    "projectTitle": "Creative Writing Platform",
+    "folderName": "Creative_Writing_Platform",
+    "thumbnailName": "creativewritingplatform.png",
+    "tags": [
+      "platform",
+      "writing",
+      "content"
+    ]
   },
   "159": {
-    "projectTitle": "Tinder Clone",
-    "folderName": "tinder-clone",
-    "thumbnailName": "Tinder.png"
+    "projectTitle": "Recipe Video Platform",
+    "folderName": "Recipe_Video_Platform",
+    "thumbnailName": "recipevideoplatform.png",
+    "tags": [
+      "platform",
+      "food",
+      "videos"
+    ]
   },
   "160": {
-    "projectTitle": "EduLand",
-    "folderName": "eduland",
-    "thumbnailName": "educationweb.png"
+    "projectTitle": "Virtual Study Group",
+    "folderName": "Virtual_Study_Group",
+    "thumbnailName": "virtualstudygroup.png",
+    "tags": [
+      "app",
+      "education",
+      "group"
+    ]
   },
   "161": {
-    "projectTitle": "An Plant Tracker App",
-    "folderName": "Plant_Tracker",
-    "thumbnailName": "Plant_Tracker.png"
+    "projectTitle": "Home Workout App",
+    "folderName": "Home_Workout_App",
+    "thumbnailName": "homeworkoutapp.png",
+    "tags": [
+      "app",
+      "fitness",
+      "workout"
+    ]
   },
   "162": {
-    "projectTitle": "Salon Booking Website",
-    "folderName": "Saloon-booking-website",
-    "thumbnailName": "SaloonBooking.png"
+    "projectTitle": "Personal Finance Tracker",
+    "folderName": "Personal_Finance_Tracker",
+    "thumbnailName": "personalfinancetracker.png",
+    "tags": [
+      "app",
+      "finance",
+      "tracking"
+    ]
   },
   "163": {
-    "projectTitle": "Organica",
-    "folderName": "organica",
-    "thumbnailName": "ORGANIC.png"
+    "projectTitle": "Digital Cookbook",
+    "folderName": "Digital_Cookbook",
+    "thumbnailName": "digitalcookbook.png",
+    "tags": [
+      "app",
+      "food",
+      "recipes"
+    ]
   },
   "164": {
-    "projectTitle": "Family_Travel_Tracker",
-    "folderName": "Family_Travel_Tracker",
-    "thumbnailName": "Family_Travel_Tracker.png"
+    "projectTitle": "AI Chatbot",
+    "folderName": "AI_Chatbot",
+    "thumbnailName": "aichatbot.png",
+    "tags": [
+      "app",
+      "AI",
+      "chatbot"
+    ]
   },
   "165": {
-    "projectTitle": "Rock Band Touring Website",
-    "folderName": "Rock_Band_Touring",
-    "thumbnailName": "rockband.png"
+    "projectTitle": "Travel Expense Manager",
+    "folderName": "Travel_Expense_Manager",
+    "thumbnailName": "travelexpensemanager.png",
+    "tags": [
+      "app",
+      "finance",
+      "travel"
+    ]
   },
   "166": {
-    "projectTitle": "Linkedin Clone",
-    "folderName": "LinkedinClone",
-    "thumbnailName": "Linkedin.png"
+    "projectTitle": "Pet Care App",
+    "folderName": "Pet_Care_App",
+    "thumbnailName": "petcareapp.png",
+    "tags": [
+      "app",
+      "pets",
+      "care"
+    ]
   },
   "167": {
-    "projectTitle": "Pixel Art",
-    "folderName": "Pixel_Art",
-    "thumbnailName": "Pixel_Art.png"
+    "projectTitle": "Family Budget Planner",
+    "folderName": "Family_Budget_Planner",
+    "thumbnailName": "familybudgetplanner.png",
+    "tags": [
+      "app",
+      "finance",
+      "budgeting"
+    ]
   },
   "168": {
-    "projectTitle": "Text Reader",
-    "folderName": "Text-Reader",
-    "thumbnailName": "Text-Reader.png"
+    "projectTitle": "Language Exchange Platform",
+    "folderName": "Language_Exchange_Platform",
+    "thumbnailName": "languageexchangeplatform.png",
+    "tags": [
+      "platform",
+      "education",
+      "language"
+    ]
   },
   "169": {
-    "projectTitle": "Crunchyroll Clone",
-    "folderName": "Crunchyroll-Clone",
-    "thumbnailName": "Crunchchyroll.png"
+    "projectTitle": "Community Events App",
+    "folderName": "Community_Events_App",
+    "thumbnailName": "communityeventsapp.png",
+    "tags": [
+      "app",
+      "community",
+      "events"
+    ]
   },
   "170": {
-    "projectTitle": "Channel Chart",
-    "folderName": "View_Channel_Chart",
-    "thumbnailName": "View_Channel_Chart.png"
+    "projectTitle": "Recipe Journal",
+    "folderName": "Recipe_Journal",
+    "thumbnailName": "recipejournal.png",
+    "tags": [
+      "app",
+      "food",
+      "journal"
+    ]
   },
   "171": {
-    "projectTitle": "Flip a Coin",
-    "folderName": "Flip_a_coin",
-    "thumbnailName": "Flip_a_coin.png"
+    "projectTitle": "DIY Project Guide",
+    "folderName": "DIY_Project_Guide",
+    "thumbnailName": "diyprojectguide.png",
+    "tags": [
+      "guide",
+      "DIY",
+      "projects"
+    ]
   },
   "172": {
-    "projectTitle": "Pomodoro Timer",
-    "folderName": "Pomodoro_Timer",
-    "thumbnailName": "pomodoro.png"
+    "projectTitle": "Grocery List App",
+    "folderName": "Grocery_List_App",
+    "thumbnailName": "grocerylistapp.png",
+    "tags": [
+      "app",
+      "food",
+      "shopping"
+    ]
   },
   "173": {
-    "projectTitle": "Text_Editor",
-    "folderName": "Text_Editor",
-    "thumbnailName": "Text_Editor.png"
+    "projectTitle": "Gardening Community",
+    "folderName": "Gardening_Community",
+    "thumbnailName": "gardeningcommunity.png",
+    "tags": [
+      "community",
+      "gardening",
+      "sharing"
+    ]
   },
   "174": {
-    "projectTitle": "Thala for a reason",
-    "folderName": "ThalaProject",
-    "thumbnailName": "ThalaProject.png"
+    "projectTitle": "Art Marketplace",
+    "folderName": "Art_Marketplace",
+    "thumbnailName": "artmarketplace.png",
+    "tags": [
+      "marketplace",
+      "art",
+      "shopping"
+    ]
   },
   "175": {
-    "projectTitle": "Guess The Number",
-    "folderName": "Guess_the_Number",
-    "thumbnailName": "guessthenum.png"
+    "projectTitle": "Music Streaming Platform",
+    "folderName": "Music_Streaming_Platform",
+    "thumbnailName": "musicstreamingplatform.png",
+    "tags": [
+      "platform",
+      "music",
+      "streaming"
+    ]
   },
   "176": {
-    "projectTitle": "CyberWise",
-    "folderName": "cyberWise",
-    "thumbnailName": "cyberwiseee.png"
+    "projectTitle": "Local Farmers Market App",
+    "folderName": "Local_Farmers_Market_App",
+    "thumbnailName": "localfarmersmarketapp.png",
+    "tags": [
+      "app",
+      "food",
+      "local"
+    ]
   },
   "177": {
-    "projectTitle": "AudioExtract",
-    "folderName": "AudioExtract",
-    "thumbnailName": "AudioExtract.png"
+    "projectTitle": "Health Tracker",
+    "folderName": "Health_Tracker",
+    "thumbnailName": "healthtracker.png",
+    "tags": [
+      "app",
+      "health",
+      "tracking"
+    ]
   },
   "178": {
-    "projectTitle": "Twitter Clone",
-    "folderName": "Twitter_Clone",
-    "thumbnailName": "twitter.png"
+    "projectTitle": "Online Workshop Platform",
+    "folderName": "Online_Workshop_Platform",
+    "thumbnailName": "onlineworkshopplatform.png",
+    "tags": [
+      "platform",
+      "education",
+      "workshops"
+    ]
   },
   "179": {
-    "projectTitle": "Secret Keeper",
-    "folderName": "secret",
-    "thumbnailName": "secret.png"
+    "projectTitle": "Digital Networking App",
+    "folderName": "Digital_Networking_App",
+    "thumbnailName": "digitalnetworkingapp.png",
+    "tags": [
+      "app",
+      "networking",
+      "digital"
+    ]
   },
   "180": {
-    "projectTitle": "Platformer Game",
-    "folderName": "Platformer_Game",
-    "thumbnailName": "Platformer_Game.png"
+    "projectTitle": "Virtual Book Club",
+    "folderName": "Virtual_Book_Club",
+    "thumbnailName": "virtualbookclub.png",
+    "tags": [
+      "app",
+      "reading",
+      "community"
+    ]
   },
   "181": {
-    "projectTitle": "Astronomy Picture of the day",
-    "folderName": "Astronomy",
-    "thumbnailName": "Astronomy.png"
+    "projectTitle": "Self-Care App",
+    "folderName": "Self_Care_App",
+    "thumbnailName": "selfcareapp.png",
+    "tags": [
+      "app",
+      "health",
+      "self-care"
+    ]
   },
   "182": {
-    "projectTitle": "Amazon Clone Front-End",
-    "folderName": "Amazon-Clone",
-    "thumbnailName": "Amazon-clone1.png"
+    "projectTitle": "Virtual Study Buddy",
+    "folderName": "Virtual_Study_Buddy",
+    "thumbnailName": "virtualstudybuddy.png",
+    "tags": [
+      "app",
+      "education",
+      "study"
+    ]
   }
 }

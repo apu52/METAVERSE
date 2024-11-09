@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/scroll.css">
   <link rel="stylesheet" href="./assets/css/contributors.css">
+  <link rel="stylesheet" href="./assets/css/themeToggle.css">
 
   <!--
     - google font link
@@ -39,7 +40,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!-- Light-Dark theme SWITCH -->
 
@@ -48,7 +49,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  
+<!--toastify css-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> 
+<link rel="stylesheet" href="assets/css/toastify.css">
 <style>
   body {
     overflow-x: hidden;
@@ -98,7 +102,7 @@
   }
 
   .dark-theme a {
-    color: black;
+    color: rgb(0, 0, 0);
   }
 
   .main-content {
@@ -175,6 +179,8 @@
   #content {
     display: none;
   }
+
+
 </style>
 
 <body>
@@ -282,9 +288,10 @@
       const preloader = document.getElementById('preloader');
       const content = document.getElementById('content');
       const loadingPercentage = document.getElementById('loading-percentage');
-
+      const translator = document.getElementById('google_translate_element');
+  
       let percentage = 0;
-
+  
       const interval = setInterval(() => {
         percentage += 10;
         loadingPercentage.textContent = `${percentage}%`;
@@ -294,11 +301,13 @@
             preloader.style.display = 'none';
             content.style.display = 'block';
             document.body.style.overflow = 'auto';
+  
+            // Show the Google Translator after loading completes
+            translator.classList.remove('gtranslate_hidden');
           }, 300);
         }
       }, 100);
     });
-
   </script>
   <!-- Preloader Ends -->
   <div id="content">
@@ -336,6 +345,9 @@
     color: white;
     font-size: 24px;
 }
+               .hamburger.open .line {
+        background-color: #fff;
+      }
 
 @media (max-width: 770px) {
     .circle-container {
@@ -357,9 +369,6 @@
     }
 }
 
-    <div class="nav-wrapper">
-      <div class="progress-bar"></div>
-    </div>
 
     <div class="main navbar" id="navbar">
       <div class="hamburger" onclick="toggleNavbar()">
@@ -367,68 +376,44 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="container navbar-container">
 
+      <div class="container navbar-container" id="nav-menu">
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="index.html">
-              <i class="fas fa-home"></i> Home
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="about.html">
-              <i class="fas fa-info-circle"></i> About
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="contact.html">
-              <i class="fas fa-envelope"></i> Contact
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn">
-            <a id="aid" class="nav-link" href="RateUs.html">
-              <i class="fas fa-star"></i> RateUs
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="RateUs.html"><i class="fas fa-star"></i> RateUs</a>
           </div>
         </div>
         <div class="radio-wrapper">
           <div class="btn" style="width: 160px !important;">
-            <a id="aid" class="nav-link" href="contributor.html">
-              <i class="fas fa-users"></i> Contributors
-            </a>
-            <label class="number"></label>
+            <a id="aid" class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a>
           </div>
         </div>
       </div>
-
-      <script>
-        function toggleMenu() {
-          const navMenu = document.getElementById('nav-menu');
-          navMenu.classList.toggle('active');
-        }
-
-      </script>
     </div>
 
-  </div>
-  <script>
-    function toggleNavbar() {
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('open');
-      const hamburger = document.querySelector('.hamburger');
-      hamburger.classList.toggle('open');
-    }
-  </script>
+    <script>
+      function toggleNavbar() {
+        const navbar = document.getElementById('nav-menu');
+        navbar.classList.toggle('active');
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('open');
+      }
+    </script>
   <main>
 
     <div class="main-content">
@@ -437,11 +422,14 @@
           <div class="heading">
             <span>🚀&nbsp;</span><span>M</span><span>E</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
           </div>
-          <label class="theme-toggle" for="themeToggle">
-
-            <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-            <span class="slider"></span>
-          </label>
+          <div class="container">
+            
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+           
+        </div>
         </div>
 
 
@@ -453,7 +441,36 @@
           </div>
         </div>
         <br>
+        <div class="filter-container my-8">
+          <!-- Filter Button -->
+          <button id="filter-button" class="flex items-center gap-2 text-lg font-medium text-gray-800 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 011 1v1a1 1 0 01-.293.707L13 10.414V15a1 1 0 01-.553.894l-4 2A1 1 0 017 17v-6.586L3.293 6.707A1 1 0 013 6V5z" clip-rule="evenodd" />
+            </svg>
+            <span>Filter by Tags</span>
+          </button>
+          
+          <!-- Tag Options Container -->
+          <div id="tags-container" class="hidden flex flex-wrap gap-3 mt-4">
+            <!-- Tag Buttons -->
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="1">Tool</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="2">Utility</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="3">Game</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="4">Clone</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="5">Web Design</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="6">Food</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="7">Business</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="8">Social</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="9">Entertainment</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="10">Music</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="11">Productivity</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="12">App</button>
+            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="13">Education</button>
+          </div>
+        </div>
+        
 
+      
         <!-- Projects -->
         <ul class="project-list" id="projectList"></ul>
 
@@ -524,9 +541,17 @@
             <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
                 title="GitHub (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://twitter.com/METAVERSE" aria-label="Follow me on Twitter"
+            <!-- <li><a href="https://twitter.com/METAVERSE" aria-label="Follow me on Twitter"
                 title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa-brands fa-twitter"></i></a></li>
+                  class="fa-brands fa-twitter"></i></a></li> -->
+                  <li>
+                    <a href="https://twitter.com/METAVERSE" aria-label="Follow me on X"
+                        title="X (External Link)" rel="noopener noreferrer" target="_blank">
+                      <img class="fa-brands fa-x" src="assets/img/x-logo.jpg" alt="X Logo" style="width: 24px; height: 24px;">
+                    </a>
+                  </li>
+                  
+
             <li><a href="https://www.linkedin.com/in/METAVERSE" aria-label="Follow me on LinkedIn"
                 title="LinkedIn (External Link)" rel="noopener noreferrer" target="_blank"><i
                   class="fa-brands fa-linkedin"></i></a></li>
@@ -536,6 +561,7 @@
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
             <a href="copyright.html" target="_blank"
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
+              <p class="copyright">© 2024 METAVERSE</p>
           </div>
         </div>
       </div>
@@ -551,11 +577,34 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/toggletheme.js"></script>
     <script src="./assets/js/contributors.js"></script>
     <!-- <script src="./assets/js/mouse_transition.js"></script> -->
     <script src="scrolldownprogressbar.js"></script>
+    <script src="./assets/js/subscribe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
 
   </div>
+  <style>
+    .gtranslate_hidden {
+      display: none;
+    }
+  </style>
+  
+  <!-- Google Translate Wrapper with the hidden class -->
+  <div id="google_translate_element" class="gtranslate_hidden"></div>
+  
+  <!-- GTranslate settings and script -->
+  <script>
+    window.gtranslateSettings = {
+      "default_language": "eng",
+      "detect_browser_language": true,
+      "wrapper_selector": "#google_translate_element"
+    };
+  </script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
 </body>
 
 </html>

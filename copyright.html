@@ -30,9 +30,10 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/about.css">
-  <link rel="stylesheet" href="./assets/css/scroll.css">
+  <link rel="stylesheet" href="./assets/css/scroll.css">/
   <link rel="stylesheet" href="./assets/css/contributors.css">
   <link rel="stylesheet" href="./assets/css/cursor_transition.css">
+  <link rel="stylesheet" href="./assets/css/themeToggle.css">
 
   <!--
     - google font link
@@ -44,6 +45,8 @@
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <style>
+
+
     .circle {
       position: absolute;
       width: 25px;
@@ -301,11 +304,14 @@ const interval = setInterval(() => {
           <div class="heading">
             <span>C</span><span>O</span><span>P</span><span>Y</span><span>R</span><span>I</span><span>G</span><span>H</span><span>T</span><span>&nbsp;</span><span>P</span><span>O</span><span>L</span><span>I</span><span>C</span><span>Y</span>
           </div>
-          <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-
-            <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-            <span class="slider"></span>
-          </label>
+          <div class="container">
+            
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+           
+        </div>
         </div>
         <br>
 
@@ -425,6 +431,7 @@ const interval = setInterval(() => {
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
+  <script src="./assets/js/toggletheme.js"></script>
 </div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "firebase": "^10.12.2"
+    "firebase": "^10.12.2",
+    "nodemailer": "^6.9.15"
   }
 }
