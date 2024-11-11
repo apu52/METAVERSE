@@ -43,9 +43,7 @@ Close #<issue_no>
 
 ***Are you contributing under any Open-source programme?***
 <!--Mention it here-->
-- [ ] I'm a GSSOC'24 extended contributor
-- [ ] I'm a Winter of Blockchain(WOB'24) contributor
-- [ ] I'm a Hactoberfest'24 contributor  
+- [ ] I'm a IEEE-IGDTUW Open Source Week 2024 contributor
 
 
 
