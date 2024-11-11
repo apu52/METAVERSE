@@ -25,9 +25,7 @@ assignees: ''
 **Additional context(Mandatory)**
 
 - [ ] I have read the Contributing Guidelines *
-- [ ] I'm a WOB'24(Winter Of Blockchain) contributor
-- [ ] I'm a GSSOC'24 Extended contributor
-- [ ] I'm a Hacktoberfest'24 Extended contributor
+- [ ] I'm a IEEE-IGDTUW Open Source Week 2024 contributor
 - [ ] I have starred the repository *
 
 <!-- Click The Above Checkboxes Correctly -->
