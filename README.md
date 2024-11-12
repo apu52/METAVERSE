@@ -56,6 +56,9 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 <h3>This project is now OFFICIALLY accepted for</h3>
 
 <p align="center">
+
+![image](https://github.com/user-attachments/assets/8cb642d4-5cf5-4fc9-b979-e6d0597ec897)
+
   
 </p>
 
