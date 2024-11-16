@@ -449,6 +449,20 @@
         <br>
         <br>
         <!-- Two-sided box with inline CSS -->
+       <style>
+  /* Add hover effect for owner images */
+  .owner-info img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect */
+    display: inline-block; /* Ensure hover effects apply correctly */
+  }
+
+  .owner-info img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  }
+</style>
+
+        
         <div class="animated-title">
           <div class="text-top">
             <div>
