@@ -46,19 +46,13 @@ export default function Home() {
         const checkConnection = async () => {
             if (window.ethereum) {
                 try {
-                    const accounts = await window.ethereum.request({ method: 'eth_accounts' });
-                    if (accounts.length > 0) {
-                        setIsConnected(true);
-                        const userAddress = accounts[0];
-                        setUserAccount(userAddress);
-
                         const provider = new ethers.BrowserProvider(window.ethereum);
                         const signer = await provider.getSigner();
                         const votingContract = new ethers.Contract(votingAddress, votingAbi, signer);
 
                         setContract(votingContract);
                         
-                        const voted = await votingContract.voted(userAddress);
+                        const voted = await votingContract.voted(userAccount);
                         setHasVoted(voted);
                         
                         const candidateList = await votingContract.getCandidates();
@@ -69,7 +63,7 @@ export default function Home() {
                                 voteCount: Number(candidate.voteCount),
                             }))
                         );
-                    }
+                    
                 } catch (error) {
                     console.error('Error checking connection or fetching data:', error);
                 }
@@ -77,7 +71,7 @@ export default function Home() {
         };
 
         checkConnection();
-    }, []);
+    }, [userAccount]);
 
     // handle vote submission
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
