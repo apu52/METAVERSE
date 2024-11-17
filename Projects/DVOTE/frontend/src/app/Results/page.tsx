@@ -22,6 +22,7 @@ const Results: React.FC = () => {
     const [totalVotes, setTotalVotes] = useState<number>(0);        
 
     useEffect(() => {
+        // check for connection, perform required operations after that to get data from contract
         const checkConnection = async () => {
             if (window.ethereum) {
                 try {

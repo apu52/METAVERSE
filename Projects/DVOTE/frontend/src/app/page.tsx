@@ -24,6 +24,8 @@ export default function Home() {
     const [userAccount, setUserAccount] = useState<string>('');
     const [candidates, setCandidates] = useState<Candidate[]>([]);
 
+
+    // connect wallet
     const connectWallet = async () => {
         if (typeof window.ethereum !== 'undefined') {
             try {
@@ -40,6 +42,7 @@ export default function Home() {
     };
 
     useEffect(() => {
+        // check for connection, perform required operations after that to get data from contract
         const checkConnection = async () => {
             if (window.ethereum) {
                 try {
@@ -76,6 +79,7 @@ export default function Home() {
         checkConnection();
     }, []);
 
+    // handle vote submission
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
@@ -95,6 +99,8 @@ export default function Home() {
             setMessage('Please select a candidate before voting.');
         }
     };
+
+    // check if user had already voted
     if (hasVoted) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-[#1e1e2f] text-[#e4e6eb]">

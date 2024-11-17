@@ -7,6 +7,7 @@ import {Voting} from "../src/Voting.sol";
 contract DeploDeployyWithData is Script {
     Voting public voting;
 
+    // deploy voting contract
     function run() public returns(Voting) {
         vm.startBroadcast(msg.sender);
         voting = new Voting("DVOTE");
