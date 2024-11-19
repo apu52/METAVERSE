@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: #e4e6eb;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ff6f61;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #524ce8;
+    transform: translateY(-2px);
+}
+
+a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+.alarm {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ff4b5c;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+footer {
+    background-color: #12121b;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    width: 100%;
+    background-color: #2a2a3b;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 8px;
+}
+
+ul li a:hover {
+    color: #524ce8;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    margin: 0 20px;
+}
+
+ol li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 8px;
+}
+
+ol li a:hover {
+    color: #00d7ff; 
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+.results-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #2a2a3b;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.results-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6c63ff;
+    margin-bottom: 1.5rem;
+}
+
+.total-votes {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #e4e6eb;
+}
+
+.total-votes span {
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.candidates-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.candidate-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: #1e1e2f;
+    border: 1px solid #38384f;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.candidate-item:hover {
+    background-color: #29294d;
+    transform: translateY(-2px);
+}
+
+.candidate-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.candidate-votes {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.no-data {
+    text-align: center;
+    font-size: 1rem;
+    color: #a0a3b1;
+}
