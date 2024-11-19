@@ -2611,6 +2611,96 @@
 │   │   ├── index.html
 │   │   ├── readme.md
 │   │   └── script.js
+│   ├── DVOTE/
+│   │   ├── contracts/
+│   │   │   ├── README.md
+│   │   │   ├── foundry.toml
+│   │   │   ├── lib/
+│   │   │   │   └── forge-std/
+│   │   │   │       ├── LICENSE-APACHE
+│   │   │   │       ├── LICENSE-MIT
+│   │   │   │       ├── README.md
+│   │   │   │       ├── foundry.toml
+│   │   │   │       ├── package.json
+│   │   │   │       ├── scripts/
+│   │   │   │       │   └── vm.py
+│   │   │   │       ├── src/
+│   │   │   │       │   ├── Base.sol
+│   │   │   │       │   ├── Script.sol
+│   │   │   │       │   ├── StdAssertions.sol
+│   │   │   │       │   ├── StdChains.sol
+│   │   │   │       │   ├── StdCheats.sol
+│   │   │   │       │   ├── StdError.sol
+│   │   │   │       │   ├── StdInvariant.sol
+│   │   │   │       │   ├── StdJson.sol
+│   │   │   │       │   ├── StdMath.sol
+│   │   │   │       │   ├── StdStorage.sol
+│   │   │   │       │   ├── StdStyle.sol
+│   │   │   │       │   ├── StdToml.sol
+│   │   │   │       │   ├── StdUtils.sol
+│   │   │   │       │   ├── Test.sol
+│   │   │   │       │   ├── Vm.sol
+│   │   │   │       │   ├── console.sol
+│   │   │   │       │   ├── console2.sol
+│   │   │   │       │   ├── interfaces/
+│   │   │   │       │   │   ├── IERC1155.sol
+│   │   │   │       │   │   ├── IERC165.sol
+│   │   │   │       │   │   ├── IERC20.sol
+│   │   │   │       │   │   ├── IERC4626.sol
+│   │   │   │       │   │   ├── IERC721.sol
+│   │   │   │       │   │   └── IMulticall3.sol
+│   │   │   │       │   ├── mocks/
+│   │   │   │       │   │   ├── MockERC20.sol
+│   │   │   │       │   │   └── MockERC721.sol
+│   │   │   │       │   └── safeconsole.sol
+│   │   │   │       └── test/
+│   │   │   │           ├── StdAssertions.t.sol
+│   │   │   │           ├── StdChains.t.sol
+│   │   │   │           ├── StdCheats.t.sol
+│   │   │   │           ├── StdError.t.sol
+│   │   │   │           ├── StdJson.t.sol
+│   │   │   │           ├── StdMath.t.sol
+│   │   │   │           ├── StdStorage.t.sol
+│   │   │   │           ├── StdStyle.t.sol
+│   │   │   │           ├── StdToml.t.sol
+│   │   │   │           ├── StdUtils.t.sol
+│   │   │   │           ├── Vm.t.sol
+│   │   │   │           ├── compilation/
+│   │   │   │           │   ├── CompilationScript.sol
+│   │   │   │           │   ├── CompilationScriptBase.sol
+│   │   │   │           │   ├── CompilationTest.sol
+│   │   │   │           │   └── CompilationTestBase.sol
+│   │   │   │           ├── fixtures/
+│   │   │   │           │   ├── broadcast.log.json
+│   │   │   │           │   ├── test.json
+│   │   │   │           │   └── test.toml
+│   │   │   │           └── mocks/
+│   │   │   │               ├── MockERC20.t.sol
+│   │   │   │               └── MockERC721.t.sol
+│   │   │   ├── script/
+│   │   │   │   └── Deploy.s.sol
+│   │   │   ├── src/
+│   │   │   │   └── Voting.sol
+│   │   │   └── test/
+│   │   │       └── VotingTest.sol
+│   │   ├── frontend/
+│   │   │   ├── README.md
+│   │   │   ├── next.config.mjs
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── postcss.config.mjs
+│   │   │   ├── src/
+│   │   │   │   └── app/
+│   │   │   │       ├── Header.tsx
+│   │   │   │       ├── Results/
+│   │   │   │       │   └── page.tsx
+│   │   │   │       ├── globals.css
+│   │   │   │       ├── layout.tsx
+│   │   │   │       ├── page.tsx
+│   │   │   │       └── voting.js
+│   │   │   ├── tailwind.config.ts
+│   │   │   └── tsconfig.json
+│   │   └── readme.md
 │   ├── Daily_Diary_Entry_Website/
 │   │   ├── Readme.md
 │   │   ├── avatar img.png
@@ -5710,6 +5800,7 @@
 │   │   ├── Crypto.png
 │   │   ├── DENTISTWEB.png
 │   │   ├── DOCLAB.png
+│   │   ├── DVOTE.png
 │   │   ├── Daily_Diary_Entry_Website.png
 │   │   ├── Detect_device_battery.png
 │   │   ├── Dice_Game.png
