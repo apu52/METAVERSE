@@ -57,7 +57,8 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 
 <p align="center">
 
-![image](https://github.com/user-attachments/assets/8cb642d4-5cf5-4fc9-b979-e6d0597ec897)
+![image](https://github.com/user-attachments/assets/4673335a-7ce7-4adf-aa7d-efb03d40f23a)
+
 
   
 </p>
@@ -65,6 +66,9 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 <h3>This project was part of the following Open Source Programs</h3>
 
 <p align="center">
+  
+
+  <img src="https://github.com/user-attachments/assets/8cb642d4-5cf5-4fc9-b979-e6d0597ec897" width="350" height="200" style="margin: 10px;">
   <img src="https://github.com/user-attachments/assets/5c3ca05d-0fac-43cc-ada6-0453be9ca0e2" width="350" height="200" style="margin: 10px;">
   <img src="https://github.com/user-attachments/assets/8bce67af-b1d9-477f-952a-1bcdcedfc207" width="350" height="200" style="margin: 10px;">
   <img src="https://github.com/user-attachments/assets/05ad17cd-64fe-4993-adfc-78c10071b688" width="250" height="200" style="margin: 10px;">
