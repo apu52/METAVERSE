@@ -101,14 +101,18 @@
 
  @media (max-width: 768px) {
     .container {
-      flex-direction: column;
-    display: none;  
-     background-color: transparent; 
-    background: linear-gradient(to right, rgba(128, 128, 128, 0.5), rgba(64, 64, 64, 0.5)); 
-     width: 35%; 
-     margin-left: 65%; 
-   } 
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.5), rgba(64, 64, 64, 0.5));
+    position: fixed;
+    top: 0;
+    left: 20%; /* Add margin from the left */
+    width: 80%; /* Adjust width to fit the remaining space */
+    height: 24rem;
+    z-index: 100;
+    padding: 1rem; 
+    }
  }  
+  
 /*
   .navbar.open .container {
     display: flex; /* Show the navbar when the menu is open */
