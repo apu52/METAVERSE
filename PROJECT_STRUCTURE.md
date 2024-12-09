@@ -5764,6 +5764,7 @@
 │   │   ├── themeToggle.css
 │   │   └── toastify.css
 │   ├── img/
+│   │   ├── 64px-X_logo.jpg
 │   │   ├── AI_Image _Generator.png
 │   │   ├── API_IMAGES.png
 │   │   ├── Age_Calc.png
@@ -5942,6 +5943,7 @@
 │   │   ├── recipe_app.jpeg
 │   │   ├── rockband.png
 │   │   ├── secret.png
+│   │   ├── social-media.png
 │   │   ├── solver.png
 │   │   ├── sun.icon.png
 │   │   ├── tetris_Game_pic.png
