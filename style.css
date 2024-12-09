@@ -99,15 +99,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  /* .container {
-    flex-direction: column;
-    display: none;
-  }
-
+ @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    display: none;  
+     background-color: transparent; 
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.5), rgba(64, 64, 64, 0.5)); 
+     width: 35%; 
+     margin-left: 65%; 
+   } 
+ }  
+/*
   .navbar.open .container {
     display: flex; /* Show the navbar when the menu is open */
-  }
+  /* } */
 
   
   /* .hamburger {
@@ -128,3 +133,4 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
