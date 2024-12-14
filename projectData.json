@@ -902,7 +902,7 @@
   "89": {
     "projectTitle": "Car Race",
     "folderName": "Racecar_Game",
-    "thumbnailName": "Racecar.png",
+    "thumbnailName": "CARGAMEE.png",
     "tags": [
       "Games",
       "Racing",
@@ -931,8 +931,8 @@
   },
   "92": {
     "projectTitle": "Netflix Clone",
-    "folderName": "Netflix_Clone",
-    "thumbnailName": "Netflix_Clone.png",
+    "folderName": "Netflix_clone_Project",
+    "thumbnailName": "Netflix_clone_Project.png",
     "tags": [
       "Clone",
       "Streaming",
@@ -972,7 +972,7 @@
   "96": {
     "projectTitle": "BMI Calculator",
     "folderName": "BMI_Calculator",
-    "thumbnailName": "BMI_Calculator.png",
+    "thumbnailName": "bmi.jpg",
     "tags": [
       "Health",
       "Calculator",
@@ -1000,12 +1000,12 @@
     ]
   },
   "99": {
-    "projectTitle": "Recipe Finder App",
-    "folderName": "Recipe_Finder_App",
-    "thumbnailName": "Recipe_Finder.png",
+    "projectTitle": "Amazon Clone",
+    "folderName": "Amazon-Clone",
+    "thumbnailName": "Amazon-clone1.png",
     "tags": [
-      "Food",
-      "Recipes",
+      "API",
+      "Language",
       "Utilities"
     ]
   },
@@ -1070,23 +1070,23 @@
     ]
   },
   "106": {
-    "projectTitle": "Portfolio Website",
-    "folderName": "Portfolio",
-    "thumbnailName": "portfolio.png",
+    "projectTitle": "Astronomy",
+    "folderName": "Astronomy",
+    "thumbnailName": "Astronomy.png",
     "tags": [
-      "website",
-      "personal",
-      "portfolio"
+      "API",
+      "coding",
+      "Codeforces"
     ]
   },
   "107": {
-    "projectTitle": "Weather App",
-    "folderName": "Weather_App",
-    "thumbnailName": "weather.png",
+    "projectTitle": "Audio Extract",
+    "folderName": "AudioExtract",
+    "thumbnailName": "AudioExtract.png",
     "tags": [
-      "app",
-      "weather",
-      "API"
+      "API",
+      "coding",
+      "Codeforces"
     ]
   },
   "108": {
@@ -1101,8 +1101,8 @@
   },
   "109": {
     "projectTitle": "Chat Application",
-    "folderName": "Chat_App",
-    "thumbnailName": "chatapp.png",
+    "folderName": "Chat_App/src/index.js",
+    "thumbnailName": "Chat_App.png",
     "tags": [
       "app",
       "communication",
@@ -1111,22 +1111,12 @@
   },
   "110": {
     "projectTitle": "E-commerce Store",
-    "folderName": "Ecommerce_Store",
-    "thumbnailName": "ecommerce.png",
+    "folderName": "E_Commerce",
+    "thumbnailName": "E_Commerce.png",
     "tags": [
       "e-commerce",
       "shopping",
       "website"
-    ]
-  },
-  "111": {
-    "projectTitle": "Recipe Finder",
-    "folderName": "Recipe_Finder",
-    "thumbnailName": "recipefinder.png",
-    "tags": [
-      "app",
-      "food",
-      "recipes"
     ]
   },
   "112": {
@@ -1173,8 +1163,8 @@
   },
   "116": {
     "projectTitle": "To-Do List",
-    "folderName": "To_Do_List",
-    "thumbnailName": "todolist.png",
+    "folderName": "To-Do_List_Project",
+    "thumbnailName": "To_do_list.png",
     "tags": [
       "app",
       "productivity",
@@ -1201,16 +1191,6 @@
       "social media",
       "analytics",
       "utility"
-    ]
-  },
-  "119": {
-    "projectTitle": "Online Quiz App",
-    "folderName": "Online_Quiz_App",
-    "thumbnailName": "onlinequizapp.png",
-    "tags": [
-      "app",
-      "education",
-      "quizzes"
     ]
   },
   "120": {
@@ -1533,16 +1513,6 @@
       "productinv"
     ]
   },
-  "151": {
-    "projectTitle": "Recipe App",
-    "folderName": "Recipe_App",
-    "thumbnailName": "recipeapp.png",
-    "tags": [
-      "app",
-      "food",
-      "recipes"
-    ]
-  },
   "152": {
     "projectTitle": "Digital Art Gallery",
     "folderName": "Digital_Art_Gallery",
@@ -1643,16 +1613,6 @@
       "workout"
     ]
   },
-  "162": {
-    "projectTitle": "Personal Finance Tracker",
-    "folderName": "Personal_Finance_Tracker",
-    "thumbnailName": "personalfinancetracker.png",
-    "tags": [
-      "app",
-      "finance",
-      "tracking"
-    ]
-  },
   "163": {
     "projectTitle": "Digital Cookbook",
     "folderName": "Digital_Cookbook",
@@ -1721,16 +1681,6 @@
       "app",
       "community",
       "events"
-    ]
-  },
-  "170": {
-    "projectTitle": "Recipe Journal",
-    "folderName": "Recipe_Journal",
-    "thumbnailName": "recipejournal.png",
-    "tags": [
-      "app",
-      "food",
-      "journal"
     ]
   },
   "171": {
@@ -1852,5 +1802,202 @@
       "education",
       "study"
     ]
-  }
+  },
+  "183": {
+    "projectTitle": "Bakes website",
+    "folderName": "Bake_website",
+    "thumbnailName": "",
+    "tags": [
+      "app",
+      "education",
+      "study"
+    ]
+  },
+
+  "184": {
+    "projectTitle": "Bootstrap Clone",
+    "folderName": "Bootstrap_clone",
+    "thumbnailName": "BOOTSTRAP.png",
+    "tags": [
+      "app",
+      "education",
+      "study"
+    ]
+  },
+  "185": {
+    "projectTitle": "Bubble Brust Game ",
+    "folderName": "Bubble_Burst_Game",
+    "thumbnailName": "Bubble_Burst_Game.png",
+    "tags": [
+      "Game",
+      "Arcade",
+      "Fun"
+    ]
+  },
+  "186": {
+    "projectTitle": "Cannon Shooting Game",
+    "folderName": "Cannon-shooting",
+    "thumbnailName": "Cannon-shooting.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+
+  "187": {
+    "projectTitle": "Capcha Gen",
+    "folderName": "Capcha_Gen",
+    "thumbnailName": "",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+  "188": {
+    "projectTitle": "Croud Funding",
+    "folderName": "CrowdFunding",
+    "thumbnailName": "CrowdFunding.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+  "189": {
+    "projectTitle": "Dentelo",
+    "folderName": "Dentelo",
+    "thumbnailName": "DENTISTWEB.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+
+  "190": {
+    "projectTitle": "Doclab",
+    "folderName": "Doclab",
+    "thumbnailName": "DOCLAB.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+  "191": {
+    "projectTitle": "Drawing pad ",
+    "folderName": "Drawing-pad",
+    "thumbnailName": "Drawing-pad.jpeg",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+  "192": {
+    "projectTitle": "Eat Food Game ",
+    "folderName": "EAT_FOOD_GAME",
+    "thumbnailName": "EAT_THE_FOOD.png",
+    "tags": [
+      "Game",
+      "Arcade",
+      "Fun"
+    ]
+  },
+  "193": {
+    "projectTitle": "Event Subscription",
+    "folderName": "Email_Subscription",
+    "thumbnailName": "Email_Subscription.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+  },
+  "194": {
+    "projectTitle": "FeedBack Rating",
+    "folderName": "Feedback Rating",
+    "thumbnailName": "Feedback.png",
+    "tags": [
+      "game",
+      "arcade",
+      "entertainment",
+      "classic"
+    ]
+},
+"195": {
+  "projectTitle": "Flip A Coin",
+  "folderName": "Flip_a_coin",
+  "thumbnailName": "Flip_a_coin.png",
+  "tags": [
+    "game",
+    "arcade",
+    "entertainment",
+    "classic"
+  ]
+},
+"196": {
+  "projectTitle": "Furniture Website",
+  "folderName": "Furniture-website",
+  "thumbnailName": "Furniture-website.png",
+  "tags": [
+    "game",
+    "arcade",
+    "entertainment",
+    "classic"
+  ]
+},
+"197": {
+  "projectTitle": "Gamex",
+  "folderName": "Gamex",
+  "thumbnailName": "GAMING.png",
+  "tags": [
+    "game",
+    "arcade",
+    "entertainment",
+    "classic"
+  ]
+},
+"198": {
+  "projectTitle": "Gamics",
+  "folderName": "Gamics",
+  "thumbnailName": "GAMING.png",
+  "tags": [
+    "game",
+    "arcade",
+    "entertainment",
+    "classic"
+  ]
+},
+"199": {
+  "projectTitle": "Gamified Dashboard",
+  "folderName": "GamifiedDashboard",
+  "thumbnailName": "GamifiedDashboard.png",
+  "tags": [
+    "game",
+    "arcade",
+    "entertainment",
+    "classic"
+  ]
+},
+"200": {
+  "projectTitle": "Guess the number ",
+  "folderName": "Guess_the_Number",
+  "thumbnailName": "",
+  "tags": [
+    "game",
+    "arcade",
+    "entertainment",
+    "classic"
+  ]
+}
 }
