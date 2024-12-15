@@ -92,6 +92,35 @@
             
         }
 
+        .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .hamburger i {
+        color: white;
+        font-size: 24px;
+      }
+
+      @media (max-width: 1000px) {
+        .hamburger {
+          color: white;
+          display: block;
+          margin-left: auto;
+          margin-right: 2rem;
+        }  
+        
+        .nav-cont{
+          display: none;
+        }
+
+        .nav-cont.active {
+          display: flex;
+          flex-direction:column;
+          align-items: center;
+        }
+    }
+
         .stargaze {
             top: 50%;
             left: 50%;
@@ -211,6 +240,8 @@
 
 <body>
     <div class="navbar">
+    
+        <div class="nav-cont" id="nav-cont">
         <div class="nav-wrapper">
             <a id="aid" class="nav-link" href="./index.html">
                 <i class="fas fa-home"></i> Home
@@ -218,6 +249,7 @@
             <a id="aid" class="nav-link" href="./about.html">
                 <i class="fas fa-info-circle"></i> About
             </a>
+         
             <a id="aid" class="nav-link" href="./contact.html">
                 <i class="fas fa-envelope"></i> Contact
             </a>
@@ -229,6 +261,10 @@
             </a>
         </div>
     </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+</div>
     <div class="stargaze">
         <video autoplay loop muted playsinline>
             <source src="./assets/main.webm" type="video/webm">
@@ -349,6 +385,12 @@
                 }).showToast();
             }
         });
+
+        function toggleMenu() {
+          const navMenu = document.getElementById('nav-cont');
+          navMenu.classList.toggle('active');
+        }
+
     </script>
 </body>
 
