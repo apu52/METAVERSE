@@ -3,42 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Not Found</title>
+  <title>METAVERSE | 404 Page Not Found</title>
   <style>
     body {
-      background-color: #282c34;
-      color: #61dafb;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
     .container {
-      max-width: 600px;
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
     }
-    h1 {
-      font-size: 72px;
+    .box {
+      position: fixed;
+      top: 75vh;
+      background-color: rgba(255, 255, 255, 0.557);
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
     }
-    p {
-      font-size: 24px;
-    }
-    a {
-      color: #61dafb;
+    a#back_Home_btn {
+      color: black;
       text-decoration: none;
-      border-bottom: 1px solid #61dafb;
-      transition: color 0.3s ease, border-bottom 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.797);
+      border-radius: 16px;
+      padding: 5px;
+      margin: 5px;
     }
-    a:hover {
-      color: #21a1f1;
-      border-bottom: 1px solid #21a1f1;
+    a#back_Home_btn:hover {
+      background-color: #4097FF;
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    .mobile-background {
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      /* for width smaller than 768px */
+      body {
+        background-color: #023c7f;
+      }
+      .background {
+        display: none;
+      }
+      .box {
+        position: static;
+        background-color: #67abff;
+        font-size: .9rem;
+      }
+      p#credits {
+        display: none;
+      }
+      .mobile-background {
+        display: block;
+        width: 80vw;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>404</h1>
-    <p>Oops! The page you're looking for doesn't exist.</p>
-    <p>Let's get you back <a href="https://apu52.github.io/METAVERSE">home</a>.</p>
+    <!-- spline component background, hidden on mobile screens -->
+    <div class="background">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/FF4zUicpD61VIS7e/scene.splinecode"></spline-viewer>
+    </div>
+    <!-- mobile screen background with 404 svg, hidden on desktop screens -->
+    <div class="mobile-background">
+      <img src="./assets/svgs/pageNotFound.svg" alt="page not found 404 error image">
+    </div>
+    <!-- overlay box with not found message, back home link and credit to 3D model creator on (desktop only) -->
+    <div class="box">
+      <p>Oops! The page you're looking for doesn't exist.</p>
+      <p>Let's get you back <a id="back_Home_btn" href="https://apu52.github.io/METAVERSE">Home 🏠</a>.</p>
+      <p id="credits">Background Model by <a href="https://app.spline.design/community/file/588a033c-a14b-4e70-a1de-793158fb2b17">Mohit. N</a></p>
+    </div>
   </div>
 </body>
 </html>
