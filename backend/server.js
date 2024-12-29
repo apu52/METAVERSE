@@ -1,51 +1,53 @@
-
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const mongoose = require('mongoose');
-const { subscribeUser } = require('./controllers/subscribe');
-const dotenv = require('dotenv');
-const { submitFeedback } = require('./controllers/feedback');
-const {Contactus} = require('./controllers/contactus');
+const express = require("express");
+const nodemailer = require("nodemailer");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const mongoose = require("mongoose");
+const { subscribeUser } = require("./controllers/subscribe");
+const dotenv = require("dotenv");
+const { submitFeedback } = require("./controllers/feedback");
+const { Contactus } = require("./controllers/contactus");
+const { contributors } = require("./controllers/contributors");
 dotenv.config();
-
-
-
 
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "*", // Be more specific in production
+    methods: ["GET", "POST"],
+  })
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://amnalpha7:IAtC1nJtXv4avH4Q@cluster0.y6w4aqp.mongodb.net/Meta", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb+srv://amnalpha7:IAtC1nJtXv4avH4Q@cluster0.y6w4aqp.mongodb.net/Meta",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
   message: String,
   date: { type: Date, default: Date.now },
-
 });
 
-const feedbackSchema= new mongoose.Schema({
-    feedback: {
-        type:String,
-        trim:true
-    }
+const feedbackSchema = new mongoose.Schema({
+  feedback: {
+    type: String,
+    trim: true,
+  },
 });
 
-const Feedback=mongoose.model("Feedbabck",feedbackSchema);
-
-
+const Feedback = mongoose.model("Feedbabck", feedbackSchema);
 
 const Contact = mongoose.model("Contact", contactSchema);
 
@@ -115,9 +117,10 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-app.post("/subscribe", subscribeUser)
-app.post('/rate-us', submitFeedback);
-app.post('/contact-us', Contactus);
+app.post("/subscribe", subscribeUser);
+app.post("/rate-us", submitFeedback);
+app.post("/contact-us", Contactus);
+app.get("/contributorsPage", contributors);
 
 // Start the server
 app.listen(PORT, () => {
