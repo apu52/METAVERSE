@@ -26,6 +26,7 @@ assignees: ''
 
 - [ ] I have read the Contributing Guidelines *
 - [ ] I'm a KWOC 2024 contributor
+- [ ] I'm a SWOC 2025 contributor
 - [ ] I have starred the repository *
 
 <!-- Click The Above Checkboxes Correctly -->
