@@ -240,7 +240,8 @@
 │   │   ├── ScreenShots/
 │   │   │   ├── Screenshot 2023-10-15 111827.png
 │   │   │   ├── Screenshot 2023-10-15 111845.png
-│   │   │   └── Screenshot 2023-10-15 111912.png
+│   │   │   ├── Screenshot 2023-10-15 111912.png
+│   │   │   └── life-changing-books.jpg
 │   │   ├── index.html
 │   │   ├── package-lock.json
 │   │   ├── package.json
