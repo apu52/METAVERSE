@@ -30,6 +30,23 @@
             height: 120px;
             width: 120px;
         }
+        /* Hover effect for buttons */
+        button:hover, .sign-in:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect for book reviews */
+        .book-review:hover {
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Hover effect for services boxes */
+        .services .box:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 
@@ -115,6 +132,10 @@
                 <h3>2024 Medical Study</h3>
                 <h2>4.5/5.0<span>rating</span></h2>
                 <a href="#" class="btn">Read Now</a>
+                <div class="review-actions">
+                    <span class="like-btn">❤️ <span class="like-count">10</span></span>
+                    <span class="comment-btn">🗨️ <span class="comments-count">5</span></span>
+                </div>
             </div>
             <div class="box">
                 <div class="box-img">
@@ -124,6 +145,10 @@
                 <h3>2023 JEE Mains</h3>
                 <h2>4.9/5.0<span>rating</span></h2>
                 <a href="#" class="btn">Read Now</a>
+                <div class="review-actions">
+                    <span class="like-btn">❤️ <span class="like-count">20</span></span>
+                    <span class="comment-btn">🗨️ <span class="comments-count">8</span></span>
+                </div>
             </div>
             <div class="box">
                 <div class="box-img">
@@ -133,33 +158,23 @@
                 <h3>Physics Concepts</h3>
                 <h2>4.0/5.0<span>rating</span></h2>
                 <a href="#" class="btn">Read Now</a>
+                <div class="review-actions">
+                    <span class="like-btn">❤️ <span class="like-count">15</span></span>
+                    <span class="comment-btn">🗨️ <span class="comments-count">7</span></span>
+                </div>
             </div>
             <div class="box">
                 <div class="box-img">
                     <img src="public/images/set1.jpg" alt="">
                 </div>
-                <p>2020</p>
-                <h3>Anime</h3>
-                <h2>4.5/5.0<span>rating</span></h2>
+                <p>2023</p>
+                <h3>Another Book</h3>
+                <h2>4.2/5.0<span>rating</span></h2>
                 <a href="#" class="btn">Read Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                    <img src="public/images/set4.jpeg" alt="">
+                <div class="review-actions">
+                    <span class="like-btn">❤️ <span class="like-count">12</span></span>
+                    <span class="comment-btn">🗨️ <span class="comments-count">6</span></span>
                 </div>
-                <p>2021</p>
-                <h3>2024 Medical Study</h3>
-                <h2>4.7/5.0<span>rating</span></h2>
-                <a href="#" class="btn">Read Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                    <img src="public/images/set2.jpeg" alt="">
-                </div>
-                <p>2022</p>
-                <h3>Mathematics</h3>
-                <h2>3.9/5.0<span>rating</span></h2>
-                <a href="#" class="btn">Read Now</a>
             </div>
         </div>
     </section>
@@ -167,28 +182,98 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="heading">
-            <span>About Us</span>
-            <h1>Best Customer Experience</h1>
+            <span style="font-weight: bold;"></span>
+            <h1>About Us</h1>
         </div>
         <div class="about-container">
             <div class="about-img">
-                <img src="public/images/openbook1.webp" alt="">
+                <img src="/Projects/Book_review_website/ScreenShots/life-changing-books.jpg" alt="Open Book">
             </div>
             <div class="about-text">
-                <span>About Us</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, reiciendis? Corrupti aliquam distinctio temporibus reiciendis ducimus eaque nulla quisquam pariatur.</p>
+                <span></span>
+                <p>Welcome to our Book Review Website! We are dedicated to providing you with the best customer experience by offering insightful reviews of a wide range of books. Our mission is to help you discover your next favorite read and navigate the literary universe with ease.</p>
+                <p>Our team of passionate readers and reviewers work tirelessly to bring you honest and comprehensive reviews. Whether you're into fiction, non-fiction, science, or fantasy, we've got something for everyone. Join our community and start exploring today!</p>
                 <a href="#" class="btn">Learn More</a>
             </div>
         </div>
     </section>
 
+    <style>
+        .about {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        .about .heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about .heading span {
+            color: #555;
+            font-size: 18px;
+        }
+        .about .heading h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 90px;
+        }
+        .about-img {
+            flex: 1;
+        }
+        .about-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+        .about-text {
+            flex: 2;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .about-text span {
+            display: block;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .about-text p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .about-text .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .about-text .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
     <!-- Reviews -->
     <section class="reviews" id="reviews">
         <div class="heading">
-            <span>Reviews</span>
+            <span style="font-weight: bold;">Reviews</span>
             <h1>What our readers suggest!</h1>
         </div>
         <div class="reviews-container">
+            <style>
+            .reviews-container .box:hover {
+                background-color: #f0f0f0;
+                transition: background-color 0.3s ease-in-out;
+            }
+            </style>
             <div class="box">
                 <div class="rev-img">
                     <img src="public/images/rev1.jpg" alt="">
@@ -201,7 +286,7 @@
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum deleniti odio architecto quae harum nesciunt sint, quidem omnis dolorem praesentium explicabo beatae. Delectus quidem saepe molestias eum, fuga dolorum?</p>
+                <p>This website has been a game-changer for me. The reviews are detailed and honest, helping me choose the best books to read. Highly recommended!</p>
             </div>
             <div class="box">
                 <div class="rev-img">
@@ -214,7 +299,7 @@
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum deleniti odio architecto quae harum nesciunt sint, quidem omnis dolorem praesentium explicabo beatae. Delectus quidem saepe molestias eum, fuga dolorum?</p>
+                <p>I love the variety of books reviewed here. The insights provided are very helpful in making my reading choices. Great job!</p>
             </div>
             <div class="box">
                 <div class="rev-img">
@@ -228,10 +313,12 @@
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star-half'></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum deleniti odio architecto quae harum nesciunt sint, quidem omnis dolorem praesentium explicabo beatae. Delectus quidem saepe molestias eum, fuga dolorum?</p>
+                <p>The reviews on this site are very thorough and well-written. I appreciate the effort put into each review. Keep up the good work!</p>
             </div>
         </div>
     </section>
+       
+        
 
     <!-- Newsletter -->
     <section class="newsletter">
