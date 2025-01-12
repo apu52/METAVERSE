@@ -369,6 +369,7 @@
       }
     </style>
 
+
 <script>
 
 function showToast(message, type) {
@@ -389,15 +390,15 @@ function showToast(message, type) {
     }).showToast();
   }
 
-     window.addEventListener('load',()=>{
-      const login = document.getElementById('overlay');
-      const preloader = document.getElementById('preloader');
+    //  window.addEventListener('load',()=>{
+    //   const login = document.getElementById('overlay');
+    //   const preloader = document.getElementById('preloader');
      
-      setTimeout(() => {
-           preloader.style.display = 'none'; 
-           login.style.display = 'block'; 
-      }, 1000);
-    });
+    //   setTimeout(() => {
+    //        preloader.style.display = 'none'; 
+    //        login.style.display = 'block'; 
+    //   }, 1000);
+    // });
 
     function closeOverlay() {
             document.getElementById('overlay').style.display = 'none';
@@ -485,6 +486,7 @@ function showToast(message, type) {
       justify-content: center;
       align-items: center;
       z-index: 1000;
+      display: none;
   }
 
   /* Overlay Content */
@@ -667,6 +669,8 @@ function showToast(message, type) {
             <a id="aid" class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a>
           </div>
         </div>
+      
+        <button id="loginButton">Login</button>
       </div>
     </div>
 
@@ -692,7 +696,6 @@ function showToast(message, type) {
                 <input type="checkbox" id="theme-toggle">
                 <span class="slider"></span>
             </label>
-           
         </div>
         </div>
 
@@ -867,7 +870,17 @@ function showToast(message, type) {
       "wrapper_selector": "#google_translate_element"
     };
   </script>
-  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+
+<script>
+  const btn = document.getElementById('loginButton');
+  const overlay =  document.getElementById('overlay');
+  btn.addEventListener("click",function(){
+    overlay.style.display = 'block';
+  })
+</script>
+
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>

@@ -21,6 +21,12 @@
     - favicon
   -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+ <!--toastify css-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> 
+<link rel="stylesheet" href="assets/css/toastify.css">
+
+
   <link rel="stylesheet" href="assets/css/themeToggle.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -331,6 +337,280 @@
       }
     </style>
 
+<script>
+
+  function showToast(message, type) {
+      Toastify({
+        text: message,
+        duration: 3000, // Duration in milliseconds
+        close: false, // Show a close button
+        gravity: 'top', // 'top' or 'bottom'
+        position: 'right', // 'left', 'center', or 'right'
+        backgroundColor: type === 'error' ? 'red' : 'green', // Customize colors based on type
+        stopOnFocus: true, // Stop when focused
+        style: {
+        width: '400px', // Set the width here
+        fontSize: '20px', // Optional: Adjust font size
+        height:'5rem',
+        paddingTop:'1.5rem'
+      },
+      }).showToast();
+    }
+  
+      //  window.addEventListener('load',()=>{
+      //   const login = document.getElementById('overlay');
+      //   const preloader = document.getElementById('preloader');
+       
+      //   setTimeout(() => {
+      //        preloader.style.display = 'none'; 
+      //        login.style.display = 'block'; 
+      //   }, 1000);
+      // });
+  
+      function closeOverlay() {
+              document.getElementById('overlay').style.display = 'none';
+          }
+  
+  
+        function switchSignUp(){
+          showToast('Switching to Sign-Up form.', 'info');
+           const sign = document.getElementById('signUp'); 
+          const login = document.getElementById('overlay');
+  
+           login.style.display = 'none'; 
+           sign.style.display='block';
+        }
+  
+        function switchLogin(){
+          showToast('Switching to Log-In form.', 'info');
+          const sign = document.getElementById('signUp'); 
+          const login = document.getElementById('overlay');
+  
+          login.style.display = 'block';
+          sign.style.display = 'none';
+        }
+  
+        function validateLoginInForm(){
+          let email = document.getElementById('email').value.trim();
+          let password = document.getElementById('password').value.trim();
+        
+          if(!email){
+            showToast('Please Enter your email','error');
+            return false; 
+          }
+  
+          if(!password){
+            showToast('Please Enter your password','error');
+            return; 
+          }
+  
+          if(email && password){
+            closeOverlay();
+
+
+            setTimeout(function() {
+        window.location.href = 'index.html';
+    }, 0);
+    showToast('welcome to Metaverse','success');
+
+            return true; 
+          }
+        }
+  
+        function validateSignUpForm(){
+          let email = document.getElementById('email-SignUp').value.trim();
+          let password = document.getElementById('password-SignUp').value.trim();
+          let name = document.getElementById('name').value.trim();
+        
+          if(!name){
+            showToast('Please Enter your Name','error');
+            return; 
+          }
+  
+          if(!email){
+            showToast('Please Enter your email','error');
+            return false; 
+          }
+  
+          if(!password){
+            showToast('Please Enter your password','error');
+            return; 
+          }
+  
+          if(email && password && name){
+            switchLogin();
+            return true; 
+          }
+        }
+  </script>
+  
+  <style>
+
+    #loginButton{
+           margin-right: 1rem;
+    }
+    /* Overlay Background */
+    .overlay {
+        position: fixed;
+        top:0;
+        left: 0;
+        /* width: 120rem; */
+        /* height: 100vh; */
+        width: 100%;
+      height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        display: none;
+    }
+  
+    /* Overlay Content */
+    .overlay-content {
+        /* background: white; */
+        background: linear-gradient(90deg, rgb(82, 78, 203) 0%, rgb(185, 96, 201) 39%, rgb(206, 139, 58) 100%);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15rem;
+        margin-left: 40rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: white;
+        width: 30%;
+        /* max-width: 400px; */
+         box-sizing: border-box;
+        height: 25rem;
+    }
+  
+    .overlay-content h1 {
+        margin-bottom: 15px;
+        font-size:2rem;
+        font-weight: bold;
+    }
+  
+    .overlay-content button {
+        padding: 10px 15px;
+        /* background-color: #007BFF; */
+        /* background: linear-gradient(90deg, rgb(206, 139, 58) 0%, rgb(185, 96, 201) 100%); */
+        background-color: #2F2E41;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+  
+    .overlay-content button:hover {
+        background-color: #0056b3;
+    }  
+  
+  @media(max-width:1260px){
+    .overlay-content{
+      width: 80%;
+      margin-left: 30rem;
+    }
+  }
+  
+  /* Make adjustments for larger screens (tablets and small desktops) */
+  @media (max-width: 1024px) {
+      .overlay-content {
+          width: 70%; /* Slightly larger for tablet and medium screens */
+          padding: 25px;
+      }
+      
+      .overlay-content{
+        margin-top: 17rem;
+        margin-left:8rem;
+      }
+   }  
+  
+    @media (max-width: 600px) {
+      .overlay-content {
+          width: 90%; 
+           padding: 15px; 
+     }  
+  
+       .overlay-content h1 { 
+           font-size: 1.25rem; 
+     } 
+  
+       .overlay-content{ 
+         margin-top: 10rem; 
+         margin-left: 5rem; 
+       } 
+       .overlay-content input,
+       .overlay-content button {
+           font-size: 0.9rem; 
+     } 
+   } 
+  
+   @media(max-width: 450px){ 
+     .overlay-content{ 
+      width: 80%;
+       margin-left: .5rem; 
+     }
+     .overlay-content button,p{ 
+       margin-left: 1rem; 
+     } 
+   } 
+  </style>
+  
+  <!-- log in page  -->
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <h1>Login Page </h1>
+          
+          <form onsubmit="return validateLoginInForm()"> 
+          <div class="email" style="display: flex; margin-bottom: 2rem;">
+          <label for="email" style="padding-top: .2rem;">Email:</label> &nbsp;&nbsp;
+          <input placeholder="Enter your email" id="email"  type="email" style="height: 2rem; border: 1px solid blue;">
+          </div>
+  
+  <div class="password" style="display: flex;" >
+          <label for="password">Password:</label>&nbsp;&nbsp;
+          <input placeholder="Enter your password" id="password" type="password"  style="height:2rem; border: 1px solid blue;">
+  </div>
+  
+  <p style="display: flex; margin-left: 8.5rem; margin-top: 5rem;">Don't have an account? <a href="#signUp" style="color:black;" onclick="switchSignUp()" style="border-bottom:1px solid black ;">  sign in</a></p>
+  
+  <div class="btn" style="margin-left: 12rem; margin-top: 1rem;">
+           <button  type='submit' style="width: 5.5rem; height: 3rem; font-size: 1.2rem; font-weight: 100;">Log in </button>
+  </div>
+  </form>
+  
+  </div> 
+      </div>
+  
+  
+  
+      <!-- sign up page  -->
+      <div class="overlay" id="signUp" style="display: none;">
+        <div class="overlay-content">
+          <h1>Sign up Page </h1>
+  <form onsubmit="return validateSignUpForm()">         
+  <div class="name" style="display: flex; margin-bottom: 2rem;">
+            <label for="name" style="padding-top: .2rem;">Name:</label> &nbsp;&nbsp;
+            <input placeholder="Enter your Name" id="name" style="height: 2rem; border: 1px solid blue;">
+  </div>
+  
+  <div class="email" style="display: flex; margin-bottom: 2rem;">
+          <label for="email" style="padding-top: .2rem;">Email:</label> &nbsp;&nbsp;
+          <input placeholder="Enter your email" id="email-SignUp" style="height: 2rem; border: 1px solid blue;">
+  </div>
+  
+  <div class="password" style="display: flex;" >
+          <label for="password">Password:</label>&nbsp;&nbsp;
+          <input placeholder="Enter your password" id="password-SignUp" style="height:2rem; border: 1px solid blue;">
+  </div>
+   <!-- <p style="display: flex; margin-left: 4.5rem; margin-top: 3.5rem;"><a href="#overlay" style="border-bottom:1px solid black ;">Log in</a></p> -->
+  <div class="btn" style="margin-left: 12rem; margin-top: 3rem;">
+           <button type="submit" style="width: 6rem; height: 3rem; font-size: 1.2rem; font-weight: 100;" >Sign up </button>
+  </div>
+  </form>
+  
+        </div> 
+      </div>
+  
 
     <div class="main">
 
@@ -378,6 +658,8 @@
             <label class="number"></label>
           </div>
         </div>
+        <button id="loginButton">Login</button>
+
       </div>
 
       <script>
@@ -528,12 +810,26 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/index.js"></script>
+
+  <script>
+    const btn = document.getElementById('loginButton');
+    const overlay =  document.getElementById('overlay');
+    btn.addEventListener("click",function(){
+      overlay.style.display = 'block';
+    })
+  </script>
+
+<!-- toastify script -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+<script src="./assets/js/index.js"></script>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/scroll.js"></script>
   <script src="./assets/js/contributors.js"></script>
   <script src="./assets/js/mouse_transition.js"></script>
   <script src="./assets/js/toggletheme."></script>
+
   </div>
 </body>
 
