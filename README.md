@@ -59,12 +59,6 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 
 ![image](https://github.com/user-attachments/assets/81a0a103-8946-4c3c-a393-b965438b5549)
 
-![image](https://github.com/user-attachments/assets/f6cb8621-38e0-48bd-a20d-5a406692d4af)
-
-
-
-
-
   
 </p>
 
