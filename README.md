@@ -57,10 +57,11 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 
 <p align="center">
 
-![image](https://github.com/user-attachments/assets/bd12c2e3-315f-4826-8bac-4147dbf2e698)
+![image](https://github.com/user-attachments/assets/81a0a103-8946-4c3c-a393-b965438b5549)
+
+![image](https://github.com/user-attachments/assets/f6cb8621-38e0-48bd-a20d-5a406692d4af)
 
 
-![image](https://github.com/user-attachments/assets/4673335a-7ce7-4adf-aa7d-efb03d40f23a)
 
 
 
@@ -70,6 +71,11 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 <h3>This project was part of the following Open Source Programs</h3>
 
 <p align="center">
+
+  ![image](https://github.com/user-attachments/assets/bd12c2e3-315f-4826-8bac-4147dbf2e698)
+
+
+![image](https://github.com/user-attachments/assets/4673335a-7ce7-4adf-aa7d-efb03d40f23a)
   
 
   <img src="https://github.com/user-attachments/assets/8cb642d4-5cf5-4fc9-b979-e6d0597ec897" width="350" height="200" style="margin: 10px;">
