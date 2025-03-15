@@ -13,6 +13,30 @@
   z-index: 100;
 }
 
+#loginButton {
+  background-color: #f44336; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 10px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+ margin-top: -1.5rem;
+ margin-right: -7rem;
+}
+
+/* Hover Effect */
+#loginButton:hover {
+  background-color: #e53935; /* Slightly darker green */
+  transform: scale(1.05); /* Slightly increase the size of the button */
+}
+
+/* Focus Effect */
+#loginButton:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 5px rgba(244, 67, 54, 0.6); /* Add subtle glow effect */
+}
 .radio-wrapper {
   position: relative;
   height: 55px;
