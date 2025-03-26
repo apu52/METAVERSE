@@ -26,100 +26,125 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #1a1a2e;
+            color: white;
         }
         .navbar {
-            background-color: #16213e;
-            /* Dark background for the navbar */
-            color: white;
-            padding: 15px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
             display: flex;
+            position: fixed; /* Make the navigation bar fixed */
+            top: 0;
+            left: 0; /* Center the navigation bar horizontally */
+            width: 100%; /* Set a smaller width (adjust as needed) */
+            align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
+            padding: 10px 0;
+            z-index: 100;
+            /* Frosted Glass Effect with Gradient Background */
+            background: linear-gradient(
+                to right,
+                rgba(10, 10, 10, 0.281),
+                rgba(10, 10, 10, 0.281)
+            );
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             
         }
 
-        .navbar .nav-wrapper {
+        .nav-wrapper {
             display: flex;
             gap: 160px;
-            margin-top: 7px;
+            padding: 0 20px;
+            width: 100%;
+            max-width: 1000px;
+            justify-content: space-between;
         }
 
-        .navbar .nav-link {
-            position: relative;
-           
-            color: white;
+        .nav-link {
+            color: white; /* Set default link color */
             text-decoration: none;
-            font-size: 1.4rem;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            padding: 5px;
-           
-            transition: color 0.3s ease;
+            gap: 5px;
+            position: relative;
             
         }
 
-        .navbar .nav-link i {
-            margin-right: 8px;
+        .nav-link i {
+            font-size: 20px;
         }
 
-        .navbar .nav-link::after {
+        .nav-link::after {
             content: "";
             position: absolute;
-            left: 0;
-            bottom: -2px;
-           
-            width: 0%;
-            
-            height: 2px;
-            
-            background-color: #007bff;
-            
+            left: 50%;
+            bottom: -5px;
+            width: 0%;            
+            height: 2px;            
+            background-color: #007bff;            
             transition: width 0.4s ease;
-            
+            transform: translateX(-50%);            
         }
 
-        .navbar .nav-link:hover {
+        .nav-link:hover {
             color: #007bff;
-            
+            background-color: rgba(255, 255, 255, 0.1);    
         }
 
-        .navbar .nav-link:hover::after {
+        .nav-link:hover::after {
             width: 100%;
-            
         }
 
         .hamburger {
-        display: none;
-        cursor: pointer;
-      }
+            display: none;
+            cursor: pointer;
+            padding: 15px;
+            color: white;
+        }
 
-      .hamburger i {
-        color: white;
-        font-size: 24px;
-      }
+        .hamburger .line {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
 
-      @media (max-width: 1000px) {
-        .hamburger {
-          color: white;
-          display: block;
-          margin-left: auto;
-          margin-right: 2rem;
-        }  
+        @media (max-width: 770px) {
+            .hamburger {
+                display: block;
+                position: absolute;
+                right: 20px;
+            }
         
-        .nav-cont{
-          display: none;
-        }
+            .nav-wrapper {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(22, 33, 62, 0.95);
+                padding: 20px 0;
+                gap: 15px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
 
-        .nav-cont.active {
-          display: flex;
-          flex-direction:column;
-          align-items: center;
+            .nav-wrapper.active {
+                display: flex;
+            }
+
+            .nav-link {
+                width: 90%;
+                margin: 0 auto;
+                justify-content: center;
+                padding: 12px;
+            }
         }
-    }
 
         .stargaze {
             top: 50%;
@@ -159,6 +184,7 @@
             transform: translate(-50%, -50%);
             width: 80%;
             max-width: 600px;
+            margin-top: 60px; /* Added to account for fixed navbar */
         }
 
         .container:hover {
@@ -171,6 +197,7 @@
             cursor: pointer;
             margin: 0 15px;
             transition: transform 0.2s, text-shadow 0.2s;
+            color: white;
         }
 
         .emoji:hover {
@@ -196,6 +223,7 @@
             border-radius: 5px;
             background-color: #1a1a2e;
             color: white;
+            resize: vertical;
         }
 
         .email-container {
@@ -240,42 +268,43 @@
 
 <body>
     <div class="navbar">
-    
-        <div class="nav-cont" id="nav-cont">
-        <div class="nav-wrapper">
-            <a id="aid" class="nav-link" href="./index.html">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <div class="nav-wrapper" id="nav-wrapper">
+            <a class="nav-link" href="./index.html">
                 <i class="fas fa-home"></i> Home
             </a>
-            <a id="aid" class="nav-link" href="./about.html">
+            <a class="nav-link" href="./about.html">
                 <i class="fas fa-info-circle"></i> About
             </a>
-         
-            <a id="aid" class="nav-link" href="./contact.html">
+            <a class="nav-link" href="./contact.html">
                 <i class="fas fa-envelope"></i> Contact
             </a>
-            <a id="aid" class="nav-link" href="RateUs.html">
+            <a class="nav-link" href="RateUs.html">
                 <i class="fas fa-star"></i> Rate Us
             </a>
-            <a id="aid" class="nav-link" href="./contributor.html">
+            <a class="nav-link" href="./contributor.html">
                 <i class="fas fa-users"></i> Contributors
             </a>
         </div>
     </div>
-    <div class="hamburger" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
-</div>
+
     <div class="stargaze">
         <video autoplay loop muted playsinline>
             <source src="./assets/main.webm" type="video/webm">
             <p>Your browser does not support HTML5 video.</p>
         </video>
     </div>  
+    
     <div class="container">
         <div class="emojis">
             <span class="emoji" role="img" aria-label="cry">&#128546;</span>
             <span class="emoji" role="img" aria-label="neutral">&#128528;</span>
-            <span class=" emoji" role="img" aria-label="smile">&#128522;</span>
+            <span class="emoji" role="img" aria-label="smile">&#128522;</span>
             <span class="emoji" role="img" aria-label="laugh">&#128514;</span>
             <span class="emoji" role="img" aria-label="super">&#128526;</span>
         </div>
@@ -287,6 +316,7 @@
         </div>
         <button class="submit-button">Submit</button>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
         let feedbackSubmitted = false;
@@ -294,7 +324,6 @@
         document.querySelectorAll('.emoji').forEach(emoji => {
             emoji.addEventListener('click', () => {
                 if (feedbackSubmitted) {
-                    // Allow selecting an emoji again even if feedback was submitted
                     document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
                     emoji.classList.add('selected');
                 } else {
@@ -307,7 +336,7 @@
         document.querySelector('.submit-button').addEventListener('click', async () => {
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
-            const email = document.querySelector('#email-input').value.trim(); // Get the email input value
+            const email = document.querySelector('#email-input').value.trim();
             
             if (feedbackSubmitted) {
                 Toastify({
@@ -317,9 +346,8 @@
                     position: "center",
                     duration: 3000
                 }).showToast();
-                // Clear textarea and stop emoji blinking on resubmit attempt
                 document.querySelector('textarea').value = '';
-                document.querySelector('#email-input').value = ''; // Clear email input
+                document.querySelector('#email-input').value = '';
                 if (selectedEmoji) {
                     selectedEmoji.classList.remove('selected');
                 }
@@ -334,9 +362,9 @@
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify({
-                            emoji: selectedEmoji.innerHTML, // Get the selected emoji
+                            emoji: selectedEmoji.innerHTML,
                             feedback: feedback,
-                            email: email // Include email in the body
+                            email: email
                         }),
                     });
                     const res = await result.json();
@@ -348,14 +376,9 @@
                             position: "center",
                             duration: 3000
                         }).showToast();
-                        // Clear the textarea and email input
                         document.querySelector('textarea').value = '';
                         document.querySelector('#email-input').value = '';
-
-                        // Remove the 'selected' class from the emoji to stop blinking
                         selectedEmoji.classList.remove('selected');
-
-                        // Mark feedback as submitted
                         feedbackSubmitted = true;
                     } else {
                         Toastify({
@@ -387,10 +410,9 @@
         });
 
         function toggleMenu() {
-          const navMenu = document.getElementById('nav-cont');
-          navMenu.classList.toggle('active');
+            const navMenu = document.getElementById('nav-wrapper');
+            navMenu.classList.toggle('active');
         }
-
     </script>
 </body>
 
