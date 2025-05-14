@@ -98,6 +98,73 @@
       -webkit-text-fill-color: transparent;
       color: transparent;
     }
+    
+    .contributors {
+      text-align: center;
+      margin: 60px 20px;
+    }
+
+    .contributors h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contributors-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .contributor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .contributor img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; /*  Makes the image circular - looks kinda good */
+      border: 3px solid #00bcd4;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .contributor img:hover {
+      transform: scale(1.1);
+    }
+
+    .contributor p {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    /* Loading Spinner */
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      width: 100%;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-top-color: #00bcd4;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     @keyframes spin {
       0% {
@@ -323,14 +390,13 @@
 
         <!-- Contributors Grid -->
         <section class="contributors">
-            <h2>Meet Our Contributors</h2>
-            <div id="contributors" class="contributors-container">
-                <div id="loading" class="loading">
-                    <div class="spinner"></div>
-                </div>
+          <h2>Meet Our Contributors</h2>
+          <div id="contributors" class="contributors-container">
+            <div id="loading" class="loading">
+              <div class="spinner"></div>
             </div>
+          </div>
         </section>
-      </div>
 
   </main>
   <div class="main" id="footer">
@@ -407,6 +473,51 @@
     function toggleMenu() {
       const navMenu = document.getElementById('nav-menu');
       navMenu.classList.toggle('active');
+    }
+  </script>
+  <script> //for the contributors display and spinner 
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('active');
+    }
+
+    const owner = 'apu52';
+    const repo = 'METAVERSE';
+    const url = `https://api.github.com/repos/${owner}/${repo}/contributors`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        // Process the contributor data
+        displayContributors(data);
+      })
+      .catch(error => console.error('Error fetching contributors:', error));
+
+    function displayContributors(contributors) {
+      const container = document.getElementById('contributors');
+      const loading = document.getElementById('loading');
+      container.innerHTML = ''; // Clear previous content
+
+      contributors.forEach(contributor => {
+        const contributorElement = document.createElement('div');
+        contributorElement.classList.add('contributor');
+
+        const avatar = document.createElement('img');
+        avatar.src = contributor.avatar_url;
+        avatar.alt = contributor.login;
+
+        const username = document.createElement('p');
+        username.textContent = contributor.login;
+
+        contributorElement.appendChild(avatar);
+        contributorElement.appendChild(username);
+        container.appendChild(contributorElement);
+      });
+
+      // Remove the loading spinner after contributors are displayed
+      if (loading) {
+        loading.remove();
+      }
     }
   </script>
 </body>
