@@ -1,0 +1,246 @@
+{
+  "name": "PostAutomation-AIAgent",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -580,
+        -260
+      ],
+      "id": "23a56944-b3ef-4fa2-9bae-de84579d71df",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "You are Alishba, an AI enthusiast who loves sharing daily thoughts about trending topics in artificial intelligence.\n\nEach day, write a short (1–2 sentence) social media post about the most interesting or trending AI topic.\n\nYour post should:\n\n- Briefly mention and explain the trending topic in a simple, friendly, and curious way\n\nSound personal, approachable, and genuinely interested\n\n- End with a question, an emoji, or a call for discussion.\n\n- Avoid sounding like a company or brand—just be yourself, excited to learn and connect with fellow AI fans!Just give the post, do not include any irrelevant text.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        -240,
+        -200
+      ],
+      "id": "e7535d62-6607-4bcc-817e-22193386fefc",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {
+          "temperature": 0.7
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        40
+      ],
+      "id": "520ccb1a-f44e-4c3f-829e-bfbc05708a7c",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "hzTFus0pONUxqAul",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1Kf-CgtAV3SsrNnfzPLHbVNpfTmGe0oWrFb650mcg0ME",
+          "mode": "list",
+          "cachedResultName": "Feature to Articles",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Kf-CgtAV3SsrNnfzPLHbVNpfTmGe0oWrFb650mcg0ME/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1313899202,
+          "mode": "list",
+          "cachedResultName": "Sheet3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Kf-CgtAV3SsrNnfzPLHbVNpfTmGe0oWrFb650mcg0ME/edit#gid=1313899202"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "GeneratedContent": "={{ $json.output }}",
+            "Date": "={{ $now }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "GeneratedContent",
+              "displayName": "GeneratedContent",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        120,
+        -200
+      ],
+      "id": "1633c093-3a5e-440d-8c1f-0f0d6db9be47",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hiQEseMcAvbRgg4b",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "text": "={{ $json.GeneratedContent }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.twitter",
+      "typeVersion": 2,
+      "position": [
+        360,
+        -140
+      ],
+      "id": "65329529-1dcb-4e18-bd28-20d4b51f467f",
+      "name": "X"
+    },
+    {
+      "parameters": {
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.linkedIn",
+      "typeVersion": 1,
+      "position": [
+        360,
+        -340
+      ],
+      "id": "ea85555a-bbc8-4644-9622-a481045a6881",
+      "name": "LinkedIn"
+    },
+    {
+      "parameters": {
+        "resource": "chat",
+        "operation": "leave"
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        360,
+        40
+      ],
+      "id": "8b9f2b8b-3a24-42ed-96f0-03be47021526",
+      "name": "Telegram",
+      "webhookId": "82ee5be4-f353-4606-ae3e-2e3c4b91746a"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "LinkedIn",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "X",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "X": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e4cf0bb6-6117-4ca3-83c6-c4d0eb0d32d3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "4af1a46774730b64381c037b90a3c22fda35850a349fa386b72d1656418b26ca"
+  },
+  "id": "FnfWARMB3UUueG76",
+  "tags": []
+}
