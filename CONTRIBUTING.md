@@ -20,20 +20,26 @@ If you'd like to dive into existing projects, you're welcome to contribute by ad
 ## Bonus Wat to Contribute?
 
 
-**🚀 Integrate Your Web3 Project into the Metaverse 🌐**
+🚀 **Showcase & Integrate Your Projects in This Repository** 🌐
 
-Now, you can seamlessly add your Web3 project as a valid contribution to the Metaverse! 🪙✨ This exciting update allows decentralized applications (dApps), NFTs, and blockchain-based innovations to thrive in the virtual world. 🏞️🔗 Enhance your digital experience with secure, transparent transactions and verified ownership, all within the immersive Metaverse. 💡🌍 Get ready to unlock endless possibilities! 🌈👾
+Now, you can seamlessly add any of your projects as a valid contribution to this repository! ✨
+Whether it’s Frontend development, Web Development, Machine Learning, AI, or Web3 projects, everything is welcome here. 💻🤖🔗
+
+This repo is built to be an open space for innovation—showcase your dApps, NFTs, blockchain solutions, modern web apps, intelligent ML models, or AI-powered tools. 🧠⚙️
+Contribute your work, collaborate with others, and let your projects grow in a community-driven ecosystem. 🌱🚀
+
+Bring your ideas to life, build in public, and unlock endless learning and growth opportunities! 🌈👾
 
  ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-## Contributing Guidelines (For adding new WEB3 project only):
+## Contributing Guidelines (For adding new NEW project ):
 
 
-- Add your New WEB 3 Project inside the `Projects` folder 
+- Add your New NEW Project inside the `Projects` folder 
 - Commit inside the `Projects` Folder & Foldername(of your project) should not have any space.
 - Add a very ready-to-go & understandable `README.MD` within the Project folder of yours inside the `Projects` folder
 - Add one prototype Image of your new Project under `assets/img` folder (with the same name of the folder of your added project)
-- **Add only WEB 3 Based Projects(no NEW WEB 2 based projests will be considered)**
+
 
 
  ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
