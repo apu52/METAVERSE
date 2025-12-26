@@ -25,7 +25,7 @@ assignees: ''
 **Additional context(Mandatory)**
 
 - [ ] I have read the Contributing Guidelines *
-- [ ] I'm a CODEPEAK 2025 contributor
+- [ ] I'm a KWOC 2025 contributor
 - [ ] I have starred the repository *
 
 <!-- Click The Above Checkboxes Correctly -->
