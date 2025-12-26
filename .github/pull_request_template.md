@@ -44,7 +44,7 @@ Close #<issue_no>
 ***Are you contributing under any Open-source programme?***
 <!--Mention it here-->
 
-- [ ] I'm a CODEPEAK 2025 contributor
+- [ ] I'm a KWOC 2025 contributor
 
 
 
