@@ -72,11 +72,37 @@
       left: 0;
       width: 100%;
       z-index: 100;
-      background: rgba(20, 20, 30, 0.85);
-      backdrop-filter: blur(15px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%), 
+                  rgba(15, 15, 25, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+      border-image-slice: 1;
       padding: 0;
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(102, 126, 234, 0.05) 25%, 
+        rgba(118, 75, 162, 0.05) 50%, 
+        rgba(240, 147, 251, 0.05) 75%, 
+        transparent 100%);
+      pointer-events: none;
+      animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
     }
 
     .navbar-container {
@@ -85,66 +111,119 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 2rem;
+      padding: 1.2rem 3rem;
+      position: relative;
+      z-index: 1;
     }
 
     .navbar-logo {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 1.5rem;
-      font-weight: 700;
+      gap: 0.75rem;
+      font-size: 1.75rem;
+      font-weight: 800;
       color: #fff;
       text-decoration: none;
-      letter-spacing: 2px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      letter-spacing: 3px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      transition: all 0.3s ease;
+      text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+    }
+
+    .navbar-logo:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.8));
+    }
+
+    .navbar-logo span:first-child {
+      font-size: 2rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
     }
 
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 2.5rem;
+      gap: 0.5rem;
       list-style: none;
     }
 
     .nav-link {
       position: relative;
-      color: rgba(255, 255, 255, 0.85);
+      color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 600;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.5rem 0;
-      transition: all 0.3s ease;
-    }
-
-    .nav-link i {
-      font-size: 1.1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
     }
 
     .nav-link::before {
       content: '';
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: -1;
+      border-radius: 12px;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #667eea, #764ba2);
-      transition: width 0.3s ease;
+      height: 3px;
+      background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+      transition: width 0.4s ease;
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+    }
+
+    .nav-link i {
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
     }
 
     .nav-link:hover {
       color: #fff;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
     }
 
     .nav-link:hover::before {
-      width: 100%;
+      transform: scaleX(1);
+    }
+
+    .nav-link:hover::after {
+      width: 60%;
+    }
+
+    .nav-link:hover i {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    .nav-link:active {
+      transform: translateY(-1px);
     }
 
     .hamburger {
