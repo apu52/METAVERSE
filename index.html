@@ -8,183 +8,296 @@
   <title>METAVERSE</title>
 
   <!-- Primary Meta Tags -->
-  <title></title>
   <meta name="title" content="METAVERSE" />
   <meta name="description"
-    content="Welcome to the Metaverse Front-End Playground – your gateway to the future of web development in the metaverse! 🌐🚀 Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space. Whether you're a seasoned developer looking to showcase your metaverse projects or a newcomer eager to dive into the virtual realm, you're invited to join our dynamic community!" />
+    content="Welcome to the Metaverse Front-End Playground – your gateway to the future of web development in the metaverse! 🌐🚀" />
   <meta name="language" content="English">
-  <meta name="keywords"
-    content="METAVERSE, Frontend Projects, Coding, Web Development, Projects, Stopwatch, Calculator.">
+  <meta name="keywords" content="METAVERSE, Frontend Projects, Coding, Web Development, Projects, Stopwatch, Calculator.">
 
-
-  <!--
-    - favicon
-  -->
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./images/metaverse.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/scroll.css">
   <link rel="stylesheet" href="./assets/css/contributors.css">
   <link rel="stylesheet" href="./assets/css/themeToggle.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<!-- Light-Dark theme SWITCH -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="assets/css/toastify.css">
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<!-- <p class="invert-color" style="position: sticky; top: 30px; z-index:100; margin-left: 30px;">Theme :</p> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-<!--toastify css-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> 
-<link rel="stylesheet" href="assets/css/toastify.css">
-<style>
-  body {
-    overflow-x: hidden;
-  }
+    body {
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+    }
 
-  .circle {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    pointer-events: none;
-    background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
-    transition: transform 0.1s, left 0.1s, top 0.1s;
-    box-shadow: 0 0 20px #23bdf5,
-      0 0 60px #f523f5,
-      0 0 100px #23bdf5;
-  }
+    .circle {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
+      transition: transform 0.1s, left 0.1s, top 0.1s;
+      box-shadow: 0 0 20px #23bdf5, 0 0 60px #f523f5, 0 0 100px #23bdf5;
+    }
 
-  .circle-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    z-index: 100;
-  }
-
-  .dark-theme .navbar {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    z-index: 100;
-  }
-
-  /* .navbar-container {
-    backdrop-filter: blur(10px);
-  } */
-
-  .dark-theme a {
-    color: rgb(0, 0, 0);
-  }
-
-  .main-content {
-    padding-top: 4rem;
-  }
-
-
-  @media (max-width: 740px) {
     .circle-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Enhanced Modern Navbar Styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(20, 20, 30, 0.85);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 2px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      position: relative;
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link i {
+      font-size: 1.1rem;
+    }
+
+    .nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .nav-link:hover::before {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 101;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    .main-content {
+      padding-top: 5rem;
+    }
+
+    @media (max-width: 770px) {
+      .circle-container {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .navbar-container {
+        padding: 1rem 1.5rem;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(20, 20, 30, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 2rem 2rem;
+        gap: 1.5rem;
+        transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+      }
+
+      .nav-link:hover {
+        transform: translateX(5px);
+      }
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .spinner {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner-inner {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff);
+      border-image-slice: 1;
+      animation: spin 1s linear infinite;
+    }
+
+    #loading-percentage {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(45deg, #be18ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    #content {
       display: none;
     }
-  }
 
-  #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-
-  .spinner {
-    position: relative;
-    width: 130px;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .spinner-inner {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-image: linear-gradient(45deg, #ff2d15, #be18ff, #0d3dff);
-    border-image-slice: 1;
-    animation: spin 1s linear infinite;
-  }
-
-  #loading-percentage {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(45deg, #be18ff, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
+    .dark-theme .navbar {
+      background: rgba(240, 240, 245, 0.85);
     }
 
-    100% {
-      transform: rotate(360deg);
+    .dark-theme .nav-link {
+      color: rgba(0, 0, 0, 0.85);
     }
-  }
 
-  #content {
-    display: none;
-  }
-
-
-</style>
+    .dark-theme .nav-link:hover {
+      color: #000;
+    }
+  </style>
+</head>
 
 <body>
-
 
   <div class="circle-container">
     <div class="circle"></div>
@@ -218,6 +331,7 @@
     <div class="circle"></div>
     <div class="circle"></div>
   </div>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const coords = { x: 0, y: 0 };
@@ -230,7 +344,7 @@
 
       window.addEventListener("mousemove", function (e) {
         coords.x = e.pageX;
-        coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+        coords.y = e.pageY - window.scrollY;
       });
 
       function animateCircles() {
@@ -255,34 +369,16 @@
 
       animateCircles();
     });
-    document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent form from submitting the traditional way
-      const emailInput = document.getElementById("email");
-      const email = emailInput.value.trim();
-
-      if (email) {
-        // Simulate a successful submission
-        document.querySelector(".success-message").style.display = "block";
-        document.querySelector(".error-message").style.display = "none";
-        emailInput.value = ""; // Clear the input
-      } else {
-        // Show an error message if something goes wrong
-        document.querySelector(".success-message").style.display = "none";
-        document.querySelector(".error-message").style.display = "block";
-      }
-    });
-
-
   </script>
 
-
-  <!-- Preloader starts -->
+  <!-- Preloader -->
   <div id="preloader">
     <div class="spinner">
       <div class="spinner-inner"></div>
       <div id="loading-percentage">0%</div>
     </div>
   </div>
+
   <script>
     window.addEventListener('load', () => {
       const preloader = document.getElementById('preloader');
@@ -301,90 +397,39 @@
             preloader.style.display = 'none';
             content.style.display = 'block';
             document.body.style.overflow = 'auto';
-  
-            // Show the Google Translator after loading completes
-            translator.classList.remove('gtranslate_hidden');
+            if (translator) {
+              translator.classList.remove('gtranslate_hidden');
+            }
           }, 300);
         }
       }, 100);
     });
   </script>
-  <!-- Preloader Ends -->
+
   <div id="content">
+    <!-- Enhanced Modern Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+          <span>🚀</span>
+          <span>METAVERSE</span>
+        </a>
 
-    <!-- Scroll down progress bar -->
+        <div class="hamburger" onclick="toggleNavbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-      .main {
-        padding-top: 4rem;
-      }
-
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-bottom: 5rem;
-      }
-
-      .hamburger {
-        display: none;
-        cursor: pointer;
-      }
-
-      .hamburger i {
-        color: white;
-        font-size: 24px;
-      }
-
-      .hamburger.open .line {
-        background-color: #fff;
-      }
-
-      @media (max-width: 770px) {
-        .circle-container {
-          display: none;
-        }
-
-        .hamburger {
-          display: block;
-          color: white;
-        }
-
-        .container {
-          display: none;
-          flex-direction: column;
-        }
-
-        .container.active {
-          display: flex;
-        }
-      }
-      .navbar{
-        background-color: rgba(49, 49, 49, 0.528);
-        backdrop-filter: blur(10px); /* Blur effect */
-        padding-top: -10px;
-        padding-bottom: 20px;
-      }
-    </style>
-
-    <div class="main navbar" id="navbar">
-  <div class="hamburger" onclick="toggleNavbar()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <div class="nav-menu" id="nav-menu">
-    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
-    <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
-    <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-    <a class="nav-link" href="RateUs.html"><i class="fas fa-star"></i> RateUs</a>
-    <a class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a>
-  </div>
-</div>
-
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a class="nav-link" href="RateUs.html"><i class="fas fa-star"></i> Rate Us</a></li>
+          <li><a class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <script>
       function toggleNavbar() {
@@ -393,198 +438,190 @@
         const hamburger = document.querySelector('.hamburger');
         hamburger.classList.toggle('open');
       }
-    </script>
-  <main>
 
-    <div class="main-content">
-      <div class="sub-main-content">
-        <div class="heading1">
-          <div class="heading">
-            <span>🚀&nbsp;</span><span>M</span><span>E</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
-          </div>
-          <div class="container">
-            
-            <label class="switch">
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event) {
+        const navbar = document.getElementById('nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        const navbarContainer = document.querySelector('.navbar-container');
+        
+        if (!navbarContainer.contains(event.target) && navbar.classList.contains('active')) {
+          navbar.classList.remove('active');
+          hamburger.classList.remove('open');
+        }
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          const navbar = document.getElementById('nav-menu');
+          const hamburger = document.querySelector('.hamburger');
+          if (navbar.classList.contains('active')) {
+            navbar.classList.remove('active');
+            hamburger.classList.remove('open');
+          }
+        });
+      });
+    </script>
+
+    <main>
+      <div class="main-content">
+        <div class="sub-main-content">
+          <div class="heading1">
+            <div class="heading">
+              <span>🚀&nbsp;</span><span>M</span><span>E</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
+            </div>
+            <div class="container">
+              <label class="switch">
                 <input type="checkbox" id="theme-toggle">
                 <span class="slider"></span>
-            </label>
-           
-        </div>
-        </div>
-
-
-        <div class="search-container" id="search-container-id">
-          <input type="text" class="search-input" placeholder="Search" onkeyup="search()" id="searchbar">
-          <div class="search-btn">
-            <i class="fa fa-search" aria-hidden="true"></i>
-
+              </label>
+            </div>
           </div>
-        </div>
-        <br>
-        <div class="filter-container my-8">
-          <!-- Filter Button -->
-          <button id="filter-button" class="flex items-center gap-2 text-lg font-medium text-gray-800 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition duration-200">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 011 1v1a1 1 0 01-.293.707L13 10.414V15a1 1 0 01-.553.894l-4 2A1 1 0 017 17v-6.586L3.293 6.707A1 1 0 013 6V5z" clip-rule="evenodd" />
-            </svg>
-            <span>Filter by Tags</span>
-          </button>
+
+          <div class="search-container" id="search-container-id">
+            <input type="text" class="search-input" placeholder="Search" onkeyup="search()" id="searchbar">
+            <div class="search-btn">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+          </div>
+          <br>
           
-          <!-- Tag Options Container -->
-          <div id="tags-container" class="hidden flex flex-wrap gap-3 mt-4">
-            <!-- Tag Buttons -->
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="1">Tool</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="2">Utility</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="3">Game</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="4">Clone</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="5">Web Design</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="6">Food</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="7">Business</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="8">Social</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="9">Entertainment</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="10">Music</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="11">Productivity</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="12">App</button>
-            <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="13">Education</button>
+          <div class="filter-container my-8">
+            <button id="filter-button" class="flex items-center gap-2 text-lg font-medium text-gray-800 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 011 1v1a1 1 0 01-.293.707L13 10.414V15a1 1 0 01-.553.894l-4 2A1 1 0 017 17v-6.586L3.293 6.707A1 1 0 013 6V5z" clip-rule="evenodd" />
+              </svg>
+              <span>Filter by Tags</span>
+            </button>
+            
+            <div id="tags-container" class="hidden flex flex-wrap gap-3 mt-4">
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="1">Tool</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="2">Utility</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="3">Game</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="4">Clone</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="5">Web Design</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="6">Food</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="7">Business</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="8">Social</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="9">Entertainment</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="10">Music</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="11">Productivity</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="12">App</button>
+              <button class="tag-button bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white active:bg-blue-600 active:shadow-lg px-4 py-2 rounded-full transition duration-200" value="13">Education</button>
+            </div>
+          </div>
+
+          <ul class="project-list" id="projectList"></ul>
+
+          <div class="no-results" id="noResults" style="display: none;">
+            <h1 class="no-result-heading">No Result Found</h1>
+            <img class="no-results-img" src="./assets/img/No_Text_Found.png" />
+          </div>
+
+          <div class="pagination">
+            <button id="prev-page-tile" onclick="goToPreviousPage()">Previous</button>
+            <div class="pagination_section"></div>
+            <button id="next-page-tile" onclick="goToNextPage()">Next</button>
           </div>
         </div>
-        
-
-      
-        <!-- Projects -->
-        <ul class="project-list" id="projectList"></ul>
-
-        <div class="no-results" id="noResults" style="display: none;">
-          <h1 class="no-result-heading">No Result Found</h1>
-          <img class="no-results-img" src="./assets/img/No_Text_Found.png" />
-        </div>
-
-        <div class="pagination">
-          <button id="prev-page-tile" onclick="goToPreviousPage()">Previous</button>
-          <div class="pagination_section"></div>
-          <button id="next-page-tile" onclick="goToNextPage()">Next</button>
-        </div>
-
-
-
-        <!--
-        FOOTER
-  -->
-
       </div>
-      </section>
-    </div>
+    </main>
 
-  </main>
-  <div class="main" id="footer">
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="wave-creation">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
-        </g>
-      </svg>
-    </div>
-    <footer class="pt-4 page-footer font-small unique-color-dark">
-      <div class="container1">
-        <div class="py-2 text-center text-black list-unstyled list-inline">
-          <br>
-          <br>
-          <div class="socials-text" style="text-align: center; margin-bottom:50px">
-            <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
-            <br>
-            <br>
-            <a href="https://github.com/apu52/METAVERSE" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
-              checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on GitHub</a>
-          </div>
+    <div class="main" id="footer">
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="wave-creation">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,133,0.9)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(153,51,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(238,106,220,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#B616C7" />
+          </g>
+        </svg>
+      </div>
+      <footer class="pt-4 page-footer font-small unique-color-dark">
+        <div class="container1">
+          <div class="py-2 text-center text-black list-unstyled list-inline">
+            <br><br>
+            <div class="socials-text" style="text-align: center; margin-bottom:50px">
+              <h7>Developed with ❤️ by <b>METAVERSE</b> Collaborators</h7>
+              <br><br>
+              <a href="https://github.com/apu52/METAVERSE" target="_blank"
+                style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);">Make sure you
+                checkout our socials and also ⭐ <b class="METAVERSE" style="cursor: pointer;">METAVERSE</b> on GitHub</a>
+            </div>
 
-          <!-- Newsletter Section -->
-          <div class="newsletter-section">
-            <h3>Subscribe to our Newsletter</h3>
-            <p>Get the latest updates right to your inbox!</p>
-            <form id="newsletter-form">
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-              <button type="submit">Subscribe</button>
-            </form>
-            <p class="success-message" style="display: none;">Thank you for subscribing!</p>
-            <p class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
-          </div>
-          <!-- End Newsletter Section -->
-          <ul class="socials">
-            <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
-                title="GitHub (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa-brands fa-github"></i></a></li>
-            <!-- <li><a href="https://twitter.com/METAVERSE" aria-label="Follow me on Twitter"
-                title="Twitter (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa-brands fa-twitter"></i></a></li> -->
-                  <li>
-                    <a href="https://twitter.com/METAVERSE" aria-label="Follow me on X"
-                        title="X (External Link)" rel="noopener noreferrer" target="_blank">
-                      <img class="fa-brands fa-x" src="assets/img/social-media.png" alt="X Logo" style="width: 24px; height: 24px;">
-                    </a>
-                  </li>
-                  
+            <div class="newsletter-section">
+              <h3>Subscribe to our Newsletter</h3>
+              <p>Get the latest updates right to your inbox!</p>
+              <form id="newsletter-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+              <p class="success-message" style="display: none;">Thank you for subscribing!</p>
+              <p class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
+            </div>
 
-            <li><a href="https://www.linkedin.com/in/METAVERSE" aria-label="Follow me on LinkedIn"
-                title="LinkedIn (External Link)" rel="noopener noreferrer" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i></a></li>
-          </ul>
-          <div class="policy">
-            <a href="privacynotice.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
-            <a href="copyright.html" target="_blank"
-              style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
+            <ul class="socials">
+              <li><a href="https://github.com/apu52/METAVERSE" aria-label="Follow me on Github"
+                  title="GitHub (External Link)" rel="noopener noreferrer" target="_blank"><i
+                    class="fa-brands fa-github"></i></a></li>
+              <li>
+                <a href="https://twitter.com/METAVERSE" aria-label="Follow me on X"
+                    title="X (External Link)" rel="noopener noreferrer" target="_blank">
+                  <img class="fa-brands fa-x" src="assets/img/social-media.png" alt="X Logo" style="width: 24px; height: 24px;">
+                </a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/METAVERSE" aria-label="Follow me on LinkedIn"
+                  title="LinkedIn (External Link)" rel="noopener noreferrer" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <div class="policy">
+              <a href="privacynotice.html" target="_blank"
+                style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
+              <a href="copyright.html" target="_blank"
+                style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
               <p class="copyright">© 2024 METAVERSE</p>
+            </div>
           </div>
         </div>
+      </footer>
+
+      <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
       </div>
-    </footer>
-    <!-- SCROLL TO TOP BUTTON -->
-    <div id="progress">
-      <span id="progress-value">&#x1F815;</span>
+
+      <script src="./assets/js/index.js"></script>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/scroll.js"></script>
+      <script src="./assets/js/toggletheme.js"></script>
+      <script src="./assets/js/contributors.js"></script>
+      <script src="scrolldownprogressbar.js"></script>
+      <script src="./assets/js/subscribe.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     </div>
 
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/scroll.js"></script>
-    <script src="./assets/js/toggletheme.js"></script>
-    <script src="./assets/js/contributors.js"></script>
-    <!-- <script src="./assets/js/mouse_transition.js"></script> -->
-    <script src="scrolldownprogressbar.js"></script>
-    <script src="./assets/js/subscribe.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  
+    <style>
+      .gtranslate_hidden {
+        display: none;
+      }
+    </style>
 
+    <div id="google_translate_element" class="gtranslate_hidden"></div>
+
+    <script>
+      window.gtranslateSettings = {
+        "default_language": "eng",
+        "detect_browser_language": true,
+        "wrapper_selector": "#google_translate_element"
+      };
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
   </div>
-  <style>
-    .gtranslate_hidden {
-      display: none;
-    }
-  </style>
-  
-  <!-- Google Translate Wrapper with the hidden class -->
-  <div id="google_translate_element" class="gtranslate_hidden"></div>
-  
-  <!-- GTranslate settings and script -->
-  <script>
-    window.gtranslateSettings = {
-      "default_language": "eng",
-      "detect_browser_language": true,
-      "wrapper_selector": "#google_translate_element"
-    };
-  </script>
-  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
 </body>
-
 </html>
