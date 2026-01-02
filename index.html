@@ -226,6 +226,11 @@
       transform: translateY(-1px);
     }
 
+    /* Hide text on desktop, show only icons */
+    .nav-link span {
+      display: none;
+    }
+
     .hamburger {
       display: none;
       flex-direction: column;
@@ -297,6 +302,10 @@
         width: 100%;
         padding: 0.75rem 0;
         font-size: 1.1rem;
+      }
+
+      .nav-link span {
+        display: inline;
       }
 
       .nav-link:hover {
@@ -501,11 +510,11 @@
         </div>
 
         <ul class="nav-menu" id="nav-menu">
-          <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-          <li><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-          <li><a class="nav-link" href="RateUs.html"><i class="fas fa-star"></i> Rate Us</a></li>
-          <li><a class="nav-link" href="contributor.html"><i class="fas fa-users"></i> Contributors</a></li>
+          <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
+          <li><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a></li>
+          <li><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+          <li><a class="nav-link" href="RateUs.html"><i class="fas fa-star"></i><span> Rate Us</span></a></li>
+          <li><a class="nav-link" href="contributor.html"><i class="fas fa-users"></i><span> Contributors</span></a></li>
         </ul>
       </div>
     </nav>
