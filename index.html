@@ -204,6 +204,10 @@
       transition: all 0.3s ease;
     }
 
+    .nav-link span {
+      margin-left: 0.5rem;
+    }
+
     .nav-link:hover {
       color: #fff;
       transform: translateY(-3px);
@@ -227,8 +231,10 @@
     }
 
     /* Hide text on desktop, show only icons */
-    .nav-link span {
-      display: none;
+    @media (min-width: 771px) {
+      .nav-link span {
+        display: none;
+      }
     }
 
     .hamburger {
