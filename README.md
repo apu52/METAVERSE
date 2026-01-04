@@ -59,6 +59,10 @@ Check the project structure here [Project Structure](PROJECT_STRUCTURE.md)
 
 <img width="686" height="386" alt="image" src="https://github.com/user-attachments/assets/f876222a-d4a7-4c44-a587-729a3a69e48b" />
 
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/4ad13bb0-4241-4e8f-be5f-93a0f4039fcf" />
+
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/dd66fa2b-b8fe-4633-b083-38f7e723357c" />
+
   
 </p>
 
