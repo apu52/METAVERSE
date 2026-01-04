@@ -128,9 +128,7 @@
     background: linear-gradient(to right, rgba(128, 128, 128, 0.5), rgba(64, 64, 64, 0.5));
     position: fixed;
     top: 0;
-    left: 20%;
-    width: 85%;
-    align-items: stretch;
+    width: 100%;
     height: auto; /* Adjust height for mobile */
     z-index: 100;
     padding: 1rem;
@@ -142,7 +140,6 @@
   }
 
   .radio-wrapper{
-    width: 100%;
     margin: 5px 0;
   }
 
@@ -176,4 +173,5 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
 
