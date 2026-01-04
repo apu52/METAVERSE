@@ -25,9 +25,9 @@ assignees: ''
 **Additional context(Mandatory)**
 
 - [ ] I have read the Contributing Guidelines *
-- [ ] I'm a KWOC 2025-26 contributor *
-- [ ] I'm a SWOC 2026 contributor *
-- [ ] I'm a ECWOC 2026 contributor *
+- [ ] I'm a KWOC 2025-26 contributor 
+- [ ] I'm a SWOC 2026 contributor 
+- [ ] I'm a ECWOC 2026 contributor 
 - [ ] I have starred the repository *
 
 <!-- Click The Above Checkboxes Correctly -->
