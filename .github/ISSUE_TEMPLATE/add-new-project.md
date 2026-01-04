@@ -1,16 +1,16 @@
 ---
-name: Add new WEB3 project
-about: 'Add your Web 3 project '
+name: Add NEW  project
+about: 'Add your NEW project '
 title: "[ADD]: "
 labels: New project
 assignees: ''
 
 ---
 
-**The name of the WEB 3 project you want to add:**
+**The name of the NEW project you want to add:**
 <!-- The title of your project-->
 
-**Describe the WEB 3project you want to add:**
+**Describe the NEW project you want to add:**
 <!-- A clear and concise description of the Project -->
 
 **Tech Stack of the project:**
@@ -25,7 +25,9 @@ assignees: ''
 **Additional context(Mandatory)**
 
 - [ ] I have read the Contributing Guidelines *
-- [ ] I'm a KWOC 2025 contributor
+- [ ] I'm a KWOC 2025-26 contributor *
+- [ ] I'm a SWOC 2026 contributor *
+- [ ] I'm a ECWOC 2026 contributor *
 - [ ] I have starred the repository *
 
 <!-- Click The Above Checkboxes Correctly -->
