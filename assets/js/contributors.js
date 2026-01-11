@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("contributors-container");
+  if (!container) return;
+
 document.addEventListener("DOMContentLoaded", function () {
     const contributorsContainer = document.getElementById("contributors");
     const statsContainer = document.getElementById("stats");
@@ -107,4 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     fetchData();
+  });
+
   });

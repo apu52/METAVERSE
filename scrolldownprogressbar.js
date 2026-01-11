@@ -1,15 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-   let progressBar = document.querySelector(".progress-bar");
- 
-   function updateProgressBar() {
-     let documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-     let progress = (scrollTop / documentHeight) * 100;
-     progressBar.style.width = progress + "%";
-   }
- 
-   window.addEventListener("scroll", updateProgressBar);
-   window.addEventListener("resize", updateProgressBar); // To handle changes in document height due to resizing
-   updateProgressBar(); // Initial call to set the progress bar on page load
- });
- 
+document.addEventListener("DOMContentLoaded", () => {
+  const progress = document.getElementById("progress");
+  if (!progress) return;
+
+  const calcScroll = () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const percent = Math.round((scrollTop / height) * 100);
+    progress.style.display = scrollTop > 100 ? "grid" : "none";
+    progress.style.background = `conic-gradient(#03cc65 ${percent}%, #d7d7d7 ${percent}%)`;
+  };
+
+  window.addEventListener("scroll", calcScroll);
+  progress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+});

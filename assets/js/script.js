@@ -37,9 +37,12 @@ function getProjectsInPage() {
 
   for (let i = 0; i < project.length; i++) {
     project[i].addEventListener("click", () => {
-      clickSound.play();
+      if (clickSound) {
+        clickSound.play();
+      }
     });
   }
+
 
   pageTile.forEach((elem, index) => {
     elem.addEventListener("click", () => {
@@ -159,18 +162,21 @@ function disableDarkTheme() {
   }
 }
 
-//On page load updating the theme toggle
-document.addEventListener("DOMContentLoaded", (event) => {
-  var savedTheme = localStorage.getItem("theme"); // Retrieve the theme state from local storage
-  var slider = document.getElementById("themeToggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("theme-toggle");
+  if (!slider) return; // ⛑️ IMPORTANT
+
+  const savedTheme = localStorage.getItem("theme") || "light";
+
   if (savedTheme === "dark") {
-    slider.checked = false; // Set the checkbox state
-    enableDarkTheme(); // Apply the dark theme
+    slider.checked = true;
+    enableDarkTheme();
   } else {
-    slider.checked = true; // Set the checkbox state
-    disableDarkTheme(); // Apply the light theme
+    slider.checked = false;
+    disableDarkTheme();
   }
 });
+
 
 function search() {
   let input = document.getElementById("searchbar").value.toLowerCase();

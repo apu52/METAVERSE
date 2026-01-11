@@ -212,9 +212,16 @@ You can find All the Projects
    npm install
    ```
 4. **Run the project**:
-   ```bash
-   npm start
-   ```
+
+This repository contains static front-end projects.
+
+You can run the project using any of the following methods:
+
+- Open the main `index.html` file directly in your browser
+- Open any project inside the `Projects/` folder by opening its `index.html`
+- (Recommended) Use VS Code Live Server extension for a better development experience
+
+⚠️ Note: This repository does not include an npm `start` script, so `npm start` will not work.
 5. **Contribution Guidelines**
 Move detailed steps to a new `CONTRIBUTING.md` file and link to it:
 
