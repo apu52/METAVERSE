@@ -255,22 +255,30 @@
 
       animateCircles();
     });
-    document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent form from submitting the traditional way
-      const emailInput = document.getElementById("email");
-      const email = emailInput.value.trim();
+    document.addEventListener("DOMContentLoaded", () => {
+  const newsletterForm = document.getElementById("newsletter-form");
+  if (!newsletterForm) return;
 
-      if (email) {
-        // Simulate a successful submission
-        document.querySelector(".success-message").style.display = "block";
-        document.querySelector(".error-message").style.display = "none";
-        emailInput.value = ""; // Clear the input
-      } else {
-        // Show an error message if something goes wrong
-        document.querySelector(".success-message").style.display = "none";
-        document.querySelector(".error-message").style.display = "block";
-      }
-    });
+  newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const emailInput = document.getElementById("email");
+    if (!emailInput) return;
+
+    const successMsg = document.querySelector(".success-message");
+    const errorMsg = document.querySelector(".error-message");
+
+    if (emailInput.value.trim()) {
+      successMsg && (successMsg.style.display = "block");
+      errorMsg && (errorMsg.style.display = "none");
+      emailInput.value = "";
+    } else {
+      successMsg && (successMsg.style.display = "none");
+      errorMsg && (errorMsg.style.display = "block");
+    }
+  });
+});
+
 
 
   </script>
