@@ -28,27 +28,29 @@
             background-color: #1a1a2e;
             color: white;
         }
+
         .navbar {
             display: flex;
-            position: fixed; /* Make the navigation bar fixed */
+            position: fixed;
+            /* Make the navigation bar fixed */
             top: 0;
-            left: 0; /* Center the navigation bar horizontally */
-            width: 100%; /* Set a smaller width (adjust as needed) */
+            left: 0;
+            /* Center the navigation bar horizontally */
+            width: 100%;
+            /* Set a smaller width (adjust as needed) */
             align-items: center;
             justify-content: center;
             padding: 10px 0;
             z-index: 100;
             /* Frosted Glass Effect with Gradient Background */
-            background: linear-gradient(
-                to right,
-                rgba(10, 10, 10, 0.281),
-                rgba(10, 10, 10, 0.281)
-            );
+            background: linear-gradient(to right,
+                    rgba(10, 10, 10, 0.281),
+                    rgba(10, 10, 10, 0.281));
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            
+
         }
 
         .nav-wrapper {
@@ -61,7 +63,8 @@
         }
 
         .nav-link {
-            color: white; /* Set default link color */
+            color: white;
+            /* Set default link color */
             text-decoration: none;
             font-size: 18px;
             padding: 8px 12px;
@@ -71,7 +74,7 @@
             align-items: center;
             gap: 5px;
             position: relative;
-            
+
         }
 
         .nav-link i {
@@ -83,16 +86,16 @@
             position: absolute;
             left: 50%;
             bottom: -5px;
-            width: 0%;            
-            height: 2px;            
-            background-color: #007bff;            
+            width: 0%;
+            height: 2px;
+            background-color: #007bff;
             transition: width 0.4s ease;
-            transform: translateX(-50%);            
+            transform: translateX(-50%);
         }
 
         .nav-link:hover {
             color: #007bff;
-            background-color: rgba(255, 255, 255, 0.1);    
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .nav-link:hover::after {
@@ -120,7 +123,7 @@
                 position: absolute;
                 right: 20px;
             }
-        
+
             .nav-wrapper {
                 display: none;
                 flex-direction: column;
@@ -184,7 +187,8 @@
             transform: translate(-50%, -50%);
             width: 80%;
             max-width: 600px;
-            margin-top: 60px; /* Added to account for fixed navbar */
+            margin-top: 60px;
+            /* Added to account for fixed navbar */
         }
 
         .container:hover {
@@ -273,7 +277,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        
+
         <div class="nav-wrapper" id="nav-wrapper">
             <a class="nav-link" href="./index.html">
                 <i class="fas fa-home"></i> Home
@@ -298,8 +302,8 @@
             <source src="./assets/main.webm" type="video/webm">
             <p>Your browser does not support HTML5 video.</p>
         </video>
-    </div>  
-    
+    </div>
+
     <div class="container">
         <div class="emojis">
             <span class="emoji" role="img" aria-label="cry">&#128546;</span>
@@ -316,7 +320,7 @@
         </div>
         <button class="submit-button">Submit</button>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script>
         let feedbackSubmitted = false;
@@ -337,7 +341,7 @@
             const selectedEmoji = document.querySelector('.emoji.selected');
             const feedback = document.querySelector('textarea').value;
             const email = document.querySelector('#email-input').value.trim();
-            
+
             if (feedbackSubmitted) {
                 Toastify({
                     text: "Review already submitted.",
