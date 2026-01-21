@@ -321,14 +321,21 @@
     <script>
         let feedbackSubmitted = false;
 
+        const textarea = document.querySelector('.textarea-container textarea');
         document.querySelectorAll('.emoji').forEach(emoji => {
             emoji.addEventListener('click', () => {
                 if (feedbackSubmitted) {
                     document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
                     emoji.classList.add('selected');
-                } else {
+                    const current = textarea.value.replace(/^[^\s]+\s?/, '').trim(); // ✅ added
+                    textarea.value = `${emoji.textContent} ${current}`.trim() + " ";
+                    textarea.focus();
+            } else {
                     document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
                     emoji.classList.add('selected');
+                    const current = textarea.value.replace(/^[^\s]+\s?/, '').trim(); // ✅ added
+                    textarea.value = `${emoji.textContent} ${current}`.trim() + " ";
+                    textarea.focus();
                 }
             });
         });
