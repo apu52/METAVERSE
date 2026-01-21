@@ -327,14 +327,14 @@
                 if (feedbackSubmitted) {
                     document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
                     emoji.classList.add('selected');
-                    // Remove any existing leading emoji, then append the newly selected emoji
+                    // Remove any existing leading emoji, then append the newly selected emojis
                     const current = textarea.value.replace(/^[^\s]+\s?/, '').trim();
                     textarea.value = `${emoji.textContent} ${current}`.trim() + " ";
                     textarea.focus();
             } else {
                     document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
                     emoji.classList.add('selected');
-                    // Remove any existing leading emoji, then append the newly selected emoji
+                    // Remove any existing leading emoji, then append the newly selected emojis
                     const current = textarea.value.replace(/^[^\s]+\s?/, '').trim();
                     textarea.value = `${emoji.textContent} ${current}`.trim() + " ";
                     textarea.focus();
