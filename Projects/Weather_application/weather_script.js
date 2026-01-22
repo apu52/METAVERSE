@@ -13,7 +13,12 @@ fetch(
   'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+ city,
   options
 )
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+        throw new Error("City not found");
+    }
+    return response.json();
+  })
   .then((response) => {
       temp.innerHTML = response.temp;
       temp2.innerHTML = response.temp;
@@ -30,7 +35,10 @@ fetch(
     sunrise.innerHTML = response.sunrise;
     sunset.innerHTML = response.sunset;
   })
-  .catch((err) => console.error(err));
+  .catch((err) => {
+    console.error(err);
+    alert("Failed to fetch weather data: " + err.message);
+  });
 }
 submit.addEventListener("click",(e)=>{
     e.preventDefault()

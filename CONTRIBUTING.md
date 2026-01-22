@@ -17,7 +17,7 @@ If you'd like to dive into existing projects, you're welcome to contribute by ad
 
  ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-## Bonus Wat to Contribute?
+## Bonus Way to Contribute?
 
 
 🚀 **Showcase & Integrate Your Projects in This Repository** 🌐
