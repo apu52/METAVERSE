@@ -123,8 +123,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+  .main-content .container {
     background: linear-gradient(to right, rgba(128, 128, 128, 0.5), rgba(64, 64, 64, 0.5));
     position: fixed;
     top: 0;
@@ -176,4 +175,5 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
 
