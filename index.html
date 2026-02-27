@@ -560,7 +560,7 @@
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
             <a href="copyright.html" target="_blank"
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-              <p class="copyright">© 2024 METAVERSE</p>
+              <p class="copyright">© <span class="current-year"></span> METAVERSE</p>
           </div>
         </div>
       </div>
@@ -604,6 +604,14 @@
   </script>
   <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
-</body>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const yearElements = document.querySelectorAll(".current-year");
+    yearElements.forEach(function(el) {
+      el.textContent = new Date().getFullYear();
+    });
+  });
+</script>
 
+</body>
 </html>
