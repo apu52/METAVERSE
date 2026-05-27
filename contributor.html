@@ -333,7 +333,7 @@
       <div class="hamburger" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-      <div class="container" id="nav-menu">
+      <div class="container navbar-container" id="nav-menu">
         <div class="radio-wrapper">
           <div class="btn">
             <a id="aid" class="nav-link white-text" href="index.html" style="color: white;">
@@ -447,7 +447,7 @@
             style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
           <a href="copyright.html" target="_blank"
             style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-            <p class="copyright">© 2024 METAVERSE</p>
+              <p class="copyright">© <span class="current-year"></span> METAVERSE</p>
         </div>
       </div>
     </footer>
@@ -474,6 +474,7 @@
       const navMenu = document.getElementById('nav-menu');
       navMenu.classList.toggle('active');
     }
+    document.querySelectorAll('.current-year').forEach(el => el.textContent = new Date().getFullYear());
   </script>
   <script> //for the contributors display and spinner 
     function toggleMenu() {

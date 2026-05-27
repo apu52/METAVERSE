@@ -1458,6 +1458,8 @@ ul.socials {
   margin-bottom: 40px;
   text-align: justify;
   line-height: 1.4;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");

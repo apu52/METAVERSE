@@ -37,7 +37,7 @@ function getProjectsInPage() {
 
   for (let i = 0; i < project.length; i++) {
     project[i].addEventListener("click", () => {
-      clickSound.play();
+      if (clickSound) clickSound.play();
     });
   }
 

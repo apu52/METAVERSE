@@ -25,6 +25,13 @@ body.dark {
     height: 34px;
 }
 
+@media (max-width: 768px) {
+    .switch {
+        top: 10px;
+        right: 10px;
+    }
+}
+
 /* Hide checkbox */
 .switch input {
     opacity: 0;

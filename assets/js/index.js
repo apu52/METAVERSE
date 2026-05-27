@@ -47,7 +47,7 @@ function levenshteinDistance(a, b) {
 
 // Modified fetch function to include filtering
 function fetchAndFilterProjects() {
-  fetch('../../projectData.json')
+  fetch('./projectData.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
