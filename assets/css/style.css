@@ -1595,3 +1595,19 @@ ul.socials {
   font-style: italic;
 }
 
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+.no-result-heading {
+  font-size: 24px;
+  color: #ff4444;
+  margin-bottom: 20px;
+}
+.no-results-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
