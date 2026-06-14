@@ -360,6 +360,12 @@
         .container.active {
           display: flex;
         }
+
+        .heading-container .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
       }
       .navbar{
         background-color: rgba(49, 49, 49, 0.528);
@@ -421,14 +427,14 @@
           <div class="heading">
             <span>🚀&nbsp;</span><span>M</span><span>E</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
           </div>
-          <div class="container">
-            
-            <label class="switch">
-                <input type="checkbox" id="theme-toggle">
-                <span class="slider"></span>
-            </label>
-           
-        </div>
+          <div class="heading-container">
+            <div class="container">
+              <label class="switch">
+                  <input type="checkbox" id="theme-toggle">
+                  <span class="slider"></span>
+              </label>
+            </div>
+          </div>
         </div>
 
 
@@ -560,7 +566,7 @@
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
             <a href="copyright.html" target="_blank"
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-              <p class="copyright">© 2024 METAVERSE</p>
+              <p class="copyright">© <span id="current-year"></span> METAVERSE</p>
           </div>
         </div>
       </div>
@@ -581,6 +587,9 @@
     <!-- <script src="./assets/js/mouse_transition.js"></script> -->
     <script src="scrolldownprogressbar.js"></script>
     <script src="./assets/js/subscribe.js"></script>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   
 
