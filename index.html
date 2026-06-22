@@ -355,10 +355,25 @@
         .container {
           display: none;
           flex-direction: column;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          left: auto;
+          width: 280px;
+          height: 100vh;
+          z-index: 1000;
+          padding: 5rem 1rem 1rem;
+          background: linear-gradient(to right, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.95));
+          border-radius: 0;
+          border: none;
+          transition: right 0.3s ease-in-out;
+          margin-top: 0;
+          transform: none;
         }
 
         .container.active {
           display: flex;
+          right: 0;
         }
       }
       .navbar{
@@ -560,7 +575,7 @@
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
             <a href="copyright.html" target="_blank"
               style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-              <p class="copyright">© 2024 METAVERSE</p>
+              <p class="copyright">© <span id="year"></span> METAVERSE</p>
           </div>
         </div>
       </div>
@@ -603,7 +618,7 @@
     };
   </script>
   <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-
+  <script>document.getElementById("year").textContent = new Date().getFullYear()</script>
 </body>
 
 </html>

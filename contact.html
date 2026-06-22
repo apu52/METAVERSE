@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/scroll.css">
   <link rel="stylesheet" href="./assets/css/contributors.css">
+  <link rel="stylesheet" href="./assets/css/themeToggle.css">
 
   <!--
     - google font link
@@ -210,11 +211,6 @@
 
 
 <!-- <p class="invert-color" style="position: sticky; top: 30px; z-index:100; margin-left: 30px;">Theme :</p> -->
-<label class="theme-toggle" for="themeToggle" style="position: fixed; top: 28px; z-index: 100; margin-left: 30px;">
-
-  <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-  <span class="slider"></span>
-</label>
 
 <body>
   <div class="circle-container">
@@ -325,6 +321,7 @@
     <style>
       .main {
         padding-top: 4rem;
+        position: relative;
       }
 
       .container {
@@ -356,12 +353,26 @@
         }
 
         .container {
-          display: none;
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          left: auto;
+          width: 280px;
+          height: 100vh;
+          z-index: 1000;
+          padding: 5rem 1rem 1rem;
+          background: linear-gradient(to right, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.95));
+          border-radius: 0;
+          border: none;
+          transition: right 0.3s ease-in-out;
+          margin-top: 0;
+          transform: none;
         }
 
         .container.active {
-          display: flex;
-          flex-direction: column;
+          right: 0;
         }
       }
     </style>
@@ -438,10 +449,12 @@
           <div class="heading">
             <span>💻&nbsp;</span><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span><span>&nbsp;</span><span>&nbsp;</span><span>U</span><span>S</span>
           </div>
-          <label class="theme-toggle" for="themeToggle" style="z-index: 100; margin-top: -270px; ">
-
-            <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked aria-label="Switch theme mode">
-          </label>
+          <div class="container">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+          </div>
         </div>
         <br>
 
@@ -714,7 +727,7 @@
                   style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Privacy Notice</a>
                 <a href="copyright.html" target="_blank"
                   style="font-size: 20px; font-style:cursive;color: rgb(215, 213, 85);"> Copyright Policy</a>
-                  <p class="copyright">© 2024 METAVERSE</p>
+                  <p class="copyright">© <span id="year"></span> METAVERSE</p>
               </div>
             </div>
           </footer>
@@ -739,6 +752,8 @@
     <script src="./assets/js/mouse_transition.js"></script>
     <!-- <script src="./assets/js/contact.js"></script> -->
     <script src="./assets/js/contactus.js"></script>
+    <script src="./assets/js/toggletheme.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear()</script>
   </div>
 </body>
 
