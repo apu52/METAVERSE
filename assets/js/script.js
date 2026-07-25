@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 function search() {
   let input = document.getElementById("searchbar").value.toLowerCase();
   let hasResults = false; // Initialize as false
-  let searchelement = document.getElementsByClassName("project-item active");
+  let searchelement = document.getElementsByClassName("project-item");
 
   for (let i = 0; i < searchelement.length; i++) {
     if (searchelement[i].innerHTML.toLowerCase().includes(input)) {

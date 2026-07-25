@@ -40,15 +40,6 @@ const contactSchema = new mongoose.Schema({
   date: { type: Date, default: Date.now },
 });
 
-const feedbackSchema = new mongoose.Schema({
-  feedback: {
-    type: String,
-    trim: true,
-  },
-});
-
-const Feedback = mongoose.model("Feedbabck", feedbackSchema);
-
 const Contact = mongoose.model("Contact", contactSchema);
 
 app.post("/contact", async (req, res) => {
