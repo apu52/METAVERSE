@@ -25,7 +25,7 @@ const addInsects = () => {
 const catchInsect = function () {
   increaseScore();
   this.classList.add("caught");
-  setTimeout(() => this.remove, 2000);
+  setTimeout(() => this.remove(), 2000);
   addInsects();
 };
 
