@@ -23,7 +23,7 @@ const subscribeUser = async (req, res) => {
       to: email,
       subject: 'Thank you for subscribing to Metaverse!',
       html: `<h3>Welcome to our Newsletter!</h3>
-             <p>Thank you for subscribing to metavserse Stay tuned for the latest updates.</p>`
+             <p>Thank you for subscribing to Metaverse! Stay tuned for the latest updates.</p>`
     };
 
    
