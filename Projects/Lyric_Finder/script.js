@@ -18,7 +18,9 @@ function searchMusic(){
     const keyword = inputMusic.value;
     fetch(`https://api.lyrics.ovh/suggest/${keyword}`)
     .then(res => res.json())
+.catch(err => console.error(err))
     .then(data => {   
+.catch(err => console.error(err))
         // Data is stored for using in getDetails and getLyrics function
         storedData = data;
         console.log(data);
