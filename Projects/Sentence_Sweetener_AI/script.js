@@ -21,24 +21,4 @@ function generateFunnyLine() {
 
     if (userInput.trim() !== '') {
         query({ inputs: userInput }).then((response) => {
-            console.log("API Response:", response);
-            displayResult(response);
-        });
-    } else {
-        alert('Please enter a sentence.');
-    }
-}
-
-function displayResult(response) {
-  const resultContainer = document.getElementById('result');
-  const generatedText = response[0].generated_text;
-
-  // Find the position of the first newline character
-  const newlineIndex = generatedText.indexOf('\n');
-
-  // Extract the substring before the newline character, or use the entire string if no newline is found
-  const displayText = newlineIndex !== -1 ? generatedText.substring(0, newlineIndex-2) : generatedText;
-
-  resultContainer.innerHTML = `<p><strong>Generated Line:</strong> ${displayText}</p>`;
-}
-
+        .catch(err => console.error(err))

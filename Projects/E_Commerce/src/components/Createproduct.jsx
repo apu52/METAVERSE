@@ -35,34 +35,4 @@ function Create(){
             },
             )
             .then((result)=>{
-                alert('Product Created Successfully and added to Product List.');
-            })
-        }
-        catch(error){
-            console.log(error);
-        }
-    }
-    const handleButtonClick = async () => {
-        await createProduct();
-    };
-    return (
-        <div>
-            <Navbar />
-            <div className="create_form container">
-                <div className="option__">
-                    <p id="create_option">Create Product</p>
-                </div>
-                <div className="inputs__">
-                    <input type='text' value={title} onChange={(e)=>setTitle(e.target.value)} placeholder='Name of Product' required/>
-                    <input type='text' value={category}  onChange={(e)=>setCategory(e.target.value)} placeholder='Category'/>
-                    <input type='number' value={price}  onChange={(e)=>setPrice(e.target.value)} placeholder='Price'/>
-                    <input type='text' value={img_url}  onChange={(e)=>setImgUrl(e.target.value)} placeholder='Image URL'/>
-                    <textarea  value={description}  onChange={(e)=>setDescription(e.target.value)} placeholder="Description"></textarea>
-                    <button id="button_" onClick={handleButtonClick} type="submit">Create</button>
-                </div>
-            </div>
-            <Footer />
-        </div>
-    )
-}
-export default Create;
+            .catch(err => console.error(err))
