@@ -117,7 +117,7 @@ function moveEnemyCars(carElement){
 
 function getHighestScore() {
     // Retrieve the highest score from local storage, or default to 0 if not present
-    return parseInt(localStorage.getItem('highestScore')) || 0;
+    return parseInt(localStorage.getItem('highestScore', 10)) || 0;
   }
 // Function to update the highest score in local storage
 function updateHighestScore(newScore) {
