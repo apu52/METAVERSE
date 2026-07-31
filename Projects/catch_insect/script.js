@@ -14,7 +14,7 @@ startButton.addEventListener("click", () => screens[0].classList.add("up"));
 const increaseScore = () => {
   score++;
   if (score > 19) message.classList.add("visible");
-  scoreElement.innerHTML = `Score: ${score}`;
+  scoreElement.textContent = `Score: ${score}`;
 };
 
 const addInsects = () => {
@@ -43,7 +43,7 @@ const createInsect = () => {
   const { x, y } = getRandomLocation();
   insect.style.top = `${y}px`;
   insect.style.left = `${x}px`;
-  insect.innerHTML = `<img src="${selectedInsect.src}" 
+  insect.textContent = `<img src="${selectedInsect.src}" 
   alt="${selectedInsect.alt}" 
   style="transform: rotate(${Math.random() * 360}deg)" />`;
   insect.addEventListener("click", catchInsect);
@@ -55,7 +55,7 @@ const increaseTime = () => {
   let s = seconds % 60;
   m = m < 10 ? `0${m}` : m;
   s = s < 10 ? `0${s}` : s;
-  timeElement.innerHTML = `Time: ${m}:${s}`;
+  timeElement.textContent = `Time: ${m}:${s}`;
   seconds++;
 };
 
