@@ -7,13 +7,13 @@ var images2= "images/dice" + randomnumber2 + ".png";
 document.querySelector(".dice .img1").setAttribute("src",images1);
 document.querySelector(".dice  .img2").setAttribute("src",images2);
 if (randomnumber1 === randomnumber2) {
-    document.querySelector("h1").innerHTML = "Draw, Roll Dice Again"
+    document.querySelector("h1").textContent = "Draw, Roll Dice Again"
 } 
 
 else if (randomnumber1 < randomnumber2) {
-    document.querySelector("h1").innerHTML = "Player 2 wins"
+    document.querySelector("h1").textContent = "Player 2 wins"
 } 
 
 else {
-    document.querySelector("h1").innerHTML = "Player 1 wins"
+    document.querySelector("h1").textContent = "Player 1 wins"
 }

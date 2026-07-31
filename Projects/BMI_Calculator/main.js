@@ -21,15 +21,15 @@ function calculate() {
 	
 
 	if (weight === 0 ) {
-		document.getElementById("results").innerHTML = error;
+		document.getElementById("results").textContent = error;
 	} else if (height === 0){
-		document.getElementById("results").innerHTML = error;
+		document.getElementById("results").textContent = error;
 	}
 	 else {
 
-		document.getElementById("results").innerHTML = measure;
+		document.getElementById("results").textContent = measure;
 	}
 	if (weight < 0) {
-		document.getElementById("results").innerHTML = "Negative Values not Allowed";
+		document.getElementById("results").textContent = "Negative Values not Allowed";
 	}
 }
