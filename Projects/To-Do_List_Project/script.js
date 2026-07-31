@@ -8,10 +8,10 @@ function addTask() {
     }
     else {
         let li = document.createElement("li");
-        li.innerHTML = inputbox.value;
+        li.textContent = inputbox.value;
         listcontainer.appendChild(li);
         let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
+        span.textContent = "\u00d7";
         li.appendChild(span);
     }
     inputbox.value = "";
@@ -35,7 +35,7 @@ function savedata() {
 }
 
 function showlist() {
-    listcontainer.innerHTML = localStorage.getItem("data");
+    listcontainer.textContent = localStorage.getItem("data");
 }
 
 showlist();
