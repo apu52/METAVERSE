@@ -44,12 +44,12 @@ const populateYearSelect = () => {
 
 populateYearSelect();
 yearSelect.addEventListener('change', () => {
-  currYear = parseInt(yearSelect.value);
+  currYear = parseInt(yearSelect.value, 10);
   renderCalendar();
 });
 
 monthSelect.addEventListener('change', () => {
-  currMonth = parseInt(monthSelect.value);
+  currMonth = parseInt(monthSelect.value, 10);
   renderCalendar();
 });
 
