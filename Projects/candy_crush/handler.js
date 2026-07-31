@@ -10,7 +10,7 @@ Math.seedrandom(0);
 $.extend({
 	getUrlVars: function() {
 		var vars = [], pair;
-		var pairs = window.location.search.substr(1).split('&');
+		var pairs = window.location.search.slice(1).split('&');
 		for (var i = 0; i < pairs.length; i++) {
 			pair = pairs[i].split('=');
 			vars.push(pair[0]);
