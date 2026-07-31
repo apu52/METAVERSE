@@ -15,7 +15,7 @@ const resetGame = () => {
     wrongGuessCount = 0;
     hangmanImage.src = "images/hangman-0.svg";
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
-    wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
+    wordDisplay.textContent = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
     gameModal.classList.remove("show");
 }
@@ -33,7 +33,7 @@ const gameOver = (isVictory) => {
     const modalText = isVictory ? `You found the word:` : 'The correct word was:';
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
-    gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
+    gameModal.querySelector("p").textContent = `${modalText} <b>${currentWord}</b>`;
     gameModal.classList.add("show");
 }
 

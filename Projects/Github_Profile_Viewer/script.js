@@ -28,7 +28,7 @@ const displayUserProfile = (user) => {
       <a href="${user.html_url}" target="_blank">View on GitHub</a>
     </div>
   `;
-  profileContainer.innerHTML = profileHTML;
+  profileContainer.textContent = profileHTML;
 };
 
 const displayUserRepos = (repos, options) => {
@@ -39,7 +39,7 @@ const displayUserRepos = (repos, options) => {
     const repoElement = document.createElement("div");
     repoElement.classList.add("repo");
 
-    repoElement.innerHTML = `
+    repoElement.textContent = `
       <h3>${repo.name}</h3>
       <p>${repo.description || "No description available"}</p>
       <p>Language: ${repo.language || "Unknown"}</p>
@@ -54,7 +54,7 @@ const displayUserRepos = (repos, options) => {
 };
 
 const displayError = (message) => {
-  profileContainer.innerHTML = `<p class="error">${message}</p>`;
+  profileContainer.textContent = `<p class="error">${message}</p>`;
 };
 
 form.addEventListener("submit", (e) => {
