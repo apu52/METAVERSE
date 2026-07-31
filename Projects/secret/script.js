@@ -25,7 +25,7 @@ const displayTasks = () => {
   let decryPtedTasks=Object.keys(localStorage);
   let tasks = Object.keys(localStorage);
 
-  tasks = tasks.sort();
+  tasks = tasks.sort((a, b) => a - b);
   console.log("encrypted data : ")
   for (let key of tasks) {
     let classValue = "";
