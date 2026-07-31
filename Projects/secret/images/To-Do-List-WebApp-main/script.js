@@ -25,7 +25,7 @@ const displayTasks = () => {
 
   //Fetch All The Keys in local storage
   let tasks = Object.keys(localStorage);
-  tasks = tasks.sort();
+  tasks = tasks.sort((a, b) => a - b);
 
   for (let key of tasks) {
     let classValue = "";
