@@ -42,8 +42,8 @@ document.getElementById("stop").addEventListener("click", function () {
 
 document.getElementById("set").addEventListener("click", function (evt) {
    evt.preventDefault()
-   hr = parseInt(document.getElementById("hr").value);
-   mr = parseInt(document.getElementById("mr").value);
+   hr = parseInt(document.getElementById("hr", 10).value);
+   mr = parseInt(document.getElementById("mr", 10).value);
 
    document.getElementById("hr").value = ""
    document.getElementById("mr").value = ""
