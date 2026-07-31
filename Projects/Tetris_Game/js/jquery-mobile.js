@@ -14461,7 +14461,7 @@ $.widget( "ui.tabs", {
 				$.map( this.tabs.filter( ".ui-state-disabled" ), function( li ) {
 					return that.tabs.index( li );
 				})
-			) ).sort();
+			) ).sort((a, b) => a - b);
 		}
 
 		// check for length avoids error when initializing empty list
@@ -15143,7 +15143,7 @@ $.widget( "ui.tabs", {
 				return;
 			}
 			if ( $.isArray( disabled ) ) {
-				disabled = $.merge( [ index ], disabled ).sort();
+				disabled = $.merge( [ index ], disabled ).sort((a, b) => a - b);
 			} else {
 				disabled = [ index ];
 			}
