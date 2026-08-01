@@ -43,35 +43,4 @@ function Update(){
         },
         )
         .then(()=>{
-            alert('Product Updated Successfully!! You can check in Products Section.');
-        })
-    }
-    const handleButtonClick = async () => {
-        await updProduct();
-    };
-    return (
-        <div>
-            <Navbar />
-            <div className="create_form container">
-                <div className="option__">
-                    <p id="create_option">Update Product</p>
-                </div>
-                <div className="inputs__">
-                    <label>Title*</label>
-                    <input type='text' value={title} onChange={(e)=>setTitle(e.target.value)} placeholder='Name of Product'/>
-                    <label>Category</label>
-                    <input type='text' value={category}  onChange={(e)=>setCategory(e.target.value)} placeholder='Category'/>
-                    <label>Price*</label>
-                    <input type='number' value={price}  onChange={(e)=>setPrice(e.target.value)} placeholder='Price'/>
-                    <label>Image_URL</label>
-                    <input type='text' value={img_url}  onChange={(e)=>setImgUrl(e.target.value)} placeholder='Image URL'/>
-                    <label>Description*</label>
-                    <textarea  value={description}  onChange={(e)=>setDescription(e.target.value)} placeholder="Description"></textarea>
-                    <button id="button_" onClick={handleButtonClick} type="submit">Update</button>
-                </div>
-            </div>
-            <Footer />
-        </div>
-    )
-}
-export default Update;
+        .catch(err => console.error(err))

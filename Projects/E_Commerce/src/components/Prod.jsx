@@ -31,44 +31,4 @@ function Prod(props){
             method:"DELETE"
         })
         .then((res)=>{
-            return res;
-        })
-        .then(()=>{
-            window.location.reload(false);
-        })
-    }
-    return (
-        <div className="card" style={{width: "18rem"}}>
-            {!showReview && (
-            <img className="card-img-top" id="img_prod" src={props.imgurl} alt="Card image cap" />)}
-            {showReview && (
-            <div className={`card-img-top review ${showReview ? "show-review" : ""}`}>
-                <h1>Description</h1>
-                <p className="describe">{props.description}</p>
-                <h1>Review</h1>
-                <p className="ratings">{stars[(Math.floor(5*Math.random()))]}</p>
-                <div className="update_del options">
-                    <Link to="/update" style={{width:"100%",height:"100%"}}><button type="submit" onClick={updProduct} className="update_button button">Update</button></Link>
-                    <button type="submit" onClick={deletE} className="delete_button button">Delete</button>
-                </div>
-            </div>
-            )}
-            <div className="product_body">
-                <p className="card-title product_name">{props.title}</p>
-                <p className="product_name"><strong>&#8377;</strong>&nbsp;{props.price}</p>
-            </div>
-            <div className="description">
-                <p id="des" onClick={toggleReview}>{flag?"Image":"Description"}</p>
-            </div>
-            <div className="options">
-                <div className="add_to_cart">
-                    <a href="#">Add to Cart</a>
-                </div>
-                <div className="buy_now">
-                    <a href="#" className="card-link">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    )
-}
-export {Prod,dict};
+        .catch(err => console.error(err))
