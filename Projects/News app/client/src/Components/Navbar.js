@@ -11,7 +11,7 @@ const Navbar = () => {
         if (!token) {
         navigate('/');
         } else {
-        const userData = JSON.parse(localStorage.getItem('user'));
+        const userData = (() => { try { return JSON.parse(localStorage.getItem('user')) } catch { return null } })();
         setUser(userData);
         }
     }, [navigate]);
