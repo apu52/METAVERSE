@@ -9,7 +9,7 @@ const Navbar = (props) => {
   const Logout=()=>{
     toast.success("Logged Out Successfully");
     localStorage.removeItem("useraudify");
-   const user= JSON.parse(localStorage.getItem("useraudify"));
+   const user= (() => { try { return JSON.parse(localStorage.getItem("useraudify")) } catch { return null } })();
    
    props.updateUser(user);
    

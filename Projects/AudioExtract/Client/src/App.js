@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     // const user_after_every_load=
-    setLoginUser(JSON.parse(localStorage.getItem("useraudify")));
+    setLoginUser((() => { try { return JSON.parse(localStorage.getItem("useraudify")) } catch { return null } })());
   }, []);
   const updateUser = (user) => {
     localStorage.setItem("useraudify", JSON.stringify(user));

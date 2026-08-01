@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 const Audiolist = (props) => {
   const [audiofiles, setAudiofiles] = useState([]);
-  const user = JSON.parse(localStorage.getItem("useraudify"));
+  const user = (() => { try { return JSON.parse(localStorage.getItem("useraudify")) } catch { return null } })();
   const email = user.email;
   const trashcan = document.querySelector("span.deletefile");
   const handleDelete = () => {

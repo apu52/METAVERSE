@@ -54,7 +54,7 @@ function Navbar({ updateUser,openModal }) {
             Contact
           </Link>
         </li>
-        {JSON.parse(localStorage.getItem("Data")) && (
+        {(() => { try { return JSON.parse(localStorage.getItem("Data")) } catch { return null } })() && (
           <>
             <li>
               <a href="/menu">Menu</a>
