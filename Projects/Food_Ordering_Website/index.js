@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = button.getAttribute('data-item');
         const price = parseFloat(button.getAttribute('data-price'));
         const image = button.getAttribute('data-image');
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cart = (() => { try { return JSON.parse(localStorage.getItem('cart')) } catch { return null } })() || [];
 
         const existingItemIndex = cart.findIndex(cartItem => cartItem.item === item);
 

@@ -6,7 +6,7 @@ const movieSelect = document.getElementById("movie");
 let ticketPrice = +movieSelect.value;
 
 function populateUI() {
-  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
+  const selectedSeats = (() => { try { return JSON.parse(localStorage.getItem("selectedSeats")) } catch { return null } })();
   if (selectedSeats !== null && selectedSeats.length > 0) {
     seats.forEach((seat, index) => {
       if (selectedSeats.indexOf(index) > -1) seat.classList.add("selected");
