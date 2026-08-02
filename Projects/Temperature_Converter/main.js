@@ -6,7 +6,7 @@ function currentTime() {
     let mn = date.getMinutes();
     let ss = date.getSeconds();
     let current_time = `${hr}:${mn}:${ss}`;
-    p1.innerHTML = current_time;
+    p1.textContent = current_time;
     setTimeout(currentTime, 1000);
 }
 currentTime();
@@ -18,7 +18,7 @@ function temperature() {
     let type2 = document.querySelector("#type2").value;
     let result = document.querySelector("#result");
 
-    if (isNaN(inputValue)) {
+    if (Number.isNaN(inputValue)) {
         alert("Please enter a valid number.");
         return;
     }

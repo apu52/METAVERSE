@@ -121,7 +121,7 @@ var budgetController=(function(){
         },
 
         getPercentage: function(){
-            var allPerc=data.allItems.exp.map(function(cur){
+            var allPerc=data.allItems.(exp ?? []).map(function(cur){
                 return cur.getPercentage();
             });
             return allPerc;
@@ -334,7 +334,7 @@ var ctrlAddItem = function(){
     
     //1 get field input data 
     input=UICtrl.getinput();
-    if (input.description !=="" && !isNaN(input.value) && input.value>0){ 
+    if (input.description !=="" && !Number.isNaN(input.value) && input.value>0){ 
     
     //2 add the item to budget to budget controller
     newItem=budgetCtrl.addItem(input.type,input.description,input.value);
@@ -360,7 +360,7 @@ var ctrlDeleteItem=function(event){
         //inc-1
         splitID=itemID.split('-');
         type=splitID[0];
-        ID=parseInt(splitID[1]); 
+        ID=parseInt(splitID[1], 10); 
 
         //1. delete Item from data structure
         budgetCtrl.deleteItem(type,ID)

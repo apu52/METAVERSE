@@ -197,7 +197,7 @@
                     return null;
                 }
                 var time = Math.round(this.sound.currentTime * 100) / 100;
-                return isNaN(time) ? buzz.defaults.placeholder : time;
+                return Number.isNaN(time) ? buzz.defaults.placeholder : time;
             };
             this.setPercent = function(percent) {
                 if (!supported) {
@@ -210,7 +210,7 @@
                     return null;
                 }
                 var percent = Math.round(buzz.toPercent(this.sound.currentTime, this.sound.duration));
-                return isNaN(percent) ? buzz.defaults.placeholder : percent;
+                return Number.isNaN(percent) ? buzz.defaults.placeholder : percent;
             };
             this.setSpeed = function(duration) {
                 if (!supported) {
@@ -230,7 +230,7 @@
                     return null;
                 }
                 var duration = Math.round(this.sound.duration * 100) / 100;
-                return isNaN(duration) ? buzz.defaults.placeholder : duration;
+                return Number.isNaN(duration) ? buzz.defaults.placeholder : duration;
             };
             this.getPlayed = function() {
                 if (!supported) {
@@ -700,11 +700,11 @@
         toTimer: function(time, withHours) {
             var h, m, s;
             h = Math.floor(time / 3600);
-            h = isNaN(h) ? "--" : h >= 10 ? h : "0" + h;
+            h = Number.isNaN(h) ? "--" : h >= 10 ? h : "0" + h;
             m = withHours ? Math.floor(time / 60 % 60) : Math.floor(time / 60);
-            m = isNaN(m) ? "--" : m >= 10 ? m : "0" + m;
+            m = Number.isNaN(m) ? "--" : m >= 10 ? m : "0" + m;
             s = Math.floor(time % 60);
-            s = isNaN(s) ? "--" : s >= 10 ? s : "0" + s;
+            s = Number.isNaN(s) ? "--" : s >= 10 ? s : "0" + s;
             return withHours ? h + ":" + m + ":" + s : m + ":" + s;
         },
         fromTimer: function(time) {
