@@ -360,7 +360,7 @@ var ctrlDeleteItem=function(event){
         //inc-1
         splitID=itemID.split('-');
         type=splitID[0];
-        ID=parseInt(splitID[1]); 
+        ID=parseInt(splitID[1], 10); 
 
         //1. delete Item from data structure
         budgetCtrl.deleteItem(type,ID)
