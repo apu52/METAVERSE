@@ -334,7 +334,7 @@ var ctrlAddItem = function(){
     
     //1 get field input data 
     input=UICtrl.getinput();
-    if (input.description !=="" && !isNaN(input.value) && input.value>0){ 
+    if (input.description !=="" && !Number.isNaN(input.value) && input.value>0){ 
     
     //2 add the item to budget to budget controller
     newItem=budgetCtrl.addItem(input.type,input.description,input.value);
