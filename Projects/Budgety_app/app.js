@@ -121,7 +121,7 @@ var budgetController=(function(){
         },
 
         getPercentage: function(){
-            var allPerc=data.allItems.exp.map(function(cur){
+            var allPerc=data.allItems.(exp ?? []).map(function(cur){
                 return cur.getPercentage();
             });
             return allPerc;
