@@ -59,7 +59,7 @@ setTimeout(updatetext , 100);
 
 // function update()
 // {
-//   containerE1.innerHTML = `i am a dev`
+//   containerE1.textContent = `i am a dev`
 // }
   // if(document.getElementById("links").style.display ="unset")
   // {
