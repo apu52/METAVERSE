@@ -6,7 +6,7 @@ function currentTime() {
     let mn = date.getMinutes();
     let ss = date.getSeconds();
     let current_time = `${hr}:${mn}:${ss}`;
-    p1.innerHTML = current_time;
+    p1.textContent = current_time;
     setTimeout(currentTime, 1000);
 }
 currentTime();
