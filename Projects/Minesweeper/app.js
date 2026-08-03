@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isGameOver = false
   
     function createBoard() {
-      flagsLeft.innerHTML = bombAmount
+      flagsLeft.textContent = bombAmount
   
       const bombsArray = Array(bombAmount).fill('bomb')
       const emptyArray = Array(width*width - bombAmount).fill('valid')
