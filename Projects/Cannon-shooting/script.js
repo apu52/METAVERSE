@@ -11,7 +11,7 @@ let hitAudio = new Audio('http://soundbible.com/mp3/Sniper_Rifle-Kibblesbob-2053
 let fireAudio = new Audio('http://soundbible.com/mp3/Super%20Punch%20MMA-SoundBible.com-1869306362.mp3');
 
 // counter 
-setInterval( ()=> {
+clearInterval(window.__interval); window.__interval = setInterval( ()=> {
   countdown = countdown > 0? countdown : 0;
   $('.countdown').text(countdown-- );
 },1000)
