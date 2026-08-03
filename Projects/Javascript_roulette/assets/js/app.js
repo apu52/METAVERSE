@@ -40,7 +40,7 @@ function gameOver(){
 	notification.setAttribute('id', 'notification');
 		let nSpan = document.createElement('span');
 		nSpan.setAttribute('class', 'nSpan');
-		nSpan.innerText = 'Bankrupt';
+		nSpan.textContent = 'Bankrupt';
 		notification.append(nSpan);
 
 		let nBtn = document.createElement('div');
