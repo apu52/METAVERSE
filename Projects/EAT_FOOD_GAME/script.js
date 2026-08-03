@@ -50,7 +50,7 @@ let helpers = {
     }
   },
   isCollision(v1, v2) {
-    return v1.x == v2.x && v1.y == v2.y;
+    return v1.x === v2.x && v1.y == v2.y;
   },
   garbageCollector() {
     for (let i = 0; i < particles.length; i++) {
