@@ -321,7 +321,7 @@ class Particle {
 
 function incrementScore() {
   score++;
-  dom_score.innerText = score.toString().padStart(2, "0");
+  dom_score.textContent = score.toString().padStart(2, "0");
 }
 
 function particleSplash() {
