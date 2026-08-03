@@ -39,6 +39,6 @@ function displayResult(response) {
   // Extract the substring before the newline character, or use the entire string if no newline is found
   const displayText = newlineIndex !== -1 ? generatedText.substring(0, newlineIndex-2) : generatedText;
 
-  resultContainer.innerHTML = `<p><strong>Generated Line:</strong> ${displayText}</p>`;
+  resultContainer.textContent = `<p><strong>Generated Line:</strong> ${displayText}</p>`;
 }
 
