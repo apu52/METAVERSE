@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let total = square.getAttribute('data')
         if (total !=0) {
           square.classList.add('checked')
-          if (total == 1) square.classList.add('one')
+          if (total === 1) square.classList.add('one')
           if (total == 2) square.classList.add('two')
           if (total == 3) square.classList.add('three')
           if (total == 4) square.classList.add('four')
