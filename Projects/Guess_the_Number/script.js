@@ -8,7 +8,7 @@ function generateRandomNumber() {
 }
 
 function checkGuess() {
-  const userGuess = parseInt(document.getElementById('guess').value);
+  const userGuess = parseInt(document.getElementById('guess', 10).value);
   attempts++;
 
   const resultElement = document.getElementById('result');
