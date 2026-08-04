@@ -56,7 +56,7 @@ document.getElementById("set").addEventListener("click", function (evt) {
 
    var l_div=document.createElement("div")
    l_div.className="card-body"
-   l_div.innerHTML=`Alarm at ${hr}.${mr}`
+   l_div.textContent =`Alarm at ${hr}.${mr}`
    l_item.appendChild(l_div)
 
    var l_rm=document.createElement("button")
