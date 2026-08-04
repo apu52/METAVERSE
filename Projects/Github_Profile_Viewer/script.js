@@ -28,7 +28,7 @@ const displayUserProfile = (user) => {
       <a href="${user.html_url}" target="_blank">View on GitHub</a>
     </div>
   `;
-  profileContainer.innerHTML = profileHTML;
+  profileContainer.textContent = profileHTML;
 };
 
 const displayUserRepos = (repos, options) => {
