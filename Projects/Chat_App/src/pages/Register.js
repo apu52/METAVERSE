@@ -19,7 +19,7 @@ export const Register = () => {
 
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
-      const date = new Date().getTime();
+      const date = Date.now();
       const storageRef = ref(storage, `${name + date}`);
       await uploadBytesResumable(storageRef, file).then(() => {
         getDownloadURL(storageRef).then(async (downloadURL) => {
