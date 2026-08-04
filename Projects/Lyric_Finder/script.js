@@ -37,7 +37,7 @@ function searchMusic(){
                                                                     </div>
                                                                 </div>`
             // Not to show more than 10 songs
-            if(i == 9){
+            if(i === 9){
                 break;
             }   
         }
