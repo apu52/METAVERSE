@@ -82,7 +82,7 @@ function show() {
    })
 
 }
-setInterval(() => {
+clearInterval(window.__interval); window.__interval = setInterval(() => {
    show()
 }, 1000);
 show()
