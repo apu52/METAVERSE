@@ -39,7 +39,7 @@ userInput.addEventListener("input", () => {
   //loop through each character in quote
   quoteChars.forEach((char, index) => {
     //Check if char(quote character) = userInputChars[index](input character)
-    if (char.innerText == userInputChars[index]) {
+    if (char.textContent == userInputChars[index]) {
       char.classList.add("success");
     }
     //If user hasn't entered anything or backspaced
