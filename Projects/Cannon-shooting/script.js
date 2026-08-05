@@ -51,7 +51,7 @@ setInterval( ()=> {
   // Fire on  timeout  
   setTimeout( ()=> {
     let comCanX =  cmCanX * 37.79; // convert cm to px
-    let validX = (userCanX - 5) <= comCanX && (userCanX + 5) >= comCanX ? true : false;
+    let validX = (userCanX - 5) <= comCanX && (userCanX + 5) >= Boolean(comCanX);
     let validAngle = (userCanY - 2) <= cmCanAngle && (userCanY + 2) >= cmCanAngle ? true : false;
     fireAudio.play(); // sound effect for fire
     allPipe.addClass('fire'); // Cannon pipe Animation
