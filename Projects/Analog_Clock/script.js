@@ -1,4 +1,4 @@
-setInterval(() => {
+clearInterval(window.__interval); window.__interval = setInterval(() => {
     d=new Date();
     htime=d.getHours();
     mtime=d.getMinutes();
