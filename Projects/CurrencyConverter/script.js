@@ -15,7 +15,7 @@ const convertCurrency = (from) => {
         const rate = data.rates[to];
         const resultX = `${amountX * rate} ${to}`;
 
-        resultTop.innerHTML = `${amountX} ${from} =`
+        resultTop.textContent = `${amountX} ${from} =`
         result.innerHTML = `${roundOff(parseFloat(resultX), 2)} ${to}`;
         resultBottom.innerHTML = `1 ${from} = ${roundOff(parseFloat(rate), 2)} ${to}`;
         result.parentNode.classList.add("slideDown");
