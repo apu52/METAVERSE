@@ -46,7 +46,7 @@ app.get("/posts", (req,res)=>{
 })
 //CHALLENGE 2: GET a specific post by id
 app.get("/posts/:id", (req,res)=>{
-  const id=parseInt(req.params.id);
+  const id=parseInt(req.params.id, 10);
   let foundPosts=posts.find((posts)=>posts.id===id);
   res.json(foundPosts);
 })
