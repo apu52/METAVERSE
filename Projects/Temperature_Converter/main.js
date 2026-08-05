@@ -18,7 +18,7 @@ function temperature() {
     let type2 = document.querySelector("#type2").value;
     let result = document.querySelector("#result");
 
-    if (isNaN(inputValue)) {
+    if (Number.isNaN(inputValue)) {
         alert("Please enter a valid number.");
         return;
     }
