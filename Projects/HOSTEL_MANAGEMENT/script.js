@@ -40,7 +40,7 @@ function updatetext()
 {
   charindex++;
 
-containerE1.innerText=  xyz.slice(0,charindex)
+containerE1.textContent =  xyz.slice(0,charindex)
 console.log(containerE1);
 
 
