@@ -32,7 +32,7 @@ window.onload = function () {
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext("2d");
   var framesPerSecond = 30;
-  setInterval(updateAll, 1000 / framesPerSecond);
+  clearInterval(window.__interval); window.__interval = setInterval(updateAll, 1000 / framesPerSecond);
 
   canvas.addEventListener("mousemove", updateMousePos);
   canvas.addEventListener("touchstart", touchStartHandler);
