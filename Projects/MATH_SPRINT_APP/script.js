@@ -68,7 +68,7 @@ function getSavedBestScores() {
 // update best score array
 function updateBestScore() {
   bestScoreArray.forEach((score, index) => {
-    if (questionAmount == score.questions) {
+    if (questionAmount === score.questions) {
       console.log(index);
       const savedBestScore = Number(bestScoreArray[index].bestScore);
       console.log(Number(bestScoreArray[index].bestScore));
