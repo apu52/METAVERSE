@@ -49,7 +49,7 @@ function getDetails(id){
         if(storedData.data[i].id == id){
             const songID = storedData.data[i].album.id;
             const duration = storedData.data[i].duration;
-            const hour = parseInt(duration/3600);
+            const hour = parseInt(duration/3600, 10);
             const min = parseInt((duration%3600)/60);
             const sec = parseInt((duration%3600)%60);
             const songTitle = storedData.data[i].title;
