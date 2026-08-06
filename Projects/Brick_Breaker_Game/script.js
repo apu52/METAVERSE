@@ -38,7 +38,7 @@ window.onload = function () {
   hidePlayAgainButton();
   document.getElementById("start-button").addEventListener("click", function () {
     document.getElementById("start-container").style.display = "none";
-    setInterval(updateAll, 1000 / framesPerSecond);
+    clearInterval(window.__interval); window.__interval = setInterval(updateAll, 1000 / framesPerSecond);
     canvas.addEventListener("mousemove", updateMousePos);
     brickReset();
     ballRest();
