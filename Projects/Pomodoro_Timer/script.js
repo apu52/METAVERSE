@@ -18,7 +18,7 @@ function stopTimer() {
 function updateTimer() {
     let minutes = Math.floor(timer / 60);
     let seconds = timer % 60;
-    document.getElementById('timer').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    document.getElementById('timer').textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
     if (timer === 0) {
         clearInterval(timerInterval);
