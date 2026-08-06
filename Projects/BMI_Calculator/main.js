@@ -21,7 +21,7 @@ function calculate() {
 	
 
 	if (weight === 0 ) {
-		document.getElementById("results").innerHTML = error;
+		document.getElementById("results").textContent = error;
 	} else if (height === 0){
 		document.getElementById("results").innerHTML = error;
 	}
