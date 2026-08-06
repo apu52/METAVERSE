@@ -80,7 +80,7 @@ let movies = [
   for (let i = 0; i < 3; i++) {
     createSlide();
   }
-  setInterval(() => {
+  clearInterval(window.__interval); window.__interval = setInterval(() => {
     createSlide();
   }, 3000);
   
