@@ -26,7 +26,7 @@ function convertToWord(letter){
 //here we are making a function where the user wins
 function win(userChoice, compChoice){
     userScore++;
-    userScore_span.innerHTML = userScore;
+    userScore_span.textContent = userScore;
     compScore_span.innerHTML = compScore;
     result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)}. You WIN! :)`;
 
