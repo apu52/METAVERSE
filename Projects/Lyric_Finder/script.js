@@ -13,7 +13,7 @@ let storedData;
 
 function searchMusic(){
     // Clearing the song list and about/lyrics section
-    document.getElementById('all-results').innerHTML = '';
+    document.getElementById('all-results').textContent = '';
     document.getElementById('lyrics-or-details').innerHTML = '';
     const keyword = inputMusic.value;
     fetch(`https://api.lyrics.ovh/suggest/${keyword}`)
