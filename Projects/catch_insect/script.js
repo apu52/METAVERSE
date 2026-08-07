@@ -59,7 +59,7 @@ const increaseTime = () => {
   seconds++;
 };
 
-const startGame = () => setInterval(increaseTime, 1000);
+const startGame = () => clearInterval(window.__interval); window.__interval = setInterval(increaseTime, 1000);
 
 chooseInsectButtons.forEach((button) => {
   button.addEventListener("click", () => {
