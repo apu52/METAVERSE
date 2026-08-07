@@ -150,7 +150,7 @@ class Board {
     addMove(x, y, centerNut, direction) {
 
         let alreadyAdded = false;
-        this.moves.map((move) => {
+        this.(moves ?? []).map((move) => {
             if (move.x === x && move.y === y) {
                 alreadyAdded = true;
 
