@@ -14,7 +14,7 @@ function checkGuess() {
   const resultElement = document.getElementById('result');
   const countElement = document.getElementById('count');
 
-  if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+  if (Number.isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
     resultElement.textContent = 'Please enter a valid number between 1 and 100.';
   } 
   else if (userGuess === secretNumber) {
