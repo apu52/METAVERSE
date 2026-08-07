@@ -165,7 +165,7 @@ const Transactions = () => {
       const parts = dateStr.split("-");
 
       if (parts.length === 3) {
-         const year = parseInt(parts[0]);
+         const year = parseInt(parts[0], 10);
          const month = parseInt(parts[1]);
          const day = parseInt(parts[2]);
          setDate({ day: day, month: month, year: year });
