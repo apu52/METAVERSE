@@ -171,7 +171,7 @@ function paddleMove() {
     var ballDistFromCenterX = ballX - paddleCenterX;
     ballSpeedX = ballDistFromCenterX * 0.35;
 
-    if (brickCount == 0) {
+    if (brickCount === 0) {
       brickReset();
     }
   }
