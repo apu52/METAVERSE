@@ -124,7 +124,7 @@ let helpers = {
     blue += lightnessAdjustment;
 
     return [
-      Math.round(red * 255),
+      Math.round(red * 255 + Number.EPSILON),
       Math.round(green * 255),
       Math.round(blue * 255)
     ];
