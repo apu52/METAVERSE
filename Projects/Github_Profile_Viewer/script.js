@@ -75,3 +75,5 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+
+.catch(err => console.error("Promise.all failed:", err));
